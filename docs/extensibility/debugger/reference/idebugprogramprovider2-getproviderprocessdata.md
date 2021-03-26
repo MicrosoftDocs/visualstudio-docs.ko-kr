@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::GetProviderProcessData
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b878a6731a9a7f2bf58bf55530d0b5f83cc978de
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ad388a552a34ebd49819987a20f4876193a96658
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151560"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071482"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 지정 된 프로세스에서 실행 중인 프로그램의 목록을 검색 합니다.
@@ -77,7 +77,7 @@ int GetProviderProcessData(
 ## <a name="remarks"></a>설명
  이 메서드는 일반적으로 해당 프로세스에서 실행 되는 프로그램 목록을 가져오는 프로세스에 의해 호출 됩니다. 반환 된 정보는 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 개체의 목록입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

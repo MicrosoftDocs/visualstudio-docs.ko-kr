@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugModOpt interface
 ms.assetid: ebd525e3-d140-4071-9d8c-41871de4125e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 047c01f78931e1b13110640952c67c11a68bc8a2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ffb235d58c254d130636da0f4b97961c11f9a372
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149862"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087901"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 Debug 선택적 한정자를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugModOpt : IUnknown
@@ -33,7 +33,7 @@ IDebugModOpt : IUnknown
 ## <a name="methods"></a>메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|선택적 한정자 목록을 검색 합니다.|
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7cfc3ba650ff8277bb6cb85f5d1530d202bd426
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 84d6e807e3be6d0fbdaa94834fbc8cad37f8e4d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163085"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088083"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 특성 정보를 바이트의 blob으로 가져옵니다.
@@ -57,5 +57,5 @@ int GetAttributeBytes(
 
  특성 바이트는 사용자 지정 특성의 원시 데이터를 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

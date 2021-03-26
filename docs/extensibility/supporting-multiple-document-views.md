@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965124"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056209"
 ---
 # <a name="supporting-multiple-document-views"></a>여러 문서 보기 지원
 편집기에 대 한 별도의 문서 데이터 및 문서 뷰 개체를 만들어 문서에 대 한 뷰를 두 개 이상 제공할 수 있습니다. 추가 문서 보기가 유용한 경우는 다음과 같습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "99965124"
 
 - 폼 및 코드 보기 지원: 편집기에서 다양 한 형식의 뷰를 제공 하려고 합니다. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]예를 들어은 폼 뷰와 코드 뷰를 모두 제공 합니다.
 
-  이에 대 한 자세한 내용은 Visual Studio 패키지 템플릿에서 만든 사용자 지정 편집기 프로젝트의 EditorFactory.cs 파일에서 CreateEditorInstance 프로시저를 참조 하세요. 이 프로젝트에 대 한 자세한 내용은 [연습: 사용자 지정 편집기 만들기](../extensibility/walkthrough-creating-a-custom-editor.md)를 참조 하세요.
+  이에 대 한 자세한 내용은 Visual Studio 패키지 템플릿에서 만든 사용자 지정 편집기 프로젝트의 EditorFactory .cs 파일에서 CreateEditorInstance 프로시저를 참조 하세요. 이 프로젝트에 대 한 자세한 내용은 [연습: 사용자 지정 편집기 만들기](../extensibility/walkthrough-creating-a-custom-editor.md)를 참조 하세요.
 
 ## <a name="synchronizing-views"></a>뷰 동기화
  여러 뷰를 구현할 때 문서 데이터 개체는 모든 보기를 데이터와 동기화 된 상태로 유지 하는 일을 담당 합니다. 에서 이벤트 처리 인터페이스를 사용 하 여 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 여러 뷰를 데이터와 동기화 할 수 있습니다.

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898231"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080504"
 ---
 # <a name="template-directory-description-vsdir-files"></a>템플릿 디렉터리 설명(.Vsdir) 파일
 템플릿 디렉터리 설명 파일 (.vsdir)은 IDE (통합 개발 환경)가 대화 상자에서 프로젝트와 연결 된 폴더, 마법사 .vsz 파일 및 템플릿 파일을 표시할 수 있도록 하는 텍스트 파일입니다. 내용에는 파일 또는 폴더 당 하나의 레코드가 포함 됩니다. 여러 폴더, 마법사 또는 템플릿 파일을 설명 하기 위해 일반적으로 하나의 .vsdir 파일만 제공 되지만 참조 된 위치의 모든 .vsdir 파일이 병합 됩니다.
@@ -64,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - .Vsz 파일, 폴더 또는 템플릿 파일을 삭제 하는 경우에는 해당 레코드를 .vsdir 파일 에서도 제거 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
-- [마법사로](../../extensibility/internals/wizards.md)
+## <a name="see-also"></a>참조
+- [마법사](../../extensibility/internals/wizards.md)
 - [마법사(.Vsz) 파일](../../extensibility/internals/wizard-dot-vsz-file.md)

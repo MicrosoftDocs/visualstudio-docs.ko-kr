@@ -15,17 +15,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d54f56ae3bc5fd5956f67400d84edfd4c8c9e55c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875564"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080569"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>기호 검색 도구 지원
 **기호 결과** 도구 **개체 브라우저**, **클래스 뷰**, **호출 브라우저** 및 찾기 도구 Visual Studio에서 기호 검색 기능을 제공 합니다. 이러한 도구는 기호에 대 한 계층적 트리 뷰를 표시 하 고 트리에서 기호 간의 관계를 표시 합니다. 기호는 다양 한 구성 요소에 포함 된 네임 스페이스, 개체, 클래스, 클래스 멤버 및 기타 언어 요소를 나타낼 수 있습니다. 구성 요소에는 Visual Studio 프로젝트, 외부 .NET Framework 구성 요소 및 형식 (.tlb) 라이브러리가 포함 됩니다. 자세한 내용은 [코드 구조 보기](../../ide/viewing-the-structure-of-code.md)를 참조 하세요.
@@ -50,7 +50,7 @@ ms.locfileid: "99875564"
 > [!NOTE]
 > 네이티브 코드 기호 공급자를 구현 하려면 <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> 및 인터페이스를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 개체 관리자에 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [방법: 라이브러리에서 제공하는 기호 목록을 개체 관리자에 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [방법: 라이브러리의 기호 식별](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

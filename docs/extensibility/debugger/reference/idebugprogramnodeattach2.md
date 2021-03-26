@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2 interface
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa623097224afc4f3a6b93d6b98ece0e14149ca5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1a1de6c7480e1ce4dcc0723614741a05dcc961a6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171736"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071469"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 프로그램 노드에 연결 된 프로그램에 대 한 연결 시도를 알릴 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramNodeAttach2 : IUnknown
@@ -38,7 +38,7 @@ IDebugProgramNodeAttach2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|연결 된 프로그램에 연결 하거나 [연결 방법에](../../../extensibility/debugger/reference/idebugengine2-attach.md) 대 한 연결 프로세스를 지연 합니다.|
 
@@ -56,7 +56,7 @@ IDebugProgramNodeAttach2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [연결](../../../extensibility/debugger/reference/idebugengine2-attach.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], local variables
 - expression evaluation, local variables
 ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18edb87170afd023ab2d17970d172a43b6ef35e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bf07dc6f47391af14c878021c742c2cb461bc85
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960938"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070416"
 ---
 # <a name="sample-implementation-of-locals"></a>로컬의 샘플 구현
 > [!IMPORTANT]
@@ -62,5 +62,5 @@ ms.locfileid: "99960938"
 
  [MyCEE 샘플](/previous-versions/) MyC 언어에 대 한 식 계산기를 만드는 한 가지 구현 방법을 보여 줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [지역 표시](../../extensibility/debugger/displaying-locals.md)

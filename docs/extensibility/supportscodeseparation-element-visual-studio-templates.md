@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4938d90c3122d7aa42582e68aa087a9068a1ac4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699d38f712885d1e2b08a111baa7db75fb7829da
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869442"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056131"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 요소(Visual Studio 템플릿)
 **새 항목 추가** 대화 상자에서 **별도의 파일에 코드 입력** 확인란을 사용할지 여부를 지정 합니다.
@@ -88,6 +88,6 @@ ms.locfileid: "99869442"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

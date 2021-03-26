@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c3703cf0e95b83492f1cb50548d9a90336e34a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848145"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060580"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE를 사용하여 Visual Studio 시작
 
@@ -33,7 +33,7 @@ Visual Studio 2017부터 DTE를 사용 하 여 Visual Studio를 시작 하는 �
 
 3. EnvDTE에 대 한 참조를 추가 합니다.
 
-4. 뒤에 나오는 [예제 코드](#example-code) 를 *Program.cs* 파일에 붙여 넣습니다.
+4. 다음 [예제 코드](#example-code) 를 *프로그램 .cs* 파일에 붙여넣습니다.
 
 5. **F5** 키를 눌러 프로그램을 실행 합니다. 프로그램이 종료 되기 전에 Visual Studio 2019가 열려 있어야 합니다.
 
@@ -187,7 +187,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 찾기](locating-visual-studio.md)
 - [연습: 편집기 확장에서 DTE 개체에 액세스](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

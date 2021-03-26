@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetParentField
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a4af4569b64a41fc84a09c7e8f2ce0a8f6b42e86
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7aaa3ea38e5ed0691b8e335a3d39a8a82b7576ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088057"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 사용자 지정 특성이 연결 된 필드를 가져옵니다.
@@ -50,6 +50,6 @@ int GetParentField(
 ## <a name="remarks"></a>설명
  반환 된 [Idebugfield](../../../extensibility/debugger/reference/idebugfield.md) 개체에서 [getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 메서드를 호출 하 여 부모 필드의 종류를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

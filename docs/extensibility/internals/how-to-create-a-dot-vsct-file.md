@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fe1d92a9117193a72f579a01f264f1a13be6b6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879984"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056612"
 ---
 # <a name="how-to-create-a-vsct-file"></a>방법: vsct 파일 만들기
 
@@ -71,7 +71,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
 5. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]명령 프롬프트 창에서 디렉터리로 이동 합니다.
 
-6. Type
+6. 형식
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -98,7 +98,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
 3. Visual Studio 명령 프롬프트에서 *. cto* 및 *. .ctsym* 파일이 포함 된 디렉터리로 이동 합니다.
 
-4. Type
+4. 형식
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -140,7 +140,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
      이 태그 `ItemGroup` 는 포함 된 리소스를 포함 하는 요소 내에 있어야 합니다.
 
-4. 편집기에서 일반적으로 이름이 *\<ProjectName\> Package.cs* 또는 *\<ProjectName\> 패키지인* 패키지 파일을 엽니다.
+4. 편집기에서 패키지 파일 (일반적으로 이름이 *\<ProjectName\> package .cs* 또는 *\<ProjectName\> node.js*)을 엽니다.
 
 5. `ProvideMenuResource`다음 예제와 같이 package 클래스에 특성을 추가 합니다.
 
@@ -150,7 +150,7 @@ XML 기반 Visual Studio 명령 테이블 구성 (*vsct*) 파일을 만드는 �
 
      첫 번째 매개 변수 값은 `ResourceName` 프로젝트 파일에 정의 된 특성의 값과 일치 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [. Vsct 파일 작성](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)

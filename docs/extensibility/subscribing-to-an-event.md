@@ -8,22 +8,22 @@ helpviewer_keywords:
 - running document table (RDT), responding to events
 - running document table (RDT), subscribing to events
 ms.assetid: e94a4fea-94df-488e-8560-9538413422bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8477f252259f0ca436c4d4f34325c6dbb45565b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a887e7d50f14c76cf993eae64b0efd88dee2181
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847975"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056287"
 ---
 # <a name="subscribing-to-an-event"></a>이벤트 구독
 이 연습에서는 RDT (실행 문서 테이블)에서 이벤트에 응답 하는 도구 창을 만드는 방법을 설명 합니다. 도구 창은을 구현 하는 사용자 정의 컨트롤을 호스팅합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> . <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>메서드는 인터페이스를 이벤트에 연결 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="subscribing-to-rdt-events"></a>RDT 이벤트 구독
@@ -47,7 +47,7 @@ ms.locfileid: "99847975"
     </Grid>
     ```
 
-2. 코드 보기에서 RDTExplorerWindow.cs 파일을 엽니다. 파일의 시작 부분에 다음 using 지시문을 추가 합니다.
+2. 코드 보기에서 RDTExplorerWindow 파일을 엽니다. 파일의 시작 부분에 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using Microsoft.VisualStudio;

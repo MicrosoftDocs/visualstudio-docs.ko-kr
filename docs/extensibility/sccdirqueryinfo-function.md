@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 81087d4f4da3435fb7bc80ec4a965394c7d6c7f3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220822"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060330"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 함수
 이 함수는 현재 상태에 대 한 정규화 된 디렉터리 목록을 검사 합니다.
@@ -54,7 +54,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|쿼리가 성공 했습니다.|
 |SCC_E_OPNOTSUPPORTED|소스 코드 제어 시스템에서이 작업을 지원 하지 않습니다.|
@@ -69,6 +69,6 @@ LPLONG  lpStatus
 > [!NOTE]
 > 소스 제어 플러그 인에서 하나 이상의 상태 값을 구현 하지 않도록 선택 하는 경우에는 구현 되지 않은 비트를 0으로 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [디렉터리 상태 코드](../extensibility/directory-status-code-enumerator.md)

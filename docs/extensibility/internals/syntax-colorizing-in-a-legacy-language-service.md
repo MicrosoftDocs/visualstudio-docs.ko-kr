@@ -10,17 +10,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 627c0b5184588f77188928b6355a9034a3a3465e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898264"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080546"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>레거시 언어 서비스의 구문 색 지정
 구문 색 지정은 프로그래밍 언어의 여러 요소가 다른 색 및 스타일의 소스 파일에 표시 되도록 하는 기능입니다. 이 기능을 지원 하려면 파일의 어휘 요소나 토큰 형식을 식별할 수 있는 파서 또는 스캐너를 제공 해야 합니다. 여러 언어에서 키워드, 구분 기호 (예: 괄호 또는 중괄호) 및 주석을 다른 방식으로 색을 구분 하 여 구분 합니다.
@@ -146,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 파서 및 검사기](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

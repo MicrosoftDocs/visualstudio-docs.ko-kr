@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccBeginBatch function
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b52b82919b10e58772343aee42cb8723b10d6ca3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5af4d8fb1d8524f16493603bb5d46ee4bdbd03ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221654"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060447"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 함수
 이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작 합니다. [Sccendbatch](../extensibility/sccendbatch-function.md) 가 호출 되어 일괄 처리가 종료 됩니다. 이러한 일괄 처리는 중첩 될 수 없습니다.
@@ -35,7 +35,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|작업 배치가 성공적으로 시작 되었습니다.|
 |SCC_E_UNKNOWNERROR|일반 오류입니다.|
@@ -45,6 +45,6 @@ SCCRTN SccBeginBatch(void);
 
  일괄 처리 작업이 적용 되는 동안 소스 제어 플러그 인은 사용자에 게 모든 질문에 대 한 대화 상자를 하나 이상 표시 하 고 모든 후속 작업에 대해 해당 대화 상자에서 응답을 적용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)

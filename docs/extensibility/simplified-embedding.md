@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62e3a4f33193f36e76b1286ae3d35d26706b3ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dca3b0c11c916a1fc47e4687bfeeabee35bcdfb4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928096"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056378"
 ---
 # <a name="simplified-embedding"></a>간단한 포함
 단순화 된 포함은 해당 문서 뷰 개체가 부모 (즉,의 자식) 인 경우 편집기에서 사용 하도록 설정 되며, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 인터페이스는 해당 창 명령을 처리 하기 위해 구현 됩니다. 단순화 된 포함 편집기는 활성 컨트롤을 호스트할 수 없습니다. 다음 그림에서는 간단한 포함 편집기를 만드는 데 사용 되는 개체를 보여 줍니다.
@@ -29,7 +29,7 @@ ms.locfileid: "99928096"
 
  단순화 된 포함 편집기를 만들기 위해 구현 된 모든 인터페이스는 개체에 포함 되어 `CYourEditorDocument` 있습니다. 그러나 문서 데이터의 여러 보기를 지원 하려면 다음 표에 나와 있는 것 처럼 인터페이스를 별개의 데이터로 분할 하 고 개체를 확인 합니다.
 
-|인터페이스|인터페이스 위치|기능|
+|인터페이스|인터페이스 위치|Windows Server Update Services와 함께|
 |---------------|---------------------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|보기|부모 창에 대 한 연결을 제공 합니다.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|보기|명령을 처리 합니다.|

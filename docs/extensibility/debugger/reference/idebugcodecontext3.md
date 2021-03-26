@@ -6,25 +6,25 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugCodeContext3 interface
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db806a4b45e855533e4ded1419f2d2117fb4f912
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4dd0ffb94f25ae8ac9566571a645d706fa224cd8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164021"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088317"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 인터페이스를 확장 하 여 모듈 및 프로세스 인터페이스를 검색할 수 있도록 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugCodeContext3 : IDebugCodeContext2
@@ -36,7 +36,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 ## <a name="methods"></a>메서드
  인터페이스의 메서드 외에도 `IDebugCodeContext2` 이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|디버그 모듈의 인터페이스에 대 한 참조를 검색 합니다.|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|디버그 프로세스의 인터페이스에 대 한 참조를 검색 합니다.|

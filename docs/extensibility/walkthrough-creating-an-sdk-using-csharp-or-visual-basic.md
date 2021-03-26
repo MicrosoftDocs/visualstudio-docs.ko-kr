@@ -5,20 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838697"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080400"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>연습: c # 또는 Visual Basic를 사용 하 여 SDK 만들기
 이 연습에서는 Visual c #을 사용 하 여 간단한 수학 라이브러리 SDK를 만든 다음 SDK를 VSIX (Visual Studio Extension)로 패키징하는 방법에 대해 알아봅니다. 다음 절차를 완료 합니다.
@@ -28,7 +28,7 @@ ms.locfileid: "99838697"
 - [SimpleMathVSIX 확장 프로젝트를 만들려면](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
 - [클래스 라이브러리를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> SimpleMath Windows 런타임 구성 요소를 만들려면
@@ -41,7 +41,7 @@ ms.locfileid: "99838697"
 
 4. **솔루션 탐색기** 에서 **SimpleMath** 프로젝트 노드에 대 한 바로 가기 메뉴를 열고 **속성** 을 선택 합니다.
 
-5. **Class1.cs** 를 **Arithmetic.cs** 로 바꾸고 다음 코드와 일치 하도록 업데이트 합니다.
+5. **Class1 .cs** 의 이름을 **산술 .cs** 로 바꾸고 다음 코드와 일치 하도록 업데이트 합니다.
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
@@ -234,7 +234,7 @@ ms.locfileid: "99838697"
     </Page>
     ```
 
-11. **MainPage.xaml.cs** 을 다음 코드와 일치 하도록 업데이트 합니다.
+11. 다음 코드와 일치 하도록 **mainpage** 을 업데이트 합니다.
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]
@@ -247,7 +247,7 @@ ms.locfileid: "99838697"
 
     확장 SDK를 성공적으로 만들고 사용 했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [연습: c + +를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [연습: JavaScript를 사용 하 여 SDK 만들기](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

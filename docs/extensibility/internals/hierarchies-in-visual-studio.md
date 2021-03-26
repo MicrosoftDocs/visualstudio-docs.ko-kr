@@ -8,17 +8,17 @@ helpviewer_keywords:
 - hierarchies, Visual Studio IDE
 - IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 826ef8f7836aaea0b934bb2a7fa8f568492f0b1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3fe1487e082907958c1cf8a36f1653efb97c9de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880010"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056625"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio의 계층 구조
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)는 프로젝트를 *계층 구조로* 표시 합니다. IDE에서 계층은 노드 트리로, 각 노드에는 연관 된 속성 집합이 있습니다. *프로젝트 계층 구조* 는 프로젝트의 항목, 항목의 관계 및 항목의 관련 속성 및 명령을 포함 하는 컨테이너입니다.
@@ -34,7 +34,7 @@ ms.locfileid: "99880010"
 
  사용자가 편집기에서 항목을 열면 해당 항목을 제어 하는 계층이 선택 되 고 활성 계층이 됩니다. 선택한 계층은 항목에 대해 작업을 수행할 수 있는 명령 집합을 결정 합니다. 이러한 방식으로 사용자 포커스를 추적 하면 계층 구조에서 사용자의 현재 컨텍스트를 반영할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 형식](../../extensibility/internals/project-types.md)
 - [IDE의 선택 및 통화](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [가 나 진한 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

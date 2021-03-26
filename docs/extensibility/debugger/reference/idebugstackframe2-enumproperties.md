@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::EnumProperties
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40298e505f0d3ccbba200c5487a1bf1d6723f5b2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bd9494434a8dc3fa2cff9eb28ddea8fb48302ca6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145965"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071157"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 로컬 변수와 같은 스택 프레임과 연결 된 속성에 대 한 열거자를 만듭니다.
@@ -75,7 +75,7 @@ int EnumProperties (
 ## <a name="remarks"></a>설명
  이 메서드는 단일 호출로 선택한 모든 속성을 검색할 수 있도록 허용 하므로 [Getdebugproperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) 및 [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 메서드를 순차적으로 호출 하는 것 보다 빠릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0127b16438191a7d4f10ebf351b697455f72b16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2a2c9703eb41c1a3e5baa023d8240b56ccbb13b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928031"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056365"
 ---
 # <a name="signing-vsix-packages"></a>VSIX 패키지 서명
 확장 어셈블리는 Visual Studio에서 실행할 수 있을 때까지 서명할 필요가 없지만 그렇게 하는 것이 좋습니다.
@@ -48,5 +48,5 @@ ms.locfileid: "99928031"
 
    VSIXSignTool.exe 서명/f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::SetLocale
 ms.assetid: cd0d2cf1-2aac-43da-a830-4bb3d696c219
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54cfd2d9d51cbad414cfb481b88f1e3277500efa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8f06ffce2d4fdda772cc29d09057499c32dd6f77
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153913"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087927"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 디버그 엔진 (DE)의 로캘을 설정 합니다.
@@ -50,5 +50,5 @@ int SetLocale(
 ## <a name="remarks"></a>설명
  이 메서드는 해제에서 반환 된 문자열이 제대로 지역화 되도록 IDE의 로캘 설정을 전파 하기 위해 세션 디버그 관리자 (SDM)에 의해 호출 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

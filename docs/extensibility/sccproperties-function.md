@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 56306bb7c248ea500e16964c0929f34a27187298
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220536"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056521"
 ---
 # <a name="sccproperties-function"></a>SccProperties 함수
 이 함수는 파일 또는 프로젝트에 대 한 소스 제어 속성을 표시 합니다.
@@ -49,7 +49,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|속성이 표시 되었습니다.|
 |SCC_I_RELOADFILE|버전 제어 시스템에서 파일 속성을 수정 하 여 IDE에서이 파일을 다시 로드 해야 합니다.|
@@ -63,5 +63,5 @@ SCCRTN SccProperties (
 
  속성은 원본 제어 플러그 인에서 정의 되며 플러그 인과 플러그 인에 따라 다를 수 있습니다. 플러그 인을 사용 하 여 사용자가 파일의 소스 제어 속성을 변경할 수 있는 경우 `SCC_I_RELOAD` 이 파일 또는 프로젝트를 다시 로드 해야 함을 IDE에 알리기 위해를 반환 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

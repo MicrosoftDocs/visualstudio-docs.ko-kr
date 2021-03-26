@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8de88b75b7013b75a35c9e92dc662598185e92b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898112"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080556"
 ---
 # <a name="test-area-4-check-in"></a>테스트 영역 4: 체크 인
 이 소스 제어 플러그 인 테스트 영역에서는 **체크** 인 명령을 통해 업데이트 된 항목을 버전 저장소로 보내는 방법에 대해 설명 합니다.
@@ -68,5 +68,5 @@ ms.locfileid: "99898112"
 |소스 제어에서 빈 솔루션에 프로젝트 추가 (**체크** 인 대화 상자)|1. 빈 솔루션을 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 새 프로젝트를 추가 합니다.<br />4. 메시지가 표시 되 면 솔루션의 체크 아웃을 허용 합니다.<br />5. **체크** 인 대화 상자에서 체크인 합니다.|일반적인 예상 동작입니다.|
 |소스 제어에서 빈 솔루션에 프로젝트 추가 (**체크 인 보류 중** 창)|1. 빈 솔루션을 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 새 프로젝트를 추가 합니다.<br />4. 메시지가 표시 되 면 솔루션의 체크 아웃을 허용 합니다.<br />5. **보류 중인 체크 인** 창에서 솔루션을 체크 인 합니다.|일반적인 예상 동작입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

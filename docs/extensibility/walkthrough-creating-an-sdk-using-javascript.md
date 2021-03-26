@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b9a3d9e84731fe0c2526b69f60cdda1b1487583
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895195"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080387"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>연습: JavaScript를 사용 하 여 SDK 만들기
 이 연습에서는 JavaScript를 사용 하 여 간단한 수학 SDK를 VSIX (Visual Studio Extension)로 만드는 방법을 배웁니다.  이 연습은 다음과 같은 부분으로 나눌 수 있습니다.
@@ -26,7 +26,7 @@ ms.locfileid: "99895195"
 
   JavaScript의 경우 클래스 라이브러리 프로젝트 형식이 없습니다. 이 연습에서는 샘플 *arithmetic.js* 파일이 VSIX 프로젝트에 직접 생성 됩니다. 실제로 VSIX 프로젝트에 삽입 하기 전에 먼저 JavaScript 및 CSS 파일을 Windows 스토어 앱으로 빌드 및 테스트 하는 것이 좋습니다 (예: **빈 앱** 템플릿 사용).
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="to-create-the-simplemathvsix-extension-sdk-project"></a><a name="createSimpleMathVSIX"></a> SimpleMathVSIX 확장 SDK 프로젝트를 만들려면
@@ -315,5 +315,5 @@ ms.locfileid: "99895195"
 
 12. 앱 UI에서 두 숫자를 입력 하 고 작업을 선택한 다음 단추를 선택 **=** 합니다. 올바른 결과가 나타납니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소프트웨어 개발 키트 만들기](../extensibility/creating-a-software-development-kit.md)

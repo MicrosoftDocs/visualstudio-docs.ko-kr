@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3f9b9efc625b435f304b192d3ca52f514e682e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d4baeb8a93a1bb5e70f3ee6266bb1a832a2a3fe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951916"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080413"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>연습: c + +를 사용 하 여 SDK 만들기
 이 연습에서는 네이티브 c + + 수학 라이브러리 SDK를 만들고, SDK를 VSIX (Visual Studio Extension)로 패키지 한 다음,이를 사용 하 여 앱을 만드는 방법을 보여 줍니다. 이 연습은 다음 단계로 구분 됩니다.
@@ -26,7 +26,7 @@ ms.locfileid: "99951916"
 
 - [클래스 라이브러리를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> 네이티브 및 Windows 런타임 라이브러리를 만들려면

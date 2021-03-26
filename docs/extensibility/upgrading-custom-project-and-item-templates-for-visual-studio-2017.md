@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8442e24bf971b8a2a0bcf5baeeb397e4646ba766
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893407"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060278"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>사용자 지정 Visual Studio용 프로젝트 및 항목 템플릿 2017 업그레이드
 
@@ -190,7 +190,7 @@ VSIX 확장의 일부로 프로젝트 또는 항목 템플릿을 만들려면 [�
 
 프로젝트 및 항목 템플릿에 대 한 별도의 매니페스트를 만들고 위에 지정 된 대로 루트 템플릿 디렉터리를 가리켜야 합니다. 확장 및 로캘 당 매니페스트 하나를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [템플릿 검색 문제 해결](troubleshooting-template-discovery.md)
 - [사용자 지정 프로젝트 및 항목 템플릿 만들기](creating-custom-project-and-item-templates.md)

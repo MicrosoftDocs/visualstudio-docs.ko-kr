@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ab605db6a49b8b7cc9893692ff1bb9e6da15171f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154615"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088148"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 이 인터페이스는 프로세스가 실행 되 고 있는 서버에 대 한 정보에 액세스할 수 있도록 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugCoreServer3 : IDebugCoreServer2
@@ -38,7 +38,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|서버의 이름을 검색 합니다.|
 |[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|친숙 한 버전의 서버 이름을 검색 합니다.|
@@ -59,6 +59,6 @@ IDebugCoreServer3 : IDebugCoreServer2
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

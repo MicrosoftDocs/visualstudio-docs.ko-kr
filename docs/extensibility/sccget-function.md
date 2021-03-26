@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 172e0ec5fdba4b91c3cf86ea964b4a98a23a5fa8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220835"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060343"
 ---
 # <a name="sccget-function"></a>SccGet 함수
 이 함수는 보기 및 컴파일을 위해 하나 이상의 파일 복사본을 검색 하지만 편집할 수는 없습니다. 대부분의 시스템에서 파일은 읽기 전용으로 태그가 지정 됩니다.
@@ -64,7 +64,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|가져오기 작업의 성공입니다.|
 |SCC_E_FILENOTCONTROLLED|파일이 소스 제어에 있지 않습니다.|
@@ -107,6 +107,6 @@ SCCRTN SccGet(
 
     6. 이제 업데이트 된 *b.txt* 파일을 체크 인할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [특정 명령에 사용 되는 bitflags](../extensibility/bitflags-used-by-specific-commands.md)

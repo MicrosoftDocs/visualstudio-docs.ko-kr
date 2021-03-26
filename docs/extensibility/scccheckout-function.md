@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f93052ebe255cddb4703a8246b7e89c744548a7f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221629"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060382"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 함수
 정규화 된 파일 이름 목록이 지정 된 경우이 함수는 로컬 드라이브를 검사 합니다. 주석은 체크 아웃 중인 모든 파일에 적용 됩니다. 주석 인수는 문자열일 수 있습니다 `null` .
@@ -69,7 +69,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|체크 아웃 했습니다.|
 |SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어에 있지 않습니다.|
@@ -81,6 +81,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|다른 사용자가이 파일에 대 한 단독 체크 아웃을 완료 했습니다.|
 |SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [특정 명령에 사용 되는 bitflags](../extensibility/bitflags-used-by-specific-commands.md)
