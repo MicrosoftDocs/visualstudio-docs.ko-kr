@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Include element (VSCT XML schema)
 - VSCT XML schema elements, Include
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d718178bf7490d29c0668d892add4c302b8925a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd64f897dc2a089a2e94f5e0c53e3ef116f7b385
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893635"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082103"
 ---
 # <a name="include-element"></a>Include 요소
 Include 요소는 현재 파일에 삽입 하기 위해 제공 된 포함 경로에 있을 수 있는 파일을 지정 합니다.  정의 된 모든 기호 및 형식은 컴파일된 결과의 일부가 됩니다.
@@ -38,7 +38,7 @@ Include 요소는 현재 파일에 삽입 하기 위해 제공 된 포함 경로
 
 |attribute|Description|
 |---------------|-----------------|
-|href|필수 사항입니다. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
+|href|필수 요소. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
 
 ### <a name="child-elements"></a>자식 요소
@@ -59,5 +59,5 @@ Include 요소는 현재 파일에 삽입 하기 위해 제공 된 포함 경로
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4483d73a5e6124006f09d05065b6f75f7a654e47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912733"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082129"
 ---
 # <a name="image-service-and-catalog"></a>이미지 서비스 및 카탈로그
 이 cookbook에는 visual studio 2015에 도입 된 Visual Studio 이미지 서비스 및 이미지 카탈로그를 채택 하는 방법에 대 한 지침과 모범 사례가 포함 되어 있습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "99912733"
 
   ![이미지 서비스 이전 및 이후](../extensibility/media/image-service-before-and-after.png "이미지 서비스 이전 및 이후")
 
-## <a name="how-it-works"></a>작동 방법
+## <a name="how-it-works"></a>작동 방식
  이미지 서비스는 지원 되는 모든 UI 프레임 워크에 적합 한 비트맵 이미지를 제공할 수 있습니다.
 
 - WPF: BitmapSource
@@ -106,7 +106,7 @@ ms.locfileid: "99912733"
 |**하위 요소**|**정의**|
 |-|-|
 |가져오기|현재 매니페스트에서 사용할 지정 된 매니페스트 파일의 기호를 가져옵니다.|
-|GUID|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
+|Guid|기호는 GUID를 나타내며 GUID 형식과 일치 해야 합니다.|
 |ID|기호는 ID를 나타내고 음수가 아닌 정수 여야 합니다.|
 |String|기호는 임의의 문자열 값을 나타냅니다.|
 
@@ -127,7 +127,7 @@ ms.locfileid: "99912733"
 |ManifestFolder|매니페스트 파일을 포함 하는 폴더입니다.|
 |MyDocuments|현재 사용자의 내 문서 폴더에 대 한 전체 경로입니다.|
 |ProgramFiles|% ProgramFiles% 환경 변수의 값입니다.|
-|시스템|*Windows\System32* 폴더|
+|System|*Windows\System32* 폴더|
 |I|% WinDir% 환경 변수의 값입니다.|
 
  **이미지**
@@ -145,7 +145,7 @@ ms.locfileid: "99912733"
 
 |**Attribute**|**정의**|
 |-|-|
-|GUID|하다 이미지 모니커의 GUID 부분입니다.|
+|Guid|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |AllowColorInversion|[선택 사항, 기본값 true] 이미지에서 짙은 배경에 사용 될 때 해당 색을 프로그래밍 방식으로 반전 시킬 수 있는지 여부를 나타냅니다.|
 
@@ -181,7 +181,7 @@ ms.locfileid: "99912733"
 
 |**Attribute**|**정의**|
 |-|-|
-|Type|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
+|형식|하다 네이티브 리소스의 형식 (XAML 또는 PNG)입니다.|
 |ID|하다 네이티브 리소스의 정수 ID 부분입니다.|
 
  **ImageList**
@@ -197,7 +197,7 @@ ms.locfileid: "99912733"
 
 |**Attribute**|**정의**|
 |-|-|
-|GUID|하다 이미지 모니커의 GUID 부분입니다.|
+|Guid|하다 이미지 모니커의 GUID 부분입니다.|
 |ID|하다 이미지 모니커의 ID 부분입니다.|
 |외부|[선택 사항, 기본값 false] 이미지 모니커가 현재 매니페스트의 이미지를 참조 하는지 여부를 나타냅니다.|
 

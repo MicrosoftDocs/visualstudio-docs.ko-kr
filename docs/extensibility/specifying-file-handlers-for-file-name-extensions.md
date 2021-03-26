@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65705467b1531e139c0ec857d6a7b57015d5f2f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848099"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089968"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>파일 이름 확장명에 대한 파일 처리기 지정
 특정 파일 확장명이 있는 파일을 처리 하는 응용 프로그램을 확인 하는 방법에는 여러 가지가 있습니다. OpenWithList 및 Openwithlist 동사는 파일 확장명에 대 한 레지스트리 항목에서 파일 처리기를 지정 하는 두 가지 방법입니다.
@@ -79,6 +79,6 @@ HKEY_CLASSES_ROOT\
 
  이전 ProgID에 연결 된 동사가 있는 경우 바로 가기 메뉴에서 *제품 이름* **으로 열기** 에도 이러한 동사가 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [파일 확장명 정보](../extensibility/about-file-name-extensions.md)
 - [파일 이름 확장명에 대한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md)

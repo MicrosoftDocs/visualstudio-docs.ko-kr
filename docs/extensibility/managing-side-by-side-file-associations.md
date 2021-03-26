@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 083eef2454a9e805b1cb8b3e85a6d7d81263a0dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924860"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073055"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Side-by-side 파일 연결 관리
 
@@ -53,7 +53,7 @@ VSPackage에서 파일 연결을 제공 하는 경우 파일을 열기 위해 �
 
   **최신 버전의 Visual Studio를 결정 하는 테이블 행 CustomAction**
 
-  |작업|Type|원본|대상|
+  |작업|형식|원본|대상|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -87,7 +87,7 @@ VSPackage에서 파일 연결을 제공 하는 경우 파일을 열기 위해 �
 
 - 사용자가 파일 연결을 선택 하 고 손실 된 연결을 회수할 수 있는 구성 옵션 페이지 또는 대화 상자를 제공 합니다. 제거 후 사용자에 게 실행 하도록 지시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Side-by-side 배포에 대 한 파일 이름 확장명 등록](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [파일 이름 확장명에 대 한 동사 등록](../extensibility/registering-verbs-for-file-name-extensions.md)

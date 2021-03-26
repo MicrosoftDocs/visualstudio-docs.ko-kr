@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52ccb8093b61e0458f7c3caefea6f826609aa51d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883274"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082142"
 ---
 # <a name="icon-element"></a>Icon 요소
 Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성은 비트맵 스트립에서 슬롯을 선택 합니다. 이 요소는 선택적입니다. 이 요소에 포함 되지 않은 경우 GuidOfficeIcon의 값 **: msotcidNoIcon** 이 포함 됩니다.
@@ -36,8 +36,8 @@ Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성�
 
 |attribute|Description|
 |---------------|-----------------|
-|guid|필수 사항입니다. 정의 된 비트맵의 guid입니다.|
-|id|필수 사항입니다. 비트맵 스트립에서 슬롯을 선택 합니다.|
+|guid|필수 요소. 정의 된 비트맵의 guid입니다.|
+|id|필수 요소. 비트맵 스트립에서 슬롯을 선택 합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -51,5 +51,5 @@ Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성�
 |-------------|-----------------|
 |[Buttons 요소](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

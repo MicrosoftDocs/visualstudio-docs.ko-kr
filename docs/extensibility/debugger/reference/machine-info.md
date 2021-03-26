@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO structure
 ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 796b6c95016708d3c179a8428b7f32aff9ccfe88
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 8a4b9686e5e3eb565b3c7b1c86a90ceac45b37cc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224085"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082350"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
 특정 컴퓨터에 대해 설명 합니다.
@@ -44,7 +44,7 @@ public struct MACHINE_INFO {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  `Fields`\
  구조체의 필드를 지정 하는 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 열거형의 플래그 조합입니다.
 
@@ -64,7 +64,7 @@ public struct MACHINE_INFO {
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구조체 및 공용 구조체](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

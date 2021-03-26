@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728913596ce8c3947756906dffb144eecd3d71ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aefac4efc706d195d8471952da3914d35d27ddc2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895273"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055884"
 ---
 # <a name="the-experimental-instance"></a>실험적 인스턴스
 변경 될 수 있는 테스트 되지 않은 응용 프로그램에서 Visual Studio 개발 환경을 보호 하기 위해이를 실험 하는 데 사용할 수 있는 실험적 공간을 제공 합니다. 일반적인 방법으로 Visual Studio를 사용 하 여 새 응용 프로그램을 개발 하지만이 실험적 인스턴스를 사용 하 여 실행할 수 있습니다.

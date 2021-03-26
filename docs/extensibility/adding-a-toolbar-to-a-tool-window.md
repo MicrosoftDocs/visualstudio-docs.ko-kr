@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1847801ed9dcbb1b7c7145c86b1998b54e2bb5d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951344"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055793"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>도구 창에 도구 모음 추가
 이 연습에서는 도구 창에 도구 모음을 추가 하는 방법을 보여 줍니다.
@@ -29,7 +29,7 @@ ms.locfileid: "99951344"
 
  도구 모음을 추가 하는 방법에 대 한 자세한 내용은 [도구 모음 추가](../extensibility/adding-a-toolbar.md)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>도구 창에 대 한 도구 모음 만들기
@@ -86,14 +86,14 @@ ms.locfileid: "99951344"
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>도구 창에 도구 모음 추가
 
-1. *TWTestCommandPackageGuids.cs* 에서 다음 줄을 추가 합니다.
+1. *Twtestcommandpackageguids. cs* 에서 다음 줄을 추가 합니다.
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. *TestToolWindow.cs* 에서 다음 using 문을 추가 합니다.
+2. *TestToolWindow* 에서 다음 using 문을 추가 합니다.
 
     ```csharp
     using System.ComponentModel.Design;
@@ -115,5 +115,5 @@ ms.locfileid: "99951344"
 
 3. 도구 모음에서 아이콘을 클릭 하 여 **TwMenuItemCallback () 내의 Twtestcommandpackage** 메시지를 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [도구 모음 추가](../extensibility/adding-a-toolbar.md)

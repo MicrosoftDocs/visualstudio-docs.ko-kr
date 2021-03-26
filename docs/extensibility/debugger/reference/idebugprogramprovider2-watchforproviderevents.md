@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2::WatchForProviderEvents
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb00d177cfdb5fe8451b914926f29f591d8f924d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e6695e3fd3a9603c9f8b3700ef1e361ec383fea4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065257"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 프로세스에 포트 이벤트에 대 한 알림이 표시 되도록 허용 합니다.
@@ -82,7 +82,7 @@ int WatchForProviderEvents(
 ## <a name="remarks"></a>설명
  호출자가이 메서드에 대 한 이전 호출을 사용 하 여 설정 된 이벤트 처리기를 제거 하려는 경우 호출자는 처음에는 동일한 매개 변수를 전달 하지만 플래그는 그대로 둡니다 `PFLAG_REASON_WATCH` .
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
  다음 예제에서는 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 인터페이스를 노출 하는 **cdebugengine** 개체에 대해이 메서드를 구현 하는 방법을 보여 줍니다.
 
 ```cpp
@@ -211,7 +211,7 @@ STDMETHODIMP CDebugEngine::WatchForProviderEvents(
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
 - [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)
 - [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952098"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090059"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio의 복합 패턴
 복합 패턴은 고유 구성에서 상호 작용 및 디자인 요소를 결합 합니다. 일관성과 관련 하 여 Visual Studio에서 가장 중요 한 복합 패턴 중 일부는 다음과 같습니다.
@@ -70,7 +70,7 @@ ms.locfileid: "99952098"
 
 ### <a name="other-charting-considerations"></a>기타 차트 고려 사항
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>색
  Visual Studio에서 사용 하도록 정의 된 차트 색의 특정 색상표가 있습니다. 색상표는 주요 색의 주요 형식에 액세스할 수 있으며 색의 좁은 조각으로 사용 되는 경우에도 색을 구분할 수 있습니다. 이러한 색은 UI의 모든 종류의 차트 또는 그래프에 대해 조합 하 여 사용할 수 있습니다. 고유한 색이 많이 필요 하지 않은 경우에는 7 가지 색을 모두 사용할 필요가 없습니다. 이러한 색은 모든 전경 요소와 함께 사용 하도록 설계 되지 않았으므로 이러한 색 위에 텍스트나 문자 모양을 두지 않습니다. 이러한 색은 하드 코딩 되 고 **도구 > 옵션** 에서 사용자 지정에 노출 되어야 합니다 ( [최종 사용자를 위한 색 노출](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)참조).
 
 |견본|Hex|RGB|
@@ -395,7 +395,7 @@ ms.locfileid: "99952098"
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> 그래픽 개체 선택 모양
  선택 핸들은 개체의 경계 상자 주위에서 사각형 패턴으로 그린 사각형입니다. 아래 차트에서는 그래픽 개체에 포함 될 수 있는 다양 한 상태의 예를 핸들, 크기 조정 및 내부 편집 모양으로 보여 줍니다. 핸들 크기는 **Getsystemmetrics** API를 사용 하 여 창 테두리 및 가장자리 메트릭에 연결 해야 합니다.
 
-| 시스템 상태 | 모양 | 시각적 정보 |
+| 주 | 모양 | 시각적 정보 |
 |-------------------------|---------------| - |
 | **선택 취소** | 기본값 | ![기본 단추 상태](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **기본 선택** | 점 | ![크기 조정 핸들을 사용한 기본 선택](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |

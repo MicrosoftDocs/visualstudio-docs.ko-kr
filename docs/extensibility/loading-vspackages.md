@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87b5bcc94ed11e18de763bd1db7c59bdc4796fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a58bcbad79191f54a7b4eeb2aa12e90d8a6e44
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966385"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073289"
 ---
 # <a name="load-vspackages"></a>Load Vspackage
 Vspackage는 해당 기능이 필요한 경우에만 Visual Studio에 로드 됩니다. 예를 들어 Visual Studio가 프로젝트 팩터리 또는 VSPackage가 구현 하는 서비스를 사용 하는 경우 VSPackage이 로드 됩니다. 이 기능을 사용 하면 성능이 향상 될 때마다 사용 되는 지연 된 로드 라고 합니다.
@@ -73,5 +73,5 @@ Vspackage는 해당 기능이 필요한 경우에만 Visual Studio에 로드 됩
 
      VSPackage 통신에는 강제 로드를 사용 하면 안 됩니다. 대신 [사용 및 서비스 제공을](../extensibility/using-and-providing-services.md) 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPackages](../extensibility/internals/vspackages.md)

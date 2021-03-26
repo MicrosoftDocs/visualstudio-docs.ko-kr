@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - LocationField element [Visual Studio project templates]
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbd0d6ee6ede29be35437125f614512ff3bbeab3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1ad5263f11cd7e940b641959de1dea393eb98ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915180"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073237"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 요소 (Visual Studio 프로젝트 템플릿)
 **새 프로젝트** 대화 상자의 **위치** 텍스트 상자를 프로젝트 템플릿에 대해 사용, 사용 안 함 또는 숨길지 여부를 지정 합니다.

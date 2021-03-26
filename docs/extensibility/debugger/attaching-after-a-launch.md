@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ce6497b820e1dcd37315f9d74cb97de4cc34e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9010d2619b76c2932ca1a8a5aed8db6c6a5cf075
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055325"
 ---
 # <a name="attach-after-a-launch"></a>시작 후 연결
 프로그램이 시작 된 후 디버그 세션은 디버그 엔진 (DE)을 프로그램에 연결할 준비가 된 것입니다.
@@ -45,7 +45,7 @@ ms.locfileid: "99837738"
 
  이제 DE가 프로그램에 연결 되 고 시작 이벤트를 보낼 준비가 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로그램에 직접 연결](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [포트에 알림](../../extensibility/debugger/notifying-the-port.md)
 - [디버깅 작업](../../extensibility/debugger/debugging-tasks.md)

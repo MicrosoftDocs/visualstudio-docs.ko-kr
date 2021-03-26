@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e544e4cebaa4e2e1691f6c175dfa750a1f951abc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6126df3e4adb1e0d942669b561801be4449036df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930696"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055064"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>디버그 엔진 구현 전략 선택
 런타임 아키텍처를 사용 하 여 DE (디버그 엔진) 구현 전략을 결정 합니다. 디버깅 중인 프로그램에 대 한 디버그 엔진을 in-process로 만들 수 있습니다. Visual Studio 세션 디버그 관리자 (SDM)에 대해 in-process로 디버그 엔진을 만듭니다. 또는 둘 다에서 디버그 엔진을 out-of-process로 만듭니다. 다음 지침은 이러한 세 가지 전략 중 하나를 선택 하는 데 도움이 됩니다.
@@ -33,5 +33,5 @@ ms.locfileid: "99930696"
 
 - DE가 프로그램을 호출 하 여 기호 저장소에 액세스 해야 하는 경우 프로그램을 사용 하 여 DE-DE를 만듭니다. 이 경우 프로그램은 DE의 인스턴스를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 디버거 확장성](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb94554b4ac1af30d8187a8ab75aa83f65dccc72
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877488"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055806"
 ---
 # <a name="create-an-options-page"></a>옵션 페이지 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "99877488"
 
  MPF는 도구 옵션 페이지, 클래스 및 클래스를 만드는 데 도움이 되는 두 가지 클래스를 제공 합니다 <xref:Microsoft.VisualStudio.Shell.Package> <xref:Microsoft.VisualStudio.Shell.DialogPage> . 클래스를 서브클래싱 하 여 이러한 페이지에 대 한 컨테이너를 제공 하는 VSPackage를 만듭니다 `Package` . 클래스에서 파생 하 여 각 도구 옵션 페이지를 만듭니다 `DialogPage` .
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
@@ -166,7 +166,7 @@ ms.locfileid: "99877488"
 
 7. **TextBox** 컨트롤을 사용자 정의 컨트롤에 추가 합니다.
 
-     **속성** 창의 도구 모음에서 **이벤트** 단추를 클릭 한 다음 **Leave** 이벤트를 두 번 클릭 합니다. 새 이벤트 처리기가 *MyUserControl.cs* 코드에 나타납니다.
+     **속성** 창의 도구 모음에서 **이벤트** 단추를 클릭 한 다음 **Leave** 이벤트를 두 번 클릭 합니다. 새 이벤트 처리기가 *MyUserControl* 코드에 나타납니다.
 
 8. `OptionsPage`컨트롤 클래스에 public 필드와 메서드를 추가 하 `Initialize` 고 이벤트 처리기를 업데이트 하 여 옵션 값을 텍스트 상자의 내용으로 설정 합니다.
 
@@ -249,7 +249,7 @@ ms.locfileid: "99877488"
 
      이 코드 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 는를 호출 하 여 인스턴스를 만들거나 검색 `OptionPageGrid` 합니다. `OptionPageGrid` 는 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 를 호출 하 여 해당 옵션을 로드 합니다 .이는 공용 속성입니다.
 
-2. 이제 **MyToolsOptionsCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 하 여 값을 표시 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolsOptionsCommand.cs* 로 변경 합니다.
+2. 이제 **MyToolsOptionsCommand** 이라는 사용자 지정 명령 항목 템플릿을 추가 하 여 값을 표시 합니다. **새 항목 추가** 대화 상자에서 **Visual c #**  >  **확장성** 으로 이동 하 고 **사용자 지정 명령** 을 선택 합니다. 창 맨 아래에 있는 **이름** 필드에서 명령 파일 이름을 *MyToolsOptionsCommand* 로 변경 합니다.
 
 3. *MyToolsOptionsCommand* 파일에서 명령의 메서드 본문을 `ShowMessageBox` 다음과 같이 바꿉니다.
 
@@ -268,6 +268,6 @@ ms.locfileid: "99877488"
 
      메시지 상자에의 현재 값이 표시 됩니다 `OptionInteger` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [옵션 및 옵션 페이지](../extensibility/internals/options-and-options-pages.md)

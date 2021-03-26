@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 460227b1eb5a1e12ca698f649700586b53bc7254
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35b63f8e84e6879d09fda4c35924b5b9d1d60ccd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839337"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056066"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>동기적으로 자동 로드된 확장
 
@@ -55,5 +55,5 @@ ms.locfileid: "99839337"
 ## <a name="extension-authors"></a>확장 작성자
 확장 작성자는 [AsyncPackage로 마이그레이션](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)에서 패키지를 비동기 autoload로 마이그레이션하기 위한 지침을 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 Visual Studio 2019의 동기 autoload 설정에 대 한 자세한 내용은 [동기 Autoload 동작](https://devblogs.microsoft.com/visualstudio/updates-to-synchronous-autoload-of-extensions-in-visual-studio-2019/) 페이지를 참조 하세요.

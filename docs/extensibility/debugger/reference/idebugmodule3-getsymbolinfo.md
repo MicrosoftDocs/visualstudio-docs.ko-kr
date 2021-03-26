@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetSymbolInfo method
 - IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2793c9b6d9d88997ce2e4e84c147f87183555cd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9cc4c8d7c88e4b973ad7055327da73472a6ed4d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164853"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065530"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 각 경로를 검색 한 결과 뿐만 아니라 기호를 검색 하는 경로 목록을 검색 합니다.
@@ -63,7 +63,7 @@ int GetSymbolInfo(
 
 마지막 항목에는 \r\n 시퀀스가 없습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서이 메서드는 세 개의 다른 검색 결과가 포함 된 세 개의 경로를 반환 합니다. 각 줄은 캐리지 리턴/줄 바꿈 쌍으로 종료 됩니다. 예제 출력에서는 검색 결과를 단일 문자열로 인쇄 하기만 합니다.
 
 > [!NOTE]
@@ -89,7 +89,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
  **c:\winnt\symbols\user32.pdb... 버전이 일치 하지 않습니다.** 
  **\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... 기호가 로드 되었습니다.**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)
 - [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)

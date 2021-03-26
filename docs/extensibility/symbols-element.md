@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
 ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 173da18ca3b38dd64b8a2594c03abd83987f58f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a013bbe438d1e4dd1f6b5149dcb7da78835fd09
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839324"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056053"
 ---
 # <a name="symbols-element"></a>Symbols 요소
 다른 VSCT 요소에 사용 되는 Guid 및 Id를 정의 합니다. 비관리 코드의 경우이 정보는 일반적으로 [Extern 요소](../extensibility/extern-element.md)에 지정 된 헤더 파일에서 가져옵니다. 관리 코드는 기호 요소의 자식 요소를 사용 하 여이 정보를 정의 합니다.
@@ -43,7 +43,7 @@ ms.locfileid: "99839324"
 
 |attribute|Description|
 |---------------|-----------------|
-|None||
+|없음||
 
 ### <a name="child-elements"></a>자식 요소
 
@@ -71,5 +71,5 @@ ms.locfileid: "99839324"
 </Symbols>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블(.Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98f7df8593b09acb2fa4db81ebfa734aeb1ddcaf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6190dc96501221a31c9a51f59e1bd734b9e08260
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055598"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 요소 (Visual Studio 템플릿)
 템플릿에서 프로젝트 또는 항목을 만들 때 사용할 사용자 지정 매개 변수 이름 및 값을 포함 합니다.
@@ -39,7 +39,7 @@ ms.locfileid: "99947738"
 |attribute|Description|
 |---------------|-----------------|
 |`Name`|필수 사항입니다. 매개 변수의 이름입니다. 매개 변수의 형식은 $*name*$입니다.|
-|`Value`|필수 사항입니다. 매개 변수의 대체 값입니다.|
+|`Value`|필수 요소. 매개 변수의 대체 값입니다.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
@@ -63,7 +63,7 @@ ms.locfileid: "99947738"
 </CustomParameters>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [CustomParameters 요소 (Visual Studio 템플릿)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [템플릿 매개 변수](../ide/template-parameters.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)

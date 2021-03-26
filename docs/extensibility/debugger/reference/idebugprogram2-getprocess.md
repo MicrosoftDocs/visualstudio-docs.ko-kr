@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProcess
 ms.assetid: 1d602485-ebaf-451c-9165-f2e226f20a90
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 233bd9bbb41f64b375e899dba9c0be9a9fba3d97
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1d87d863b954a9865ff3960f2f2cdd45ac40ce58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168991"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065400"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 이 프로그램이 실행 되는 프로세스를 가져옵니다.
@@ -52,7 +52,7 @@ int GetProcess(
 
  인터페이스를 구현 하는 것은 `IDebugEngineLaunch2` de가 프로세스를 만드는 방법을 알고 있어야 한다는 것을 의미 합니다. 따라서 de의 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 인터페이스 구현은에서 실행 중인 프로세스를 알 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

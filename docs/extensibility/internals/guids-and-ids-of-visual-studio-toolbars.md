@@ -13,17 +13,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970220"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082077"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 도구 모음의 Guid 및 Id
 이 항목에서는 Visual Studio IDE (통합 개발 환경) 및 포함 된 그룹에 포함 된 도구 모음의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는 *vsct* 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -136,7 +136,7 @@ ms.locfileid: "99970220"
 |메모리 1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1 ... 3-4|IDG_MEMORY_EXPRESSION1. 3-4<br /><br /> IDG_MEMORY_COLUMNS1. 3-4|
 |프로세스|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [도구 모음에 메뉴 컨트롤러 추가](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [도구 창에 도구 모음 추가](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Visual Studio 메뉴의 Guid 및 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

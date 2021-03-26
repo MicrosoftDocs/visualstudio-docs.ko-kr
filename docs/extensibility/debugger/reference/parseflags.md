@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 192e4de399540ce189bbf52cbb0f615b2b9bc855
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f7dabef93e8160a2319bc5cefeb189fa335f4b9f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082337"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 식을 구문 분석 하는 방법을 지정 합니다.

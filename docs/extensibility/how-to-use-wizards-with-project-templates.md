@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883313"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082285"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>방법: 프로젝트 템플릿에 마법사 사용
 
@@ -74,7 +74,7 @@ Visual Studio SDK의 일부인 프로젝트 템플릿 프로젝트를 사용 하
 
 5. 마법사 구현에 대 한 클래스를 VSIX 프로젝트에 추가 합니다. **솔루션 탐색기** 에서 VSIX 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고 **추가**, **새 항목**, **클래스** 를 차례로 선택 합니다. 클래스 이름을 **WizardImplementation** 로 합니다.
 
-6. *WizardImplementationClass.cs* 파일의 코드를 다음 코드로 바꿉니다.
+6. *WizardImplementationClass* 파일의 코드를 다음 코드로 바꿉니다.
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ Visual Studio SDK의 일부인 프로젝트 템플릿 프로젝트를 사용 하
 
      이 예에서는 사용자 입력 폼의 매개 변수 값을 <xref:System.Collections.Generic.Dictionary%602> 매개 변수에 추가 합니다. `$custommessage$`프로젝트의 모든 매개 변수 인스턴스는 사용자가 입력 한 텍스트로 바뀝니다.
 
-7. 이제 **Userinputform** 을 만듭니다. *WizardImplementation.cs* 파일에서 클래스의 끝 뒤에 다음 코드를 추가 `WizardImplementation` 합니다.
+7. 이제 **Userinputform** 을 만듭니다. *WizardImplementation* 파일에서 클래스의 끝 뒤에 다음 코드를 추가 합니다 `WizardImplementation` .
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Visual Studio SDK의 일부인 프로젝트 템플릿 프로젝트를 사용 하
 
 이 예제에서 템플릿으로 사용 되는 프로젝트는 사용자 지정 마법사의 사용자 입력 형식에 지정 된 메시지를 표시 합니다.
 
-1. **솔루션 탐색기** 에서 **myprojecttemplate** 프로젝트로 이동 하 여 *Class1.cs* 를 엽니다.
+1. **솔루션 탐색기** 에서 **myprojecttemplate** 프로젝트로 이동 하 여 *Class1 .cs* 를 엽니다.
 
 2. `Main`응용 프로그램의 메서드에서 다음 코드 줄을 추가 합니다.
 

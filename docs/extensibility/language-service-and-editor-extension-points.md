@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 925bc0f123649bd0d5d29f5a7bec83227829b8af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a8d71e6c7cd7569c9e73134345584a8237337bc7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915223"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073302"
 ---
 # <a name="language-service-and-editor-extension-points"></a>언어 서비스 및 편집기 확장 위치
 편집기는 대부분의 언어 서비스 기능을 포함 하 여 Managed Extensibility Framework (MEF) 구성 요소 부분으로 확장할 수 있는 확장 위치를 제공 합니다. 기본 확장 지점 범주는 다음과 같습니다.
@@ -81,7 +81,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
   다음은 visual Studio에 정의 된 콘텐츠 형식과 Visual Studio에서 호스팅되는 일부 언어입니다.
 
-- 기본
+- Basic
 
 - C/C++
 

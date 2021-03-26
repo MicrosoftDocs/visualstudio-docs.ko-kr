@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884977"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055754"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>모달 대화 상자 만들기 및 관리
 Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표시 되는 동안 대화 상자의 부모 창이 비활성화 되었는지 확인 한 다음 대화 상자를 닫은 후 부모 창을 다시 사용 하도록 설정 해야 합니다. 이렇게 하지 않으면 오류 메시지가 표시 될 수 있습니다. *모달 대화 상자가 활성화 되어 있기 때문에 Microsoft Visual Studio를 종료할 수 없습니다. 활성 대화 상자를 닫고 다시 시도 하세요.*
@@ -40,7 +40,7 @@ Visual Studio 내에서 모달 대화 상자를 만들 때 대화 상자가 표�
 
     - *System.Xaml*
 
-3. *OpenDialog.cs* 에서 다음 문을 추가 합니다 `using` .
+3. *Opendialog. cs* 에서 다음 문을 추가 합니다 `using` .
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

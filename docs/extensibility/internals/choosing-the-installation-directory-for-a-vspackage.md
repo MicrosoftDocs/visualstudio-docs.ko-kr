@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6442a8475c862693b851be783ae85bbb0a2e90af
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874076"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082116"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage 설치 디렉터리 선택
 VSPackage와 해당 지원 파일은 사용자의 파일 시스템에 있어야 합니다. 위치는 VSPackage 관리 되는지, 관리 되지 않는지, 병렬 버전 관리 체계 및 사용자 선택에 따라 달라 집니다.
@@ -61,7 +61,7 @@ VSPackage와 해당 지원 파일은 사용자의 파일 시스템에 있어야 
 
 VSPackage DLL이 리소스를 포함 하 고 **SatelliteDll\DllName** 레지스트리 항목이이를 가리키는 경우는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 위의 순서로 로드 하려고 시도 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
 - [패키지 등록 관리](/previous-versions/bb166783(v=vs.100))

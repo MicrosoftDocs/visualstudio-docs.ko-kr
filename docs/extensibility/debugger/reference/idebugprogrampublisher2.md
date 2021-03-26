@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deac68ba693bd9e4f827fef5610e3c9d2c3c26f6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c51fac369ed91f00c91482dd7069362d758b7346
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166972"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065101"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 이 인터페이스는 디버그 엔진 (DE) 또는 사용자 지정 포트 공급자가 디버깅을 위해 프로그램을 등록할 수 있도록 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramPublisher2 : IUnknown
@@ -38,7 +38,7 @@ Visual Studio는이 인터페이스를 구현 하 여 여러 프로세스에서 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|프로그램 노드를 DEs 및 세션 디버그 관리자 (SDM)에서 사용할 수 있도록 설정 합니다.|
 |[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|프로그램 노드를 더 이상 사용할 수 없도록 제거 합니다.|
@@ -56,7 +56,7 @@ Visual Studio는이 인터페이스를 구현 하 여 여러 프로세스에서 
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 이 예제에서는 프로그램 게시자를 인스턴스화하고 프로그램 노드를 등록 하는 방법을 보여 줍니다. 이는 자습서의 [프로그램 노드 게시](/previous-versions/bb161795(v=vs.90))에서 가져옵니다.
 
 ```cpp
@@ -90,6 +90,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)
