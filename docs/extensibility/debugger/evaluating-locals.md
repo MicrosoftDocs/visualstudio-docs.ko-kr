@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 291c77568f17cfb0aed9d0d5b55e5ca193a6a702
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26543152293cd93bc5565995f2e6c451417aca37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840641"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096995"
 ---
 # <a name="evaluate-locals"></a>지역 평가
 > [!IMPORTANT]
@@ -191,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [로컬의 샘플 구현](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [로컬 값 가져오기](../../extensibility/debugger/getting-local-values.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)

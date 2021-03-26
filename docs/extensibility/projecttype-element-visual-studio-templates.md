@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a90c8de2fca62ef303ce8055993d8e2f6d230493
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d494d27b2a3302d0beff68b770d0172edb520f35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910893"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068689"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 요소 (Visual Studio 템플릿)
 **새 프로젝트** 또는 **새 항목 추가** 대화 상자의 지정 된 그룹 아래에 나타나도록 프로젝트 템플릿을 분류 합니다.

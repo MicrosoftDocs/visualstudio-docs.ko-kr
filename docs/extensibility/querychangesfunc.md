@@ -10,17 +10,17 @@ helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8abe32abcb79fada541124f50a750fb4c1edde58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc797d68f6df6d9aab93554ba95955a7d9f45eea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910866"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068624"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 이 함수는 [Sccquerychanges](../extensibility/sccquerychanges-function.md) 작업에서 파일 이름의 컬렉션을 열거 하 고 각 파일의 상태를 확인 하는 데 사용 하는 콜백 함수입니다.
@@ -98,7 +98,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName이 항목의 현재 파일 이름입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDE에서 구현 하는 콜백 함수](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [오류 코드](../extensibility/error-codes.md)

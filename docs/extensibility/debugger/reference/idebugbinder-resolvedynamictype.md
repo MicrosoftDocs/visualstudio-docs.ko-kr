@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveDynamicType method
 ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 548ba7ed326de2310cdc6689088f72c7a97ade7d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 149cb7fc88a5bc3619cb8b87b08bc2018040410a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102174036"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067415"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 이 메서드는 정확한 형식의 변수를 반환 합니다.
@@ -52,7 +52,7 @@ int ResolveDynamicType(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: baada63e84e95fd466e0e5640c592dfe303d8e1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221550"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063762"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 함수
 이 함수는 기존 소스 제어 프로젝트를 열거나 새 프로젝트를 만듭니다.
@@ -79,7 +79,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|프로젝트를 여는 동안 성공 했습니다.|
 |SCC_E_INITIALIZEFAILED|프로젝트를 초기화할 수 없습니다.|
@@ -115,7 +115,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 > `SCC_CAP_REENTRANT`이 비트는 소스 제어 플러그 인 API 버전 1.1에서 도입 되었습니다. 이 파일은 설정 되지 않았거나 버전 1.0에서 무시 되며, 모든 버전 1.0 원본 제어 플러그 인은 재진입이 아닌 것으로 간주 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

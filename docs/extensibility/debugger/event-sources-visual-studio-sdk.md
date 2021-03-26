@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 268c22060d22bc69385cf07d1d5151e7dfe3ccb9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec6213a1462c391d13bbdf8a20ac61e232cafb49
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097008"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>이벤트 소스 (Visual Studio SDK)
 이벤트에는 디버그 엔진 (DE)과 세션 디버그 관리자 (SDM)의 두 가지 소스가 있습니다. DE에서 전송 된 이벤트에 NULL이 아닌 엔진이 있으며,이 경우 SDM에서 전송 된 이벤트에는 NULL 엔진이 있습니다.
@@ -74,5 +74,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [이벤트 전송](../../extensibility/debugger/sending-events.md)

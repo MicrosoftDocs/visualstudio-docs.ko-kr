@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugFunctionObject2::CreateObject
 - CreateObject
 ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4cd5eb81972af35b84c688e34b8cbc285c4723c2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b75cd2fae72d0ce8901445c3271a955100391d75
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143144"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063567"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 지정 된 계산 플래그 설정 및 시간 제한 값을 사용 하는 개체를 만듭니다.
@@ -74,5 +74,5 @@ int CreateObject (
 ## <a name="remarks"></a>설명
  이 메서드를 호출 하 여 클래스의 인스턴스 또는 생성자를 필요로 하는 기타 복합 형식 (매개 변수)을 나타내는 개체를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd8c6dbb4eddfcffa779b70b17819bf5e92c0c45
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851311"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096969"
 ---
 # <a name="event-descriptions"></a>이벤트 설명
 각 이벤트 유형에는 특정 목적이 있습니다.
@@ -46,5 +46,5 @@ ms.locfileid: "99851311"
 |스레드 이름 변경 이벤트|사용자가 스레드 이름을 변경할 때 전송 됩니다.|
 |프로그램 이름 변경 이벤트|사용자가 프로그램 이름을 변경할 때 전송 됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [이벤트 전송](../../extensibility/debugger/sending-events.md)

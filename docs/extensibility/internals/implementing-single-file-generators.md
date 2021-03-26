@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], extensibility
 - projects [Visual Studio SDK], managed custom tools
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e353101c7932e06042b451360b7ca040adcb303f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a46ebce9a554c90e23f9ce5f29680fc3ef86b337
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839952"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085834"
 ---
 # <a name="implementing-single-file-generators"></a>단일 파일 생성기 구현
 사용자 지정 도구 (단일 파일 생성기 라고도 함)는 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 에서 및 프로젝트 시스템을 확장 하는 데 사용할 수 있습니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 사용자 지정 도구는 인터페이스를 구현 하는 COM 구성 요소입니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> . 사용자 지정 도구는이 인터페이스를 사용 하 여 단일 입력 파일을 단일 출력 파일로 변환 합니다. 변환 결과는 소스 코드 또는 유용한 기타 출력 일 수 있습니다. 사용자 지정 도구에서 생성 된 코드 파일의 두 가지 예는 비주얼 디자이너의 변경 내용에 대 한 응답으로 생성 된 코드와 WSDL (웹 서비스 기술 언어)을 사용 하 여 생성 된 파일입니다.
@@ -30,5 +30,5 @@ ms.locfileid: "99839952"
 
  사용자 지정 도구는 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> . 필요에 따라 사용자 지정 도구는 인터페이스를 지원 <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite> 하 여 입력 파일이 아닌 소스에서 정보를 검색 합니다. 어떤 경우 든 사용자 지정 도구를 사용 하려면 먼저 시스템 또는 로컬 레지스트리에 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 사용자 지정 도구를 등록 하는 방법에 대 한 자세한 내용은 [단일 파일 생성기 등록](../../extensibility/internals/registering-single-file-generators.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [비주얼 디자이너에 형식 노출](../../extensibility/internals/exposing-types-to-visual-designers.md)

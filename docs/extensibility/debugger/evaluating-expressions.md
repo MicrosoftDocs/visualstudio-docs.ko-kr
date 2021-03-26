@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79d27c01035f83b506ffad4ec138c8c68f98d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840602"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097034"
 ---
 # <a name="evaluate-expressions"></a>식 계산
 식은 **자동**, **조사식**, **간략 한 조사식** 또는 **직접 실행** 창에서 전달 된 문자열에서 생성 됩니다. 식이 계산 될 때 변수 또는 인수의 이름 및 형식과 해당 값이 포함 된 인쇄 가능한 문자열을 생성 합니다. 이 문자열은 해당 IDE 창에 표시 됩니다.
@@ -33,7 +33,7 @@ ms.locfileid: "99840602"
 
  식 계산을 사용 하도록 설정 하려면 DE가 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 및 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) 인터페이스를 구현 해야 합니다. 동기 및 비동기를 모두 계산 하려면 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 메서드를 구현 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [스택 프레임](../../extensibility/debugger/stack-frames.md)
 - [식 계산 컨텍스트](../../extensibility/debugger/expression-evaluation-context.md)
 - [작업 디버그](../../extensibility/debugger/debugging-tasks.md)

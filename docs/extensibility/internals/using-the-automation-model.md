@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK], automation model
 ms.assetid: 0c7f7889-fbfb-4b19-804f-b742138baecd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e856153462819599124f3dce2e16c6de9f01cdfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a25936e0be16231bbe315a2bd29a0d495115f392
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085808"
 ---
 # <a name="using-the-automation-model"></a>자동화 모델 사용
 VSPackage를 automation에 연결한 후에는 <xref:EnvDTE.DTEClass.GetObject%2A> 개체에 대해 메서드를 호출 하 여 <xref:EnvDTE._DTE> 검색할 개체를 나타내는 문자열을 전달 하 여 속성 및 메서드를 가져올 수 있습니다.
@@ -73,5 +73,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:EnvDTE.DTEClass.GetObject%2A>

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::Evaluate method
 ms.assetid: 29349ea3-d5c1-4135-aa76-ced073ab9683
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d15cdb09de32edcdf6159567db12e05cffd06e7e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b9770878040422d96c31fab8d57df468af614e8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160110"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063593"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 함수를 호출 하 고 결과 값을 개체로 반환 합니다.
@@ -65,5 +65,5 @@ int Evaluate(
 ## <a name="remarks"></a>설명
  이 메서드는 [Idebugfunctionobject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 개체로 표시 되는 함수에 대 한 호출을 설정 하 고 실행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

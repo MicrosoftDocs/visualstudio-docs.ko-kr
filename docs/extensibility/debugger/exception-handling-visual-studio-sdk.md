@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], exception handling
 ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8db28a7196551e2f1c8236d71e0f2291fce934
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f74337964b73683a71b180699da626121a4d3067
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921516"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097021"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>예외 처리 (Visual Studio SDK)
 다음에서는 예외가 throw 될 때 발생 하는 프로세스에 대해 설명 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "99921516"
 
     - 메서드가 S_OK 반환 하는 경우 [IDebugExceptionEvent2::P assToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)를 호출 합니다.
 
-         또는
+         -또는-
 
          메서드가 S_FALSE 반환 하는 경우 디버깅 중인 프로그램에 예외를 처리할 수 있는 두 번째 기회가 제공 됩니다.
 
@@ -50,5 +50,5 @@ ms.locfileid: "99921516"
 
 10. 메서드가 S_OK 반환 하는 경우는를 호출 `IDebugExceptionEvent2::PassToDebuggee` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

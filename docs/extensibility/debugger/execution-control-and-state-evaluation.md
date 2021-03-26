@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], execution control
 - expression evaluation, control of execution
 ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 187663390c1d3625e74db6cf397a304f5d699189
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 598332ec1e9e1cb270360822ca32792b9a53f5c1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921528"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096956"
 ---
 # <a name="execution-control-and-state-evaluation"></a>실행 제어 및 상태 평가
 응용 프로그램을 디버깅 하려면 함수를 한 단계씩 실행 하 고 중단점에서 중지 하 고 실행을 계속 하는 등의 실행 제어 기능을 구현 해야 합니다. Visual Studio 디버깅은 디버거 구성 요소 간에 전송 된 이벤트에 대 한 실행 제어를 기반으로 합니다.

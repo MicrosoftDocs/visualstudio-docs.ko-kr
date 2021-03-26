@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetSize
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94207c8e14306049068e838971aa778290de2ba6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: de1d7a544987b3a70e3798a77b55d81f5a43e1fa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154368"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066960"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 이 디스어셈블리 스트림의 명령에 있는 크기를 가져옵니다.
@@ -50,7 +50,7 @@ int GetSize(
 ## <a name="remarks"></a>설명
  이 메서드에서 반환 된 값을 사용 하 여 [Disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 구조의 배열을 할당 한 다음이를 [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 메서드로 전달할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [읽기](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

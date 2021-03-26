@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be2e5e168b232f120a22e7e4b39352008fee7418
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34c69e11c57574c07a8ecb40480842834a8ee53f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840758"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097242"
 ---
 # <a name="document-context"></a>문서 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버그할 때 *문서 컨텍스트* 는 다음과 같습니다.
@@ -28,7 +28,7 @@ ms.locfileid: "99840758"
 
 - 는 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) 인터페이스에 의해 구현 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [코드 컨텍스트](../../extensibility/debugger/code-context.md)
 - [기호 공급자](../../extensibility/debugger/symbol-provider.md)
 - [기호 공급자 인터페이스](../../extensibility/debugger/reference/symbol-provider-interfaces.md)

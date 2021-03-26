@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccIsMultiCheckoutEnabled function
 ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648b68f1575e31e81b6f12ca09abcb8e7305a985
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f3ff3943524c37d2150adb0607f62be9b8ddef95
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220562"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063801"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 함수
 이 함수는 소스 제어 플러그 인에서 파일에 대해 여러 체크 아웃을 허용 하는지 여부를 확인 합니다.
@@ -44,7 +44,7 @@ SCCRTN SccIsMultiCheckoutEnabled(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|확인이 완료 되었습니다.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|일반 오류입니다.|
@@ -52,5 +52,5 @@ SCCRTN SccIsMultiCheckoutEnabled(
 ## <a name="remarks"></a>설명
  IDE는 두 명 이상의 사용자가 동시에 파일을 체크 아웃할 수 있는지 여부를 확인 하는 두 가지 검사를 수행 합니다. 먼저 원본 제어 시스템에서 여러 체크 아웃을 지원 해야 합니다. 소스 제어 플러그 인은를 지정 하 여 초기화 하는 동안이 기능을 지정할 수 있습니다 `SCC_CAP_MULTICHECKOUT` . 그런 다음 두 번째 검사로, IDE는이 함수를 호출 하 여 현재 프로젝트가 여러 체크 아웃을 지원 하는지 여부를 확인 합니다. 선택한 프로젝트에 대해 여러 체크 아웃이 지원 되 면 플러그 인에서 성공 코드를 반환 하 고 `pbMultiCheckout` 를 0이 아닌 값 ( `TRUE` ) 또는로 설정 `FALSE` 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

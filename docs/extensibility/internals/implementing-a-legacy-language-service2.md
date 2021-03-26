@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bdb0d05faaa139b808d8d117125c5208da470e9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839965"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085821"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>레거시 언어 서비스 구현 2
 MPF (관리 되는 패키지 프레임 워크)를 사용 하 여 언어 서비스를 구현 하려면 클래스에서 클래스를 파생 시키고 <xref:Microsoft.VisualStudio.Package.LanguageService> 다음 추상 메서드 및 속성을 구현 해야 합니다.
@@ -360,7 +360,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [레거시 언어 서비스 개요](../../extensibility/internals/legacy-language-service-overview.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)

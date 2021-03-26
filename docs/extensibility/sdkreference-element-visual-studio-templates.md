@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ea070cf466782a1da09e1ba48d08a6965fd041a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941566"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063710"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 요소(Visual Studio 템플릿)
 항목 템플릿에서 SDK 참조를 사용하도록 지정합니다.
@@ -62,7 +62,7 @@ ms.locfileid: "99941566"
 ...
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [References 요소(Visual Studio 템플릿)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 요소(Visual Studio 템플릿)](../extensibility/reference-element-visual-studio-templates.md)
 - [프로젝트 템플릿 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)

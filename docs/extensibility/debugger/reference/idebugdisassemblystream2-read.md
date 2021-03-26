@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Read
 ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b963bddc9d1ee04a6955b1110d73934b30196b21
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bcabd0cc42f013b579ee32deeb33d68cd9d45f5d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160201"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066921"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 디스어셈블리 스트림의 현재 위치에서 시작 하는 명령을 읽습니다.
@@ -69,7 +69,7 @@ int Read(
 
  `DSF_OPERANDS_SYMBOLS`매개 변수의 플래그에 플래그를 추가 `DSF_OPERANDS` `dwFields` 하 여 명령을 디스어셈블 할 때 기호 이름을 사용 해야 함을 나타낼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

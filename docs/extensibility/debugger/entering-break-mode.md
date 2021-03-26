@@ -8,17 +8,17 @@ helpviewer_keywords:
 - break mode
 - debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ec09994f6998f87daafc690b1908b31e54706b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e8af8aa2765e199e8e278982669f68b3019b6c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840654"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097216"
 ---
 # <a name="enter-break-mode"></a>중단 모드로 전환
 다음 정보는 함수를 한 단계씩 실행 한 후 중단점에 커서를 포함 하는 소스 코드 줄을 실행 하거나 중단점까지 실행 한 후에 발생 하는 프로세스에 대해 설명 합니다.
@@ -43,5 +43,5 @@ ms.locfileid: "99840654"
 
     - [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) 를 통해 메모리 정보 가져오기
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

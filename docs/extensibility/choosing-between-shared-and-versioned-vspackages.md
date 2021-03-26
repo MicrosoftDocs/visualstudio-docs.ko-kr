@@ -9,17 +9,17 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 257158ec3c8d4364e1aa52133c457e24fd98cff3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078242"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>공유 및 버전 관리 Vspackage 중에서 선택
 서로 다른 버전의 Visual Studio가 동일한 컴퓨터에 공존할 수 있습니다. Vspackage는 모든 혼합 버전을 지원할 수 있습니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
@@ -63,6 +63,6 @@ ms.locfileid: "99949638"
 
   VSPackage 이진 파일에 대 한 이진 호환성 계획 외에도 솔루션 및 프로젝트 파일 형식을 고려해 야 합니다. VSPackage에서 새 프로젝트 형식을 만드는 경우 한 버전 또는 여러 버전의에서 실행할 수 있는지 여부를 결정 해야 합니다 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . 자세한 내용은 [사용자 지정 프로젝트 업그레이드](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Windows Installer를 사용 하 여 Vspackage 설치](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [구성 요소 관리](../extensibility/internals/component-management.md)
