@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumInterfacesImplemented method
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5f90bf6efc3a34e4f6b9f60ef5bdadb0640f495b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1763cbcd0a1c61150a054752c94a42f10127251a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164320"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088616"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 이 클래스에서 구현 하는 인터페이스에 대 한 열거자를 만듭니다.
@@ -50,6 +50,6 @@ int EnumInterfacesImplemented(
 ## <a name="remarks"></a>설명
  열거형의 각 요소는 인터페이스를 설명 하는 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 개체입니다. 비관리 코드는 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] 인터페이스를 불연속 엔터티로 사용 하지 않으므로이 메서드는 항상 비관리 코드에 대해 null 값을 반환 [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)] 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

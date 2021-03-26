@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01f159b9f07cd0d530039e0d5707cf38d51610ef
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934366"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097592"
 ---
 # <a name="add-icons-to-menu-commands"></a>메뉴 명령에 아이콘 추가
 메뉴와 도구 모음 모두에 명령이 표시 될 수 있습니다. 도구 모음에서 일반적으로 명령을 사용 하 여 공간을 절약 하기 위해 명령을 표시 하는 것이 일반적입니다. 명령에는 일반적으로 아이콘과 텍스트가 모두 표시 됩니다.
@@ -83,6 +83,6 @@ ms.locfileid: "99934366"
 
 8. 아이콘을 테스트 합니다. 프로젝트를 빌드하고 디버깅을 시작합니다. 실험적 인스턴스에서 명령을 찾습니다. 추가한 아이콘이 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
 - [VSCT XML 스키마 참조](../extensibility/vsct-xml-schema-reference.md)

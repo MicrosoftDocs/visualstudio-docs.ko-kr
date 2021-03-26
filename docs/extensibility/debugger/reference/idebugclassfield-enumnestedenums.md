@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedEnums method
 ms.assetid: 90fd0cef-9145-4de6-91d4-6c881df39d6e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9412d487dbb9617bb3bae91bd225473e67e2dfdc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b2e0d908c88b82e9ed706ab919050e1f4943df0c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164242"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088564"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 이 클래스의 중첩 된 열거자에 대 한 열거자를 만듭니다.
@@ -60,7 +60,7 @@ class RootClass {
 
 `EnumNestedEnums`메서드는 열거형을 나타내는 [Idebugenumfield](../../../extensibility/debugger/reference/idebugenumfield.md) 개체 하나를 포함 하는 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 개체를 반환 합니다 `NestedEnum` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

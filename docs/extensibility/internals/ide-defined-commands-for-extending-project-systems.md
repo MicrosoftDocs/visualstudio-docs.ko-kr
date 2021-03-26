@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a08d60a52ed970781ceafdb15d0d5c64440f0cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fedca7081c531fef257e20e64426f8b35e88e87
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968075"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086003"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>프로젝트 시스템 확장을 위한 IDE 정의 명령
 프로젝트 시스템을 확장 하려는 경우 IDE에서 제공 하는 명령 및 명령 그룹을 사용할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -71,7 +71,7 @@ ms.locfileid: "99968075"
 |IDG_VS_CTXT_PROJECT_TRANSFER|잘라내기, 복사 및 붙여넣기 작업을 위한 명령입니다.|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|**프로젝트 속성** 대화 상자에 대 한 액세스를 제공 하는 명령입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [다시 사용할 수 있는 단추 그룹 만들기](../../extensibility/creating-reusable-groups-of-buttons.md)

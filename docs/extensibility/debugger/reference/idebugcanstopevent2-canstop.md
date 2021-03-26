@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCanStopEvent2::CanStop
 ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38b4d528ae1aa5a89853dc4873a9c07aa051a14c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bc536b9a4f0bb0ce41e48c16cc85a53db11732b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102173638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088603"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
 현재 코드 위치에서 중지할지 아니면 실행을 계속할지를 디버그 엔진에 알립니다 (DE).
@@ -52,7 +52,7 @@ int CanStop (
 
  DE가 중지 되 면 중지 이유를 설명 하는 이벤트를 보냅니다. 일반적으로 전송 되는 이벤트 두 개, [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 인터페이스로 표시 되는 사용자 또는 신호 중단, [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 인터페이스로 표시 되는 중단점 이벤트 등이 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

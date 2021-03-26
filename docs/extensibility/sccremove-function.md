@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d80daf83458c9e05ef0a081348080579e7fafef4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221420"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073874"
 ---
 # <a name="sccremove-function"></a>SccRemove 함수
 이 함수는 소스 제어 시스템에서 파일을 삭제 합니다.
@@ -69,7 +69,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|제거 했습니다.|
 |SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 제어에서 관리 되지 않습니다.|
@@ -83,5 +83,5 @@ SCCRTN SccRemove(
 ## <a name="remarks"></a>설명
  이 함수는 소스 제어 시스템에서 파일을 제거 하지만 사용자의 로컬 하드 드라이브에서 파일을 삭제 하지는 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - breakpoints, deleting
 - debugging [Debugging SDK], deleting breakpoints
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ebd2922f48a53c371f4930e5de1fd86ed6852a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1d8e0d68f32ece7760805c05fd281b0e62a70003
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862177"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097281"
 ---
 # <a name="deleting-a-breakpoint"></a>중단점 삭제
 다음은 보류 중인 중단점을 삭제 하는 프로세스에 대 한 설명입니다.
@@ -29,5 +29,5 @@ ms.locfileid: "99862177"
 > [!NOTE]
 > [IDebugBoundBreakpoint2::D e)](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)를 호출 하 여 단일 바인딩된 중단점을 삭제할 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [디버거 이벤트 호출](../../extensibility/debugger/calling-debugger-events.md)

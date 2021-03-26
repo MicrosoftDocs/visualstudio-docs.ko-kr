@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetTypeInfo method
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e908fb4eec16ec9891eda5127c753616419fc176
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9ea120cb58faa28bbb8168800ef6e35f707d879f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151872"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073705"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 이 메서드는 기호 또는 형식에 대 한 형식 독립적 정보를 가져옵니다.
@@ -50,7 +50,7 @@ int GetTypeInfo(
 ## <a name="remarks"></a>설명
  형식 독립적 정보에는 AppDomain, 모듈 및 기호가 포함 된 클래스 등이 포함 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

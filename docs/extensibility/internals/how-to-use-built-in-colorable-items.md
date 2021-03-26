@@ -8,17 +8,17 @@ helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 253c108fe83eaf44f945f546bd64dd6529de1dd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898320"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086081"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>방법: 기본 제공 색 항목 사용
 기본 제공 색 항목을 사용 하기 전에 먼저 사용자 지정 색 항목을 제공 하지 않는 IDE (통합 개발 환경)에 신호를 보내야 합니다 .이 경우에는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 개체입니다. 언어 서비스의 레지스트리 항목을 설정 하 여이 작업을 수행 합니다.
@@ -34,7 +34,7 @@ ms.locfileid: "99898320"
    > [!NOTE]
    > 사용자 지정 색 항목을 제공 하는 경우에는이 레지스트리 항목을 설정 하지 마십시오. 자세한 내용은 [Custom 색 items 항목](../../extensibility/internals/custom-colorable-items.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 편집기의 구문 색 지정](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [레거시 언어 서비스의 구문 색 지정](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [구문 색 지정 구현](../../extensibility/internals/implementing-syntax-coloring.md)

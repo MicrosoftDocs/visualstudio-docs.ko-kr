@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f28533ad07bc7626f1576ef4422d6d20725b9450
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 218ffea2d35f34768550938e8bdc4c087bb3a2cf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227309"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083546"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 개체에서 지정 된 바이트 수를 검색 합니다.
@@ -60,6 +60,6 @@ int GetData(
 ## <a name="remarks"></a>설명
  검색 프로세스에서 바이트를 건너뛸 방법이 없으므로이 메서드를 사용 하는 것이 가장 좋습니다. 모든 데이터 바이트를 로컬 배열로 검색 하는 것입니다. 이 경우 매개 변수는 `dataSize` [getsize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) 메서드에서 반환 되는 값 이어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

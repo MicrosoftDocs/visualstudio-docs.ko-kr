@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadNameChangedEvent2
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 878c1196c3d2343924be316725be35f1b6f01ae6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 28d61260b1f92df82b365d7aa8464b084681500e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227348"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083624"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 이 인터페이스는 디버깅 중인 프로그램에서 스레드 이름이 변경 될 때 디버그 엔진 (DE)에서 세션 디버그 관리자 (SDM)로 보냅니다.
@@ -42,7 +42,7 @@ IDebugThreadNameChangedEvent2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

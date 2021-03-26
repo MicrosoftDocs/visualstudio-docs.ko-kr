@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565f73b9809f3f18fe6828a19860a46b14ff07e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f773148f11a115ee82c8ee84a8d4668001908000
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839469"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095201"
 ---
 # <a name="managing-configuration-options"></a>구성 옵션 관리
 새 프로젝트 형식을 만들 때 프로젝트를 빌드하고, 패키지 하 고, 배포 하 고, 실행 하는 방법을 결정 하는 프로젝트 및 솔루션 구성 설정을 관리 해야 합니다. 다음 항목에서는 프로젝트 및 솔루션 구성에 대해 설명 합니다.

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 532568dc0e4d181dfe3de56151096565bf9ff771
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b587af698cf7f044c02baab1a8207be1457d6cfd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905982"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086224"
 ---
 # <a name="automation-support-for-options-pages"></a>옵션 페이지에 대 한 자동화 지원
 Vspackage는의 **도구** 메뉴 (**도구 옵션** 페이지)에 사용자 지정 **옵션** 대화 상자를 제공 하 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 고 자동화 모델에 사용할 수 있도록 설정할 수 있습니다.
@@ -38,5 +38,5 @@ Vspackage는의 **도구** 메뉴 (**도구 옵션** 페이지)에 사용자 지
 
    사용자 지정 **도구 옵션** 페이지를 구현 하는 샘플을 보려면 고가 나 [진한 샘플](https://github.com/Microsoft/VSSDK-Extensibility-Samples)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 개체 노출](../../extensibility/internals/exposing-project-objects.md)

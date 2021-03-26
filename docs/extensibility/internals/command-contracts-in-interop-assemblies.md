@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command handling with interop assemblies, command contracts
 - interop assemblies, command contracts
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ed9435f4f0618ee0c0f4bc47cdb21e2cbf92f77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36c757faacb7fe3193f9acbbd040468f66b0623a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940128"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086055"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>Interop 어셈블리의 명령 계약
 인터페이스를 통해 명령을 처리 하는 기본 계약은 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 환경에서 메서드를 호출 하 여 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 명령이 지원 되는지 여부를 확인 하 고, 지원 되는 경우 상태와 텍스트를 확인 하는 것입니다. 그런 다음 환경에서 메서드를 호출 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 하 여 명령을 실행 합니다.
@@ -29,7 +29,7 @@ ms.locfileid: "99940128"
 
  명령이 계층 창 내에서 작동 해야 하는 경우 인터페이스를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 사용 해야 합니다. 인터페이스에는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 유사한 메서드와와 유사한 계약이 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage의 명령 라우팅](../../extensibility/internals/command-routing-in-vspackages.md)
 - [명령 구현](../../extensibility/internals/command-implementation.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41f070d61e547724b3067a9f4a1980d658fc30be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890333"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097294"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>특정 명령에 사용 되는 bitflags
 하나 이상의 비트를 단일 값으로 설정 하 여 소스 제어 플러그 인 API에서 여러 함수의 동작을 수정할 수 있습니다. 이러한 값을 bitflags 라고 합니다. 소스 제어 플러그 인 API에서 사용 하는 다양 한 bitflag는 여기에서 자세히 설명 하며이를 사용 하는 함수 별로 그룹화 되어 있습니다.
@@ -107,5 +107,5 @@ ms.locfileid: "99890333"
 |`SCC_OPT_SCO_NO`|0L|기본 플러그 인 UI를 체크 아웃 하는 확인 작업 디렉터리가 설정 되었습니다.|`SCC_OPT_SCCCHECKOUTONLY`|
 |`SCC_OPT_SCO_YES`|1L|플러그 인 UI를 체크 아웃 하지 않고 작업 디렉터리가 없습니다.|`SCC_OPT_SCCCHECKOUTONLY`|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)

@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937103"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097554"
 ---
 # <a name="add-search-to-a-tool-window"></a>도구 창에 검색 추가
 확장에서 도구 창을 만들거나 업데이트 하는 경우 Visual Studio의 다른 위치에 표시 되는 것과 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음과 같은 기능이 포함 됩니다.
@@ -67,7 +67,7 @@ ms.locfileid: "99937103"
     </StackPanel>
     ```
 
-3. *TestSearchControl.xaml.cs* 파일에서 다음 using 지시문을 추가 합니다.
+3. *Testsearchcontrol. .xaml* 파일에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using System.Text;
@@ -90,7 +90,7 @@ ms.locfileid: "99937103"
 
 ## <a name="to-add-a-search-box-to-the-tool-window"></a>도구 창에 검색 상자를 추가 하려면
 
-1. *TestSearch.cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 코드는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> get 접근자가를 반환 하도록 속성을 재정의 합니다 `true` .
+1. *Testsearch .cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 코드는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> get 접근자가를 반환 하도록 속성을 재정의 합니다 `true` .
 
      검색을 사용 하려면 속성을 재정의 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> . <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>클래스는을 구현 하 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> 고 검색을 사용 하지 않는 기본 구현을 제공 합니다.
 
@@ -110,7 +110,7 @@ ms.locfileid: "99937103"
 ## <a name="to-add-the-search-implementation"></a>검색 구현을 추가 하려면
  이전 절차에서와 같이에서 검색을 사용 하도록 설정 하면 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 도구 창이 검색 호스트를 만듭니다. 이 호스트는 항상 백그라운드 스레드에서 발생 하는 검색 프로세스를 설정 하 고 관리 합니다. 클래스는 검색 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 호스트의 생성과 검색을 설정 하는 작업을 관리 하기 때문에 검색 작업만 만들고 검색 방법을 제공 해야 합니다. 검색 프로세스는 백그라운드 스레드에서 발생 하며 도구 창 컨트롤에 대 한 호출은 UI 스레드에서 발생 합니다. 따라서 컨트롤을 처리 하기 위해 수행 하는 모든 호출을 관리 하려면 [Threadhelper. Invoke *](https://msdn.microsoft.com/data/ee197798(v=vs.85)) 메서드를 사용 해야 합니다.
 
-1. *TestSearch.cs* 파일에서 다음 지시문을 추가 합니다 `using` .
+1. *Testsearch .cs* 파일에서 다음 지시문을 추가 합니다 `using` .
 
     ```csharp
     using System;
@@ -241,7 +241,7 @@ ms.locfileid: "99937103"
 ## <a name="to-customize-the-search-behavior"></a>검색 동작을 사용자 지정 하려면
  검색 설정을 변경 하 여 검색 컨트롤이 표시 되는 방법과 검색을 수행 하는 방법을 다양 하 게 변경할 수 있습니다. 예를 들어 워터 마크 (검색 상자에 표시 되는 기본 텍스트), 검색 컨트롤의 최소 및 최대 너비 및 진행률 표시줄을 표시할지 여부를 변경할 수 있습니다. 검색 결과가 표시 되기 시작 하는 시점 (주문형 또는 인스턴트 검색)과 최근 검색 된 용어 목록을 표시할지 여부를 변경할 수도 있습니다. 전체 설정 목록은 클래스에서 찾을 수 있습니다 <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> .
 
-1. * TestSearch.cs * 파일에서 다음 코드를 클래스에 추가 `TestSearch` 합니다. 이 코드는 요청 시 검색 대신 즉시 검색을 사용 하도록 설정 합니다. 즉, 사용자가 **ENTER 키** 를 클릭할 필요가 없습니다. 이 코드는 `ProvideSearchSettings` `TestSearch` 기본 설정을 변경 하는 데 필요한 클래스의 메서드를 재정의 합니다.
+1. * TestSearch .cs * 파일에서 다음 코드를 클래스에 추가 합니다. `TestSearch` 이 코드는 요청 시 검색 대신 즉시 검색을 사용 하도록 설정 합니다. 즉, 사용자가 **ENTER 키** 를 클릭할 필요가 없습니다. 이 코드는 `ProvideSearchSettings` `TestSearch` 기본 설정을 변경 하는 데 필요한 클래스의 메서드를 재정의 합니다.
 
     ```csharp
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
@@ -288,7 +288,7 @@ ms.locfileid: "99937103"
 ## <a name="to-enable-users-to-refine-their-searches"></a>사용자가 검색을 구체화할 수 있도록 하려면
  **대/소문자 구분** 또는 **전체 단어 일치** 등의 옵션을 사용 하 여 사용자가 검색을 구체화할 수 있습니다. 옵션은 확인란과 같이 표시 되는 부울 이거나 단추로 표시 되는 명령입니다. 이 연습에서는 부울 옵션을 만듭니다.
 
-1. *TestSearch.cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 이 코드는 메서드를 재정의 합니다 `SearchOptionsEnum` .이 메서드를 사용 하면 검색 구현에서 지정 된 옵션의 설정 또는 해제 여부를 검색할 수 있습니다. 의 코드는 `SearchOptionsEnum` 대/소문자를 열거자와 일치 시키는 옵션을 추가 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> . 케이스를 일치 시키는 옵션도 속성으로 사용할 수 있습니다 `MatchCaseOption` .
+1. *Testsearch .cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 이 코드는 메서드를 재정의 합니다 `SearchOptionsEnum` .이 메서드를 사용 하면 검색 구현에서 지정 된 옵션의 설정 또는 해제 여부를 검색할 수 있습니다. 의 코드는 `SearchOptionsEnum` 대/소문자를 열거자와 일치 시키는 옵션을 추가 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> . 케이스를 일치 시키는 옵션도 속성으로 사용할 수 있습니다 `MatchCaseOption` .
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
@@ -341,7 +341,7 @@ ms.locfileid: "99937103"
 ## <a name="to-add-a-search-filter"></a>검색 필터를 추가 하려면
  사용자가 검색 대상 집합을 구체화할 수 있도록 하는 검색 필터를 추가할 수 있습니다. 예를 들어 파일 탐색기에서 가장 최근에 수정 된 날짜 및 파일 이름 확장명을 기준으로 파일을 필터링 할 수 있습니다. 이 연습에서는 짝수 줄에 대해서만 필터를 추가 합니다. 사용자가 해당 필터를 선택 하면 검색 호스트가 지정 하는 문자열을 검색 쿼리에 추가 합니다. 검색 메서드 내에서 이러한 문자열을 식별 하 고 그에 따라 검색 대상을 필터링 할 수 있습니다.
 
-1. *TestSearch.cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 이 코드는 `SearchFiltersEnum` <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> 짝수 줄만 표시 되도록를 지정 하는를 추가 하 여를 구현 합니다.
+1. *Testsearch .cs* 파일에서 다음 코드를 클래스에 추가 합니다 `TestSearch` . 이 코드는 `SearchFiltersEnum` <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> 짝수 줄만 표시 되도록를 지정 하는를 추가 하 여를 구현 합니다.
 
     ```csharp
     public override IVsEnumWindowSearchFilters SearchFiltersEnum
@@ -358,7 +358,7 @@ ms.locfileid: "99937103"
 
      이제 검색 컨트롤이 검색 필터를 표시 합니다 `Search even lines only` . 사용자가 필터를 선택 하면 `lines:"even"` 검색 상자에 문자열이 표시 됩니다. 다른 검색 조건은 필터와 동시에 표시 될 수 있습니다. 검색 문자열은 필터 앞, 필터 또는 양쪽 모두에 나타날 수 있습니다.
 
-2. *TestSearch.cs* 파일에서 클래스에 있는 클래스에 다음 메서드를 추가 합니다 `TestSearchTask` `TestSearch` . 이러한 메서드는 `OnStartSearch` 다음 단계에서 수정할 수 있는 메서드를 지원 합니다.
+2. *Testsearch .cs* 파일에서 클래스에 있는 클래스에 다음 메서드를 추가 `TestSearchTask` `TestSearch` 합니다. 이러한 메서드는 `OnStartSearch` 다음 단계에서 수정할 수 있는 메서드를 지원 합니다.
 
     ```csharp
     private string RemoveFromString(string origString, string stringToRemove)

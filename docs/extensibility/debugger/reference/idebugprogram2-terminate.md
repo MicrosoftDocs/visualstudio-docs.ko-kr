@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 880bf4e727d90c19cf11f42cc3020124235bb1e2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 404df2be6718ab691ec47081b6fd400a1ddc8891
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171985"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084469"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 프로그램을 종료 합니다.
@@ -46,6 +46,6 @@ int Terminate();
 
  이 메서드나 [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) 메서드는 일반적으로 모든 디버깅을 중지 하는 사용자에 대 한 응답으로 IDE에 의해 호출 됩니다. 이 메서드의 구현에서는 프로세스 내에서 프로그램을 종료 하는 것이 가장 좋습니다. 가능 하지 않은 경우에는이 프로세스에서 프로그램이 더 이상 실행 되지 않도록 방지 해야 합니다. `IDebugProcess2::Terminate`IDE에서 메서드를 호출한 경우 메서드가 호출 된 후 전체 프로세스가 종료 됩니다 `IDebugProgram2::Terminate` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88cc7d91ee8cd24daae278efdbfd35271412af40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941933"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097307"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>메뉴 항목에 바로 가기 키 바인딩
 사용자 지정 메뉴 명령에 바로 가기 키를 바인딩하려면 패키지에 대 한 *vsct* 파일에 항목을 추가 하면 됩니다. 이 항목에서는 사용자 지정 단추, 메뉴 항목 또는 도구 모음 명령에 바로 가기 키를 매핑하는 방법과 기본 편집기에서 키보드 매핑을 적용 하거나 사용자 지정 편집기로 제한 하는 방법에 대해 설명 합니다.
@@ -83,7 +83,7 @@ ms.locfileid: "99941933"
 
    사용자 지정 편집기 에서만 명령을 사용할 수 있도록 하려면 `editor` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 사용자 지정 편집기를 포함 하는 VSPackage를 만들 때 패키지 템플릿에서 생성 된 사용자 지정 편집기의 이름으로 특성을 설정 합니다. 이름 값을 찾으려면 `<Symbols>` `<GuidSymbol>` `name` 특성이 "."로 끝나는 노드에 대 한 섹션을 확인 합니다 `editorfactory` . 사용자 지정 편집기의 이름입니다.
 
-## <a name="example-1"></a>예제 1
+## <a name="example-1"></a>예 1
  이 예제에서는 바로 가기 **키 Ctrl** + **Alt** + **C** 를 `cmdidMyCommand` 이름이 인 패키지의 명령에 바인딩합니다 `MyPackage` .
 
 ```
@@ -100,12 +100,12 @@ ms.locfileid: "99941933"
 </CommandTable>
 ```
 
-## <a name="example-2"></a>예 2
+## <a name="example-2"></a>예제 2
  이 예제에서는 바로 가기 **키 Ctrl** + **B** 를 `cmdidBold` 라는 프로젝트의 명령에 바인딩합니다 `TestEditor` . 명령은 사용자 지정 편집기 에서만 사용할 수 있으며 다른 편집기에서는 사용할 수 없습니다.
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1d01c2ed91a5f4aad55c196dfb2e689aeea288a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934127"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086042"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 사용자 인터페이스 요소를 추가 하는 방법
 VSPackage 파일을 사용 하 여 메뉴, 도구 모음 및 도구 창과 같은 UI (사용자 인터페이스) 요소를 Visual Studio에 추가할 수 *있습니다.*
@@ -290,5 +290,5 @@ Vspackage는 [UsedCommands 요소](../../extensibility/usedcommands-element.md) 
 
 - 특정 UI 요소가 IDE에 표시 되도록 하려면 하나 이상의 인터페이스를 구현 하거나 일부 코드를 작성 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)

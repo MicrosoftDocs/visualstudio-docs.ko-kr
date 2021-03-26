@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d25430206129f0236661222b92cefdbe538a7ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67b3775509e330ad55a2531a9e42a7cca93c50a6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933572"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097502"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 패키지 분석
 VSIX 패키지는 visual Studio에서 확장을 분류 하 고 설치 하는 데 사용 하는 메타 데이터와 함께 하나 이상의 Visual Studio 확장을 포함 하는 *.vsix* 파일입니다. 이 메타 데이터는 VSIX 매니페스트와 *[Content_Types] .xml* 파일에 포함 되어 있습니다. VSIX 패키지에는 지역화 된 설정 텍스트를 제공 하기 위해 하나 이상의 *확장명 vsixlangpack* 파일이 포함 되어 있을 수 있으며, 종속성을 설치 하기 위한 추가 VSIX 패키지가 포함 될 수도 있습니다.

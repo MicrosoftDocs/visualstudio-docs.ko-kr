@@ -10,17 +10,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951539"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097619"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>도구 창에서 바로 가기 메뉴 추가
 이 연습에서는 도구 창에 바로 가기 메뉴를 배치 합니다. 바로 가기 메뉴는 사용자가 단추, 텍스트 상자 또는 창 배경을 마우스 오른쪽 단추로 클릭할 때 나타나는 메뉴입니다. 바로 가기 메뉴의 명령은 다른 메뉴 또는 도구 모음의 명령과 동일 하 게 동작 합니다. 바로 가기 메뉴를 지원 하려면 *. vsct* 파일에서 지정 하 고 마우스 오른쪽 단추 클릭에 대 한 응답으로 표시 합니다.
@@ -31,7 +31,7 @@ ms.locfileid: "99951539"
 
 또는 바로 가기 메뉴에서 Visual Studio 기능에 액세스 하지 않는 경우 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 사용자 정의 컨트롤에서 XAML 요소의 속성을 사용할 수 있습니다. 자세한 내용은 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)를 참조 하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>도구 창 바로 가기 메뉴 패키지 만들기
@@ -114,7 +114,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     </Buttons>
     ```
 
-5. *ShortcutMenuCommand.cs* 에서 명령 집합 GUID, 바로 가기 메뉴 및 메뉴 항목에 대 한 정의를 추가 합니다.
+5. *ShortcutMenuCommand* 에서 명령 집합 GUID, 바로 가기 메뉴 및 메뉴 항목에 대 한 정의를 추가 합니다.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -129,9 +129,9 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 ## <a name="implementing-the-shortcut-menu"></a>바로 가기 메뉴 구현
  이 섹션에서는 바로 가기 메뉴와 해당 명령을 구현 합니다.
 
-1. *ShortcutMenu.cs* 에서는 도구 창에서 메뉴 명령 서비스를 가져올 수 있지만 포함 하는 컨트롤은 사용할 수 없습니다. 다음 단계에서는 사용자 정의 컨트롤에서 메뉴 명령 서비스를 사용 하도록 설정 하는 방법을 보여 줍니다.
+1. *ShortcutMenu* 에서는 도구 창에서 메뉴 명령 서비스를 가져올 수 있지만 포함 하는 컨트롤은 사용할 수 없습니다. 다음 단계에서는 사용자 정의 컨트롤에서 메뉴 명령 서비스를 사용 하도록 설정 하는 방법을 보여 줍니다.
 
-2. *ShortcutMenu.cs* 에서 다음 using 지시문을 추가 합니다.
+2. *ShortcutMenu* 에서 다음 using 지시문을 추가 합니다.
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -159,7 +159,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     }
     ```
 
-5. *ShortcutMenuControl.xaml.cs* 에서 메뉴 명령 서비스에 대 한 전용 필드를 추가 하 고 메뉴 명령 서비스를 사용 하도록 컨트롤 생성자를 변경 합니다. 그런 다음 메뉴 명령 서비스를 사용 하 여 상황에 맞는 메뉴 명령을 추가 합니다. ShortcutMenuControl 생성자는 이제 다음 코드와 같습니다. 명령 처리기는 나중에 정의 됩니다.
+5. *ShortcutMenuControl* 에서 메뉴 명령 서비스에 대 한 전용 필드를 추가 하 고 메뉴 명령 서비스를 사용 하도록 컨트롤 생성자를 변경 합니다. 그런 다음 메뉴 명령 서비스를 사용 하 여 상황에 맞는 메뉴 명령을 추가 합니다. ShortcutMenuControl 생성자는 이제 다음 코드와 같습니다. 명령 처리기는 나중에 정의 됩니다.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -207,7 +207,7 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
     </UserControl>
     ```
 
-7. *ShortcutMenuControl.xaml.cs* 에서 이벤트 처리기에 대 한 스텁을 추가 합니다.
+7. *ShortcutMenuControl* 에서 이벤트 처리기에 대 한 스텁을 추가 합니다.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -278,6 +278,6 @@ Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설�
 
 4. 바로 가기 메뉴에서 색을 클릭 합니다. 도구 창의 배경색을 선택한 색으로 변경 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)
 - [서비스 사용 및 제공](../extensibility/using-and-providing-services.md)

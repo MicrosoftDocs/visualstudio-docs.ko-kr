@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e78e58eafebd06d1ce7c710a31ce295b49f26340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221368"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073822"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 함수
 이 함수는 소스 제어 관리 도구를 호출 합니다.
@@ -54,7 +54,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|소스 제어 관리 도구를 성공적으로 호출 했습니다.|
 |SCC_I_OPERATIONCANCELED|작업이 취소 되었습니다.|
@@ -71,7 +71,7 @@ SCCRTN SccRunScc(
 
  이 함수는 일반적으로 사용자가 **파일** **\<Source Control Server>**  ->  **소스 컨트롤** 메뉴에서 시작을 선택 하면 호출 됩니다. 레지스트리 항목을 설정 하 여이 **시작** 메뉴 옵션을 항상 사용 하지 않도록 설정 하거나 숨길 수 있습니다. 자세한 내용은 [방법: 소스 제어 플러그 인 설치](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 를 참조 하세요. 이 함수는 [Sccinitialize](../extensibility/sccinitialize-function.md) 가 기능 비트를 반환 하는 경우에만 호출 됩니다 `SCC_CAP_RUNSCC` (이 기능 및 기타 기능 비트에 대 한 자세한 내용은 [기능 플래그](../extensibility/capability-flags.md) 참조).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [방법: 소스 제어 플러그 인 설치](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [기능 플래그](../extensibility/capability-flags.md)

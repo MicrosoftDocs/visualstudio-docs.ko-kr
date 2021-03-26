@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf7b4fe19cdefe11b77de1418b16454089f45c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876162"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097515"
 ---
 # <a name="address-dpi-issues"></a>주소 DPI 문제
 장치 수가 늘어나고 "고해상도" 화면에 제공 됩니다. 일반적으로 이러한 화면에는 인치당 200 픽셀 (ppi)이 있습니다. 이러한 컴퓨터에서 응용 프로그램을 사용 하려면 장치에 대 한 일반적인 보기 거리에서 콘텐츠를 보는 데 필요한 요구에 맞게 콘텐츠를 확장 해야 합니다. 2014의 경우 고밀도 디스플레이의 기본 대상은 모바일 컴퓨팅 장치 (태블릿, clamshell 랩톱 및 휴대폰)입니다.

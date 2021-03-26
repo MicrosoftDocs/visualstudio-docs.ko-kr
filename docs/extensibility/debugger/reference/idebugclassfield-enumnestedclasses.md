@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87538db39df590fd3885f545e5442c7dafecb9a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 95f423b556263dc7ad634feaebda90d62eeeeb04
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164268"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088577"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 이 클래스에 중첩 된 클래스에 대 한 열거자를 만듭니다.
@@ -50,7 +50,7 @@ int EnumNestedClasses(
 ## <a name="remarks"></a>설명
 열거형의 각 요소는 중첩 된 클래스를 설명 하는 [Idebugclassfield](../../../extensibility/debugger/reference/idebugclassfield.md) 개체입니다.
 
-중첩 된 클래스는 다른 클래스 내에 정의 된 클래스입니다. 예를 들면 다음과 같습니다.
+중첩 된 클래스는 다른 클래스 내에 정의 된 클래스입니다. 예를 들어:
 
 ```
 class RootClass {
@@ -60,6 +60,6 @@ class RootClass {
 
 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 열거형은 클래스를 나타내는 개체를 하나 포함 합니다 `NestedClass` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

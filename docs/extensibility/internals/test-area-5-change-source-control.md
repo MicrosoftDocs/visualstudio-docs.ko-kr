@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], changing
 - source control plug-ins, changing source control
 ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88dcc8e86da43f330c50ea478aaee572c1c3a060
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44647781b8f7605a59fba5d9249b6a7165c0e27e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898134"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073406"
 ---
 # <a name="test-area-5-change-source-control"></a>테스트 영역 5: 소스 제어 변경
 이 소스 제어 플러그 인 테스트 영역에서는 소스 제어 **변경** 명령을 통해 소스 제어를 변경 하는 과정을 다룹니다.
@@ -74,5 +74,5 @@ ms.locfileid: "99898134"
 |**소스 제어 변경** 대화 상자를 닫지 않고 솔루션 다시 바인딩|1. 프로젝트를 만듭니다.<br />2.**파일**, **소스 제어**, **소스 제어에 선택한 프로젝트 추가** 를 사용 하 여 소스 제어에 솔루션을 추가 합니다.<br />3. **소스 제어 변경** 대화 상자를 엽니다.<br />4. 솔루션의 바인딩 해제 ( **소스 제어 변경** 대화 상자 닫기 안 함)<br />5. 솔루션에만 바인딩합니다.<br />6. **확인** 을 클릭 하 여 대화 상자를 닫습니다.<br />7. 솔루션 및 솔루션 항목을 확인 합니다 (있는 경우).|솔루션은 제어 된 상태로 유지 됩니다.<br /><br /> 프로젝트를 미제어 상태로 유지 합니다.|
 |동일한 디렉터리에 있는 경우에만 솔루션/프로젝트 다시 바인딩|1. 프로젝트를 만듭니다.<br />2.**파일**, **소스 제어**, **소스 제어에 선택한 프로젝트 추가** 를 사용 하 여 소스 제어에 프로젝트만 추가 합니다.<br />3. 솔루션을 닫습니다.<br />4. 둘 이상의 프로젝트를 사용 하 여 새 솔루션을 만듭니다.<br />5. 솔루션을 소스 제어에 추가 합니다.<br />6. 소스 제어에서 1 단계에서 만든 프로젝트를 추가 합니다.<br />7. 메시지가 표시 되 면 솔루션의 체크 아웃을 적용 합니다.<br />8. 전체 솔루션을 확인 합니다.<br />9. **소스 제어 변경** 대화 상자를 엽니다.<br />10.6 단계에서 추가한 프로젝트를 선택 하 고 **바인딩 해제** 를 클릭 합니다.<br />11. **확인** 을 클릭 하 여 대화 상자를 닫습니다.<br />12. 메시지가 표시 되 면 체크 아웃을 적용 합니다.<br />13. [ **소스 제어 변경** ] 대화 상자를 다시 엽니다.<br />14.6 단계에서 추가한 프로젝트를 선택 하 고 **바인딩** 을 클릭 합니다.<br />15. 원래 위치를 선택 합니다.|솔루션과 프로젝트는 계속 제어 됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

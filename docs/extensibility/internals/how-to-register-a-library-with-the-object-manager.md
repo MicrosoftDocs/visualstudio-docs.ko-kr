@@ -11,17 +11,17 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5f4e9805eec8fd5d0089f1b8348253523d9056f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b83b68af4c026c40aca7969068ad015a61d64321
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086068"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>방법: 개체 관리자를 사용 하 여 라이브러리 등록
 기호-검색 도구 (예: **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과**)를 사용 하 여 프로젝트 또는 외부 구성 요소에서 기호를 볼 수 있습니다. 기호에는 네임 스페이스, 클래스, 인터페이스, 메서드 및 기타 언어 요소가 포함 됩니다. 라이브러리는 이러한 기호를 추적 하 고 도구를 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 데이터로 채우는 개체 관리자에 게 노출 합니다.
@@ -166,7 +166,7 @@ ms.locfileid: "99925006"
 
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

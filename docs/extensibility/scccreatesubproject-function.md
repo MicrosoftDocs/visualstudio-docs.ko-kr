@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221615"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074004"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 함수
 이 함수는 인수로 지정 된 기존 부모 프로젝트 아래에 지정 된 이름을 가진 하위 프로젝트를 만듭니다 `lpParentProjPath` .
@@ -69,7 +69,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|하위 프로젝트를 만들었습니다.|
 |SCC_E_INITIALIZEFAILED|부모 프로젝트를 초기화할 수 없습니다.|
@@ -99,7 +99,7 @@ SCCRTN SccCreateSubProject(
 
  레지스트리 항목을 dword: 00000001로 설정 하면 Visual Studio에서는 이러한 새 함수를 사용 하려고 시도 하지 않으며, 소스 제어에 추가 하는 작업은 이전 버전의 Visual Studio와 동일 하 게 작동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
