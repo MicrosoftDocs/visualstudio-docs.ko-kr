@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b248556c8980c63422c20c160241af42fc6918b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a7cab5ad2572f775df8702f1d15d3bcf7db1ae8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886862"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069168"
 ---
 # <a name="web-projects"></a>웹 프로젝트
 웹 프로젝트 시스템은 웹 프로젝트를 만드는 프로젝트 시스템입니다. 웹 프로젝트를 사용 하 여 웹 응용 프로그램을 만듭니다. 또는와 같은 기존 프로그래밍 언어를 사용 하 여 웹 페이지를 프로그래밍 하 여 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 사용자의 정보를 수집 및 처리 하 고 데이터베이스에 저장 하는 등의 작업을 수행할 수 있습니다. 연결 된 코드를 포함 하는 웹 페이지를 스마트 웹 페이지 라고 합니다.

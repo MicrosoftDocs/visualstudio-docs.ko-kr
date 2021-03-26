@@ -11,17 +11,17 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a978986ed6ef32dbad3ad06eafcba11d7f4782ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92e755053d3519212c27fd2567610baf189db309
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962914"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069363"
 ---
 # <a name="solution-user-options-suo-file"></a>솔루션 사용자 옵션(.Suo) 파일
 솔루션 사용자 옵션 (.suo) 파일에는 사용자별 솔루션 옵션이 포함 되어 있습니다. 이 파일은 소스 코드 제어에 체크 인 되지 않아야 합니다.
@@ -38,6 +38,6 @@ ms.locfileid: "99962914"
 
  이러한 두 메서드인 `SaveUserOptions` 및는 `WriteUserOptions` 에 대 한 포인터를 전달 하 여 .suo 파일에 저장 되는 각 정보 스트림에 대해 재귀적으로 호출 됩니다 `IVsSolutionPersistence` . 이를 재귀적으로 호출 하 여 .suo 파일에 여러 스트림을 쓸 수 있도록 합니다. 이러한 방식으로 사용자 정보는 솔루션과 함께 유지 되며 다음에 솔루션을 열 때 해당 정보를 가지게 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [솔루션](../../extensibility/internals/solutions-overview.md)

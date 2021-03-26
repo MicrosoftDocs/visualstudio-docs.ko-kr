@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 452760974207c4ad30e18dd0c4917bcf7b7aa55d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5259914b238927a58a7297a8e9c0b6fcef0f04c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886836"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069103"
 ---
 # <a name="web-site-support-attributes"></a>웹 사이트 지원 특성
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트를 확장 하 여 웹 프로그래밍 언어에 대 한 지원을 제공할 수 있습니다. 언어는를 사용 하 여 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 이렇게 하면 언어를 선택할 때 **새 웹 사이트** 대화 상자에 프로젝트 템플릿이 표시 될 수 있습니다.
@@ -56,5 +56,5 @@ public class PythonPackage : Package, IOleComponent
 
  IVsIntellisenseProject 구현은 참조를 처리 하 고 코드를 포함 하는 웹 페이지가 요청 되었지만 캐시 되지 않을 때 언어 컴파일러를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [웹 사이트 지원](../../extensibility/internals/web-site-support.md)

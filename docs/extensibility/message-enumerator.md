@@ -8,17 +8,17 @@ helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00d6b3e27b87e4bac8cee196a60e7fc934f6187d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 113f9fe8470b718a219e967b41bc92ecab2cf3c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886745"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063996"
 ---
 # <a name="message-enumerator"></a>메시지 열거자
 다음 플래그는 함수에 사용 됩니다 `TEXTOUTPROC` .이 함수는 IDE에서 [Sccopenproject](../extensibility/sccopenproject-function.md) 를 호출할 때 제공 하는 콜백 함수입니다 (콜백 함수에 대 한 자세한 내용은 [lptextoutproc](../extensibility/lptextoutproc.md) 참조).
@@ -41,7 +41,7 @@ enum {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  콜백에서 반환 SCC_MSG_RTN_CANCEL 취소를 표시 합니다.
 
  계속 하려면 콜백에서 반환 SCC_MSG_RTN_OK.
@@ -60,6 +60,6 @@ enum {
 
  SCC_MSG_STOPCANCEL 취소 루프를 중지 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

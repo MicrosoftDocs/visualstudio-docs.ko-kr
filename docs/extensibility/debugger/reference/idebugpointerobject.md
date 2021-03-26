@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject interface
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5275116ae16c03c4784cda7f227c46f57681120
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: af6b8f6022a9363eb5391d6f0519603fa48668c2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169615"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087602"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102169615"
 
  이 인터페이스는 포인터 개체를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPointerObject : IDebugObject
@@ -41,7 +41,7 @@ IDebugPointerObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  [Idebugobject](../../../extensibility/debugger/reference/idebugobject.md)에서 상속 된 메서드 외에도 인터페이스는 `IDebugPointerObject` 다음 메서드를 노출 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|인터페이스가 가리키는 개체를 가져옵니다.|
 |[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|인터페이스가 일련의 연속 바이트로 가리키는 값을 가져옵니다.|
@@ -57,6 +57,6 @@ IDebugPointerObject : IDebugObject
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Expression Evaluation Interfaces](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

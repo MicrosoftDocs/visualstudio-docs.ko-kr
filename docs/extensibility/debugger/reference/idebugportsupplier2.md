@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bd28e261c9c74601bd88f2d84e1296a1ed508f37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172041"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072028"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 이 인터페이스는 SDM (세션 디버그 관리자)에 대 한 포트를 제공 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -33,7 +33,7 @@ IDebugPortSupplier2 : IUnknown
 사용자 지정 포트 공급자는이 인터페이스를 구현 하 여 포트 공급자를 나타냅니다.
 
 ## <a name="notes-for-callers"></a>호출자 참고 사항
-포트 공급자의에 대 한 호출은이 인터페이스를 반환 합니다 .이 인터페이스는이 인터페이스를 `CoCreateInstance` `GUID` 가져오는 일반적인 방법입니다. 예를 들면 다음과 같습니다.
+포트 공급자의에 대 한 호출은이 인터페이스를 반환 합니다 .이 인터페이스는이 인터페이스를 `CoCreateInstance` `GUID` 가져오는 일반적인 방법입니다. 예를 들어:
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -61,7 +61,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 다음 표에서는의 메서드를 보여 줍니다 `IDebugPortSupplier2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|포트 공급자 이름을 가져옵니다.|
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|포트 공급자 식별자를 가져옵니다.|
@@ -81,7 +81,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 
 어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

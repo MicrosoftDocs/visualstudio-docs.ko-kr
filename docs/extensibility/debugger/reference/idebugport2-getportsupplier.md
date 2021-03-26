@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortSupplier
 ms.assetid: 7a7b0615-df6b-4726-ab35-39dfa1ebed8f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f2bf426b59f835c9b450751bb06b779d657ac807
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dde5dc8545926aa74f7e2bc70df073f5f18952ce
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087368"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 이 포트에 대 한 포트 공급자를 가져옵니다.
@@ -47,6 +47,6 @@ int GetPortSupplier(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

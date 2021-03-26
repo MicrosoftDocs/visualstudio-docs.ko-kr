@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetParent
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ae5557734ab59a2e71a67404a50519d72ca1ec0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ef12171d338802b585818954858f5af4d723a34c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166829"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064841"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 속성의 부모 속성을 가져옵니다.
@@ -47,5 +47,5 @@ int GetParent (
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다. 부모가 없으면 `S_GETPARENT_NO_PARENT`을 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

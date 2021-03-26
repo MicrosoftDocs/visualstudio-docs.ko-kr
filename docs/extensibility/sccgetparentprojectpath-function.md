@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220614"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063983"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 함수
 이 함수는 지정 된 프로젝트의 부모 프로젝트 경로를 결정 합니다. 이 함수는 사용자가 Visual Studio 프로젝트를 소스 제어에 추가할 때 호출 됩니다.
@@ -64,7 +64,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|부모 프로젝트 경로를 가져왔습니다.|
 |SCC_E_INITIALIZEFAILED|프로젝트를 초기화할 수 없습니다.|
@@ -99,7 +99,7 @@ SCCRTN SccGetParentProjectPath(
 
  레지스트리 항목을 dword: 00000001로 설정 하면 Visual Studio에서는 이러한 새 함수를 사용 하려고 시도 하지 않으며, 소스 제어에 추가 하는 작업은 이전 버전의 Visual Studio와 동일 하 게 작동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

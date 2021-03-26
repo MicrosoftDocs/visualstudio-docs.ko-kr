@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7335e3c5b15365680d70486f5f8ec8d19e90af4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82afa3bfee446ab5bd214fd5ac58dbfac9523467
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846493"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069324"
 ---
 # <a name="source-control-design-decisions"></a>소스 제어 디자인 결정
 소스 제어를 구현할 때 프로젝트에 대 한 다음 디자인 결정 사항을 고려해 야 합니다.
@@ -36,7 +36,7 @@ ms.locfileid: "99846493"
 
 3. 프로젝트 또는 편집기에서 파일에 대해를 호출 하는 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 해당 파일에 연결 된 특수 파일은 자동으로 체크 아웃 되지 않습니다. 에서 특수 파일을 부모 파일과 함께 전달 합니다. 환경은 전달 된 모든 파일 간의 관계를 감지 하 고 체크 아웃 UI에서 특수 파일을 적절 하 게 숨깁니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>

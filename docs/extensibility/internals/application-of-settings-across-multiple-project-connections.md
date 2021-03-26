@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b466112e3939756142a43568ddc3107e55d659
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71b4a3de89653ab63f57171bcb52ee32ddfcf07d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906091"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078996"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>여러 프로젝트 연결에서 설정 적용
 소스 제어 플러그 인 API 버전 1.2을 사용 하 여 빌드된 소스 제어 플러그 인은 일괄 처리 작업을 사용 하 여 여러 프로젝트 또는 여러 연결 컨텍스트에서 동일한 원본 제어 작업을 실행할 수 있습니다. 일괄 처리를 사용 하 여 사용자 환경에서 중복 된 프로젝트별 대화 상자를 제거할 수 있습니다.
@@ -36,5 +36,5 @@ ms.locfileid: "99906091"
 
 `SCCBeginBatch`함수는 소스 제어 작업 그룹을 시작 합니다. `SccEndBatch`함수는 그룹을 닫습니다. 그룹은 중첩 될 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 버전 1.2의 새로운 기능](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

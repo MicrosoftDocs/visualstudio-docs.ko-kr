@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53e50e408166eb2d2e1545549cdd6c72018c9553
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20c078d65af6224c65c2c574471b046deaf0cc92
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938787"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069298"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 컴파일러 명령줄 플래그
 Visual Studio 명령 테이블 (VSCT) 컴파일러는. vsct 파일을 성공적으로 컴파일하기 위해 명령줄 스위치를 제공 합니다.
@@ -76,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  VSCT 컴파일러는 이전에 빌드한 이진 파일을 디컴파일 할 수도 있습니다. 이 작업을 수행 하려면에 대 한 이진 파일을 제공 \<infile> 합니다.   VSCT 컴파일러에서 이진 파일을 생성 한 경우 해당 기호는 이미 포함 되어 있고 출력의 한 섹션에 기호화 된 이름으로 출력을 생성 합니다 \<Symbols> . CTC 컴파일러에서 이진 파일을 생성 한 경우 출력에는 실제 Guid 및 Id가 포함 됩니다. Ctc.exe의 현재 버전에 의해 생성 된 *. .ctsym 파일이 이진 입력 파일과 같은 폴더에 있는 경우 해당 파일에서 기호가 로드 되 고 출력에 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio 명령 테이블(.Vsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 스키마 참조](../../extensibility/vsct-xml-schema-reference.md)
 - [VSPackage에서 사용자 인터페이스 요소를 추가하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

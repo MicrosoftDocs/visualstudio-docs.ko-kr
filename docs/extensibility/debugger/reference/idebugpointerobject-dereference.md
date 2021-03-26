@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::Dereference method
 ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4aa96f726ec18e84aceba159fe9be6128456ce0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 226e8471d83208e9647578fca0fa16cc7b49e4eb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169693"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087641"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 가리키는 개체를 가져옵니다.
@@ -55,5 +55,5 @@ int Dereference(
 ## <a name="remarks"></a>설명
  가리키는 개체는 기본 형식 이거나 클래스 또는 구조체와 같은 더 복잡 한 형식일 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

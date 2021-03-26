@@ -8,23 +8,23 @@ helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b1ff7d55f7d667ca8b07134e144ad192b9d19d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889007"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078359"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>연습: Visual Studio 확장 게시
 
 이 연습에서는 Visual Studio Marketplace에 Visual Studio 확장을 게시 하는 방법을 보여 줍니다. Visual Studio Marketplace에 확장을 추가 하면 개발자가 **확장 및 업데이트** 를 사용 하 여 새 확장과 업데이트 된 확장을 찾아볼 수 있습니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 

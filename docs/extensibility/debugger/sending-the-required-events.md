@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a056f3a7d986ca9abcf82edd3a77aac013665976
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a53f4d7a89b1f5902f576490d827148e9fb816bf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960821"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070377"
 ---
 # <a name="send-the-required-events"></a>필요한 이벤트 보내기
 이 절차를 사용 하 여 필요한 이벤트를 전송 합니다.
@@ -38,5 +38,5 @@ ms.locfileid: "99960821"
 > [!NOTE]
 > 대부분의 언어는 코드의 시작 부분에서 전역 이니셜라이저 또는 미리 컴파일된 외부 함수 (CRT 라이브러리 또는 _Main)를 사용 합니다. 디버깅 중인 프로그램의 언어에 초기 진입점 전에 이러한 형식의 요소가 포함 되어 있으면이 코드가 실행 되 고 **main** 또는와 같은 사용자 진입점에 도달할 때 진입점 이벤트가 전송 됩니다 `WinMain` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로그램을 디버그할 수 있도록 설정](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

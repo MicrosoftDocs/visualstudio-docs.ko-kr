@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2 interface
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0102aa650d9739ae862f1357a1560842ae2fa59
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5bead60e23c708d8a23fcd382b4db0f3f9f7e4c1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151443"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065244"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 이 등록 된 인터페이스를 사용 하면 세션 디버그 관리자 (SDM)가 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) 인터페이스를 통해 "게시 된" 프로그램에 대 한 정보를 가져올 수 있습니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugProgramProvider2 : IUnknown
@@ -37,7 +37,7 @@ IDebugProgramProvider2 : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|여러 가지 방법으로 필터링 된 실행 프로그램에 대 한 정보를 가져옵니다.|
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|특정 프로세스 ID가 지정 된 프로그램 노드를 가져옵니다.|
@@ -83,7 +83,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [디버깅을 위한 SDK 도우미](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ccd63039b55fce076153cbb2a60bd04a1ca674c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86ed1c1098fe13cd19ce686782e18b190f455f8c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970168"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064295"
 ---
 # <a name="project-type-essentials"></a>프로젝트 형식 필수 항목
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에는 또는과 같은 언어에 대 한 여러 가지 프로젝트 형식이 포함 되어 있습니다 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 사용자 고유의 프로젝트 형식을 만들 수도 있습니다.
@@ -66,5 +66,5 @@ ms.locfileid: "99970168"
 
 - 프로젝트 형식은 디버그 및 릴리스와 같은 여러 구성을 지원할 수 있습니다. 사용자는 사용자가 제공 하는 속성 페이지를 사용 하 여 프로젝트의 다양 한 구성을 변경할 수 있습니다. 자세한 내용은 [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [프로젝트 형식 배포](../../extensibility/internals/deploying-project-types.md)

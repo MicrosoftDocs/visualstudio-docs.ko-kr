@@ -10,17 +10,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking out
 - source control [Visual Studio SDK], undo checkout
 ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb59b0342d67ab9118ffcdba74c177106fcceea0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c184aeb1b5a43e54bc00d5694ddee7711a815593
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898123"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078632"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>테스트 영역 3: 체크 아웃/체크 아웃 실행 취소
 이 소스 제어 플러그 인 테스트 영역에서는 **체크 아웃** 및 **체크 아웃 취소** 명령을 통해 버전 저장소에서 항목을 편집 하 고 되돌리는 작업을 다룹니다.
@@ -139,5 +139,5 @@ ms.locfileid: "99898123"
 |프로젝트에 파일을 추가한 후 프로젝트 체크 아웃 실행 취소|1. 새 프로젝트를 만들고 소스 제어에 추가 합니다.<br />2. 프로젝트를 체크 아웃 합니다.<br />3. 프로젝트에 파일을 추가 합니다.<br />4. 프로젝트의 체크 아웃을 실행 취소 합니다.|추가 된 파일이 솔루션 탐색기의 프로젝트에서 제거 됩니다.<br /><br /> 프로젝트가 더 이상 체크 아웃 되지 않습니다.|
 |프로젝트에서 파일을 삭제 한 후 프로젝트 체크 아웃 실행 취소|1. 새 프로젝트를 만들고 소스 제어에 추가 합니다.<br />2. 프로젝트를 체크 아웃 합니다.<br />3. 프로젝트에서 파일을 삭제 합니다.<br />4. 프로젝트의 체크 아웃을 실행 취소 합니다.|삭제 된 파일은 솔루션 탐색기의 프로젝트 아래에 나타납니다.<br /><br /> 프로젝트가 더 이상 체크 아웃 되지 않습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

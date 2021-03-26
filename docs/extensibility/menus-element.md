@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45fa38b5c5709de34b70dc311421acf76ca92d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886784"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064009"
 ---
 # <a name="menus-element"></a>Menus 요소
 VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.
@@ -79,6 +79,6 @@ VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.
 <Commands>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

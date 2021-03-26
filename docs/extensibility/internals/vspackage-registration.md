@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afa2ac0f8608e7cafe8c465ea5ff0b8c0031dd58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900043"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069155"
 ---
 # <a name="vspackage-registration"></a>VSPackage 등록
 Vspackage가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 설치 되어 있고 로드 되어야 한다는 것을 알려 주어 야 합니다. 이 프로세스는 레지스트리에서 정보를 작성 하 여 수행 됩니다. 이는 설치 관리자의 일반적인 작업입니다.
@@ -57,6 +57,6 @@ Vspackage가 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 설치
 
 - 구성 요소가 원본에서 실행으로 지정 되 고 SelfReg 테이블에 나열 되는 경우에는 형식 라이브러리와 같은 네트워크 리소스에 대 한 자동 등록 코드의 액세스가 거부 될 수 있습니다. 이로 인해 관리를 설치 하는 동안 구성 요소 설치가 실패할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [관리 패키지 등록](/previous-versions/bb166783(v=vs.100))

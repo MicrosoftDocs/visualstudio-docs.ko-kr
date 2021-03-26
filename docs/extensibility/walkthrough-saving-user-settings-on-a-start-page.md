@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888942"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078333"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>연습: 시작 페이지에 사용자 설정 저장
 
@@ -28,7 +28,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 설정을 유지 하는 방법에 대 한 자세한 내용은 [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
 
 > [!NOTE]
 > 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
@@ -79,7 +79,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 1. XAML 창에서 요소의 특성을 마우스 오른쪽 단추로 클릭 한 `Click` <xref:System.Windows.Controls.Button> 다음 **이벤트 처리기로 이동** 을 클릭 합니다.
 
-     이 단계에서는 *MyControl.xaml.cs* 를 열고 이벤트에 대 한 스텁 처리기를 만듭니다 `Button_Click` .
+     이 단계에서는 *mycontrol.xaml* 를 열고 이벤트에 대 한 스텁 처리기를 만듭니다. `Button_Click`
 
 2. 다음 지시문을 `using` 파일의 맨 위에 추가 합니다.
 
@@ -198,7 +198,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 다른 이벤트 처리기의 다른 값을 사용 하 여 속성을 가져오고 설정 하 여 원하는 수의 사용자 지정 설정을 저장 하 고 검색 하도록이 사용자 정의 컨트롤을 수정할 수 있습니다 `SettingsStore` . `propertyName`에 대 한 각 호출에 다른 매개 변수를 사용 하는 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , 값은 레지스트리의 다른 매개 변수를 덮어쓰지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [시작 페이지에 Visual Studio 명령 추가](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

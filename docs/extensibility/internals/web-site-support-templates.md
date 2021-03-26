@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940035"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069098"
 ---
 # <a name="web-site-support-templates"></a>웹 사이트 지원 템플릿
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트 및 항목 템플릿은 새 웹 사이트 프로젝트 및 항목을 처음부터 새로 만들 필요가 없도록 하 여 개발 프로세스를 가속화 하는 재사용 가능 하 고 사용자 지정 가능한 웹 사이트 프로젝트 및 항목 스텁을 제공 합니다. 템플릿에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [프로젝트 템플릿 및 항목 템플릿 만들기](../../ide/creating-project-and-item-templates.md)를 참조 하세요.
@@ -65,7 +65,7 @@ ms.locfileid: "99940035"
 
 - web.config
 
-     루트 웹 사이트 구성 파일입니다.
+     루트 web.site 구성 파일입니다.
 
 - WebApplication .vstemplate
 
@@ -88,7 +88,7 @@ ms.locfileid: "99940035"
 
 - web.config
 
-- 루트 웹 사이트 구성 파일입니다.
+- 루트 web.site 구성 파일입니다.
 
 - WebService. .vstemplate
 
@@ -186,5 +186,5 @@ ms.locfileid: "99940035"
 
      새 마스터 페이지의 내용과 종속 파일 (있는 경우)을 결정 하는 템플릿 파일입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [웹 사이트 지원](../../extensibility/internals/web-site-support.md)

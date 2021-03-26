@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 201f6e7845f1294892836de4cca24195fb0f1596
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0910486202bca781ec19b6d5895e68ed93f8c3d5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928239"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068728"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 요소(Visual Studio 항목 템플릿)
 항목 템플릿에 포함 되는 파일을 지정 합니다.

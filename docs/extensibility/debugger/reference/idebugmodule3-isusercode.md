@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::IsUserCode
 ms.assetid: 77022946-bb8b-4114-aa81-614df6e54b13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a936d4408b2d289477a860ffca3d53ca7b0ad61d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cbc56943574cc5549e96e3281b4398df7d486f7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164840"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065608"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
 모듈이 사용자 코드를 나타내는지 여부에 대 한 정보를 검색 합니다.
@@ -47,5 +47,5 @@ int IsUserCode(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

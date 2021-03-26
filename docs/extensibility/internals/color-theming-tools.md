@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 89ab5741-c664-4b45-8662-3dd01a5761be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b120159e3dab9be968271a14d0411cf043e9bb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e779a6d1fa4ccab00608d711800bd9dcc21cb78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837439"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078944"
 ---
 # <a name="color-theme-tools"></a>색 테마 도구
 Visual Studio SDK는 색 테마를 만들고 관리 하는 데 도움이 되는 여러 가지 도구를 제공 합니다.

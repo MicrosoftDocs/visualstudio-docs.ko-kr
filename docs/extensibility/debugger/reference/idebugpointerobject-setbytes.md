@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31feb63e4f9d246161ced3483f487b2877ee5e1e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 015a7782fae01f06a9d1cc4a5e64090303d2f2e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169667"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087589"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 연속 된 일련의 바이트에서 가리키는 값을 설정 합니다.
@@ -65,6 +65,6 @@ int SetBytes(
 ## <a name="remarks"></a>설명
  이 메서드는이 [Idebugpointerobject](../../../extensibility/debugger/reference/idebugpointerobject.md) 가 나타내는 포인터가 기본 형식 또는 기본 형식의 간단한 배열 (즉, 단순 바이트 시퀀스로 표현할 수 있는 배열)을 가리키는 경우에 사용 됩니다. 이 `IDebugPointerObject` 개체는 null 참조일 수 없습니다 (메모리의 주소를 가리켜야 함).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

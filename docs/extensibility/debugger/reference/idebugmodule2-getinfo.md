@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugModule2::GetInfo method
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a31c6e40f18e3b405449179e3e5a3ea1a42acc6f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 69286a7bf50c32aa3aa720deff78ee957f53fc65
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150565"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065660"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 이 모듈에 대 한 정보를 가져옵니다.
@@ -56,7 +56,7 @@ int GetInfo(
 ## <a name="remarks"></a>설명
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) **구조체는 모듈 창에** 표시 되는 모듈의 이름을 포함 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
