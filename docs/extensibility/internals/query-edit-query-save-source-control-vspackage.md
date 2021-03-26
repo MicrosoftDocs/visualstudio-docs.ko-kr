@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e320d6f7b6126736719eb2a428d47a39a61730ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9295644a07a1840cd4874b8bfff298ad9d46c928
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837274"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060915"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>쿼리 편집, 쿼리 저장(소스 제어 VSPackage)
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 편집기는 쿼리 편집 쿼리 저장 (QEQS) 이벤트를 브로드캐스트할 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 원본 제어 스텁은 QEQS 서비스를 구현 하므로 QEQS 이벤트를 받는 사람입니다. 그런 다음 이러한 이벤트는 현재 활성 소스 제어 VSPackage 위임 됩니다. 활성 소스 제어 VSPackage는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 및 해당 메서드를 구현 합니다. 인터페이스의 메서드는 `IVsQueryEditQuerySave2` 일반적으로 문서를 처음 편집 하 고 문서를 저장 하기 직전에 호출 됩니다.
@@ -37,5 +37,5 @@ ms.locfileid: "99837274"
 
  이 메서드는 트랜잭션 방식으로 동작 해야 합니다. 즉, 단일 파일에서 저장이 취소 되 면 모든 파일에 대해 저장이 취소 됩니다. 반대로, 저장이 허용 되는 경우 모든 파일에 대해 허용 되어야 합니다. `IVsQueryEditQuerySave2::QueryEditFiles`메서드와 마찬가지로 메서드를 구현할 때 고려해 야 하는 사례에는 `IVsQueryEditQuerySave2::QuerySaveFiles` 여러 파일, 특수 파일, 사용자의 취소 및 메모리 내 편집이 포함 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>

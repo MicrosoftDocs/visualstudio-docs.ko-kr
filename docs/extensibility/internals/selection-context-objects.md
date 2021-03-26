@@ -8,17 +8,17 @@ helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca6239264ca1fa42edb0b73e8a96f523cb450857
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911096"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080842"
 ---
 # <a name="selection-context-objects"></a>선택 컨텍스트 개체
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Ide (통합 개발 환경)는 전역 선택 컨텍스트 개체를 사용 하 여 ide에 표시 되는 항목을 결정 합니다. IDE의 각 창에는 전역 선택 컨텍스트에 푸시되는 자체 선택 컨텍스트 개체가 있을 수 있습니다. IDE는 창에 포커스가 있을 때 창의 값을 사용 하 여 전역 선택 컨텍스트를 업데이트 합니다. 자세한 내용은 [사용자에 대 한 피드백](../../extensibility/internals/feedback-to-the-user.md)을 참조 하세요.
@@ -41,7 +41,7 @@ ms.locfileid: "99911096"
 
 3. VSPackage는 계층 업데이트, 도구 다시 활성화 또는 기타 유사한 작업과 같은 작업을 수행 하 여 수신 하는 이벤트에 대해 작동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)

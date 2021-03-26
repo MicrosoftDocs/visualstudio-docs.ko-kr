@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2::GetDescription
 ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef6660c0d3521bb9197f626f10142a5f9976475b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9d190f945d67a235f3b4fed18a805ef35e53f3ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150369"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071950"
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
 포트 공급자에 대 한 설명 및 설명 메타 데이터를 검색 합니다.
@@ -50,5 +50,5 @@ public int GetDescription(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Architecture, Visual Studio Integration
 ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8fa82bb1885b04e1b1efe8b1d5fe5a97959cfe2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48aa8d692533a480d9b19d62cec058f07ff71ccc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899896"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060616"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 유틸리티
 이 섹션의 항목에서는 고와 함께 제공 되는 도구에 대해 설명 합니다.

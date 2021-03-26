@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2::GetPortName
 ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee0d0199a87dff6f29e82b691ed0a396f6d0162a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 89bff19026a8bbdab72f1bec84c5feef0b37d8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169251"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072236"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 포트의 이름을 가져옵니다.
@@ -50,5 +50,5 @@ int GetPortName(
 ## <a name="remarks"></a>설명
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) 인터페이스는 일반적으로 포트에 대 한 연결을 얻기 위해 디버그 패키지 (클라이언트)에서 포트 공급자 (서버)로 전달 됩니다. 디버그 패키지와 포트 공급자는 모두 포트에 대해 선택할 수 있는 옵션을 인식 합니다. 간단한 문자열이 포트를 설명할 수 있는 경우 메서드에 충분 한 정보를 사용 하 여 연결을 설정할 수 있습니다 `IDebugPortRequest2::GetPortName` . 그렇지 않으면 클라이언트에서 추가 인터페이스를 제공할 수 있습니다 .이 인터페이스는를 사용 하 여 서버에서 가져올 수 있습니다 `IDebugPortRequest2::QueryInterface` .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

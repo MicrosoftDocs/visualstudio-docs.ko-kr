@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad30e3f7b91e8a76715f66d9f6701597f3830bd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057132"
 ---
 # <a name="configuration-options-overview"></a>구성 옵션 개요
 의 프로젝트 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 빌드, 디버깅, 실행 및/또는 배포할 수 있는 여러 구성을 지원할 수 있습니다. 구성은 명명 된 속성 집합 (일반적으로 컴파일러 스위치 및 파일 위치)으로 설명 되는 빌드 형식입니다. 기본적으로 새 솔루션에는 *디버그* 및 *릴리스* 의 두 가지 구성이 포함 됩니다. 이러한 구성은 기본 설정을 사용 하 여 적용 하거나 특정 솔루션 및/또는 프로젝트 요구 사항에 맞게 수정할 수 있습니다. 일부 패키지는 ActiveX 편집기 또는 내부 구성 요소와 같은 두 가지 방법으로 빌드할 수 있습니다. 그러나 프로젝트는 여러 구성을 지원할 필요가 없습니다. 하나의 구성만 사용할 수 있는 경우 해당 구성은 모든 솔루션 구성에 매핑됩니다.
@@ -70,7 +70,7 @@ ms.locfileid: "99884691"
 
   이전 다이어그램의 구성 개체 인터페이스 및 구성 공급자 개체 인터페이스에 대 한 자세한 내용은 [프로젝트 구성 개체](../../extensibility/internals/project-configuration-object.md)를 참조 하세요. 또한 빌드를 [위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md) 에서는 구성 작성기 및 빌드 종속성 개체 인터페이스에 대 한 자세한 정보를 제공 하 고, [배포 관리를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-managing-deployment.md) 에서는 구성 배포자 및 배포 종속성 개체에 연결 된 인터페이스에 대해 자세히 설명 합니다. 마지막으로 [출력에 대 한 프로젝트 구성은](../../extensibility/internals/project-configuration-for-output.md) 출력 그룹 및 출력 개체 인터페이스를 설명 하 고 속성 페이지를 사용 하 여 구성 종속 속성을 보고 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [빌드를 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)
 - [솔루션 구성](../../extensibility/internals/solution-configuration.md)

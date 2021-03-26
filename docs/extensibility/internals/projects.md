@@ -11,17 +11,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK]
 - project types [Visual Studio SDK]
 ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cacd00339dbf6e9507b8bf4c81be27b4c45fa80b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73f685707d6c9f7a8b40bb57c5207c6a538fd1f4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970077"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081024"
 ---
 # <a name="projects"></a>프로젝트
 Visual Studio에서 프로젝트는 개발자가 소스 코드 파일 및 **솔루션 탐색기** 에 표시 되는 기타 리소스를 구성 하는 데 사용 하는 컨테이너입니다. 일반적으로 프로젝트는 소스 코드 파일에 대 한 참조 및 비트맵 파일 같은 리소스에 대 한 참조를 저장 하는 파일 (예: c # 프로젝트용 .csproj 파일)입니다. 프로젝트를 사용 하 여 소스 코드, 웹 서비스 및 데이터베이스에 대 한 참조 및 기타 리소스를 구성, 빌드, 디버그 및 배포할 수 있습니다. Vspackage는 *프로젝트 형식*, *프로젝트 하위* 형식 및 *사용자 지정 도구* 와 같은 세 가지 주요 방법으로 Visual Studio 프로젝트 시스템을 확장할 수 있습니다.

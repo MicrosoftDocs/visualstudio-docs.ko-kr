@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afe98f2d96618999aa02dd01f03f55395af46e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895689"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063268"
 ---
 # <a name="migrating-a-legacy-language-service"></a>레거시 언어 서비스 마이그레이션
 프로젝트를 업데이트 하 고 프로젝트에 source.extension.vsixmanifest 파일을 추가 하 여 레거시 언어 서비스를 최신 버전의 Visual Studio로 마이그레이션할 수 있습니다. Visual Studio 편집기가이를 조정 하기 때문에 언어 서비스 자체는 이전과 마찬가지로 계속 작동 합니다.
@@ -71,13 +71,13 @@ ms.locfileid: "99895689"
 
     - Microsoft.VisualStudio.Shell.Interop.10.0.dll에 대 한 참조를 추가 합니다.
 
-8. VsPkg.cs 파일을 열고 특성의 값을로 변경 합니다. `DefaultRegistryRoot`
+8. VsPkg 파일을 열고 특성의 값을로 변경 합니다. `DefaultRegistryRoot`
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
     ```
 
-9. 원래 샘플은 해당 언어 서비스를 등록 하지 않으므로 VsPkg.cs에 다음 특성을 추가 해야 합니다.
+9. 원래 샘플은 해당 언어 서비스를 등록 하지 않으므로 VsPkg에 다음 특성을 추가 해야 합니다.
 
     ```
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]
@@ -109,5 +109,5 @@ ms.locfileid: "99895689"
 
 12. 디버깅을 시작합니다. Visual Studio의 두 번째 인스턴스가 열렸습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

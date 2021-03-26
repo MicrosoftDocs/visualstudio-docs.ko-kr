@@ -11,17 +11,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615910684fd79d3cbd8d8a1e012c239e27abc180
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902893"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080972"
 ---
 # <a name="running-document-table"></a>문서 테이블 실행
 IDE는 현재 열려 있는 모든 문서 목록을 RDT (실행 중인 문서 테이블) 라는 내부 구조에 유지 합니다. 이 목록에는 이러한 문서를 현재 편집 하 고 있는지 여부에 관계 없이 메모리에 열려 있는 모든 문서가 포함 됩니다. 문서는 프로젝트 또는 주 프로젝트 파일 (예: .vcxproj 파일)의 파일을 포함 하 여 유지 되는 모든 항목입니다.
@@ -58,6 +58,6 @@ IDE는 현재 열려 있는 모든 문서 목록을 RDT (실행 중인 문서 �
 
 - 계층 또는 항목 ID를 사용 하 여 프로젝트 시스템에 전체 문서 경로를 요청한 다음 RDT에서 항목을 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [RDT_ReadLock 사용법](../../extensibility/internals/rdt-readlock-usage.md)
 - [지속성 및 실행 중인 문서 테이블](../../extensibility/internals/persistence-and-the-running-document-table.md)

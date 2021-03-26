@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, structure
 - source control packages, VSPackage overview
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 886ff7112a5e455bfc07e51b30f4ac60eb10136a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae037e3bda4ca09ee11969325b67ff0f8323722d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899958"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060694"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 구조(소스 제어 VSPackage)
 
@@ -74,7 +74,7 @@ Visual Studio의 모든 프로젝트는 <xref:Microsoft.VisualStudio.Shell.Inter
 
 소스 제어에서 고려해 야 하는 인터페이스의 전체 목록은 [관련 서비스 및 인터페이스](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)VSPackage를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [디자인 요소](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [관련 서비스 및 인터페이스](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

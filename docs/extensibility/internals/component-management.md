@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ee1a3afe313cdc11bb28e0a24a89e3e3ad7f0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9767af4c30957111526303600f9e8eda815b42f0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852728"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057093"
 ---
 # <a name="component-management"></a>구성 요소 관리
 Windows Installer의 작업 단위를 Windows Installer 구성 요소 (WICs 또는 구성 요소 라고도 함) 라고 합니다. GUID는 Windows Installer를 사용 하는 설치에 대 한 기본 설치 단위 및 참조 계산 인 각 WIC를 식별 합니다.
@@ -49,6 +49,6 @@ Windows Installer의 작업 단위를 Windows Installer 구성 요소 (WICs 또�
 
      이렇게 하면 다른 버전의 VSPackage가 설치 된 경우 공유 키가 덮어쓰여집니다. 두 번째 버전을 제거한 후에는 해당 키가 가리키는 파일이 사라집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [공유 및 버전 관리 Vspackage 중에서 선택](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage 설치 시나리오](../../extensibility/internals/vspackage-setup-scenarios.md)

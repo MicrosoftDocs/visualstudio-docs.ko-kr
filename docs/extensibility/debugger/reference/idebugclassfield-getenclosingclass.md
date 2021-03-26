@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetEnclosingClass method
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c08550204c8a2860d8fd7870e4ac949e9e9319c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c59eb2559634c67b210f4fc3b4ce41743346c8ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164203"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088486"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 이 클래스를 포함 하는 클래스를 가져옵니다.
@@ -58,5 +58,5 @@ class RootClass {
 
 `GetEnclosingClass`클래스를 나타내는 개체에서 메서드를 호출 하면 `IDebugClassField` `NestedClass` `IDebugClassField` 클래스를 나타내는 개체가 반환 `RootClass` 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

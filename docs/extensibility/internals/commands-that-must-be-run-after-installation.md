@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef557c0c679fad0dff25a51a8529270e4bd7ced2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884730"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057145"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>설치 후 실행 해야 하는 명령
 *.Msi* 파일을 통해 확장을 배포 하는 경우 Visual Studio에서 확장을 검색 하기 위해 설치의 일부로 **devenv/설치 프로그램** 을 실행 해야 합니다.
@@ -60,7 +60,7 @@ ms.locfileid: "99884730"
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>devenv.exe 실행할 테이블 행 CustomAction
 
-|작업|Type|원본|대상|
+|작업|형식|원본|대상|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -83,5 +83,5 @@ ms.locfileid: "99884730"
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

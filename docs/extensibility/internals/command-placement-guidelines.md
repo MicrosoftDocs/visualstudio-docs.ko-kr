@@ -9,17 +9,17 @@ helpviewer_keywords:
 - small command sets
 - command sets
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37779a8c790e50e63f70dfd9023d3ba6a84d0170
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46aa6c341313a9d7c9d0a6d1666130d799ddc277
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940152"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057327"
 ---
 # <a name="command-placement-guidelines"></a>명령 배치 지침
 Visual Studio IDE (통합 개발 환경)에서 명령의 위치를 지정 하는 모범 사례는 명령 집합의 크기에 따라 달라 집니다. 명령은 *vsct* 파일의 정보에 따라 정의 되 고 배치 됩니다.
@@ -57,6 +57,6 @@ Visual Studio IDE (통합 개발 환경)에서 명령의 위치를 지정 하는
 
 - `CommandPlacements`요소 섹션에서 지정 된 메뉴 또는 그룹을 채우는 항목이 서로 인접해 야 합니다. 이렇게 하면 가독성을 높이고 `Priority` 순위를 보다 쉽게 확인할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 명령 테이블 (.vvsct) 파일](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

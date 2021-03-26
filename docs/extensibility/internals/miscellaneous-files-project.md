@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Solution Items folder
 - files, opening with Miscellaneous Files project
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e22ff1c0f95c78e7e19f8e309d1c37f85c7b9aa5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b79eaaeaf94954e2d3dc1bd855b56bee5b8bdae4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895702"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063281"
 ---
 # <a name="miscellaneous-files-project"></a>기타 파일 프로젝트
 사용자가 프로젝트 항목을 열면 IDE는 솔루션에서 프로젝트의 멤버가 아닌 모든 항목을 기타 파일 프로젝트에 할당 합니다.
@@ -37,7 +37,7 @@ ms.locfileid: "99895702"
 
  기타 파일 프로젝트에서는 사용자가 **새 프로젝트** 대화 상자를 사용 하 여 명시적으로 만들 필요가 없습니다. 또한 기타 파일 프로젝트는 프로젝트 멤버 목록을 영구적으로 관리 하지 않습니다. 선택적 기능을 사용 하 여 각 사용자에 대해 가장 최근에 사용한 파일 목록을 기록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

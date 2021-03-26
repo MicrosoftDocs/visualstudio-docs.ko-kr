@@ -9,22 +9,22 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a536a5f0f2b1cac09c65079974c661e09e9139ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958520"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080920"
 ---
 # <a name="saving-a-custom-document"></a>사용자 지정 문서 저장
 환경에서는 **저장**, 다른 **이름으로 저장** 및 **모두 저장** 명령을 처리 합니다. 사용자가 **파일** 메뉴에서 **저장**, 다른 **이름으로 저장** **또는 모두 저장** 을 클릭 하거나 솔루션을 닫을 때 모두 저장을 클릭 하면 다음 프로세스가 발생 합니다.
 
- ![고객 편집기 저장](../../extensibility/internals/media/private.gif "비공개") 사용자 지정 편집기에 대 한 저장, 다른 이름으로 저장 및 모든 명령 처리 저장
+ ![고객 편집기 저장](../../extensibility/internals/media/private.gif "프라이빗") 사용자 지정 편집기에 대 한 저장, 다른 이름으로 저장 및 모든 명령 처리 저장
 
  이 프로세스는 다음 단계에 자세히 설명 되어 있습니다.
 
@@ -43,6 +43,6 @@ ms.locfileid: "99958520"
     > [!NOTE]
     > 사용자 고유의 지 속성을 구현 하는 경우 메서드를 호출 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 시간을 절약 해야 합니다. 이 메서드는 파일을 저장 하는 것이 안전한 지 확인 합니다. 예를 들어 파일이 읽기 전용이 아닙니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [프로젝트 항목 열기 및 저장](../../extensibility/internals/opening-and-saving-project-items.md)

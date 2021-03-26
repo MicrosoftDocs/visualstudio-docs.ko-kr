@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875525"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060589"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays에 대 한 Roslyn 분석기 및 코드 인식 라이브러리
 
@@ -66,7 +66,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 주 메뉴에서 **파일**  >  **새로 만들기**  >  **프로젝트** 를 선택 합니다. **새 프로젝트** 대화 상자의 왼쪽 탐색 모음에 있는 **c #** 프로젝트에서 **확장성** 을 선택 하 고 오른쪽 창에서 코드 수정 프로젝트 템플릿이 **있는 Analyzer** 를 선택 합니다. 이름을 입력 하 고 대화 상자를 확인 합니다.
 
-템플릿은 *DiagnosticAnalyzer.cs* 파일을 엽니다. 해당 편집기 버퍼 탭을 선택 합니다. 이 파일에는 `DiagnosticAnalyzer` (ROSLYN API 형식)에서 파생 되는 분석기 클래스 (프로젝트에 지정한 이름에서 구성 됨)가 있습니다. 새 클래스에는 `DiagnosticAnalyzerAttribute` 컴파일러가 분석기를 검색 하 고 로드할 수 있도록 분석기를 선언 하는 것이 c # 언어와 관련이 있습니다.
+템플릿은 *DiagnosticAnalyzer* 파일을 엽니다. 해당 편집기 버퍼 탭을 선택 합니다. 이 파일에는 `DiagnosticAnalyzer` (ROSLYN API 형식)에서 파생 되는 분석기 클래스 (프로젝트에 지정한 이름에서 구성 됨)가 있습니다. 새 클래스에는 `DiagnosticAnalyzerAttribute` 컴파일러가 분석기를 검색 하 고 로드할 수 있도록 분석기를 선언 하는 것이 c # 언어와 관련이 있습니다.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -309,7 +309,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 [여기](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)에서 완성 된 코드를 모두 볼 수 있습니다. 하위 폴더 *DoNotUseImmutableArrayCollectionInitializer* 및 *DoNotUseImmutableArrayCtor* 에는 각각 문제를 찾기 위한 c # 파일과 Visual Studio 전구 UI에 표시 되는 코드 수정 프로그램을 구현 하는 c # 파일이 있습니다. 완성 된 코드에는 ImmutableArray type 개체를 가져오는 것을 방지 하기 위한 약간의 추상화가 있습니다 \<T> . 등록 된 중첩 된 작업을 사용 하 여 하위 작업 (개체 만들기 및 컬렉션 초기화 분석)이 실행 될 때마다 사용할 수 있는 컨텍스트에 형식 개체를 저장 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [\\\Build 2015 통신](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub에서 완성 된 코드](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9578159554f77a9ad7553a56c054a863b3b63fd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888149"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080764"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>레거시 언어 서비스의 코드 조각 지원
 코드 조각은 소스 파일에 삽입 되는 코드 조각입니다. 코드 조각은 필드 집합을 사용 하는 XML 기반 템플릿입니다. 이러한 필드는 코드 조각이 삽입 된 후 강조 표시 되며 조각이 삽입 된 컨텍스트에 따라 다른 값을 가질 수 있습니다. 코드 조각이 삽입 된 직후에 언어 서비스는 코드 조각의 서식을 지정할 수 있습니다.
@@ -390,7 +390,7 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 기능](../../extensibility/internals/legacy-language-service-features1.md)
 - [레거시 언어 서비스 등록](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [코드 조각](../../ide/code-snippets.md)

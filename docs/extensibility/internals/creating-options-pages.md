@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed package framework, creating Tools Options pages
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b01133e1f7daada2d9e2778c3966ccd66a81fd94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903170"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056840"
 ---
 # <a name="create-options-pages"></a>옵션 페이지 만들기
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]관리 되는 패키지 프레임 워크에서에서 파생 된 클래스는 <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **도구** 메뉴의 **옵션** 페이지를 추가 하 여 IDE를 확장 합니다.

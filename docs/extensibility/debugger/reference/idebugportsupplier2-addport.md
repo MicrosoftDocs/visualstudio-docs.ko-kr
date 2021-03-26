@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2::AddPort
 ms.assetid: df491161-6bf3-4fcc-b478-b9ec88ec995f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14232ac49b3862c635a41c25e79c7ab166fa24ef
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4c2b9c4c7c5378670c87926e76d185d54448a244
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072197"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 포트를 추가 합니다.
@@ -55,7 +55,7 @@ int AddPort(
 ## <a name="remarks"></a>설명
  이 메서드는 실제로 요청 된 포트를 만들고 포트 공급자의 내부 활성 포트 목록에 추가 합니다. [Canaddport](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) 메서드를 먼저 호출 하 여 시간이 오래 걸리는 지연을 방지할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

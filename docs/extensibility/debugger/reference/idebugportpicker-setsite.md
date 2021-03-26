@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker::SetSite
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1c222bd06a974e7f2b1a57096a120399b554b82
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8a442c438f233187265c90e724f57e8681b95556
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169277"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072262"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 서비스 공급자를 설정 합니다.
@@ -48,5 +48,5 @@ public int SetSite(
 ## <a name="remarks"></a>설명
  이 메서드는 다른 메서드를 호출 하기 전에 호출 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

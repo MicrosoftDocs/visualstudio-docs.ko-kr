@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9be8b97b3e37a224b12781e66543f7ab126f2c6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1085275427aeb02a767a66088ee58ced890dcb05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958533"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056859"
 ---
 # <a name="create-a-source-control-vspackage"></a>소스 제어 VSPackage 만들기
 이 설명서에는와 통합 된 소스 제어 패키지의 아키텍처 개요에 대 한 링크 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , 구현할 인터페이스에 의해 정의 된 API, 사용할 서비스 및 간단한 소스 제어 패키지 구현을 보여 주는 샘플이 포함 되어 있습니다.

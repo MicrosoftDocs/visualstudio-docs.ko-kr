@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3fdc5705cad0ec696a520350042d7f18aaec146
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8186f25f8e1631f0e13aa7a8f43620812c4c7693
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884639"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057054"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 참여
 프로젝트 하위 형식에서는 **프로젝트** 레지스트리 하위 키 아래에 **항목 추가** 템플릿을 등록 하 여 **새 항목 추가** 대화 상자에 항목의 전체 새 디렉터리를 제공할 수 있습니다.
@@ -43,6 +43,6 @@ ms.locfileid: "99884639"
 
  프로젝트 하위 형식 집계 개체에 인터페이스를 구현 하 여 **새 항목 추가** 대화 상자에서 항목을 필터링 할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> . 예를 들어 프로젝트를 집계 하 여 데이터베이스 프로젝트를 구현 하는 프로젝트 하위 유형은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 필터링을 구현 하 여 **새 항목 추가** 대화 상자에서 특정 항목을 필터링 할 수 있으며,이 경우에서를 지원 하 여 데이터베이스 프로젝트별 항목을 추가할 수 있습니다 `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> . **새 항목 추가** 대화 상자에서 항목을 필터링 하 고 추가 하는 방법에 대 한 자세한 내용은 [새 항목 추가 대화 상자에 항목 추가](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [일반적으로 프로젝트를 확장 하는 데 사용 되는 개체에 대 한 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

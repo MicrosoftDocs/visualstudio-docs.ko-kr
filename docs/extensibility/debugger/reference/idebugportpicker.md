@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker interface
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 335a954603505d064f32e8f901ce428d6cb8dfa1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8390c8a055a9c919bb1a35d8f3288fc810e5329d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072249"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 포트를 선택 하기 위한 사용자 지정 UI를 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugPortPicker : IUnknown
@@ -33,7 +33,7 @@ IDebugPortPicker : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugPortPicker` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|사용자가 포트를 선택할 수 있는 지정 된 대화 상자를 표시 합니다.|
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|서비스 공급자를 설정 합니다.|

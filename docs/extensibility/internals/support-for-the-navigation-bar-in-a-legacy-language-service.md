@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e75103d008e65c6d2060d598e442499f38a0e322
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932581"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080660"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>레거시 언어 서비스의 탐색 모음 지원
 편집기 뷰 위쪽의 탐색 모음에는 파일의 형식과 멤버가 표시 됩니다. 왼쪽 드롭다운에서 형식이 표시 되 고 오른쪽 드롭다운에서 멤버가 표시 됩니다. 사용자가 형식을 선택 하면 캐럿이 형식의 첫 번째 줄에 배치 됩니다. 사용자가 멤버를 선택 하면 캐럿이 멤버 정의에 배치 됩니다. 드롭다운 상자는 캐럿의 현재 위치를 반영 하도록 업데이트 됩니다.

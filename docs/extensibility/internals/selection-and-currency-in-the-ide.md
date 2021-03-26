@@ -10,17 +10,17 @@ helpviewer_keywords:
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f77afea813158c787978e2ea4dbec1a55e36eca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0fb65a63b99f625f8d32af8436db753a0f17322e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890632"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080907"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE의 선택 및 통화
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)는 선택 *컨텍스트* 를 사용 하 여 사용자의 현재 선택 된 개체에 대 한 정보를 유지 관리 합니다. 선택 컨텍스트를 사용 하 여 Vspackage는 다음과 같은 두 가지 방법으로 통화 추적에 참여 합니다.
@@ -64,6 +64,6 @@ ms.locfileid: "99890632"
 
 - 창 프레임 선택 컨텍스트 내에서 추적 되는 요소를 변경 하는 이벤트입니다. 예를 들어 DocObject 내에서 선택 내용을 변경 하거나 프로젝트 형식 창에서 선택을 변경 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [선택 컨텍스트 개체](../../extensibility/internals/selection-context-objects.md)
 - [사용자에 대한 피드백](../../extensibility/internals/feedback-to-the-user.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0010c4a98d0ea50ec7feb2f7a379f3c84bc3d53
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056989"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 유틸리티
 **Createexpinstance** 유틸리티를 사용 하 여 Visual Studio의 실험적 인스턴스를 만들거나, 다시 설정 하거나, 삭제할 수 있습니다. 실험적 인스턴스를 사용 하 여 기본 제품을 변경 하지 않고 Visual Studio 확장을 디버그 하 고 테스트할 수 있습니다.
@@ -56,5 +56,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **CreateExpInstance.exe/Reset/VSInstance = 14.0/Vsinstance = Exp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSPackages](../../extensibility/internals/vspackages.md)

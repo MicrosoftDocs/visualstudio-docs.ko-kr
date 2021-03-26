@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d5a0bd912dadf6b8f90aabd846c6ac44534c917
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f9a19b5e0e543052dad492ab319595c8ef76dfe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934079"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060954"
 ---
 # <a name="providing-automation-for-vspackages"></a>VSPackage에 대한 자동화 제공
 Vspackage에 대 한 자동화를 제공 하는 두 가지 주요 방법은 VSPackage 관련 개체를 구현 하 고 표준 자동화 개체를 구현 하는 것입니다. 일반적으로 환경의 자동화 모델을 확장 하는 데 함께 사용 됩니다.
