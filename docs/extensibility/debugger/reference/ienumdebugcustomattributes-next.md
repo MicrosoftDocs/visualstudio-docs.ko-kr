@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::Next
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79c8b6cf86413f1642d22d79e9c072794353499b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 8b1e65f993d91bedde8fb02631a0e2c369d43522
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226880"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083091"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 열거형 시퀀스에서 지정 된 수의 사용자 지정 특성을 검색 합니다.
@@ -57,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>반환 값
  성공하면 `S_OK`를 반환합니다. `S_FALSE`요청 된 수의 요소를 반환할 수 있으면를 반환 하 고, 그렇지 않으면 오류 코드를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

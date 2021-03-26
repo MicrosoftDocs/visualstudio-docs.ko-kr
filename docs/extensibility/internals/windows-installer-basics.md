@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe009fa3ee8c8b9f2d15d3de4ee1fd067647c925
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869494"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074290"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 기본 사항
 Windows Installer은 사용자 컴퓨터에 응용 프로그램 또는 소프트웨어 제품을 설치 및 제거 하 고, 이러한 작업을 Windows Installer 구성 요소 (예를 들어 WICs 또는 구성 요소 라고도 함) 라는 단위로 수행 합니다. GUID는 설치의 기본 단위인 각 WIC를 식별 하 고 Windows Installer를 사용 하는 설치에 대 한 참조 수를 계산 합니다.
@@ -69,5 +69,5 @@ Windows Installer은 사용자 컴퓨터에 응용 프로그램 또는 소프트
 
 - 버전이 지정 된 리소스는 둘 이상의 WIC에서 제공 되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [구성 요소 규칙이 중단 되 면 어떻게 되나요?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

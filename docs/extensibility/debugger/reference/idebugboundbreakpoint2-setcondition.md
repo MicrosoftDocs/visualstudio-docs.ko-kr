@@ -9,20 +9,20 @@ helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7aa29d84c182cfc315d344b9d7b87b76148b929c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 792c0464b6c1beced9903e3dc21783d1841ab455
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167531"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088876"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 이 바인딩된 중단점과 연결 된 조건을 설정 하거나 변경 합니다.
@@ -51,7 +51,7 @@ int SetCondition(
 ## <a name="remarks"></a>설명
  이전에이 중단점과 연결 된 모든 조건이 손실 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

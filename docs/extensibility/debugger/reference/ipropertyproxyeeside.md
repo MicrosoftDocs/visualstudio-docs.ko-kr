@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide interface
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80a295ad68341cfa4675d36b22d5de042078a0a3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ce7f950455a6b6a6ae2089e762db1aa02428f6a5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222610"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082400"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 이 인터페이스는 연결 된 개체에 대 한 데이터를 볼 수 있는 메서드를 제공 합니다. 이 인터페이스는 형식 시각화 도우미에 대 한 지원의 일부입니다.
@@ -38,7 +38,7 @@ IPropertyProxyEESide : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스에 의해 구현 되는 메서드는 다음과 같습니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|개체의 데이터에 액세스할 수 있도록 데이터 소스 공급자를 초기화 합니다.|
 |[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|개체의 어셈블리에 대 한 정보를 검색 합니다.|
@@ -57,7 +57,7 @@ IPropertyProxyEESide : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [핵심 인터페이스](../../../extensibility/debugger/reference/core-interfaces.md)
 - [형식 시각화 도우미 및 사용자 지정 뷰어](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

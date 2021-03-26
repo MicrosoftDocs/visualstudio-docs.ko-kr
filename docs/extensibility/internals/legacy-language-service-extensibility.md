@@ -8,17 +8,17 @@ helpviewer_keywords:
 - language services
 - Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6a886cce4140ed31fa7d472de7e78a42d810d49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f22d6997d932884e5aeb8d794b7884b40a8d5dab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839653"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074498"
 ---
 # <a name="legacy-language-service-extensibility"></a>레거시 언어 서비스 확장성
 언어 서비스는 IDE에서 소스 코드를 편집 하는 언어 관련 지원을 제공 합니다.

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetProgram
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5bb169ecdbd0dcea188054c96af06da609edf3f7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4efdd9c5a70849a6df1aefb95db384e3dd60f057
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142806"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072509"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 프로그램 노드에 연결 된 프로그램을 가져옵니다.
@@ -50,7 +50,7 @@ int GetProgram(
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

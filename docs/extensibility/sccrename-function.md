@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d9d42e796f1ec2176e9de79ca392aab070581324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221342"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073835"
 ---
 # <a name="sccrename-function"></a>SccRename 함수
 이 함수는 소스 제어 시스템에서 파일의 이름을 바꿉니다.
@@ -54,7 +54,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|이름 바꾸기 작업이 성공적으로 완료 되었습니다.|
 |SCC_E_PROJNOTOPEN|프로젝트가 소스 제어에서 열려 있지 않습니다.|
@@ -68,5 +68,5 @@ SCCRTN SccRename(
 ## <a name="remarks"></a>설명
  이 함수를 사용 하 여 소스 제어 시스템에서 파일의 이름을 바꾸거나 한 위치에서 다른 위치로 이동할 수 있습니다. 원본 제어 플러그 인은 디스크의 파일에 액세스를 시도 하지 않아야 합니다. 로컬 파일의 이름을 바꾸는 것은 IDE의 책임입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

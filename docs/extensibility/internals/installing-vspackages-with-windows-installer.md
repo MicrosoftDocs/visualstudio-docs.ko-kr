@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], with Windows Installer
 - VSPackages, deploying
 ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ab4493d1d3acce3ad28c834136d25264a74180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1638f6d041dda28ca79492ba2c8e6ef772ce8bc7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839822"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074669"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows Installer를 사용하여 VSPackage 설치
 VSPackage를에 통합 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하려면 사용자의 컴퓨터에 파일을 복사 하는 것 외에 더 많은 작업이 필요 합니다. VSPackage의 설치 관리자가 VSPackage와 종속 파일을 설치 하 고에 등록 하 여 통합 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . VSPackage는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 시작 화면 및 정보 대화 상자에 아이콘을 표시 하는 등의 통합 기능을 활용할 수 있습니다.

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73642024cb379e804559ba8dd55eb44722cf580
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 48bdc4f1bb2668b83da3b042df194e73045e45fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083520"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 배열 형식을 만들 수 있도록 **Idebugtypefieldbuilder** 를 확장 합니다.
@@ -33,7 +33,7 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 ## <a name="methods"></a>메서드
  [Idebugtypefieldbuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) 인터페이스의 메서드 외에도이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|지정 된 형식 및 크기의 배열을 만듭니다.|
 

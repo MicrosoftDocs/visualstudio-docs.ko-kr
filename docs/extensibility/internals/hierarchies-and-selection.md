@@ -9,17 +9,17 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98f3dcfa73387f2b90ed829df198d3e9f0ccb2ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 927d55a5217699222aadcbcb7a3526f22e010e8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880057"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074732"
 ---
 # <a name="hierarchies-and-selection"></a>계층 및 선택
 를 사용자 지정할 때 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 가 프로젝트와 같은 계층 구조 및 선택 컨텍스트를 사용 하 여 사용자에 게 표시 되는 항목을 결정 하는 방법을 이해 해야 합니다. 이 섹션에서는 계층 및 선택의 개념에 대해 설명 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .

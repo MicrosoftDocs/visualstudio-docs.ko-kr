@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBoundBreakpoint2 interface
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2726a2422c49335d9c95e7d500381ad1fdc0108
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b8a48ffcb3c0409839ec9323679e396a7e23b8f3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088824"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 이 인터페이스는 코드 위치에 바인딩되는 중단점을 나타냅니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```
 IDebugBoundBreakpoint2 : IUnknown
@@ -38,7 +38,7 @@ IDebugBoundBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugBoundBreakpoint2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|지정 된 바인딩된 중단점이 만들어진 보류 중인 중단점을 가져옵니다.|
 |[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|이 바인딩된 중단점의 상태를 가져옵니다.|
@@ -48,7 +48,7 @@ IDebugBoundBreakpoint2 : IUnknown
 |[SetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-sethitcount.md)|이 바인딩된 중단점의 적중 횟수를 설정 합니다.|
 |[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)|이 바인딩된 중단점과 연결 된 조건을 설정 하거나 변경 합니다.|
 |[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|이 바인딩된 중단점과 연결 된 패스 수를 설정 하거나 변경 합니다.|
-|[Delete](../../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|중단점을 삭제합니다.|
+|[삭제](../../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|중단점을 삭제합니다.|
 
 ## <a name="requirements"></a>요구 사항
  헤더: msdbg .h
@@ -57,7 +57,7 @@ IDebugBoundBreakpoint2 : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)
 - [다음](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)
 - [바인딩하며](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

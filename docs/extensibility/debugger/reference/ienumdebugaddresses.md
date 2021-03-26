@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses interface
 ms.assetid: 5f6f6751-e6d8-4c5a-8e81-414b6e5d8cc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 29b927f9b614e95be51bd285e36ab1e01c09f568
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222642"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083130"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 이 인터페이스는 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 인터페이스를 구현 하는 개체의 컬렉션을 나타냅니다.
@@ -38,7 +38,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 순서의 메서드
  이 인터페이스는 다음 메서드를 구현 합니다.
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[다음](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|열거형에서 다음 [Idebugaddress](../../../extensibility/debugger/reference/idebugaddress.md) 개체 집합을 검색 합니다.|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|지정 된 수의 항목을 건너뜁니다.|
@@ -56,7 +56,7 @@ IEnumDebugAdresses : IUnknown
 
  어셈블리: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [기호 공급자 인터페이스](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: facfb48fbe02ff374c594f1ddadf0710c1f989d6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888136"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074355"
 ---
 # <a name="test-area-7-share"></a>테스트 영역 7: 공유
 이 테스트 영역에서는 **공유** 명령을 통해 위치 간에 항목을 공유 하는 방법을 설명 합니다.
@@ -60,5 +60,5 @@ ms.locfileid: "99888136"
 |폴더를 로드 된 프로젝트에 공유-재귀|1. 새 프로젝트를 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 프로젝트를 선택 합니다.<br />4. **공유** 대화 상자 (**파일**  ->  **원본 제어**  ->  **공유**)를 엽니다.<br />5. 폴더를 선택 합니다.<br />6. 폴더를 프로젝트에 재귀적으로 공유 합니다.|일반적인 예상 동작입니다.|
 |한 프로젝트에서 다른 프로젝트에 여러 파일 공유|1. 여러 파일을 포함 하는 새 프로젝트를 만듭니다.<br />2. 솔루션을 소스 제어에 추가 합니다.<br />3. 솔루션을 닫습니다.<br />4. 새 솔루션에서 새 프로젝트를 만듭니다.<br />5. 솔루션을 소스 제어에 추가 합니다.<br />6. 프로젝트를 선택 합니다.<br />7. **공유** 대화 상자 (**파일**  ->  **원본 제어**  ->  **공유**)를 엽니다.<br />8. 이전에 만든 프로젝트의 여러 파일을 현재 열려 있는 프로젝트와 공유 합니다.|일반적인 예상 동작입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인에 대한 테스트 가이드](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

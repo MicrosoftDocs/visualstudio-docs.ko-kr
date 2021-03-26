@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPropertyInfo2::Clone
 ms.assetid: 0ede1667-1071-4aa4-b887-260ea103d724
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 389bd852fa0be0c210d699dfa0e94be78e67d075
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 79f5ffd45799b8c2c2ed1642004c26889b26c172
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226035"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082922"
 ---
 # <a name="ienumdebugpropertyinfo2clone"></a>IEnumDebugPropertyInfo2::Clone
 현재 열거형의 복사본을 별도의 개체로 반환 합니다.
@@ -50,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>설명
  열거형의 복사본은이 메서드가 호출 될 때의 원래 상태와 동일 합니다. 그러나 복사본과 원래 상태는 별개 이며 개별적으로 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 880cb2cf7db5c7a988d6549865de1864cb799e53
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 911219605859025f1877d040b5932714b10f836a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221498"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073900"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 함수
 이 함수는 소스 제어에서 선택한 파일 집합에 대 한 상태 정보를 가져옵니다.
@@ -54,7 +54,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|쿼리가 성공 했습니다.|
 |SCC_E_ACCESSFAILURE|원본 제어 시스템에 액세스 하는 데 문제가 발생 했습니다. 네트워크 또는 경합 문제로 인해 발생 했을 수 있습니다. 다시 시도 하는 것이 좋습니다.|
@@ -76,6 +76,6 @@ SCCRTN SccQueryInfo(
 
 - 현재 사용자가 파일을 작업 디렉터리가 아닌 다른 디렉터리에 체크 아웃 하면이 `SCC_STATUS_OUTBYUSER` 설정 되지만는 설정 `SCC_STATUS_CHECKEDOUT` 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [파일 상태 코드](../extensibility/file-status-code-enumerator.md)

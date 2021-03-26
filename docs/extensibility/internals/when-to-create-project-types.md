@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 427c35a03f9d0cb11667ca9eaf88f144d018f620
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869520"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074303"
 ---
 # <a name="when-to-create-project-types"></a>프로젝트 형식을 만들어야 하는 경우
 새 프로젝트 형식을 만들면 사용자를 사용자 지정 하기 위한 기초를 제공 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 합니다. 그러나 모든 사용자 지정에는 새 프로젝트 형식을 만들 필요가 없습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 다음 지침은 시나리오에 새 프로젝트 형식이 필요한 지 여부를 확인 하는 데 도움이 됩니다.
@@ -49,7 +49,7 @@ ms.locfileid: "99869520"
 ## <a name="use-an-existing-project-type"></a>기존 프로젝트 형식 사용
  경우에 따라 새 프로젝트를 만들 필요가 없습니다. 다음 표에서는에 대 한 프로젝트 형식을 만들 필요가 없는 태스크를 보여 줍니다.
 
-|Task|Description|
+|작업|Description|
 |----------|-----------------|
 |명령 처리|모든 VSPackage은 명령을 처리할 수 있습니다.|
 |편집기 빌드|사용자 지정 편집기를 등록할 수 있습니다. 자세한 내용은 [Windows 및 편집기 문서](/previous-versions/bb165691(v=vs.100))를 참조 하세요.|
@@ -59,7 +59,7 @@ ms.locfileid: "99869520"
 ## <a name="create-a-project-subtype"></a>프로젝트 하위 형식 만들기
  프로젝트 하위 형식을 사용 하 여 새 프로젝트 형식을 만들지 않고도 관리 되는 프로젝트 형식을 확장할 수 있습니다. 프로젝트 하위 유형은 COM 집계를 사용 하 여 Microsoft 또는에서 작성 된 관리 되는 프로젝트를 확장 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 합니다. COM 집계를 사용 하면 대부분의 관리 되는 프로젝트 시스템 구현을 다시 사용 하 고 집계 및 지원 인터페이스를 사용 하 여 특정 시나리오에 대 한 사용자 지정을 계속할 수 있습니다. 프로젝트 하위 형식에 대 한 자세한 내용은 [프로젝트 하위 형식](../../extensibility/internals/project-subtypes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [문서 창 및 편집기](/previous-versions/bb165691(v=vs.100))
 - [검사 목록: 새 프로젝트 형식 만들기](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)

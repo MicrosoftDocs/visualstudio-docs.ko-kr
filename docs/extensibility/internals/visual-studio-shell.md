@@ -8,17 +8,17 @@ helpviewer_keywords:
 - shell, Visual Studio
 - Visual Studio, shell
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ebc01c76c17319ebcfe2b61c06a6f2365a68122
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5dafd90294fd0968c78846d4162c1ff02c584f3f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941621"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074342"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]셸은의 기본 통합 에이전트입니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 셸은 Vspackage가 공통 서비스를 공유할 수 있도록 하는 데 필요한 기능을 제공 합니다. 의 아키텍처 목표는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vspackage의 vest 기본 기능에 대 한 것 이기 때문에 shell은 기본 기능을 제공 하 고 해당 구성 요소 vspackage 간의 교차 통신을 지 원하는 프레임 워크입니다.
@@ -80,7 +80,7 @@ ms.locfileid: "99941621"
 
 - **도구 상자**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c7e940c2284b5b39097226f9a5b0c3b34a0d18
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: fd2d499fad2e05a8f295e2c087289fcb9477f90f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222954"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083481"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 대상 컴퓨터에 대 한 정보를 쿼리할 수 있습니다.
@@ -33,7 +33,7 @@ IDebugWindowsComputerPort2 : IUnknown
 ## <a name="methods"></a>메서드
  다음 표에서는의 메서드를 보여 줍니다 `IDebugWindowsComputerPort2` .
 
-|메서드|설명|
+|메서드|Description|
 |------------|-----------------|
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|디버거가 실행 중인 컴퓨터에 대 한 정보를 검색 합니다.|
 

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::FindAlias method
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db4d5cad6d0c2990141e0dd3a824425b8b53145b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9958c1c2b93d6547f1f3453bafc9e331f9061844
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167726"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089058"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 이 메서드는 이름이 지정 된 별칭을 찾습니다. 프로그램의 모든 별칭을 검색 합니다.
@@ -55,6 +55,6 @@ int FindAlias(
 ## <a name="remarks"></a>설명
  이 메서드는를 호출 하기 전에 대상 개체를 null로 초기화 합니다. 그런 다음 나중에 null 값을 테스트 하 여 별칭을 찾을 수 있는지 여부를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

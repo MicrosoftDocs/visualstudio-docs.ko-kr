@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839861"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074706"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK 기본 사항
 
@@ -64,7 +64,7 @@ ms.locfileid: "99839861"
 
  일부 도구 창은 솔루션 탐색기 도구 창을 표시 하 고 다른 도구 창을 숨기는 단일 창에 함께 도킹 되지만 탭을 클릭 하 여 사용할 수 있습니다. 이 그림에서는 두 개의 다른 도구 창, **오류 목록** 및 **출력** 창을 보여 줍니다. 단일 창에 함께 도킹 됩니다.
 
- 또한 몇 가지 편집기 창이 표시 되는 주 문서 창이 표시 됩니다. 도구 창에는 일반적으로 하나의 인스턴스만 있지만 (예: 하나의 **솔루션 탐색기** 만 열 수 있음) 편집기 창에는 여러 인스턴스가 포함 될 수 있습니다. 각 인스턴스는 개별 문서를 편집 하는 데 사용 되지만 모두 동일한 창에 도킹 됩니다. 이 그림에서는 두 개의 편집기 창, 폼 디자이너 창이 있는 문서 창을 보여 줍니다. 문서 창의 모든 창은 탭을 클릭 하 여 사용할 수 있지만 EditorPane.cs 파일이 포함 된 편집기 창이 표시 되 고 활성화 됩니다.
+ 또한 몇 가지 편집기 창이 표시 되는 주 문서 창이 표시 됩니다. 도구 창에는 일반적으로 하나의 인스턴스만 있지만 (예: 하나의 **솔루션 탐색기** 만 열 수 있음) 편집기 창에는 여러 인스턴스가 포함 될 수 있습니다. 각 인스턴스는 개별 문서를 편집 하는 데 사용 되지만 모두 동일한 창에 도킹 됩니다. 이 그림에서는 두 개의 편집기 창, 폼 디자이너 창이 있는 문서 창을 보여 줍니다. 문서 창의 모든 창은 탭을 클릭 하 여 사용할 수 있지만 EditorPane .cs 파일이 포함 된 편집기 창은 표시 되 고 활성 상태입니다.
 
  Visual Studio를 확장 하는 경우 Visual Studio 사용자가 확장과 상호 작용할 수 있도록 하는 도구 창을 만들 수 있습니다. Visual Studio 사용자가 문서를 편집 하는 데 사용할 수 있는 고유한 편집기를 만들 수도 있습니다. 도구 창과 편집기가 Visual Studio에 통합 되기 때문에 사용자가 탭에 고정 하거나 탭에 표시 하기 위해 프로그래밍할 필요가 없습니다. Visual Studio에 올바르게 등록 된 경우 Visual Studio에서 도구 창 및 문서 창의 일반적인 기능이 자동으로 제공 됩니다. 자세한 내용은 [도구 창 확장 및 사용자 지정](../../extensibility/extending-and-customizing-tool-windows.md)을 참조 하세요.
 

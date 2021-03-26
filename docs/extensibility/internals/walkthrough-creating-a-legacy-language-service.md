@@ -7,22 +7,22 @@ ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899913"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074277"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>연습: 레거시 언어 서비스 만들기
 MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서 언어 서비스를 구현 하 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 는 것은 간단 합니다. 언어 서비스, 언어 서비스 자체 및 해당 언어의 파서를 호스트 하는 VSPackage 필요 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>사전 요구 사항
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 패키지 프로젝트 템플릿의 위치
@@ -68,11 +68,11 @@ MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서
 
 4. 템플릿 목록에서 **클래스** 가 선택 되어 있는지 확인 합니다.
 
-5. 클래스 파일의 이름에 **MyLanguageService.cs** 를 입력 하 고 **추가** 를 클릭 합니다.
+5. 클래스 파일 이름에 **MyLanguageService** 를 입력 하 고 **추가** 를 클릭 합니다.
 
      원하는 이름을 사용할 수 있습니다. 여기에서 자세히 설명 `MyLanguageService` 하는 절차는 이름으로 가정 합니다.
 
-6. MyLanguageService.cs 파일에서 다음 지시문을 추가 합니다 `using` .
+6. MyLanguageService 파일에서 다음 지시문을 추가 합니다 `using` .
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
@@ -88,7 +88,7 @@ MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서
 
 ### <a name="register-the-language-service"></a>언어 서비스 등록
 
-1. MyLanguagePackagePackage.cs 파일을 열고 다음 지시문을 추가 합니다 `using` .
+1. MyLanguagePackagePackage 파일을 열고 다음 지시문을 추가 합니다 `using` .
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
@@ -132,5 +132,5 @@ MPF (관리 패키지 프레임 워크) 언어 클래스를 사용 하 여에서
 
      예를 들어를 입력 `public override` 하 여 해당 클래스에서 재정의할 수 있는 모든 메서드 목록을 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 구현](../../extensibility/internals/implementing-a-legacy-language-service1.md)

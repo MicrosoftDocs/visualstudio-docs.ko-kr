@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbdd539437bce6f160dfa8661f514bf9f40b134
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9973bb86296442f4b936ddb54ff645d74d7ab74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965332"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074940"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>방법: 비동기 Visual Studio 서비스 제공
 UI 스레드를 차단 하지 않고 서비스를 가져오려면 비동기 서비스를 만들어 백그라운드 스레드에서 패키지를 로드 해야 합니다. 이러한 목적을 위해 대신를 사용 하 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> <xref:Microsoft.VisualStudio.Shell.Package> 고 비동기 패키지의 특수 비동기 메서드를 사용 하 여 서비스를 추가할 수 있습니다.
@@ -26,9 +26,9 @@ UI 스레드를 차단 하지 않고 서비스를 가져오려면 비동기 서�
 
 1. VSIX 프로젝트를 만듭니다 (**파일**  >  **새로** 만들기  >  **프로젝트**  >  **Visual c #**  >  **확장성**  >  **vsix 프로젝트**). 프로젝트 이름을 **Testasync** 로 합니다.
 
-2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고   >  **새 항목** 추가  >  **visual c # 항목**  >  **확장성**  >  **visual Studio 패키지** 를 클릭 합니다. 이 파일의 이름을 *TestAsyncPackage.cs* 로 합니다.
+2. 프로젝트에 VSPackage를 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고   >  **새 항목** 추가  >  **visual c # 항목**  >  **확장성**  >  **visual Studio 패키지** 를 클릭 합니다. 이 파일의 이름을 *Testasyncpackage .cs* 로 합니다.
 
-3. *TestAsyncPackage.cs* 에서 다음이 아닌에서 상속 하도록 패키지를 변경 합니다 `AsyncPackage` `Package` .
+3. *Testasyncpackage. cs* 에서 다음이 아닌에서 상속 하도록 패키지를 변경 합니다. `AsyncPackage` `Package`
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -122,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>서비스 추가
 
-1. *TestAsyncPackage.cs* 에서 메서드를 제거 `Initialize()` 하 고 메서드를 재정의 `InitializeAsync()` 합니다. 서비스를 추가 하 고 서비스를 만드는 콜백 메서드를 추가 합니다. 서비스를 추가 하는 비동기 이니셜라이저의 예는 다음과 같습니다.
+1. *Testasyncpackage .cs* 에서 메서드를 제거 `Initialize()` 하 고 메서드를 재정의 `InitializeAsync()` 합니다. 서비스를 추가 하 고 서비스를 만드는 콜백 메서드를 추가 합니다. 서비스를 추가 하는 비동기 이니셜라이저의 예는 다음과 같습니다.
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -173,15 +173,15 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>명령 처리기에서 비동기 서비스 사용
  메뉴 명령에서 비동기 서비스를 사용 하는 방법에 대 한 예제는 다음과 같습니다. 여기에 표시 된 절차를 사용 하 여 비동기 이외의 다른 메서드에서 서비스를 사용할 수 있습니다.
 
-1. 프로젝트에 메뉴 명령을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **추가**  >  를 선택 합니다. **새 항목**  >  **확장성**  >  **사용자 지정 명령** 명령 파일의 이름을 *TestAsyncCommand.cs* 로 합니다.
+1. 프로젝트에 메뉴 명령을 추가 합니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택 하 고 마우스 오른쪽 단추를 클릭 한 다음 **추가**  >  를 선택 합니다. **새 항목**  >  **확장성**  >  **사용자 지정 명령** 명령 파일의 이름을 *Testasynccommand. cs* 로 합니다.
 
-2. 사용자 지정 명령 템플릿은 `Initialize()` 명령을 초기화 하기 위해 메서드를 *TestAsyncPackage.cs* 파일에 다시 추가 합니다. `Initialize()`메서드에서 명령을 초기화 하는 줄을 복사 합니다. 다음과 같이 표시됩니다.
+2. 사용자 지정 명령 템플릿은 `Initialize()` 명령을 초기화 하기 위해 메서드를 *Testasyncpackage .cs* 파일에 다시 추가 합니다. `Initialize()`메서드에서 명령을 초기화 하는 줄을 복사 합니다. 다음과 같이 표시됩니다.
 
     ```csharp
     TestAsyncCommand.Initialize(this);
     ```
 
-     이 줄을 `InitializeAsync()` *AsyncPackageForService.cs* 파일의 메서드로 이동 합니다. 비동기 초기화에 있기 때문에를 사용 하 여 명령을 초기화 하기 전에 주 스레드로 전환 해야 합니다 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . 이제 다음과 같이 표시됩니다.
+     이 줄을 `InitializeAsync()` *Asyncpackageforservice .cs* 파일의 메서드로 이동 합니다. 비동기 초기화에 있기 때문에를 사용 하 여 명령을 초기화 하기 전에 주 스레드로 전환 해야 합니다 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> . 이제 다음과 같이 표시됩니다.
 
     ```csharp
 
@@ -204,7 +204,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 3. 메서드를 삭제 `Initialize()` 합니다.
 
-4. *TestAsyncCommand.cs* 파일에서 메서드를 찾습니다 `MenuItemCallback()` . 메서드의 본문을 삭제 합니다.
+4. *Testasynccommand .cs* 파일에서 메서드를 찾습니다 `MenuItemCallback()` . 메서드의 본문을 삭제 합니다.
 
 5. Using 지시문을 추가 합니다.
 
@@ -240,5 +240,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. 솔루션을 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 표시 되 면 **도구** 메뉴로 이동 하 여 **Testasynccommand 호출** 메뉴 항목을 찾습니다. 이를 클릭 하면 TextWriterService가 지정 된 파일에 기록 합니다. 명령을 호출 하면 패키지도 로드 되므로 솔루션을 열 필요가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용 및 서비스 제공](../extensibility/using-and-providing-services.md)

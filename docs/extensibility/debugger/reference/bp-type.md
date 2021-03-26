@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e310154bc62cdea1fb9069cc868cf9e20335d06
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 23f7b6c42b1c4736ba0eb76a451bb91e74ca5ff5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151107"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089097"
 ---
 # <a name="bp_type"></a>BP_TYPE
 중단점이 코드 위치에 있는지, 데이터 위치에 있는지 또는 다른 중단점 형식 인지를 지정 합니다.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>구문
 
 ```cpp
 enum enum_BP_TYPE {

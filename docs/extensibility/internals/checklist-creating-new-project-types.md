@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a8cdeb250b81a39a5d9350da61a872ef43ae23b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac6495a6c2d5edcde00a3eb002f2fc41211a27e3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944500"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074771"
 ---
 # <a name="checklist-create-new-project-types"></a>검사 목록: 새 프로젝트 형식 만들기
 새 프로젝트 형식을 만들려면 몇 가지 작업을 완료 해야 합니다. 다음 검사 목록에서는 이러한 작업에 대 한 지침을 제공 합니다.
@@ -59,7 +59,7 @@ ms.locfileid: "99944500"
 
 8. Vspackage를 설치 하기 위한 Microsoft Installer (*.msi*) 파일을 만듭니다. 자세한 내용은 [Windows Installer를 사용 하 여 Vspackage 설치](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [프로젝트 형식 등록](../../extensibility/internals/registering-a-project-type.md)및 [vspackage](../../extensibility/internals/vspackages.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visual Studio의 계층 구조](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [프로젝트 형식을 만들어야 하는 경우](../../extensibility/internals/when-to-create-project-types.md)
 - [프로젝트 형식 만들기](../../extensibility/internals/creating-project-types.md)

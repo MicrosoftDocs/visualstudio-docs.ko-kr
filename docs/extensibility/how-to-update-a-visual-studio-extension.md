@@ -9,17 +9,17 @@ helpviewer_keywords:
 - update extension
 - new package version
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a79944fbb558e3e7a5debcfc6a64fe4b75aeb0c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2af6217ac2f056461c6d833de5d804ebdab17b6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946841"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074862"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>방법: Visual Studio 확장 업데이트
 업데이트 된 버전을 설치 하기 위해 **확장 및 업데이트** 를 사용 하 여 시스템에서 Visual Studio 확장을 업데이트할 수 있습니다. 업데이트 된 버전의 확장을 만드는 경우 VSIX 매니페스트의 버전 번호를 증가 시켜 업데이트 된 것으로 나타낼 수 있습니다.
@@ -62,6 +62,6 @@ ms.locfileid: "99946841"
     > [!NOTE]
     > Visual Studio 2015 업데이트 2부터   >    >    >  사용자별 확장, 모든 사용자 확장 또는 둘 다 (기본 설정)에 대해 자동 업데이트를 사용할지 여부를 도구 옵션 환경 **확장 및 업데이트** 에서 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSIX 패키지 분석](../extensibility/anatomy-of-a-vsix-package.md)
 - [Visual Studio 확장 찾기 및 사용](../ide/finding-and-using-visual-studio-extensions.md)

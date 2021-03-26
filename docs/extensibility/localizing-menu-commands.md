@@ -12,17 +12,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86f64935d4e99d4c1245669505fcef8ce7ec1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 141fb0d8ba6746e7d299984461fb3ca739d931d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893622"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073263"
 ---
 # <a name="localize-menu-commands"></a>메뉴 명령 지역화
 
@@ -112,9 +112,9 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
 ## <a name="incorporate-localized-resources-into-the-project"></a>지역화 된 리소스를 프로젝트에 통합
 
-지역화 된 리소스를 통합 하려면 *assemblyinfo.cs* 파일 및 프로젝트 파일을 수정 해야 합니다.
+지역화 된 리소스를 통합 하려면 *assemblyinfo* 파일 및 프로젝트 파일을 수정 해야 합니다.
 
-1. **솔루션 탐색기** 의 **속성** 노드에서 편집기에서 *assemblyinfo.cs* 또는 *assemblyinfo* 를 엽니다.
+1. **솔루션 탐색기** 의 **속성** 노드에서 편집기에서 *assemblyinfo* 또는 *assemblyinfo* 를 엽니다.
 
 2. 다음 항목을 추가 합니다.
 
@@ -167,7 +167,7 @@ Vspackage에서 메뉴 명령 및 도구 모음 단추는 *. vsct* 파일에 정
 
      그러면 주 어셈블리와 각 언어에 대 한 리소스 어셈블리가 생성 됩니다. 배포 프로세스를 지역화 하는 방법에 대 한 자세한 내용은 [VSIX 패키지 지역화](../extensibility/localizing-vsix-packages.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [메뉴 및 명령 확장](../extensibility/extending-menus-and-commands.md)
 - [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)

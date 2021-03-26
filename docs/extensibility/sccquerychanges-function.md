@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e34c37ca999b05e7148d910032fe90c33470ce50
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c821453642a3632c98fac153a367e8ba41495adc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220523"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073939"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 함수
 이 함수는 지정 된 파일 목록을 열거 하 고 콜백 함수를 통해 각 파일의 이름 변경에 대 한 정보를 제공 합니다.
@@ -59,7 +59,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|쿼리 프로세스가 완료 되었습니다.|
 |SCC_E_PROJNOTOPEN|프로젝트가 소스 제어에서 열려 있지 않습니다.|
@@ -69,7 +69,7 @@ SCCRTN SccQueryChanges(
 ## <a name="remarks"></a>설명
  에 대해 쿼리 하는 변경 내용은 네임 스페이스에 있습니다. 특히 파일 이름 바꾸기, 추가 및 제거를 수행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [오류 코드](../extensibility/error-codes.md)

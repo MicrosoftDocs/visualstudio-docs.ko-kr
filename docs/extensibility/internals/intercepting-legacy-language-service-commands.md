@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, intercepting language service
 - language services, intercepting commands
 ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6a759f0cef7329d14d7d1472d38f662c0206448
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7af9ff4a8f04382cff4999b8c57549f3da3db7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839796"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074693"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>레거시 언어 서비스 명령 가로채기
 를 사용 하 여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 언어 서비스에서 텍스트 뷰가 처리 하는 명령을 가로챌 수 있습니다. 이는 텍스트 뷰에서 관리 하지 않는 언어 관련 동작에 유용 합니다. 언어 서비스의 텍스트 뷰에 하나 이상의 명령 필터를 추가 하 여 이러한 명령을 가로챌 수 있습니다.

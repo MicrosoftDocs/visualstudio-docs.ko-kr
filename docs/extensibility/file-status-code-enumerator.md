@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874050"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074953"
 ---
 # <a name="file-status-code-enumerator"></a>파일 상태 코드 열거자
 열거자에는 `SccStatus` 소스 제어 시스템에서 파일의 상태를 지정 하는 명명 된 상수 값이 포함 되어 있습니다. 이 열거형은 [Sccqueryinfo](../extensibility/sccqueryinfo-function.md) 및 콜백 함수에서 사용 됩니다 `POPLISTFUNC` (자세한 내용은 [POPLISTFUNC](../extensibility/poplistfunc.md) 참조).
@@ -50,7 +50,7 @@ enum SccStatus {
 };
 ```
 
-## <a name="members"></a>구성원
+## <a name="members"></a>멤버
  SCC_STATUS_INVALID 상태를 가져올 수 없습니다. 사용 하지 마십시오.
 
  SCC_STATUS_NOTCONTROLLED 파일이 소스 제어에 있지 않습니다.
@@ -87,7 +87,7 @@ enum SccStatus {
 
  SCC_STATUS_RESERVED_2 내부용으로 예약 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

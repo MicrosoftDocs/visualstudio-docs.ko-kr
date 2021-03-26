@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77647daeae2cf6e3bc76f9b0f2a58608b5bb28a4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839601"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074518"
 ---
 # <a name="legacy-language-service-interfaces"></a>레거시 언어 서비스 인터페이스
 특정 프로그래밍 언어의 경우 한 번에 하나의 언어 서비스 인스턴스만 있을 수 있습니다. 그러나 단일 언어 서비스에서는 두 개 이상의 편집기를 사용할 수 있습니다.
@@ -52,6 +52,6 @@ ms.locfileid: "99839601"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|명령 처리기를 사용 하 여 텍스트 뷰를 수정할 수 있습니다. 인터페이스를 구현 하는 클래스 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 도 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . 텍스트 뷰는 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> 메서드에 전달 되는 개체를 쿼리하여 개체를 검색 합니다 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> . <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>각 뷰에 대해 하나의 개체가 있어야 합니다.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|사용자가 코드 창에 입력 하는 명령을 차단 합니다. 구현에서 출력 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 을 모니터링 하 여 사용자 지정 완료 정보 및 보기 수정 제공<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>개체를 텍스트 뷰에 전달 하려면를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [검사 목록: 레거시 언어 서비스 만들기](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

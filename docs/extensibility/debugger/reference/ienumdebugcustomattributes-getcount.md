@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e89525982cf912238038a3c6bf2616407d7af803
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 4d0d61565d57b7e025d67689420dcbf82c93707a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226945"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083117"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 열거자에 있는 사용자 지정 특성의 수를 가져옵니다.
@@ -50,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>설명
  이 메서드는 `Next` ,, `Clone` 및만 `Skip` `Reset` 구현 해야 함을 지정 하는 일반적인 COM 열거 인터페이스의 일부가 아닙니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

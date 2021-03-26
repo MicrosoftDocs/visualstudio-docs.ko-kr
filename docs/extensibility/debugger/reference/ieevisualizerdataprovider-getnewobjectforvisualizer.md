@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07bc02adc9dc3e6675c7bfbbcafd21a350b3a94f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: af26455e37d0ecf881cd0bed898e1997f00a82ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227296"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083351"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 이 메서드는 시각화 도우미에 대 한 새 개체를 가져옵니다. 이 메서드는 항상 기존 개체에서 새 개체를 만듭니다.
@@ -50,6 +50,6 @@ int GetNewObjectForVisualizer(
 ## <a name="remarks"></a>설명
  `This method` 현재 나타내는 개체를 다시 평가 하 고 결과를 새 개체로 반환 합니다. 계산의 결과로 기존 개체가 업데이트 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

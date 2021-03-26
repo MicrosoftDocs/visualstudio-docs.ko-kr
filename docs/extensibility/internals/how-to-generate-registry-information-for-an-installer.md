@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, registering
 - VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a32d8f57be2e1e4c8a2855f7f9008eaed2ae4eac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c97d66574da0b1d4a4f3b12dcf2babf4d619dfb5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874063"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074688"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>방법: 설치 관리자에 대 한 레지스트리 정보 생성
 
@@ -183,7 +183,7 @@ ms.locfileid: "99874063"
     </Include>
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Vspackage 등록](../../extensibility/registering-and-unregistering-vspackages.md)
 - [VSPackages](../../extensibility/internals/vspackages.md)

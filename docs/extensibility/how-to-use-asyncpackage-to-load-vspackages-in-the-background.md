@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 516b6797d622a3f88ed1fcd37b87ecd117d4e8a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993486"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074823"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>방법: AsyncPackage를 사용 하 여 백그라운드에서 Vspackage 로드
 VS 패키지를 로드 하 고 초기화 하면 디스크 i/o가 발생할 수 있습니다. 이러한 i/o가 UI 스레드에서 발생 하면 응답성 문제가 발생할 수 있습니다. 이를 해결 하기 위해 Visual Studio 2015에서는  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 백그라운드 스레드에서 패키지를 로드할 수 있도록 하는 클래스를 도입 했습니다.

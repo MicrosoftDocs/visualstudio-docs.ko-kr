@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], providing wizard support
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 828a08cfe2841595e0ed3a9f1e3d79973a6e6756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5c5cb9649689f711844f97e0b57ab23248e9a00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943383"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074160"
 ---
 # <a name="wizards"></a>마법사
 마법사를 만든 후에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 는 다른 사용자가 사용할 수 있도록 일반적으로 IDE (통합 개발 환경)에 추가 하려고 합니다. 그러면 추가 된 마법사가 **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자에 나타납니다. **새 프로젝트 추가** 또는 **새 항목 추가** 대화 상자를 표시 하려면 **솔루션 탐색기** 에서 열려 있는 솔루션을 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **새 프로젝트** 또는 **새 항목** 을 클릭 합니다.

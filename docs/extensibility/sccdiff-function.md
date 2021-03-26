@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220848"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073991"
 ---
 # <a name="sccdiff-function"></a>SccDiff 함수
 이 함수는 소스 제어 시스템에서 현재 파일 (로컬 디스크의)과 마지막으로 체크 인 한 버전 간의 차이점을 표시 하거나 선택적으로 확인 합니다.
@@ -59,7 +59,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|설명|
+|값|Description|
 |-----------|-----------------|
 |SCC_OK|작업 복사본과 서버 버전이 동일 합니다.|
 |SCC_I_FILESDIFFERS|작업 복사본이 소스 제어에서 사용 하는 버전과 다릅니다.|
@@ -88,5 +88,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|지원 되는 경우 체크섬을 통해 파일을 자동으로 비교 합니다. 지원 되지 않는 경우는 내용 비교로 대체 됩니다.|
 |SCC_DIFF_QD_TIME|지원 될 때 타임 스탬프를 통해 파일을 자동으로 비교 합니다. 지원 되지 않는 경우는 내용 비교로 대체 됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

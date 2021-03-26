@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::LaunchSuspended
 ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5982ad665333aa4d11e2098d3b148db88e77c32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fdffb6f87285e9f33d6abaf864b4d45345a304ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142829"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072496"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 실행 파일을 시작 합니다.
@@ -87,7 +87,7 @@ int LaunchSuspended(
 
  디버그 엔진에서 프로그램을 시작할 수도 있습니다. 자세한 내용은 [프로그램 시작](../../../extensibility/debugger/launching-a-program.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

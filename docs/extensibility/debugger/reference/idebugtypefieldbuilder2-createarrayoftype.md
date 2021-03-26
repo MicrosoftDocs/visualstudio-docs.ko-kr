@@ -7,20 +7,20 @@ helpviewer_keywords:
 - IDebugTypeFieldBuilder2::CreateArrayOfType
 - CreateArrayOfType
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41b89a1f11d4594777518f147dd6a00907af20f1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 954e30fc79ea6e581bc9f39dd17433f976b422ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223072"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083506"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 지정 된 형식 및 크기의 배열을 만듭니다.
@@ -56,5 +56,5 @@ int CreateArrayOfType (
 ## <a name="return-value"></a>반환 값
  성공 하면이 반환 되 `S_OK` 고, 그렇지 않으면 오류 코드가 반환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)
