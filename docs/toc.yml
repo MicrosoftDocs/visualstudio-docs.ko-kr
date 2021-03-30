@@ -62,6 +62,10 @@
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: 엔터프라이즈에서 배포
           items:
+            - name: 관리자 업데이트 적용
+              href: install/applying-administrator-updates.md
+            - name: 관리자 업데이트 사용
+              href: install/enabling-administrator-updates.md
             - name: 지시 파일을 사용하여 Visual Studio 설치 자동화
               href: install/automated-installation-with-response-file.md
             - name: Visual Studio를 배포할 때 제품 키를 자동으로 적용
