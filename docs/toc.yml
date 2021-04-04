@@ -906,6 +906,7 @@
 - name: 디버그 >>
   href: debugger/index.yml
 - name: 버전 제어
+  expanded: true
   items:
     - name: Visual Studio의 새로운 Git 환경
       href: ide/git-with-visual-studio.md

@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca1998b5ca3ad78b269c50244ddf51796c9e4005
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097554"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215528"
 ---
 # <a name="add-search-to-a-tool-window"></a>도구 창에 검색 추가
 확장에서 도구 창을 만들거나 업데이트 하는 경우 Visual Studio의 다른 위치에 표시 되는 것과 동일한 검색 기능을 추가할 수 있습니다. 이 기능에는 다음과 같은 기능이 포함 됩니다.
@@ -79,8 +79,8 @@ ms.locfileid: "105097554"
 
      이 코드는 <xref:System.Windows.Controls.TextBox> 이름이 **SearchResultsTextBox** 인 Public 속성과 **searchcontent** 라는 공용 문자열 속성을 추가 합니다. 생성자에서 SearchResultsTextBox은 입력란으로 설정 되 고 SearchContent는 줄 바꿈 구분 문자열 집합으로 초기화 됩니다. 텍스트 상자의 콘텐츠도 문자열 집합으로 초기화 됩니다.
 
-     [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
-     [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/toolwindowsearch/cs/mycontrol.xaml.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/toolwindowsearch/vb/mycontrol.xaml.vb" id="Snippet1":::
 
 5. 프로젝트를 빌드하고 디버깅을 시작합니다. Visual Studio의 실험적 인스턴스가 나타납니다.
 

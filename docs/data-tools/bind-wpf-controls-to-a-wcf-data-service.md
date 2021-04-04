@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae6a2fd6eac9f59a7836dae23d442962e1b2b27e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867362"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215554"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>WCF 데이터 서비스에 WPF 컨트롤 바인딩
 
@@ -110,8 +110,8 @@ WCF 데이터 서비스를 사용 하 여 응용 프로그램에 데이터를 �
 
 1. `AdventureWorks.svc`코드 파일에서 **AdventureWorksService** 클래스 선언을 다음 코드로 바꿉니다.
 
-     [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
-     [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb" id="Snippet1":::
 
      이 코드는  <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` 엔터티 데이터 모델의 개체 컨텍스트 클래스에서 작동 하는에서 파생 되도록 AdventureWorksService 클래스를 업데이트 합니다. 또한 서비스의 클라이언트에 `InitializeService` 엔터티에 대한 모든 읽기/쓰기 권한을 허용하도록 `SalesOrderHeader` 메서드를 업데이트합니다.
 
@@ -223,8 +223,8 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 2. 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드의 *localhost* 주소는 사용 중인 개발 컴퓨터의 로컬 호스트 주소로 바꿔야 합니다.
 
-     [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]
-     [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet2":::
 
 ## <a name="navigate-sales-records"></a>판매 레코드 탐색
 
@@ -236,8 +236,8 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 2. 다음 코드를 생성된 `backButton_Click` 이벤트 처리기에 추가합니다.
 
-     [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
-     [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet3":::
 
 3. 디자이너로 돌아가서 단추를 두 번 클릭 **>** 합니다.
 
@@ -245,8 +245,8 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 4. 다음 코드를 생성된 `nextButton_Click` 이벤트 처리기에 추가합니다.
 
-     [!code-csharp[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]
-     [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet4":::
 
 ## <a name="save-changes-to-sales-records"></a>판매 레코드 변경 내용 저장
 
@@ -258,8 +258,8 @@ WPF 디자이너에서 XAML을 수정하여 창에 여러 단추를 추가합니
 
 2. 다음 코드를 `saveButton_Click` 이벤트 처리기에 추가합니다.
 
-     [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
-     [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet5":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet5":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
 

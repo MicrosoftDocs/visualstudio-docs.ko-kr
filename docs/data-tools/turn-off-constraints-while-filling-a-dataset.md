@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 177176250d484787ad90825226a0046fb3e099a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3280894ba1634f9775def74a88dcb413c94ba77a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858296"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215710"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>데이터 세트를 채우는 동안 제약 조건 해제
 
@@ -42,8 +42,8 @@ ms.locfileid: "99858296"
 
 - 다음 예제에서는 데이터 집합에서 제약 조건 확인을 일시적으로 해제 하는 방법을 보여 줍니다.
 
-     [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
-     [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet10":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet10":::
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>데이터 세트 디자이너를 사용 하 여 업데이트 제약 조건을 일시 중단 하려면
 

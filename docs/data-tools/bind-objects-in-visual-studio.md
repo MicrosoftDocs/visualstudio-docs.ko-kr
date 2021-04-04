@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9446fa0edb9302d4032f19f23c8adb8747d9cc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 140700615759404f02109c4506f4c27d083a74b1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859309"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215541"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio에서 개체를 데이터 원본으로 바인딩
 
@@ -69,8 +69,8 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 다음 예에서는 데이터 테이블의 행을 반복 하 고 데이터를 사용 하 여 개체를 채우는 방법을 보여 줍니다.
 
-[!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
-[!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb" id="Snippet4":::
 
 ### <a name="create-a-typed-collection-of-objects"></a>개체의 형식화 된 컬렉션 만들기
 
@@ -85,8 +85,8 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 다음 코드에서는 강력한 형식의 개체 컬렉션에 대 한 클래스를 만드는 방법을 보여 줍니다 `Order` .
 
-[!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
-[!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet8":::
 
 ### <a name="add-objects-to-a-collection"></a>컬렉션에 개체 추가
 
@@ -97,16 +97,16 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 다음 코드에서는의 형식화 된 컬렉션에 개체를 추가 하는 방법을 보여 줍니다 <xref:System.Windows.Forms.BindingSource> .
 
-[!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
-[!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet5":::
 
 다음 코드에서는에서 상속 되는 형식화 된 컬렉션에 개체를 추가 하는 방법을 보여 줍니다 <xref:System.ComponentModel.BindingList%601> .
 
 > [!NOTE]
 > 이 예제에서 컬렉션은 `Orders` 개체의 속성입니다 `Customer` .
 
-[!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
-[!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet6":::
 
 ### <a name="remove-objects-from-a-collection"></a>컬렉션에서 개체 제거
 
@@ -117,8 +117,8 @@ Visual Studio에서 데이터 디자인 도구를 사용 하는 사용자 지정
 
 다음 코드에서는 메서드를 사용 하 여의 형식화 된 컬렉션에서 개체를 찾고 제거 하는 방법을 보여 줍니다 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> .
 
-[!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
-[!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet7":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet7":::
 
 ### <a name="display-object-data-to-users"></a>사용자에 게 개체 데이터 표시
 
@@ -146,8 +146,8 @@ Visual Studio는 데이터베이스에 대해 직접 실행할 수 있는 DBDire
 
 다음 예에서는 dbdirect 메서드를 사용 하 여 `TableAdapter.Insert` 새 고객을 데이터베이스에 직접 추가 하는 방법을 보여 줍니다.
 
-[!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
-[!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>참고 항목
 

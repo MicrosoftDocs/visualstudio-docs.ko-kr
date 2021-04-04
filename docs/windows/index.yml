@@ -8,16 +8,16 @@ metadata:
   description: Visual Studio를 사용하여 선택한 언어로 플랫폼 또는 디바이스에 대한 애플리케이션, 서비스 및 도구를 개발하는 방법에 대해 알아봅니다.
   ms.topic: hub-page
   ms.custom: contperf-fy21q1
-  ms.date: 03/23/2021
+  ms.date: 03/30/2021
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 9ea356f29ed511dc5e968dd0947f614277d497f0
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+  ms.openlocfilehash: c2f3b148f99924047c71f2bf1a13a99183e77063
+  ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105080283"
+  ms.lasthandoff: 03/31/2021
+  ms.locfileid: "106083544"
 highlightedContent:
   items:
   - title: 설정 및 설치
@@ -186,8 +186,8 @@ additionalContent:
       summary: 웹 배포, InstallShield, NuGet, 연속 통합 등을 사용하여 앱과 코드를 공유합니다.
       url: ../deployment/index.yml
     - title: 버전 제어
-      summary: Git 및 TFVC 같은 버전 제어 기술을 사용하여 코드를 공유합니다.
-      url: /azure/devops/repos/index
+      summary: Git 및 GitHub 같은 버전 제어 기술을 사용하여 코드를 공유합니다.
+      url: ../ide/git-with-visual-studio.md
     - title: DevOps
       summary: 클라우드에서 앱을 지속적으로 빌드 및 릴리스하고 Azure DevOps Services로 Agile 사례를 구현하세요.
       url: /azure/devops

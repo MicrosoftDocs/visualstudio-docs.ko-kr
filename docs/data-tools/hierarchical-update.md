@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43d4267ce0e180a525e990e372b7a6773a9cc51
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858841"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215814"
 ---
 # <a name="hierarchical-update"></a>계층적 업데이트
 
@@ -93,8 +93,8 @@ ms.locfileid: "99858841"
 
 2. `OrdersBindingSource.EndEdit` 메서드를 호출하는 줄 뒤에 `CustomersBindingSource.EndEdit` 메서드를 호출하는 코드 줄을 추가합니다. **저장** 단추 클릭 이벤트 내의 코드는 다음과 같습니다.
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet1":::
 
 이처럼 데이터를 데이터베이스에 저장하기 전에 관련 자식 테이블에 대해 변경 내용을 커밋해야 할 뿐 아니라 새 자식 레코드를 데이터 세트에 추가하기 전에 새로 만든 부모 레코드도 커밋해야 할 수 있습니다. 즉, 새 `Customer` 자식 레코드 ( `Orders` )를 데이터 집합에 추가 하기 전에 새 부모 레코드 ()를 데이터 집합에 추가 해야 할 수도 있습니다. 자식 `BindingSource.AddingNew` 이벤트를 사용하면 이 작업을 수행할 수 있습니다.
 
@@ -109,8 +109,8 @@ ms.locfileid: "99858841"
 
 2. 메서드를 호출 하는 이벤트 처리기에 코드 줄을 추가 `CustomersBindingSource.EndEdit` 합니다. `OrdersBindingSource_AddingNew` 이벤트 처리기의 코드는 다음과 같습니다.
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet2":::
 
 ## <a name="tableadaptermanager-reference"></a>TableAdapterManager 참조
 

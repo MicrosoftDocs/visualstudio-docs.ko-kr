@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4539d269f27cd09f96c8633d0efd603708f1f2e1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858451"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215775"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>TableAdapter DBDirect 메서드를 사용하여 데이터 저장
 
@@ -41,7 +41,7 @@ ms.locfileid: "99858451"
 
 - 데이터베이스에 직접 액세스 하 고 삽입, 업데이트 및 삭제를 수행 하는 메서드를 추가 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -123,7 +123,7 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
     |----------|----------|
     |`InsertButton`|**삽입**|
     |`UpdateButton`|**업데이트**|
-    |`DeleteButton`|**Delete**|
+    |`DeleteButton`|**삭제**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>데이터베이스에 새 레코드를 삽입하는 코드를 추가하려면
 
@@ -131,8 +131,8 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 2. `InsertButton_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
-     [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
-     [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs" id="Snippet1":::
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>데이터베이스에서 레코드를 업데이트하는 코드를 추가하려면
 
@@ -140,8 +140,8 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 2. `UpdateButton_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
-     [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
-     [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs" id="Snippet2":::
 
 ### <a name="to-add-code-to-delete-records-from-the-database"></a>데이터베이스에서 레코드를 삭제 하는 코드를 추가 하려면
 
@@ -149,8 +149,8 @@ Windows form에서 데이터 바인딩된 컨트롤을 만들려면 주 **지역
 
 2. `DeleteButton_Click` 이벤트 처리기를 다음 코드로 바꿉니다.
 
-     [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
-     [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb" id="Snippet3":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs" id="Snippet3":::
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 

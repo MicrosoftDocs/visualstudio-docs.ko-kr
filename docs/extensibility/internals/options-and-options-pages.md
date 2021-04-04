@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6c5810cd95b50a63f32cfaa6123e81e35a4be9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 32bcb32c4fc80a5806c9007c3119a2ba3de62427
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063034"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214514"
 ---
 # <a name="options-and-options-pages"></a>옵션 및 옵션 페이지
 **도구** 메뉴에서 **옵션** 을 클릭 하 여 **옵션** 대화 상자를 엽니다. 이 대화 상자의 옵션을 옵션 페이지 라고 통칭 합니다. 탐색 창에 있는 트리 컨트롤에는 옵션 범주가 있으며 모든 범주에는 옵션 페이지가 있습니다. 페이지를 선택 하면 오른쪽 창에 해당 옵션이 표시 됩니다. 이러한 페이지를 사용 하 여 VSPackage 상태를 결정 하는 옵션의 값을 변경할 수 있습니다.
@@ -36,8 +36,8 @@ ms.locfileid: "105063034"
 ## <a name="options-page-registry-path"></a>옵션 페이지 레지스트리 경로
  기본적으로 옵션 페이지에서 관리 하는 속성의 레지스트리 경로는 조합 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , Word DialogPage 및 옵션 페이지 클래스의 형식 이름에 의해 결정 됩니다. 예를 들어 옵션 페이지 클래스는 다음과 같이 정의할 수 있습니다.
 
- [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet1":::
 
  <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>이 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp 된 경우 속성 이름 및 값 쌍은 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral의 하위 키입니다.
 
@@ -46,8 +46,8 @@ ms.locfileid: "105063034"
 ## <a name="toolsoptions-page-attributes-and-layout"></a>도구/옵션 페이지 특성 및 레이아웃
  <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>특성은 옵션 대화 상자의 탐색 트리에서 사용자 지정 옵션 페이지를 범주로 그룹화 하는 **방법을** 결정 합니다. <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>특성은 옵션 페이지를 인터페이스를 제공 하는 VSPackage와 연결 합니다. 다음과 같은 코드 조각을 생각해 봅시다.
 
- [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet2":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet2":::
 
  이를 통해 MyPackage는 옵션 Spagegeneral 및 OptionsPageCustom의 두 가지 옵션 페이지를 제공 합니다. **옵션** 대화 상자에서 두 옵션 페이지가 모두 **내 옵션** 페이지 범주에 **일반** 및 **사용자 지정** 으로 나타납니다.
 
@@ -65,21 +65,21 @@ ms.locfileid: "105063034"
 
   다음과 같은 코드 조각을 생각해 봅시다.
 
-  [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
-  [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs" id="Snippet3":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb" id="Snippet3":::
 
   옵션 페이지의 옵션 페이지에 **는 옵션** **페이지에 표시** 되는 옵션입니다. 이 옵션을 선택 하면 설명 상자에 설명, **내 정수 옵션이** 표시 됩니다.
 
 ## <a name="accessing-options-pages-from-another-vspackage"></a>다른 VSPackage에서 옵션 페이지 액세스
  옵션 페이지를 호스트 하 고 관리 하는 VSPackage는 자동화 모델을 사용 하 여 다른 VSPackage에서 프로그래밍 방식으로 액세스할 수 있습니다. 예를 들어 다음 코드에서 VSPackage는 옵션 페이지를 호스트 하는 것으로 등록 됩니다.
 
- [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet4":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet4":::
 
  다음 코드 조각에서는 My: 페이지에서:
 
- [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet5":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet5":::
 
  특성에서 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 옵션 페이지를 등록 하면이 페이지는 `SupportsAutomation` 특성의 인수가 인 경우 automationproperties 키 아래에 등록 됩니다 `true` . Automation은이 레지스트리 항목을 검토 하 여 연결 된 VSPackage을 찾은 다음,이 경우에는 호스팅된 옵션 페이지 (이 경우 내 그리드 페이지)를 통해 속성에 액세스 합니다.
 

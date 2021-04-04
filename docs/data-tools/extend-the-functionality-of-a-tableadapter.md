@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0f68f38f801d63367b1ee9150c723767ec667
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8cea8ec761bf50ddc0f928112975c366f62418b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858880"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215840"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>TableAdapter의 기능 확장
 
@@ -48,8 +48,8 @@ Tableadapter는 **데이터 세트 디자이너** 를 사용 하 여 디자인 �
 
 4. 다음과 같이 코드를 프로젝트의 올바른 네임 스페이스 및 partial 클래스 이름으로 바꿉니다.
 
-     [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
-     [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb" id="Snippet2":::
 
 ## <a name="see-also"></a>참고 항목
 

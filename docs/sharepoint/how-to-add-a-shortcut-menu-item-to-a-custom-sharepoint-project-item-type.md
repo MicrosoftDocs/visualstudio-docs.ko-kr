@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0679233a727e716debe5d925a22cd256d250a28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e4523d0f992ed72c9af2eb7e542f902578f9338
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923694"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215385"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 바로 가기 메뉴 항목 추가
   사용자 지정 SharePoint 프로젝트 항목 형식을 정의 하는 경우 프로젝트 항목에 바로 가기 메뉴 항목을 추가할 수 있습니다. 메뉴 항목은 사용자가 **솔루션 탐색기** 에서 프로젝트 항목을 마우스 오른쪽 단추로 클릭 하면 나타납니다.
@@ -40,8 +40,8 @@ ms.locfileid: "99923694"
 ## <a name="example"></a>예제
  다음 코드 예제에서는 상황에 맞는 메뉴 항목을 사용자 지정 프로젝트 항목 형식에 추가 하는 방법을 보여 줍니다. 사용자가 **솔루션 탐색기** 의 프로젝트 항목에서 바로 가기 메뉴를 열고 **출력 창에 메시지 쓰기** 메뉴 항목을 선택 하면 Visual Studio에서 **출력** 창에 메시지를 표시 합니다.
 
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs#4)]
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb#4)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs" id="Snippet4":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb" id="Snippet4":::
 
  이 예제에서는 SharePoint 프로젝트 서비스를 사용 하 여 **출력** 창에 메시지를 기록 합니다. 자세한 내용은 [SharePoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)을 참조 하세요.
 

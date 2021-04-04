@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ceec2cafd3476342d9319d9b5d034564759fad
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858919"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215905"
 ---
 # <a name="edit-data-in-datasets"></a>데이터 세트의 데이터 편집
 모든 데이터베이스의 테이블에서 데이터를 편집 하는 것 처럼 데이터 테이블의 데이터를 편집 합니다. 이 프로세스에는 테이블의 레코드 삽입, 업데이트 및 삭제가 포함 될 수 있습니다. 데이터 바인딩된 폼에서 사용자가 편집할 수 있는 필드를 지정할 수 있습니다. 이러한 경우 데이터 바인딩 인프라는 모든 변경 내용 추적을 처리 하 여 나중에 변경 내용을 데이터베이스로 다시 전송할 수 있도록 합니다. 프로그래밍 방식으로 데이터를 편집 하 고 해당 변경 내용을 데이터베이스에 다시 보내려면 변경 내용 추적을 수행 하는 개체 및 메서드를 사용 해야 합니다.
@@ -33,21 +33,21 @@ ms.locfileid: "99858919"
 
 편집 하려는 행의 인덱스를 모르는 경우 메서드를 사용 `FindBy` 하 여 기본 키로 검색 합니다.
 
-[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
-[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet3":::
 
 행 인덱스를 알고 있으면 다음과 같이 행에 액세스 하 여 행을 편집할 수 있습니다.
 
-[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
-[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet5":::
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>데이터 집합에 새 행을 삽입 하려면
 데이터 바인딩된 컨트롤을 사용 하는 응용 프로그램은 일반적으로 [BindingNavigator 컨트롤](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)의 **새로 추가** 단추를 통해 새 레코드를 추가 합니다.
 
 데이터 집합에 새 레코드를 수동으로 추가 하려면 DataTable에서 메서드를 호출 하 여 새 데이터 행을 만듭니다. 그런 다음의 컬렉션 ()에 행을 추가 합니다 <xref:System.Data.DataRow> <xref:System.Data.DataTable.Rows%2A> <xref:System.Data.DataTable> .
 
-[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
-[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet1":::
 
 데이터 집합에서 데이터 원본에 업데이트를 전송 하는 데 필요한 정보를 유지 하려면 메서드를 사용 <xref:System.Data.DataRow.Delete%2A> 하 여 데이터 테이블에서 행을 제거 합니다. 예를 들어 응용 프로그램에서 TableAdapter (또는)를 사용 하는 경우 <xref:System.Data.Common.DataAdapter> tableadapter의 `Update` 메서드는 데이터베이스에서가 인 행을 삭제 합니다 <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState.Deleted> .
 
@@ -64,8 +64,8 @@ ms.locfileid: "99858919"
 
 다음 예에서는 메서드를 호출 하 여 <xref:System.Data.DataRow.Delete%2A> 테이블의 첫 번째 행을 삭제 된 것으로 표시 하는 방법을 보여 줍니다 `Customers` .
 
-[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
-[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet8":::
 
 ## <a name="determine-if-there-are-changed-rows"></a>변경 된 행이 있는지 확인
 데이터 집합의 레코드가 변경 될 때 해당 변경 내용에 대 한 정보는 커밋할 때까지 저장 됩니다. 데이터 `AcceptChanges` 집합 또는 데이터 테이블의 메서드를 호출 하거나 `Update` TableAdapter 또는 데이터 어댑터의 메서드를 호출할 때 변경 내용을 커밋합니다.
@@ -84,8 +84,8 @@ ms.locfileid: "99858919"
 
 다음 예제에서는 메서드에서 반환 값을 확인 하 여 <xref:System.Data.DataSet.HasChanges%2A> 데이터 집합에 변경 된 행이 있는지 여부를 검색 하는 방법을 보여 줍니다 `NorthwindDataset1` .
 
-[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
-[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet12":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet12":::
 
 ## <a name="determine-the-type-of-changes"></a>변경 유형 확인
 열거형의 값을 메서드에 전달 하 여 데이터 집합에서 수행 된 변경 내용 유형을 확인할 수도 있습니다 <xref:System.Data.DataRowState> <xref:System.Data.DataSet.HasChanges%2A> .
@@ -96,8 +96,8 @@ ms.locfileid: "99858919"
 
 다음 예제에서는 라는 데이터 집합을 확인 하 여 `NorthwindDataset1` 새 행이 추가 되었는지 확인 하는 방법을 보여 줍니다.
 
-[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
-[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet13":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet13":::
 
 ## <a name="to-locate-rows-that-have-errors"></a>오류가 있는 행을 찾으려면
 개별 열과 데이터 행을 사용할 때 오류가 발생할 수 있습니다. 속성을 확인 `HasErrors` 하 여, 또는에 오류가 있는지 확인할 수 <xref:System.Data.DataSet> 있습니다 <xref:System.Data.DataTable> <xref:System.Data.DataRow> .
@@ -106,8 +106,8 @@ ms.locfileid: "99858919"
 
 2. `HasErrors`속성이 인 경우 `true` 테이블의 컬렉션을 반복 하 고 행을 통해를 반복 하 여 오류가 있는 행을 찾습니다.
 
-[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
-[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>참고 항목
 

@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82cfcf1ce030cfe597c3ae7bfe85c528184c548a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858243"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215671"
 ---
 # <a name="validate-data-in-datasets"></a>데이터 세트의 데이터 유효성 검사
 데이터 유효성 검사는 데이터 개체에 입력 된 값이 데이터 집합의 스키마 내에서 제약 조건을 준수 하는지 확인 하는 프로세스입니다. 또한 유효성 검사 프로세스는 이러한 값이 응용 프로그램에 대해 설정 된 규칙을 따라 수행 되는지 확인 합니다. 기본 데이터베이스에 업데이트를 보내기 전에 데이터의 유효성을 검사 하는 것이 좋습니다. 이렇게 하면 응용 프로그램과 데이터베이스 간의 잠재적 왕복 수 뿐만 아니라 오류가 줄어듭니다.
@@ -106,7 +106,7 @@ ms.locfileid: "99858243"
     > [!TIP]
     > 테이블 이름 왼쪽을 두 번 클릭 하 여 행 변경 이벤트 처리기를 만듭니다. 테이블 이름을 두 번 클릭 하면 편집할 수 있습니다.
 
-     [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb" id="Snippet3":::
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>행이 변경 될 때 데이터의 유효성을 검사 하려면 (c #)
 
@@ -155,8 +155,8 @@ ms.locfileid: "99858243"
 
      다음 예에서는 라는 새 데이터 집합을 만들고 `changedRecords` 이라는 다른 데이터 집합의 모든 변경 된 레코드로 채웁니다 `dataSet1` .
 
-     [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
-     [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet14":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet14":::
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>데이터 테이블에서 변경 된 모든 레코드를 가져오려면
 
@@ -164,8 +164,8 @@ ms.locfileid: "99858243"
 
      다음 예에서는 라는 새 데이터 테이블을 만들고 `changedRecordsTable` 이라는 다른 데이터 테이블에서 변경 된 모든 레코드를 채웁니다 `dataTable1` .
 
-     [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
-     [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet15":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet15":::
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>특정 행 상태를 포함 하는 모든 레코드를 가져오려면
 
@@ -173,13 +173,13 @@ ms.locfileid: "99858243"
 
      다음 예에서는 라는 새 데이터 집합을 만들고 `addedRecords` 데이터 집합에 추가 된 레코드를 사용 하 여이를 채우는 방법을 보여 줍니다 `dataSet1` .
 
-     [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]
-     [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet16":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet16":::
 
      다음 예에서는 테이블에 최근에 추가 된 모든 레코드를 반환 하는 방법을 보여 줍니다 `Customers` .
 
-     [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]
-     [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet17":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet17":::
 
 ## <a name="access-the-original-version-of-a-datarow"></a>DataRow의 원래 버전에 액세스
 데이터 행이 변경 되 면 데이터 집합은 <xref:System.Data.DataRowVersion.Original> 행의 원래 () 및 새 () 버전을 모두 유지 합니다 <xref:System.Data.DataRowVersion.Current> . 예를 들어 메서드를 호출 하기 전에 `AcceptChanges` 응용 프로그램은 열거형에 정의 된 것과 같은 다른 버전의 레코드에 액세스 <xref:System.Data.DataRowVersion> 하 고 변경 내용을 적절 하 게 처리할 수 있습니다.
@@ -195,8 +195,8 @@ ms.locfileid: "99858243"
 
      다음 예에서는 값을 사용 하 여 <xref:System.Data.DataRowVersion> 에서 필드의 원래 값을 가져오는 방법을 보여 줍니다 `CompanyName` <xref:System.Data.DataRow> .
 
-     [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
-     [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet21":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet21":::
 
 ## <a name="access-the-current-version-of-a-datarow"></a>DataRow의 현재 버전에 액세스 합니다.
 
@@ -206,8 +206,8 @@ ms.locfileid: "99858243"
 
      다음 예에서는 값을 사용 하 여 <xref:System.Data.DataRowVersion> 의 필드에 대 한 현재 값을 가져오는 방법을 보여 줍니다 `CompanyName` <xref:System.Data.DataRow> .
 
-     [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
-     [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet22":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::
 
 ## <a name="see-also"></a>참고 항목
 

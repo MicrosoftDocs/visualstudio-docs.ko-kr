@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d721c8d4f381e99a814852839de0e808d326b3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2634035435679bd5ab2627f803ff9d2c1dc5a863
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889644"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215450"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>방법: SharePoint 프로젝트 항목 확장에 속성 추가
   프로젝트 항목 확장을 사용 하 여 Visual Studio에 이미 설치 되어 있는 모든 SharePoint 프로젝트 항목에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기** 에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다.
@@ -40,8 +40,8 @@ ms.locfileid: "99889644"
 ## <a name="example"></a>예제
  다음 코드 예제에서는 속성 **예** 라는 속성을 이벤트 수신기 프로젝트 항목에 추가 하는 방법을 보여 줍니다.
 
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs#8)]
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb#8)]
+:::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs" id="Snippet8":::
+:::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb" id="Snippet8":::
 
 ### <a name="understand-the-code"></a>코드 이해
  이벤트가 발생할 때마다 클래스의 동일한 인스턴스가 사용 되도록 하기 위해 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 코드 예제에서는 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 이 이벤트가 처음 발생할 때 프로젝트 항목의 속성에 속성 개체를 추가 합니다. 이 이벤트가 다시 발생 하면 코드에서이 개체를 검색 합니다. 속성을 사용 하 여 데이터를 프로젝트 항목에 연결 하는 방법에 대 한 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)을 참조 하세요.

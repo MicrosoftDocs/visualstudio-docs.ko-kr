@@ -2,7 +2,7 @@
 title: 첫 번째 Node.js 앱 만들기
 ms.custom: SEO-VS-2020
 description: 이 빠른 시작에서는 Visual Studio를 사용하여 Node.js 앱 만들기
-ms.date: 06/27/2018
+ms.date: 03/25/2021
 ms.technology: vs-javascript
 ms.topic: quickstart
 ms.devlang: javascript
@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c342018a2331b27a411b5efc23af1438fa18518d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecd65c0348ac16a2097061726e3896961ae04482
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932620"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105617054"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기
 
@@ -115,5 +115,8 @@ Visual Studio IDE 및 Node.js로 시작한 이 빠른 시작을 완료한 것을
 > [!div class="nextstepaction"]
 > [앱을 Linux App Service에 배포](../javascript/publish-nodejs-app-azure.md)
 
-- [Node.js 및 Express에 대한 자습서](../javascript/tutorial-nodejs.md)
-- [Node.js 및 React에 대한 자습서](../javascript/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Node.js 및 Express에 대한 자습서](../javascript/tutorial-nodejs.md)
+
+> [!div class="nextstepaction"]
+> [Node.js 및 React에 대한 자습서](../javascript/tutorial-nodejs-with-react-and-jsx.md)

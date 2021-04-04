@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0b3037c0ec983b9f496947feba41938111fafc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74db1b73dded52ba15ea860873c49c0264f7fea7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851584"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214410"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>방법: 배포 단계가 실행 될 때 코드 실행
   SharePoint 프로젝트의 배포 단계에 대 한 추가 작업을 수행 하려는 경우에는 Visual Studio에서 각 배포 단계를 실행 하기 전과 후에 SharePoint 프로젝트 항목에 의해 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)을 참조 하세요.
@@ -41,8 +41,8 @@ ms.locfileid: "99851584"
 ## <a name="example"></a>예제
  다음 코드 예제에서는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> 목록 인스턴스 프로젝트 항목에 대 한 확장에서 및 이벤트를 처리 하는 방법을 보여 줍니다. 이 확장은 Visual Studio에서 솔루션을 배포 하 고 취소 하는 동안 응용 프로그램 풀을 재생할 때 **출력** 창에 추가 메시지를 기록 합니다.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb" id="Snippet4":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs" id="Snippet4":::
 
 ## <a name="compile-the-code"></a>코드 컴파일
  이 예제에는 다음 어셈블리에 대 한 참조가 필요 합니다.

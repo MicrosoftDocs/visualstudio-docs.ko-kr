@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 796fc389a7cd7d0c587f955792a96d0f2f07a20c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859075"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215970"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>조회 데이터 바인딩을 지원하는 Windows Forms 사용자 정의 컨트롤 만들기
 
@@ -56,7 +56,7 @@ Windows Forms에 데이터를 표시할 때는 **도구 상자** 에서 기존 �
 
 - 새 컨트롤에 데이터를 표시할 폼을 만듭니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -110,8 +110,8 @@ LookupBox 컨트롤을 디자인 하려면 <xref:System.Windows.Forms.ComboBox> 
 
 2. `LookupBox`의 코드를 다음 코드로 바꿉니다.
 
-     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
-     [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/LookupBox.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/LookupBox.cs" id="Snippet5":::
 
 3. **빌드** 메뉴에서 **솔루션 빌드** 를 선택합니다.
 

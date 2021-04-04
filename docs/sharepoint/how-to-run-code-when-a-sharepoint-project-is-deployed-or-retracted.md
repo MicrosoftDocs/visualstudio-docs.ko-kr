@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3362606a7e8c5f2278c2ebfb973321e5b8f3157e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4645d0b2cf1670a3834c4ac09cd66d56b48fbf27
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850141"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214475"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>방법: SharePoint 프로젝트가 배포 되거나 취소 될 때 코드 실행
   SharePoint 프로젝트가 배포 되거나 취소 될 때 추가 작업을 수행 하려는 경우에는 Visual Studio에서 발생 하는 이벤트를 처리할 수 있습니다. 자세한 내용은 [SharePoint 패키징 및 배포 확장](../sharepoint/extending-sharepoint-packaging-and-deployment.md)을 참조 하세요.
@@ -43,8 +43,8 @@ ms.locfileid: "99850141"
 
    다음 코드 예제에서는 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> 프로젝트 확장에서 및 이벤트를 처리 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> . 이 확장은 SharePoint 프로젝트에 대 한 배포가 시작 되 고 완료 되 면 **출력** 창에 추가 메시지를 기록 합니다.
 
-   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
-   [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]
+   :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs" id="Snippet12":::
+   :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb" id="Snippet12":::
 
 ## <a name="compile-the-code"></a>코드 컴파일
  이 예제에는 다음 어셈블리에 대 한 참조가 필요 합니다.

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841668"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082580"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>todo 샘플 앱 빌드 및 실행
 
@@ -30,7 +30,7 @@ ms.locfileid: "99841668"
 
 1. Windows용 Docker 또는 Docker Community Edition이 로컬 머신에 설치되어 있는지 확인합니다. [Windows용 Docker 설치 설명서](https://docs.docker.com/docker-for-windows/install/)를 참조하세요. 설치 프로세스는 샘플이 포함된 ZIP 파일을 localhost 주소에서 사용할 수 있도록 합니다.
 
-1. [ZIP을 다운로드](http://localhost/assets/app.zip)합니다. ZIP 파일을 열고 내용을 추출합니다.
+1. [ZIP을 다운로드](https://github.com/docker/getting-started/tree/master/app)합니다. ZIP 파일을 열고 내용을 추출합니다.
 
 1. 추출이 완료되면 선호하는 코드 편집기를 사용하여 프로젝트를 엽니다. 편집기가 필요한 경우 [Visual Studio Code](https://code.visualstudio.com/)를 사용할 수 있습니다. `package.json`과 하위 디렉터리 2개(`src` 및 `spec`)가 표시됩니다.
 

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4342af681f8e2cc38855bec6041e8b4cd83dcf5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f085cae185a48f3d41c6fa4bca5cad7afb46b3
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866621"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215801"
 ---
 # <a name="query-datasets"></a>데이터 세트 쿼리
 데이터 집합에서 특정 레코드를 검색 하려면 DataTable에서 메서드를 사용 하 고 `FindBy` , 테이블의 Rows 컬렉션을 반복 하는 고유한 foreach 문을 작성 하거나, [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)를 사용 합니다.
@@ -39,8 +39,8 @@ ms.locfileid: "99866621"
 
      다음 예에서는 `CustomerID` 열이 테이블의 기본 키입니다 `Customers` . 이는 생성 된 메서드가 임을 의미 합니다 `FindBy` `FindByCustomerID` . 이 예제에서는 <xref:System.Data.DataRow> 생성 된 메서드를 사용 하 여 변수에 특정를 할당 하는 방법을 보여 줍니다 `FindBy` .
 
-     [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]
-     [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet18":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet18":::
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>기본 키 값을 사용 하 여 형식화 되지 않은 데이터 집합에서 행을 찾으려면
 
@@ -48,8 +48,8 @@ ms.locfileid: "99866621"
 
      다음 예에서는 라는 새 행을 선언 하 `foundRow` 고 메서드의 반환 값을 할당 하는 방법을 보여 줍니다 <xref:System.Data.DataRowCollection.Find%2A> . 기본 키가 있는 경우에는 열 인덱스 1의 내용이 메시지 상자에 표시 됩니다.
 
-     [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]
-     [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet19":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet19":::
 
 ## <a name="find-rows-by-column-values"></a>열 값으로 행 찾기
 
@@ -59,8 +59,8 @@ ms.locfileid: "99866621"
 
      다음 예제에서는의 메서드를 사용 하 여 특정 행을 찾는 방법을 보여 줍니다 <xref:System.Data.DataTable.Select%2A> <xref:System.Data.DataTable> .
 
-     [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]
-     [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet20":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet20":::
 
 ## <a name="access-related-records"></a>관련 레코드 액세스
 데이터 집합의 테이블이 관련 된 경우 개체를 <xref:System.Data.DataRelation> 사용 하 여 다른 테이블에서 관련 레코드를 사용할 수 있습니다. 예를 들어 및 테이블을 포함 하는 데이터 집합을 `Customers` `Orders` 사용할 수 있습니다.
@@ -86,15 +86,15 @@ ms.locfileid: "99866621"
 
 - <xref:System.Data.DataRow.GetChildRows%2A>특정 `Customers` 데이터 행의 메서드를 호출 하 고 테이블에서 행의 배열을 반환 합니다 `Orders` .
 
-     [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
-     [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet6":::
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>선택한 자식 레코드의 부모 레코드를 반환 하려면
 
 - <xref:System.Data.DataRow.GetParentRow%2A>특정 `Orders` 데이터 행의 메서드를 호출 하 고 테이블에서 단일 행을 반환 합니다 `Customers` .
 
-     [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
-     [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet7":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet7":::
 
 ## <a name="see-also"></a>참고 항목
 

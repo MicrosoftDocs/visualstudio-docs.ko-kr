@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5665fc28bacb76c6887cb7dcb1820ec9dc0d2b3a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851720"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215320"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>SharePoint 도구 확장과 사용자 지정 데이터 연결
   SharePoint 도구 확장의 특정 개체에 사용자 지정 데이터를 추가할 수 있습니다. 확장의 다른 코드에서 나중에 액세스 하려는 경우 확장의 한 부분에 데이터가 있는 경우 유용 합니다. 데이터를 저장 하 고 액세스 하는 사용자 지정 방법을 구현 하는 대신 데이터를 확장의 개체와 연결한 다음 나중에 동일한 개체에서 데이터를 검색할 수 있습니다.
@@ -79,8 +79,8 @@ ms.locfileid: "99851720"
 
   다음 코드 예제에서는 특정 데이터 개체가 프로젝트 항목과 이미 연결 되어 있는지 여부를 확인 합니다. 데이터 개체가 프로젝트 항목과 아직 연결 되지 않은 경우 코드는 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 프로젝트 항목의 속성에 개체를 추가 합니다. 큰 예제의 컨텍스트에서이 예제를 보려면 [방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)를 참조 하세요.
 
-  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
-  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
 
 ## <a name="see-also"></a>참고 항목
 - [SharePoint 도구 확장의 프로그래밍 개념 및 기능](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc0eca8005c4eee6e1eb89c410b50be5d0228ec6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 973c3d4b3c4fa2dc602e45736dc3a2d2f23c7616
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946334"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215294"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint 프로젝트 시스템 형식과 기타 Visual Studio 프로젝트 형식 간의 변환
   일부 경우에는 SharePoint 프로젝트 시스템에 개체가 있고 Visual Studio 자동화 개체 모델 또는 통합 개체 모델에서 해당 개체의 기능을 사용 하려는 경우 또는 그 반대의 경우도 있습니다. 이러한 경우 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> SharePoint 프로젝트 서비스의 메서드를 사용 하 여 개체를 다른 개체 모델로 변환할 수 있습니다.
@@ -40,8 +40,8 @@ ms.locfileid: "99946334"
 ## <a name="example"></a>예제
  다음 코드 예제에서는 메서드를 사용 하 여 개체를로 변환 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> <xref:EnvDTE.Project> .
 
- [!code-csharp[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs#2)]
- [!code-vb[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb#2)]
+:::code language="csharp" source="../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs" id="Snippet2":::
+:::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb" id="Snippet2":::
 
  이 예제에는 다음 사항이 필요합니다.
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b8f690b15f843af9337e16ee803509b72e85d7af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17d9ac144b97c090292395dd5ae5e85319dd1308
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889670"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215515"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>방법: 사용자 지정 SharePoint 프로젝트 항목 형식에 속성 추가
   사용자 지정 SharePoint 프로젝트 항목 형식을 정의 하는 경우 프로젝트 항목에 속성을 추가할 수 있습니다. 속성은 **솔루션 탐색기** 에서 프로젝트 항목을 선택 하면 **속성** 창에 표시 됩니다.
@@ -39,8 +39,8 @@ ms.locfileid: "99889670"
 ## <a name="example"></a>예제
  다음 코드 예제에서는 **예제 속성** 이라는 속성을 사용자 지정 프로젝트 항목 형식에 추가 하는 방법을 보여 줍니다.
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet11":::
 
 ### <a name="understand-the-code"></a>코드 이해
  이벤트가 발생할 때마다 클래스의 동일한 인스턴스를 사용 하도록 하기 위해 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 코드 예제에서는 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 이 이벤트가 처음 발생할 때 프로젝트 항목의 속성에 속성 개체를 저장 합니다. 이 이벤트가 다시 발생 하면 코드에서이 개체를 검색 합니다. 속성을 사용 하 여 프로젝트 항목과 함께 데이터를 저장 하는 방법에 대 한 자세한 내용은 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> [SharePoint 도구 확장과 사용자 지정 데이터 연결](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)을 참조 하세요.

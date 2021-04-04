@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6ae4000bb0ef147a8f601ce80483b9f2ecbe2de8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef53a0328fe8427b356132fe878b52a3e504ea9a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955231"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214462"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>방법: SharePoint 프로젝트 서비스 검색
   다음 유형의 솔루션에서 SharePoint 프로젝트 서비스에 액세스할 수 있습니다.
@@ -43,8 +43,8 @@ ms.locfileid: "99955231"
 
      다음 코드 예제에서는 프로젝트 서비스를 사용 하 여 간단한 프로젝트 확장에서 **출력** 창 및 **오류 목록** 창에 메시지를 쓰는 방법을 보여 줍니다.
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
      프로젝트 확장을 만드는 방법에 대 한 자세한 내용은 [방법: SharePoint 프로젝트 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-extension.md)를 참조 하세요.
 
@@ -56,8 +56,8 @@ ms.locfileid: "99955231"
 
      다음 코드 예제에서는 프로젝트 서비스를 사용 하 여 **목록 정의** 프로젝트 항목의 간단한 확장에서 **출력** 창 및 **오류 목록** 창에 메시지를 쓰는 방법을 보여 줍니다.
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet2":::
 
      프로젝트 항목 확장을 만드는 방법에 대 한 자세한 내용은 [방법: SharePoint 프로젝트 항목 확장 만들기](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)를 참조 하세요.
 
@@ -69,8 +69,8 @@ ms.locfileid: "99955231"
 
      다음 코드 예제에서는 프로젝트 서비스를 사용 하 여 간단한 프로젝트 항목 형식 정의에서 **출력** 창 및 **오류 목록** 창에 메시지를 쓰는 방법을 보여 줍니다.
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet3":::
 
      프로젝트 항목 형식을 정의 하는 방법에 대 한 자세한 내용은 [방법: SharePoint 프로젝트 항목 형식 정의](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)를 참조 하세요.
 
@@ -85,8 +85,8 @@ ms.locfileid: "99955231"
 
      다음 코드 예제에서는 프로젝트 서비스를 사용 하 여 확장 프로그램이 **서버 탐색기** 의 목록 노드에 추가 하는 바로 가기 메뉴에서 **출력** 창 및 **오류 목록** 창에 메시지를 쓰는 방법을 보여 줍니다.
 
-     [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
-     [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
      **서버 탐색기** 에서 **sharepoint 연결** 노드를 확장 하는 방법에 대 한 자세한 내용은 [방법: 서버 탐색기에서 sharepoint 노드 확장](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)을 참조 하세요.
 

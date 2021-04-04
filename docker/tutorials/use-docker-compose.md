@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f95a4f130e8ad662b3f0eca8f6f7d2162e2d1c7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bcf3a69dcf8053851e3d8519a25f61fe23ae7e3
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841720"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082567"
 ---
 # <a name="use-docker-compose"></a>Docker Compose 사용
 
@@ -168,7 +168,7 @@ docker run -d \
         image: mysql:5.7
     ```
 
-1. 다음에는 볼륨 매핑을 정의합니다. `docker run`을 사용하여 컨테이너를 실행한 경우 명명된 볼륨이 자동으로 생성되었습니다. 그러나 Compose로 실행하는 경우에는 자동으로 생성되지 않습니다. 최상위 `volumes:` 섹션에 볼륨을 정의한 다음, 서비스 구성에서 탑재 지점을 지정해야 합니다. 단순히 볼륨 이름만 지정하면 기본 옵션이 사용됩니다. 하지만 [훨씬 더 많은 옵션을 사용할 수 있습니다](https://docs.docker.com/compose/compose-file/#volume-configuration-reference).
+1. 다음에는 볼륨 매핑을 정의합니다. `docker run`을 사용하여 컨테이너를 실행한 경우 명명된 볼륨이 자동으로 생성되었습니다. 그러나 Compose로 실행하는 경우에는 자동으로 생성되지 않습니다. 최상위 `volumes:` 섹션에 볼륨을 정의한 다음, 서비스 구성에서 탑재 지점을 지정해야 합니다. 단순히 볼륨 이름만 지정하면 기본 옵션이 사용됩니다. 하지만 [훨씬 더 많은 옵션을 사용할 수 있습니다](https://github.com/compose-spec/compose-spec/blob/master/spec.md#volumes-top-level-element).
 
     ```yaml hl_lines="8 9 10 11 12"
     version: "3.7"
