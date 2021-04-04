@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2f7dddfca06d7bc475286c73087828305464daa5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078333"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217218"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>연습: 시작 페이지에 사용자 설정 저장
 
@@ -28,7 +28,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 설정을 유지 하는 방법에 대 한 자세한 내용은 [사용자 설정 및 옵션 확장](../extensibility/extending-user-settings-and-options.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 > [!NOTE]
 > 이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
@@ -83,7 +83,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 2. 다음 지시문을 `using` 파일의 맨 위에 추가 합니다.
 
-     [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs" id="Snippet11":::
 
 3. `SettingsStore`다음 예제와 같이 private 속성을 추가 합니다.
 
@@ -198,7 +198,7 @@ Visual Studio의 실험적 인스턴스에서 실행 되는 경우 설정은 HKC
 
 다른 이벤트 처리기의 다른 값을 사용 하 여 속성을 가져오고 설정 하 여 원하는 수의 사용자 지정 설정을 저장 하 고 검색 하도록이 사용자 정의 컨트롤을 수정할 수 있습니다 `SettingsStore` . `propertyName`에 대 한 각 호출에 다른 매개 변수를 사용 하는 한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , 값은 레지스트리의 다른 매개 변수를 덮어쓰지 않습니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [시작 페이지에 Visual Studio 명령 추가](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

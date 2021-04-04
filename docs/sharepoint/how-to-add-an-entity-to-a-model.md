@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1d900639463f727a23c4fafab6f077f787c5ca04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94d34e6a623438cd0e2d63d74ee2321841a0582a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959976"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216776"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>방법: 모델에 엔터티 추가
   엔터티를 만들려면 Visual Studio **도구 상자** 의 엔터티 컨트롤을 BDC (비즈니스 데이터 연결) 디자이너에 추가 합니다.
@@ -46,8 +46,8 @@ ms.locfileid: "99959976"
 
 4. 클래스에서 엔터티 필드를 정의 합니다. 프로젝트에 새 클래스를 추가 하거나 개체 관계형 디자이너 (O/R 디자이너)와 같은 다른 도구를 사용 하 여 만든 기존 클래스를 사용할 수 있습니다. 다음 예제에서는 Contact 라는 엔터티 클래스를 보여 줍니다.
 
-     [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
-     [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs" id="Snippet1":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb" id="Snippet1":::
 
 ## <a name="see-also"></a>참고 항목
 - [방법: Creator 메서드 추가](../sharepoint/how-to-add-a-creator-method.md)

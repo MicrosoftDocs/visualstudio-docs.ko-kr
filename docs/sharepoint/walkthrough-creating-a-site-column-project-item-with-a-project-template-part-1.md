@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07f3b90df070eca4e17e5bba9fa6a9e3582bd238
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918731"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217801"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부
   SharePoint 프로젝트는 하나 이상의 SharePoint 프로젝트 항목에 대 한 컨테이너입니다. 사용자 고유의 SharePoint 프로젝트 항목 형식을 만든 다음 프로젝트 템플릿에 연결 하 여 Visual Studio에서 SharePoint 프로젝트 시스템을 확장할 수 있습니다. 이 연습에서는 사이트 열을 만들기 위한 프로젝트 항목 형식을 정의 하 고, 사이트 열 프로젝트 항목을 포함 하는 새 프로젝트를 만드는 데 사용할 수 있는 프로젝트 템플릿을 만듭니다.
@@ -43,7 +43,7 @@ ms.locfileid: "99918731"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 및
@@ -150,8 +150,8 @@ ms.locfileid: "99918731"
 
 1. **SiteColumnProjectItemTypeProvider** 코드 파일에서 기본 코드를 다음 코드로 바꾼 다음 파일을 저장 합니다.
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb" id="Snippet1":::
 
 ## <a name="create-a-visual-studio-project-template"></a>Visual Studio 프로젝트 템플릿 만들기
  프로젝트 템플릿을 만들면 다른 개발자가 사이트 열 프로젝트 항목을 포함 하는 SharePoint 프로젝트를 만들 수 있습니다. SharePoint 프로젝트 템플릿에는 *.csproj* 또는 *.vbproj* 및 *.vstemplate* 파일, sharepoint 프로젝트와 관련 된 파일 등 Visual Studio의 모든 프로젝트에 필요한 파일이 포함 되어 있습니다. 자세한 내용은 [SharePoint 프로젝트 항목에 대 한 항목 템플릿 및 프로젝트 템플릿 만들기](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)를 참조 하세요.
@@ -225,7 +225,7 @@ ms.locfileid: "99918731"
 ## <a name="edit-the-project-template-files"></a>프로젝트 템플릿 파일 편집
  SiteColumnProjectTemplate 프로젝트에서 다음 파일을 편집 하 여 프로젝트 템플릿의 동작을 정의 합니다.
 
-- *AssemblyInfo.cs* 또는 *AssemblyInfo*
+- *AssemblyInfo* 또는 *AssemblyInfo*
 
 - *Elements.xml*
 
@@ -241,9 +241,9 @@ ms.locfileid: "99918731"
 
   다음 절차에서는 이러한 파일 중 일부에 대체 가능한 매개 변수를 추가 합니다. 대체 가능 매개 변수는 달러 기호 ($) 문자로 시작 하 고 끝나는 토큰입니다. 사용자가이 프로젝트 템플릿을 사용 하 여 프로젝트를 만들면 Visual Studio에서 새 프로젝트의 이러한 매개 변수를 특정 값으로 자동으로 바꿉니다. 자세한 내용은 [대체 가능 매개 변수](../sharepoint/replaceable-parameters.md)를 참조하세요.
 
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>AssemblyInfo.cs 또는 AssemblyInfo 파일을 편집 하려면
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>AssemblyInfo 또는 AssemblyInfo 파일을 편집 하려면
 
-1. SiteColumnProjectTemplate 프로젝트에서 *AssemblyInfo.cs* 또는 *AssemblyInfo* 파일을 열고 맨 위에 다음 문을 추가 합니다.
+1. SiteColumnProjectTemplate 프로젝트에서 *AssemblyInfo* 또는 *AssemblyInfo* 파일을 연 후 맨 위에 다음 문을 추가 합니다.
 
     ```vb
     Imports System.Security

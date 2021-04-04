@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305220a8206cc84e55ed7319b5ce6ce1c8058b3c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851532"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217036"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>연습: 기능 이벤트 수신자 추가
 기능 이벤트 수신기는 SharePoint에서 다음 기능 관련 이벤트 중 하나가 발생할 때 실행 되는 메서드입니다.
@@ -85,16 +85,16 @@ ms.locfileid: "99851532"
 
 2. **기능** 노드 아래에서 **Feature1** 에 대 한 바로 가기 메뉴를 열고 **이벤트 수신기 추가** 를 선택 하 여 기능에 이벤트 수신기를 추가 합니다.
 
-     그러면 Feature1에 코드 파일이 추가 됩니다. 이 경우 프로젝트의 개발 언어에 따라 *Feature1.EventReceiver.cs* 또는 *Feature1* 로 이름이 지정 됩니다.
+     그러면 Feature1에 코드 파일이 추가 됩니다. 이 경우에는 프로젝트의 개발 언어에 따라 이름이 *Feature1* 또는 *Feature1* 로 지정 됩니다.
 
 3. 에서 프로젝트를 작성 한 경우에는 [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 이벤트 수신기의 맨 위에 다음 코드를 추가 합니다 (아직 없는 경우).
 
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet1":::
 
 4. 이벤트 수신기 클래스에는 이벤트로 작동 하는 주석 처리 된 여러 메서드가 포함 되어 있습니다. **Featuredeactivating** 메서드를 다음으로 바꿉니다.
 
-     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet2":::
 
 ## <a name="test-the-feature-event-receiver"></a>기능 이벤트 수신기 테스트
  다음으로 기능을 비활성화 하 여 **featuredeactivating** 메서드가 SharePoint 공지 목록에 알림을 출력 하는지 테스트 합니다.

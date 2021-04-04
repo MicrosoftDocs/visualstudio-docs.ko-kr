@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0eebee6e37fbd6696923da0e470f05688fa0387
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885705"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216581"
 ---
 # <a name="how-to-create-an-event-receiver"></a>방법: 이벤트 수신기 만들기
   *이벤트 수신기* 를 만들면 사용자가 목록 또는 목록 항목과 같은 SharePoint 항목을 조작할 때 응답할 수 있습니다. 예를 들어 사용자가 일정을 변경 하거나 연락처 목록에서 이름을 삭제할 때 이벤트 수신기의 코드를 트리거할 수 있습니다. 이 항목을 따라 목록 인스턴스에 이벤트 수신기를 추가 하는 방법을 배울 수 있습니다.
@@ -58,8 +58,8 @@ ms.locfileid: "99885705"
 
 9. 기존 메서드를 `ItemAdded` 다음 코드로 바꾼 다음 **F5** 키를 선택 합니다.
 
-     [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
-     [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb" id="Snippet1":::
 
      코드가 실행 되 고 SharePoint 사이트가 웹 브라우저에 나타납니다.
 

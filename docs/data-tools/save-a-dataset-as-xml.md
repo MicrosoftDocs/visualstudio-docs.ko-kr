@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9030740a25312ea1463b950e34061884e9487ba4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42974852a3051fd3473b6b23d880eeb38b966b95
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858529"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216204"
 ---
 # <a name="save-a-dataset-as-xml"></a>데이터 세트를 XML로 저장
 
@@ -37,15 +37,15 @@ ms.locfileid: "99858529"
 
 - <xref:System.Data.DataSet.GetXml%2A> 메서드는 <xref:System.String>를 반환합니다. 형식의 변수를 선언 <xref:System.String> 하 고 메서드의 결과를 할당 합니다 <xref:System.Data.DataSet.GetXml%2A> .
 
-     [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
-     [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet12":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet12":::
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>데이터 집합의 데이터를 파일에 XML로 저장 하려면
 
 - <xref:System.Data.DataSet.WriteXml%2A> 메서드에 몇 가지 오버 로드가 있습니다. 변수를 선언 하 고 파일을 저장할 올바른 경로를 할당 합니다. 다음 코드에서는 데이터를 파일에 저장 하는 방법을 보여 줍니다.
 
-     [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
-     [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet13":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet13":::
 
 ## <a name="see-also"></a>참고 항목
 

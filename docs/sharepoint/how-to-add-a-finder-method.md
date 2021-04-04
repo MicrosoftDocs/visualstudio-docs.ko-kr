@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bd75c94e2f0f557b85d945d141f952950abb2eb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879685"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216347"
 ---
 # <a name="how-to-add-a-finder-method"></a>방법: Finder 메서드 추가
   BDC (비즈니스 데이터 연결) 서비스를 사용 하 여 웹 파트 또는 목록의 엔터티 목록을 표시 하려면 *Finder* 메서드를 만들어야 합니다. Finder 메서드는 엔터티 인스턴스의 컬렉션을 반환 하는 특수 메서드입니다. 자세한 내용은 [비즈니스 데이터 연결 모델 디자인](../sharepoint/designing-a-business-data-connectivity-model.md)을 참조 하세요.
@@ -61,8 +61,8 @@ ms.locfileid: "99879685"
    > [!NOTE]
    > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
-    [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-    [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="see-also"></a>참고 항목
 - [BDC 모델 디자인 도구 개요](../sharepoint/bdc-model-design-tools-overview.md)

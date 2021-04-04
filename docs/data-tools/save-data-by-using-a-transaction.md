@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c22a0cc9b0b9d37a4d725aa8ce494646e7779f0f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858490"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216074"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>방법: 트랜잭션을 사용하여 데이터 저장
 
@@ -49,8 +49,8 @@ ms.locfileid: "99858490"
 
 - 트랜잭션을 포함 하는 using 문 내에 데이터를 저장 하는 코드를 추가 합니다. 다음 코드에서는 using 문에서 개체를 만들고 인스턴스화하는 방법을 보여 줍니다 <xref:System.Transactions.TransactionScope> .
 
-     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
-     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet11":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet11":::
 
 ## <a name="see-also"></a>참고 항목
 

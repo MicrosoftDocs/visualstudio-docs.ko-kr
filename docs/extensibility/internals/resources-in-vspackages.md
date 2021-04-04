@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4863fb40bc6f70556d8f00305d882e6edd93a0e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a80fc4fbfaf9a308492345ba897363d31d4669ca
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074394"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216542"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage의 리소스
 지역화 된 리소스를 네이티브 위성 UI Dll, 관리 되는 위성 Dll 또는 관리 되는 VSPackage 자체에 포함할 수 있습니다.
@@ -44,8 +44,8 @@ ms.locfileid: "105074394"
 
   특성을 사용 하 여 관리 되는 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 리소스를 사용할 수 있음을 나타낼 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-  [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
-  [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs" id="Snippet1":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb" id="Snippet1":::
 
   이러한 방식으로를 설정 하면에서를 사용 하는 등의 방법으로 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 리소스를 검색할 때 관리 되지 않는 위성 dll을 무시 해야 함을 나타냅니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . 는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 동일한 리소스 ID를 가진 둘 이상의 리소스를 발견 하면 찾은 첫 번째 리소스를 사용 합니다.
 
@@ -87,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]에서 설치 후 VSPackage의 리소스를 요청 하면 해당 패키지가 이미 로드 되 고 초기화 될 수 있으므로 성능 손실은 최소화 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [VSPackage 관리](../../extensibility/managing-vspackages.md)
 - [MFC 응용 프로그램의 지역화 된 리소스: 위성 Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

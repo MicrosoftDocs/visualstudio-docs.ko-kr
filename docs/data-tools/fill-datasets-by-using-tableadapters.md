@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c17c66a1def3c3fa774437825fe15b3f9ff534
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866907"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216282"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters를 사용하여 데이터 세트 채우기
 
@@ -37,7 +37,7 @@ TableAdapter 구성 요소는 지정 된 하나 이상의 쿼리나 저장 프�
 
 TableAdapter 작업에 대 한 자세한 내용은 다음 항목 중 하나를 직접 건너뛸 수 있습니다.
 
-|항목|Description|
+|항목|설명|
 |-----------|-----------------|
 |[TableAdapter 만들기 및 구성](../data-tools/create-and-configure-tableadapters.md)|디자이너를 사용 하 여 Tableadapter를 만들고 구성 하는 방법|
 |[매개 변수가 있는 TableAdapter 쿼리 만들기](../data-tools/create-parameterized-tableadapter-queries.md)|사용자가 TableAdapter 프로시저 또는 쿼리에 인수를 제공할 수 있게 하는 방법|
@@ -54,10 +54,10 @@ Tableadapter는 데이터베이스에 연결 하 고, 쿼리 또는 저장 프�
 
 ![클라이언트 애플리케이션의 데이터 흐름](../data-tools/media/clientdatadiagram.gif)
 
-Tableadapter는 **데이터 세트 디자이너** 를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들어:
+Tableadapter는 **데이터 세트 디자이너** 를 사용 하 여 디자인 되었지만 tableadapter 클래스는의 중첩 클래스로 생성 되지 않습니다  <xref:System.Data.DataSet> . 각 데이터 집합에 특정 한 별도의 네임 스페이스에 있습니다. 예를 들어 라는 데이터 집합이 있는 경우의 `NorthwindDataSet` 에 연결 된 tableadapter는  <xref:System.Data.DataTable> `NorthwindDataSet` `NorthwindDataSetTableAdapters` 네임 스페이스에 있습니다. 특정 TableAdapter를 프로그래밍 방식으로 액세스 하려면 TableAdapter의 새 인스턴스를 선언 해야 합니다. 예를 들면 다음과 같습니다.
 
-[!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
-[!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs" id="Snippet7":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb" id="Snippet7":::
 
 ## <a name="associated-datatable-schema"></a>연결 된 DataTable 스키마
 
@@ -91,7 +91,7 @@ TableAdapter 클래스는 .NET 형식이 아닙니다. 즉, 설명서 나 **개�
 
 Tableadapter의 일반적으로 사용 되는 메서드와 속성은 다음과 같습니다.
 
-|멤버|Description|
+|멤버|설명|
 |------------|-----------------|
 |`TableAdapter.Fill`|Tableadapter의 연결 된 데이터 테이블을 TableAdapter 명령의 결과로 채웁니다 `SELECT` .|
 |`TableAdapter.Update`|변경 내용을 데이터베이스에 다시 보내고 업데이트의 영향을 받는 행 수를 나타내는 정수를 반환 합니다. 자세한 내용은 [TableAdapter를 사용 하 여 데이터 업데이트](../data-tools/update-data-by-using-a-tableadapter.md)를 참조 하세요.|

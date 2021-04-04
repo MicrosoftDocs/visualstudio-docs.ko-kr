@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917336"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216906"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>연습: ClickOnce 배포 API를 사용 하 여 요청 시 어셈블리 다운로드
 기본적으로 응용 프로그램에 포함 된 모든 어셈블리는 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 응용 프로그램을 처음 실행할 때 다운로드 됩니다. 그러나 소수의 사용자가 사용 하는 응용 프로그램의 일부가 있을 수 있습니다. 이 경우 해당 형식 중 하나를 만들 때에만 어셈블리를 다운로드하고자 할 수 있습니다. 다음 연습에서는 애플리케이션의 특정 어셈블리를 "선택 사항"으로 표시하는 방법 및 CLR(공용 언어 런타임)에서 요청할 때 <xref:System.Deployment.Application> 네임스페이스에 있는 클래스를 사용하여 이를 다운로드하는 방법을 설명합니다.
@@ -31,7 +31,7 @@ ms.locfileid: "99917336"
 > [!NOTE]
 > 이 절차를 사용하려면 완전 신뢰 상태에서 애플리케이션을 실행해야 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 다음 구성 요소 중 하나가 필요 합니다.
 
 - Windows SDK입니다. Windows SDK는 Microsoft 다운로드 센터에서 다운로드할 수 있습니다.
@@ -56,10 +56,10 @@ ms.locfileid: "99917336"
 
 5. 메모장 이나 다른 텍스트 편집기를 사용 하 여 `DynamicClass` 라는 단일 속성으로 라는 클래스를 정의 `Message` 합니다.
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. 사용 하는 언어에 따라 *ClickOnceLibrary.cs* 또는 *clickoncelibrary.dll 찾고* 라는 파일로 텍스트를 *ClickOnceOnDemand* 디렉터리에 저장 합니다.
+6. 사용 하는 언어에 따라 *clickoncelibrary.dll 찾고* 또는 *clickoncelibrary.dll 찾고* 라는 파일로 텍스트를 *ClickOnceOnDemand* 디렉터리에 저장 합니다.
 
 7. 파일을 어셈블리로 컴파일합니다.
 
@@ -79,14 +79,14 @@ ms.locfileid: "99917336"
 
 9. 텍스트 편집기를 사용 하 여 새 파일을 만들고 다음 코드를 입력 합니다. 이 코드는 필요한 경우 Clickoncelibrary.dll 찾고 어셈블리를 다운로드 하는 Windows Forms 응용 프로그램을 만듭니다.
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. 코드에서에 대 한 호출을 찾습니다 <xref:System.Reflection.Assembly.LoadFile%2A> .
 
 11. `PublicKeyToken`을 이전에 검색 한 값으로 설정 합니다.
 
-12. *Form1.cs* 또는 *.vb* 로 파일을 저장 합니다.
+12. 파일을 *form1.vb 또는 form1.vb* 로 저장 합니다. 
 
 13. 다음 명령을 사용 하 여 실행 파일로 컴파일합니다.
 

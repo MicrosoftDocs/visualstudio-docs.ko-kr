@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859192"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216061"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF 및 Entity Framework 6을 사용하여 간단한 데이터 애플리케이션 만들기
 
@@ -60,7 +60,7 @@ ms.locfileid: "99859192"
 
 ## <a name="create-the-model"></a>모델 만들기
 
-1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭 하 고   >  **새 항목** 추가를 선택 합니다. 왼쪽 창의 c # 노드 아래에서 **데이터** 를 선택 하 고 가운데 창에서 **ADO.NET 엔터티 데이터 모델** 를 선택 합니다.
+1. **솔루션 탐색기** 에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 항목** 을 선택합니다. 왼쪽 창의 c # 노드 아래에서 **데이터** 를 선택 하 고 가운데 창에서 **ADO.NET 엔터티 데이터 모델** 를 선택 합니다.
 
    ![Entity Framework 모델 새 항목](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -130,9 +130,9 @@ ms.locfileid: "99859192"
 
      ![Orders 클래스를 그리드로 끌기](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio는 UI 컨트롤을 모델의 이벤트에 연결 하는 모든 바인딩 코드를 생성 했습니다. 일부 데이터를 확인 하려면 모델을 채우는 코드를 작성 해야 합니다. 먼저 *MainWindow.xaml.cs* 로 이동 하 여 데이터 컨텍스트의 mainwindow.xaml 클래스에 데이터 멤버를 추가 합니다. 사용자를 위해 생성 된이 개체는 모델의 변경 내용 및 이벤트를 추적 하는 컨트롤 처럼 동작 합니다. 또한 고객과 주문의 CollectionViewSource 데이터 멤버와 관련 생성자 초기화 논리를 추가 합니다. 클래스의 맨 위는 다음과 같습니다.
+7. Visual Studio는 UI 컨트롤을 모델의 이벤트에 연결 하는 모든 바인딩 코드를 생성 했습니다. 일부 데이터를 확인 하려면 모델을 채우는 코드를 작성 해야 합니다. 먼저 *mainwindow.xaml* 로 이동 하 여 데이터 컨텍스트의 mainwindow.xaml 클래스에 데이터 멤버를 추가 합니다. 사용자를 위해 생성 된이 개체는 모델의 변경 내용 및 이벤트를 추적 하는 컨트롤 처럼 동작 합니다. 또한 고객과 주문의 CollectionViewSource 데이터 멤버와 관련 생성자 초기화 논리를 추가 합니다. 클래스의 맨 위는 다음과 같습니다.
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      `using`Load 확장 메서드를 범위로 가져오기 위해 system.object에 대 한 지시문을 추가 합니다.
 
@@ -142,7 +142,8 @@ ms.locfileid: "99859192"
 
      이제 아래로 스크롤하고 이벤트 처리기를 찾습니다 `Window_Loaded` . Visual Studio에서 CollectionViewSource 개체를 추가 했습니다. 모델을 만들 때 선택한 창의 northwindentities 개체를 나타냅니다. 이를 이미 추가 했으므로 여기에 필요 하지 않습니다. 이제 메서드가 다음과 같이 표시 되도록에서 코드를 바꿉니다 `Window_Loaded` .
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. **F5** 키를 누릅니다. CollectionViewSource로 검색 된 첫 번째 고객에 대 한 세부 정보가 표시 됩니다. 또한 데이터 표에 해당 주문이 표시 되어야 합니다. 서식 지정이 유용 하지 않으므로이를 해결 해 보겠습니다. 다른 레코드를 보고 기본 CRUD 작업을 수행 하는 방법도 만들 수 있습니다.
 
@@ -421,9 +422,10 @@ Windows Forms 응용 프로그램에서는 데이터베이스의 행을 탐색 �
 
 코드 숨김이 추가 및 삭제 메서드를 제외 하 고는 최소화 됩니다. 탐색은 CollectionViewSource의 View 속성에서 메서드를 호출 하 여 수행 됩니다. 는 `DeleteOrderCommandHandler` 순서에 따라 하위 삭제를 수행 하는 방법을 보여 줍니다. 연결 된 Order_Details를 먼저 삭제 해야 합니다. 는 `UpdateCommandHandler` 컬렉션에 새 고객 또는 주문을 추가 하거나 사용자가 텍스트 상자에서 변경한 내용으로 기존 고객 또는 주문을 업데이트 합니다.
 
-*MainWindow.xaml.cs* 의 mainwindow.xaml 클래스에 이러한 처리기 메서드를 추가 합니다. Customers 테이블의 CollectionViewSource에 다른 이름이 있는 경우 다음 각 방법에서 이름을 조정 해야 합니다.
+이러한 처리기 메서드를 *mainwindow.xaml* 의 mainwindow.xaml 클래스에 추가 합니다. Customers 테이블의 CollectionViewSource에 다른 이름이 있는 경우 다음 각 방법에서 이름을 조정 해야 합니다.
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 

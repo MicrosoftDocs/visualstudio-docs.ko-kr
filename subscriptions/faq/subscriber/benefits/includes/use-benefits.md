@@ -5,14 +5,14 @@ ms.topic: include
 ms.assetid: 9109bf1e-f725-439d-a870-13741e0dbc90
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 02/15/2021
+ms.date: 04/02/2021
 ms.faqid: q3_2
-ms.openlocfilehash: 2f68d8fcbdf9d4f92980f164181ccc2c6483a265
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: b2f8fbed33908c16252d958d627e4d19f07c1c13
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100552038"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106283051"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>내 혜택을 사용하려면 어떻게 해야 하나요?
 
@@ -20,4 +20,4 @@ ms.locfileid: "100552038"
 
 구독자 포털에서 사용할 수 있는 각 혜택과 함께 혜택을 활성화하는 단계, 혜택을 포함하는 구독 등의 정보를 제공합니다.
 
-[자세한 정보](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions)는 설명서를 확인하세요. 왼쪽 탐색 창에서 ‘구독’을 클릭하고 ‘혜택’을 선택하면 됩니다.
+[자세한 정보](https://docs.microsoft.com/visualstudio/subscriptions/about-benefits)는 설명서를 확인하세요. 왼쪽 탐색 창에서 ‘구독’을 클릭하고 ‘혜택’을 선택하면 됩니다.

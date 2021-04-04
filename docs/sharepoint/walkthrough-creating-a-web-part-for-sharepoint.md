@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918624"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217712"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>연습: SharePoint용 웹 파트 만들기
 
@@ -44,7 +44,7 @@ ms.locfileid: "99918624"
     > [!NOTE]
     > 일부 Visual Studio 사용자 인터페이스 요소의 경우 다음 지침에 설명된 것과 다른 이름 또는 위치가 시스템에 표시될 수 있습니다. 이러한 요소는 사용하는 Visual Studio 버전 및 설정에 따라 결정됩니다. 자세한 내용은 [Visual Studio IDE 개인 설정](../ide/personalizing-the-visual-studio-ide.md)을 참조하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 - 지원되는 Microsoft Windows 및 SharePoint 버전.
 
@@ -82,14 +82,14 @@ ms.locfileid: "99918624"
 
 웹 파트 클래스의 controls 컬렉션에 웹 파트를 추가 하 여 웹 파트에 표시할 컨트롤을 지정할 수 있습니다.
 
-1. **솔루션 탐색기** 에서 *WebPart1* (Visual Basic) 또는 *WebPart1.cs* (c #)를 엽니다.
+1. **솔루션 탐색기** 에서 *WebPart1* (Visual Basic) 또는 *WebPart1* (c #)를 엽니다.
 
      웹 파트 코드 파일이 코드 편집기에서 열립니다.
 
 2. 웹 파트 코드 파일의 맨 위에 다음 지시문을 추가 합니다.
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. `WebPart1` 클래스에 다음 코드를 추가합니다. 이 코드는 다음 필드를 선언 합니다.
 
@@ -101,13 +101,13 @@ ms.locfileid: "99918624"
 
    - 직원 데이터 파일의 경로를 포함 하는 문자열입니다.
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. `WebPart1` 클래스에 다음 코드를 추가합니다. 이 코드는 이라는 사용자 지정 속성을 `DataFilePath` 웹 파트에 추가 합니다. 사용자 지정 속성은 SharePoint에서 사용자가 설정할 수 있는 속성입니다. 이 속성은 데이터 그리드를 채우는 데 사용 되는 XML 데이터 파일의 위치를 가져오고 설정 합니다.
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. `CreateChildControls` 메서드를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -115,8 +115,8 @@ ms.locfileid: "99918624"
 
    - 데이터 표를 직원 데이터를 포함 하는 XML 파일에 바인딩합니다.
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. 다음 메서드를 `WebPart1` 클래스에 추가합니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -124,8 +124,8 @@ ms.locfileid: "99918624"
 
    - 사용자가 동사 메뉴에서 동사를 선택할 때 발생하는 이벤트를 처리합니다. 이 코드는 데이터 표에 표시 되는 직원 목록을 필터링 합니다.
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>웹 파트 테스트
 

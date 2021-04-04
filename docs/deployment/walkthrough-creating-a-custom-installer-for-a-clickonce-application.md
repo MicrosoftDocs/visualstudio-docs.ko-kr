@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7ae131026a94fa368d55bad1d8cd2164b6f960b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917290"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216932"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>연습: ClickOnce 응용 프로그램에 대 한 사용자 지정 설치 관리자 만들기
 *.Exe* 파일을 기반으로 하는 모든 ClickOnce 응용 프로그램은 사용자 지정 설치 관리자에서 자동으로 설치 및 업데이트할 수 있습니다. 사용자 지정 설치 관리자는 보안 및 유지 관리 작업을 위한 사용자 지정 대화 상자를 포함 하 여 설치 중에 사용자 지정 사용자 환경을 구현할 수 있습니다. 설치 작업을 수행 하기 위해 사용자 지정 설치 관리자는 클래스를 사용 합니다 <xref:System.Deployment.Application.InPlaceHostingManager> . 이 연습에서는 ClickOnce 응용 프로그램을 자동으로 설치 하는 사용자 지정 설치 관리자를 만드는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>사용자 지정 ClickOnce 응용 프로그램 설치 관리자를 만들려면
 
@@ -57,8 +57,8 @@ ms.locfileid: "99917290"
     > [!NOTE]
     > 미리 트러스팅에서 할당 한 사용 권한은 사용자 지정 설치 관리자 코드의 사용 권한을 초과할 수 없습니다.
 
-     [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
-     [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs" id="Snippet1":::
 
 5. 코드에서 설치를 시도 하려면 메서드를 호출 `InstallApplication` 합니다. 예를 들어 클래스의 이름을 지정 하는 경우 `MyInstaller` 다음과 같은 방식으로를 호출할 수 있습니다 `InstallApplication` .
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276315b7f470777da30fda33b15bac995deb07fd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952670"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217673"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>연습: 서버 탐색기 확장 하 여 웹 파트 표시
   Visual Studio에서는 **서버 탐색기** 의 **sharepoint 연결** 노드를 사용 하 여 sharepoint 사이트의 구성 요소를 볼 수 있습니다. 그러나 **서버 탐색기** 는 기본적으로 일부 구성 요소를 표시 하지 않습니다. 이 연습에서는 연결 된 각 SharePoint 사이트에 웹 파트 갤러리를 표시 하도록 **서버 탐색기** 를 확장 합니다.
@@ -45,7 +45,7 @@ ms.locfileid: "99952670"
 > [!NOTE]
 > 서버 개체 모델 대신 SharePoint 용 클라이언트 개체 모델을 사용 하는이 연습에 대 한 대체 버전은 [연습: 서버 탐색기 확장에서 sharepoint 클라이언트 개체 모델 호출](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)을 참조 하세요.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -216,8 +216,8 @@ ms.locfileid: "99952670"
     > [!NOTE]
     > 이 코드를 추가 하면 프로젝트에 컴파일 오류가 발생할 수 있지만 이후 단계에서 코드를 추가 하면 사라집니다.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>웹 파트를 나타내는 노드 형식 정의
  웹 파트를 나타내는 새 노드 형식을 정의 하는 클래스를 만듭니다. Visual Studio는이 새 노드 유형을 사용 하 여 **웹 파트 갤러리** 노드 아래에 자식 노드를 표시 합니다. 각 자식 노드는 SharePoint 사이트의 단일 웹 파트를 나타냅니다.
@@ -228,8 +228,8 @@ ms.locfileid: "99952670"
 
 1. WebPartNodeExtension 프로젝트에서 WebPartNodeTypeProvder 코드 파일을 열고 다음 코드를 붙여 넣습니다.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
 
 ## <a name="define-the-web-part-data-class"></a>웹 파트 데이터 클래스 정의
  SharePoint 사이트의 단일 웹 파트에 대 한 데이터를 포함 하는 클래스를 정의 합니다. 이 연습 뒷부분에서는 사이트의 각 웹 파트에 대 한 데이터를 검색 한 다음이 클래스의 인스턴스에 데이터를 할당 하는 사용자 지정 SharePoint 명령을 만듭니다.
@@ -238,8 +238,8 @@ ms.locfileid: "99952670"
 
 1. WebPartNodeExtension 프로젝트에서 Webpartnodeextension 코드 파일을 열고 다음 코드를 붙여 넣습니다.
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs" id="Snippet3":::
 
 ## <a name="define-the-ids-for-the-sharepoint-commands"></a>SharePoint 명령에 대 한 Id 정의
  사용자 지정 SharePoint 명령을 식별 하는 여러 문자열을 정의 합니다. 이러한 명령은이 연습의 뒷부분에서 구현 합니다.
@@ -248,8 +248,8 @@ ms.locfileid: "99952670"
 
 1. WebPartNodeExtension 프로젝트에서 WebPartCommandIds 코드 파일을 열고 다음 코드를 붙여 넣습니다.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb" id="Snippet4":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>사용자 지정 SharePoint 명령 만들기
  Sharepoint 용 서버 개체 모델을 호출 하 여 SharePoint 사이트의 웹 파트에 대 한 데이터를 검색 하는 사용자 지정 명령을 만듭니다. 각 명령은가 적용 된 메서드입니다 <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> .
@@ -258,8 +258,8 @@ ms.locfileid: "99952670"
 
 1. WebPartCommands 프로젝트에서 WebPartCommands 코드 파일을 열고 다음 코드를 붙여 넣습니다.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb" id="Snippet6":::
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 **웹 파트 갤러리** 노드와 SharePoint 명령에 대 한 모든 코드는 이제 프로젝트에 있습니다. 솔루션을 빌드하여 두 프로젝트가 오류 없이 컴파일되도록 해야 합니다.

@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b22c555b961809d84778df5996455f186efc01f1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858568"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216217"
 ---
 # <a name="pass-data-between-forms"></a>폼 간에 데이터 전달
 
@@ -49,7 +49,7 @@ ms.locfileid: "99858568"
 
 - 폼 간에 데이터를 전달합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -79,7 +79,7 @@ ms.locfileid: "99858568"
 
      **PassingDataBetweenForms** 프로젝트가 만들어져 **솔루션 탐색기** 에 추가됩니다.
 
-## <a name="create-the-data-source"></a>데이터 원본 만들기
+## <a name="create-the-data-source"></a>데이터 원본 생성
 
 1. 데이터 **소스** 창을 열려면 **데이터** 메뉴에서 **데이터 소스 표시** 를 클릭 합니다.
 
@@ -168,8 +168,8 @@ Form2에 TableAdapter 쿼리를 추가 하 여 Form1에서 선택한 고객에 �
 
 2. 다음 코드를 **Form2** 의 `Form2_Load` 메서드 뒤에 추가합니다.
 
-     [!code-vb[VbRaddataDisplaying#1](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_1.vb)]
-     [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form2.vb" id="Snippet1":::
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form2.cs" id="Snippet1":::
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>Form1에서 데이터를 전달 하 고 Form2를 표시 하는 메서드를 만듭니다.
 
@@ -183,8 +183,8 @@ Form2에 TableAdapter 쿼리를 추가 하 여 Form1에서 선택한 고객에 �
 
 4. 다음 샘플과 일치하도록 메서드 정의를 업데이트합니다.
 
-     [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
-     [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs" id="Snippet2":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb" id="Snippet2":::
 
 ## <a name="run-the-app"></a>앱 실행
 

@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056840"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217244"
 ---
 # <a name="create-options-pages"></a>옵션 페이지 만들기
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]관리 되는 패키지 프레임 워크에서에서 파생 된 클래스는 <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **도구** 메뉴의 **옵션** 페이지를 추가 하 여 IDE를 확장 합니다.
@@ -61,19 +61,19 @@ ms.locfileid: "105056840"
 ## <a name="example"></a>예제
  다음은 옵션 페이지의 간단한 "Hello 세계" 구현입니다. **메뉴 명령** 옵션을 선택 하 여 Visual Studio 패키지 템플릿에서 만든 기본 프로젝트에 다음 코드를 추가 하면 옵션 페이지 기능을 적절 하 게 보여 줍니다.
 
-### <a name="description"></a>Description
+### <a name="description"></a>설명
  다음 클래스는 최소 "Hello 세계" 옵션 페이지를 정의 합니다. 사용자가 열면 속성 표에서 public 속성을 설정할 수 있습니다 `HelloWorld` .
 
 ### <a name="code"></a>코드
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs" id="Snippet11":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb" id="Snippet11":::
 
 ### <a name="description"></a>Description
  Package 클래스에 다음 특성을 적용 하면 패키지가 로드 될 때 옵션 페이지를 사용할 수 있습니다. 숫자는 범주와 페이지에 대 한 임의의 리소스 Id이 고, 끝의 부울 값은 페이지에서 자동화를 지원 하는지 여부를 지정 합니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet07":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet07":::
 
 ### <a name="description"></a>Description
  다음 이벤트 처리기는 옵션 페이지에 설정 된 속성의 값에 따라 결과를 표시 합니다. 이 메서드는 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 사용자 지정 옵션 페이지 형식으로 명시적으로 캐스팅 된 결과와 함께 메서드를 사용 하 여 페이지에 의해 노출 되는 속성에 액세스 합니다.
@@ -81,9 +81,9 @@ ms.locfileid: "105056840"
  패키지 템플릿에 의해 생성 된 프로젝트의 경우 함수에서이 함수를 호출 `MenuItemCallback` 하 여 **도구** 메뉴에 추가 된 기본 명령에 연결 합니다.
 
 ### <a name="code"></a>코드
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [사용자 설정 및 옵션 확장](../../extensibility/extending-user-settings-and-options.md)
 - [옵션 페이지에 대 한 자동화 지원](../../extensibility/internals/automation-support-for-options-pages.md)

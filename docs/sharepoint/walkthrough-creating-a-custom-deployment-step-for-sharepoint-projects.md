@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77c80134ad63346b363c072ef2eff7e49978501f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839138"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217933"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>연습: SharePoint 프로젝트에 대 한 사용자 지정 배포 단계 만들기
   SharePoint 프로젝트를 배포할 때 Visual Studio는 일련의 배포 단계를 특정 순서로 실행 합니다. Visual Studio에는 다양 한 기본 제공 배포 단계가 포함 되어 있지만 직접 만들 수도 있습니다.
@@ -41,7 +41,7 @@ ms.locfileid: "99839138"
 
 - 새 배포 단계를 테스트 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -151,8 +151,8 @@ ms.locfileid: "99839138"
     > [!NOTE]
     > 이 코드를 추가 하면 프로젝트에 컴파일 오류가 발생할 수 있지만 이후 단계에서 코드를 추가 하면 사라집니다.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet1":::
 
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>사용자 지정 배포 단계를 포함 하는 배포 구성 만들기
  몇 가지 기본 제공 배포 단계와 새로운 업그레이드 배포 단계를 포함 하는 새 배포 구성에 대 한 프로젝트 확장을 만듭니다. 이 확장을 만들면 SharePoint 개발자가 SharePoint 프로젝트의 업그레이드 배포 단계를 사용 하는 데 도움이 됩니다.
@@ -163,8 +163,8 @@ ms.locfileid: "99839138"
 
 1. **Deploymentstepextension** 프로젝트에서 deploymentstepextension 코드 파일을 열고 다음 코드를 붙여넣습니다.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb" id="Snippet2":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>사용자 지정 SharePoint 명령 만들기
  SharePoint 용 서버 개체 모델을 호출 하는 두 개의 사용자 지정 명령을 만듭니다. 한 명령은 솔루션이 이미 배포 되어 있는지 여부를 확인 합니다. 다른 명령은 솔루션을 업그레이드 합니다.
@@ -173,8 +173,8 @@ ms.locfileid: "99839138"
 
 1. **SharePointCommands** 프로젝트에서 명령 코드 파일을 열고 다음 코드를 붙여넣습니다.
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet4":::
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 사용자 지정 배포 단계 및 SharePoint 명령에 대 한 모든 코드가 이제 프로젝트에 있습니다. 오류 없이 컴파일하도록 빌드 하세요.

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96cfbf8693ce23dbc0b0584c7742607224aeab4f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915749"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216945"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>연습: 개인정보처리방침 프롬프트가 포함된 사용자 지정 부트스트래퍼 만들기
 최신 파일 버전 및 어셈블리 버전이 있는 어셈블리를 사용할 수 있게 되 면 ClickOnce 응용 프로그램이 자동으로 업데이트 되도록 구성할 수 있습니다. 고객이이 동작에 동의 하는지 확인 하기 위해 개인 정보 프롬프트를 표시할 수 있습니다. 그런 다음 응용 프로그램에 자동으로 업데이트할 수 있는 권한을 부여할지 여부를 선택할 수 있습니다. 응용 프로그램을 자동으로 업데이트할 수 없는 경우에는 설치 되지 않습니다.
@@ -81,32 +81,33 @@ ms.locfileid: "99915749"
 
 18. Form1 코드 파일에서 CheckedChanged 이벤트 처리기에 대 한 다음 코드를 추가 합니다.
 
-     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
-     [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet1":::
 
 19. 기본적으로 **진행** 단추를 사용 하지 않도록 클래스 생성자를 업데이트 합니다.
 
-     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
-     [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet6":::
 
 20. Form1 코드 파일에서 부울 변수에 대 한 다음 코드를 추가 하 여 최종 사용자가 온라인 업데이트로 동의한 여부를 추적 합니다.
 
-     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
-     [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet3":::
 
 21. 디자이너에서 **계속** 단추를 두 번 클릭 하 여 click 이벤트 처리기를 생성 합니다.
 
 22. Form1 코드 파일에서 다음 코드를 클릭 하 여 **계속** 단추에 대 한 click 이벤트 처리기에 추가 합니다.
 
-     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
-     [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet2":::
+
 
 23. 디자이너에서 **취소** 단추를 두 번 클릭 하 여 click 이벤트 처리기를 생성 합니다.
 
 24. Form1 코드 파일에서 **취소** 단추에 대 한 Click 이벤트 처리기에 대 한 다음 코드를 추가 합니다.
 
-     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
-     [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet4":::
 
 25. 최종 사용자가 온라인 업데이트에 동의 하지 않을 경우 오류를 반환 하도록 응용 프로그램을 업데이트 합니다.
 
@@ -118,7 +119,7 @@ ms.locfileid: "99915749"
 
     3. Module1.vb 코드 *파일* 에서 다음 코드를 추가 합니다.
 
-        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
+       :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb" id="Snippet7":::
 
     4. **프로젝트** 메뉴에서 **ConsentDialog 속성** 을 클릭 한 다음 **응용 프로그램** 탭을 클릭 합니다.
 
@@ -131,9 +132,9 @@ ms.locfileid: "99915749"
 
        Visual c # 개발자 전용:
 
-       *Program.cs* 코드 파일을 열고 다음 코드를 추가 합니다.
+       *프로그램 .cs* 코드 파일을 열고 다음 코드를 추가 합니다.
 
-       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
+       :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs" id="Snippet5":::
 
 26. **빌드** 메뉴에서 **BuildSolution** 를 클릭 합니다.
 

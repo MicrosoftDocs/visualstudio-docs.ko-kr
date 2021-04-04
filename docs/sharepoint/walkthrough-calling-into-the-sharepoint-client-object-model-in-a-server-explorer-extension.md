@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dee53642e042c8d4db88bdba7c093f327527798d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937682"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217023"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>연습: 서버 탐색기 확장에서 SharePoint 클라이언트 개체 모델 호출
   이 연습에서는 **서버 탐색기** 의 **sharepoint 연결** 노드에 대 한 확장에서 sharepoint 클라이언트 개체 모델을 호출 하는 방법을 보여 줍니다. SharePoint 클라이언트 개체 모델을 사용 하는 방법에 대 한 자세한 내용은 [sharepoint 개체 모델 호출](../sharepoint/calling-into-the-sharepoint-object-models.md)을 참조 하세요.
@@ -41,7 +41,7 @@ ms.locfileid: "99937682"
 > [!NOTE]
 > 이 연습에서 만드는 확장 프로그램은 [연습: 서버 탐색기 확장 하 여 웹 파트를 표시 하](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)는 확장명과 비슷합니다. 이 연습에서는 SharePoint 서버 개체 모델을 사용 하지만이 연습에서는 클라이언트 개체 모델을 사용 하 여 동일한 작업을 수행 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Windows, SharePoint 및 Visual Studio
@@ -166,8 +166,8 @@ ms.locfileid: "99937682"
     > [!NOTE]
     > 이 코드를 추가 하면 프로젝트에 컴파일 오류가 발생 합니다. 이러한 오류는 이후 단계에서 코드를 추가할 때 사라집니다.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>웹 파트를 나타내는 노드 형식 정의
  웹 파트를 나타내는 새 노드 형식을 정의 하는 클래스를 만듭니다. Visual Studio는이 새 노드 유형을 사용 하 여 **웹 파트 갤러리** 노드 아래에 자식 노드를 표시 합니다. 이러한 각 자식 노드는 SharePoint 사이트의 단일 웹 파트를 나타냅니다.
@@ -178,8 +178,8 @@ ms.locfileid: "99937682"
 
 1. **Webpartnodeextension** 프로젝트용 **Webpartnodetypeprovider** 코드 파일에 다음 코드를 붙여넣습니다.
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 **웹 파트 갤러리** 노드의 모든 코드는 이제 프로젝트에 있습니다. **Webpartnodeextension** 프로젝트를 빌드하여 오류 없이 컴파일되는지 확인 합니다.

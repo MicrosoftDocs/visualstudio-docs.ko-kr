@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a505ff059b347c6adbef15a8fe8bcfe7b274eaa4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937708"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218024"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>연습: 기본 사이트 정의 프로젝트 만들기
   이 연습에서는 일부 컨트롤을 포함 하는 시각적 웹 파트를 포함 하는 기본 사이트 정의를 만드는 방법을 보여 줍니다. 명확 하 게 하기 위해 만드는 시각적 웹 파트에는 몇 개의 컨트롤만 있습니다. 그러나 더 많은 기능을 포함 하는 보다 정교한 SharePoint 사이트 정의를 만들 수 있습니다.
@@ -112,10 +112,10 @@ ms.locfileid: "99937708"
     </table>
     ```
 
-6. *VisualWebPart1* 에서 *VisualWebPart1.ascx.cs* 파일 (의 경우) [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 또는 *VisualWebPart1* (의 경우 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] )을 열고 다음 코드를 추가 합니다.
+6. *VisualWebPart1* 에서 *VisualWebPart1* 파일 (의 경우) [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 또는 *VisualWebPart1* (의 경우 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] )을 열고 다음 코드를 추가 합니다.
 
-     [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
-     [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs" id="Snippet1":::
 
      이 코드는 웹 파트의 단추 클릭에 대 한 기능을 추가 합니다.
 

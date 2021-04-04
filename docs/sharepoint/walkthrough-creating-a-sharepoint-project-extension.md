@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1de6cdc2f5c1f1480a738f99aa05b8833eb4b2ed
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918761"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217795"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>연습: SharePoint 프로젝트 확장 만들기
   이 연습에서는 SharePoint 프로젝트용 확장을 만드는 방법을 보여 줍니다. 프로젝트 확장을 사용 하 여 프로젝트를 추가, 삭제 또는 이름을 바꿀 때와 같은 프로젝트 수준 이벤트에 응답할 수 있습니다. 또한 속성 값이 변경 될 때 사용자 지정 속성을 추가 하거나 응답할 수 있습니다. 프로젝트 항목 확장과 달리 프로젝트 확장은 특정 SharePoint 프로젝트 형식에 연결할 수 없습니다. 프로젝트 확장을 만들 때에서 모든 종류의 SharePoint 프로젝트를 열 때 확장이 로드 됩니다 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -42,7 +42,7 @@ ms.locfileid: "99918761"
 
 - 프로젝트 속성 디버깅 및 테스트
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint 및의 지원 되는 버전 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]
@@ -113,8 +113,8 @@ ms.locfileid: "99918761"
 
 1. 다음 코드를 CustomProperty 코드 파일에 붙여 넣습니다.
 
-     [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
-     [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs" id="Snippet1":::
 
 ## <a name="build-the-solution"></a>솔루션 빌드
  다음으로 솔루션을 빌드하여 오류 없이 컴파일되는지 확인 합니다.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b6fad27342c086e551320977cdf712f816b383c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839099"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217946"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 항목 템플릿과 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목의 새 인스턴스를 프로젝트에 추가 하는 경우 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -39,7 +39,7 @@ ms.locfileid: "99839099"
 > [!NOTE]
 > 워크플로에 대 한 사용자 지정 활동을 만드는 방법을 보여 주는 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 에서 샘플을 다운로드할 수 있습니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 수행 하려면 먼저 [연습: 항목 템플릿을 사용 하 여 사용자 지정 작업 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)완료 하 여 CustomActionProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -115,8 +115,8 @@ ms.locfileid: "99839099"
 
 2. **Item템플릿 마법사** 프로젝트에서 문자열 코드 파일의 코드를 다음 코드로 바꿉니다.
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb" id="Snippet6":::
 
 ## <a name="create-the-wizard-ui"></a>마법사 UI 만들기
  마법사의 UI를 정의 하는 XAML을 추가 하 고 마법사의 일부 컨트롤을 ID 문자열에 바인딩하는 코드를 추가 합니다. 만든 마법사는 Visual Studio의 SharePoint 프로젝트에 대 한 기본 제공 마법사와 유사 합니다.
@@ -130,7 +130,7 @@ ms.locfileid: "99839099"
     > [!NOTE]
     > 이 코드를 추가한 후 프로젝트에 컴파일 오류가 발생 합니다. 이러한 오류는 이후 단계에서 코드를 추가할 때 사라집니다.
 
-     [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml" id="Snippet9":::
 
     > [!NOTE]
     > 이 XAML에서 만든 창은 기본 클래스에서 파생 됩니다 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> . Visual Studio에 사용자 지정 WPF 대화 상자를 추가 하는 경우이 클래스에서 대화 상자를 파생 하 여 Visual Studio의 다른 대화 상자와 일관 된 스타일을 유지 하 고, 모달 대화 상자에서 발생할 수 있는 문제를 방지 하는 것이 좋습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](../extensibility/creating-and-managing-modal-dialog-boxes.md)를 참조 하세요.
@@ -143,8 +143,8 @@ ms.locfileid: "99839099"
 
 4. WizardWindow .xaml 파일의 코드 숨김이 파일에서 현재 코드를 다음 코드로 바꿉니다.
 
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs" id="Snippet7":::
 
 ## <a name="implement-the-wizard"></a>마법사 구현
  인터페이스를 구현 하 여 마법사의 기능을 정의 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> .
@@ -153,8 +153,8 @@ ms.locfileid: "99839099"
 
 1. **Item템플릿 마법사** 프로젝트에서 **CustomActionWizard** 코드 파일을 열고이 파일의 현재 코드를 다음 코드로 바꿉니다.
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs" id="Snippet8":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 마법사의 모든 코드가 이제 프로젝트에 있습니다. 프로젝트를 빌드하여 오류 없이 컴파일되는지 확인 합니다.

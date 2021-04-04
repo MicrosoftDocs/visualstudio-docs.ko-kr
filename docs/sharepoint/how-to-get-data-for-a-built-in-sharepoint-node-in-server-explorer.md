@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c49f091477d204b7ed81a6f89fb24a56b2d60669
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c58de345400c7b724a755839cb8baa1afc3cfce2
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945112"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217192"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>방법: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터 가져오기
   **서버 탐색기** 의 각 기본 제공 sharepoint 노드에 대해 노드가 나타내는 기본 sharepoint 구성 요소에 대 한 데이터를 가져올 수 있습니다. 자세한 내용은 [서버 탐색기의 SharePoint 연결 노드 확장](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)을 참조하세요.
@@ -29,8 +29,8 @@ ms.locfileid: "99945112"
 ## <a name="example"></a>예제
  다음 코드 예제에서는 목록 노드가 **서버 탐색기** 에서 나타내는 기본 SharePoint 목록의 데이터를 가져오는 방법을 보여 줍니다. 기본적으로 목록 노드에는 웹 브라우저에서 목록을 열 때 클릭할 수 있는 **브라우저의 상황에** 맞는 메뉴 항목이 있습니다. 이 예제에서는 visual studio에서 직접 목록을 여는 visual Studio 상황에 맞는 메뉴 항목 **의 뷰** 를 추가 하 여 목록 노드를 확장 합니다. 이 코드는 노드의 목록 데이터에 액세스 하 여 Visual Studio에서 열 목록의 URL을 가져옵니다.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet10":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet10":::
 
  이 예제에서는 SharePoint 프로젝트 서비스를 사용 하 여 <xref:EnvDTE.DTE> Visual Studio에서 목록을 여는 데 사용 되는 개체를 가져옵니다. SharePoint 프로젝트 서비스에 대 한 자세한 내용은 [sharepoint 프로젝트 서비스 사용](../sharepoint/using-the-sharepoint-project-service.md)을 참조 하세요.
 

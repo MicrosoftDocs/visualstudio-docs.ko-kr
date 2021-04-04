@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c78a7b1ea0e8de96146367782d9de274f413a5f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952592"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217608"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>연습: SharePoint Designer의 다시 사용 가능한 워크플로 가져오기
 
@@ -216,13 +216,13 @@ ms.locfileid: "99952592"
 
 15. 기존 **using** 또는 **Imports** 지시문 아래에 다음을 추가 합니다.
 
-     [!code-csharp[SP_SPDWFImport#1](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#1)]
-     [!code-vb[SP_SPDWFImport#1](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb" id="Snippet1":::
 
 16. `codeActivity1_ExecuteCode`을 다음과 같이 바꿉니다.
 
-     [!code-csharp[SP_SPDWFImport#2](../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs#2)]
-     [!code-vb[SP_SPDWFImport#2](../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb" id="Snippet2":::
 
 ## <a name="deploy-the-project-and-associate-the-workflow"></a>프로젝트 배포 및 워크플로 연결
  그런 다음 WorkflowImportProject1를 실행 하 여 SharePoint 사이트에 배포한 다음 워크플로를 작업 목록과 연결 하 여 수정 된 변환 워크플로를 보고 테스트 합니다.

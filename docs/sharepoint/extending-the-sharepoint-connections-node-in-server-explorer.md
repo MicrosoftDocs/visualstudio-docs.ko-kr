@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f77e0044b8ae3c7456a31bb9c9153ba9e9f4c99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889696"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218037"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>서버 탐색기의 SharePoint 연결 노드 확장
   Visual Studio에서는 **서버 탐색기** 창의 **SharePoint 연결** 노드를 사용 하 여 개발 컴퓨터의 로컬 SharePoint 사이트에 연결할 수 있습니다. 이 노드에는 로컬 SharePoint 사이트의 여러 구성 요소가 계층적 트리 보기로 표시 됩니다. 예를 들어 로컬 사이트의 목록, 문서 라이브러리 및 콘텐츠 형식을 볼 수 있습니다. **서버 탐색기** 를 사용 하 여 로컬 SharePoint 사이트에 연결 하는 방법에 대 한 자세한 내용은 [서버 탐색기를 사용 하 여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)를 참조 하세요.
@@ -50,8 +50,8 @@ ms.locfileid: "99889696"
 
  다음 코드 예제에서는 목록 노드에 대 한 데이터 개체를 가져오는 방법을 보여 줍니다. 큰 예제의 컨텍스트에서이 예제를 보려면 [방법: 서버 탐색기에서 기본 제공 SharePoint 노드에 대 한 데이터 가져오기](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)를 참조 하세요.
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet11":::
 
  다음 표에서는 각 기본 제공 노드 형식에 대 한 데이터 개체 유형을 나열 합니다.
 

@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0811b029bf7e4705bc0c3689eff73f38280c3b3d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847715"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217686"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>연습: 비즈니스 데이터를 사용 하 여 SharePoint에서 외부 목록 만들기
 
@@ -114,9 +114,9 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 3. 디자이너에서 **Entity1** 에 대 한 바로 가기 메뉴를 열고 **삭제** 를 선택 합니다.
 
-4. **솔루션 탐색기** 에서 *Entity1* (Visual Basic) 또는 *Entity1.cs* (c #)의 바로 가기 메뉴를 연 다음 **삭제** 를 선택 합니다.
+4. **솔루션 탐색기** 에서 *entity1* (Visual Basic) 또는 *entity1* (c #의 경우)에 대 한 바로 가기 메뉴를 연 다음 **삭제** 를 선택 합니다.
 
-5. *Entity1Service* (Visual Basic) 또는 *Entity1Service.cs* (c #)의 바로 가기 메뉴를 열고 **삭제** 를 선택 합니다.
+5. *Entity1Service* (Visual Basic) 또는 *Entity1Service* (c #)의 바로 가기 메뉴를 연 다음 **삭제** 를 선택 합니다.
 
 ## <a name="add-an-entity-to-the-model"></a>모델에 엔터티 추가
 
@@ -126,7 +126,7 @@ BDC (비즈니스 데이터 연결) 서비스를 사용 하면 SharePoint에서 
 
 2. **도구 상자** 의 **BusinessDataConnectivity** 탭에서 **엔터티** 를 BDC 디자이너에 추가 합니다.
 
-     새 엔터티가 디자이너에 표시 됩니다. Visual Studio는 *Entityservice .vb* (Visual Basic) 또는 *EntityService.cs* (c #의 경우) 라는 파일을 프로젝트에 추가 합니다.
+     새 엔터티가 디자이너에 표시 됩니다. Visual Studio는 *entityservice .vb* (Visual Basic) 또는 *Entityservice .cs* (c #의 경우) 라는 파일을 프로젝트에 추가 합니다.
 
 3. 메뉴 모음에서 **보기**  >  **속성**  >  **창** 을 선택 합니다.
 
@@ -208,8 +208,8 @@ BDC 서비스에서 특정 연락처를 표시 하도록 하려면 특정 Finder
     > [!NOTE]
     > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="add-a-finder-method"></a>Finder 메서드 추가
 
@@ -236,8 +236,8 @@ BDC 서비스에서 연락처를 목록에 표시할 수 있도록 하려면 Fin
      > [!NOTE]
      > 필드의 값을 `ServerName` 서버의 이름으로 바꿉니다.
 
-     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>프로젝트 테스트
 

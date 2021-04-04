@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a91cbd863ed613804418cd5d1666412a01f8f542
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952683"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217699"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>연습: SharePoint 프로젝트 항목 형식 확장
   **비즈니스 데이터 연결 모델** 프로젝트 항목을 사용 하 여 SHAREPOINT의 BDC (비즈니스 데이터 연결) 서비스에 대 한 모델을 만들 수 있습니다. 기본적으로이 프로젝트 항목을 사용 하 여 모델을 만들 때 모델의 데이터는 사용자에 게 표시 되지 않습니다. 또한 사용자가 데이터를 볼 수 있도록 SharePoint에서 외부 목록을 만들어야 합니다.
@@ -38,7 +38,7 @@ ms.locfileid: "99952683"
 
 - 확장 테스트
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 완료 하려면 개발 컴퓨터에서 다음 구성 요소가 필요 합니다.
 
 - 지원 되는 버전의 Microsoft Windows, SharePoint 및 Visual Studio
@@ -136,8 +136,8 @@ ms.locfileid: "99952683"
     > [!NOTE]
     > 이 코드를 추가 하면 프로젝트에 컴파일 오류가 발생 합니다. 이러한 오류는 이후 단계에서 코드를 추가할 때 사라집니다.
 
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb" id="Snippet1":::
 
 ## <a name="create-the-external-data-lists"></a>외부 데이터 목록 만들기
  `GenerateExternalDataListsExtension`BDC 모델의 각 엔터티에 대 한 외부 데이터 목록을 만드는 클래스의 부분 정의를 추가 합니다. 외부 데이터 목록을 만들기 위해이 코드는 먼저 BDC 모델 파일의 XML 데이터를 구문 분석 하 여 BDC 모델의 엔터티 데이터를 읽습니다. 그런 다음 BDC 모델을 기반으로 하는 목록 인스턴스를 만들고이 목록 인스턴스를 프로젝트에 추가 합니다.
@@ -146,8 +146,8 @@ ms.locfileid: "99952683"
 
 1. 다음 코드를 GenerateExternalDataLists 코드 파일에 붙여 넣습니다.
 
-     [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs" id="Snippet2":::
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 프로젝트 항목 확장에 대 한 모든 코드가 이제 프로젝트에 있습니다. 솔루션을 빌드하여 프로젝트가 오류 없이 컴파일되는지 확인 합니다.

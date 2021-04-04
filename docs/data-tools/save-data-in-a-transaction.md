@@ -19,18 +19,18 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5933a8713a1d4b371672be83a56d0323f5043b9
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858477"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216087"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>연습: 트랜잭션에 데이터 저장
 
 이 연습에서는 네임 스페이스를 사용 하 여 트랜잭션에 데이터를 저장 하는 방법을 보여 줍니다 <xref:System.Transactions> . 이 연습에서는 Windows Forms 응용 프로그램을 만듭니다. 데이터 소스 구성 마법사를 사용 하 여 Northwind 샘플 데이터베이스의 두 테이블에 대 한 데이터 집합을 만듭니다. Windows form에 데이터 바인딩된 컨트롤을 추가 하 고 BindingNavigator의 저장 단추에 대 한 코드를 수정 하 여 TransactionScope 내에서 데이터베이스를 업데이트 합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 연습에서는 SQL Server Express LocalDB 및 Northwind 샘플 데이터베이스를 사용 합니다.
 
@@ -126,8 +126,8 @@ ms.locfileid: "99858477"
 
 2. `CustomersBindingNavigatorSaveItem_Click` 메서드를 다음 코드로 바꿉니다.
 
-     [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
-     [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet4":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet4":::
 
 관련 데이터의 변경을 조정하는 순서는 다음과 같습니다.
 
@@ -143,29 +143,29 @@ ms.locfileid: "99858477"
 
 - 다음 `DeleteOrders` 메서드를 **Form1** 에 추가합니다.
 
-     [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
-     [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet5":::
 
 ### <a name="to-delete-existing-customers"></a>기존 고객을 삭제하려면
 
 - 다음 `DeleteCustomers` 메서드를 **Form1** 에 추가합니다.
 
-     [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
-     [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet6":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet6":::
 
 ### <a name="to-add-new-customers"></a>새 고객을 추가하려면
 
 - 다음 `AddNewCustomers` 메서드를 **Form1** 에 추가합니다.
 
-     [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
-     [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet7":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet7":::
 
 ### <a name="to-add-new-orders"></a>새 주문을 추가하려면
 
 - 다음 `AddNewOrders` 메서드를 **Form1** 에 추가합니다.
 
-     [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
-     [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet8":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet8":::
 
 ## <a name="run-the-application"></a>애플리케이션 실행
 

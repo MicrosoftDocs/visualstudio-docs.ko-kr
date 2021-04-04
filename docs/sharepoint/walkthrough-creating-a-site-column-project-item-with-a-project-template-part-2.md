@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13a2f2c147bbf175a7601cd465dc8acbba9b5388
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918721"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217751"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 2 부
   사용자 지정 형식의 SharePoint 프로젝트 항목을 정의 하 고 Visual Studio에서 프로젝트 템플릿에 연결한 후에는 템플릿에 대 한 마법사를 제공할 수도 있습니다. 사용자가 템플릿을 사용 하 여 프로젝트 항목을 포함 하는 새 프로젝트를 만들 때이 마법사를 사용 하 여 사용자 로부터 정보를 수집할 수 있습니다. 수집 하는 정보를 사용 하 여 프로젝트 항목을 초기화할 수 있습니다.
@@ -43,7 +43,7 @@ ms.locfileid: "99918721"
 > [!NOTE]
 > 일련의 샘플 워크플로는 [SharePoint workflow samples](/sharepoint/dev/general-development/sharepoint-workflow-samples)를 참조 하십시오.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 수행 하려면 먼저 [연습: 프로젝트 템플릿을 사용 하 여 사이트 열 프로젝트 항목 만들기, 1 부를](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)완료 하 여 SiteColumnProjectItem 솔루션을 만들어야 합니다.
 
  또한이 연습을 완료 하려면 개발 컴퓨터에 다음 구성 요소가 필요 합니다.
@@ -61,7 +61,7 @@ ms.locfileid: "99918721"
 ## <a name="understand-the-wizard-components"></a>마법사 구성 요소 이해
  이 연습에서 설명 하는 마법사에는 몇 가지 구성 요소가 포함 되어 있습니다. 다음 표에서는 이러한 구성 요소에 대해 설명 합니다.
 
-|구성 요소|Description|
+|구성 요소|설명|
 |---------------|-----------------|
 |마법사 구현|인터페이스를 구현 하는 라는 클래스입니다 `SiteColumnProjectWizard` <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> . 이 인터페이스는 마법사가 시작 되 고 완료 될 때 그리고 마법사가 실행 되는 동안 특정 시간에 Visual Studio에서 호출 하는 메서드를 정의 합니다.|
 |마법사 UI|이는 이라는 WPF 기반 창입니다 `WizardWindow` . 이 창에는 및 라는 두 개의 사용자 컨트롤이 포함 됩니다 `Page1` `Page2` . 이러한 사용자 정의 컨트롤은 마법사의 두 페이지를 나타냅니다.<br /><br /> 이 연습에서 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 마법사 구현의 메서드는 마법사 UI를 표시 합니다.|
@@ -204,22 +204,22 @@ ms.locfileid: "99918721"
 
 1. ProjectTemplateWizard 프로젝트에서 CommandIds 코드 파일을 열고이 파일의 전체 내용을 다음 코드로 바꿉니다.
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs#5)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb" id="Snippet5":::
 
 #### <a name="to-create-the-wizard-model"></a>마법사 모델을 만들려면
 
 1. SiteColumnWizardModel 코드 파일을 열고이 파일의 전체 내용을 다음 코드로 바꿉니다.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb" id="Snippet6":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs" id="Snippet6":::
 
 #### <a name="to-create-the-project-signing-manager"></a>프로젝트 서명 관리자를 만들려면
 
 1. ProjectSigningManager 코드 파일을 열고이 파일의 전체 내용을 다음 코드로 바꿉니다.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb" id="Snippet8":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs" id="Snippet8":::
 
 ## <a name="create-the-wizard-ui"></a>마법사 UI 만들기
  마법사 창의 UI를 정의 하 고 마법사 페이지의 UI를 제공 하는 두 개의 사용자 컨트롤을 정의 하는 XAML을 추가 하 고 창 및 사용자 정의 컨트롤의 동작을 정의 하는 코드를 추가 합니다. 만든 마법사는 Visual Studio의 SharePoint 프로젝트에 대 한 기본 제공 마법사와 유사 합니다.
@@ -233,7 +233,7 @@ ms.locfileid: "99918721"
 
 2. 디자이너의 XAML 뷰에서 현재 XAML을 다음 XAML로 바꿉니다. XAML은 머리글, <xref:System.Windows.Controls.Grid> 마법사 페이지를 포함 하는, 창 맨 아래에 있는 탐색 단추를 포함 하는 UI를 정의 합니다.
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml" id="Snippet10":::
 
     > [!NOTE]
     > 이 XAML에서 만든 창은 기본 클래스에서 파생 됩니다 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> . Visual Studio에 사용자 지정 WPF 대화 상자를 추가 하는 경우이 클래스에서 대화 상자를 파생 시켜 다른 Visual Studio 대화 상자와 일관 된 스타일을 유지 하 고 그렇지 않을 수 있는 모달 대화 상자 문제를 방지 하는 것이 좋습니다. 자세한 내용은 [모달 대화 상자 만들기 및 관리](../extensibility/creating-and-managing-modal-dialog-boxes.md)를 참조 하세요.
@@ -248,8 +248,8 @@ ms.locfileid: "99918721"
 
 5. 파일 맨 위에 있는 선언을 제외 하 고 다음 코드를 사용 하 여이 파일의 내용을 바꿉니다 `using` .
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb" id="Snippet4":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs" id="Snippet4":::
 
 #### <a name="to-create-the-first-wizard-page-ui"></a>첫 번째 마법사 페이지 UI를 만들려면
 
@@ -257,7 +257,7 @@ ms.locfileid: "99918721"
 
 2. 디자이너의 XAML 뷰에서 현재 XAML을 다음 XAML로 바꿉니다. XAML은 사용자가 디버깅에 사용할 로컬 사이트의 URL을 입력할 수 있는 텍스트 상자를 포함 하는 UI를 정의 합니다. 또한 UI에는 사용자가 프로젝트를 샌드 박싱 할지 여부를 지정할 수 있는 옵션 단추도 포함 되어 있습니다.
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml#11)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml" id="Snippet11":::
 
 3. Visual Basic 프로젝트를 개발 하는 경우 `ProjectTemplateWizard` `Page1` 요소의 특성에 있는 클래스 이름에서 네임 스페이스를 제거 `x:Class` `UserControl` 합니다. 이는 XAML의 첫 번째 줄에 있습니다. 완료 되 면 첫 번째 줄은 다음과 같이 표시 됩니다.
 
@@ -267,8 +267,8 @@ ms.locfileid: "99918721"
 
 4. 파일 맨 위에 있는 선언을 제외 하 고 다음 코드를 사용 하 여 파일의 내용을 바꿉니다. `using`
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs" id="Snippet2":::
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>두 번째 마법사 페이지 UI를 만들려면
 
@@ -278,7 +278,7 @@ ms.locfileid: "99918721"
 
 2. XAML 뷰에서 현재 XAML을 다음 XAML로 바꿉니다. XAML은 사이트 열의 기본 유형을 선택할 수 있는 드롭다운 목록을 포함 하는 UI를 정의 하 고, 갤러리에 사이트 열을 표시할 기본 제공 또는 사용자 지정 그룹을 지정 하는 콤보 상자와 사이트 열의 이름을 지정 하기 위한 텍스트 상자를 정의 합니다.
 
-     [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml#12)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml" id="Snippet12":::
 
 3. Visual Basic 프로젝트를 개발 하는 경우 `ProjectTemplateWizard` `Page2` 요소의 특성에 있는 클래스 이름에서 네임 스페이스를 제거 `x:Class` `UserControl` 합니다. 이는 XAML의 첫 번째 줄에 있습니다. 완료 되 면 첫 번째 줄은 다음과 같이 표시 됩니다.
 
@@ -288,8 +288,8 @@ ms.locfileid: "99918721"
 
 4. `using`파일의 맨 위에 있는 선언을 제외 하 고 다음 코드를 사용 하 여 파일의 코드에 포함 된 파일의 내용을 바꿉니다.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs" id="Snippet3":::
 
 ## <a name="implement-the-wizard"></a>마법사 구현
  인터페이스를 구현 하 여 마법사의 주요 기능을 정의 합니다 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> . 이 인터페이스는 마법사가 시작 되 고 완료 될 때 그리고 마법사가 실행 되는 동안 특정 시간에 Visual Studio에서 호출 하는 메서드를 정의 합니다.
@@ -300,8 +300,8 @@ ms.locfileid: "99918721"
 
 2. 이 파일의 전체 내용을 다음 코드로 바꿉니다.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs" id="Snippet7":::
 
 ## <a name="create-the-sharepoint-commands"></a>SharePoint 명령 만들기
  SharePoint 서버 개체 모델을 호출 하는 두 개의 사용자 지정 명령을 만듭니다. 한 명령은 마법사에서 사용자가 입력 하는 사이트 URL이 유효한 지 여부를 확인 합니다. 다른 명령은 사용자가 새 사이트 열의 기반으로 사용할 항목을 선택할 수 있도록 지정 된 SharePoint 사이트에서 모든 필드 형식을 가져옵니다.
@@ -312,8 +312,8 @@ ms.locfileid: "99918721"
 
 2. 이 파일의 전체 내용을 다음 코드로 바꿉니다.
 
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb" id="Snippet9":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs" id="Snippet9":::
 
 ## <a name="checkpoint"></a>검사점
  연습의이 시점에서 마법사의 모든 코드가 이제 프로젝트에 있습니다. 프로젝트를 빌드하여 오류 없이 컴파일되는지 확인 합니다.
