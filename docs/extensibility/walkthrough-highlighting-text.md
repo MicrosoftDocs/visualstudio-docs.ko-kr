@@ -12,17 +12,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f9e69f635b18d4ed67b78751ac6179cad04f002c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078463"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217530"
 ---
 # <a name="walkthrough-highlight-text"></a>연습: 텍스트 강조 표시
 MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집기에 다른 시각적 효과를 추가할 수 있습니다. 이 연습에서는 텍스트 파일에서 현재 단어의 모든 항목을 강조 표시 하는 방법을 보여 줍니다. 텍스트 파일에서 단어가 두 번 이상 발생 하는 경우 한 번에 캐럿을 배치 하면 모든 항목이 강조 표시 됩니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-a-mef-project"></a>MEF 프로젝트 만들기
@@ -201,8 +201,9 @@ MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집�
 
 5. 또한 `TagsChanged` update 메서드에서 호출 하는 이벤트도 추가 해야 합니다.
 
-     [!code-csharp[VSSDKHighlightWordTest#10](../extensibility/codesnippet/CSharp/walkthrough-highlighting-text_1.cs)]
-     [!code-vb[VSSDKHighlightWordTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-highlighting-text_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs" id="Snippet10":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb" id="Snippet10":::
+
 
 6. `UpdateAtCaretPosition()`메서드는 커서가 배치 된 단어와 동일한 텍스트 버퍼의 모든 단어를 찾아 해당 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> 단어의 발생에 해당 하는 개체의 목록을 생성 합니다. 그런 다음를 호출 하 `SynchronousUpdate` 여 이벤트를 발생 시킵니다 `TagsChanged` .
 
@@ -407,5 +408,5 @@ MEF (Managed Extensibility Framework) 구성 요소 부분을 만들어 편집�
 
 4. "Hello"의 발생 중 하나에 커서를 놓습니다. 모든 항목은 파란색으로 강조 표시 되어야 합니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [연습: 파일 이름 확장명에 콘텐츠 형식 연결](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c5ac6cf82d39790fa2d7762fea6b711a546da24
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6f3932658442774ad6f54bd5e6243fe73679b38f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080751"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214033"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>프로젝트 및 구성 속성 지원
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE (통합 개발 환경)의 속성 창에는 프로젝트 및 구성 속성이 표시 될 수 있습니다. 사용자가 응용 프로그램에 대 한 속성을 설정할 수 있도록 고유한 프로젝트 형식에 대 한 속성 페이지를 제공할 수 있습니다.
@@ -72,8 +72,8 @@ ms.locfileid: "105080751"
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute 및 레지스트리 경로
  에서 파생 된 클래스 `SettingsPage` 는 vspackage 간에 공유 되도록 설계 되었습니다. VSPackage가에서 파생 된 클래스를 만들 수 있도록 하려면 `SettingsPage` `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` 에서 파생 된 클래스에를 추가 `Microsoft.VisualStudio.Shell.Package` 합니다.
 
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_1.cs)]
- [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/vssdksupportprojectconfigurationpropertiespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/vssdksupportprojectconfigurationpropertiespackage.vb" id="Snippet1":::
 
  특성이 연결 된 VSPackage는 중요 하지 않습니다. VSPackage가에 등록 되 면 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 를 호출할 수 있도록 만들 수 있는 모든 개체의 CLSID (클래스 id)가 등록 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> .
 
@@ -87,12 +87,12 @@ ms.locfileid: "105080751"
 
  다음과 같은 코드 조각을 생각해 봅시다.
 
- [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/myprojectpropertypage.vb" id="Snippet2":::
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/myprojectpropertypage.cs" id="Snippet2":::
 
  구성 `MyConfigProp` 속성은 구성 속성 페이지의 **내 구성** 속성으로 **내 범주** 범주에 표시 됩니다. 이 옵션을 선택 하면 설명 패널에 설명, **내 설명이** 표시 됩니다.
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [속성 페이지 추가 및 제거](../../extensibility/adding-and-removing-property-pages.md)
 - [프로젝트](../../extensibility/internals/projects.md)
 - [템플릿 디렉터리 설명(.Vsdir) 파일](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

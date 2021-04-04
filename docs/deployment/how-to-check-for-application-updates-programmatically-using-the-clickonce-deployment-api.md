@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db82151b7fd4dbe894cecf8fbf5f5b64cb2f5919
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888448"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213942"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>방법: ClickOnce 배포 API를 사용하여 프로그래밍 방식으로 애플리케이션 업데이트 확인
 ClickOnce는 응용 프로그램이 배포 된 후 응용 프로그램을 업데이트 하는 두 가지 방법을 제공 합니다. 첫 번째 방법에서는 특정 간격으로 업데이트를 자동으로 확인 하도록 ClickOnce 배포를 구성할 수 있습니다. 두 번째 메서드에서는 클래스를 사용 하 여 <xref:System.Deployment.Application.ApplicationDeployment> 사용자 요청과 같은 이벤트를 기반으로 업데이트를 확인 하는 코드를 작성할 수 있습니다.
@@ -40,9 +40,9 @@ ClickOnce는 응용 프로그램이 배포 된 후 응용 프로그램을 업데
 
 2. 사용자가 업데이트를 확인 하기 위해 선택 하려는 단추, 메뉴 항목 또는 기타 사용자 인터페이스 항목을 만듭니다. 해당 항목의 이벤트 처리기에서 다음 메서드를 호출 하 여 업데이트를 확인 하 고 설치 합니다.
 
-     [!code-csharp[ClickOnceAPI#6](../deployment/codesnippet/CSharp/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cs)]
-     [!code-cpp[ClickOnceAPI#6](../deployment/codesnippet/CPP/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.cpp)]
-     [!code-vb[ClickOnceAPI#6](../deployment/codesnippet/VisualBasic/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs" id="Snippet6":::
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp" id="Snippet6":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb" id="Snippet6":::
 
 3. 응용 프로그램을 컴파일합니다.
 

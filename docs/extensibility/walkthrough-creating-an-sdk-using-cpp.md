@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d4baeb8a93a1bb5e70f3ee6266bb1a832a2a3fe
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 743759896bf1de104825825d450be081ab2cc666
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080413"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217426"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>연습: c + +를 사용 하 여 SDK 만들기
 이 연습에서는 네이티브 c + + 수학 라이브러리 SDK를 만들고, SDK를 VSIX (Visual Studio Extension)로 패키지 한 다음,이를 사용 하 여 앱을 만드는 방법을 보여 줍니다. 이 연습은 다음 단계로 구분 됩니다.
@@ -26,7 +26,7 @@ ms.locfileid: "105080413"
 
 - [클래스 라이브러리를 사용 하는 샘플 앱을 만들려면](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
  이 연습을 수행하려면 Visual Studio SDK를 설치해야 합니다. 자세한 내용은 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> 네이티브 및 Windows 런타임 라이브러리를 만들려면
@@ -37,11 +37,11 @@ ms.locfileid: "105080413"
 
 3. NativeMath을 다음 코드와 일치 하도록 업데이트 *합니다* .
 
-     [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.h" id="Snippet1":::
 
 4. NativeMath을 다음 코드와 일치 하도록 업데이트 *합니다* .
 
-     [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp" id="Snippet2":::
 
 5. **솔루션 탐색기** 에서 **' NativeMath ' 솔루션** 에 대 한 바로 가기 메뉴를 열고   >  **새 프로젝트** 추가를 선택 합니다.
 
@@ -49,11 +49,11 @@ ms.locfileid: "105080413"
 
 7. 이 코드와 일치 하도록 *Class1 .h* 를 업데이트 합니다.
 
-     [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.h" id="Snippet3":::
 
 8. 다음 코드와 일치 하도록 *Class1 .cpp* 를 업데이트 합니다.
 
-     [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp" id="Snippet4":::
 
 9. 메뉴 모음에서 **빌드** > **솔루션 빌드** 를 선택합니다.
 
@@ -67,7 +67,8 @@ ms.locfileid: "105080413"
 
 4. 다음 XML을 사용 하 여 기존 XML을 바꿉니다.
 
-    [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
+
 
 5. **솔루션 탐색기** 에서 **NativeMathVSIX** 프로젝트에 대 한 바로 가기 메뉴를 열고   >  **새 항목** 추가를 선택 합니다.
 
@@ -75,7 +76,7 @@ ms.locfileid: "105080413"
 
 7. 이 XML을 사용 하 여 파일의 내용을 바꿉니다.
 
-     [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml" id="Snippet5":::
 
 8. **솔루션 탐색기** **NativeMathVSIX** 프로젝트 아래에서 다음 폴더 구조를 만듭니다.
 
@@ -108,8 +109,21 @@ ms.locfileid: "105080413"
      *$ \Debug\NativeMathWRT\NativeMathWRT.pri $SolutionRoot* 복사 하 고 *$SolutionRoot $ \NativeMathVSIX\References\CommonConfiguration\Neutral* 폴더에 붙여넣습니다.
 
 11. *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\* 폴더에서 *NativeMathSDK* 라는 텍스트 파일을 만든 후 다음 내용을 붙여넣습니다.
-
-    [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
+   
+    ```xml
+    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <PropertyGroup>
+        <NativeMathSDKPath>$(FrameworkSDKRoot)\..\..\UAP\v0.8.0.0\ExtensionSDKs\NativeMathSDK\1.0\</NativeMathSDKPath>
+        <IncludePath>$(NativeMathSDKPath)DesignTime\CommonConfiguration\Neutral\Include;$(IncludePath)</IncludePath>
+        <LibraryPath>$(NativeMathSDKPath)DesignTime\Debug\x86;$(LibraryPath)</LibraryPath>
+      </PropertyGroup>
+      <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+         <Link>
+           <AdditionalDependencies>NativeMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+         </Link>
+      </ItemDefinitionGroup>
+    </Project>
+    ```
 
 12. 메뉴 모음에서   >  **다른** 창  >  **속성 창** 보기 (키보드: **F4** 키 선택)를 선택 합니다.
 
@@ -155,15 +169,15 @@ ms.locfileid: "105080413"
 
 6. **솔루션 탐색기** 에서 **mainpage** 을 열고 다음 xaml을 사용 하 여 내용을 바꿉니다.
 
-    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml" id="Snippet1":::
 
 7. 다음 코드와 일치 하도록 *mainpage* 을 업데이트 합니다.
 
-    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h" id="Snippet2":::
 
 8. 다음 코드와 일치 하도록 *mainpage* 을 업데이트 합니다.
 
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_10.cpp)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.cpp" id="Snippet3":::
 
 9. **F5** 키를 선택 하 여 앱을 실행 합니다.
 

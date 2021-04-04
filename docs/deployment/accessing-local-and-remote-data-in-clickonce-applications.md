@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbffa062e1115264f9496081cdcf63d17d2a36c7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837816"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217491"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce 애플리케이션의 로컬 및 원격 데이터 액세스
 대부분 애플리케이션에서는 데이터를 사용하거나 생성합니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 에서는 로컬에서 또는 원격으로 데이터를 읽고 쓰는 다양한 옵션을 제공합니다.
@@ -55,8 +55,8 @@ ms.locfileid: "99837816"
 
  애플리케이션에 이들 권한이 포함되고 나면 애플리케이션이 <xref:System.IO>내의 클래스에서 메서드 호출을 사용하여 데이터 디렉터리에 액세스할 수 있습니다. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 의 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 속성에 정의된 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 속성을 사용하여 Windows Forms <xref:System.Deployment.Application.ApplicationDeployment>애플리케이션 내에 데이터 디렉터리의 경로를 가져올 수 있습니다. 이 방법은 데이터에 액세스하는 가장 편리하고 권장되는 방법입니다. 다음 코드 예제에서는 배포에 데이터 파일로 포함 한 *CSV.txt* 이라는 텍스트 파일에 대해이 작업을 수행 하는 방법을 보여 줍니다.
 
- [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
- [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
+ :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs" id="Snippet1":::
+ :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb" id="Snippet1":::
 
  배포의 파일을 데이터 파일로 표시하는 방법에 대한 자세한 내용은 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)을 참조하세요.
 

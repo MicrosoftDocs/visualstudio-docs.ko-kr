@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949131"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213916"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>웹 파트 또는 애플리케이션 페이지용 재사용 가능 컨트롤 만들기
   Visual Studio에서는 SharePoint에서 실행되는 애플리케이션 페이지와 웹 파트에서 사용할 수 있는 재사용 가능한 사용자 지정 컨트롤을 만들 수 있습니다. 해당 컨트롤을 사용자 정의 컨트롤이라고 합니다. 사용자 정의 컨트롤은 ASP.NET 웹 페이지와 유사하게 작동하는 일종의 복합 컨트롤입니다. 사용자 정의 컨트롤에 기존 웹 서버 컨트롤 및 태그를 추가하고 컨트롤의 속성과 메서드를 정의할 수 있습니다. 그런 다음 ASP.NET 웹 페이지에 포함할 수 있으며, 여기서는 하나의 단위로 작동합니다.
@@ -47,8 +47,8 @@ ms.locfileid: "99949131"
 
  웹 파트에 사용자 정의 컨트롤을 포함하려면 웹 파트 코드 파일의 웹 파트 <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> 컬렉션에 사용자 정의 컨트롤을 추가합니다. 다음 예제에서는 웹 파트의 <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> 컬렉션에 사용자 정의 컨트롤을 추가합니다.
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>사용자 정의 컨트롤 디버그
  사용자 정의 컨트롤을 디버그하려면 사용자 정의 컨트롤이 SharePoint 프로젝트의 애플리케이션 페이지 또는 웹 파트에 포함되어 있는지 확인합니다. 그런 다음, Visual Studio 프로젝트에서 코드를 디버그하는 것과 마찬가지로 사용자 정의 컨트롤에서 코드를 디버그할 수 있습니다.

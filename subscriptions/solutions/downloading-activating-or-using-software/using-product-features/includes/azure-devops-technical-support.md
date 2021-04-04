@@ -10,12 +10,12 @@ user.type: subscriber
 tags: redirect
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: 096b025710a2907996654d59a9f30d92500b64d3
-ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
+ms.openlocfilehash: 1361fe540c037a7890fff89fe60b25249d69bfff
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496295"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098113"
 ---
 ## <a name="azure-devops-technical-support"></a>Azure DevOps 기술 지원  
 
@@ -23,7 +23,7 @@ Visual Studio 구독 지원은 Visual Studio 구독에 대한 판매, 구독, �
 
 ## <a name="azure-devops-documentation"></a>Azure DevOps 설명서 
 
-[Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/?view=azure-devops)에서 자습서, 문제 해결 가이드, 유용한 리소스 및 기타 다양한 항목을 검토하세요.
+[Azure DevOps 설명서](https://docs.microsoft.com/azure/devops/?view=azure-devops&preserve-view=true)에서 자습서, 문제 해결 가이드, 유용한 리소스 및 기타 다양한 항목을 검토하세요.
 
 ## <a name="developer-community"></a>개발자 커뮤니티
 
