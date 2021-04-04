@@ -135,8 +135,8 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 - [정의 피킹(Peeking)](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
-   **정의 보기** 창은 실제로 개별 파일을 열지 않고 메서드 또는 형식의 정의 보여 줍니다.
-
+   **정의 보기** 창은 별도의 파일을 실제로 열지 않고 메서드 또는 형식의 정의를 보여 줍니다.
+   
    ![정의 피킹(Peeking)](../media/peek-definition.png)
 
 ## <a name="install-the-visual-studio-ide"></a>Visual Studio IDE 설치
@@ -247,7 +247,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
     :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="원하는 템플릿을 선택할 수 있는 Visual Studio 2019의 '새 프로젝트 만들기' 창의 스크린샷입니다.":::
 
-1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경(기본 로캘은 `C:\Users\<name>\source\repos`)한 후, **다음** 을 선택합니다.
+1. **새 프로젝트 구성** 창에서 **프로젝트 이름** 상자에 **HelloWorld** 를 입력하고 필요에 따라 프로젝트 파일의 디렉터리 위치를 변경(기본 위치는 `C:\Users\<name>\source\repos`)한 후, **다음** 을 선택합니다.
 
     :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="프로젝트 이름을 입력하는 Visual Studio 2019의 '새 프로젝트 구성' 창 스크린샷입니다.":::
 
@@ -255,7 +255,7 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
     :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="원하는 .NET Core 프레임워크 버전을 선택하는 Visual Studio 2019의 '추가 정보' 창 스크린샷입니다.":::
 
-   Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다. 콘솔(프로그램 출력) 창에서
+   Visual Studio가 프로젝트를 생성합니다. 이 프로젝트는 <xref:System.Console.WriteLine?displayProperty=nameWithType> 메서드를 호출하여 콘솔(프로그램 출력) 창에 리터럴 문자열 “Hello World!”를 표시하는 간단한 “Hello World” 애플리케이션입니다.
 
    잠시 후 다음과 같은 정보가 표시됩니다.
 
