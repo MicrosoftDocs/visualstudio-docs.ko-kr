@@ -6,14 +6,14 @@ ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
 ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/29/2021
+ms.date: 04/02/2021
 ms.faqid: q4_2
-ms.openlocfilehash: d59b972d13bd61a25fab6d783224eeb5c38144d7
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 8d8b516a7572688314d043dc7ca052d30d26dcf4
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104533"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273399"
 ---
 ## <a name="how-do-i-renew-visual-studio-subscriptions"></a>Visual Studio 구독을 갱신하려면 어떻게 하나요? 
 
@@ -27,12 +27,14 @@ Visual Studio 구독은 여러 가지 방법으로 획득할 수 있으며, 기�
 -  [Microsoft Store](https://www.microsoft.com/store) 에서 ‘Visual Studio 구독’을 검색하여 사용 가능한 갱신 기회를 확인합니다. 다음은 몇 가지 빠른 링크입니다. 
 
 
-    [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
 
-    [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 
-    [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
+> [!Note]
+> 갱신 가격을 적용받으려면 만료 날짜부터 30일 이내에 구독을 갱신해야 합니다.
 
 ### <a name="how-to-renew-cloud-subscriptions"></a>클라우드 구독을 갱신하는 방법
 클라우드 구독은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)를 통해 구매한 구독입니다.  월간 및 연간 클라우드 구독은 취소할 때까지 갱신되므로 갱신을 위해 별도로 수행할 작업이 없습니다.
