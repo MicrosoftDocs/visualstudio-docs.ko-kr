@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939671"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082541"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild가 프로젝트를 빌드하는 방식
 
@@ -139,7 +139,7 @@ MSBuild에서 `$(BuildInParallel)` 속성의 값에 따라 설정되는 부울 �
 
 *Microsoft.Common.targets* 파일 및 이 파일이 가져오는 대상 파일은 .NET 프로젝트의 표준 빌드 프로세스를 정의합니다. 또한 빌드를 사용자 지정하는 데 사용할 수 있는 확장 지점도 제공합니다.
 
-구현에서 *Microsoft.Common.targets* 는 *Microsoft.Common.CurrentVersion.targets* 를 가져오는 씬 래퍼입니다. 이 파일은 표준 속성에 대한 설정을 포함하며, 빌드 프로세스를 정의하는 실제 대상을 정의합니다. `Build` 대상은 여기에서 정의되지만 실제로는 비어 있습니다. 그러나 `Build` 대상은 실제 빌드 단계를 구성하는 개별 대상을 지정하는 `DependsOn` 특성(`BeforeBuild`, `CoreBuild` 및 `AfterBuild`)을 포함합니다. `Build` 대상은 다음과 같이 정의됩니다.
+구현에서 *Microsoft.Common.targets* 는 *Microsoft.Common.CurrentVersion.targets* 를 가져오는 씬 래퍼입니다. 이 파일은 표준 속성에 대한 설정을 포함하며, 빌드 프로세스를 정의하는 실제 대상을 정의합니다. `Build` 대상은 여기에서 정의되지만 실제로는 비어 있습니다. 그러나 `Build` 대상은 실제 빌드 단계를 구성하는 개별 대상을 지정하는 `DependsOnTargets` 특성(`BeforeBuild`, `CoreBuild` 및 `AfterBuild`)을 포함합니다. `Build` 대상은 다음과 같이 정의됩니다.
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ MSBuild에서 `$(BuildInParallel)` 속성의 값에 따라 설정되는 부울 �
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` 및 `AfterBuild`는 확장 지점입니다. 이들은 *Microsoft.Common.CurrentVersion.targets* 파일에서 비어 있지만, 프로젝트는 자체 `BeforeBuild` 및 `AfterBuild` 대상에 기본 빌드 프로세스 전후에 수행해야 하는 작업을 제공할 수 있습니다. `AfterBuild`는 no-op 대상인 `Build` 이전에 실행됩니다. `AfterBuild`가 `Build` 대상의 `DependsOn` 특성에 표시되지만 `CoreBuild` 이후에 발생하기 때문입니다.
+`BeforeBuild` 및 `AfterBuild`는 확장 지점입니다. 이들은 *Microsoft.Common.CurrentVersion.targets* 파일에서 비어 있지만, 프로젝트는 자체 `BeforeBuild` 및 `AfterBuild` 대상에 기본 빌드 프로세스 전후에 수행해야 하는 작업을 제공할 수 있습니다. `AfterBuild`는 no-op 대상인 `Build` 이전에 실행됩니다. `AfterBuild`가 `Build` 대상의 `DependsOnTargets` 특성에 표시되지만 `CoreBuild` 이후에 발생하기 때문입니다.
 
 `CoreBuild` 대상은 다음과 같이 빌드 도구에 대한 호출을 포함합니다.
 

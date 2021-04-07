@@ -1,19 +1,19 @@
 ---
 title: C/C++에 대한 단위 테스트 작성
 description: CTest, Boost.Test 및 Google Test를 비롯한 다양한 테스트 프레임워크를 사용하여 Visual Studio에서 C++ 유닛 테스트를 작성합니다.
-ms.date: 02/08/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729368"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217465"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -92,7 +92,7 @@ Visual Studio Marketplace에서 Google Test 어댑터 및 Boost.Test 어댑터 �
 ### <a name="write-test-methods"></a>테스트 메서드 작성
 
 > [!NOTE]
-> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 문서화된 내용은 다음과 같습니다. [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
+> 이 섹션에서는 C/C++용 Microsoft 단위 테스트 프레임워크에 대한 구문을 보여 줍니다. 문서화된 내용은 다음과 같습니다. [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 참조](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Google Test 설명서는 [Google Test 입문](https://github.com/google/googletest/blob/master/docs/primer.md)을 참조하세요. Boost.Test는 [Boost Test 라이브러리: 단위 테스트 프레임워크](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)를 참조하세요.
 
 테스트 프로젝트의 *.cpp* 파일에는 스텁 클래스와 메서드가 정의되어 있으며, 테스트 코드를 작성하는 방법에 대한 예제를 보여 줍니다. 시그니처는 **테스트 탐색기** 창에서 메서드를 검색 가능하게 하는 TEST_CLASS 및 TEST_METHOD 매크로를 사용합니다.
 

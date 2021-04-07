@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a1f115dfff92b1c5e5979e62af257cde6a92360
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883053"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216594"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>연습: 관례에서 생성 기능을 통한 테스트 우선 개발
 
@@ -92,8 +92,8 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 
 1. 다음 코드 줄을 `DefaultAutomobileIsInitializedCorrectly` 테스트 메서드에 추가합니다.
 
-     [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
-     [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet1":::
 
 2. 코드에서 두 개의 정의되지 않은 `Automobile`속성을 참조하기 때문에 `Model` 및 `TopSpeed` 아래에 물결선이 나타납니다. `Model` 위로 마우스를 가져가고 **빠른 작업** 오류 전구를 선택한 다음, **속성 'Automobile.Model' 생성** 을 선택합니다.
 
@@ -106,8 +106,8 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 
 1. 다음과 같은 추가 테스트 메서드를 `AutomobileTest` 클래스에 추가합니다.
 
-     [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
-     [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/intermediate.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/intermediate.vb" id="Snippet2":::
 
 2. 빨간색 물결선 아래의 **빠른 작업** 오류 전구를 클릭한 다음, **'Automobile'에서 생성자 생성** 을 클릭합니다.
 
@@ -120,8 +120,8 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 
 1. `AutomobileWithModelNameCanStart` 메서드에 다음 줄을 추가합니다.
 
-     [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
-     [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/unittest1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/unittest1.vb" id="Snippet3":::
 
 2. `myAuto.Start` 메서드 호출에 대한 **빠른 작업** 오류 전구를 클릭한 다음, **메서드 'Automobile.Start' 생성** 을 클릭합니다.
 
@@ -145,13 +145,13 @@ Visual Studio와 통합된 테스트 프레임워크와 함께 **관례에서 �
 
 1. `Model`, `TopSpeed` 및 `IsRunning` 속성이 모두 올바른 기본값인 `"Not specified"`, `-1`및 `False`(또는 C#의 경우 `false`)로 초기화되도록 기본 생성자에 다음 코드를 추가합니다.
 
-     [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
-     [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet5":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet5":::
 
 2. `Start` 메서드를 호출할 경우 `IsRunning` 또는 `Model` 속성이 기본값 이외의 값으로 설정된 경우에만 `TopSpeed` 플래그를 true로 설정해야 합니다. 메서드 본문에서 `NotImplementedException` 을 제거하고 다음 코드를 추가합니다.
 
-     [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
-     [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbtddwalkthrough/cs/automobile.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbtddwalkthrough/vb/automobile.vb" id="Snippet6":::
 
 ### <a name="run-the-tests-again"></a>테스트 다시 실행
 

@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
-  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+  ms.openlocfilehash: 7a7740ad4fffd80bc4b96ef7096b3bdd7c7a31bd
+  ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/09/2020
-  ms.locfileid: "91860535"
+  ms.lasthandoff: 04/05/2021
+  ms.locfileid: "106381583"
 landingContent:
 - title: Azure App Service에 배포
   linkLists:
@@ -89,6 +89,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Cloud Services 만들기 및 배포(추가 지원)
+      url: cloud-services-extended-support.md
     - text: Azure 클라우드 서비스 프로젝트 만들기 및 구성
       url: vs-azure-tools-azure-project-create.md
     - text: 로컬 및 Azure에서 클라우드 서비스 디버그
@@ -107,7 +109,7 @@ landingContent:
       url: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
     - text: Visual Studio에서 Virtual Machines에 액세스
       url: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-- title: 관련 자료
+- title: 기타 리소스
   linkLists:
   - linkListType: how-to-guide
     links:

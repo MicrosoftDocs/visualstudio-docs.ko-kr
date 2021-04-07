@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 238f6a2b6492fdd4ac04e0b596bbfbc304529786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64189cbde62ea70ae51fcdcbb8869377dd865f1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950837"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214306"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>3단계: 카운트다운 타이머 추가
 
@@ -33,8 +33,8 @@ ms.locfileid: "99950837"
 
 1. 이전 절차에서와 같이 **timeLeft** 라는 정수 변수를 추가합니다. 이 코드는 다음과 같습니다.
 
-     [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet5":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet5":::
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -54,8 +54,8 @@ ms.locfileid: "99950837"
 
 5. 새 이벤트 처리기 메서드에 다음 문을 추가합니다.
 
-     [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet6":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet6":::
 
      추가한 문을 기반으로 타이머는 1초 간격으로 **timeLeft** 정수 변수가 0보다 큰지 확인하여 시간이 다 되었는지 여부를 확인합니다. 이 값이 0보다 크면 시간이 남은 것입니다. 타이머는 먼저 timeLeft에서 1을 뺀 다음, 퀴즈를 푸는 사람에게 남은 시간(초)을 표시하도록 **timeLabel** 컨트롤의 **Text** 속성을 업데이트합니다.
 
@@ -91,8 +91,8 @@ ms.locfileid: "99950837"
 
      더하기 문제의 답을 표시하기 위해 `else` 블록에 추가한 문을 자세히 살펴봅니다.
 
-     [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet24":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet24":::
 
      `addend1 + addend2` 문은 두 변수의 값을 서로 더합니다. 첫 번째 부분(`sum.Value`)은 sum NumericUpDown 컨트롤의 **Value** 속성을 사용하여 올바른 답을 표시합니다. 이 속성은 나중에 퀴즈의 답을 확인할 때도 사용됩니다.
 
@@ -100,8 +100,8 @@ ms.locfileid: "99950837"
 
 6. 다음과 같이 `StartTheQuiz()` 메서드에 세 개의 줄을 추가합니다.
 
-     [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
-     [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step3/vb/form1.vb" id="Snippet7":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step3/cs/form1.cs" id="Snippet7":::
 
      이제 퀴즈를 시작하면 **timeLeft** 변수가 30으로 설정되고 **timeLabel** 컨트롤의 **Text** 속성이 30초로 설정됩니다. 그런 다음, Timer 컨트롤의 <xref:System.Windows.Forms.Timer.Start> 메서드가 카운트다운을 시작합니다. 이때 답을 확인하지는 않습니다. 답 확인은 나중에 수행됩니다.
 

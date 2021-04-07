@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7ee88f53fc9ce30467bd42a271d39cc912ec1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c33294f90839185d3b857eaec54d667c6575258
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950915"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214332"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>2단계: 난수 더하기 문제 만들기
 
@@ -39,8 +39,8 @@ ms.locfileid: "99950915"
 
 3. 코드 위쪽에 다음과 같은 <xref:System.Random> 문을 추가하여 `new` 개체를 만듭니다.
 
-     [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
-     [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet1":::
 
      [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -57,13 +57,13 @@ ms.locfileid: "99950915"
 
      다음 코드에서처럼 임의의 개체를 추가할 때와 비슷한 구문을 사용하여 정수 변수를 추가할 수 있습니다.
 
-     [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
-     [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet2":::
 
 5. Random 개체의 <xref:System.Random.Next> 메서드를 사용하여 레이블에 난수를 표시하는 `StartTheQuiz()`라는 메서드를 추가합니다. `StartTheQuiz()`는 모든 문제를 채우고 타이머를 시작합니다. 주석을 추가하십시오. 함수는 다음과 같습니다.
 
-     [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
-     [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet3":::
 
      코드에서 `randomizer` 다음에 점(.)을 입력하면 IntelliSense 창이 열리고 호출 가능한 Random 개체의 모든 메서드가 표시됩니다. 예로 들면 다음과 같이 IntelliSense는 `Next()` 메서드를 나열합니다.
 
@@ -77,8 +77,8 @@ ms.locfileid: "99950915"
 
      이러한 문을 자세히 살펴봅니다.
 
-     [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
-     [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet18":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet18":::
 
      이러한 문은 **plusLeftLabel** 과 **plusRightLabel** 의 **Text** 속성을 설정하여 레이블에서 두 개의 난수를 표시하도록 합니다. 정수의 `ToString()` 메서드를 사용하여 숫자를 텍스트로 변환해야 합니다. 프로그래밍에서 문자열은 텍스트를 의미합니다. 레이블 컨트롤에는 숫자가 아니라 텍스트만 표시됩니다.
 
@@ -88,8 +88,8 @@ ms.locfileid: "99950915"
 
 7. 다음 두 문을 추가합니다.
 
-     [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
-     [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb" id="Snippet4":::
 
      첫 번째 문은 새 `StartTheQuiz()` 메서드를 호출합니다. 두 번째 문은 **startButton** 컨트롤의 **Enabled** 속성을 **False** 로 설정하여 퀴즈를 푸는 사람이 퀴즈를 푸는 동안 이 단추를 선택할 수 없도록 합니다.
 

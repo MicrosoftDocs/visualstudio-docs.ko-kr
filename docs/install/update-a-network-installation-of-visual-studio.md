@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959157"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547403"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
@@ -33,17 +33,7 @@ ms.locfileid: "99959157"
 
 최신 업데이트를 포함하도록 네트워크 설치 공유를 새로 고치려면 `--layout` 명령을 실행하여 업데이트된 패키지를 점진적으로 다운로드합니다.
 
-::: moniker range="vs-2017"
-
-**15.3의 새로운 기능**: [네트워크 레이아웃을 처음 만들 때](create-a-network-installation-of-visual-studio.md) 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다. 그러나 이전 버전의 레이아웃을 사용 중인 경우에는 네트워크 설치 레이아웃을 처음 만들 때 사용한 것과 같은 명령줄 매개 변수(즉, 같은 워크로드 및 언어)를 사용하여 콘텐츠를 업데이트해야 합니다.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 [네트워크 레이아웃을 처음 만들 때](create-a-network-installation-of-visual-studio.md) 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다.
-
-::: moniker-end
 
 레이아웃을 파일 공유에서 호스트하는 경우 프라이빗 레이아웃 복사본(예: c:\VSLayout)을 업데이트하고 업데이트된 콘텐츠가 모두 다운로드된 다음, 해당 복사본을 파일 공유(예: \\server\products\VS)로 복사합니다. 이 작업을 하지 않으면 레이아웃이 업데이트되는 동안 설치 프로그램을 실행하는 사용자가 레이아웃에서 일부 콘텐츠를 가져오지 못할 수 있습니다. 이는 레이아웃이 완전히 업데이트되지 않았기 때문입니다.
 

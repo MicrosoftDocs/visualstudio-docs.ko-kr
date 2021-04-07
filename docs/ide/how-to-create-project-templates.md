@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 9dc515b35fd57368e2be4742cb685be9414734ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a823d6a519da286e5c6df8947d64934a244c1985
+ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878697"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933773"
 ---
 # <a name="how-to-create-project-templates"></a>방법: 프로젝트 템플릿 만들기
 
@@ -68,3 +68,4 @@ Visual Studio SDK를 설치한 경우 **VSIX 프로젝트** 템플릿을 사용�
 - [프로젝트 및 항목 템플릿 만들기](../ide/creating-project-and-item-templates.md)
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)
 - [VSIX 프로젝트 템플릿 시작](../extensibility/getting-started-with-the-vsix-project-template.md)
+- [프로젝트 및 항목 템플릿 사용자 지정](customizing-project-and-item-templates.md)

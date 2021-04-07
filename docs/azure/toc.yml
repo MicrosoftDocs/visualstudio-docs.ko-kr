@@ -40,7 +40,7 @@
   items:
     - name: 클라우드 서비스 프로젝트 작업
       items:
-        - name: Cloud Services 사용(추가 지원)(미리 보기)
+        - name: Cloud Services 사용(추가 지원)
           href: cloud-services-extended-support.md
         - name: Azure 클라우드 서비스 프로젝트 만들기
           href: vs-azure-tools-azure-project-create.md

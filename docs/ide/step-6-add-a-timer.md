@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f59375e9e64e6a7302d65b8c940d82b63adef54f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868896"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214202"
 ---
 # <a name="step-6-add-a-timer"></a>6단계: 타이머 추가
 다음에는 일치 게임에 <xref:System.Windows.Forms.Timer> 컨트롤을 추가합니다. 타이머는 지정한 시간(밀리초)을 대기한 뒤 *틱* 이라고 하는 이벤트를 발생시킵니다. 이 방법은 작업을 시작하거나 작업을 정기적으로 반복하는 데 유용합니다. 이 경우 타이머를 사용하여 플레이어가 두 개의 아이콘을 선택할 수 있도록 하고 아이콘이 서로 일치하지 않을 경우 잠시 후 다시 두 개의 아이콘을 숨깁니다.
@@ -39,8 +39,8 @@ ms.locfileid: "99868896"
 
 3. **Windows Forms 디자이너** 에서 타이머 컨트롤 아이콘을 선택한 다음, **Enter** 키를 선택하거나, 타이머를 두 번 클릭하여 빈 Tick 이벤트 처리기를 추가합니다. 또는 코드를 다음 코드로 바꾸거나 이벤트 처리기에 다음 코드를 수동으로 입력합니다.
 
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
-     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet7":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet7":::
 
       > [!IMPORTANT]
       > 이 페이지의 오른쪽 위에 있는 프로그래밍 언어 컨트롤을 사용하여 C# 코드 조각 또는 Visual Basic 코드 조각을 볼 수 있습니다.<br><br>![Docs.Microsoft.com에 대한 프로그래밍 언어 컨트롤](../ide/media/docs-programming-language-control.png)
@@ -52,8 +52,8 @@ ms.locfileid: "99868896"
 
 4. 새 타이머의 동작을 보려면 코드 편집기로 이동하여 다음 코드를 `label_Click()` 이벤트 처리기 메서드의 위쪽과 아래쪽에 추가합니다. 두 개의 `if` 문을 위쪽에 추가하고 세 개의 문을 아래쪽에 추가하며 메서드의 나머지 부분은 그대로 유지됩니다.
 
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
-     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet8":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet8":::
 
      메서드 위쪽의 코드는 **Enabled** 속성 값을 검사하여 타이머가 시작되었는지 여부를 확인합니다. 그러면 플레이어가 첫 번째 및 두 번째 Label 컨트롤을 선택하고 타이머가 시작되는 경우 세 번째 레이블을 선택해도 아무것도 수행되지 않습니다. 게임이 또 한 번의 첫 번째 클릭을 받을 준비가 되기 전에 플레이어가 빠르게 세 번째로 클릭하는 경우도 방지됩니다. 
 
