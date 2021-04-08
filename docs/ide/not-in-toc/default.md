@@ -1,21 +1,21 @@
 ---
 title: F1 도움말의 기본 페이지
 description: Visual Studio에 대한 F1 도움말 요청의 기본 페이지
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7026db3e4a3c9490c5ea770342d04fe477fdf28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961614"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616924"
 ---
 # <a name="f1-help"></a>F1 도움말
 
@@ -28,14 +28,14 @@ ms.locfileid: "99961614"
 - [docs.microsoft.com](/)에서 검색해 봅니다.
 - 검색 엔진을 사용하여 검색해 봅니다.
 
-## <a name="find-help-on-a-keyword-or-api"></a>키워드 또는 API에 대한 도움말 찾기
+## <a name="get-help-for-your-programming-language"></a>프로그래밍 언어에 대한 도움말 가져오기
 
-- C# 도움말은 [C# 프로그래밍 가이드](/dotnet/csharp/programming-guide/) 또는 [언어 참조](/dotnet/csharp/language-reference/)를 참조하세요.
-- Visual Basic 도움말은 [Visual Basic 언어 기능](/dotnet/visual-basic/programming-guide/language-features/) 또는 [언어 참조](/dotnet/visual-basic/language-reference/)을 참조하세요.
-- Python 도움말은 [Python 설명서](https://docs.python.org/)를 참조하세요.
-- C++ 도움말은 [C/ C++ 언어 및 표준 라이브러리 참조](/cpp/cpp/c-cpp-language-and-standard-libraries)를 참조하세요.
-- F# 도움말은 [F# 가이드](/dotnet/fsharp/)를 참조하세요.
-- TypeScript 도움말은 [TypeScript 설명서](https://www.typescriptlang.org/docs)를 참조하세요.
+- [C# 프로그래밍 가이드](/dotnet/csharp/programming-guide/) 또는 [언어 참조](/dotnet/csharp/language-reference/)
+- [Visual Basic 언어 기능](/dotnet/visual-basic/programming-guide/language-features/) 또는 [언어 참조](/dotnet/visual-basic/language-reference/)
+- [Python 설명서](https://docs.python.org/)
+- [C/C++ 언어 및 표준 라이브러리 참조](/cpp/cpp/c-cpp-language-and-standard-libraries)
+- [F# 가이드](/dotnet/fsharp/)
+- [TypeScript 설명서](https://www.typescriptlang.org/docs)
 
 ## <a name="re-map-or-disable-the-f1-help-key"></a>F1 도움말 키를 다시 매핑하거나 사용하지 않도록 설정
 

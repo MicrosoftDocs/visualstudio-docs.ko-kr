@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932015"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094980"
 ---
 # <a name="midl-task"></a>MIDL 작업
 
@@ -79,7 +79,7 @@ MIDL(Microsoft 인터페이스 정의 언어) 컴파일러 도구인 *midl.exe* 
 
      선택적 **String** 매개 변수입니다.
 
-     C/C++ 전처리기로 전달될 옵션을 지정합니다. 전처리기 옵션 목록을 공백으로 구분하여 지정합니다.
+     C/C++ 전처리기로 전달될 옵션을 지정합니다. 전처리기 옵션 목록을 공백으로 구분하여 지정합니다. `/E` 옵션을 포함해야 합니다.
 
      자세한 내용은 [MIDL 명령줄 참조](/windows/desktop/Midl/midl-command-line-reference)에서 **/cpp_opt** 옵션을 참조하세요.
 

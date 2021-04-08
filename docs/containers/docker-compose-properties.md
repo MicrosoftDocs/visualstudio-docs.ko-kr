@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 0a27535e9c07f87391b3cdfd8440578e36feee9e
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846815"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068299"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -39,7 +39,8 @@ ms.locfileid: "97846815"
 |AdditionalComposeFilePaths|dcproj|모든 명령에 대해 docker-compose.exe로 보낼 세미콜론으로 구분된 목록에 추가 작성 파일을 지정합니다. dcproj(docker-compose project) 파일에서 상대 경로가 허용됩니다.|-|
 |DockerComposeBaseFilePath|dcproj|*.yml* 확장명을 사용하지 않고 docker-compose 파일의 파일 이름 중 첫 번째 부분을 지정합니다. 다음은 그 예입니다. <br>1.  DockerComposeBaseFilePath = null/undefined: 기본 파일 경로 *docker-compose* 를 사용하면 파일 이름이 *docker-compose.yml* 및 *docker-compose.override.yml* 이 됩니다.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: 파일 이름은 *mydockercompose.yml* 및 *mydockercompose.override.yml* 이 됩니다.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: 파일이 한 수준 올라갑니다. |docker-compose|
 |DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|  
+|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|
+|DockerComposeProjectName| dcproj | 지정된 경우 Docker Compose 프로젝트의 프로젝트 이름을 재정의합니다. | ‘dockercompose’ + 자동 생성 해시 |
 |DockerComposeProjectPath|csproj 또는 vbproj|docker-compose 프로젝트(dcproj) 파일의 상대 경로입니다. 서비스 프로젝트를 게시할 때 이 속성을 설정하여 docker-compose.yml 파일에 저장된 관련 이미지 빌드 설정을 찾습니다.|-|
 |DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|
 |DockerDevelopmentMode|dcproj| “호스트에서 빌드” 최적화(“고속 모드” 디버깅)를 사용할지 여부를 제어합니다.  허용되는 값은 **Fast** 와 **Regular** 입니다. | 빠름 |
