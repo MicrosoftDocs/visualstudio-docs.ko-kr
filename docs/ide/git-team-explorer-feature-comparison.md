@@ -2,18 +2,18 @@
 title: Visual Studio에서 Git 및 팀 탐색기 나란히 비교
 titleSuffix: ''
 description: Visual Studio에서 새 Git 환경 대비 팀 탐색기를 사용하여 소스 제어를 관리하는 방법을 비교 및 대조합니다.
-ms.date: 03/12/2021
+ms.date: 04/01/2021
 ms.topic: how-to
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4cbd5b928bb066401c2f091863ad610fbd9f23d5
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: bff03c9435a763607fd32936ddfa3fb38b45296b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482646"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216919"
 ---
 # <a name="side-by-side-comparison-of-git-and-team-explorer"></a>Git 및 팀 탐색기 나란히 비교
 
@@ -69,5 +69,7 @@ Visual Studio 2019 [버전 16.8](/visualstudio/releases/2019/release-notes/)에�
 새 Git 환경에 관한 자세한 내용은 YouTube의 최신 동영상 [Visual Studio에서 Git 시작](https://www.youtube.com/watch?v=GCZ9x3yqkyc)을 참조하세요.
 
 ## <a name="see-also"></a>참조
+
 - [Visual Studio의 새로운 Git 환경](git-with-visual-studio.md)
+- [Visual Studio에서 Git 및 GitHub 시작](/learn/modules/visual-studio-github-push/)
 - [Visual Studio에서 GitHub 계정 작업](work-with-github-accounts.md)

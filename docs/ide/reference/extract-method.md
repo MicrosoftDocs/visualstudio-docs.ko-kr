@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b39112a696611103828d862c7f7adf04784e6222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ee11ec012ae0f104f5fefff7302d3982e43721a
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860999"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083657"
 ---
 # <a name="extract-a-method-refactoring"></a>메서드 추출 리팩터링
 
@@ -40,7 +40,7 @@ ms.locfileid: "99860999"
 
    - C#:
 
-       !Program 클래스의 C# 코드를 보여 주는 스크린샷 해당 클래스의 Main 함수에서 코드 줄이 강조 표시됩니다.](media/extractmethod-highlight-cs.png)
+       ![Program 클래스의 C# 코드를 보여 주는 스크린샷 해당 클래스의 Main 함수에서 코드 줄이 강조 표시됩니다.](media/extractmethod-highlight-cs.png)
 
    - Visual Basic:
 

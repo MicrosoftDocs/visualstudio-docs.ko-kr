@@ -1,8 +1,8 @@
 ---
 title: 프로젝트 템플릿 및 항목 템플릿 사용자 지정
 description: 프로젝트 템플릿 및 항목 템플릿을 만든 후 사용자 지정하는 방법을 알아봅니다.
-ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.custom: SEO-VS-2021
+ms.date: 03/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 332e894372c05361ec162a3e046bd675a54b04a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4229b0dcaf1c1cdacd7dd5a44cbb56afdfe9707d
+ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954412"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933786"
 ---
 # <a name="customize-project-and-item-templates"></a>프로젝트 및 항목 템플릿 사용자 지정
 
@@ -45,3 +45,5 @@ ms.locfileid: "99954412"
 - [방법: 항목 템플릿 만들기](../ide/how-to-create-item-templates.md)
 - [Visual Studio 템플릿 스키마 참조](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
+- [`dotnet new`명령을 사용하여 템플릿 설치](/dotnet/core/tools/custom-templates/)
+- [`dotnet sln` 명령을 사용하여 .NET 솔루션 파일의 프로젝트를 나열 또는 수정](/dotnet/core/tools/dotnet-sln/)

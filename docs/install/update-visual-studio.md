@@ -1,8 +1,8 @@
 ---
 title: Visual Studio 업데이트
 titleSuffix: ''
-description: 가장 최신 릴리스로 Visual Studio를 업데이트하는 방법을 단계별로 알아봅니다.
-ms.date: 10/12/2020
+description: Visual Studio를 가장 최신 릴리스로 업데이트하는 방법을 단계별로 알아봅니다.
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935718"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547507"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio를 최신 릴리스 버전으로 업데이트
 
@@ -287,12 +287,17 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 ::: moniker-end
 
+## <a name="administrator-updates"></a>관리자 업데이트 
+
+소프트웨어 설치를 중앙에서 관리하는 조직에서는 엔터프라이즈 관리자가 구성원의 컴퓨터에서 Visual Studio를 업데이트할 수 있습니다. 컴퓨터에서 수락할 수 있는 업데이트 유형을 제어 또는 구성하는 방법에 대한 자세한 내용은 [Configuration Manager를 사용하여 Visual Studio 업데이트 배포](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)를 참조하세요. 
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>참고 항목
 
 * [Visual Studio 버전 side-by-side 설치](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)
+* [Visual Studio 엔터프라이즈 가이드](visual-studio-enterprise-guide.md)
 * [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md)
 * [네트워크 기반 Visual Studio 배포에 대한 업데이트 제어](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio 수정](modify-visual-studio.md)

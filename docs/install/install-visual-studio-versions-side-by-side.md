@@ -2,7 +2,7 @@
 title: Visual Studio 버전 side-by-side 설치
 description: 이미 이전 버전 또는 최신 버전의 Visual Studio가 설치된 컴퓨터에 Visual Studio를 설치하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 07/24/2019
+ms.date: 03/29/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0814b6ebfacd5b4cf24d0f451967903b9551808f
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941530"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981279"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Visual Studio 버전 side-by-side 설치
 
@@ -50,17 +50,44 @@ ms.locfileid: "99941530"
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>Visual Studio 부 버전 동시 설치
 
-하나의 Visual Studio 부 버전에서 다음 부 버전으로 업그레이드하는 경우 Visual Studio 설치 관리자는 기본적으로 현재 설치를 해당 채널의 다음 버전으로 업데이트합니다. 예를 들어 16.6.4 미리 보기를 설치할 때 설치 관리자는 현재 설치된 16.6.3 미리 보기를 바꾸려고 시도합니다. 두 버전이 모두 16.6 미리 보기 채널에 속하기 때문입니다. 이렇게 대체하면 이전 버전의 Visual Studio가 머신의 공간을 차지하지 않습니다. 일부 특정한 경우에는 부 버전을 함께 설치하는 것이 유용할 수도 있습니다. 이 예에서는 16.6.3과 16.6.4를 모두 동일한 머신에 설치하는 것을 의미합니다.
+Visual Studio를 한 부 버전에서 다음 부 버전으로 업그레이드하는 경우 Visual Studio 설치 관리자는 기본적으로 현재 설치를 해당 채널의 최신 버전으로 업데이트합니다. 예를 들어 16.9.4가 방금 출시되었다고 가정합니다. 두 버전 모두 [Visual Studio 2019 릴리스 채널](https://docs.microsoft.com/visualstudio/productinfo/release-rhythm)의 일부이기 때문에 설치 관리자가 현재 설치된 16.9.3(또는 이전)을 16.9.4로 바꿉니다. 업데이트 중 이전 릴리스를 최신 릴리스로 바꾸면 이전 버전의 Visual Studio가 컴퓨터에서 공간을 차지하지 않게 됩니다. 그러나 Visual Studio의 여러 부 릴리스 버전을 함께 설치하는 것이 유용한 경우도 있습니다. 예를 들어 동일한 컴퓨터에 16.9.3과 16.9.4를 둘 다 설치할 수 있습니다. 
 
-1. 기존 버전의 Visual Studio와 함께 설치하려는 부 버전용 [Visual Studio 부트스트래퍼 파일](/visualstudio/releases/2019/history#installing-an-earlier-release)을 다운로드합니다.
+::: moniker range="vs-2017"
+
+1. 기존 버전의 Visual Studio와 함께 설치하려는 버전에 대한 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 페이지에서 Visual Studio 2017 버전 15.9용 최신 부트스트래퍼를 다운로드합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 기존 버전의 Visual Studio와 함께 설치하려는 부 버전에 대한 [Visual Studio 2019 릴리스](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) 페이지 또는 [Visual Studio 다운로드 페이지](https://visualstudio.microsoft.com/downloads)에서 Visual Studio 2019 부트스트래퍼 파일을 다운로드합니다.
+
+::: moniker-end
+
+
 2. 관리자 모드로 명령 프롬프트를 엽니다. 그러려면 Windows 시작 메뉴를 열고 “cmd”를 입력한 다음 명령 프롬프트 검색 결과를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행** 을 선택합니다. 명령 프롬프트에서 Visual Studio 부트스트래퍼 파일이 있는 폴더로 디렉터리를 변경합니다.
-3. 다음 명령을 실행하여 설치 위치에 대한 새 폴더 경로를 지정하고 .exe 파일 이름을 설치하는 Visual Studio 버전의 해당 부트스트래퍼 이름으로 바꿉니다. .exe 파일 이름은 다음 파일 중 하나와 일치하거나 유사해야 합니다.
-   * vs_community.exe(Visual Studio Community의 경우)
-   * vs_professional.exe(Visual Studio Professional의 경우)
-   * vs_enterprise.exe(Visual Studio Enterprise의 경우)
 
+::: moniker range="vs-2017"
+
+3. 다음 명령을 실행하여 설치 위치에 대한 새 폴더 경로를 지정하고 .exe 파일 이름을 설치하는 Visual Studio 버전의 해당 부트스트래퍼 이름으로 바꿉니다. .exe 파일 이름은 다음 파일 중 하나와 일치하거나 유사해야 합니다.
+
+   * vs_enterprise.exe(Visual Studio Enterprise의 경우)
+   * vs_professional.exe(Visual Studio Professional의 경우)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+3. 다음 명령을 실행하여 설치 위치에 대한 새 폴더 경로를 지정하고 .exe 파일 이름을 설치하는 Visual Studio 버전의 해당 부트스트래퍼 이름으로 바꿉니다. .exe 파일 이름은 다음 파일 중 하나와 일치하거나 유사해야 합니다.
+
+   * vs_enterprise.exe(Visual Studio Enterprise의 경우)
+   * vs_professional.exe(Visual Studio Professional의 경우)
+   * vs_community.exe(Visual Studio Community의 경우)
+
+::: moniker-end 
+  
    ```
-   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 4. 설치 관리자 대화 상자에 따라 설치에 필요한 구성 요소를 선택합니다. 자세한 내용은 [Visual Studio 설치](install-visual-studio.md#step-4---choose-workloads)를 참조하세요.

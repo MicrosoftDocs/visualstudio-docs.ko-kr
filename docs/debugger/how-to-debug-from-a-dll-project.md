@@ -2,7 +2,7 @@
 title: DLL 프로젝트에서 디버그 | Microsoft Docs
 description: 프로젝트 속성에서 호출 앱을 지정하여 프로젝트 자체에서 DLL 프로젝트의 디버깅을 시작할 수 있습니다. 자세한 내용은 이 문서를 참조하세요.
 ms.custom: SEO-VS-2020
-ms.date: 10/10/2018
+ms.date: 3/30/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7846cc3fd17b46365da59f6fe1a744032cb8ba14
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160436"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083644"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>방법: Visual Studio의 DLL 프로젝트에서 디버그(C#, C++, Visual Basic, F#)
 
@@ -81,7 +81,13 @@ DLL 프로젝트를 디버그하는 한 가지 방법은 DLL 프로젝트 속성
 
 1. **솔루션 구성** 필드가 **디버그** 로 설정되어 있는지 확인합니다. **F5** 키를 누르거나, 녹색 **시작** 화살표를 클릭하거나, **디버그** > **디버깅 시작** 을 선택합니다.
 
-디버깅이 중단점에 도달하지 않는 경우 DLL 출력(기본적으로 *\<project>\Debug* 폴더)이 호출 앱이 호출하는 위치인지 확인합니다.
+추가 팁:
+
+- 디버깅이 중단점에 도달하지 않는 경우 DLL 출력(기본적으로 *\<project>\Debug* 폴더)이 호출 앱이 호출하는 위치인지 확인합니다.
+
+- 네이티브 DLL에서 관리형 호출 앱의 코드를 중단하거나 그 반대로 하려면 [혼합 모드 디버깅](../debugger/how-to-debug-in-mixed-mode.md)을 사용하도록 설정합니다.
+
+- 일부 시나리오에서는 디버거에 소스 코드 위치를 알려야 할 수 있습니다. 자세한 내용은 [로드된 기호 없음/로드된 소스 없음 페이지 사용](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#use-the-no-symbols-loadedno-source-loaded-pages)을 참조하세요.
 
 ## <a name="see-also"></a>참조
 - [DLL 프로젝트 디버깅](../debugger/debugging-dll-projects.md)

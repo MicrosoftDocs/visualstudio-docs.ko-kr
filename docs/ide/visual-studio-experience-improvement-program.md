@@ -8,16 +8,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60a67da568703282a3ae469afa4dbc15c53cf4ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c7f425d87ba6316c3a3cab66f2b342b4c1141f4
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873946"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110599"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 사용자 환경 개선 프로그램
 
-VSCEIP(Visual Studio 사용자 환경 개선 프로그램)는 Microsoft가 시간이 지남에 따라 Visual Studio를 개선하는 데 도움이 되도록 설계되었습니다. 이 프로그램은 컴퓨터에서 사용자의 작업을 방해하지 않고 [오류](../ide/diagnostic-data-collection.md), 컴퓨터 하드웨어 및 사용자가 Visual Studio를 사용하는 방법에 대한 정보를 수집합니다. 수집되는 정보는 Microsoft가 개선할 기능을 식별하는 데 도움이 됩니다. 이 문서에서는 VSCEIP를 옵트인하거나 옵트아웃하는 방법에 대해 설명합니다.
+VSCEIP(Visual Studio 사용자 환경 개선 프로그램)는 Microsoft가 시간이 지남에 따라 Visual Studio를 개선하는 데 도움이 되도록 설계되었습니다. 이 프로그램은 컴퓨터에서 사용자의 작업을 방해하지 않고 [오류](../ide/diagnostic-data-collection.md), 컴퓨터 하드웨어 및 사용자가 Visual Studio를 사용하는 방법에 대한 정보를 수집합니다. 수집되는 정보는 Microsoft가 개선할 기능을 식별하는 데 도움이 됩니다. 이 문서에서는 VSCEIP를 옵트인하거나 옵트아웃하는 방법에 대해 설명합니다. 옵트아웃할 경우 **선택적** 진단 데이터 수집을 옵트아웃하는 것입니다. Visual Studio가 안전하고 최신 상태이고 예상 대로 작동하는지 확인하려면 일부 진단 데이터 수집이 **필요** 합니다. VSCEIP 옵트아웃을 선택하더라도 필수 진단 데이터 수집은 영향을 받지 않습니다.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]

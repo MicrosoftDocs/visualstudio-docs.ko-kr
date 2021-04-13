@@ -2,7 +2,7 @@
 title: 디버거에서 기호 파일(.pdb) 및 소스 파일 설정
 description: Visual Studio에서 기호 및 소스 파일을 구성하고 관리하는 방법
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903570"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083690"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 기호 파일(.pdb) 및 소스 파일 지정(C#, C++, Visual Basic, F#)
 
@@ -246,9 +246,10 @@ ASP.NET 애플리케이션의 *web.config* 파일을 디버그 모드로 설정�
 
 - 검색 경로를 변경하려면 선택되지 않은 경로를 선택합니다. 또는 **새 경로** 나 **새 VSTS 경로** 를 선택하고 새 경로를 입력하거나 선택합니다. 경로를 다시 검색하고 발견되는 기호 파일을 로드하려면 **로드** 를 선택합니다.
 - 기호 옵션을 재정의하고 검색 경로를 다시 시도하려면 **\<executable-name> 찾아보기** 를 선택합니다. 기호 파일이 발견되는 경우 로드되거나, **파일 탐색기** 가 열려서 기호 파일을 수동으로 선택할 수 있습니다.
-- **옵션** > **디버깅** > **기호** 페이지를 열려면 **기호 설정 변경** 을 선택합니다.
-- 새 창에 디스어셈블리를 한 번 표시하려면 **디스어셈블리 보기** 를 선택하거나, **옵션 대화 상자** 를 선택하여 소스 또는 기호 파일을 찾을 수 없는 경우 항상 디스어셈블리를 표시하도록 옵션을 설정합니다.
+- 동작을 구성하는 기호 설정 페이지를 열려면 **기호 설정 변경** 을 선택합니다(또는 **옵션** > **디버깅** > **기호** 를 선택).
+- (고급) 새 창에 디스어셈블리를 한 번 표시하려면 **디스어셈블리 보기** 를 선택하거나, **옵션 대화 상자** 를 선택하여 소스 또는 기호 파일을 찾을 수 없는 경우 항상 디스어셈블리를 표시하도록 옵션을 설정합니다. 자세한 내용은 [디스어셈블리 코드 보기](../debugger/how-to-use-the-disassembly-window.md)를 참조하세요.
 - 검색된 위치와 결과를 표시하려면 **기호 로드 정보** 를 확장합니다.
+- C# 코드의 경우 **로드된 기호 없음** 또는 **로드된 소스 없음** 페이지에서 [소스 코드 디컴파일](../debugger/decompilation.md)을 선택할 수도 있습니다.
 
 옵션 중 하나를 실행한 후 디버거가 *.pdb* 파일을 찾고 *.pdb* 파일의 정보를 사용하여 소스 파일을 검색할 수 있으면 소스가 표시됩니다. 그러지 않으면 문제를 설명하고 문제를 해결할 수 있는 작업에 대한 링크를 포함하는 **로드된 소스 없음** 페이지가 표시됩니다.
 
@@ -259,6 +260,8 @@ ASP.NET 애플리케이션의 *web.config* 파일을 디버그 모드로 설정�
 1. **솔루션 탐색기** 에서 솔루션을 선택한 다음에 **속성** 아이콘을 선택하거나, **Alt**+**Enter** 를 누르거나, 마우스 오른쪽 단추를 클릭하여 **속성** 을 선택합니다.
 
 1. **소스 파일 디버그** 를 선택합니다.
+
+   ![소스 파일 디버그 페이지](../debugger/media/dbg-source-files.png)
 
 1. **소스 코드가 포함되어 있는 디렉터리** 에서 검색할 소스 코드 위치를 입력하거나 선택합니다. **새 줄** 아이콘을 사용하여 위치를 추가하거나, **위쪽** 및 **아래쪽** 화살표 아이콘을 사용하여 위치 순서를 바꾸거나, **X** 아이콘을 사용하여 위치를 삭제합니다.
 

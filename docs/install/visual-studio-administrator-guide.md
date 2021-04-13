@@ -2,7 +2,7 @@
 title: Visual Studio 관리자 가이드
 titleSuffix: ''
 description: 엔터프라이즈 환경에 Visual Studio를 배포하는 방법을 자세히 알아봅니다.
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935614"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547416"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -38,53 +38,45 @@ ms.locfileid: "99935614"
 
 * 각 대상 컴퓨터가 [최소 설치 요구 사항](/visualstudio/releases/2019/system-requirements/)을 충족하는지 확인합니다.
 
-* 서비스 요구 사항을 결정합니다.
-
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 Enterprise 및 Professional 고객용 지원 옵션 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
-
-  누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
-
-* 업데이트 모델을 결정합니다.
-
-  업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
-
-  최신 제품 업데이트를 사용하여 Visual Studio의 네트워크 설치 레이아웃을 업데이트할 수 있으므로, 해당 레이아웃을 Visual Studio의 최신 업데이트에 대한 설치 지점으로 사용하거나 이미 클라이언트 워크스테이션에 배포된 설치를 유지 관리하는 데 사용할 수 있습니다. 자세한 내용은 [Visual Studio의 네트워크 기반 설치 업데이트](../install/update-a-network-installation-of-visual-studio.md)를 참조하세요.
-
-  인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
-
-* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019&preserve-view=true)를 결정합니다.
-
-* [응답 파일](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
-
-* 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
-
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 각 대상 컴퓨터가 [최소 설치 요구 사항](/visualstudio/productinfo/vs2017-system-requirements-vs/)을 충족하는지 확인합니다.
 
+::: moniker-end
+
 * 서비스 요구 사항을 결정합니다.
 
-  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) 페이지의 이전 버전의 Visual Studio 지원 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
-
-  누적 기능 업데이트와 함께 서비스 업데이트를 적용할 계획인 경우 최신 정보를 선택할 수 있습니다.
+  회사가 어떤 기능 집합을 오래 유지해야 하지만 정기 서비스 업데이트도 받고자 하는 경우 서비스 기준선의 사용을 계획합니다. 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) 페이지의 Enterprise 및 Professional 고객용 지원 옵션 섹션 및 [서비스 기준선에서 Visual Studio 업데이트](update-servicing-baseline.md) 페이지를 참조하세요.
 
 * 업데이트 모델을 결정합니다.
 
-  업데이트를 가져오려면 개별 클라이언트 컴퓨터를 어디에 두어야 할까요? 특히 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다.
+  개별 클라이언트 컴퓨터가 어디에서 제품 업데이트를 가져오도록 해야 할까요? 특히 클라이언트가 업데이트를 인터넷에서 가져올지 아니면 회사 전체 로컬 공유에서 가져올지 결정합니다. 그런 다음, 로컬 공유 사용을 선택한 경우 개별 사용자가 자신의 고유한 클라이언트를 업데이트할 수 있는지 아니면 관리자가 프로그램에 의해 클라이언트를 업데이트할지 결정합니다. 클라이언트 컴퓨터에서 원래 설치를 수행하기 전에 이러한 결정을 내리는 것이 가장 좋습니다. 자세한 내용은 [Visual Studio의 네트워크 기반 설치 만들기](../install/create-a-network-installation-of-visual-studio.md)를 참조하세요.
 
   최신 제품 업데이트를 사용하여 Visual Studio의 네트워크 설치 레이아웃을 업데이트할 수 있으므로, 해당 레이아웃을 Visual Studio의 최신 업데이트에 대한 설치 지점으로 사용하거나 이미 클라이언트 워크스테이션에 배포된 설치를 유지 관리하는 데 사용할 수 있습니다. 자세한 내용은 [Visual Studio의 네트워크 기반 설치 업데이트](../install/update-a-network-installation-of-visual-studio.md)를 참조하세요.
 
+  엔터프라이즈 배포 도구를 사용하는 조직은 Microsoft 업데이트 카탈로그 및 Windows Server Update Services에서 Visual Studio 업데이트를 사용할 수 있다는 점을 활용할 수 있습니다. 자세한 내용은 [관리자 업데이트 사용](../install/enabling-administrator-updates.md) 및 [관리자 업데이트 적용](../install/applying-administrator-updates.md)을 참조하세요.
+
   인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
+
+::: moniker range="vs-2019"
+
+* 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019&preserve-view=true)를 결정합니다.
+
+* [응답 파일](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 * 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2017&preserve-view=true)를 결정합니다.
 
 * [응답 파일](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true)(스크립트 파일의 세부 정보 관리를 단순하게 해주는)을 사용할지 여부를 결정합니다.
 
-* 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
-
 ::: moniker-end
+
+* 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
 
 ::: moniker range="vs-2019"
 
@@ -109,17 +101,17 @@ ms.locfileid: "99935614"
 
 * (선택 사항) 그룹 정책을 설정합니다. 개별 컴퓨터에서 [고객 피드백을 사용하지 앟도록 Visual Studio를 구성](../ide/visual-studio-experience-improvement-program.md)할 수도 있습니다.
 
-## <a name="step-3---deploy"></a>3단계 - 배포
+## <a name="step-3---deploy-updates"></a>3단계 - 업데이트 배포
 
-* 선택한 배포 기술을 사용하여 대상 개발자 워크스테이션에서 스크립트를 실행합니다.
-
-## <a name="step-4---deploy-updates"></a>4단계 - 업데이트 배포
+선택한 배포 기술을 사용하여 대상 개발자 워크스테이션에서 스크립트를 실행합니다.
 
 * 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true)합니다.
 
   업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 명령줄 매개 변수를 사용하면 됩니다.
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
+  Windows Server Update Services 또는 Microsoft 업데이트 카탈로그에서 System Center Configuration Manager와 같은 도구를 사용하여 Visual Studio 업데이트를 배포할 수 있습니다.  자세한 내용은 [관리자 업데이트 적용](applying-administrator-updates.md)을 참조하세요. 
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>4단계 - (선택 사항) Visual Studio 도구를 사용하여 설치 확인
 
 클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
 
@@ -156,17 +148,17 @@ ms.locfileid: "99935614"
 
 * (선택 사항) 그룹 정책을 설정합니다. 개별 컴퓨터에서 [고객 피드백을 사용하지 앟도록 Visual Studio를 구성](../ide/visual-studio-experience-improvement-program.md)할 수도 있습니다.
 
-## <a name="step-3---deploy"></a>3단계 - 배포
+## <a name="step-3---deploy-updates"></a>3단계 - 업데이트 배포
 
-* 선택한 배포 기술을 사용하여 대상 개발자 워크스테이션에서 스크립트를 실행합니다.
-
-## <a name="step-4---deploy-updates"></a>4단계 - 업데이트 배포
+선택한 배포 기술을 사용하여 대상 개발자 워크스테이션에서 스크립트를 실행합니다.
 
 * 1단계에서 사용한 명령을 정기적으로 실행하여 업데이트된 구성 요소를 추가하는 방법으로 [네트워크 위치를 최신 업데이트로 갱신](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true)합니다.
 
   업데이트 스크립트를 사용하여 Visual Studio를 업데이트할 수 있습니다. [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 명령줄 매개 변수를 사용하면 됩니다.
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>5단계 - (선택 사항) Visual Studio 도구 사용
+  Windows Server Update Services 또는 Microsoft 업데이트 카탈로그에서 System Center Configuration Manager와 같은 도구를 사용하여 Visual Studio 업데이트를 배포할 수 있습니다. 자세한 내용은 [관리자 업데이트 적용](applying-administrator-updates.md)을 참조하세요.
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>4단계 - (선택 사항) Visual Studio 도구를 사용하여 설치 확인
 
 클라이언트 컴퓨터에 [설치된 Visual Studio 인스턴스를 검색 및 관리](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true)하는 데 사용할 수 있는 여러 가지 도구가 있습니다.
 
@@ -176,7 +168,7 @@ ms.locfileid: "99935614"
 
 **“PutCustomTypeInBingSearch” DWORD 0**
 
-레지스트리는 프라이빗 레지스트리 하이브의 *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
+레지스트리는 프라이빗 레지스트리 하이브의 `Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\` 디렉터리에 있습니다. 레지스트리 하이브를 여는 방법에 대한 지침은 [Visual Studio 인스턴스용으로 레지스트리 편집](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)을 참조하세요.
 
 ::: moniker-end
 
@@ -184,6 +176,8 @@ ms.locfileid: "99935614"
 
 ## <a name="see-also"></a>참조
 
+* [관리자 업데이트 사용](enabling-administrator-updates.md)
+* [관리자 업데이트 적용](applying-administrator-updates.md)
 * [명령줄 매개 변수 예](command-line-parameter-examples.md)
 * [Visual Studio 오프라인 설치에 필요한 인증서 설치](install-certificates-for-visual-studio-offline.md)
 * [설치 구성 가져오기 또는 내보내기](import-export-installation-configurations.md)

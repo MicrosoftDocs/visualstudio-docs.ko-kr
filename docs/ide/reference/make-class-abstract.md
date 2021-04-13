@@ -1,5 +1,6 @@
 ---
 title: 클래스를 추상으로 설정
+description: 추상 메서드를 작성한 후 클래스를 추상으로 만드는 방법을 알아봅니다.
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7b44c8331c10bc0cf2f87e19094a77c0cbec251a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac3d6b9cef8d20d85049da830dfb830321faab75
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919420"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214540"
 ---
 # <a name="make-class-abstract"></a>클래스를 추상으로 설정
 

@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b89e074a4c67e8d16a07eb48431ebe1ade694f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877163"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083570"
 ---
 # <a name="exec-task"></a>Exec 작업
 
@@ -49,6 +49,7 @@ ms.locfileid: "99877163"
 |`Outputs`|선택적 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 출력 매개 변수입니다.<br /><br /> 작업의 출력 항목을 포함합니다. `Exec` 작업은 자체적으로 이를 설정하지 않습니다. 대신 마치 설정된 것처럼 사용자가 제공하여 나중에 프로젝트에서 사용되도록 할 수 있습니다.|
 |`StdErrEncoding`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 캡처된 작업 표준 오류 스트림의 인코딩을 지정합니다. 기본값은 현재 콘솔 출력 인코딩입니다.|
 |`StdOutEncoding`|선택적 `String` 출력 매개 변수입니다.<br /><br /> 캡처된 작업 표준 출력 스트림의 인코딩을 지정합니다. 기본값은 현재 콘솔 출력 인코딩입니다.|
+|`UseUtf8Encoding`|선택적 `String` 매개 변수입니다.<br /><br /> 실행된 명령에 대한 명령줄을 처리할 때 UTF8 코드 페이지를 사용할지 여부를 지정합니다. 유효한 값은 `Always`, `Never` 또는 `Detect`입니다. 기본값은 `Detect`입니다. 즉, 비 ANSI 문자가 있는 경우에만 UTF8 코드 페이지를 사용합니다.|
 |`WorkingDirectory`|선택적 `String` 매개 변수입니다.<br /><br /> 명령이 실행될 디렉터리를 지정합니다.<br /><br />기본값: 프로젝트의 현재 작업 디렉터리입니다.|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]

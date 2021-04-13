@@ -2,18 +2,18 @@
 title: Visual Studio의 Git 환경
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 통합 Git 환경을 활용하여 생산성을 높일 수 있는 방법을 알아봅니다.
-ms.date: 03/16/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: b58a60efbf2c602706eed6d9278574d1bf1fffcc
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622649"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216763"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio의 Git 환경
 
@@ -202,9 +202,10 @@ Visual Studio의 병합 편집기는 들어오는 변경 내용, 현재 변경 �
 
 ## <a name="see-also"></a>추가 정보
 
+- Microsoft Learn의 [Visual Studio에서 Git 및 GitHub 시작](/learn/modules/visual-studio-github-push/) 자습서
 - YouTube의 [Visual Studio에서 Git 시작](https://www.youtube.com/watch?v=GCZ9x3yqkyc) 동영상
 - [Visual Studio의 Git 환경 릴리스 알림](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/) 블로그 포스트
-- YouTube의 [새 Git 환경 출시](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
+- YouTube의 [새 Git 환경 출시](https://www.youtube.com/watch?v=UHrAg3iKoe0&t) 동영상
 - [Visual Studio 도구 상자 시리즈에서 제공: Channel 9 및 [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be)의 새 Git 환경](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience) 비디오
 - [Visual Studio의 Git 환경에 대한 흥미로운 새 업데이트](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) 블로그 게시물
 - [Visual Studio 2019의 향상된 Git 환경](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/) 블로그 게시물

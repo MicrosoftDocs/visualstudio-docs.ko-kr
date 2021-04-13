@@ -1,7 +1,7 @@
 ---
 title: 엔터프라이즈 배포에 대한 기본값 설정
 description: Visual Studio의 엔터프라이즈 배포에 대한 도메인 정책 및 기타 구성 작업에 대해 알아봅니다.
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fd5e96246778e1a8fd4ec1d87221ff04e8647cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d3d6f658e3d24f3c82737c0c457323b9d4eb4b6
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959274"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547468"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Visual Studio의 엔터프라이즈 배포에 대한 기본값 설정
 
@@ -50,12 +50,30 @@ Visual Studio의 배포에 영향을 주는 레지스트리 정책을 설정할 
 
 다음 레지스트리 값을 설정할 수 있습니다.
 
+::: moniker range="vs-2017"
 | **이름** | **형식** | **기본값** | **설명** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 패키지가 매니페스트되고 필요한 경우 페이로드가 저장되는 디렉터리입니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md) 페이지를 참조하세요. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 설치된 후에도 패키지 페이로드를 유지합니다. 언제든지 값을 변경할 수 있습니다. 정책을 사용하지 않도록 설정하면 복구하거나 수정하는 인스턴스에 대한 캐시된 패키지 페이로드가 모두 제거됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md) 페이지를 참조하세요. |
 | `SharedInstallationPath` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 여러 버전의 Visual Studio 인스턴스에 걸쳐 공유되는 일부 패키지가 설치되는 디렉터리입니다. 언제든지 값을 변경할 수 있지만 이후 설치에만 영향을 줍니다. 이전 위치에 이미 설치된 모든 제품은 이동되지 않거나 제대로 작동하지 않을 수 있습니다. |
 | `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | 설치된 모든 Visual Studio 제품에 대한 업데이트를 자동으로 다운로드하지 않습니다. 언제든지 값을 변경할 수 있습니다. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | 관리자 업데이트를 클라이언트 컴퓨터에 적용할 수 있습니다. 이 값이 없거나 0으로 설정된 경우 관리자 업데이트가 차단됩니다. 이 값은 관리 용도로 사용됩니다. 자세한 내용은 [관리자 업데이트 사용](enabling-administrator-updates.md)을 참조하세요. | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | 사용자가 Visual Studio에 대한 관리자 업데이트를 받지 않으려는 것을 나타냅니다. 이 레지스트리 키가 없거나 설정된 값이 0이면 Visual Studio 사용자가 Visual Studio에 대한 관리자 업데이트를 받으려는 것입니다. 이는 클라이언트 컴퓨터에 대한 관리자 권한이 있는 개발자 사용자를 위한 것입니다. 자세한 내용은 [관리자 업데이트 적용](../install/applying-administrator-updates.md#understanding-configuration-options)을 참조하세요. | 
+| `UpdateConfigurationFile` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\updates.config | 관리자 업데이트를 구성하기 위한 파일 경로입니다. 자세한 내용은 [관리자 업데이트 구성 방법](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)을 참조하세요. | 
+::: moniker-end
+
+::: moniker range="vs-2019"
+| **이름** | **형식** | **기본값** | **설명** |
+| -------- | -------- | ----------- | --------------- |
+| `CachePath` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 패키지가 매니페스트되고 필요한 경우 페이로드가 저장되는 디렉터리입니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md) 페이지를 참조하세요. |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 설치된 후에도 패키지 페이로드를 유지합니다. 언제든지 값을 변경할 수 있습니다. 정책을 사용하지 않도록 설정하면 복구하거나 수정하는 인스턴스에 대한 캐시된 패키지 페이로드가 모두 제거됩니다. 자세한 내용은 [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md) 페이지를 참조하세요. |
+| `SharedInstallationPath` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 여러 버전의 Visual Studio 인스턴스에 걸쳐 공유되는 일부 패키지가 설치되는 디렉터리입니다. 언제든지 값을 변경할 수 있지만 이후 설치에만 영향을 줍니다. 이전 위치에 이미 설치된 모든 제품은 이동되지 않거나 제대로 작동하지 않을 수 있습니다. |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | 설치된 모든 Visual Studio 제품에 대한 업데이트를 자동으로 다운로드하지 않습니다. 언제든지 값을 변경할 수 있습니다. |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | 관리자 업데이트를 클라이언트 컴퓨터에 적용할 수 있습니다. 이 값이 없거나 0으로 설정된 경우 관리자 업데이트가 차단됩니다. 이 값은 관리 용도로 사용됩니다. 자세한 내용은 [관리자 업데이트 사용](enabling-administrator-updates.md)을 참조하세요. | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | 사용자가 Visual Studio에 대한 관리자 업데이트를 받지 않으려는 것을 나타냅니다. 이 레지스트리 키가 없거나 설정된 값이 0이면 Visual Studio 사용자가 Visual Studio에 대한 관리자 업데이트를 받으려는 것입니다. 이는 클라이언트 컴퓨터에 대한 관리자 권한이 있는 개발자 사용자를 위한 것입니다. 자세한 내용은 [관리자 업데이트 적용](../install/applying-administrator-updates.md#understanding-configuration-options)을 참조하세요. | 
+| `UpdateConfigurationFile` | `REG_SZ` 또는 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\updates.config | 관리자 업데이트를 구성하기 위한 파일 경로입니다. 자세한 내용은 [관리자 업데이트 구성 방법](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)을 참조하세요. | 
+| `BaselineStickinessVersions2019` | `REG_SZ` 또는 `REG_EXPAND_SZ` | `ALL` 또는 `16.4.0,16.7.0,16.9.0` | 업데이트가 지정된 서비스 기준을 유지하도록 권한을 부여하는 버전입니다. 자세한 내용은 [관리자 업데이트 적용](../install/applying-administrator-updates.md#understanding-configuration-options) 페이지를 참조하세요. | 
+::: moniker-end
 
 > [!IMPORTANT]
 > 설치 후 `CachePath` 레지스트리 정책을 변경할 경우 기존 패키지 캐시를 새 위치로 이동하고 `SYSTEM` 및 `Administrators`에 모든 권한을 부여하고 `Everyone`에 읽기 권한을 부여하여 해당 캐시가 보호되도록 해야 합니다.
@@ -63,8 +81,9 @@ Visual Studio의 배포에 영향을 주는 레지스트리 정책을 설정할 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 설치](install-visual-studio.md)
+- [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 - [패키지 캐시를 사용하지 않도록 설정 또는 이동](disable-or-move-the-package-cache.md)
 - [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)

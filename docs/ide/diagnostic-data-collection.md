@@ -4,17 +4,17 @@ description: Visual Studio 시스템 생성 로그와 수집되는 데이터 형
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894662"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171838"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Visual Studio에서 수집한 시스템에서 생성된 로그
 
@@ -70,7 +70,7 @@ Visual Studio에서는 크래시, UI 응답 없음 및 높은 CPU 또는 메모�
 
 ## <a name="opt-out-of-data-collection"></a>데이터 수집 옵트아웃
 
-데이터 수집 목적과 데이터의 액세스 및 보존에 대한 제약 조건을 고려할 때 Visual Studio 및 Windows의 기본 개인 정보 설정을 사용하는 것이 좋습니다. 그러나 Visual Studio 환경 개선 프로그램을 [옵트아웃](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out)할 수 있습니다. 모든 프로그램에 대해 시스템에서 생성된 로그 수집을 옵트아웃하려면 [Windows 10의 진단, 피드백 및 개인 정보](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)를 참조하세요. 옵션은 사용 중인 Windows 버전에 따라 달라질 수 있습니다.
+데이터 수집 목적과 데이터의 액세스 및 보존에 대한 제약 조건을 고려할 때 Visual Studio 및 Windows의 기본 개인 정보 설정을 사용하는 것이 좋습니다. 그러나 Visual Studio 환경 개선 프로그램을 [옵트아웃](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out)할 수 있습니다. 옵트아웃할 경우 **선택적** 진단 데이터 수집을 옵트아웃하는 것입니다. Visual Studio가 안전하고 최신 상태이고 예상 대로 작동하는지 확인하려면 일부 진단 데이터 수집이 **필요** 합니다. VSCEIP 옵트아웃을 선택하더라도 필수 진단 데이터 수집은 영향을 받지 않습니다. 모든 프로그램에 대해 시스템에서 생성된 로그 수집을 옵트아웃하려면 [Windows 10의 진단, 피드백 및 개인 정보](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)를 참조하세요. 옵션은 사용 중인 Windows 버전에 따라 달라질 수 있습니다.
 
 ## <a name="see-also"></a>참조
 

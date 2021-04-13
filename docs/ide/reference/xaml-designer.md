@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836191"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082528"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 디자이너 옵션 페이지
 
@@ -64,7 +64,18 @@ ms.locfileid: "99836191"
 
 이러한 설정은 XAML 문서를 편집하는 경우의 디자이너 동작을 결정합니다.
 
-|이름|설명|
+## <a name="default-zoom-setting"></a>기본 확대/축소 설정
+
+이 설정을 사용하여 XAML 문서를 보기 위한 기본 확대/축소 값을 결정합니다.
+
+|Name|설명|
+|-|-|
+|**마지막으로 사용한 날짜**|기본적으로 모든 XAML 문서에 대해 마지막으로 사용된 확대/축소 값을 사용합니다. XAML 문서를 처음 여는 경우에는 처음에만 ‘모두 맞춤’ 설정을 사용합니다.|
+|**모두 맞춤**|XAML 디자이너의 확대/축소 값을 ‘모두 맞춤’으로 설정하려면 이 옵션을 사용합니다. XAML 문서를 닫았다가 다시 열면 마지막으로 설정된 값이 해당 세션에서 유지되지만 다른 세션에서는 기본적으로 ‘모두 맞춤’이 사용됩니다.|
+
+다음 설정은 XAML 문서를 편집하는 경우 디자이너 동작을 결정합니다.
+
+|Name|설명|
 |-|-|
 |**생성 시 대화형 요소에 자동으로 이름 지정**|디자이너에 새 대화형 요소를 추가하는 경우 기본 이름을 제공할지 여부를 지정합니다.|
 |**요소를 만들 때 레이아웃 속성을 자동으로 삽입합니다.**|디자이너에 새 요소를 추가하는 경우 레이아웃 속성을 제공할지 여부를 지정합니다. 레이아웃 속성은 컨트롤의 레이아웃에 영향을 주는 속성입니다(예: Margin 및 VerticalAlignment). 다음 XAML은 이 옵션을 선택하고 단추를 만드는 방법과 선택하지 않고 단추를 만드는 방법을 보여 줍니다.<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|

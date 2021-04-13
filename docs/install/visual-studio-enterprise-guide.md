@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 엔터프라이즈 가이드
 description: 엔터프라이즈 환경에서 Visual Studio를 설정하고 문제를 해결합니다.
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -16,18 +16,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5e8a28ac89c2bea85aee8323060bf948266ad2e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967113"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547390"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 엔터프라이즈 가이드
 Visual Studio에서 회사를 운영하는 동안 시간을 절약하려면 이 가이드를 참조하세요. 본 엔터프라이즈 가이드는 일반적인 엔터프라이즈 시나리오에서 Visual Studio를 설치 또는 업데이트하고, 문제 발생 시 차단을 해제하고, 추가 도움이 필요한 경우 문제를 보고하는 방법을 알아보는 데 도움이 되는 팁을 제공합니다. 
 
 ## <a name="get-started"></a>시작 
-네트워크 및 오프라인 환경에서 엔터프라이즈에 Visual Studio를 배포하는 방법을 알아봅니다. 
+네트워크 및 오프라인 환경에서 엔터프라이즈에 Visual Studio를 배포하는 방법을 알아봅니다.
+
+- **[SCCM(Microsoft Endpoint Configuration Manager)을 사용하여 관리자 업데이트를 사용하도록 설정](enabling-administrator-updates.md)** .  Visual Studio 업데이트는 [Microsoft 업데이트 카탈로그](https://www.catalog.update.microsoft.com/Home.aspx) 및 [WSUS(Windows Server Update Services)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)에 포함됩니다. 엔터프라이즈 관리자가 업데이트를 다운로드하고 SCCM(Microsoft Endpoint Configuration Manager)과 같은 표준 배포 도구를 사용하여 조직 전체의 Visual Studio 클라이언트 컴퓨터에 배포할 수 있습니다.
 
 - **네트워크 환경에서의 엔터프라이즈 배포 옵션에 대해 알아봅니다**. [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)는 시스템 관리자를 위한 시나리오 기반 지침을 제공합니다. 
 
@@ -43,17 +45,19 @@ Visual Studio에서 회사를 운영하는 동안 시간을 절약하려면 이 
 
 일반적인 엔터프라이즈 시나리오에서 Visual Studio를 설치하는 방법을 알아봅니다. 
 
-- **[명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)** . 다양한 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정합니다. 설치 프로세스를 자동화하거나 나중에 사용할 설치 파일의 캐시를 만듭니다. 
+- **[명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)** . 다양한 매개 변수를 사용하여 Visual Studio 설치를 제어하거나 사용자 지정합니다. 설치 프로세스를 자동화하거나 나중에 사용할 설치 파일의 캐시를 만듭니다. 자세한 내용은 [명령줄 매개 변수 예제](command-line-parameter-examples.md)를 참조하세요.
 
-- **[Visual Studio 설치를 위한 명령줄 매개 변수 예제](command-line-parameter-examples.md)를 참조하세요**. 명령줄 매개 변수를 사용하여 Visual Studio를 설치하는 방법을 보여 주는 몇 가지 예제를 확인하고 필요에 맞게 사용자 지정할 수 있습니다. 
+- **[Visual Studio의 네트워크 설치 파일 만들기](create-a-network-installation-of-visual-studio.md)** . 초기 설치 파일과 모든 제품 업데이트를 단일 폴더에 캐시합니다. 
 
-- **[방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)** . 조직에서 방화벽 또는 프록시 서버와 같은 보안 조치를 사용하는 경우, Visual Studio와 Azure 서비스를 설치 및 사용할 때 최상의 경험을 얻으려면 특정 포트 및 프로토콜을 열고 특정 도메인 URL을 "허용 목록"에 추가하는 것이 좋습니다. 
+- **[방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)** . 조직에서 방화벽 또는 프록시 서버와 같은 보안 조치를 사용하는 경우, Visual Studio와 Azure 서비스를 설치 및 사용할 때 최상의 경험을 얻으려면 특정 포트 및 프로토콜을 열고 특정 도메인 URL을 ‘허용 목록’에 추가하는 것이 좋습니다. 
 
-- **[Visual Studio의 네트워크 설치 파일 만들기](create-a-network-installation-of-visual-studio.md)** . 초기 설치 파일과 모든 제품 업데이트를 단일 폴더에 캐시합니다.  
+- **[오프라인 설치에 필수 인증서 설치](../install/install-certificates-for-visual-studio-offline.md)** . 클라이언트 컴퓨터의 인터넷 연결이 완전히 끊어진 경우 필요한 인증서를 설치합니다.
 
 ## <a name="update-visual-studio"></a>Visual Studio 업데이트 
 
 Visual Studio를 성공적으로 업데이트하고 업데이트 문제를 해결하는 방법을 알아봅니다. 
+
+- **[SCCM(Microsoft Endpoint Configuration Manager)을 사용하여 관리자 업데이트 적용](../install/applying-administrator-updates.md)** 합니다. SCCM을 통해 Visual Studio 기능, 보안 및 품질 업데이트를 배포하는 방법을 알아봅니다. 
 
 - **[Visual Studio 2017의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)** . 최신 제품 업데이트를 사용하여 Visual Studio의 네트워크 설치 레이아웃을 업데이트합니다. 이후 해당 레이아웃을 Visual Studio의 최신 업데이트에 대한 설치 지점으로 사용하거나 이미 클라이언트 워크스테이션에 배포된 설치를 유지 관리하는 데 사용할 수 있습니다.
 
@@ -70,3 +74,4 @@ Visual Studio를 성공적으로 업데이트하고 업데이트 문제를 해�
 ## <a name="see-also"></a>참조 
 
 - [Visual Studio 생산성 가이드](../ide/productivity-features.md)
+

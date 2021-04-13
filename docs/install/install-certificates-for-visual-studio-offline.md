@@ -1,7 +1,7 @@
 ---
 title: 오프라인 설치를 위한 인증서 설치
 description: Visual Studio 오프라인 설치에 대한 인증서를 설치하는 방법을 알아봅니다.
-ms.date: 08/08/2019
+ms.date: 03/29/2021
 ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941557"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981292"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -36,7 +36,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 ::: moniker range="vs-2017"
 
-네트워크 레이아웃을 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 그러면 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 통해 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
+[네트워크 레이아웃](../install/create-a-network-installation-of-visual-studio.md) 또는 [로컬 오프라인 캐시](../install/create-an-offline-installation-of-visual-studio.md)를 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 그러면 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 통해 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
 
 **업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 [인증서 설치]를 선택한 다음, [인증서 관리자] 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다.
 
@@ -44,7 +44,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 ::: moniker range="vs-2019"
 
-네트워크 레이아웃을 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 인증서 설치를 선택한 다음, 인증서 관리자 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
+[네트워크 레이아웃](../install/create-a-network-installation-of-visual-studio.md) 또는 [로컬 오프라인 캐시](../install/create-an-offline-installation-of-visual-studio.md)를 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 인증서 설치를 선택한 다음, 인증서 관리자 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
 
 ::: moniker-end
 
@@ -56,34 +56,16 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 오프라인 환경에서 클라이언트 워크스테이션에 대한 Visual Studio 배포를 스크립팅할 경우 다음 단계를 수행해야 합니다.
 
-::: moniker range="vs-2017"
-
-1. [인증서 관리자 도구](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)(certmgr.exe)를 설치 공유(예: \\server\share\vs2017)에 복사합니다. certmgr.exe는 Windows 자체의 일부로 포함되지 않지만 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)의 일부로 제공됩니다.
+1. [인증서 관리자 도구](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)(certmgr.exe)를 네트워크 레이아웃 또는 로컬 캐시 설치 위치로 복사합니다. certmgr.exe는 Windows 자체의 일부로 포함되지 않지만 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)의 일부로 제공됩니다.
 
 2. 다음 명령으로 배치 파일을 만듭니다.
-
-   ```cmd
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Code Signing PCA 2011" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Time-Stamp PCA 2010" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Code Signing PCA" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-
-   **업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, 다음 명령을 사용하여 일괄 처리 파일을 만듭니다.
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
    ```
    
    또는 다음 명령을 사용하여 Windows와 함께 제공되는 certutil.exe를 사용하는 일괄 처리 파일을 만듭니다.
@@ -97,78 +79,15 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
    ```
 
 3. 일괄 처리 파일을 클라이언트에 배포합니다. 이 명령은 관리자 권한 프로세스에서 실행되어야 합니다.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-1. [인증서 관리자 도구](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)(certmgr.exe)를 설치 공유(예: \\server\share\vs2019)에 복사합니다. certmgr.exe는 Windows 자체의 일부로 포함되지 않지만 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)의 일부로 제공됩니다.
-
-2. 다음 명령으로 배치 파일을 만듭니다.
-
-   ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-   
-   또는 다음 명령을 사용하여 Windows와 함께 제공되는 certutil.exe를 사용하는 일괄 처리 파일을 만듭니다.
-   
-      ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
-   ```
-
-3. 일괄 처리 파일을 클라이언트에 배포합니다. 이 명령은 관리자 권한 프로세스에서 실행되어야 합니다.
-
-::: moniker-end
 
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Certificates 폴더에 있는 인증서 파일은 무엇인가요?
 
-::: moniker range="vs-2017"
-
-이 폴더에 있는 세 개의 .P12 파일 각각에는 중간 인증서와 루트 인증서가 포함되어 있습니다. Windows 업데이트로 최신 상태가 유지되는 시스템은 대부분 이러한 인증서가 이미 설치되어 있습니다.
-
-* **ManifestSignCertificates.p12** 는 다음을 포함합니다.
-  * 중간 인증서: **Microsoft Code Signing PCA 2011**
-    * 필요하지 않습니다. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
+* **manifestRootCertificate.cer** 는 다음을 포함합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority 2011**
-    * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **ManifestCounterSignCertificates.p12** 는 다음을 포함합니다.
-  * 중간 인증서: **Microsoft Time-Stamp PCA 2010**
-    * 필요하지 않습니다. 일부 시나리오(있는 경우)에서 성능을 향상합니다.
+* **manifestCounterSignRootCertificate.cer** 및 **vs_installer_opc.RootCertificate.cer** 는 다음을 포함합니다.
   * 루트 인증서: **Microsoft Root Certificate Authority 2010**
-    * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **Vs_installer_opc.SignCertificates.p12** 는 다음을 포함합니다.
-  * 중간 인증서: **Microsoft Code Signing PCA**
-    * 모든 시스템에 필요합니다. Windows 업데이트의 모든 업데이트가 적용된 시스템에는 이 인증서가 없을 수 있습니다.
-  * 루트 인증서: **Microsoft Root Certificate Authority**
-    * 필수 사항입니다. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
-
-**업데이트**: Visual Studio 2017 버전 15.8 미리 보기 2 이상의 경우, Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다. 이러한 인증서는 .p12 대신 .cer 파일에 저장됩니다.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-* **ManifestSignCertificates.cer** 은 다음을 포함합니다.
-  * 루트 인증서: **Microsoft Root Certificate Authority 2011**
-    * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **ManifestCounterSignCertificates.cer** 은 다음을 포함합니다.
-  * 루트 인증서: **Microsoft Root Certificate Authority 2010**
-    * 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
-* **Vs_installer_opc.SignCertificates.cer** 은 다음을 포함합니다.
-  * 루트 인증서: **Microsoft Root Certificate Authority**
-    * 필수 사항입니다. 이 인증서는 Windows 7 이상을 실행하는 시스템과 함께 제공됩니다.
-
-Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다.
-
-::: moniker-end
+ 
+Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치해야 합니다. 이러한 인증서 모두는 최신 Windows 업데이트가 설치되지 않은 Windows 7 서비스 팩 1 시스템에 필요합니다.
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Certificates 폴더의 인증서가 자동으로 설치되지 않는 이유는 무엇인가요?
 
@@ -199,13 +118,14 @@ Visual Studio 설치 관리자에서는 시스템에 루트 인증서만 설치�
 
 ## <a name="install-visual-studio"></a>Visual Studio 설치
 
-인증서가 설치되면 "Visual Studio의 네트워크 설치 만들기" 페이지에 있는 [네트워크 설치에서 배포](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation) 섹션의 지침에 따라 Visual Studio 배포를 진행할 수 있습니다.
+클라이언트 컴퓨터에 인증서를 설치한 후 [로컬 캐시에서 Visual Studio를 설치](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache)하거나 [네트워크 레이아웃 공유에서 클라이언트 컴퓨터로 Visual Studio를 배포](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation)할 준비가 된 것입니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
-* [Visual Studio 설치](install-visual-studio.md)
+* [Visual Studio의 네트워크 설치 만들기](../install/create-a-network-installation-of-visual-studio.md)
+* [Visual Studio의 오프라인 설치 만들기](../install/create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
+

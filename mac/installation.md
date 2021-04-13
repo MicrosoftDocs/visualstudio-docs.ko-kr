@@ -3,17 +3,17 @@ title: Mac용 Visual Studio 2019 설치
 description: Mac용 Visual Studio 2019 및 플랫폼 간 개발에 필요한 추가 구성 요소를 설치하는 방법에 대한 지침입니다.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 03/04/2021
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727569"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273416"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Mac용 Visual Studio 2019 설치
 
@@ -28,7 +28,8 @@ macOS에서 네이티브, .NET 앱 플랫폼 간 개발을 시작하려면 다�
 
 iOS 또는 macOS용 Xamarin 앱을 빌드하려면 다음 항목도 필요합니다.
 
-- Xcode 10.0 이상 대개 안정적인 최신 버전을 사용하는 것이 좋습니다.
+- 최신 버전의 Xcode와 호환되는 Mac. Apple의 [최소 요구 사항 설명서](https://developer.apple.com/support/xcode/)를 참조하세요.
+- 최신 버전의 [Xcode](https://developer.apple.com/xcode). Mac이 최신 버전과 호환되지 않는 경우 [이전 버전의 Xcode를 사용](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode)할 수 있습니다.
 - Apple ID. Apple ID가 없으면 https://appleid.apple.com 에서 새로 만들 수 있습니다. Xcode를 설치하고 서명하려면 Apple ID가 있어야 합니다.
 
 ## <a name="installation-instructions"></a>설치 지침
@@ -96,14 +97,21 @@ Mac용 Visual Studio를 설치하면 앱 코드 작성을 시작할 수 있습�
 
 ### <a name="ios"></a>iOS
 
-1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [디바이스 프로비저닝](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(디바이스에서 애플리케이션을 실행하려면).
+1. [Hello, iOS](https://docs.microsoft.com//xamarin/ios/get-started/hello-ios/)
+2. [디바이스 프로비저닝](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/)(디바이스에서 애플리케이션을 실행하려면).
 
 ### <a name="android"></a>Android
 
-1. [Xamarin Android SDK Manager 사용](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK 에뮬레이터](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [개발용 디바이스 설정](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+1. [Hello, Android](https://docs.microsoft.com/xamarin/android/get-started/hello-android/)
+2. [Xamarin Android SDK Manager 사용](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk?tabs=macos)
+3. [Android SDK 에뮬레이터](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)
+4. [개발용 디바이스 설정](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)
+
+### <a name="xamarinforms"></a>Xamarin.Forms
+
+Xamarin.Forms를 사용하여 네이티브 플랫폼 간 애플리케이션을 빌드합니다.
+
+1. [Xamarin.Forms 빠른 시작](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 앱, ASP.NET Core 웹앱, Unity 게임 개발
 

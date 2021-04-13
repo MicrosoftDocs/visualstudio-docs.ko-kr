@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806058"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110612"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>자습서: Visual Studio에서 Flask 웹 프레임워크 시작
 
@@ -221,17 +221,17 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>질문: Flask는 다양한 URL 경로와 쿼리 매개 변수에서 어떻게 작동하나요?
 
-답변: 경로에서 `<variable_name>`으로 변수를 표시하고, Flask는 명명된 인수를 사용하여 변수를 함수에 전달합니다. 변수는 URL 경로의 일부이거나 쿼리 매개 변수일 수 있습니다. 예를 들어 `'/hello/<name>` 형식의 경로는 함수에 `name`이라는 문자열 인수를 생성하고, 경로에서 `?message=<msg>`를 사용하여 "message=" 쿼리 매개 변수에 지정된 값을 구문 분석하고, 함수에 `msg`로 전달합니다.
+답변: 경로에서 `<variable_name>`으로 변수를 표시하면 Flask가 URL 경로에 명명된 인수를 사용하여 변수를 함수에 전달합니다. 예를 들어 `/hello/<name>` 형식의 경로는 함수에 대해 `name`이라는 문자열 인수를 생성합니다. 쿼리 매개 변수는 `request.args` 속성을 통해, 특히 `request.args.get` 메서드를 통해 사용할 수 있습니다. 자세한 내용은 Flask 설명서의 [요청 개체](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object)를 참조하세요.
 
 ```python
-@app.route('/hello/<name>?message=<msg>')
-def hello(name, msg):
-    return "Hello " + name + "! Message is " + msg + "."
+# URL: /hello/<name>?message=Have%20a%20nice%20day
+@app.route('/hello/<name>')
+def hello(name):
+    msg = request.args.get('message','')
+    return "Hello " + name + "! "+ msg + "."
 ```
 
 형식을 변경하려면 변수 앞에 `int`, `float`, `path`(폴더 이름을 설명하는 슬래시를 허용함) 및 `uuid`를 붙입니다 자세한 내용은 Flask 설명서의 [변수 규칙](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules)을 참조하세요.
-
-쿼리 매개 변수는 `request.args` 속성을 통해, 특히 `request.args.get` 메서드를 통해서도 사용할 수 있습니다. 자세한 내용은 Flask 설명서의 [요청 개체](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object)를 참조하세요.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>질문: 다른 패키지를 설치한 후 Visual Studio가 가상 환경에서 requirements.txt 파일을 생성할 수 있나요?
 

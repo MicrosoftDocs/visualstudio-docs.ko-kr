@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a04d15fc2fc768c2d6896396df5dc0f134d1720b
+ms.sourcegitcommit: 67f3bdeee583a4fb41cacc7f38839a737bfecc6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583933"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105735527"
 ---
 # <a name="net-core-support"></a>.NET Core 지원
 
@@ -24,7 +24,7 @@ ms.locfileid: "91583933"
 |v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |v3.0 | | |✔︎|✔︎|✔︎|✔︎|
 |v3.1 | | | |✔︎|✔︎|✔︎|
-|v5.0(미리 보기) | | | | | |✔︎|
+|v5.0 | | | | | |✔︎|
 
 > [!IMPORTANT]
 > .NET Core SDK 미리 보기 버전은 지원되지 않습니다. 릴리스 버전으로 업데이트하세요. Mac용 Visual Studio 8.4를 설치하면, .NET Core v3.1 릴리스 버전이 설치됩니다.
