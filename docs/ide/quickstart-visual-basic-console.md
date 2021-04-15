@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b412d254d0775b57f2c9befaae71ce25c6ae75
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 3a103c672b6539f5893cf52a6e83acde6c87176d
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683856"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296640"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>빠른 시작: Visual Studio에서 Visual Basic을 사용하여 첫 번째 콘솔 앱 만들기
 
@@ -113,14 +113,14 @@ IDE에서 **HelloWorld** 단추를 클릭하면 디버그 모드에서 프로그
 
 이렇게 하면 콘솔 창이 잠깐만 표시되었다가 닫힙니다. 단일 문을 실행한 후에 애플리케이션이 종료되도록 `Main` 메서드가 종료되기 때문에 이런 결과가 발생합니다.
 
-### <a name="add-some-code"></a>일부 코드를 추가합니다.
+### <a name="add-some-code&quot;></a>일부 코드를 추가합니다.
 
 애플리케이션을 일시 중지하고 사용자 입력을 요청하는 코드를 추가해 보겠습니다.
 
 1. <xref:System.Console.WriteLine%2A> 메서드 호출 바로 다음에 아래 코드를 추가합니다.
 
    ```vb
-   Console.Write("Press any key to continue...")
+   Console.Write(&quot;Press any key to continue...")
    Console.ReadKey(true)
    ```
 

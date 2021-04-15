@@ -3,15 +3,15 @@ title: Visual Studio 컨테이너 도구 빌드 및 디버그 개요
 author: ghogen
 description: 컨테이너 도구 빌드 및 디버깅 프로세스 개요
 ms.author: ghogen
-ms.date: 11/20/2019
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 6b860abeab0745ebae580e3020c94e446f2441c8
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884085"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315955"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio에서 컨테이너화된 앱을 빌드하는 방법
 
@@ -26,7 +26,7 @@ Visual Studio는 Docker 컨테이너를 사용하지 않는 프로젝트를 빌�
 다단계 빌드를 사용하면 중간 이미지를 생성하는 스테이지에서 컨테이너 이미지를 만들 수 있습니다. 예를 들어 Visual Studio에서 생성되는 일반적인 Dockerfile을 생각해 봅시다. 첫 번째 스테이지는 `base`입니다.
 
 ```
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
@@ -37,24 +37,24 @@ Dockerfile의 줄은 Microsoft Container Registry(mcr.microsoft.com)의 Debian �
 다음 스테이지는 `build`이며 다음과 같이 표시됩니다.
 
 ```
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1-buster-slim AS build
 WORKDIR /src
 COPY ["WebApplication43/WebApplication43.csproj", "WebApplication43/"]
 RUN dotnet restore "WebApplication43/WebApplication43.csproj"
 COPY . .
 WORKDIR "/src/WebApplication43"
-RUN dotnet build "WebApplication43.csproj" -c Release -o /app
+RUN dotnet build "WebApplication43.csproj" -c Release -o /app/build
 ```
 
 `build` 스테이지는 base에서 계속되는 것이 아니라 레지스트리의 다른 원본 이미지(`aspnet` 대신 `sdk`)에서 시작되는 것을 확인할 수 있습니다.  `sdk` 이미지에는 모든 빌드 도구가 포함되어 있으므로, 런타임 구성 요소만 포함하는 aspnet 이미지보다 훨씬 더 큽니다. Dockerfile의 나머지 부분을 살펴보면 개별 이미지를 사용해야 하는 이유가 명확해집니다.
 
 ```
 FROM build AS publish
-RUN dotnet publish "WebApplication43.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication43.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 

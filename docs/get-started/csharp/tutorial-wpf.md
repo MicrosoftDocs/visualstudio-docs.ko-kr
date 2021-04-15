@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682875"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295574"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>자습서: C\#으로 간단한 애플리케이션 만들기
 
@@ -293,13 +293,13 @@ MainWindow에 보다 구체적인 이름을 지정하겠습니다. **솔루션 �
 
 이제 애플리케이션 창을 닫아 디버깅을 중지합니다.
 
-### <a name="debug-with-breakpoints"></a>중단점으로 디버깅
+### <a name="debug-with-breakpoints&quot;></a>중단점으로 디버깅
 
 일부 중단점을 추가하여 디버깅하는 동안 코드를 테스트할 수 있습니다. **디버그** > **중단점 설정/해제** 를 선택하거나 중단시킬 코드 줄 옆의 편집기 왼쪽 여백을 클릭하거나 **F9** 키를 눌러 중단점을 추가할 수 있습니다.
 
-#### <a name="add-breakpoints"></a>중단점 추가
+#### <a name=&quot;add-breakpoints&quot;></a>중단점 추가
 
-1. *Greetings.xaml.cs* 를 열고 다음 줄을 선택합니다. `MessageBox.Show("Hello.")`
+1. *Greetings.xaml.cs* 를 열고 다음 줄을 선택합니다. `MessageBox.Show(&quot;Hello.")`
 
 1. 메뉴에서 **디버그** 를 선택한 다음 **중단점 설정/해제** 를 선택하여 중단점을 추가합니다.
 

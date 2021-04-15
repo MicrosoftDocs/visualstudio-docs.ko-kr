@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c83b13b852b9ae53bd2218a62b6681478369df1b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e1576f8865fc5945514ce6965cdba66a1cfda55
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970519"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386052"
 ---
 # <a name="get-started-with-unit-testing"></a>유닛 테스트 시작
 
@@ -85,7 +85,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
 
    예를 들어 MSTest, NUnit 또는 xUnit(.NET에서만 지원)과 같은 테스트 프레임워크와 일치하는 올바른 설명서 탭을 선택하여 다음 코드를 사용할 수 있습니다.
 
-   # <a name="mstest"></a>[MSTest](#tab/mstest)
+   ### <a name="mstest"></a>[MSTest](#tab/mstest)
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -114,7 +114,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
    }
    ```
 
-   # <a name="nunit"></a>[NUnit](#tab/nunit)
+   ### <a name="nunit"></a>[NUnit](#tab/nunit)
 
    ```csharp
    using NUnit.Framework;
@@ -147,7 +147,7 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
    }
    ```
 
-    # <a name="xunit"></a>[xUnit](#tab/xunit)
+    ### <a name="xunit"></a>[xUnit](#tab/xunit)
 
     ```csharp
     using System;
@@ -174,6 +174,8 @@ Visual Studio를 사용하여 단위 테스트를 정의하고 실행하여 코�
         }
     }
     ```
+
+    ---
 
 ## <a name="run-unit-tests"></a>단위 테스트 실행
 

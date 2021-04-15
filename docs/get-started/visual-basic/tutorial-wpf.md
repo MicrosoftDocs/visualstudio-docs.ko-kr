@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944370"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295431"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>자습서: Visual Basic으로 간단한 애플리케이션 만들기
 
@@ -259,13 +259,13 @@ IsChecked="True"
 
  이제 애플리케이션 창을 닫아 디버깅을 중지합니다.
 
-### <a name="debug-with-breakpoints"></a>중단점으로 디버깅
+### <a name="debug-with-breakpoints&quot;></a>중단점으로 디버깅
 
 일부 중단점을 추가하여 디버깅하는 동안 코드를 테스트할 수 있습니다. **디버그** > **중단점 설정/해제** 를 선택하거나 중단시킬 코드 줄 옆의 편집기 왼쪽 여백을 클릭하거나 **F9** 키를 눌러 중단점을 추가할 수 있습니다.
 
-#### <a name="add-breakpoints"></a>중단점 추가
+#### <a name=&quot;add-breakpoints&quot;></a>중단점 추가
 
-1. *Greetings.xaml.vb* 를 열고 다음 줄을 선택합니다. `MessageBox.Show("Hello.")`
+1. *Greetings.xaml.vb* 를 열고 다음 줄을 선택합니다. `MessageBox.Show(&quot;Hello.")`
 
 2. **F9** 키를 누르거나 메뉴에서 **디버그**, **중단점 전환** 을 선택하여 중단점을 추가합니다.
 

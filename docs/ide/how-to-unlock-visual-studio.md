@@ -4,19 +4,19 @@ description: Visual studio의 무료 평가판을 확장하고, 온라인 구독
 ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b78db14b149b094550ce025ab3750742401fddbe
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869130"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295470"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>평가판 버전 확장 또는 라이선스 업데이트
 
@@ -75,7 +75,7 @@ Visual Studio에 "라이선스가 만료될 예정이므로 업데이트해야 �
 * [문제 보고](how-to-report-a-problem-with-visual-studio.md) 도구를 사용하여 제품 문제를 보고합니다.
 * 구독, 계정 및 요금 청구 관련 질문에 대한 답변은 [구독 지원 FAQ](https://visualstudio.microsoft.com/subscriptions/support/)를 확인하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md)
 * [Visual Studio 버전 비교](https://visualstudio.microsoft.com/vs/compare/)

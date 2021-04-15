@@ -4,17 +4,17 @@ description: 모든 Microsoft 계정을 Visual Studio에 추가하여 별도로 
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2021
 ms.topic: conceptual
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 689b1fb47c137059f3aef7b7a20fd614a9058ec4
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683796"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296029"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

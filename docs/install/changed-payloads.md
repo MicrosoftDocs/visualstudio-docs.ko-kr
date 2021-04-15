@@ -3,19 +3,19 @@ title: 릴리스 후 패키지 페이로드가 변경되는 경우
 description: 레이아웃을 만들 때 릴리스가 이미 배송된 후 패키지 페이로드가 변경되었는지 확인하는 방법을 알아봅니다.
 ms.date: 05/22/2019
 ms.topic: how-to
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bd0013df051def28c57552c0aeb733888d55e9b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e773ddf85df1d7f71b1ed929b8f942a5f3b36421
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905549"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295299"
 ---
 # <a name="package-payload-changes"></a>패키지 페이로드 변경 내용
 
@@ -37,7 +37,7 @@ ms.locfileid: "99905549"
 
     `END: Downloading [url] to [path]`
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md)
 * [Visual Studio의 네트워크 기반 설치 업데이트](update-a-network-installation-of-visual-studio.md)

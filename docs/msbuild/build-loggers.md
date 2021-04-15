@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c06082a34f5dd3248024f1707cb188107863c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b676fe015f5f513a069ffaf6ae4fac59c1a5fa68
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964890"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213903"
 ---
 # <a name="build-loggers"></a>빌드 로거
 
@@ -36,19 +36,19 @@ ms.locfileid: "99964890"
 
 로거의 목적은 빌드 엔진에 의해 보고되는 빌드 진행률에 대한 정보를 수집한 후 해당 정보를 유용한 방식으로 보고하는 것입니다. 모든 로거는 로거가 이벤트를 등록하는 위치에 해당하는 <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> 메서드를 재정의해야 합니다. 이 예제에서는 로거가 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 및 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 이벤트를 등록합니다.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet2":::
 
 ## <a name="respond-to-events"></a>이벤트에 응답
 
 로거를 특정 이벤트에 등록했으므로 이제 이벤트가 발생할 때 해당 이벤트를 처리해야 합니다. <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 및 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 이벤트에 대해 로거는 이벤트와 관련된 프로젝트 파일의 이름과 짧은 구를 간단히 씁니다. 로거에서 발생한 모든 메시지는 콘솔 창에 기록됩니다.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet3":::
 
 ## <a name="respond-to-logger-verbosity-values"></a>로거 세부 정보 표시 값에 대한 응답
 
 MSBuild.exe **-verbosity** 스위치에 특정 값이 포함되어 있을 때만 이벤트의 정보를 로그하려는 경우도 있습니다. 이 예제에서 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 이벤트 처리기는 **-verbosity** 스위치에 의해 설정된 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 속성이 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`인 경우에만 메시지를 로그합니다.
 
-[!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet4":::
 
 ## <a name="specify-a-logger"></a>로거 지정
 
@@ -74,7 +74,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ### <a name="code"></a>코드
 
-[!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet1":::
 
 ## <a name="example-2"></a>예제 2
 
@@ -84,7 +84,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ### <a name="code"></a>코드
 
-[!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>참조
 
