@@ -10,18 +10,18 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291409"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107513228"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE 기술 지원  
 
 Visual Studio 구독 지원은 판매, 구독, 계정, 요금 청구에 대한 지원을 제공합니다. Visual Studio IDE 기술 문제 또는 질문이 있는 경우 [Visual Studio 기술 지원](https://visualstudio.microsoft.com/vs/support/)에 문의해야 합니다. Visual Studio 구독에 포함되어 있을 수 있는 제한된 [Visual Studio 기술 지원 인시던트](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)를 사용하기 전에 몇 가지 다른 온라인 리소스를 살펴보는 것이 좋습니다.
 
-Visual Studio 설치 문제에 대한 단계별 지침은 [Visual Studio 설치 및 업그레이드 문제 해결](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019)을 참조하세요. 설치 관련 문제를 위한 [설치 채팅](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션을 사용해 볼 수도 있습니다.
+Visual Studio 설치 문제에 대한 단계별 지침은 [Visual Studio 설치 및 업그레이드 문제 해결](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues)을 참조하세요. 설치 관련 문제를 위한 [설치 채팅](https://visualstudio.microsoft.com/vs/support/#talktous)(영어만 가능) 지원 옵션을 사용해 볼 수도 있습니다.
 
 
 ## <a name="developer-community--visual-studio-ide"></a>개발자 커뮤니티 | Visual Studio IDE
