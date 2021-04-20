@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ee849354d82b11b8d94a737a2b546f686d04d34a
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684218"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386039"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>완전 초보자를 위한 디버깅하는 방법
 
@@ -70,7 +70,7 @@ Visual Studio에서 디버그 도구 모음의 **F5**(또는 **디버그** > **�
 
 Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을 신속하게 설정할 수 있습니다. 또는 줄에 커서를 놓고 **F9** 키를 누릅니다.
 
-이러한 개념을 설명하는 데 도움을 주기 위해 이미 몇 가지 버그를 가지고 있는 일부 예제 코드로 안내합니다. C#을 사용하지만 디버깅 기능은 Visual Basic, C++, JavaScript, Python 및 기타 지원되는 언어에 적용됩니다.
+이러한 개념을 설명하는 데 도움을 주기 위해 이미 몇 가지 버그를 가지고 있는 일부 예제 코드로 안내합니다. C#을 사용하지만 디버깅 기능은 Visual Basic, C++, JavaScript, Python 및 기타 지원되는 언어에 적용됩니다. Visual Basic의 샘플 코드도 제공되지만 스크린샷은 C#으로 제공됩니다.
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>샘플 앱 만들기(일부 버그를 사용하여)
 
@@ -85,19 +85,21 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 1. Visual Studio를 엽니다.
 
     ::: moniker range=">=vs-2019"
-    시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 검색 상자에 **console** 을 입력하고 **C#** 을 언어로 선택한 다음 .NET Core용 **콘솔 앱** 을 선택합니다. **다음** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 프로젝트 이름을 입력하고 **다음** 을 클릭합니다.
+    시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 검색 상자에 **console** 을 입력하고 **C#** 또는 **Visual Basic** 을 언어로 선택한 후 .NET Core용 **콘솔 앱** 을 선택합니다. **다음** 을 선택합니다. **ConsoleApp_FirstApp** 과 같은 프로젝트 이름을 입력하고 **다음** 을 클릭합니다.
 
     권장되는 대상 프레임워크(.NET Core 3.1) 또는 .NET 5를 선택한 후 **만들기** 를 선택합니다.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 아래에 **콘솔 앱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp-FirstApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
+    메뉴 모음에서 **파일** > **새로 만들기** > **프로젝트** 를 차례대로 선택합니다. **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual C#** 또는 **Visual Basic** 아래에 **콘솔 앱** 을 선택한 다음, 가운데 창에서 **콘솔 앱(.NET Core)** 을 선택합니다. **ConsoleApp_FirstApp** 과 같은 이름을 입력하고 **확인** 을 클릭합니다.
     ::: moniker-end
 
     .NET Core용 **콘솔 앱** 프로젝트 템플릿이 표시되지 않는 경우 **도구** > **도구 및 기능 가져오기** 로 이동하면 Visual Studio 설치 관리자가 열립니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
     Visual Studio에서 콘솔 프로젝트를 만들고 오른쪽 창의 솔루션 탐색기에 나타납니다.
 
-1. *Program.cs* 에서 모든 기본 코드를 다음 코드로 바꿉니다.
+1. *Program.cs*(또는 *Program.vb*)에서 모든 기본 코드를 다음 코드로 바꿉니다. (먼저 C# 또는 Visual Basic 중에서 올바른 언어 탭을 선택합니다.)
+
+   #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     using System;
@@ -178,6 +180,109 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
     }
     ```
 
+   #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
+
+    Namespace ConsoleApp_FirstApp
+        Friend Class Program
+            Public Shared Sub Main(ByVal args As String())
+                Console.WriteLine("Welcome to Galaxy News!")
+                Call IterateThroughList()
+                Console.ReadKey()
+            End Sub
+
+            Private Shared Sub IterateThroughList()
+                Dim theGalaxies = New List(Of Galaxy) From {
+                    New Galaxy() With {
+                        .Name = "Tadpole",
+                        .MegaLightYears = 400,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Pinwheel",
+                        .MegaLightYears = 25,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Cartwheel",
+                        .MegaLightYears = 500,
+                        .GalaxyType = New GType("L"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Small Magellanic Cloud",
+                        .MegaLightYears = 0.2,
+                        .GalaxyType = New GType("I"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Andromeda",
+                        .MegaLightYears = 3,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Maffei 1",
+                        .MegaLightYears = 11,
+                        .GalaxyType = New GType("E"c)
+                    }
+                }
+    
+                For Each theGalaxy As Galaxy In theGalaxies
+                    Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+                Next
+
+            End Sub
+        End Class
+    
+        Public Class Galaxy
+            Public Property Name As String
+            Public Property MegaLightYears As Double
+            Public Property GalaxyType As Object
+        End Class
+    
+        Public Class GType
+    
+            Shared Operator &(ByVal left As String, ByVal right As GType) As String
+                Return New String(left & right.ToString())
+            End Operator
+            Public Sub New(ByVal type As Char)
+                Select Case type
+                    Case "S"c
+                        MyGType = GType.Type.Spiral
+                    Case "E"c
+                        MyGType = GType.Type.Elliptical
+                    Case "l"c
+                        MyGType = GType.Type.Irregular
+                    Case "L"c
+                        MyGType = GType.Type.Lenticular
+                    Case Else
+                End Select
+    
+            End Sub
+    
+            Private _MyGType As String
+            Public Property MyGType As Object
+                Get
+                    Return _MyGType
+                End Get
+                Set(ByVal value As Object)
+                    _MyGType = value.ToString()
+                End Set
+            End Property
+    
+            Private Enum Type
+                Spiral
+                Elliptical
+                Irregular
+                Lenticular
+            End Enum
+        End Class
+    End Namespace
+    ```
+
+    ---
+
     이 코드의 의도는 목록에 은하계 이름, 은하계의 거리 및 은하계 유형을 모두 표시하는 것입니다. 디버그하려면 코드의 의도를 이해하는 것이 중요합니다. 출력에 표시하려는 목록에서 한 줄의 형식은 다음과 같습니다.
 
     *은하계 이름*, *거리*, *은하계 유형*
@@ -214,6 +319,8 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
 1. 여전히 실행 중인 앱을 사용하여 이 코드 줄의 `Console.WriteLine` 메서드 호출 옆의 왼쪽 여백을 클릭하여 중단점을 설정합니다.
 
+    #### <a name="c"></a>[C#](#tab/csharp)
+
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
     {
@@ -221,6 +328,15 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
     }
     ```
 
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    For Each theGalaxy As Galaxy In theGalaxies
+        Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+    Next
+    ```
+
+    ---
     중단점을 설정하는 경우 왼쪽 여백에 빨간색 점이 나타납니다.
 
     출력에서 문제를 확인했으므로 디버거에서 출력을 설정하는 이전 코드를 확인하여 디버깅을 시작합니다.
@@ -235,9 +351,12 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
     "Spiral"은 실제로 콘솔에 인쇄되도록 예상한 올바른 값입니다. 따라서 앱을 실행하는 동안 이 코드의 이 값에 액세스할 수 있는 것이 좋습니다. 이 시나리오에서는 잘못된 API를 사용합니다. 디버거에서 코드를 실행하는 동안 이를 수정할 수 있는지 살펴보겠습니다.
 
-1. 동일한 코드에서 여전히 디버깅하는 동안 커서를 `theGalaxy.GalaxyType`의 끝에 놓고 `theGalaxy.GalaxyType.MyGType`으로 변경합니다. 이를 변경할 수 있지만 코드 편집기는 이 코드를 컴파일할 수 없음을 나타내는 오류를 보여줍니다.
+1. 동일한 코드에서 여전히 디버깅하는 동안 커서를 `theGalaxy.GalaxyType`의 끝에 놓고 `theGalaxy.GalaxyType.MyGType`으로 변경합니다. 이를 변경할 수 있지만 코드 편집기는 이 코드를 컴파일할 수 없음을 나타내는 오류를 보여줍니다. (Visual Basic에서는 오류가 표시되지 않으며, 이 코드 섹션이 작동함)
 
     ![코드 줄이 빨간색으로 강조 표시되고 편집 단추가 선택된 편집하며 계속하기 메시지 상자가 있는 Visual Studio 디버거의 스크린샷](../debugger/media/beginners-edit.png)
+
+   > [!NOTE]
+   > Visual Basic 예제 코드를 디버깅하려면 **다시 시작** ![앱 다시 시작](../debugger/media/dbg-tour-restart.png "RestartApp") 단추를 클릭하라는 메시지가 표시될 때까지 다음 몇 단계를 건너뜁니다.
 
 1. **편집하며 계속하기** 메시지 상자에서 **편집** 을 클릭합니다. 이제 **오류 목록** 창에서 오류 메시지가 표시됩니다. 오류는 `'object'`에 `MyGType`에 대한 정의가 포함되지 않음을 나타냅니다.
 
@@ -274,11 +393,21 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
     Maffei 1,  Elliptical
     ```
 
-1. 이 코드 줄에 중단점을 설정합니다.
+1. switch 문 앞에 있는 이 코드 줄에 중단점을 설정합니다(Visual Basic에서는 Select 문 앞).
+
+    #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     public GType(char type)
     ```
+
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Public Sub New(ByVal type As Char)
+    ```
+
+    ---
 
     이 코드는 은하계 유형이 설정된 위치이므로 이를 좀 더 자세히 살펴보고자 합니다.
 
@@ -296,7 +425,7 @@ Visual Studio에서 코드 줄 옆의 왼쪽 여백을 클릭하여 중단점을
 
     **F11** 키는 디버거를 한 번에 하나의 명령문씩 실행합니다(또한 코드 실행). **F10** 키(**프로시저 단위 실행**)는 유사한 명령이며, 디버거를 사용하는 방법을 학습하는 경우 둘 다 매우 유용합니다.
 
-1. 'I'의 값에 대한 `switch` 문의 코드 줄에서 중지할 때까지 **F11** 키를 누릅니다. 여기에서 오타에서 발생하는 명백한 문제를 확인할 수 있습니다. 코드가 불규칙 은하계 유형으로 `MyGType`을 설정한 곳으로 이동할 것이라 예상했지만 대신 디버거는 이 코드를 완전히 건너뛰고 `switch` 명령문의 `default` 섹션에서 일시 중지합니다.
+1. ‘I’의 값에 대한 `switch` 문의 코드 줄에서 중지할 때까지 **F11** 키를 누릅니다(Visual Basic에서는 `Select` 문). 여기에서 오타에서 발생하는 명백한 문제를 확인할 수 있습니다. 코드가 불규칙 은하계 유형으로 `MyGType`을 설정한 곳으로 이동할 것이라 예상했지만 대신 디버거는 이 코드를 완전히 건너뛰고 `switch` 문의 `default` 섹션에서 일시 중지합니다(Visual Basic에서는 `Else` 문).
 
     ![오타 찾기](../debugger/media/beginners-typo.png)
 

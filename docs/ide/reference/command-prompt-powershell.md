@@ -1,8 +1,8 @@
 ---
-title: 개발자용 명령줄 셸
-description: .NET 및 C++ 도구를 더 쉽게 사용할 수 있는 Visual Studio 개발자 명령 프롬프트, Visual Studio 개발자 PowerShell, Visual Studio 터미널을 찾아 사용하는 방법을 알아봅니다.
-ms.date: 03/04/2021
-ms.custom: contperf-fy21q3
+title: 개발자용 명령줄 셸 및 프롬프트
+description: 도구 > 명령줄 메뉴에서 시작합니다. Visual Studio 개발자 명령 프롬프트, 개발자 PowerShell 및 터미널을 통해 .NET 및 C++ 도구를 더욱 손쉽게 사용할 수 있습니다.
+ms.date: 04/11/2021
+ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
 - command prompt, Visual Studio
@@ -11,27 +11,21 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672327"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221733"
 ---
-# <a name="developer-command-prompt-and-developer-powershell"></a>개발자 명령 프롬프트 및 개발자 PowerShell
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 개발자 명령 프롬프트 및 개발자 PowerShell
 
 Visual Studio 2019에는 두 가지의 개발자용 명령줄 셸이 있습니다.
 
 - **Visual Studio 개발자 명령 프롬프트** - 명령줄 개발자 도구를 더 쉽게 사용할 수 있도록 특정 환경 변수가 설정된 표준 명령 프롬프트입니다. Visual Studio 2015부터 사용할 수 있습니다.
+
 - **Visual Studio 개발자 PowerShell** - 명령 프롬프트보다 더 강력합니다. 예를 들어 한 명령( *cmdlet* )의 출력을 다른 cmdlet에 전달할 수 있습니다. 이 셸의 환경 변수는 개발자 명령 프롬프트로 설정됩니다. Visual Studio 2019부터 사용할 수 있습니다.
 
-두 셸 모두 명령줄 개발자 도구를 보다 쉽게 사용할 수 있도록 돕는 특정 환경 변수 집합이 있습니다. 이러한 셸 중 하나를 연 후에는 위치를 알 필요 없이 여러 유틸리티에 대한 명령을 입력할 수 있습니다. 실행할 수 있는 명령:
-
-- [`MSBuild`](../../msbuild/msbuild-command-line-reference.md)는 프로젝트 또는 솔루션을 빌드합니다.
-- [.NET Framework 도구](/dotnet/framework/tools/index)([`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool) 및 [`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)).
-- C/C++ 컴파일 도구(예: [`CL`](/cpp/build/reference/compiler-command-line-syntax) 및 [`NMAKE`](/cpp/build/reference/running-nmake)).
-- 추가 C/C++ 빌드 도구(예: [`LIB`](/cpp/build/reference/lib-reference) 및 [`DUMPBIN`](/cpp/build/reference/dumpbin-reference)).
-- [.NET CLI 명령](/dotnet/core/tools/index)(예: [`dotnet`](/dotnet/core/tools/dotnet) 및 [`dotnet run`](/dotnet/core/tools/dotnet-run)). (이러한 명령은 일반 명령 프롬프트에서도 사용할 수 있습니다.)
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="clrver 도구를 보여주는 Visual Studio용 개발자 명령 프롬프트":::
 
@@ -41,7 +35,22 @@ Visual Studio 2019 버전 16.5부터 Visual Studio에 이러한 셸(개발자 �
 
 별도의 앱으로 또는 터미널 창에서 Visual Studio의 개발자 셸 중 하나를 여는 경우 (솔루션이 로드되어 있다면) 현재 솔루션의 디렉터리로 열립니다. 이 동작을 통해 솔루션 또는 그 프로젝트에 대해 명령을 편리하게 실행할 수 있습니다.
 
-## <a name="start-the-shell-from-inside-visual-studio"></a>Visual Studio 내부에서 셸 시작
+두 셸 모두 명령줄 개발자 도구를 보다 쉽게 사용할 수 있도록 돕는 특정 환경 변수 집합이 있습니다. 이러한 셸 중 하나를 연 후에는 위치를 알 필요 없이 여러 유틸리티에 대한 명령을 입력할 수 있습니다. 
+
+|인기 있는 명령|Description|
+|--|--|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|프로젝트 또는 솔루션 빌드|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| clr의 [.NET Framework 도구](/dotnet/framework/tools/index)입니다.|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|디스어셈블러의 [.NET Framework 도구](/dotnet/framework/tools/index)입니다.|
+|[`dotnet`](/dotnet/core/tools/dotnet)|[.NET CLI 명령](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|[.NET CLI 명령](/dotnet/core/tools/index)|
+|[`CL`](/cpp/build/reference/compiler-command-line-syntax)|C/C++ 컴파일 도구|
+|[`NMAKE`](/cpp/build/reference/running-nmake)|C/C++ 컴파일 도구|
+|[`LIB`](/cpp/build/reference/lib-reference)| C/C++ 빌드 도구|
+|[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| C/C++ 빌드 도구|
+
+
+## <a name="start-in-visual-studio"></a>Visual Studio에서 시작
 
 Visual Studio 내에서 다음 단계에 따라 개발자 명령 프롬프트 또는 개발자 PowerShell을 엽니다.
 
@@ -51,9 +60,9 @@ Visual Studio 내에서 다음 단계에 따라 개발자 명령 프롬프트 �
 
    ![Visual Studio의 명령 프롬프트 메뉴 항목](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="use-the-windows-start-menu"></a>Windows 시작 메뉴 사용
+## <a name="start-from-windows-menu"></a>Windows 메뉴에서 시작
 
-설치한 Visual Studio의 버전과 추가 SDK 및 워크로드에 따라 여러 개의 명령 프롬프트가 표시될 수 있습니다. 다음 단계가 작동하지 않는 경우 [머신에서 수동으로 파일 찾기](#manually-locate-the-file) 또는 [Visual Studio 내에서 셸 시작](#start-the-shell-from-inside-visual-studio)을 시도해 볼 수 있습니다.
+셸을 시작하는 또 다른 방법은 시작 메뉴에서 시작하는 것입니다. 설치한 Visual Studio의 버전과 추가 SDK 및 워크로드에 따라 여러 개의 명령 프롬프트가 표시될 수 있습니다. 
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -85,7 +94,7 @@ Visual Studio 내에서 다음 단계에 따라 개발자 명령 프롬프트 �
 
 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 또는 [이전 버전](https://developer.microsoft.com/windows/downloads/sdk-archive)과 같은 다른 SDK를 설치한 경우 추가 명령 프롬프트가 표시될 수 있습니다. 각 도구의 설명서를 확인하여 사용할 명령 프롬프트 버전을 결정합니다.
 
-## <a name="manually-locate-the-file"></a>수동으로 파일 찾기
+## <a name="start-from-file-browser"></a>파일 브라우저에서 시작 
 
 일반적으로 설치한 셸의 바로 가기는 *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools* 와 같이 Visual Studio에 대한 **시작 메뉴** 폴더에 배치됩니다. 하지만 명령 프롬프트를 검색했는데 예상된 결과가 나타나지 않는 경우, 컴퓨터에서 수동으로 파일을 찾을 수 있습니다.
 
