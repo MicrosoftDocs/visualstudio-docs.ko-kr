@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d49c7fa9224b2d527956536cb0c56b016f6b52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 64a4d4dcd2e6115a3b8093a0a9338cb126f49a28
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825136"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>런타임에 Office 문서에 컨트롤 추가
   런타임에 Microsoft Office Word 문서 및 Microsoft Office Excel 통합 문서에 컨트롤을 추가할 수 있습니다. 런타임에 제거할 수도 있습니다. 런타임에 추가하거나 제거하는 컨트롤을 *동적 컨트롤* 이라고 합니다.
@@ -62,6 +62,9 @@ ms.locfileid: "99948650"
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#3)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb" id="Snippet3":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs" id="Snippet3":::
+
 
 ### <a name="access-and-delete-controls"></a>컨트롤 액세스 및 삭제
  <xref:Microsoft.Office.Tools.Excel.Worksheet> 또는 <xref:Microsoft.Office.Tools.Word.Document>의 `Controls` 속성을 사용하여 디자인 타임에 추가한 컨트롤을 비롯한 문서의 모든 컨트롤을 반복할 수 있습니다. 디자인 타임에 추가된 컨트롤을 *정적 컨트롤* 이라고 합니다.
@@ -70,6 +73,9 @@ ms.locfileid: "99948650"
 
  [!code-vb[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb#4)]
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#4](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#4)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/ThisWorkbook.vb" id="Snippet4":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs" id="Snippet4":::
+
 
  런타임에 정적 컨트롤을 제거할 수는 없습니다. `Delete` 또는 `Remove` 메서드를 사용하여 정적 컨트롤을 제거하려고 하면 <xref:Microsoft.Office.Tools.CannotRemoveControlException>이 발생합니다.
 
@@ -116,8 +122,8 @@ ms.locfileid: "99948650"
 
   다음 코드 예제에서는 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> 메서드를 사용하여 문서 수준 Excel 프로젝트의 워크시트에 사용자 지정 사용자 정의 컨트롤을 동적으로 추가하는 방법을 보여 줍니다. 이 예제에서 사용자 정의 컨트롤의 이름은 `UserControl1`이고, <xref:Microsoft.Office.Interop.Excel.Range> 의 이름은 `range1`입니다. 이 예제를 사용하려면 프로젝트의 `Sheet`*n* 클래스에서 실행합니다.
 
-  [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
-  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet2":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet2":::
 
 ### <a name="use-members-of-custom-controls"></a>사용자 지정 컨트롤의 멤버 사용
  `AddControl` 메서드 중 하나를 사용하여 워크시트 또는 문서에 컨트롤을 추가한 후에는 이제 다음 두 가지 컨트롤 개체가 있습니다.
@@ -136,10 +142,10 @@ ms.locfileid: "99948650"
 
   예를 들어 <xref:Microsoft.Office.Tools.Excel.ControlSite> 클래스와 <xref:System.Windows.Forms.Control> 클래스 둘 다에 `Top` 속성이 있습니다. 컨트롤 위쪽과 문서 위쪽 간의 거리를 가져오거나 설정하려면 <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> 의 <xref:Microsoft.Office.Tools.Excel.ControlSite>속성이 아니라 <xref:System.Windows.Forms.Control.Top%2A> 의 <xref:System.Windows.Forms.Control>속성을 사용합니다.
 
-  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
-  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet3":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet3":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [Office 문서에서 동적 컨트롤 유지](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [방법: 워크시트에 ListObject 컨트롤 추가](../vsto/how-to-add-listobject-controls-to-worksheets.md)

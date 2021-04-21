@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5bca39b5536d5717da994808f23ee541856264ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dba79b1b0eea03ca3aae23e98fb93e6ef776d80
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888734"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824785"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 열기
   <xref:Microsoft.Office.Interop.Excel.Workbooks>Microsoft Office Excel의 컬렉션을 사용 하 여 열려 있는 모든 통합 문서를 사용 하 고 통합 문서를 열 수 있습니다.
@@ -31,15 +31,15 @@ ms.locfileid: "99888734"
 
 1. 컬렉션의 메서드를 사용 하 여 <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> <xref:Microsoft.Office.Interop.Excel.Workbooks> 통합 문서에 대 한 경로를 전달 합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet2":::
 
 ## <a name="compile-the-code"></a>코드 컴파일
  이 코드 예제에는 다음이 필요합니다.
 
 - 이라는 통합 문서는 `YourWorkbook.xls` `Test` C 드라이브에 있는 디렉터리에 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [방법: 프로그래밍 방식으로 텍스트 파일을 통합 문서로 열기](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [방법: 프로그래밍 방식으로 새 통합 문서 만들기](../vsto/how-to-programmatically-create-new-workbooks.md)

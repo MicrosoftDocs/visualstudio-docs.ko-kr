@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906485"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824473"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>연습: Visual c # 프로젝트에서 VBA의 코드 호출
   이 연습에서는 통합 문서의 VBA(Visual Basic for Applications) 코드에서 Microsoft Office Excel에 대한 문서 수준 사용자 지정의 메서드를 호출하는 방법을 보여 줍니다. 이 절차에는 세 가지 기본 단계( `Sheet1` 호스트 항목 클래스에 메서드 추가, 통합 문서의 VBA 코드에 메서드 노출, 통합 문서의 VBA 코드에서 메서드 호출)가 포함됩니다.
@@ -161,15 +161,15 @@ ms.locfileid: "99906485"
 
 2. `Sheet1` 클래스에 다음 코드를 추가합니다. `CreateVstoNamedRange` 메서드는 지정된 범위에 새로운 <xref:Microsoft.Office.Tools.Excel.NamedRange> 개체를 만듭니다. 이 메서드는 <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> 의 <xref:Microsoft.Office.Tools.Excel.NamedRange>이벤트에 대한 이벤트 처리기도 만듭니다. 이 연습의 뒷부분에서는 문서의 VBA 코드에서 `CreateVstoNamedRange` 메서드를 호출합니다.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet2":::
 
 3. 다음 메서드를 `Sheet1` 클래스에 추가합니다. 이 메서드는 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> 메서드를 재정의하여 `Sheet1` 클래스의 현재 인스턴스를 반환합니다.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet3":::
 
 4. `Sheet1` 클래스 선언의 첫째 줄 앞에 다음 특성을 적용합니다. 이러한 특성은 클래스가 COM에 표시되도록 하지만 클래스 인터페이스를 생성하지 않습니다.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet1":::
 
 ## <a name="extract-an-interface-for-the-sheet1-class"></a>Sheet1 클래스에 대 한 인터페이스 추출
  `CreateVstoNamedRange` 메서드를 VBA 코드에 노출하려면 먼저 이 메서드를 정의하는 공용 인터페이스를 만든 후 이 인터페이스를 COM에 노출해야 합니다.
@@ -188,7 +188,7 @@ ms.locfileid: "99906485"
 
 5. **ISheet1.cs** 파일에서 `ISheet1` 인터페이스 선언을 다음 코드로 바꿉니다. 이 코드는 `ISheet1` 인터페이스를 공용으로 설정하고 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 특성을 적용하여 인터페이스가 COM에 표시되도록 합니다.
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs" id="Snippet4":::
 
 6. 프로젝트를 빌드합니다.
 
@@ -248,7 +248,7 @@ ms.locfileid: "99906485"
 
 - VBA에서 VSTO 추가 기능의 코드를 호출합니다. 자세한 내용은 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VBA 및 문서 수준 사용자 지정 결합](../vsto/combining-vba-and-document-level-customizations.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: Visual Basic 프로젝트에서 VBA로 코드 노출](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

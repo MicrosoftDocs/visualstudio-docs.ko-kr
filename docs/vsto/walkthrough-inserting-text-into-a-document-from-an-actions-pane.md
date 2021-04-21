@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ac42954e32b30a293abbe031218213948fb103a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937383"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824980"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>연습: 작업 창에서 문서에 텍스트 삽입
   이 연습에서는 Microsoft Office Word 문서에서 작업 창을 만드는 방법을 보여 줍니다. 작업 창에는 입력을 수집한 다음 텍스트를 문서에 보내는 두 개의 컨트롤이 포함 되어 있습니다.
@@ -115,7 +115,7 @@ ms.locfileid: "99937383"
     |속성|값|
     |--------------|-----------|
     |**이름**|**getName**|
-    |**Size**|**130, 20**|
+    |**크기**|**130, 20**|
 
 5. 작업 창 컨트롤에 두 번째 **Label** 컨트롤을 추가 하 고 **Text** 속성을 **Address** 로 변경 합니다.
 
@@ -126,7 +126,7 @@ ms.locfileid: "99937383"
     |**이름**|**getAddress**|
     |**반환 허용**|**True**|
     |**여러 줄**|**True**|
-    |**Size**|**130, 40**|
+    |**크기**|**130, 40**|
 
 7. 작업 창 컨트롤에 **Button** 컨트롤을 추가 하 고 다음 속성을 변경 합니다.
 
@@ -142,12 +142,12 @@ ms.locfileid: "99937383"
 
 1. <xref:System.Windows.Forms.Control.Click> **Addtext** 단추의 이벤트 처리기에 다음 코드를 추가 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb" id="Snippet8":::
 
 2. C #에서는 단추 클릭에 대 한 이벤트 처리기를 추가 해야 합니다. 호출 후 생성자에이 코드를 추가할 수 있습니다 `InsertTextControl` `InitializeComponent` . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet9":::
 
 ## <a name="add-code-to-show-the-actions-pane"></a>작업 창을 표시 하는 코드 추가
  작업 창을 표시 하려면 만든 컨트롤을 컨트롤 컬렉션에 추가 합니다.
@@ -156,13 +156,13 @@ ms.locfileid: "99937383"
 
 1. 클래스에서 작업 창 컨트롤의 새 인스턴스를 만듭니다 `ThisDocument` .
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet10":::
 
 2. 의 이벤트 처리기에 다음 코드를 추가 <xref:Microsoft.Office.Tools.Word.Document.Startup> `ThisDocument` 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet11":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  문서를 테스트 하 여 문서를 열 때 작업 창이 열리고 단추를 클릭할 때 텍스트 상자에 입력 된 텍스트가 책갈피에 삽입 되는지 확인 합니다.
@@ -182,7 +182,7 @@ ms.locfileid: "99937383"
 
 - 작업 창의 컨트롤에 데이터를 바인딩합니다. 자세한 내용은 [연습: Word 작업 창의 컨트롤에 데이터 바인딩](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [방법: Excel 통합 문서에 작업 창 추가](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36d4da65a6cd39c53f1f9d8edf4f9d9b1fe46284
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937412"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826852"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 단순 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트의 데이터 바인딩에 대 한 기본 사항을 보여 줍니다. SQL Server 데이터베이스의 단일 데이터 필드는 Microsoft Office Excel에서 명명 된 범위에 바인딩됩니다. 또한이 연습에서는 테이블의 모든 레코드를 스크롤할 수 있도록 하는 컨트롤을 추가 하는 방법을 보여 줍니다.
@@ -61,7 +61,7 @@ ms.locfileid: "99937412"
 
    Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **단순 데이터 바인딩** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
-## <a name="create-the-data-source"></a>데이터 원본 만들기
+## <a name="create-the-data-source"></a>데이터 원본 생성
  **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
@@ -128,16 +128,16 @@ ms.locfileid: "99937412"
 
 ### <a name="to-initialize-the-controls"></a>컨트롤을 초기화 하려면
 
-1. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **sheet1** 또는 **sheet1"** 을 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 메서드에 다음 코드를 추가 `Sheet1_Startup` 하 여 각 단추에 대 한 텍스트를 설정 합니다.
 
-    [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]
-    [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet2":::
 
 3. C #의 경우에는 단추 클릭 이벤트에 대 한 이벤트 처리기를 `Sheet1_Startup` 메서드에 추가 합니다.
 
-    [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet3":::
 
    이제 <xref:System.Windows.Forms.Control.Click> 사용자가 레코드를 탐색할 수 있도록 단추의 이벤트를 처리 하는 코드를 추가 합니다.
 
@@ -148,29 +148,29 @@ ms.locfileid: "99937412"
 
 1. 단추의 이벤트에 대 한 이벤트 처리기를 추가 하 <xref:System.Windows.Forms.Control.Click> `Button1` 고 다음 코드를 추가 하 여 첫 번째 레코드로 이동 합니다.
 
-     [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
-     [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet4":::
 
 ### <a name="to-move-to-the-previous-record"></a>이전 레코드로 이동 하려면
 
 1. 단추의 이벤트에 대 한 이벤트 처리기를 추가 하 <xref:System.Windows.Forms.Control.Click> `Button2` 고 다음 코드를 추가 하 여 위치를 다시 1로 이동 합니다.
 
-     [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet5":::
 
 ### <a name="to-move-to-the-next-record"></a>다음 레코드로 이동 하려면
 
 1. 단추의 이벤트에 대 한 이벤트 처리기를 추가 하 <xref:System.Windows.Forms.Control.Click> `Button3` 고 다음 코드를 추가 하 여 위치를 1로 이동 합니다.
 
-     [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet6":::
 
 ### <a name="to-move-to-the-last-record"></a>마지막 레코드로 이동 하려면
 
 1. 단추의 이벤트에 대 한 이벤트 처리기를 추가 하 <xref:System.Windows.Forms.Control.Click> `Button4` 고 다음 코드를 추가 하 여 마지막 레코드로 이동 합니다.
 
-     [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 통합 문서를 테스트 하 여 데이터베이스의 레코드를 탐색할 수 있는지 확인할 수 있습니다.
@@ -194,7 +194,7 @@ ms.locfileid: "99937412"
 
 - 컨트롤을 사용 <xref:System.Windows.Forms.BindingNavigator> 하 여 레코드를 스크롤합니다. 자세한 내용은 [방법: Windows Forms BindingNavigator 컨트롤을 사용 하 여 데이터 탐색](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [연습: 문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)

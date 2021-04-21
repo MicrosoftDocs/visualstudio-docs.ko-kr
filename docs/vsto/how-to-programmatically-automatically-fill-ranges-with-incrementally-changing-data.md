@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615331181b9402e0d2062142ad266bdd41dca4eb
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892075"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824941"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>방법: 프로그래밍 방식으로 증분 변경 데이터로 범위 채우기
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>개체의 메서드를 <xref:Microsoft.Office.Interop.Excel.Range> 사용 하면 값을 사용 하 여 워크시트의 범위를 자동으로 채울 수 있습니다. 가장 자주 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 사용 되는 메서드는 증분 방식으로 증가 하거나 감소 하는 범위에 값을 저장 하는 데 사용 됩니다. 열거형에서 선택적 상수를 제공 하 여 동작을 지정할 수 있습니다 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> .
@@ -40,8 +40,8 @@ ms.locfileid: "99892075"
     > 대신 컨트롤을 전달할 수 없습니다 <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> . 자세한 내용은 [호스트 항목 및 호스트 컨트롤의 프로그래밍](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)에 대 한 제한 사항을 참조 하세요.
 
 ## <a name="example"></a>예제
- [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet49":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet49":::
 
 ## <a name="compile-the-code"></a>코드 컴파일
  채우려는 범위의 첫 번째 셀에는 초기 값이 포함 되어야 합니다.
@@ -54,7 +54,7 @@ ms.locfileid: "99892075"
 
 - 열 D는 각 행에 대해 2 씩 증가 하는 일련의 숫자를 포함 하는 것입니다. 초기 값에 대해 D1 셀에 **4** 를 입력 하 고 D2 셀에 **6** 을 입력 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [범위 작업](../vsto/working-with-ranges.md)
 - [방법: 프로그래밍 방식으로 코드에서 워크시트 범위 참조](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [방법: 프로그래밍 방식으로 통합 문서의 범위에 스타일 적용](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
