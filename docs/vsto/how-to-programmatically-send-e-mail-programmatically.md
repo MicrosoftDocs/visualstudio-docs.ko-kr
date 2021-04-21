@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c2b702d2986315ce32a9ab489db239f2c784f3e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa6a45a199d4edce924f0e36a971026726d96eca
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877865"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824798"
 ---
 # <a name="how-to-programmatically-send-email"></a>방법: 프로그래밍 방식으로 전자 메일 보내기
   이 예에서는 전자 메일 주소에서 도메인 이름이 **example.com** 인 연락처에 전자 메일 메시지를 보냅니다.
@@ -32,7 +32,7 @@ ms.locfileid: "99877865"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="example"></a>예제
- [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>코드 컴파일
  이 예제에는 다음 사항이 필요합니다.
@@ -42,7 +42,7 @@ ms.locfileid: "99877865"
 ## <a name="robust-programming"></a>강력한 프로그래밍
  도메인 이름 **example.com** 를 검색 하는 필터 코드는 제거 하지 마십시오. 필터를 제거 하면 솔루션에서 모든 연락처에 전자 메일 메시지를 보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [메일 항목 작업](../vsto/working-with-mail-items.md)
 - [방법: 프로그래밍 방식으로 전자 메일 항목 만들기](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [방법: 프로그래밍 방식으로 Outlook 연락처 액세스](../vsto/how-to-programmatically-access-outlook-contacts.md)

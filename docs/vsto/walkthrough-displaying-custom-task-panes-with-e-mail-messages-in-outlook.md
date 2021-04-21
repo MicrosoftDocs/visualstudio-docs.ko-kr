@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e1092f48ad699291ccad9abcc8c834344821c060
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb1aed5ef110b726dae6e51337b0934ae0a8e69d
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942128"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824213"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시
   이 연습에서는 각 전자 메일 메시지를 만들거나 열 때 사용자 지정 작업창의 고유 인스턴스를 표시 하는 방법을 보여 줍니다. 사용자는 각 메일 메시지의 리본에 있는 단추를 사용하여 사용자 지정 작업창을 표시하거나 숨길 수 있습니다.
@@ -133,33 +133,33 @@ ms.locfileid: "99942128"
 
 2. 파일 맨 위에 다음 문을 추가합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet2":::
 
 3. 다음 코드를 *ThisAddIn.cs* 또는 *ThisAddIn.vb* 파일의 `ThisAddIn` 클래스 외부에 추가합니다. Visual C#의 경우에는 이 코드를 `OutlookMailItemTaskPane` 네임스페이스 내에 추가합니다. `InspectorWrapper` 클래스는 <xref:Microsoft.Office.Interop.Outlook.Inspector> 및 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체 쌍을 관리합니다. 다음 단계에서는 이 클래스의 정의를 완료합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet3":::
 
 4. 이전 단계에서 추가한 코드 뒤에 다음 생성자를 추가합니다. 이 생성자는 전달된 <xref:Microsoft.Office.Interop.Outlook.Inspector> 개체와 연결된 새 사용자 지정 작업창을 만들고 초기화합니다. C#에서는 이 생성자가 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> 개체의 <xref:Microsoft.Office.Interop.Outlook.Inspector> 이벤트와 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 개체의 <xref:Microsoft.Office.Tools.CustomTaskPane> 이벤트에 이벤트 처리기를 연결합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#4)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#4](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet4":::
 
 5. 이전 단계에서 추가한 코드 뒤에 다음 메서드를 추가합니다. 이 메서드는 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 클래스에 포함된 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체의 `InspectorWrapper` 이벤트에 대한 이벤트 처리기입니다. 이 코드는 사용자가 사용자 지정 작업창을 열거나 닫을 때마다 토글 단추의 상태를 업데이트합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#5)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#5](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet5":::
 
 6. 이전 단계에서 추가한 코드 뒤에 다음 메서드를 추가합니다. 이 메서드는 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_Event.Close> <xref:Microsoft.Office.Interop.Outlook.Inspector> 현재 전자 메일 메시지를 포함 하는 개체의 이벤트에 대 한 이벤트 처리기입니다. 이벤트 처리기는 전자 메일 메시지가 닫힐 때 리소스를 해제 합니다. 또한 `CustomTaskPanes` 컬렉션에서 현재 사용자 지정 작업창을 제거합니다. 이렇게 하면 다음 메일 메시지가 열릴 때 사용자 지정 작업창의 여러 인스턴스를 방지할 수 있습니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#6)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#6](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet6":::
 
 7. 이전 단계에서 추가한 코드 뒤에 다음 코드를 추가합니다. 이 연습의 뒷부분에서는 사용자 지정 리본 UI의 메서드에서 이 속성을 호출하여 사용자 지정 작업창을 표시하거나 숨깁니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#7)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#7](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet7":::
 
 ## <a name="initialize-and-clean-up-resources-used-by-the-add-in"></a>추가 기능에서 사용 하는 리소스 초기화 및 정리
  `ThisAddIn` 클래스에 코드를 추가하여 VSTO 추가 기능이 로드될 때 VSTO 추가 기능을 초기화하고 VSTO 추가 기능이 언로드될 때 VSTO 추가 기능에서 사용하는 리소스를 정리할 수 있습니다. 이벤트에 대 한 이벤트 처리기를 설정 하 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 고 기존의 모든 전자 메일 메시지를이 이벤트 처리기에 전달 하 여 VSTO 추가 기능을 초기화 합니다. VSTO 추가 기능이 언로드될 때는 이벤트 처리기를 분리하고 VSTO 추가 기능에서 사용한 개체를 정리합니다.
@@ -174,28 +174,28 @@ ms.locfileid: "99942128"
 
    - `inspectors` 필드는 현재 Outlook 인스턴스의 검사기 창 컬렉션에 대한 참조를 유지 관리합니다. 이 참조는 가비지 수집기가 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트(다음 단계에서 선언)에 대한 이벤트 처리기가 포함된 메모리를 해제할 수 없게 합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet8":::
 
 3. `ThisAddIn_Startup` 메서드를 다음 코드로 바꿉니다. 이 코드에서 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트에 이벤트 처리기를 연결하고 기존의 모든 <xref:Microsoft.Office.Interop.Outlook.Inspector> 개체를 이벤트 처리기에 전달합니다. Outlook이 이미 실행 되 고 있는 경우 사용자가 VSTO 추가 기능을 로드 하면 VSTO 추가 기능에서는이 정보를 사용 하 여 이미 열려 있는 모든 메일 메시지에 대 한 사용자 지정 작업창을 만듭니다.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet9":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet9":::
 
 4. `ThisAddIn_ShutDown` 메서드를 다음 코드로 바꿉니다. 이 코드에서는 <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 이벤트 처리기를 분리하고 VSTO 추가 기능에서 사용한 개체를 정리합니다.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet10":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet10":::
 
 5. <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> 클래스에 다음 `ThisAddIn` 이벤트 처리기를 추가합니다. 새에 <xref:Microsoft.Office.Interop.Outlook.Inspector> 전자 메일 메시지가 포함 된 경우 메서드는 새 개체의 인스턴스를 만들어 `InspectorWrapper` 전자 메일 메시지와 해당 작업창 간의 관계를 관리 합니다.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet11":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet11":::
 
 6. 다음 속성을 `ThisAddIn` 클래스에 추가합니다. 이 속성은 `inspectorWrappersValue` 클래스 외부의 코드에 전용 `ThisAddIn` 필드를 노출합니다.
 
-    [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
-    [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs" id="Snippet12":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb" id="Snippet12":::
 
 ## <a name="checkpoint"></a>검사점
  프로젝트를 빌드하여 프로젝트가 오류 없이 컴파일되는지 확인합니다.
@@ -215,13 +215,13 @@ ms.locfileid: "99942128"
 
 2. *ManageTaskPaneRibbon.cs* 또는 *ManageTaskPaneRibbon.vb* 파일 맨 위에 다음 문을 추가합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb" id="Snippet14":::
 
 3. `toggleButton1_Click` 이벤트 처리기를 다음 코드로 바꿉니다. 사용자가 토글 단추를 클릭하면 이 메서드는 현재 검사기 창과 연결된 사용자 지정 작업창을 숨기거나 표시합니다.
 
-     [!code-csharp[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#15)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#15](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb" id="Snippet15":::
 
 ## <a name="test-the-project"></a>프로젝트 테스트
  프로젝트를 디버깅하면 Outlook이 열리고 VSTO 추가 기능이 로드됩니다. VSTO 추가 기능은 각 전자 메일 메시지와 함께 사용자 지정 작업창의 고유 인스턴스를 표시 합니다. 몇 가지 새로운 전자 메일 메시지를 만들어 코드를 테스트 합니다.
@@ -269,7 +269,7 @@ ms.locfileid: "99942128"
 
 - Excel에서 사용자 지정 작업창을 숨기거나 표시하는 데 사용할 수 있는 리본 단추를 만듭니다. 자세한 내용은 [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

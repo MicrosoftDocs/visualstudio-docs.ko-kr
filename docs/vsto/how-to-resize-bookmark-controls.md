@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55fe398b277586404c91ef7cb172f7ce3a9c98ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2b2bd963b2f0b4eb574630382930eb0805909be
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927849"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825786"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>방법: 책갈피 컨트롤 크기 조정
   Microsoft Office Word 문서에 추가할 때 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤의 크기를 설정합니다. 나중에 크기를 조정할 수도 있습니다.
@@ -61,13 +61,13 @@ ms.locfileid: "99927849"
 
      다음 코드 예제에서는 `SampleBookmark`라는 책갈피의 시작 부분에 다섯 개의 문자를 추가합니다. 이 코드는 책갈피 앞에 최소 다섯 개의 문자로 된 텍스트가 있다고 가정합니다.
 
-     [!code-csharp[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreHostControlsWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet2":::
 
      다음 코드 예제는 동일한 책갈피의 끝에 다섯 개의 문자를 추가합니다. 이 코드는 책갈피 다음에 최소 다섯 개의 문자로 된 텍스트가 있다고 가정합니다.
 
-     [!code-csharp[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#3)]
-     [!code-vb[Trin_VstcoreHostControlsWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet3":::
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>런타임에 VSTO 추가 기능 프로젝트에서 책갈피 크기를 조정 하려면
 
@@ -75,8 +75,8 @@ ms.locfileid: "99927849"
 
      다음 코드 예제는 활성 문서의 첫 번째 단락에 텍스트를 포함하는 <xref:Microsoft.Office.Tools.Word.Bookmark> 를 만든 다음 <xref:Microsoft.Office.Tools.Word.Bookmark>의 처음과 끝에서 다섯 개의 문자를 제거합니다.
 
-     [!code-vb[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#16)]
-     [!code-csharp[Trin_WordAddInDynamicControls#16](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#16)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet16":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet16":::
 
 ## <a name="recreate-the-bookmark"></a>책갈피 다시 만들기
  기존 책갈피와 동일한 이름을 가지고 있지만 크기가 다른 새 책갈피를 추가하여 문서 수준 프로젝트에서 책갈피 크기를 조정할 수 있습니다.
@@ -89,7 +89,7 @@ ms.locfileid: "99927849"
 
 3. **책갈피** 대화 상자에서 크기를 조정하려는 책갈피 이름을 선택하고 **추가** 를 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: Word 문서에 책갈피 컨트롤 추가](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e4a10949f463cc769890b828ba39de30a9b4c1c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906628"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824577"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>연습: 콘텐츠 컨트롤을 사용자 지정 XML 부분에 바인딩
   이 연습에서는 문서에 저장된 XML 데이터에 Word에 대한 문서 수준 사용자 지정의 콘텐츠 컨트롤을 바인딩하는 방법을 보여 줍니다.
@@ -227,24 +227,24 @@ ms.locfileid: "99906628"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>문서에 사용자 지정 XML 부분을 추가하려면
 
-1. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
+1. **솔루션 탐색기** 에서 **thisdocument** 또는 **thisdocument** 에 대 한 바로 가기 메뉴를 연 다음 **코드 보기** 를 선택 합니다.
 
 2. `ThisDocument` 클래스에 다음 선언을 추가합니다. 이 코드는 문서에 사용자 지정 XML 부분을 추가하는 데 사용할 여러 개체를 선언합니다.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet1":::
 
 3. 다음 메서드를 `ThisDocument` 클래스에 추가합니다. 이 메서드는 어셈블리에 리소스로 포함된 XML 데이터 파일의 내용을 가져오고 XML 문자열로 반환합니다.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet3":::
 
 4. 다음 메서드를 `ThisDocument` 클래스에 추가합니다. `AddCustomXmlPart` 메서드는 메서드에 전달된 XML 문자열을 포함하는 새 사용자 지정 XML 부분을 만듭니다.
 
      사용자 지정 XML 부분이 한 번만 생성되도록 이 메서드는 일치하는 GUID를 가진 사용자 지정 XML 부분이 문서에 없는 경우에만 사용자 지정 XML 부분을 만듭니다. 이 메서드를 처음 호출하면 <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> 속성의 값이 `employeeXMLPartID` 문자열에 저장됩니다. `employeeXMLPartID` 문자열의 값은 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 특성을 사용하여 선언되었으므로 문서에 유지됩니다.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#4)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet4":::
 
 ## <a name="bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>사용자 지정 XML 부분의 요소에 콘텐츠 컨트롤 바인딩
  각 콘텐츠 컨트롤의 **Xmlmapping** 속성을 사용 하 여 사용자 지정 XML 부분의 요소에 각 콘텐츠 컨트롤을 바인딩합니다.
@@ -253,8 +253,8 @@ ms.locfileid: "99906628"
 
 1. 다음 메서드를 `ThisDocument` 클래스에 추가합니다. 이 메서드는 사용자 지정 XML 부분의 요소에 각 콘텐츠 컨트롤을 바인딩하고 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>의 날짜 표시 형식을 설정합니다.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet5":::
 
 ## <a name="run-your-code-when-the-document-is-opened"></a>문서를 열 때 코드 실행
  문서를 열 때 사용자 지정 XML 부분을 만들고 사용자 지정 컨트롤을 데이터에 바인딩합니다.
@@ -263,8 +263,8 @@ ms.locfileid: "99906628"
 
 1. `ThisDocument` 클래스의 `ThisDocument_Startup` 메서드에 다음 코드를 추가합니다. 이 코드는 **employees.xml** 파일에서 xml 문자열을 가져오고, 문서의 새 사용자 지정 xml 부분에 xml 문자열을 추가 하 고, 사용자 지정 xml 부분의 요소에 콘텐츠 컨트롤을 바인딩합니다.
 
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
-     [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>프로젝트 테스트
  문서를 열면 콘텐츠 컨트롤이 사용자 지정 XML 부분에 있는 요소의 데이터를 표시합니다. 을 클릭 하 여 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> `title` **employees** 파일에 정의 된 요소에 대 한 세 가지 유효한 값 중 하나를 선택할 수 있습니다. 콘텐츠 컨트롤의 데이터를 편집하는 경우 문서의 사용자 지정 XML 부분에 새 값이 저장됩니다.
@@ -318,7 +318,7 @@ ms.locfileid: "99906628"
 
 - 콘텐츠 컨트롤을 사용하여 문서 부분을 보호합니다. 자세한 내용은 [방법: 콘텐츠 컨트롤을 사용 하 여 문서 부분 보호](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [콘텐츠 컨트롤](../vsto/content-controls.md)
 - [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)

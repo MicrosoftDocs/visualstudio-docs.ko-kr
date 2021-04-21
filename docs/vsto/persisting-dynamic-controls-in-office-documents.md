@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e833a480713e3c04215c03a3dc4a549c92e0f772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d42aa2d8594ed44e4fd4edbac8a0d64c4dc16da
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938475"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826150"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office 문서에서 동적 컨트롤 유지
 
@@ -57,8 +57,8 @@ Word 용 호스트 컨트롤 또는 <xref:Microsoft.Office.Tools.Excel.NamedRang
 
 예를 들어 문서를 열 때 기존 네이티브 <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> 에서 <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> 호스트 컨트롤을 만들려는 경우 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> 메서드를 사용하고 기존 <xref:Microsoft.Office.Interop.Excel.ListObject>를 전달합니다. 다음 코드 예제에서는 Excel용 문서 수준 프로젝트에서 이 과정을 보여 줍니다. 코드는 <xref:Microsoft.Office.Tools.Excel.ListObject> 클래스의 <xref:Microsoft.Office.Interop.Excel.ListObject> 라는 기존 `MyListObject` 를 기반으로 하는 동적 `Sheet1` 를 다시 만듭니다.
 
-[!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
-[!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs" id="Snippet6":::
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb" id="Snippet6":::
 
 ### <a name="re-create-chart"></a>차트 다시 만들기
 
@@ -94,8 +94,8 @@ VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을
 
 다음 코드 예제에서는 문서를 열 때 `GetVstoObject` 메서드를 호출하는 방법을 보여 줍니다.
 
-[!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
-[!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet11":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet11":::
 
 메서드는 `GetVstoObject` 런타임에 새 호스트 항목을 생성 하는 데 주로 사용 되지만,이 메서드는 특정 문서에 대해 처음 호출 될 때 문서에서 모든 ActiveX 래퍼를 지웁니다. 메서드를 사용 하는 방법에 대 한 자세한 내용은 `GetVstoObject` [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
 
@@ -107,9 +107,9 @@ VSTO 추가 기능을 사용 하 여 문서에 동적 Windows Forms 컨트롤을
 
 다음 코드 예제에서는 문서를 닫을 때 Word 문서에서 모든 Windows Forms 컨트롤을 제거하는 방법을 보여 줍니다.
 
-[!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
-[!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet10":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet10":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

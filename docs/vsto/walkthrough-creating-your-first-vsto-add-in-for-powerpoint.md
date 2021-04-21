@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5adf37c6d55d4704ee370052646e620cbe716c3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966541"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824252"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>연습: PowerPoint 용 첫 VSTO 추가 기능 만들기
   이 연습에서는 Microsoft Office PowerPoint 용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프레젠테이션에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -82,12 +82,12 @@ ms.locfileid: "99966541"
 
     사용자가 활성 프레젠테이션에 새 슬라이드를 추가하면 이 이벤트 처리기가 새 슬라이드의 맨 위에 텍스트 상자를 추가하고 텍스트 상자에 일부 텍스트를 추가합니다.
 
-    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
 2. C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_PresentationNewSlide` 이벤트 처리기를 [Microsoft.Office.Interop.PowerPoint.EApplication_Event PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 이벤트와 연결 하는 데 필요 합니다.
 
-    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
    각각의 새 슬라이드를 수정하기 위해 이전 코드 예제에서는 다음 개체를 사용합니다.
 
@@ -132,7 +132,7 @@ ms.locfileid: "99966541"
 
 - PowerPoint용 VSTO 추가 기능 배포. 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [PowerPoint 솔루션](../vsto/powerpoint-solutions.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62a49919522c5d4a88b6f4b6876b567c8d275dec
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920375"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826423"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>연습: Windows Form을 사용 하 여 데이터 수집
   이 연습에서는 Microsoft Office Excel용 문서 수준 사용자 지정에서 Windows Form을 열고 사용자로부터 정보를 수집하고 워크시트 셀에 해당 정보를 기록하는 방법을 보여 줍니다.
@@ -95,13 +95,13 @@ ms.locfileid: "99920375"
    > [!NOTE]
    > C#에서는 아래 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 이벤트에 표시된 것처럼 이벤트 처리기를 추가해야 합니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet1":::
 
 3. 명명된 범위에 텍스트를 쓰는 `WriteStringToCell` 이라는 메서드를 만듭니다. 이 메서드가 양식에서 호출되고 사용자의 입력이 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`셀의 **컨트롤인** 에 전달됩니다.
 
-    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet2":::
 
    그런 다음 양식에 코드를 추가하여 단추의 클릭 이벤트를 처리합니다.
 
@@ -115,8 +115,8 @@ ms.locfileid: "99920375"
 
 3. 코드를 이벤트 처리기에 추가하여 텍스트 상자에서 받은 입력을 `WriteStringToCell`함수로 보낸 다음 양식을 닫습니다.
 
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb" id="Snippet3":::
 
 ## <a name="test"></a>테스트
  이제 프로젝트를 실행할 수 있습니다. Windows Form이 나타나고 사용자 입력이 워크시트에 표시됩니다.
@@ -138,7 +138,7 @@ ms.locfileid: "99920375"
 
 - 문서 수준 사용자 지정 또는 VSTO 추가 기능에서 Microsoft Office 응용 프로그램의 사용자 인터페이스를 수정 합니다. 자세한 내용은 [OFFICE UI 사용자 지정](../vsto/office-ui-customization.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)

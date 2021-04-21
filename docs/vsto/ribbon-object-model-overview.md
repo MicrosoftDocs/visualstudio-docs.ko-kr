@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f053e87f8cdfd2bdf87bbdf4b7d115f6d9bbec26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888695"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823992"
 ---
 # <a name="ribbon-object-model-overview"></a>리본 개체 모델 개요
   는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 런타임에 리본 컨트롤의 속성을 가져오고 설정 하는 데 사용할 수 있는 강력한 형식의 개체 모델을 노출 합니다. 예를 들어, 메뉴 컨트롤을 동적으로 채우거 나 컨텍스트 컨트롤을 표시 하 고 숨길 수 있습니다. 리본 메뉴에 탭, 그룹 및 컨트롤을 추가할 수도 있습니다. 단, Office 응용 프로그램에서 리본 메뉴를 로드 하기 전에만 가능 합니다. 자세한 내용은 읽기 전용으로 [설정 된 속성 설정](#SettingReadOnlyProperties)을 참조 하세요.
@@ -50,7 +50,7 @@ ms.locfileid: "99888695"
 |컨트롤 이름|클래스 이름|
 |------------------|----------------|
 |**Box**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**단추**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
+|**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
@@ -111,12 +111,12 @@ ms.locfileid: "99888695"
 
  다음 코드를 추가합니다.
 
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb" id="Snippet1":::
 
  Visual Studio 2008에서 업그레이드 한 Visual c # 프로젝트에서 생성자는 리본 코드 파일에 나타납니다.
 
- 에서 만든 Visual c # 프로젝트 또는 Visual Basic 프로젝트에서 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 생성자는 리본 디자이너 코드 파일에 나타납니다. 이 파일의 이름은 해당 하는 *리본 항목* 입니다. Designer.cs 또는 해당 하는 *리본 항목* 입니다. 디자이너 .vb. Visual Basic 프로젝트에서이 파일을 보려면 먼저 솔루션 탐색기의 **모든 파일 표시** 단추를 클릭 해야 합니다.
+ 에서 만든 Visual c # 프로젝트 또는 Visual Basic 프로젝트에서 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 생성자는 리본 디자이너 코드 파일에 나타납니다. 이 파일의 이름은 해당 하는 *리본 항목* 입니다. 디자이너 .cs 또는 해당 하는 *리본 항목* 입니다. 디자이너 .vb. Visual Basic 프로젝트에서이 파일을 보려면 먼저 솔루션 탐색기의 **모든 파일 표시** 단추를 클릭 해야 합니다.
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>CreateRibbonExtensibilityObject 메서드의 속성 설정
  `Ribbon` `CreateRibbonExtensibilityObject` `ThisAddin` `ThisWorkbook` 프로젝트의, 또는 클래스에서 메서드를 재정의할 때 컨트롤의 속성을 설정할 수 있습니다 `ThisDocument` . 메서드에 대 한 자세한 내용은 `CreateRibbonExtensibilityObject` [리본 개요](../vsto/ribbon-overview.md)를 참조 하세요.
@@ -125,8 +125,8 @@ ms.locfileid: "99888695"
 
  다음 코드를 추가합니다.
 
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs" id="Snippet2":::
 
 ### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> 읽기 전용으로 되는 속성
  다음 표에서는 리본을 로드 하기 전에만 설정할 수 있는 속성을 보여 줍니다.
@@ -172,7 +172,7 @@ ms.locfileid: "99888695"
 
 |이벤트|Description|
 |-----------|-----------------|
-|클릭 대상|컨트롤을 클릭 하면 발생 합니다.|
+|클릭|컨트롤을 클릭 하면 발생 합니다.|
 |TextChanged|편집 상자 또는 콤보 상자의 텍스트가 변경 될 때 발생 합니다.|
 |일부를 로드 하는 중|Office에서 컨트롤의 항목 컬렉션을 요청할 때 발생 합니다. Office는 코드에서 컨트롤의 속성을 변경 하거나 메서드를 호출할 때까지 Items 컬렉션을 캐시 합니다 <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> .|
 |System.windows.forms.toolbar.buttonclick>|또는의 단추를 클릭할 때 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> 발생 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 합니다.|
@@ -186,7 +186,7 @@ ms.locfileid: "99888695"
 |*으로부터*|이벤트를 발생시킨 컨트롤을 나타내는 <xref:System.Object>입니다.|
 |*e*|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs>이 들어 있는 <xref:Microsoft.Office.Core.IRibbonControl>입니다. 이 컨트롤을 사용 하 여에서 제공 하는 리본 개체 모델에서 사용할 수 없는 속성에 액세스할 수 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)

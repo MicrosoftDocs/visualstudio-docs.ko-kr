@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6e6b00e8e26d261aac18dd48af1d912bd6ffad1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dc9322dd2ad3c3a2111222d7491f9e1a82cd6c4
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899545"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825851"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>방법: Outlook에서 양식 영역 표시 하지 않기
   Outlook Microsoft Office 특정 항목에 대 한 양식 영역을 표시 하지 않으려는 경우가 있을 수 있습니다. 예를 들어 연락처 항목에 비즈니스 주소가 포함 되어 있지 않은 경우 지도에서 비즈니스의 위치를 표시 하는 양식 영역을 표시 하지 않을 수 있습니다.
@@ -38,10 +38,11 @@ ms.locfileid: "99899545"
    이 예제에서 연락처 항목에 주소가 포함 되어 있지 않으면 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 속성이 **true** 로 설정 되 고 양식 영역이 표시 되지 않습니다.
 
 ## <a name="example"></a>예제
- [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+
+## <a name="see-also"></a>참조
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

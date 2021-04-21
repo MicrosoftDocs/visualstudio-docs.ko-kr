@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9c7861698e678ca6d8332e3940c3ae49ff423f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b25880420e23b82f6f63ab28ef5f1f93429bdd8c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877878"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824759"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>방법: 프로그래밍 방식으로 특정 폴더 내에서 검색
   이 코드 예제에서는 및 메서드를 사용 하 여 `Find` `FindNext` **받은 편지함** 에 있는 전자 메일 메시지의 제목 필드에 있는 텍스트를 검색 합니다. 이 메서드는 문자열 필터를 사용 하 여 문자 T를 텍스트의 시작 문자로 확인 합니다 `Subject` .
@@ -28,9 +28,9 @@ ms.locfileid: "99877878"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>예제
- [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [폴더 작업](../vsto/working-with-folders.md)
 - [Outlook 개체 모델 개요](../vsto/outlook-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 이름으로 폴더 검색](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

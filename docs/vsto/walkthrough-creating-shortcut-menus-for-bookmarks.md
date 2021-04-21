@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48381d452b0c67a34581092a47896aba60e7125c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937422"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826306"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>연습: 책갈피에 대 한 바로 가기 메뉴 만들기
   이 연습에서는 <xref:Microsoft.Office.Tools.Word.Bookmark> Word 용 문서 수준 사용자 지정에서 컨트롤에 대 한 바로 가기 메뉴를 만드는 방법을 보여 줍니다. 사용자가 책갈피의 텍스트를 마우스 오른쪽 단추로 클릭 하면 바로 가기 메뉴가 나타나고 텍스트 서식을 지정 하는 데 사용할 수 있는 사용자 옵션이 제공 됩니다.
@@ -92,7 +92,7 @@ ms.locfileid: "99937422"
 
 1. **리본 XML** 항목을 프로젝트에 추가 합니다. 자세한 내용은 [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)을 참조 하세요.
 
-2. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 를 선택 합니다.
+2. **솔루션 탐색기** 에서 **thisdocument** 또는 **thisdocument** 를 선택 합니다.
 
 3. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
@@ -100,8 +100,8 @@ ms.locfileid: "99937422"
 
 4. **ThisDocument** 클래스에 다음 코드를 추가 합니다. 이 코드는 CreateRibbonExtensibilityObject 메서드를 재정의 하 고 Office 응용 프로그램에 리본 XML 클래스를 반환 합니다.
 
-     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet1":::
 
 5. **솔루션 탐색기** 에서 리본 XML 파일을 선택합니다. 기본적으로 리본 XML 파일의 이름은 Ribbon1.xml입니다.
 
@@ -131,10 +131,10 @@ ms.locfileid: "99937422"
 
 9. 클래스 수준에서 다음 변수 및 책갈피 변수를 선언 합니다.
 
-     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet2":::
 
-10. **솔루션 탐색기** 에서 리본 코드 파일을 선택 합니다. 기본적으로 리본 코드 파일의 이름은 **Ribbon1.cs** 또는 **ribbon1.xml** 입니다.
+10. **솔루션 탐색기** 에서 리본 코드 파일을 선택 합니다. 기본적으로 리본 코드 파일의 이름은 **ribbon1.xml** 또는 **ribbon1.xml** 입니다.
 
 11. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
@@ -142,8 +142,8 @@ ms.locfileid: "99937422"
 
 12. 리본 코드 파일에서 다음 메서드를 추가 합니다. 문서의 바로 가기 메뉴에 추가한 두 단추에 대 한 콜백 메서드입니다. 이 메서드는 바로 가기 메뉴에 이러한 단추가 표시 되는지 여부를 결정 합니다. 굵게 및 기울임꼴 단추는 책갈피 안에서 텍스트를 마우스 오른쪽 단추로 클릭 하는 경우에만 표시 됩니다.
 
-     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet5":::
 
 ## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> 책갈피의 텍스트 서식 지정
 
@@ -151,10 +151,10 @@ ms.locfileid: "99937422"
 
 1. 리본 코드 파일에서 `ButtonClick` 책갈피에 형식을 적용 하는 이벤트 처리기를 추가 합니다.
 
-     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet6":::
 
-2. **솔루션 탐색기** **ThisDocument.cs** 또는 **ThisDocument** 를 선택 합니다.
+2. **솔루션 탐색기** **ThisDocument** 또는 **thisdocument** 를 선택 합니다.
 
 3. 메뉴 모음에서 **보기** > **코드** 를 차례로 선택합니다.
 
@@ -162,15 +162,15 @@ ms.locfileid: "99937422"
 
 4. **ThisDocument** 클래스에 다음 코드를 추가 합니다.
 
-     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet3":::
 
     > [!NOTE]
     > 책갈피가 겹치는 경우를 처리 하는 코드를 작성 해야 합니다. 이렇게 하지 않으면 기본적으로 선택 영역의 모든 책갈피에 대해 코드가 호출 됩니다.
 
 5. C #에서 책갈피 컨트롤에 대 한 이벤트 처리기를 이벤트에 추가 해야 합니다 <xref:Microsoft.Office.Tools.Word.Document.Startup> . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet4":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  문서를 테스트 하 여 책갈피에서 텍스트를 마우스 오른쪽 단추로 클릭 하 고 텍스트의 형식이 올바르게 지정 된 경우 바로 가기 메뉴에 굵게 표시 및 기울임꼴 메뉴 항목이 표시 되는지 확인 합니다.
@@ -194,7 +194,7 @@ ms.locfileid: "99937422"
 
 - 확인란을 사용 하 여 책갈피의 서식을 변경할 수 있습니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 문서 서식 변경](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Word를 사용한 연습](../vsto/walkthroughs-using-word.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)

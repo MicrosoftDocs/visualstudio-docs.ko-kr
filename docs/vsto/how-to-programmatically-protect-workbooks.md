@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 05587b067fb5e8365433049c7da7fd3d5949a831
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f0b479c56be6da7b14f87263c8c01d66910ac20
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963850"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827112"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 보호
   사용자가 워크시트를 추가 하거나 삭제할 수 없으며 프로그래밍 방식으로 통합 문서의 보호를 해제할 수 있도록 Microsoft Office Excel 통합 문서를 보호할 수 있습니다. 선택적으로 암호를 지정 하 고, 구조를 보호할 지 여부를 표시 하 고 (사용자가 시트를 이동할 수 없도록) 통합 문서의 창을 보호할 지 여부를 지정할 수 있습니다.
@@ -41,15 +41,15 @@ ms.locfileid: "99963850"
 
 1. <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A>통합 문서의 메서드를 호출 하 고 암호를 포함 합니다. 다음 코드 예제를 사용 하려면 `ThisWorkbook` 시트 클래스가 아닌 클래스에서 실행 합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
-     [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb" id="Snippet10":::
 
 ### <a name="to-unprotect-a-workbook"></a>통합 문서의 보호를 해제 하려면
 
 1. <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A>필요한 경우 암호를 전달 하 여 메서드를 호출 합니다. 다음 코드 예제를 사용 하려면 `ThisWorkbook` 시트 클래스가 아닌 클래스에서 실행 합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb" id="Snippet11":::
 
 ## <a name="protect-a-workbook-by-using-an-application-level-add-in"></a>응용 프로그램 수준 추가 기능을 사용 하 여 통합 문서 보호
 
@@ -57,17 +57,17 @@ ms.locfileid: "99963850"
 
 1. <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A>통합 문서의 메서드를 호출 하 고 암호를 포함 합니다. 이 코드 예제에서는 활성 통합 문서를 사용 합니다. 이 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 코드를 실행합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet6":::
 
 ### <a name="to-unprotect-a-workbook"></a>통합 문서의 보호를 해제 하려면
 
 1. <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A>필요한 경우 암호를 전달 하 여 활성 통합 문서의 메서드를 호출 합니다. 이 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 코드를 실행합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet7":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [방법: 프로그래밍 방식으로 워크시트 보호](../vsto/how-to-programmatically-protect-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 숨기기](../vsto/how-to-programmatically-hide-worksheets.md)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ed0d2ae6bf66e8f7375bde72aaec085463b9ca18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f57ad0c858abb5f151e1b425224b5af34d464c0f
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906608"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824668"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>연습: 사용자 지정 작업창에서 응용 프로그램 자동화
   이 연습에서는 PowerPoint를 자동화하는 사용자 지정 작업창을 만드는 방법을 보여 줍니다. 사용자 지정 작업창은 사용자가 사용자 지정 작업창에 있는 <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 클릭할 때 날짜를 슬라이드에 삽입합니다.
@@ -87,18 +87,18 @@ ms.locfileid: "99906608"
 
 2. 파일 맨 위에 다음 코드를 추가합니다. 이 코드는 <xref:Microsoft.Office.Core> 및 [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) 네임 스페이스에 대 한 별칭을 만듭니다.
 
-     [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet1":::
 
 3. `MyUserControl` 클래스에 다음 코드를 추가합니다. 이 코드는 [도형](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) 개체를의 멤버로 선언 `MyUserControl` 합니다. 다음 단계에서는이 [셰이프](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) 를 사용 하 여 활성 프레젠테이션의 슬라이드에 텍스트 상자를 추가 합니다.
 
-     [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet2":::
 
 4. `monthCalendar1_DateChanged` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드에서는 활성 프레젠테이션의 첫 번째 슬라이드에 텍스트 상자를 추가한 다음 현재 선택한 날짜를 텍스트 상자에 추가합니다. 이 코드는 `Globals.ThisAddIn` 개체를 사용하여 PowerPoint의 개체 모델에 액세스합니다.
 
-     [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
-     [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet3":::
 
 5. **솔루션 탐색기** 에서 **MyAddIn** 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **빌드** 를 클릭합니다. 프로젝트가 오류 없이 빌드되는지 확인합니다.
 
@@ -113,13 +113,13 @@ ms.locfileid: "99906608"
 
 3. `ThisAddIn` 클래스에 다음 코드를 추가합니다. 이 코드는 `MyUserControl` 및 <xref:Microsoft.Office.Tools.CustomTaskPane> 의 인스턴스를 `ThisAddIn` 클래스의 멤버로 선언합니다.
 
-     [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
-     [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs" id="Snippet4":::
 
 4. `ThisAddIn_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드는 <xref:Microsoft.Office.Tools.CustomTaskPane> 컬렉션에 `MyUserControl` 개체를 추가하여 새 `CustomTaskPanes` 을 만듭니다. 코드에서 작업창도 표시합니다.
 
-     [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
-     [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="test-the-add-in"></a>추가 기능 테스트
  프로젝트를 실행하면 PowerPoint가 열리고 VSTO 추가 기능에서 사용자 지정 작업창을 표시합니다. <xref:System.Windows.Forms.MonthCalendar> 컨트롤을 클릭하여 코드를 테스트합니다.
@@ -143,7 +143,7 @@ ms.locfileid: "99906608"
 
 - Outlook에서 열린 모든 메일 메시지에 대해 사용자 지정 작업창을 만듭니다. 자세한 내용은 [연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

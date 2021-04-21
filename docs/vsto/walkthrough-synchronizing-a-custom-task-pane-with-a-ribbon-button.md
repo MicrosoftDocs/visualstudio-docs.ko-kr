@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e7fe64d2df3298d53f567d11fe765280843e2ce
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846285"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826787"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>연습: 사용자 지정 작업창과 리본 단추 동기화
   이 연습에서는 사용자가 리본의 토글 단추를 클릭 하 여 숨기 거 나 표시할 수 있는 사용자 지정 작업창을 만드는 방법을 보여 줍니다. Microsoft Office 애플리케이션에서는 사용자가 사용자 지정 작업창을 표시하거나 숨기는 기본 방법을 제공하지 않으므로 사용자가 클릭하여 사용자 지정 작업창을 표시하거나 숨길 수 있도록 단추와 같은 UI(사용자 인터페이스) 요소를 항상 만들어야 합니다.
@@ -64,7 +64,7 @@ ms.locfileid: "99846285"
 
 1. Excel 추가 기능 프로젝트 템플릿을 사용하여 **SynchronizeTaskPaneAndRibbon** 이라는 이름의 Excel 추가 기능 프로젝트를 만듭니다. 자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs** 또는 **ThisAddIn** 코드 파일을 열고 **솔루션 탐색기** 에 **열고 synchronizetaskpaneandribbon** 프로젝트를 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**thisaddin** 또는 **thisaddin .vb** 코드 파일을 열고 **솔루션 탐색기** 에 **열고 synchronizetaskpaneandribbon** 프로젝트를 추가 합니다.
 
 ## <a name="add-a-toggle-button-to-the-ribbon"></a>토글 단추를 리본에 추가
  Office 애플리케이션의 디자인 지침 중 하나는 사용자가 항상 Office 애플리케이션 UI를 제어할 수 있어야 한다는 것입니다. 사용자가 사용자 지정 작업창을 제어할 수 있도록 작업창을 표시하고 숨기는 리본 토글 단추를 추가할 수 있습니다. 토글 단추를 만들려면 프로젝트에 **리본(비주얼 디자이너)** 항목을 추가합니다. 이 디자이너는 컨트롤을 추가 및 배치하고, 컨트롤 속성을 설정하고, 컨트롤 이벤트를 처리하는 데 유용합니다. 자세한 내용은 [리본 디자이너](../vsto/ribbon-designer.md)를 참조 하세요.
@@ -113,23 +113,23 @@ ms.locfileid: "99846285"
 
 3. `ThisAddIn` 클래스에 다음 코드를 추가합니다. 이 코드에서는 `TaskPaneControl` 의 인스턴스를 `ThisAddIn`의 구성원으로 선언합니다.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet1":::
 
 4. `ThisAddIn_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드에서는 `TaskPaneControl` 개체를 `CustomTaskPanes` 필드에 추가하지만 사용자 지정 작업창을 표시하지 않습니다. 기본적으로 <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> 클래스의 <xref:Microsoft.Office.Tools.CustomTaskPane> 속성은 **false** 입니다. Visual C# 코드는 이벤트 처리기를 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 이벤트에도 연결합니다.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet2":::
 
 5. 다음 메서드를 `ThisAddIn` 클래스에 추가합니다. 이 메서드가 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 이벤트를 처리합니다. 사용자가 **닫기** 단추(X)를 클릭하여 작업창을 닫으면 이 메서드가 리본의 토글 단추 상태를 업데이트합니다.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet3":::
 
 6. 다음 속성을 `ThisAddIn` 클래스에 추가합니다. 이 속성은 전용 `myCustomTaskPane1` 개체를 다른 클래스에 노출합니다. 이 연습의 뒷부분에서는 코드를 이 속성을 사용하는 `MyRibbon` 클래스에 추가합니다.
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet4":::
 
 ## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>설정/해제 단추를 사용 하 여 사용자 지정 작업창 숨기기 및 표시
  마지막 단계는 사용자가 리본의 토글 단추를 클릭할 때 사용자 지정 작업창을 표시하거나 숨기는 코드를 추가하는 것입니다.
@@ -142,8 +142,8 @@ ms.locfileid: "99846285"
 
 2. `toggleButton1_Click` 이벤트 처리기를 다음 코드로 바꿉니다. 사용자가 토글 단추를 클릭하면 이 코드에서는 토글 단추를 눌렀는지 안 눌렀는지에 따라 사용자 지정 작업창을 표시하거나 숨깁니다.
 
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs" id="Snippet5":::
 
 ## <a name="test-the-add-in"></a>추가 기능 테스트
  프로젝트를 실행하면 사용자 지정 작업창을 표시하지 않고 Excel이 열립니다. 리본에서 설정/해제 단추를 클릭 하 여 코드를 테스트 합니다.
@@ -173,7 +173,7 @@ ms.locfileid: "99846285"
 
 - Outlook에서 열린 모든 메일 메시지에 대해 사용자 지정 작업창을 만듭니다. 자세한 내용은 [연습: Outlook에서 전자 메일 메시지와 함께 사용자 지정 작업 창 표시](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

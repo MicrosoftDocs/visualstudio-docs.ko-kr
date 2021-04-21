@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 516b6b680b8718747490a8afd9cdd2f823e996e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad64593f91e14bcfd993929420764869a8359e3e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880465"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826696"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>방법: 프로그래밍 방식으로 Outlook 전자 메일 항목의 첨부 파일 저장
 
@@ -36,9 +36,9 @@ ms.locfileid: "99880465"
 
 ## <a name="example"></a>예제
 
-[!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [메일 항목 작업](../vsto/working-with-mail-items.md)
 - [방법: 프로그래밍 방식으로 이름으로 폴더 검색](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

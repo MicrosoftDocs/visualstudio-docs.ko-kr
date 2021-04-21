@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98ee7773c86e85fa9ced0274bc37c4db3f8aacc2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b02ed8108daede030d460f80d8cdd76b82112401
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963897"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824772"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>방법: 프로그래밍 방식으로 Outlook 연락처 삭제
   이 예제에서는 연락처를 삭제합니다. 이 예제에서는 "Armando Pinto"라는 이름의 연락처가 **연락처** 폴더에 있다고 가정합니다.
@@ -28,10 +28,10 @@ ms.locfileid: "99963897"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>예제
- [!code-vb[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [연락처 항목 작업](../vsto/working-with-contact-items.md)
 - [방법: 프로그래밍 방식으로 특정 연락처 검색](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
 - [방법: 프로그래밍 방식으로 Outlook 연락처 액세스](../vsto/how-to-programmatically-access-outlook-contacts.md)

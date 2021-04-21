@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a85f46cf9c234ad662966372a8d014ae0f98be84
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927667"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826371"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>연습: 문서 수준 프로젝트의 복합 데이터 바인딩
   이 연습에서는 문서 수준 프로젝트에서 복합 데이터 바인딩의 기본 사항을 보여 줍니다. Microsoft Office Excel 워크시트의 여러 셀을 Northwind SQL Server 데이터베이스의 필드에 바인딩할 수 있습니다.
@@ -62,7 +62,7 @@ ms.locfileid: "99927667"
 
      Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **내 복합 데이터 바인딩** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
 
-## <a name="create-the-data-source"></a>데이터 원본 만들기
+## <a name="create-the-data-source"></a>데이터 원본 생성
  **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
@@ -117,16 +117,16 @@ ms.locfileid: "99927667"
 
 ### <a name="to-initialize-the-control"></a>컨트롤을 초기화 하려면
 
-1. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **sheet1** 또는 **sheet1"** 을 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 메서드에 다음 코드를 추가 `Sheet1_Startup` 하 여 b의 텍스트를 설정 합니다 `utton` .
 
-    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet8":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet8":::
 
 3. C #의 경우에는 이벤트에 대 한 이벤트 처리기를 <xref:System.Windows.Forms.Control.Click> `Sheet1_Startup` 메서드에 추가 합니다.
 
-    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet9":::
 
    이제 단추의 이벤트를 처리 하는 코드를 추가 <xref:System.Windows.Forms.Control.Click> 합니다.
 
@@ -137,8 +137,8 @@ ms.locfileid: "99927667"
 
 1. 의 이벤트에 대 한 이벤트 처리기를 추가 <xref:System.Windows.Forms.Control.Click> `button` 하 고 다음 코드를 추가 하 여 데이터 집합에 적용 된 모든 변경 내용을 데이터베이스에 다시 커밋합니다.
 
-     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet10":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 통합 문서를 테스트 하 여 데이터가 예상 대로 표시 되 고 목록 개체의 데이터를 조작할 수 있는지 확인할 수 있습니다.
@@ -181,7 +181,7 @@ ms.locfileid: "99927667"
 
 2. 빈 행에 다음 정보를 추가 합니다.
 
-   |EmployeeID|LastName|FirstName|Title|
+   |EmployeeID|LastName|FirstName|제목|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|판매 관리자|
 
@@ -226,7 +226,7 @@ ms.locfileid: "99927667"
 
 - 필드와 테이블 간에 마스터/세부 관계를 만듭니다. 자세한 내용은 [연습: 캐시 된 데이터 집합을 사용 하 여 마스터 세부 관계 만들기](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [연습: 문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

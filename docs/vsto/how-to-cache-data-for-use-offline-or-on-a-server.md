@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab53676d6c00fdda3bb7f4554321f0c0550e5748
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07d7a33d90fd9d05c041ddc27f92a5b6a59bb75e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954048"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825994"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>방법: 오프 라인 이나 서버에서 사용할 데이터 캐시
   문서에서 캐시 되도록 데이터 항목을 표시 하 여 오프 라인에서 사용할 수 있게 할 수 있습니다. 또한 문서를 서버에 저장할 때 문서에 있는 데이터를 다른 코드에서 조작할 수 있습니다.
@@ -42,8 +42,8 @@ ms.locfileid: "99954048"
 
 2. 특성을 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 멤버에 적용 하 여 데이터 항목이 문서의 데이터 캐시에 저장 되도록 표시 합니다. 다음 예제에서는이 특성을의 필드 선언에 적용 합니다 <xref:System.Data.DataSet> .
 
-     [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
-     [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet11":::
 
 3. 데이터 항목의 인스턴스를 만드는 코드를 추가 하 고 해당 하는 경우 데이터베이스에서 로드 합니다.
 
@@ -61,7 +61,7 @@ ms.locfileid: "99954048"
 
 4. **속성** 창에서 **Modifiers** 속성을 **Public** 으로 설정 합니다 (기본적으로 **내부**).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 캐시](../vsto/caching-data.md)
 - [방법: Office 문서에서 프로그래밍 방식으로 데이터 소스 캐시](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [방법: 암호로 보호 된 문서의 데이터 캐시](../vsto/how-to-cache-data-in-a-password-protected-document.md)

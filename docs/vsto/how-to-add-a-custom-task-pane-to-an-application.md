@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b0bac1f14994dea73526aa3684851412ad2cf1b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d85edb9773783abe6282918c432fc1a4eff83944
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910206"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826722"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>방법: 응용 프로그램에 사용자 지정 작업창 추가
   VSTO 추가 기능을 사용하여 위에 나열된 애플리케이션에 사용자 지정 작업창을 추가할 수 있습니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
@@ -44,22 +44,22 @@ ms.locfileid: "99910206"
 
 4. **도구 상자** 에서 사용자 정의 컨트롤에 하나 이상의 Windows Forms 컨트롤을 추가 합니다.
 
-5. **ThisAddIn.cs** 또는 **ThisAddIn** 코드 파일을 엽니다.
+5. **Thisaddin** 또는 **thisaddin .vb** 코드 파일을 엽니다.
 
 6. `ThisAddIn` 클래스에 다음 코드를 추가합니다. 이 코드는 `MyUserControl` 및 <xref:Microsoft.Office.Tools.CustomTaskPane> 의 인스턴스를 `ThisAddIn` 클래스의 멤버로 선언합니다.
 
-     [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet1":::
 
 7. 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 <xref:Microsoft.Office.Tools.CustomTaskPane> 컬렉션에 `MyUserControl` 개체를 추가하여 새 `CustomTaskPanes` 을 만듭니다. 코드에서 작업창도 표시합니다.
 
-     [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet2":::
 
     > [!NOTE]
     > 이 코드는 애플리케이션의 활성 창과 사용자 지정 작업창을 연결합니다. 일부 애플리케이션의 경우 작업창이 애플리케이션의 다른 문서나 항목과 함께 표시되도록 이 코드를 수정하는 것이 좋습니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [사용자 지정 작업 창](../vsto/custom-task-panes.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

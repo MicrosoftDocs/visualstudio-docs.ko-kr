@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f35649db5f61cb545bb3550980b3d6b9a8742cd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48d7baf9605947818ffd79eb7312c0dbefe581ac
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966502"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824265"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>연습: Project 용 첫 VSTO 추가 기능 만들기
   이 연습에서는 Microsoft Office 프로젝트용 VSTO 추가 기능을 만드는 방법을 보여 줍니다. 이러한 종류의 솔루션에서 만드는 기능은 열려 있는 프로젝트에 관계없이 애플리케이션 자체에서 사용할 수 있습니다. 자세한 내용은 [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)를 참조 하세요.
@@ -81,8 +81,8 @@ ms.locfileid: "99966502"
 
     사용자가 새 프로젝트를 만들 때 이 이벤트 처리기는 작업을 프로젝트에 추가합니다.
 
-    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
    프로젝트를 수정 하기 위해이 코드 예제에서는 다음 개체를 사용 합니다.
 
@@ -92,7 +92,7 @@ ms.locfileid: "99966502"
 
 1. C#을 사용하는 경우 다음 코드를 `ThisAddIn_Startup` 이벤트 처리기에 추가합니다. 이 코드는 `Application_Newproject` NewProject 이벤트와 이벤트 처리기를 연결 합니다.
 
-     [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
 ## <a name="test-the-project"></a>프로젝트 테스트
  프로젝트를 빌드하고 실행할 때 새 작업이 새 결과 프로젝트에 나타나는지 확인합니다.
@@ -129,7 +129,7 @@ ms.locfileid: "99966502"
 
 - Project 용 VSTO 추가 기능 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [프로젝트 솔루션](../vsto/project-solutions.md)
 - [Office 솔루션 빌드](../vsto/building-office-solutions.md)

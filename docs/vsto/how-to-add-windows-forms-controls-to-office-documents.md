@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5a196c54a513376edef5c837a429bece6dd7b16
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954152"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824837"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>방법: Office 문서에 Windows Forms 컨트롤 추가
   디자인 타임에 문서 수준 프로젝트에서 Microsoft Office Excel 및 Microsoft Office Word 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 런타임에 문서 수준 사용자 지정 및 VSTO 추가 기능에서 컨트롤을 추가할 수 있습니다. 예를 들어 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 사용자가 옵션 목록에서 선택할 수 있도록 워크시트에 컨트롤을 추가할 수 있습니다.
@@ -110,8 +110,8 @@ ms.locfileid: "99954152"
 
      다음 코드 예제에서는 <xref:Microsoft.Office.Tools.Excel.Controls.Button>  `Sheet1` Excel 용 문서 수준 프로젝트에서의 셀 C5에를 추가 하는 방법을 보여 줍니다.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet4":::
 
 ## <a name="add-controls-at-run-time-in-vsto-add-ins"></a><a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능에서 컨트롤 추가
  프로그래밍 방식으로 런타임에 열려 있는 문서에 Windows Forms 컨트롤을 추가할 수 있습니다. 먼저, 열려 있는 문서 또는 워크시트의 기반이 되는 호스트 항목을 생성합니다. 그런 다음 Word에서 새 호스트 항목의 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 속성 메서드를 사용합니다. Excel에서 새 호스트 항목의 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 속성 메서드를 사용합니다. 각 메서드에는 다양한 방법으로 컨트롤의 위치를 지정할 수 있는 여러 오버로드가 있습니다.
@@ -129,10 +129,10 @@ ms.locfileid: "99954152"
 
      다음 코드 예제에서는 Word VSTO 추가 기능을 사용하여 활성 문서의 첫 번째 단락에 <xref:Microsoft.Office.Tools.Word.Controls.Button>을 추가하는 방법을 보여 줍니다.
 
-     [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
-     [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet7":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 문서에 대 한 Windows Forms 컨트롤 개요](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [방법: 워크시트 셀에서 컨트롤 크기 조정](../vsto/how-to-resize-controls-within-worksheet-cells.md)

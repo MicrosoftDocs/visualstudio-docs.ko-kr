@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965800"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826774"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>서버에 있는 문서의 데이터 액세스
   Microsoft Office Word 또는 Microsoft Office Excel의 개체 모델을 사용 하지 않고도 문서 수준 사용자 지정에서 데이터에 대해 프로그래밍할 수 있습니다. 즉, Word 또는 Excel이 설치 되지 않은 서버에서 문서에 포함 된 데이터에 액세스할 수 있습니다. 예를 들어, 서버 (예: 페이지)의 코드는 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 문서의 데이터를 사용자 지정 하 고 사용자 지정 된 문서를 최종 사용자에 게 보낼 수 있습니다. 최종 사용자가 문서를 열면 솔루션 어셈블리의 데이터 바인딩 코드가 사용자 지정 된 데이터를 문서에 바인딩합니다. 이는 문서의 데이터가 사용자 인터페이스에서 분리 되기 때문에 가능 합니다. 자세한 내용은 [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)를 참조 하세요.
@@ -45,8 +45,8 @@ ms.locfileid: "99965800"
 
   다음 코드 예제에서는 `Sheet1` Excel 통합 문서 프로젝트의 클래스에서 캐시 된 문자열에 액세스 하는 방법을 보여 줍니다. 이 예제는 메서드에 대해 제공 된 더 큰 예제의 일부입니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> .
 
-  [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
-  [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
 
 ## <a name="modify-data-in-the-cache"></a>캐시에서 데이터 수정
  캐시 된 데이터 개체를 수정 하려면 일반적으로 다음 단계를 수행 합니다.
@@ -66,8 +66,8 @@ ms.locfileid: "99965800"
 
  다음 코드 예제에서는 `Sheet1` Excel 통합 문서 프로젝트의 클래스에서 캐시 된 문자열의 값을 변경 하는 방법을 보여 줍니다. 이 예제는 메서드에 대해 제공 된 더 큰 예제의 일부입니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> .
 
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
- [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::
 
 ### <a name="modify-null-values-in-the-data-cache"></a>데이터 캐시에서 null 값 수정
  문서를 저장 하 고 닫을 때 값이 **null** 인 개체는 데이터 캐시에 저장 되지 않습니다. 캐시 된 데이터를 수정할 때 다음과 같은 제한 사항이 있습니다.
@@ -79,7 +79,7 @@ ms.locfileid: "99965800"
 ## <a name="access-typed-datasets-in-the-cache"></a>캐시의 형식화 된 데이터 집합에 액세스
  Office 솔루션과 Office 외부 응용 프로그램 (예: Windows Forms 응용 프로그램 또는 프로젝트)에서 형식화 된 데이터 집합의 데이터에 액세스 하려는 경우 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 두 프로젝트 모두에서 참조 되는 별도의 어셈블리에 형식화 된 데이터 집합을 정의 해야 합니다. **데이터 소스 구성** 마법사나 **데이터 세트 디자이너** 를 사용 하 여 각 프로젝트에 형식화 된 데이터 집합을 추가 하는 경우 .NET Framework는 두 프로젝트의 형식화 된 데이터 집합을 서로 다른 형식으로 처리 합니다. 형식화 된 데이터 집합을 만드는 방법에 대 한 자세한 내용은 [Visual Studio에서 데이터 집합 만들기 및 구성](../data-tools/create-and-configure-datasets-in-visual-studio.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [서버에 있는 문서의 데이터 액세스](../vsto/accessing-data-in-documents-on-the-server.md)
 - [문서 수준 사용자 지정의 캐시 된 데이터](../vsto/cached-data-in-document-level-customizations.md)

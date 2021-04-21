@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 377c3405211c91712f8754131d8379c3dae7e820
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906557"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824551"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>연습: Excel 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Microsoft Office Excel의 작업 창에서 컨트롤에 데이터를 바인딩하는 방법을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
@@ -142,29 +142,29 @@ ms.locfileid: "99906557"
 
 2. <xref:System.Windows.Forms.UserControl.Load>작업 창 컨트롤의 이벤트에 다음 코드를 추가 합니다.
 
-     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet1":::
 
 3. C #에서는에 대 한 이벤트 처리기를 만들어야 합니다 `ActionsControl` . 생성자에이 코드를 추가할 수 있습니다 `ActionsControl` . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet2":::
 
 ## <a name="show-the-actions-pane"></a>작업 창 표시
  런타임에 컨트롤을 추가할 때까지 작업 창이 표시 되지 않습니다.
 
 #### <a name="to-show-the-actions-pane"></a>작업 창을 표시 하려면
 
-1. **솔루션 탐색기** 에서 *ThisWorkbook* 또는 *ThisWorkbook.cs* 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 *thisworkbook* 또는 *thisworkbook* 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 2. 클래스에 사용자 정의 컨트롤의 새 인스턴스를 만듭니다 `ThisWorkbook` .
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet3":::
 
 3. <xref:Microsoft.Office.Tools.Excel.Workbook.Startup>의 이벤트 처리기에서 `ThisWorkbook` 컨트롤을 작업 창에 추가 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet4":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 문서를 테스트 하 여 문서를 열 때 작업 창이 열리고 컨트롤에 마스터/세부 정보 관계가 있는지 확인할 수 있습니다.
@@ -186,7 +186,7 @@ ms.locfileid: "99906557"
 
 - 프로젝트를 배포 합니다. 자세한 내용은 [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d94891520695117c7a395f81feda81e52f909fe6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906590"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824499"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>연습: Word 작업 창의 컨트롤에 데이터 바인딩
   이 연습에서는 Word의 작업 창에서 컨트롤에 데이터를 바인딩하는 방법을 보여 줍니다. 컨트롤은 SQL Server 데이터베이스의 테이블 간 마스터/세부 관계를 보여 줍니다.
@@ -146,12 +146,12 @@ ms.locfileid: "99906590"
 
 1. <xref:System.Windows.Forms.UserControl.Load>클래스의 이벤트 처리기에서 `ActionsControl` 다음 코드를 추가 합니다.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet1":::
 
 2. C #에서는 이벤트 처리기를 이벤트에 연결 해야 합니다 <xref:System.Windows.Forms.UserControl.Load> . 호출 후 생성자에이 코드를 추가할 수 있습니다 `ActionsControl` `InitializeComponent` . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet33":::
 
 ### <a name="to-set-data-binding-properties-of-the-controls"></a>컨트롤의 데이터 바인딩 속성을 설정 하려면
 
@@ -178,43 +178,43 @@ ms.locfileid: "99906590"
 
 1. 클래스에서 `ActionsControl` 테이블 머리글의 형식을 지정 하는 메서드를 만듭니다.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet2":::
 
 ### <a name="to-create-the-table"></a>테이블을 만들려면
 
 1. 클래스에서 `ActionsControl` 테이블이 없는 경우 테이블을 만드는 메서드를 작성 하 고 작업 창의 데이터를 테이블에 추가 합니다.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet3":::
 
 ### <a name="to-insert-text-into-a-word-table"></a>Word 표에 텍스트를 삽입 하려면
 
 1. <xref:System.Windows.Forms.Control.Click> **삽입** 단추의 이벤트 처리기에 다음 코드를 추가 합니다.
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet4":::
 
 2. C #에서는 단추의 이벤트에 대 한 이벤트 처리기를 만들어야 합니다 <xref:System.Windows.Forms.Control.Click> .  <xref:System.Windows.Forms.UserControl.Load>클래스의 이벤트 처리기에이 코드를 추가할 수 있습니다 `ActionsControl` .
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet5":::
 
 ## <a name="show-the-actions-pane"></a>작업 창 표시
  컨트롤이 컨트롤에 추가 되 면 작업 창이 표시 됩니다.
 
 ### <a name="to-show-the-actions-pane"></a>작업 창을 표시 하려면
 
-1. **솔루션 탐색기** 에서 **ThisDocument** 또는 **ThisDocument.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **thisdocument** 또는 **thisdocument** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 다음 예제와 같이 클래스의 맨 위에 컨트롤의 새 인스턴스를 만듭니다 `ThisDocument` .
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet6":::
 
 3. <xref:Microsoft.Office.Tools.Word.Document.Startup>다음 예제와 같이의 이벤트 처리기에 코드를 추가 `ThisDocument` 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 문서를 테스트 하 여 문서를 열 때 작업 창이 표시 되는지 확인할 수 있습니다. 작업 창의 컨트롤에서 마스터/세부 관계를 테스트 하 고 **삽입** 단추를 클릭할 때 Word 테이블에서 데이터가 채워지는지 확인 합니다.
@@ -238,7 +238,7 @@ ms.locfileid: "99906590"
 
 - 프로젝트를 배포 합니다. 자세한 내용은 [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)

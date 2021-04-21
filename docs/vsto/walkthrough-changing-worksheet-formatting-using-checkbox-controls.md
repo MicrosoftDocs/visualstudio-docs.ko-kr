@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f649fad99b8d94cc650ecda57e10b423b14194e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956596"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826436"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경
   이 연습에서는 Microsoft Office Excel 워크시트에서 확인란을 사용 하 여 서식을 변경 하는 기본적인 방법을 보여 줍니다. Visual Studio에서 Office 개발 도구를 사용 하 여 프로젝트에 코드를 만들고 추가 합니다. 결과를 완료 된 샘플로 보려면 [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)에서 Excel 컨트롤 샘플을 참조 하세요.
@@ -85,7 +85,7 @@ ms.locfileid: "99956596"
     |속성|값|
     |--------------|-----------|
     |**이름**|**applyUnderlineFont**|
-    |**Text**|**밑줄**|
+    |**Text**|**바뀝니다**|
 
 7. **Ctrl** 키를 누른 상태에서 세 개의 확인란 컨트롤을 모두 선택 합니다.
 
@@ -128,22 +128,22 @@ ms.locfileid: "99956596"
 
 2. <xref:System.Windows.Forms.Control.Click>확인란의 이벤트 처리기에 다음 코드를 추가 합니다 `applyBoldFont` .
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#7)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet7":::
 
 3. <xref:System.Windows.Forms.Control.Click>확인란의 이벤트 처리기에 다음 코드를 추가 합니다 `applyItalicFont` .
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#8)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet8":::
 
 4. <xref:System.Windows.Forms.Control.Click>확인란의 이벤트 처리기에 다음 코드를 추가 합니다 `applyUnderlineFont` .
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#9)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#9)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet9":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet9":::
 
 5. C #에서는 아래와 같이 이벤트에 확인란에 대 한 이벤트 처리기를 추가 해야 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 확인란을 선택 하거나 선택 취소 하면 통합 문서를 테스트 하 여 텍스트의 서식이 올바르게 지정 되었는지 확인할 수 있습니다.
@@ -162,7 +162,7 @@ ms.locfileid: "99956596"
 - 프로젝트를 배포 합니다. 자세한 내용은 [ClickOnce를 사용 하 여 Office 솔루션 배포](../vsto/deploying-an-office-solution-by-using-clickonce.md)를 참조 하세요.
 - 단추를 사용하여 텍스트 상자를 채웁니다. 자세한 내용은 [연습: 워크시트에서 단추를 사용 하 여 텍스트 상자에 텍스트 표시](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)
 - [Office 문서에서 Windows Forms 컨트롤의 제한 사항](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

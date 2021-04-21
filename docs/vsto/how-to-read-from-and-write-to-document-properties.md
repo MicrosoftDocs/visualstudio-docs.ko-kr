@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 864906e678cb3976e99dd8d9aeb9147e303f2517
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3474d86a7408e841d383c82e5ab38da90253dbbf
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942185"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826683"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>방법: 문서 속성에서 읽기 및 문서 속성에 쓰기
   문서와 함께 문서 속성을 저장할 수 있습니다. Office 애플리케이션은 작성자, 제목 및 주제와 같은 다양한 기본 제공 속성을 제공합니다. 이 항목에서는 Microsoft Office Excel 및 Microsoft Office Word에서 문서 속성을 설정하는 방법을 보여 줍니다.
@@ -44,13 +44,13 @@ ms.locfileid: "99942185"
 
 1. 기본 제공 문서 속성을 변수에 할당합니다.
 
-     [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
-     [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet7":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet7":::
 
 2. `Revision Number` 속성을 1씩 증가시킵니다.
 
-     [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
-     [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet8":::
 
 ## <a name="set-document-properties-in-word"></a>Word에서 문서 속성 설정
  Word에서 기본 제공 속성으로 작업하려면 다음 속성을 사용합니다.
@@ -67,20 +67,20 @@ ms.locfileid: "99942185"
 
 1. 기본 제공 문서 속성을 변수에 할당합니다.
 
-     [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb" id="Snippet1":::
 
 2. `Subject` 속성을 "Whitepaper"로 변경합니다.
 
-     [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb" id="Snippet2":::
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
  예제에서는 Excel용 문서 수준 프로젝트의 `ThisWorkbook` 클래스 및 Word용 문서 수준 프로젝트의 `ThisDocument` 클래스에서 코드를 작성했다고 가정합니다.
 
  Word 및 Excel과 해당 개체로 작업 중이지만 Microsoft Office에서 사용 가능한 기본 제공 문서 속성 목록을 제공합니다. 정의되지 않은 속성에 액세스하려고 하면 예외가 발생합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)
 - [방법: 사용자 지정 문서 속성 만들기 및 수정](../vsto/how-to-create-and-modify-custom-document-properties.md)

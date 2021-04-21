@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a58c4cc53597714eb65010c2fdbb423dd20a35a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04f410292fff686e7604e917e6c3fa7002c65273
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899397"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826254"
 ---
 # <a name="how-to-programmatically-select-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 선택
   <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 메서드는 사용자의 선택 영역을 새 개체로 이동하는 지정된 개체를 선택합니다. 사용자의 선택 영역을 변경하지 않고 포커스를 개체로 가져오려는 경우 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 메서드를 사용합니다.
@@ -30,14 +30,14 @@ ms.locfileid: "99899397"
  VSTO 추가 기능에서 기존 워크시트를 선택 하거나 런타임에 문서 수준 사용자 지정에서 워크시트를 만든 경우 excel 통합 문서의 Excel 컬렉션을 사용 하 여 액세스 해야 합니다 <xref:Microsoft.Office.Interop.Excel.Sheets> . 그렇지 않으면 호스트 항목에 직접 액세스할 수 있습니다 <xref:Microsoft.Office.Tools.Excel.Worksheet> .
 
 ## <a name="use-the-worksheet-host-item"></a>워크시트 호스트 항목 사용
- 문서 수준 사용자 지정에서 다음 코드를 *Sheet1 .vb* 또는 *Sheet1.cs* 에 추가 합니다.
+ 문서 수준 사용자 지정에서 다음 코드를 *sheet1 .vb* 또는 *sheet1. cs* 에 추가 합니다.
 
 ### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>호스트 항목을 사용하여 통합 문서의 첫 번째 워크시트를 선택하려면
 
 1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 의 `Sheet1`메서드를 호출합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
-     [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet19":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet19":::
 
 ## <a name="use-the-sheets-collection-of-the-excel-workbook"></a>Excel 통합 문서의 시트 컬렉션 사용
  Excel <xref:Microsoft.Office.Interop.Excel.Sheets> 컬렉션을 사용하여 워크시트에 액세스합니다.
@@ -46,10 +46,10 @@ ms.locfileid: "99899397"
 
 1. <xref:Microsoft.Office.Interop.Excel.Sheets> 컬렉션의 <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A> 메서드를 호출하여 활성 통합 문서의 첫 번째 워크시트를 선택합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
-     [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet20":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet20":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트 인쇄](../vsto/how-to-programmatically-print-worksheets.md)
 - [방법: 프로그래밍 방식으로 통합 문서에서 워크시트 삭제](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)

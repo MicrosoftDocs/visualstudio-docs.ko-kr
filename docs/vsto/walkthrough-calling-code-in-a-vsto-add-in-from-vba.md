@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21e0928396327911ea794c6270340c6efd27a43e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882390"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824603"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>연습: VBA에서 VSTO 추가 기능의 코드 호출
   이 연습에서는 VSTO 추가 기능의 개체를 VBA(Visual Basic for Applications) 및 COM VSTO 추가 기능을 비롯한 다른 Microsoft Office 솔루션에 노출하는 방법을 보여 줍니다.
@@ -75,13 +75,13 @@ ms.locfileid: "99882390"
 
 3. 다음 지시문을 파일의 맨 위에 추가 합니다.
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
-     [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet2":::
 
 4. `AddInUtilities` 클래스를 다음 코드로 바꿉니다.
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
-     [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
 
      이 코드에서는 `AddInUtilities` 클래스를 COM에 표시되도록 설정하고 `ImportData` 메서드를 클래스에 추가합니다. [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 인터페이스를 노출하기 위해 `AddInUtilities` 클래스는 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 특성도 갖고 있으며 COM에 표시되는 인터페이스를 구현합니다.
 
@@ -96,8 +96,8 @@ ms.locfileid: "99882390"
 
 3. `ThisAddIn` 클래스에 다음 코드를 추가합니다.
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
-     [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
 4. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
@@ -152,7 +152,7 @@ ms.locfileid: "99882390"
 
 - VSTO 추가 기능에서 리본을 사용자 지정 합니다. 자세한 내용은 [리본 개요](../vsto/ribbon-overview.md) 및 [방법: 리본 메뉴 사용자 지정 시작](../vsto/how-to-get-started-customizing-the-ribbon.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)

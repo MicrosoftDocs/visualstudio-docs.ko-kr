@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c5330d4419c065d7209900bfd4fa404663be185d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a5520582db9919417b1c70d773355901ac0b0a5
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917474"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826605"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>방법: Word 문서에 책갈피 컨트롤 추가
   문서 수준 프로젝트에서 디자인 타임 또는 런타임에 프로젝트의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다. VSTO 추가 기능 프로젝트에서는 런타임에 열려 있는 임의 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가할 수 있습니다.
@@ -91,8 +91,8 @@ ms.locfileid: "99917474"
 
 1. 프로젝트의 `ThisDocument_Startup` 이벤트 처리기에서 다음 코드를 삽입하여 문서의 첫 번째 단락에 <xref:Microsoft.Office.Tools.Word.Bookmark> 컨트롤을 추가합니다.
 
-     [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
-     [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet1":::
 
     > [!NOTE]
     > 기존 <xref:Microsoft.Office.Tools.Word.Bookmark> 에서 <xref:Microsoft.Office.Interop.Word.Bookmark>컨트롤을 만들려는 경우 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 메서드를 사용하고 기존 <xref:Microsoft.Office.Interop.Word.Bookmark>를 전달합니다.
@@ -114,8 +114,8 @@ ms.locfileid: "99917474"
 
      다음 코드 예제에서는 활성 문서의 시작 부분에 새 <xref:Microsoft.Office.Tools.Word.Bookmark> 를 추가합니다. 이 예제를 사용하려면 Word VSTO 추가 기능 프로젝트의 `ThisAddIn_Startup` 이벤트 처리기에서 코드를 실행합니다.
 
-     [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]
-     [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet4":::
 
 #### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>네이티브 책갈피 컨트롤을 기반으로 하는 책갈피 컨트롤을 추가하려면
 
@@ -123,10 +123,10 @@ ms.locfileid: "99917474"
 
      다음 코드 예제에서는 활성 문서의 첫 번째 <xref:Microsoft.Office.Tools.Word.Bookmark> 를 기반으로 하는 새 <xref:Microsoft.Office.Interop.Word.Bookmark> 를 만듭니다. 이 예제를 사용하려면 Word VSTO 추가 기능 프로젝트의 `ThisAddIn_Startup` 이벤트 처리기에서 코드를 실행합니다.
 
-     [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
-     [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet5":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)

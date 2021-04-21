@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2519c9d1a22eb6f5577a258fb9b465cfd7caafc2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903806"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826982"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>다른 Office 솔루션에서 VSTO 추가 기능의 코드 호출
   VSTO 추가 기능의 개체를 다른 Microsoft Office 솔루션을 비롯한 다른 솔루션에 노출할 수 있습니다. 이는 해당 VSTO 추가 기능이 다른 솔루션에서 사용하도록 하려는 서비스를 제공하는 경우에 유용합니다. 예를 들어 웹 서비스의 재무 데이터에 대해 계산을 수행 하는 Microsoft Office Excel 용 VSTO 추가 기능이 있는 경우 다른 솔루션은 런타임에 Excel VSTO 추가 기능을 호출 하 여 이러한 계산을 수행할 수 있습니다.
@@ -78,8 +78,8 @@ ms.locfileid: "99903806"
 
    다음 코드 예제에서는 다른 솔루션에서 호출할 수 있는 `AddInUtilities` 메서드와 `ImportData` 클래스를 보여 줍니다. 큰 연습의 컨텍스트에서이 코드를 보려면 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
-   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
-   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
 
 ### <a name="expose-classes-to-vba"></a>VBA에 클래스 노출
  위에 나와 있는 단계를 수행하는 경우 VBA 코드는 인터페이스에서 선언하는 메서드만 호출할 수 있습니다. VBA 코드는 클래스가 <xref:System.Object>같은 기본 클래스에서 가져오는 메서드를 비롯해 클래스의 다른 모든 메서드를 호출할 수 없습니다.
@@ -96,8 +96,8 @@ ms.locfileid: "99903806"
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>RequestComAddInAutomationService 메서드를 재정의 합니다.
  다음 코드 예제에서는 VSTO 추가 기능의 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 클래스에서 `ThisAddIn` 를 재정의하는 방법을 보여 줍니다. 이 예제에서는 `AddInUtilities` 다른 솔루션에 노출 하려는 라는 클래스를 정의 했다고 가정 합니다. 큰 연습의 컨텍스트에서이 코드를 보려면 [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)을 참조 하세요.
 
- [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
- [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
  VSTO 추가 기능이 로드되면 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 에서 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 메서드를 호출합니다. 런타임에서는 <xref:Microsoft.Office.Core.COMAddIn> VSTO 추가 기능을 나타내는 개체의 COMAddIn 속성에 반환 된 개체를 할당 합니다. 이 <xref:Microsoft.Office.Core.COMAddIn> 개체는 다른 Office 솔루션은 물론, Office를 자동화하는 솔루션에서 사용할 수 있습니다.
 
@@ -144,7 +144,7 @@ utilities.ImportData();
 
  이 예제에서 COMAddIn 속성의 값을 인터페이스가 아닌 클래스로 캐스팅 하려고 하면 `AddInUtilities` `IAddInUtilities` 코드에서이 throw 됩니다 <xref:System.InvalidCastException> .
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [연습: VBA에서 VSTO 추가 기능의 코드 호출](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a81ccec284541d93d3a5901211d8a46ea6b61a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931248"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826189"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>방법: 프로그래밍 방식으로 숨겨진 모드에서 Word 대화 상자 사용
   사용자에 게 표시 하지 않고 Microsoft Office Word에서 기본 제공 대화 상자를 호출 하 여 하나의 메서드 호출로 복잡 한 작업을 수행할 수 있습니다. <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> <xref:Microsoft.Office.Interop.Word.Dialog> 메서드를 호출 하지 않고 개체의 메서드를 사용 하 여이 작업을 수행할 수 있습니다 <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> .
@@ -34,14 +34,14 @@ ms.locfileid: "99931248"
 
  다음 예제에서는 **Option Strict** 가 off 인 Visual Basic 프로젝트에서이 작업을 수행 하는 방법과를 대상으로 하는 Visual c # 프로젝트에서이 작업을 수행 하는 방법을 보여줍니다 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] . 이러한 프로젝트에서는 Visual Basic 및 Visual c # 컴파일러에서 런타임에 바인딩 기능을 사용할 수 있습니다. 이 예제를 사용 하려면 `ThisDocument` `ThisAddIn` 프로젝트의 또는 클래스에서 실행 합니다.
 
- [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
- [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet123":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet123":::
 
  다음 예에서는 **Option Strict** 가 on 인 Visual Basic 프로젝트에서이 작업을 수행 하는 방법을 보여 줍니다. 이러한 프로젝트에서는 리플렉션을 사용 하 여 런타임에 바인딩된 속성에 액세스 해야 합니다. 이 예제를 사용 하려면 `ThisDocument` `ThisAddIn` 프로젝트의 또는 클래스에서 실행 합니다.
 
- [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet104":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 프로그래밍 방식으로 Word의 기본 제공 대화 상자 사용](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)
 - [Word 개체 모델 개요](../vsto/word-object-model-overview.md)
 - [Office 솔루션의 런타임에 바인딩](../vsto/late-binding-in-office-solutions.md)

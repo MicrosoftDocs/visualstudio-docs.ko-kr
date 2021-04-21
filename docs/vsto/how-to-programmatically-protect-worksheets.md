@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 92ded3d8320f58bdd200f3892dc40c7a915c502e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31c0184cbf8f29db6d33d135cf295f8277b55f2e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963824"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827100"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 보호
   Microsoft Office Excel의 보호 기능은 사용자 및 코드가 워크시트의 개체를 수정할 수 없도록 차단합니다. 기본적으로 보호를 설정하면 모든 셀이 잠깁니다.
@@ -57,17 +57,17 @@ ms.locfileid: "99963824"
 
 1. 워크시트의 <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> 메서드를 호출합니다. 이 예제에서는 `Sheet1`이라는 워크시트를 사용한다고 가정합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet27":::
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>VSTO 추가 기능에서 코드를 사용하여 워크시트를 보호하려면
 
 1. 활성 워크시트의 <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> 메서드를 호출합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet17":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet17":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [방법: 프로그래밍 방식으로 워크시트에서 보호 제거](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [방법: 프로그래밍 방식으로 통합 문서 보호](../vsto/how-to-programmatically-protect-workbooks.md)

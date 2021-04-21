@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 569a3bea98095afebb243c521db02410879b0b59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5d7992462ac3ece9782b0168feedd87577c2d0e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920364"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826332"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기
   이 연습에서는 **리본 (XML)** 항목을 사용 하 여 사용자 지정 리본 탭을 만드는 방법을 보여 줍니다.
@@ -56,7 +56,7 @@ ms.locfileid: "99920364"
 
      자세한 내용은 [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)를 참조 하세요.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs** 또는 **ThisAddIn** 코드 파일을 열고 **my리본 기능** 프로젝트를 **솔루션 탐색기** 에 추가 합니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**thisaddin** 또는 **thisaddin .vb** 코드 파일을 열고 **솔루션 탐색기** 에 **my리본 추가 기능** 프로젝트를 추가 합니다.
 
 ## <a name="create-the-vsto-add-ins-tab"></a>VSTO 추가 기능 탭 만들기
  **추가 기능** 탭을 만들려면 프로젝트에 **리본 (XML)** 항목을 추가 합니다. 이 연습의 뒷부분에서는 이 탭에 일부 단추를 추가합니다.
@@ -69,14 +69,14 @@ ms.locfileid: "99920364"
 
 3. 새 리본 메뉴의 이름을 **MyRibbon** 으로 변경하고 **추가** 를 클릭합니다.
 
-     **MyRibbon.cs** 또는 **myribbon.vb** 파일이 디자이너에서 열립니다. **MyRibbon.xml** 라는 XML 파일도 프로젝트에 추가 됩니다.
+     **Myribbon.vb** 또는 **myribbon.vb** 파일이 디자이너에서 열립니다. **MyRibbon.xml** 라는 XML 파일도 프로젝트에 추가 됩니다.
 
-4. **솔루션 탐색기** 에서 **ThisAddin.cs** 또는 **ThisAddin** 을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
+4. **솔루션 탐색기** 에서 **thisaddin** 또는 **thisaddin** 을 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 5. **ThisAddin** 클래스에 다음 코드를 추가합니다. 이 코드는 `CreateRibbonExtensibilityObject` 메서드를 재정의하고 Office 애플리케이션에 리본 XML 클래스를 반환합니다.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 6. **솔루션 탐색기** 에서 **my리본 추가 기능** 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **빌드** 를 클릭 합니다. 프로젝트가 오류 없이 빌드되는지 확인합니다.
 
@@ -107,22 +107,22 @@ ms.locfileid: "99920364"
 
 ### <a name="to-add-callback-methods-for-the-buttons"></a>단추에 대한 콜백 메서드를 추가하려면
 
-1. **솔루션 탐색기** 에서 **MyRibbon.cs** 또는 **myribbon.vb** 를 마우스 오른쪽 단추로 클릭 한 다음 **열기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **myribbon.vb** 또는 **myribbon.vb** 를 마우스 오른쪽 단추로 클릭 한 다음 **열기** 를 클릭 합니다.
 
-2. **MyRibbon.cs** 또는 **myribbon.vb** 파일 맨 위에 다음 코드를 추가 합니다. 이 코드는 <xref:Microsoft.Office.Interop.Word> 네임스페이스에 대한 별칭을 만듭니다.
+2. **Myribbon.vb** 또는 **myribbon.vb** 파일 맨 위에 다음 코드를 추가 합니다. 이 코드는 <xref:Microsoft.Office.Interop.Word> 네임스페이스에 대한 별칭을 만듭니다.
 
-     [!code-csharp[Trin_RibbonButtons#1](../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs#1)]
-     [!code-vb[Trin_RibbonButtons#1](../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonButtons/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonButtons/MyRibbon.vb" id="Snippet1":::
 
 3. 다음 메서드를 `MyRibbon` 클래스에 추가합니다. 커서의 현재 위치에 있는 활성 문서에 문자열을 추가 하는 **텍스트 삽입** 단추에 대 한 콜백 메서드입니다.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb" id="Snippet2":::
 
 4. 다음 메서드를 `MyRibbon` 클래스에 추가합니다. 커서의 현재 위치에 있는 활성 문서에 테이블을 추가 하는 **테이블 삽입** 단추에 대 한 콜백 메서드입니다.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="testing-the-vsto-add-in"></a>VSTO 추가 기능 테스트
  프로젝트를 실행 하면 Word가 열리고 리본 메뉴에 **추가 기능** 이라는 탭이 표시 됩니다. **추가 기능** 탭에서 **텍스트 삽입** 및 **표 삽입** 단추를 클릭 하 여 코드를 테스트 합니다.
@@ -156,7 +156,7 @@ ms.locfileid: "99920364"
 
 - Outlook 양식 영역을 사용하여 Microsoft Office Outlook의 UI를 사용자 지정합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [리본 개요](../vsto/ribbon-overview.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

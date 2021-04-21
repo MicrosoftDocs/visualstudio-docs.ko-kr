@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962277"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824824"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>연습: 리본 디자이너를 사용 하 여 사용자 지정 탭 만들기
   리본 디자이너를 사용하여 사용자 지정 탭을 만들고 이 탭에 컨트롤을 추가 및 배치할 수 있습니다.
@@ -68,7 +68,7 @@ ms.locfileid: "99962277"
 
 2. **새 항목 추가** 대화 상자에서 **ActionsPaneControl** 을 선택 하 고 **추가** 를 선택 합니다.
 
-     **ActionsPaneControl1.cs** 또는 **actionspanecontrol1.vb 파일이** 파일이 디자이너에서 열립니다.
+     **Actionspanecontrol1.vb 파일이** 또는 **actionspanecontrol1.vb 파일이** 파일이 디자이너에서 열립니다.
 
 3. **도구 상자** 의 **공용 컨트롤** 탭에서 디자이너 화면에 레이블을 추가 합니다.
 
@@ -116,22 +116,22 @@ ms.locfileid: "99962277"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>사용자 지정 탭의 단추를 사용하여 작업 창을 숨기거나 표시하려면
 
-1. **솔루션 탐색기** 에서 *MyRibbon.cs* 또는 *myribbon.vb* 에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
+1. **솔루션 탐색기** 에서 *myribbon.vb* 또는 *myribbon.vb* 에 대 한 바로 가기 메뉴를 열고 **코드 보기** 를 선택 합니다.
 
 2. 다음 코드를 `MyRibbon` 클래스의 맨 위에 추가합니다. 이 코드는 두 개의 작업 창 개체를 만듭니다.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet1":::
 
 3. `MyRibbon_Load` 메서드를 다음 코드로 바꿉니다. 이 코드는 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 컬렉션에 작업 창 개체를 추가하고 뷰에서 해당 개체를 숨깁니다. 또한 Visual C# 코드는 여러 리본 컨트롤 이벤트에 대리자를 연결합니다.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet2":::
 
 4. `MyRibbon` 클래스에 다음 세 개의 이벤트 처리기 메서드를 추가합니다. 이러한 메서드는 두 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 이벤트와 설정/해제 단추의 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 이벤트를 처리합니다. button1 및 button2에 대한 이벤트 처리기는 대체 작업 창을 표시합니다. toggleButton1에 대한 이벤트 처리기는 활성 작업 창을 표시하거나 숨깁니다.
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>사용자 지정 탭 테스트
  프로젝트를 실행 하면 Excel이 시작 되 고 리본 메뉴에 **My Custom tab** 탭이 나타납니다. **내 사용자 지정 탭** 의 단추를 선택 하 여 작업 창을 표시 하거나 숨깁니다.
@@ -161,7 +161,7 @@ ms.locfileid: "99962277"
 
 - 표준 또는 사용자 지정 Microsoft Office Outlook 양식을 확장합니다. 자세한 내용은 [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)

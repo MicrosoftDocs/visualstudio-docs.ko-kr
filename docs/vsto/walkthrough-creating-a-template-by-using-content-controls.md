@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f78ca406d19461de7fa8e2a8c147b1003c9c852
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937500"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826969"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기
   이 연습에서는 콘텐츠 컨트롤을 사용하여 Microsoft Office Word 서식 파일에서 구조화되고 재사용 가능한 콘텐츠를 만드는 문서 수준 사용자 지정을 만드는 방법을 보여 줍니다.
@@ -139,17 +139,17 @@ ms.locfileid: "99937500"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>프로그래밍 방식으로 콘텐츠 컨트롤의 UI를 수정하려면
 
-1. **솔루션 탐색기** 에서 **ThisDocument.cs** 또는 **ThisDocument** 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **thisdocument** 또는 **thisdocument** 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
 2. `ThisDocument` 클래스에 다음 코드를 추가합니다. 이 코드는 이 연습의 뒷부분에서 사용할 여러 개체를 선언합니다.
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet1":::
 
 3. `ThisDocument` 클래스의 `ThisDocument_Startup` 메서드에 다음 코드를 추가합니다. 이 코드는 표의 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 및 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>에 항목을 추가하고 사용자가 편집하기 전에 이러한 각 컨트롤에 표시되는 자리 표시자 텍스트를 설정합니다.
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet2":::
 
 ## <a name="prevent-users-from-editing-the-employee-table"></a>사용자가 employee 테이블을 편집 하지 못하도록 설정
  앞에서 선언한 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 개체를 사용하여 Employee 표를 보호합니다. 표를 보호한 후에도 사용자는 표의 콘텐츠 컨트롤을 편집할 수 있습니다. 그러나 첫 번째 열의 텍스트를 편집하거나 행과 열 추가 또는 삭제와 같이 다른 방식으로 표를 수정할 수는 없습니다. 를 사용 하 여 문서의 일부를 보호 하는 방법에 대 한 자세한 내용은 <xref:Microsoft.Office.Tools.Word.GroupContentControl> [콘텐츠 컨트롤](../vsto/content-controls.md)을 참조 하세요.
@@ -158,8 +158,8 @@ ms.locfileid: "99937500"
 
 1. 이전 단계에서 추가한 코드 뒤에 있는 `ThisDocument` 클래스의 `ThisDocument_Startup` 메서드에 다음 코드를 추가합니다. 이 코드는 앞에서 선언한 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 개체 안에 표를 넣어 사용자가 Employee 표를 편집할 수 없도록 합니다.
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet3":::
 
 ## <a name="add-the-tables-to-the-building-block-collection"></a>문서 블록 컬렉션에 테이블 추가
  사용자가 생성된 표를 문서에 삽입할 수 있도록 서식 파일의 문서 블록 컬렉션에 표를 추가합니다. 문서 구성 요소에 대 한 자세한 내용은 [콘텐츠 컨트롤](../vsto/content-controls.md)을 참조 하세요.
@@ -168,13 +168,13 @@ ms.locfileid: "99937500"
 
 1. 이전 단계에서 추가한 코드 뒤에 있는 `ThisDocument` 클래스의 `ThisDocument_Startup` 메서드에 다음 코드를 추가합니다. 이 코드는 BuildingBlockEntries 컬렉션에 테이블을 포함 하는 새 빌딩 블록을 추가 합니다 .이 컬렉션은 템플릿의 재사용 가능한 모든 구성 요소를 포함 합니다. 새 빌딩 블록은 **Employee 및 Customer 정보** 라는 새 범주에 정의 되며 빌딩 블록 형식이 할당 됩니다 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet4":::
 
 2. 이전 단계에서 추가한 코드 뒤에 있는 `ThisDocument` 클래스의 `ThisDocument_Startup` 메서드에 다음 코드를 추가합니다. 이 코드는 서식 파일에서 표를 삭제합니다. 서식 파일에서 재사용 가능한 문서 블록 갤러리에 추가했으므로 표는 더 이상 필요하지 않습니다. 코드에서 먼저 보호된 Employee 표를 삭제할 수 있도록 문서를 디자인 모드로 설정합니다.
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet5":::
 
 ## <a name="create-a-content-control-that-displays-the-building-blocks"></a>문서 블록을 표시 하는 콘텐츠 컨트롤 만들기
  앞에서 만든 문서 블록(표)에 대한 액세스를 제공하는 콘텐츠 컨트롤을 만듭니다. 사용자는 이 컨트롤을 클릭하여 문서에 표를 추가할 수 있습니다.
@@ -183,8 +183,8 @@ ms.locfileid: "99937500"
 
 1. 이전 단계에서 추가한 코드 뒤에 있는 `ThisDocument` 클래스의 `ThisDocument_Startup` 메서드에 다음 코드를 추가합니다. 이 코드는 앞에서 선언한 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 개체를 초기화합니다. 는 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> **Employee 및 Customer 정보** 범주에 정의 되어 있고 빌딩 블록 유형을 포함 하는 모든 구성 요소를 표시 합니다 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` .
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet6":::
 
 ## <a name="test-the-project"></a>프로젝트 테스트
  사용자는 문서에서 문서 블록 갤러리 컨트롤을 클릭하여 Employee 표 또는 사용자 의견 표를 삽입할 수 있습니다. 사용자는 두 표의 콘텐츠 컨트롤에서 모두 응답을 입력하거나 선택할 수 있습니다. 사용자는 사용자 의견 표의 다른 부분을 수정할 수 있지만 Employee 표의 다른 부분은 수정할 수 없어야 합니다.
@@ -236,7 +236,7 @@ ms.locfileid: "99937500"
 
 - 문서에 포함된 사용자 지정 XML 부분이라는 XML 부분에 콘텐츠 컨트롤을 바인딩합니다. 자세한 내용은 [연습: 콘텐츠 컨트롤을 사용자 지정 XML 부분에 바인딩](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [콘텐츠 컨트롤](../vsto/content-controls.md)
 - [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)
