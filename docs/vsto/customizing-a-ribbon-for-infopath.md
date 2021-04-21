@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0bc66a9266baf865e2efb87497361bc0c525e55a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af7c4ed2f396c5a806cc42c49c8f4209b6b5c2c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849894"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828139"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath에 대 한 리본 사용자 지정
   Microsoft Office InfoPath에서 리본을 사용자 지정할 경우 애플리케이션에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 에서는 다음 세 가지 유형의 InfoPath 애플리케이션 창에서 리본을 표시할 수 있습니다.
@@ -60,10 +60,10 @@ ms.locfileid: "99849894"
 
  다음 코드 예제에서는 디자인 모드에서 양식 템플릿을 표시하는 창에만 사용자 지정 리본을 표시하는 방법을 보여 줍니다. 표시할 리본은 Ribbon 클래스에서 생성되는 `GetResourceText()` 메서드에서 지정합니다. Ribbon 클래스에 대한 자세한 내용은 [Ribbon XML](../vsto/ribbon-xml.md)을 참조하세요.
 
- [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
- [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)

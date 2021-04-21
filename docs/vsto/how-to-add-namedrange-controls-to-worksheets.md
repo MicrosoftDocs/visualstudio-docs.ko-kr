@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa1b8372f9499695612a0e7335b1dbaf94800e79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7bf2f3ef91a6f572c64f94cb4b1a9a2f493e864
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954178"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827710"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>방법: 워크시트에 NamedRange 컨트롤 추가
   디자인 타임 및 런타임에 문서 수준 프로젝트에서 Microsoft Office Excel 워크시트에 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다.
@@ -82,8 +82,8 @@ ms.locfileid: "99954178"
 
 1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 의 `Sheet1`이벤트 처리기에서 다음 코드를 삽입하여 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 **A1** 셀에 추가하고 해당 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 `Hello world!`로 설정합니다.
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet3":::
 
 ## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 런타임에 VSTO 추가 기능 프로젝트에서 NamedRange 컨트롤 추가
  VSTO 추가 기능 프로젝트에서 열려 있는 워크시트에 프로그래밍 방식으로 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 추가할 수 있습니다. 동적으로 생성된 명명된 범위는 워크시트를 닫을 때 워크시트에서 호스트 컨트롤로 유지되지 않습니다. 자세한 내용은 [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)을 참조 하세요.
@@ -92,10 +92,10 @@ ms.locfileid: "99954178"
 
 1. 다음 코드는 열려 있는 워크시트를 기반으로 하는 워크시트 호스트 항목을 생성하고 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 **A1** 셀에 추가하고 해당 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 `Hello world`로 설정합니다.
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet7":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 문서의 컨트롤](../vsto/controls-on-office-documents.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90dac328f336f7204bc9a70a0dbc543ec996922a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970376"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825669"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>런타임에 VSTO 추가 기능에서 Word 문서 및 Excel 통합 문서 확장
   VSTO 추가 기능을 사용하여 다음과 같은 방법으로 Word 문서 및 Excel 통합 문서를 사용자 지정할 수 있습니다.
@@ -59,22 +59,22 @@ ms.locfileid: "99970376"
 
 - 다음 코드 예제에서는 활성 문서에 대한 호스트 항목을 생성하는 방법을 보여 줍니다.
 
-     [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
-     [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet8":::
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Excel 통합 문서에 대한 호스트 항목을 생성하려면
 
 - 다음 코드 예제에서는 활성 통합 문서에 대한 호스트 항목을 생성하는 방법을 보여 줍니다.
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet2":::
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Excel 워크시트에 대한 호스트 항목을 생성하려면
 
 - 다음 코드 예제에서는 프로젝트의 활성 워크시트에 대한 호스트 항목을 생성하는 방법을 보여 줍니다.
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet1":::
 
 ### <a name="generate-listobject-host-controls"></a>ListObject 호스트 컨트롤 생성
  `GetVstoObject` 메서드를 사용하여 <xref:Microsoft.Office.Interop.Excel.ListObject>를 확장하는 경우 메서드는 <xref:Microsoft.Office.Tools.Excel.ListObject>를 반환합니다. 에는 <xref:Microsoft.Office.Tools.Excel.ListObject> 원래의 모든 기능이 포함 되어 <xref:Microsoft.Office.Interop.Excel.ListObject> 있습니다. 또한 추가 기능이 있으며 Windows Forms 데이터 바인딩 모델을 사용 하 여 데이터에 바인딩될 수 있습니다. 자세한 내용은 [ListObject 컨트롤](../vsto/listobject-control.md)을 참조 하세요.
@@ -83,8 +83,8 @@ ms.locfileid: "99970376"
 
 - 다음 코드 예제에서는 프로젝트의 활성 워크시트에서 첫 번째 <xref:Microsoft.Office.Tools.Excel.ListObject> 에 대해 <xref:Microsoft.Office.Interop.Excel.ListObject> 를 생성하는 방법을 보여 줍니다.
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet3":::
 
 ### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> 문서 및 워크시트에 관리 되는 컨트롤 추가
  <xref:Microsoft.Office.Tools.Word.Document> 또는 <xref:Microsoft.Office.Tools.Excel.Worksheet>를 생성한 후 이러한 확장 개체가 나타내는 문서 또는 워크시트에 컨트롤을 추가할 수 있습니다. 컨트롤을 추가 하려면 `Controls` 또는의 속성을 사용 <xref:Microsoft.Office.Tools.Word.Document> 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet> . 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
@@ -105,16 +105,16 @@ ms.locfileid: "99970376"
 ### <a name="example-that-uses-native-word-objects"></a>네이티브 Word 개체를 사용 하는 예제
  다음 코드 예제에서는 Word 문서에 대한 애플리케이션 수준 이벤트를 처리하는 방법을 보여 줍니다. `CreateDocument` 메서드는 새 문서를 만든 다음 이 문서가 저장되지 않도록 하는 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 이벤트 처리기를 정의합니다. 이벤트는 개체에 대해 발생 하는 응용 프로그램 수준 이벤트이 <xref:Microsoft.Office.Interop.Word.Application> 고, 이벤트 처리기는 `Doc` 매개 변수를 개체와 비교 `document1` 하 여이 저장 된 `document1` 문서를 나타내는지 여부를 확인 해야 합니다.
 
- [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
- [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet12":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet12":::
 
 ### <a name="examples-that-use-a-host-item"></a>호스트 항목을 사용 하는 예제
  다음 코드 예제에서는 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 호스트 항목의 <xref:Microsoft.Office.Tools.Word.Document> 이벤트를 처리하여 이 프로세스를 간소화합니다. `CreateDocument2`이 예제의 메서드는 <xref:Microsoft.Office.Tools.Word.Document> 개체를 확장 하는를 생성 한 `document2` 다음 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 문서가 저장 되지 않도록 하는 이벤트 처리기를 정의 합니다. 이벤트 처리기는가 저장 된 경우에만 호출 되 `document2` 고 저장 된 문서를 확인 하기 위해 추가 작업을 수행 하지 않고도 저장 작업을 취소할 수 있습니다.
 
  다음 코드 예제에서는 이 작업을 보여 줍니다.
 
- [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
- [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet13":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet13":::
 
 ## <a name="determine-whether-an-office-object-has-been-extended"></a><a name="HasVstoObject"></a> Office 개체가 확장 되었는지 확인
  확장 개체가 특정 네이티브 Office 개체에 대해 이미 생성되었는지 확인하려면 `HasVstoObject` 메서드를 사용합니다. 이 메서드는 확장 개체가 이미 생성 된 경우 **true** 를 반환 합니다.
@@ -123,7 +123,7 @@ ms.locfileid: "99970376"
 
  `HasVstoObject` 메서드는 지정된 Office 개체에 확장 개체가 있는 경우에만 코드를 실행하려는 경우 유용합니다. 예를 들어 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 문서를 저장 하기 전에 문서에서 관리 되는 컨트롤을 제거 하는 이벤트를 처리 하는 WORD VSTO 추가 기능이 있는 경우 메서드를 사용 `HasVstoObject` 하 여 문서가 확장 되었는지 여부를 확인 합니다. 문서가 확장 되지 않은 경우 관리 되는 컨트롤을 포함할 수 없으며 이벤트 처리기는 문서에서 컨트롤을 정리 하려고 하지 않고를 반환할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)

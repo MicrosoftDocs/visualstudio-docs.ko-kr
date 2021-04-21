@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a3301abf4807c02e1ed3e330e27c609a721bf48d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af3cc1d9c34bf0d6dc503ca2aabe35de5848265c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946152"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827606"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>방법: 프로그래밍 방식으로 문서 및 문서 부분 보호
   Microsoft Office Word 문서에 보호를 추가하여 사용자의 문서 편집을 방지할 수 있습니다.
@@ -42,20 +42,20 @@ ms.locfileid: "99946152"
 
 1. 프로젝트에서 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 클래스의 `ThisDocument` 메서드를 호출합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet111":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet111":::
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>문서 보호에서 책갈피 컨트롤을 제외하려면
 
 1. <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 메서드를 사용하여 전체 문서를 보호합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet111":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet111":::
 
 2. 문서 보호에서 `Bookmark1` 을 제외합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
-     [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet112":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet112":::
 
 ### <a name="compile-the-code"></a>코드 컴파일
  이러한 코드 예제를 사용하려면 프로젝트의 `ThisDocument` 클래스에서 실행합니다. 이러한 코드 예제에서는 이 코드가 나타나는 문서에 <xref:Microsoft.Office.Tools.Word.Bookmark> 이라는 기존 `Bookmark1` 컨트롤이 있다고 가정합니다.
@@ -68,10 +68,10 @@ ms.locfileid: "99946152"
 
      다음 코드 예제에서는 활성 문서를 보호합니다. 이 코드 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet111":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet111":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [문서 수준 솔루션의 문서 보호](../vsto/document-protection-in-document-level-solutions.md)
 - [Office 문서에 대 한 암호 보호](../vsto/password-protection-on-office-documents.md)
 - [방법: 제한 된 권한으로 문서 뒤에 코드를 실행할 수 있도록 허용](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

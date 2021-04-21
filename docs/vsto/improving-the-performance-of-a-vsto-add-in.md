@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5c965c911977f657fe8c5252eabc1739564cf8c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29035f4867421ed3f05e5f0c3a5c196f58b7ab34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958741"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825123"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO 추가 기능의 성능 향상
   Office 애플리케이션용으로 만드는 VSTO 추가 기능을 최적화하여 신속하게 시작하고, 종료하고, 항목을 열고, 다른 작업을 수행할 수 있는 향상된 환경을 사용자에게 제공할 수 있습니다. VSTO 추가 기능이 Outlook용인 경우 낮은 성능 때문에 VSTO 추가 기능이 사용하지 않도록 설정될 가능성도 줄일 수 있습니다. 다음 전략을 실행하여 VSTO 추가 기능의 성능을 높일 수 있습니다.
@@ -106,8 +106,8 @@ ms.locfileid: "99958741"
 
  다음 예에서는 필드 값을 기준으로 리본 개체를 반환 합니다.
 
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs" id="Snippet1":::
 
 ## <a name="perform-expensive-operations-in-a-separate-execution-thread"></a><a name="Perform"></a> 별도의 실행 스레드에서 비용이 많이 드는 작업 수행
  별도의 스레드에서 시간이 많이 걸리는 작업(예: 장기 실행 작업, 데이터베이스 연결 또는 다른 종류의 네트워크 호출)을 수행하는 것이 좋습니다. 자세한 내용은 [Office의 스레딩 지원](../vsto/threading-support-in-office.md)을 참조 하세요.
@@ -115,7 +115,7 @@ ms.locfileid: "99958741"
 > [!NOTE]
 > Office 개체 모델을 호출하는 모든 코드는 주 스레드에서 실행되어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [요청 시 VSTO 추가 기능 로드](/archive/blogs/andreww/demand-loading-vsto-add-ins)
 - [Office 추가 기능에서 CLR 지연 로드](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)

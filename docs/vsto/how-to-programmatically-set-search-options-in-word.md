@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e583b7deb9fbe37f40e582d2c8a946332dd00ffa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 605f782bf6dc3bb56b52bdcd896d1c6419cf5f51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913468"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825032"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>방법: 프로그래밍 방식으로 Word에서 검색 옵션 설정
   Microsoft Office Word 문서에서 선택 항목에 대 한 검색 옵션을 설정 하는 방법에는 두 가지가 있습니다.
@@ -42,7 +42,7 @@ ms.locfileid: "99913468"
 
 1. 개체의 속성을 설정 <xref:Microsoft.Office.Interop.Word.Find> 하 여 텍스트에 대 한 선택 항목을 앞 으로 검색 합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet76":::
 
 ## <a name="use-execute-method-arguments"></a>Execute 메서드 인수 사용
  다음 코드에서는 개체의 메서드를 사용 하 여 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> <xref:Microsoft.Office.Interop.Word.Find> 현재 선택 영역 내에서 텍스트를 검색 합니다. 검색 조건 (예: 전달 검색, 래핑 및 검색할 텍스트)은 메서드의 매개 변수로 전달 됩니다 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .
@@ -51,10 +51,10 @@ ms.locfileid: "99913468"
 
 1. 검색 조건을 메서드의 매개 변수로 전달 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 하 여 선택한 텍스트에 대해 앞으로 검색 합니다. 
 
-     [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
-     [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet77":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet77":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 프로그래밍 방식으로 문서에서 텍스트 검색 및 바꾸기](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
 - [방법: 프로그래밍 방식으로 문서에서 찾은 항목 반복](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [방법: 프로그래밍 방식으로 검색 후 선택 영역 복원](../vsto/how-to-programmatically-restore-selections-after-searches.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 90a065ec98da440af6e52a191e11f4371575c2d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7cda46330967ef2b2b08db2109a030bbef8cace
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964227"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828555"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>방법: 프로그래밍 방식으로 Visio 문서에서 셰이프 복사 및 붙여넣기
   문서 한 페이지의 셰이프를 프로그래밍 방식으로 복사하고 동일한 문서의 새 페이지에 붙여넣을 수 있습니다. 기본 위치(활성 창의 가운데)에 붙여넣을 수도 있고 아니면 원래 페이지의 동일한 좌표 위치에 붙여넣을 수도 있습니다.
@@ -33,8 +33,8 @@ ms.locfileid: "99964227"
 
 - 다음 예제에서는 첫 번째 페이지에서 셰이프를 복사하여 두 번째 페이지의 가운데에 붙여넣는 방법을 보여 줍니다.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet14":::
 
 ## <a name="copy-and-paste-shapes-with-the-same-positions"></a>동일한 위치를 사용 하 여 셰이프 복사 및 붙여넣기
  개체 모델에 대한 세부 정보는 VBA 참조 설명서에서 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](/office/vba/api/Visio.Shape.DrawRectangle), [Microsoft.Office.Interop.Visio.Shape.DrawOval](/office/vba/api/Visio.Shape.DrawOval), [Microsoft.Office.Interop.Visio.Shape.Copy](/office/vba/api/Visio.Shape.Copy), [Microsoft.Office.Interop.Visio.Shape.Paste](/office/vba/api/Visio.Shape.Paste) 메서드 및 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](/office/vba/api/Visio.viscutcopypastecodes) 플래그를 참조하세요.
@@ -45,10 +45,10 @@ ms.locfileid: "99964227"
 
 - 다음 예제에서는 첫 번째 페이지에서 셰이프를 복사하고 원래 좌표 위치를 사용하여 두 번째 페이지에 붙여넣는 방법을 보여 줍니다.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet15":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visio 솔루션](../vsto/visio-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [Visio 셰이프 작업](../vsto/working-with-visio-shapes.md)

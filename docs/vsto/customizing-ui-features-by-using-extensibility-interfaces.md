@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f84a694c9a18b6ec1c64204c8150ff721633278d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86f4e5f286d817fb3f657e40399eccd3a2b4de73
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962472"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828035"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>확장성 인터페이스를 사용 하 여 UI 기능 사용자 지정
   Visual Studio의 Office 개발 도구에는 많은 구현 세부 사항을 처리하는 클래스와 디자이너가 제공되며, 이를 사용하여 VSTO 추가 기능에 사용자 지정 작업창, 리본 사용자 지정, Outlook 양식 영역을 만들 수 있습니다. 하지만 특별한 요구 사항이 있는 경우 각각의 기능에 대한 *확장성 인터페이스* 를 직접 구현할 수도 있습니다.
@@ -68,18 +68,18 @@ ms.locfileid: "99962472"
   > [!NOTE]
   > `TaskPaneUI` 클래스를 COM에 노출하려면 프로젝트에 대해 **COM interop 등록** 속성도 설정해야 합니다.
 
-  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
-  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb" id="Snippet1":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs" id="Snippet1":::
 
   구현에 대 한 자세한 내용은 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> Microsoft Office 설명서의 [2007 Office system에서 사용자 지정 작업창 만들기](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) 를 참조 하세요.
 
 ### <a name="example-of-overriding-the-requestservice-method"></a>RequestService 메서드 재정의 예제
  다음 코드 예제에서는 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 메서드를 재정의하여 이전 코드 예제의 `TaskPaneHelper` 클래스 인스턴스를 반환하는 방법을 보여 줍니다. 또한 *serviceGuid* 매개 변수 값을 확인하여 요청되는 인터페이스를 파악한 후 이 인터페이스를 구현하는 개체를 반환합니다.
 
- [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs" id="Snippet2":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 개발 샘플 및 연습](../vsto/office-development-samples-and-walkthroughs.md)
 - [VSTO 추가 기능 프로그램](../vsto/programming-vsto-add-ins.md)
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)

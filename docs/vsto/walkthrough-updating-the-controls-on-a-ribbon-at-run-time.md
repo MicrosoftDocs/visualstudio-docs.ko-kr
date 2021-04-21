@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cf9bbe73bd43fa01aec8e7d0dec42fd8301ff30
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937188"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827528"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>연습: 런타임에 리본 메뉴의 컨트롤 업데이트
 
@@ -82,7 +82,7 @@ ms.locfileid: "99937188"
 
 3. 새 리본의 이름을 **Customerribbon** 로 변경한 다음 **추가** 를 클릭 합니다.
 
-     *CustomerRibbon.cs* 또는 *customerribbon .Vb* 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시 됩니다.
+     *Customerribbon .cs* 또는 *customerribbon .Vb* 파일이 리본 디자이너에서 열리고 기본 탭 및 그룹이 표시 됩니다.
 
 4. 리본 디자이너를 클릭하여 선택합니다.
 
@@ -128,7 +128,7 @@ ms.locfileid: "99937188"
 
      이렇게 하면 **고객 구매** 그룹이 **메시지** 탭의 **클립보드** 그룹 앞에 배치 됩니다.
 
-## <a name="create-the-data-source"></a>데이터 원본 만들기
+## <a name="create-the-data-source"></a>데이터 원본 생성
 
 **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
@@ -152,7 +152,7 @@ ms.locfileid: "99937188"
 
 8. 다음 표의 옆에 있는 확인란을 각각 선택합니다.
 
-    1. **통해**
+    1. **고객**
 
     2. **주문 정보**
 
@@ -180,7 +180,7 @@ ms.locfileid: "99937188"
 
     이 어셈블리에는 LINQ(Language-Integrated Queries)를 사용하기 위한 클래스가 포함되어 있습니다. LINQ를 사용하여 Northwind 데이터베이스의 데이터로 사용자 지정 그룹의 컨트롤을 채웁니다.
 
-3. **솔루션 탐색기** 에서 **CustomerRibbon.cs** 또는 **customerribbon .vb** 를 클릭 하 여 선택 합니다.
+3. **솔루션 탐색기** 에서 **customerribbon .Cs** 또는 **customerribbon .vb** 를 클릭 하 여 선택 합니다.
 
 4. **보기** 메뉴에서 **코드** 를 클릭합니다.
 
@@ -188,18 +188,18 @@ ms.locfileid: "99937188"
 
 5. 리본 코드 파일 맨 위에 다음 문을 추가합니다. 이러한 문을 통해 Outlook PIA(주 interop 어셈블리)의 네임스페이스 및 LINQ 네임스페이스에 쉽게 액세스할 수 있습니다.
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet1":::
 
 6. 클래스 내에 다음 코드를 추가 `CustomerRibbon` 합니다. 이 코드는 Northwind 데이터베이스의 Customer, Orders, Order Details 및 Product 테이블 정보를 저장하는 데 사용할 데이터 테이블 및 테이블 어댑터를 선언합니다.
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet2":::
 
 7. `CustomerRibbon` 클래스에 다음 코드 블록을 추가합니다. 이 코드는 런타임에 리본 메뉴에 대 한 컨트롤을 만드는 세 가지 도우미 메서드를 추가 합니다.
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet3":::
 
 8. `CustomerRibbon_Load` 이벤트 처리기 메서드를 다음 코드로 바꿉니다. 이 코드는 LINQ 쿼리를 사용하여 다음 작업을 수행합니다.
 
@@ -207,8 +207,8 @@ ms.locfileid: "99937188"
 
    - `PopulateSalesOrderInfo` 도우미 메서드를 호출합니다. 이 메서드는 현재 선택 된 고객과 관련 된 판매 주문 번호를 사용 하 여 **ProductsPurchased** 메뉴를 업데이트 합니다.
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet4":::
 
 9. `CustomerRibbon` 클래스에 다음 코드를 추가합니다. 이 코드는 LINQ 쿼리를 사용하여 다음 작업을 수행합니다.
 
@@ -218,8 +218,8 @@ ms.locfileid: "99937188"
 
    - 각 단추에 이벤트 처리기를 추가합니다.
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet6":::
 
 10. **솔루션 탐색기** 에서 리본 코드 파일을 두 번 클릭 합니다.
 
@@ -235,13 +235,13 @@ ms.locfileid: "99937188"
 
     - `PopulateMailItem` 도우미 메서드를 호출하고 선택한 고객 이름인 현재 텍스트를 전달합니다. 이 메서드는 새 메일 메시지의 받는 사람, 제목 및 본문 필드를 채웁니다.
 
-      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]
+      :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet5":::
+      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet5":::
 
 13. `Click` 클래스에 다음 `CustomerRibbon` 이벤트 처리기를 추가합니다. 이 코드는 새 메일 메시지의 Body 필드에 선택한 제품의 이름을 추가 합니다.
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet8":::
 
 14. `CustomerRibbon` 클래스에 다음 코드를 추가합니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -249,8 +249,8 @@ ms.locfileid: "99937188"
 
     - 새 메일 메시지의 제목 및 본문 필드에 텍스트를 추가 합니다.
 
-      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]
+      :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet7":::
+      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet7":::
 
 ## <a name="test-the-controls-in-the-custom-group"></a>사용자 지정 그룹의 컨트롤 테스트
 
@@ -298,7 +298,7 @@ Outlook에서 새 메일 양식을 열면 리본 메뉴의 **메시지** 탭에 
 
 - Outlook에 사용자 지정 작업창을 추가합니다. 자세한 내용은 [사용자 지정 작업 창](../vsto/custom-task-panes.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)

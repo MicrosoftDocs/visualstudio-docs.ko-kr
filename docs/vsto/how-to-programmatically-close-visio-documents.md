@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c1592bd500103a2db42934ab8f81392a5f1fa0d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8802cc34555fcb695c5554209255cb8fd9f154c2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903690"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825305"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>방법: 프로그래밍 방식으로 Visio 문서 닫기
   `Microsoft.Office.Interop.Visio.Document.Close` 메서드를 사용하여 활성 Microsoft Office Visio 문서를 닫을 수 있습니다.
@@ -35,10 +35,10 @@ ms.locfileid: "99903690"
 
      다음 코드 예제를 사용 하려면 `ThisAddIn` Visio 용 VSTO 추가 기능 프로젝트의 클래스에서 실행 합니다.
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet7":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Visio 솔루션](../vsto/visio-solutions.md)
 - [Visio 개체 모델 개요](../vsto/visio-object-model-overview.md)
 - [방법: 프로그래밍 방식으로 새 Visio 문서 만들기](../vsto/how-to-programmatically-create-new-visio-documents.md)

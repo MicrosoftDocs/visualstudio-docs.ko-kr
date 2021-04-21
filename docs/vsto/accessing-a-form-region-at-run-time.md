@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62d8236b987afbb7dc9d5e4462b79ffb4fe00bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbd60f5773392af2066e4693751dd6fff99128b9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928876"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827970"
 ---
 # <a name="access-a-form-region-at-run-time"></a>런타임에 양식 영역 액세스
 
@@ -38,24 +38,24 @@ ms.locfileid: "99928876"
 
  다음 예제에서는 현재 포커스가 있는 검사기에 나타나는 양식 영역 컬렉션을 가져옵니다. 이 예제에서는 `formRegion1` 이라는 컬렉션의 양식 영역에 액세스하고 텍스트 상자에 나타나는 텍스트를 `Hello World`로 설정합니다.
 
- [!code-vb[Trin_Outlook_FR_Access#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#2)]
- [!code-csharp[Trin_Outlook_FR_Access#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet2":::
 
 ## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>특정 Outlook 탐색기 창에 표시 되는 양식 영역에 액세스
  특정 Outlook 탐색기에 나타나는 모든 양식 영역에 액세스하려면 `FormRegions` 클래스의 `Globals` 속성을 호출하고 탐색기를 나타내는 <xref:Microsoft.Office.Interop.Outlook.Explorer> 개체를 전달합니다.
 
  다음 예제에서는 현재 포커스가 있는 탐색기에 나타나는 양식 영역 컬렉션을 가져옵니다. 이 예제에서는 `formRegion1` 이라는 컬렉션의 양식 영역에 액세스하고 텍스트 상자에 나타나는 텍스트를 `Hello World`로 설정합니다.
 
- [!code-vb[Trin_Outlook_FR_Access#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#3)]
- [!code-csharp[Trin_Outlook_FR_Access#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#3)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet3":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="access-all-form-regions"></a>모든 양식 영역 액세스
  모든 탐색기 및 모든 검사기에 나타나는 모든 양식 영역에 액세스하려면 `FormRegions` 클래스의 `Globals` 속성을 호출합니다.
 
  다음 예제에서는 모든 탐색기 및 모든 검사기에 나타나는 양식 영역 컬렉션을 가져옵니다. 그런 다음 `formRegion1` 이라는 양식 영역에 액세스하고 텍스트 상자에 나타나는 텍스트를 `Hello World`로 설정합니다.
 
- [!code-vb[Trin_Outlook_FR_Access#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Access#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet1":::
 
 ## <a name="access-controls-on-a-form-region"></a>양식 영역에 대 한 액세스 제어
  `Globals` 클래스를 사용하여 양식 영역의 컨트롤에 액세스하려면 컨트롤에서 양식 영역 코드 파일 외부의 코드에 액세스할 수 있도록 만들어야 합니다.
@@ -74,7 +74,7 @@ ms.locfileid: "99928876"
 
  Visual Basic에서 속성을 만드는 방법에 대 한 자세한 내용은 [방법: 속성 만들기 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [연습: Outlook 양식 영역 디자인](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [방법: Outlook 추가 기능 프로젝트에 양식 영역 추가](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

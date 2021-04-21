@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f9488a15f851446c5779bdb1a4572e69a1cf3053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf079727581b9cec4b6cb77a0a0c3f0b503b3a0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917522"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825526"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>방법: Word 문서 또는 Excel 통합 문서에 작업 창 추가
   Microsoft Office Word 문서 또는 Microsoft Excel 통합 문서에 작업 창을 추가 하려면 먼저 Windows Forms 사용자 정의 컨트롤을 만듭니다. 그런 다음 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` 프로젝트에서 필드 (Word) 또는 `ThisWorkbook.ActionsPane` 필드 (Excel)의 속성에 사용자 정의 컨트롤을 추가 합니다.
@@ -53,14 +53,14 @@ ms.locfileid: "99917522"
 
 5. 단추의 이벤트 처리기에 코드를 추가 <xref:System.Windows.Forms.Control.Click> 합니다. 다음 예제에서는 Microsoft Office Word 문서에 대 한 코드를 보여 줍니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb" id="Snippet12":::
 
 6. C #에서는 단추 클릭에 대 한 이벤트 처리기를 추가 해야 합니다. 호출 후 생성자에이 코드를 추가할 수 있습니다 `HelloControl` `InitializeComponent` .
 
      이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs" id="Snippet13":::
 
 ## <a name="add-the-user-control-to-the-actions-pane"></a>작업 창에 사용자 정의 컨트롤 추가
  작업 창을 표시 하려면 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` 필드 (Word) 또는 `ThisWorkbook.ActionsPane` 필드 (Excel)의 속성에 사용자 정의 컨트롤을 추가 합니다.
@@ -69,15 +69,15 @@ ms.locfileid: "99917522"
 
 1. `ThisDocument`클래스 수준 선언으로 또는 클래스에 다음 코드를 추가 `ThisWorkbook` 합니다 (메서드에이 코드를 추가 하지 않음).
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet14":::
 
 2. 클래스의 `ThisDocument_Startup` 이벤트 처리기 `ThisDocument` 또는 `ThisWorkbook_Startup` 클래스의 이벤트 처리기에 다음 코드를 추가 `ThisWorkbook` 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet15":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [작업 창 개요](../vsto/actions-pane-overview.md)
 - [연습: 작업 창에서 문서에 텍스트 삽입](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)

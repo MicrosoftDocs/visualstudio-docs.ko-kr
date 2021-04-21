@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbda0a4b7977f962751ed9803bd1b39103f67679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bc1b674caf46dc84ff7bf57c983131b79cfde51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968829"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827814"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office 솔루션의 오류 문제 해결
   Visual Studio에서 Office 솔루션을 개발하는 동안 다음 작업을 수행할 때 문제가 발생할 수 있습니다.
@@ -121,7 +121,7 @@ ms.locfileid: "99968829"
 
  예를 들어 <xref:Microsoft.Office.Interop.Excel.Application> 개체에는 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 이벤트와 <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> 속성이 있습니다. <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 이벤트를 처리하려면 <xref:Microsoft.Office.Interop.Excel.Application>을 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 인터페이스로 캐스팅합니다. 다음 코드 예제에서는 Excel용 문서 수준 프로젝트에서 이 작업을 수행하는 방법을 보여 줍니다.
 
- [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
  Office Pia의 이벤트 인터페이스에 대 한 자세한 내용은 [office 주 interop 어셈블리의 클래스 및 인터페이스 개요](/previous-versions/office/office-12//ms247299(v=office.12))를 참조 하세요.
 
@@ -157,18 +157,18 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="references-to-office-classes-are-not-recognized"></a>Office 클래스에 대 한 참조를 인식할 수 없습니다.
  응용 프로그램 등의 일부 클래스 이름은 및와 같은 여러 네임 스페이스에 <xref:Microsoft.Office.Interop.Word> 있습니다 <xref:System.Windows.Forms> . 이러한 이유로  / 프로젝트 템플릿 맨 위에 있는 Imports **using** 문에는 다음과 같은 축약형 한정 상수가 포함 됩니다.
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet2":::
 
  이러한 **Imports** / **using** 문을 사용 하려면 Word 또는 Excel 한정자를 사용 하 여 Office 클래스에 대 한 참조를 구분 해야 합니다. 예를 들면 다음과 같습니다.
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet3":::
 
  비정규화된 선언을 사용하는 경우 오류가 발생합니다. 예를 들면 다음과 같습니다.
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#4)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#4)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet4":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet4":::
 
  Word 또는 Excel 네임 스페이스를 가져오고 그 안에 있는 모든 클래스에 액세스할 수 있는 경우에도 Word 또는 Excel을 사용 하 여 모든 형식을 정규화 하 여 네임 스페이스 모호성을 제거 해야 합니다.
 
@@ -215,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  대화 상자에서 **예** 또는 **아니요** 를 클릭 하면 Visual Studio는 Excel 또는 Word 프로세스를 종료 하 고 디버거를 중지 합니다. 이 대화 상자를 표시하지 않고 프로젝트 디버깅을 중지하려면 Visual Studio에서 디버거를 중지하는 대신 Excel 또는 Word를 직접 종료합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션 문제 해결](../vsto/troubleshooting-office-solutions.md)
 - [Office 솔루션 보안 문제 해결](../vsto/troubleshooting-office-solution-security.md)
 - [Office 솔루션 배포 문제 해결](../vsto/troubleshooting-office-solution-deployment.md)

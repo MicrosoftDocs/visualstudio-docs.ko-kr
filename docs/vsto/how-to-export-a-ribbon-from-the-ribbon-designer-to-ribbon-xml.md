@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a0511fd103345859f96b18f333465106505057a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1514410094deaf9c77e088c3b69e2d39d29175c2
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953983"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825591"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>방법: 리본 디자이너에서 리본 XML로 리본 메뉴 내보내기
   **리본 (비주얼 디자이너)** 항목은 가능한 모든 유형의 리본 사용자 지정을 지원 하지 않습니다. 고급 방법으로 리본을 사용자 지정 하기 위해 디자이너에서 리본 XML로 리본 메뉴를 내보내고 XML을 직접 편집할 수 있습니다.
@@ -54,8 +54,8 @@ ms.locfileid: "99953983"
 
      코드의 주석 처리를 해제 한 후에는 다음 예제와 유사 합니다. 이 예제에서는 리본 클래스가 호출 됩니다 `MyRibbon` .
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 6. 리본 XML 코드 파일로 전환 하 고 `Ribbon Callbacks` 지역을 찾습니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "99953983"
 
      콜백 메서드를 작성 하 고 RibbonX 프로그래밍 모델을 사용 하는 방법에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

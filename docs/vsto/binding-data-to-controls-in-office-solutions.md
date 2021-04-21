@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 459c50b5f8135756f85de852a62de44b3878148d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccc45e9ec389e265e69c81baaf569aa3eb3c978b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882481"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825630"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Office 솔루션의 컨트롤에 데이터 바인딩
   컨트롤이 자동으로 데이터를 표시할 수 있도록 Windows Forms 컨트롤 및 Microsoft Office Word 문서 또는 Microsoft Office Excel 워크시트의 *호스트 컨트롤* 을 데이터 원본에 바인딩할 수 있습니다. 애플리케이션 수준과 문서 수준 프로젝트 둘 다 데이터를 컨트롤에 바인딩할 수 있습니다.
@@ -43,8 +43,8 @@ ms.locfileid: "99882481"
 
  다음 예제에서는 문서 수준 프로젝트에서 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 속성을 데이터 요소에 바인딩하는 방법에 대해 설명합니다.
 
- [!code-vb[Trin_BindableComponent#4](../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb#4)]
- [!code-csharp[Trin_BindableComponent#4](../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs#4)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_BindableComponent/Sheet1.vb" id="Snippet4":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_BindableComponent/Sheet1.cs" id="Snippet4":::
 
  간단한 데이터 바인딩을 보여 주는 연습은 연습: 문서 수준 프로젝트에 대 한 [문서 수준 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md) 및 연습: vsto 추가 기능 프로젝트에 대 한 [vsto 추가 기능 프로젝트의 단순 데이터 바인딩](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md) 을 참조 하세요.
 
@@ -55,8 +55,8 @@ ms.locfileid: "99882481"
 
  다음 코드 예제는 두 개의 <xref:System.Data.DataSet> 개체를 사용하여 <xref:System.Data.DataTable> 를 만들고 테이블 중 하나를 데이터로 채웁니다. 그런 다음 코드가 <xref:Microsoft.Office.Tools.Excel.ListObject> 를 데이터가 포함된 테이블에 바인딩합니다. 이 예제는 Excel 문서 수준 프로젝트에 대한 것입니다.
 
- [!code-csharp[Trin_ExcelListObject#18](../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs#18)]
- [!code-vb[Trin_ExcelListObject#18](../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb#18)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelListObject/Trin_ExcelListObject.cs" id="Snippet18":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelListObject/Sheet1.vb" id="Snippet18":::
 
  복합 데이터 바인딩을 보여 주는 연습은 연습: 문서 수준 프로젝트에 대 한 [문서 수준 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md) 및 연습: vsto 추가 기능 프로젝트에 대 한 [vsto 추가 기능 프로젝트의 복합 데이터 바인딩](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md) 을 참조 하세요.
 
@@ -99,7 +99,7 @@ ms.locfileid: "99882481"
 
  자세한 내용은 [방법: 호스트 컨트롤의 데이터로 데이터 소스 업데이트](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [데이터 바인딩 및 Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)
 - [방법: Windows Form에 단순 바인딩된 컨트롤 만들기](/dotnet/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form)
 - [Windows Forms 컨트롤을 Visual Studio의 데이터에 바인딩](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

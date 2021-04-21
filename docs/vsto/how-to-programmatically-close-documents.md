@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96a18245e477000e1d4969a3e1e597443c6f3372
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b31a35ac1fa452f526d109dd93ca8264f78947b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903728"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825357"
 ---
 # <a name="how-to-programmatically-close-documents"></a>방법: 프로그래밍 방식으로 문서 닫기
   활성 문서를 닫거나 닫을 문서를 지정할 수 있습니다.
@@ -37,8 +37,8 @@ ms.locfileid: "99903728"
     > [!NOTE]
     > 이 예제에서는 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 값을 *SaveChanges* 매개 변수에 전달하여 변경 내용을 저장하거나 사용자에게 메시지를 표시하지 않고 닫습니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet3":::
 
 ### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>VSTO 추가 기능에서 활성 문서를 닫으려면
 
@@ -47,8 +47,8 @@ ms.locfileid: "99903728"
     > [!NOTE]
     > 이 예제에서는 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 값을 *SaveChanges* 매개 변수에 전달하여 변경 내용을 저장하거나 사용자에게 메시지를 표시하지 않고 닫습니다.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#3](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="close-a-document-that-you-specify-by-name"></a>이름으로 지정한 문서를 닫습니다.
  이름으로 지정한 문서를 닫는 방법은 VSTO 추가 기능과 문서 수준 사용자 지정에서 동일합니다.
@@ -60,10 +60,10 @@ ms.locfileid: "99903728"
     > [!NOTE]
     > 이 예제에서는 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 값을 *SaveChanges* 매개 변수에 전달하여 변경 내용을 저장하거나 사용자에게 메시지를 표시하지 않고 닫습니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#4)]
-     [!code-csharp[Trin_VstcoreWordAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet4":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)
 - [방법: 프로그래밍 방식으로 문서 저장](../vsto/how-to-programmatically-save-documents.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)

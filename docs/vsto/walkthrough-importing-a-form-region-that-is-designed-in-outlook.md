@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ce8c334be74f2643bfc7fa263b01a74db109eb7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969154"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827749"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>연습: Outlook에서 디자인 한 양식 영역 가져오기
   이 연습에서는 **새 양식 영역** 마법사를 사용하여 Microsoft Office Outlook에서 양식 영역을 디자인한 다음 Outlook VSTO 추가 기능 프로젝트로 양식 영역을 가져오는 방법을 보여 줍니다. Outlook에서 양식 영역을 디자인하면 Outlook 데이터에 바인딩되는 양식 영역에 네이티브 Outlook 컨트롤을 추가할 수 있습니다. 양식 영역을 가져온 후에 각 컨트롤의 이벤트를 처리할 수 있습니다.
@@ -151,7 +151,7 @@ ms.locfileid: "99969154"
 
 7. **이 양식 영역을 표시할 메시지 클래스를 지정하세요.** 페이지에서 **이 양식 영역을 표시할 사용자 지정 메시지 클래스** 필드에 **IPM.Task.TaskFormRegion** 을 입력한 다음 **마침** 을 클릭합니다.
 
-     *TaskFormRegion.cs* 또는 *TaskFormRegion* 파일이 프로젝트에 추가 됩니다.
+     *TaskFormRegion* 또는 *TaskFormRegion* 파일이 프로젝트에 추가 됩니다.
 
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>양식 영역에 있는 컨트롤의 이벤트를 처리 합니다.
  이제 프로젝트에 양식 영역이 있으므로 Outlook의 양식 영역에 추가한 단추의 `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` 이벤트를 처리하는 코드를 추가할 수 있습니다.
@@ -160,14 +160,14 @@ ms.locfileid: "99969154"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>양식 영역의 컨트롤 이벤트를 처리하려면
 
-1. **솔루션 탐색기** 에서 *TaskFormRegion.cs* 또는 *TaskFormRegion* 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 *TaskFormRegion* 또는 *TaskFormRegion* 를 마우스 오른쪽 단추로 클릭 한 다음 **코드 보기** 를 클릭 합니다.
 
-    *TaskFormRegion.cs* 또는 *TaskFormRegion* 가 코드 편집기에서 열립니다.
+    *TaskFormRegion* 또는 *TaskFormRegion* 가 코드 편집기에서 열립니다.
 
 2. `TaskFormRegion` 클래스에 다음 코드를 추가합니다. 이 코드는 양식 영역의 콤보 상자를 Outlook 작업 폴더에 있는 각 작업의 제목 줄로 채웁니다.
 
-    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet1":::
 
 3. `TaskFormRegion` 클래스에 다음 코드를 추가합니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -177,13 +177,13 @@ ms.locfileid: "99969154"
 
    - 작업 제목을 양식 영역의 숨겨진 필드에 추가합니다. 숨겨진 필드는 이러한 값을 Outlook 항목의 일부로 저장합니다.
 
-     [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet2":::
 
 4. `TaskFormRegion` 클래스에 다음 코드를 추가합니다. 이 코드에서는 이전 단계에서 설명한 `FindTaskBySubjectName` 도우미 메서드를 제공합니다.
 
-    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet3":::
 
 5. `TaskFormRegion` 클래스에 다음 코드를 추가합니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -193,8 +193,8 @@ ms.locfileid: "99969154"
 
    - `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 및 `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 값을 종속 작업 목록 상자에 추가합니다.
 
-     [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
-     [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet4":::
 
 6. `TaskFormRegion_FormRegionShowing` 이벤트 처리기를 다음 코드로 바꿉니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -202,8 +202,8 @@ ms.locfileid: "99969154"
 
    - 양식 영역이 표시될 때 `RefreshTaskListBox` 도우미 메서드를 호출합니다. 그러면 이전에 항목이 열렸을 때 목록 상자에 추가된 모든 종속 작업이 표시됩니다.
 
-     [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
-     [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet5":::
 
 ## <a name="test-the-outlook-form-region"></a>Outlook 양식 영역 테스트
  양식 영역을 테스트하려면 양식 영역의 사전 요구 작업 목록에 작업을 추가합니다. 사전 요구 작업의 완료 상태를 업데이트한 다음 사전 요구 작업 목록에서 업데이트된 작업의 완료 상태를 봅니다.
@@ -253,7 +253,7 @@ ms.locfileid: "99969154"
 
 - Outlook에 사용자 지정 작업창을 추가 하는 방법에 대 한 자세한 내용은 [사용자 지정 작업](../vsto/custom-task-panes.md)창을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 양식 영역 액세스](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook 양식 영역 만들기](../vsto/creating-outlook-form-regions.md)
 - [Outlook 양식 영역 만들기 지침](../vsto/guidelines-for-creating-outlook-form-regions.md)

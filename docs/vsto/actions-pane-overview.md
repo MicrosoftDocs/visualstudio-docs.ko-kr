@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61e7ab9f00db6036d3bc8e41b9a2f19cf51f5511
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896766"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828152"
 ---
 # <a name="actions-pane-overview"></a>작업 창 개요
   작업 창은 특정 Microsoft Office Word 문서 또는 Microsoft Office Excel 통합 문서에 연결 되는 사용자 지정 가능한 **문서 작업** 작업창입니다. 작업 창은 Excel의 **XML 원본** 작업 창 또는 Word의 **스타일 및 서식** 작업창과 같은 다른 기본 제공 작업창과 함께 Office 작업창 내에서 호스팅됩니다. Windows Forms 컨트롤 또는 WPF 컨트롤을 사용하여 작업 창 사용자 인터페이스를 디자인할 수 있습니다.
@@ -37,8 +37,8 @@ ms.locfileid: "99896766"
 ## <a name="display-the-actions-pane"></a>작업 창 표시
  작업 창은 <xref:Microsoft.Office.Tools.ActionsPane> 클래스로 표현됩니다. 문서 수준 프로젝트를 만드는 경우 프로젝트에서 `ThisWorkbook`(Excel용) 또는 `ThisDocument`(Word용) 클래스의 `ActionsPane` 필드를 통해 코드에서 이 클래스의 인스턴스를 사용할 수 있습니다. 작업 창을 표시하려면 `ActionsPane` 필드의 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 속성에 Windows Forms 컨트롤을 추가합니다. 다음 코드 예제에서는 `actions`라는 컨트롤을 작업 창에 추가합니다.
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
- [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
  작업 창에 컨트롤을 명시적으로 추가하는 즉시 런타임에 표시됩니다. 작업 창이 표시되면 사용자 작업에 대한 응답으로 컨트롤을 동적으로 추가하거나 제거할 수 있습니다. 일반적으로 사용자가 처음 문서를 열 때 작업 창이 표시되도록 `ThisDocument` 또는 `ThisWorkbook`의 `Startup` 이벤트 처리기에 작업 창을 표시하는 코드를 추가합니다. 그러나 문서의 사용자 작업에 대한 응답으로만 작업 창을 표시하는 것이 좋습니다. 예를 들어 문서에서 컨트롤의 `Click` 이벤트에 코드를 추가할 수 있습니다.
 
@@ -63,18 +63,18 @@ ms.locfileid: "99896766"
 
 - Word의 경우 <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> 문서 동작 작업창을 나타내는 개체의 속성을 **false** 로 설정 합니다. 다음 코드 예제는 프로젝트의 `ThisDocument` 클래스에서 실행해야 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet34":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet34":::
 
 - Excel의 경우 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> 개체의 속성을 <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false** 로 설정 합니다. 다음 코드 예제는 프로젝트의 `ThisWorkbook` 클래스에서 실행해야 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet11":::
 
 - Word 또는 Excel의 경우 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 작업 창을 나타내는 명령 모음의 속성을 **false** 로 설정할 수 있습니다. 다음 코드 예제는 프로젝트의 `ThisDocument` 또는 `ThisWorkbook` 클래스에서 실행해야 합니다.
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet9":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet9":::
 
 ### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>문서를 열 때 작업 창 지우기
  작업 창이 표시 되는 동안 사용자가 문서를 저장 하면 작업 창에 컨트롤이 포함 되어 있는지 여부에 관계 없이 문서를 열 때마다 작업 창이 표시 됩니다. 표시되는 시기를 제어하려는 경우 `ThisDocument` 또는 `ThisWorkbook`의 `Startup` 이벤트 처리기에서 `ActionsPane` 필드의 <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> 메서드를 호출하여 문서를 열 때 작업 창이 표시되지 않도록 합니다.
@@ -114,12 +114,12 @@ ms.locfileid: "99896766"
 |왼쪽 from|작업 창의 왼쪽에서 쌓습니다.|
 |FromRight|작업 창의 오른쪽에서 쌓습니다.|
 |FromTop|작업 창의 위쪽에서 쌓습니다.|
-|None|스택 순서가 정의되지 않습니다. 개발자가 순서를 제어합니다.|
+|없음|스택 순서가 정의되지 않습니다. 개발자가 순서를 제어합니다.|
 
  다음 코드에서는 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 속성을 설정하여 작업 창의 위쪽에서 사용자 정의 컨트롤을 쌓습니다.
 
- [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)]
- [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet10":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet10":::
 
 ## <a name="anchor-controls"></a>앵커 컨트롤
  사용자가 런타임에 작업 창의 크기를 조정하는 경우 작업 창과 함께 컨트롤의 크기가 조정될 수 있습니다. Windows Forms 컨트롤의 <xref:System.Windows.Forms.Control.Anchor%2A> 속성을 사용하여 작업 창에 컨트롤을 고정할 수 있습니다. 동일한 방식으로 사용자 정의 컨트롤에 Windows Forms 컨트롤을 고정할 수도 있습니다. 자세한 내용은 [How to: Anchor controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)를 참조 하세요.
@@ -129,16 +129,16 @@ ms.locfileid: "99896766"
 
  사용자가 자신의 요구에 가장 적합 한 작업창 크기를 선택할 수 있어야 하므로 작업 창의 크기를 프로그래밍 방식으로 조정 하지 않는 것이 좋습니다. 그러나 작업창의 너비를 조정해야 하는 경우 다음 코드를 사용하여 이 작업을 수행할 수 있습니다.
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
- [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet102":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="reposition-the-actions-pane"></a>작업 창 위치 변경
  <xref:Microsoft.Office.Tools.ActionsPane>은 작업창에 포함되어 있으므로 직접 위치를 변경할 수 없습니다. 그러나 작업창을 나타내는 <xref:Microsoft.Office.Core.CommandBar>의 <xref:Microsoft.Office.Core.CommandBar.Position%2A> 속성을 설정하여 프로그래밍 방식으로 작업창을 이동할 수 있습니다.
 
  사용자가 화면에서 사용자의 요구에 가장 적합 한 작업창 위치를 선택할 수 있어야 하므로 작업창의 위치를 프로그래밍 방식으로 조정 하는 것은 권장 되지 않습니다. 그러나 작업창을 특정 위치로 이동해야 하는 경우 다음 코드를 사용하여 이 작업을 수행할 수 있습니다.
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#100)]
- [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet100":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet100":::
 
 > [!NOTE]
 > 최종 사용자는 언제든지 작업창의 위치를 수동으로 변경할 수 있습니다. 프로그래밍 방식으로 지정한 위치에 작업창이 도킹된 상태로 유지되도록 하는 방법은 없습니다. 그러나 방향 변경을 검사하고 작업 창의 컨트롤이 올바른 방향으로 쌓이는지 확인할 수 있습니다. 자세한 내용은 [방법: 작업 창에서 컨트롤 레이아웃 관리](../vsto/how-to-manage-control-layout-on-actions-panes.md)를 참조 하세요.
@@ -147,10 +147,10 @@ ms.locfileid: "99896766"
 
  작업창이 도킹되지 않은 경우 작업창을 나타내는 <xref:Microsoft.Office.Core.CommandBar>의 <xref:Microsoft.Office.Core.CommandBar.Top%2A> 및 <xref:Microsoft.Office.Core.CommandBar.Left%2A> 속성을 설정할 수 있습니다. 다음 코드는 도킹되지 않은 작업창을 문서의 왼쪽 위로 이동합니다.
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
- [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet101":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet101":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션에서 WPF 컨트롤 사용](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)

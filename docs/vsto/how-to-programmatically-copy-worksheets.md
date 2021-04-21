@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67bd9257e96b9c7e22dea2ca6af005ccc74637dc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a5b24d7896ec1f81c7e8d5d4c41a5e6af807b13
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964214"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828581"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>방법: 프로그래밍 방식으로 워크시트 복사
   워크시트의 복사본을 만들고 통합 문서의 기존 워크시트 앞이나 뒤에 해당 워크시트를 삽입할 수 있습니다. 워크시트를 삽입할 위치를 지정하지 않으면 새 워크시트를 포함할 새 통합 문서가 생성됩니다.
@@ -34,17 +34,17 @@ ms.locfileid: "99964214"
 
 1. <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> 메서드를 사용하여 현재 통합 문서의 첫 번째 워크시트를 복사하고 세 번째 시트 뒤에 복사본을 배치합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#16)]
-     [!code-vb[Trin_VstcoreExcelAutomation#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet16":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet16":::
 
 ## <a name="to-add-a-copied-worksheet-to-a-workbook-in-a-vsto-add-in"></a>VSTO 추가 기능에서 통합 문서에 복사된 워크시트를 추가하려면
 
 1. <xref:Microsoft.Office.Interop.Excel.Worksheets.Copy%2A> 메서드를 사용하여 현재 통합 문서의 첫 번째 워크시트를 복사하고 세 번째 시트 뒤에 복사본을 배치합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#12)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet12":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [워크시트 작업](../vsto/working-with-worksheets.md)
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [방법: 프로그래밍 방식으로 통합 문서에 새 워크시트 추가](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)

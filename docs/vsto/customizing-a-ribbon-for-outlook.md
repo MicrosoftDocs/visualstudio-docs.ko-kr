@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c12e92ef77130ca2d9b55ccec737f37c73396c2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df28de0f8a9497fabecff816c26db7593bf349bd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849881"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828061"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Outlook에 대 한 리본 사용자 지정
   Microsoft Office Outlook에서 리본을 사용자 지정할 경우 애플리케이션에서 사용자 지정 리본이 나타나는 위치를 고려해야 합니다. Outlook에서 리본은 사용자가 메일 메시지 만들기 등의 특정 작업을 수행할 때 열리는 창과 기본 애플리케이션 UI(사용자 인터페이스)에 표시됩니다. 이러한 애플리케이션 창의 이름을 검사기라고 합니다.
@@ -47,10 +47,10 @@ ms.locfileid: "99849881"
 
  다음 코드 예제에서는 `Microsoft.Outlook.Mail.Compose` 검사기에만 사용자 지정 리본을 표시하는 방법을 보여 줍니다. 사용자가 새 메일 메시지를 만들 때 열리는 검사기입니다. 표시할 리본은 `GetResourceText()` **리본** 클래스에서 생성 되는 메서드에 지정 됩니다. **Ribbon** 클래스에 대 한 자세한 내용은 [리본 XML](../vsto/ribbon-xml.md)을 참조 하세요.
 
- [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
- [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [런타임에 리본 메뉴에 액세스](../vsto/accessing-the-ribbon-at-run-time.md)
 - [리본 개요](../vsto/ribbon-overview.md)
 - [리본 디자이너](../vsto/ribbon-designer.md)

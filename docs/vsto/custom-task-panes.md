@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c35d963b426fe24a43bef24617f79c042c272e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850037"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828165"
 ---
 # <a name="custom-task-panes"></a>사용자 지정 작업창
   작업창은 일반적으로 Microsoft Office 애플리케이션에서 창의 한쪽에 도킹된 사용자 인터페이스 패널입니다. 사용자 지정 작업창을 사용하면 사용자 고유의 작업창을 만들고 사용자에게 솔루션 기능에 액세스하기 위한 친숙한 인터페이스를 제공할 수 있습니다. 예를 들어 인터페이스에는 문서를 수정하거나 데이터 소스의 데이터를 표시하는 코드를 실행하는 컨트롤이 포함될 수 있습니다.
@@ -66,8 +66,8 @@ ms.locfileid: "99850037"
 ### <a name="instantiate-the-custom-task-pane"></a>사용자 지정 작업창 인스턴스화
  사용자 지정 작업창의 사용자 인터페이스를 포함하는 사용자 정의 컨트롤을 만든 후 <xref:Microsoft.Office.Tools.CustomTaskPane>을 인스턴스화해야 합니다. 이렇게 하려면 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 메서드 중 하나를 호출하여 VSTO 추가 기능의 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection>에 사용자 정의 컨트롤을 전달합니다. 이 컬렉션은 `ThisAddIn` 클래스의 `CustomTaskPanes` 필드로 노출됩니다. 다음 코드 예제는 `ThisAddIn` 클래스에서 실행해야 합니다.
 
- [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
- [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet2":::
 
  <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 메서드는 새로운 <xref:Microsoft.Office.Tools.CustomTaskPane> 개체를 반환합니다. 이 개체를 사용하여 작업창의 모양을 수정하고 사용자 이벤트에 응답할 수 있습니다.
 
@@ -217,7 +217,7 @@ ms.locfileid: "99850037"
 
 - [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 응용 프로그램에 사용자 지정 작업창 추가](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [연습: 사용자 지정 작업창에서 응용 프로그램 자동화](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [연습: 사용자 지정 작업창과 리본 단추 동기화](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

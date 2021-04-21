@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be1625be3d8c3fce409562be948c83a34d40d7b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910318"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825682"
 ---
 # <a name="events-in-office-projects"></a>Office 프로젝트의 이벤트
   각 Office 프로젝트 템플릿은 몇 가지 이벤트 처리기를 자동으로 생성합니다. 문서 수준 사용자 지정의 이벤트 처리기는 VSTO 추가 기능의 이벤트 처리기와 약간 다릅니다.
@@ -91,16 +91,16 @@ ms.locfileid: "99910318"
 
  다음 코드 예제에서는 Word용 문서 수준 프로젝트의 기본 이벤트 처리기를 보여 줍니다.
 
- [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)]
- [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet121":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet121":::
 
  다음 코드 예제에서는 Excel용 문서 수준 프로젝트의 기본 이벤트 처리기를 보여 줍니다.
 
 > [!NOTE]
 > 다음 코드 예제에서는 `Sheet1` 클래스의 이벤트 처리기를 보여 줍니다. 다른 호스트 항목 클래스의 이벤트 처리기 이름은 클래스 이름에 해당합니다. 예를 들어 `Sheet2` 클래스에서 **Startup** 이벤트 처리기의 이름은 `Sheet2_Startup`을 발생시킵니다. 클래스에서 `ThisWorkbook` **Startup** 이벤트 처리기의 이름은 `ThisWorkbook_Startup` 입니다.
 
- [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
- [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet83":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet83":::
 
 ### <a name="order-of-events-in-document-level-excel-projects"></a>문서 수준 Excel 프로젝트의 이벤트 순서
  Excel 프로젝트의 **Startup** 이벤트 처리기는 다음 순서로 호출됩니다.
@@ -154,7 +154,7 @@ ms.locfileid: "99910318"
 > [!NOTE]
 > 레지스트리를 수정하여 Outlook이 종료될 때 Outlook에서 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 이벤트를 강제로 발생시킬 수 있습니다. 그러나 관리자가 이 설정을 되돌리는 경우 `ThisAddIn_Shutdown` 메서드에 추가하는 모든 코드가 Outlook이 종료될 때 더 이상 실행되지 않습니다. 자세한 내용은 [Outlook 2010에 대 한 종료 변경 내용](/previous-versions/office/developer/office-2010/ee720183(v=office.14))을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션 개발](../vsto/developing-office-solutions.md)
 - [방법: Visual Studio에서 Office 프로젝트 만들기](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [문서 수준 사용자 지정 프로그램](../vsto/programming-document-level-customizations.md)

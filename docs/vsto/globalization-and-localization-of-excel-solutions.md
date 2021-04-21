@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d77085808fb54cd0a0517cc6d039e2345a1872
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910302"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827983"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 솔루션 세계화 및 지역화
   이 섹션에는 영어 이외의 Windows 언어 설정이 있는 컴퓨터에서 실행되는 Microsoft Office Excel 솔루션의 특수 고려 사항에 대한 정보를 포함합니다. Microsoft Office 솔루션을 전역화하고 지역화하는 대부분의 측면은 Visual Studio를 사용하여 다른 종류의 솔루션을 만들 때와 동일하게 발생합니다. 일반 정보는 [응용 프로그램 전역화 및 지역화](../ide/globalizing-and-localizing-applications.md)를 참조 하세요.
@@ -79,17 +79,17 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Visual Studio의 Office 개발 도구를 사용하여 만든 솔루션에서 사용되고 COM interop를 통해 Excel로 전달되는 경우 날짜 서식이 en-US 스타일로 지정될 때 동일한 코드는 동일한 결과를 생성합니다.
 
- 예를 들어:
+ 예를 들면 다음과 같습니다.
 
- [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
- [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet6":::
 
  가능하다면 문자열 리터럴 대신 강력한 형식의 데이터를 사용하여 작업해야 합니다. 예를 들어 데이터를 문자열 리터럴로 저장하는 대신 <xref:System.Double>로 저장한 다음 조작을 위해 <xref:System.DateTime> 개체로 변환합니다.
 
  다음 코드 예제는 사용자가 A5 셀에 입력하는 날짜를 <xref:System.Double>로 저장한 다음 A7 셀에 표시하기 위해 <xref:System.DateTime> 개체로 변환합니다. A7 셀은 날짜를 표시하도록 서식이 지정되어야 합니다.
 
- [!code-vb[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#7)]
- [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet7":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet7":::
 
 ### <a name="excel-worksheet-functions"></a>Excel 워크시트 함수
  대부분의 언어 버전의 Excel의 경우 워크시트 함수 이름은 내부적으로 변환됩니다. 그러나 잠재적인 언어 및 COM interop 문제로 인해 코드에서 영어 함수 이름만 사용 하는 것이 좋습니다.
@@ -97,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>외부 데이터를 사용 하는 응용 프로그램
  레거시 시스템에서 내보낸 쉼표로 구분된 값이 포함된 파일(CSV 파일)과 같이 외부 데이터를 사용하거나 열려 있는 모든 코드는 en-US 이외의 서식을 사용하여 이러한 파일을 내보내는 경우에도 영향을 받을 수 있습니다. 데이터베이스가 날짜를 문자열로 저장하지 않거나 이진 형식을 사용하는 작업만 수행하면 모든 값이 이진 형식이 되기 때문에 데이터베이스 액세스가 영향을 받지 않을 수 있습니다. 또한 Excel의 데이터를 사용하여 SQL 쿼리를 구성하는 경우 사용하는 함수에 따라 해당 쿼리가 en-US 형식인지 확인해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: Office 다국어 사용자 인터페이스 대상](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [Office 솔루션 디자인 및 만들기](../vsto/designing-and-creating-office-solutions.md)

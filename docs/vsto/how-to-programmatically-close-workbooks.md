@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4bec2cbbe0cb2a57ec2373bd220abc49dabc5bfb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d09cbff06b1bb7048316629b7b958ee299029ec8
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903667"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825266"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>방법: 프로그래밍 방식으로 통합 문서 닫기
   활성 통합 문서를 닫거나 닫을 통합 문서를 지정할 수 있습니다.
@@ -34,15 +34,15 @@ ms.locfileid: "99903667"
 
 1. <xref:Microsoft.Office.Tools.Excel.Workbook.Close%2A> 메서드를 호출하여 사용자 지정과 연결된 통합 문서를 닫습니다. 다음 코드 예제를 사용하려면 Excel용 문서 수준 프로젝트의 `Sheet1` 클래스에서 실행합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#3)]
-     [!code-vb[Trin_VstcoreExcelAutomation#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet3":::
 
 ### <a name="to-close-the-active-workbook-in-a-vsto-add-in"></a>VSTO 추가 기능에서 활성 통합 문서를 닫으려면
 
 1. <xref:Microsoft.Office.Interop.Excel._Workbook.Close%2A> 메서드를 호출하여 활성 통합 문서를 닫습니다. 다음 코드 예제를 사용하려면 Excel용 VSTO 추가 기능 프로젝트의 `ThisAddIn` 클래스에서 실행합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#1)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#1)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet1":::
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet1":::
 
 ## <a name="close-a-workbook-that-you-specify-by-name"></a>이름으로 지정한 통합 문서를 닫습니다.
  이름으로 지정한 통합 문서를 닫는 방법은 VSTO 추가 기능과 문서 수준 사용자 지정에서 동일합니다.
@@ -51,10 +51,10 @@ ms.locfileid: "99903667"
 
 1. <xref:Microsoft.Office.Interop.Excel.Workbooks> 컬렉션에 대한 인수로 통합 문서 이름을 지정합니다. 다음 코드 예제에서는 **NewWorkbook** 이라는 통합 문서가 Excel에서 열려 있다고 가정합니다.
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#2)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet2":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [통합 문서 작업](../vsto/working-with-workbooks.md)
 - [방법: 프로그래밍 방식으로 통합 문서 저장](../vsto/how-to-programmatically-save-workbooks.md)
 - [방법: 프로그래밍 방식으로 통합 문서 열기](../vsto/how-to-programmatically-open-workbooks.md)

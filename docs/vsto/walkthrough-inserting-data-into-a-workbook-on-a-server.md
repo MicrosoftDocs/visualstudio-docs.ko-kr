@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5d3bcb09ce1db013b89e60b22308f1904c4796
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937439"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827723"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>연습: 서버의 통합 문서에 데이터 삽입
   이 연습에서는 클래스를 사용 하 여 Excel을 시작 하지 않고 Microsoft Office Excel 통합 문서에 캐시 되는 데이터 집합에 데이터를 삽입 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> .
@@ -81,9 +81,9 @@ ms.locfileid: "99937439"
 
 8. **확인** 을 클릭합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **AdventureWorksDataSet** 프로젝트를 추가 하 고 **Class1.cs** 또는 **Class1** 코드 파일을 엽니다.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **AdventureWorksDataSet** 프로젝트를 추가 하 고 **class1** 또는 **class1 .vb** 코드 파일을 엽니다.
 
-9. **솔루션 탐색기** 에서 **Class1.cs** 또는 **Class1 .vb** 를 마우스 오른쪽 단추로 클릭 한 다음 **삭제** 를 클릭 합니다. 이 연습에서는이 파일이 필요 하지 않습니다.
+9. **솔루션 탐색기** 에서 **class1** 또는 **class1 .vb** 를 마우스 오른쪽 단추로 클릭 한 다음 **삭제** 를 클릭 합니다. 이 연습에서는이 파일이 필요 하지 않습니다.
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>클래스 라이브러리 프로젝트에서 데이터 집합 정의
  SQL Server 2005에 대 한 AdventureWorksLT 데이터베이스의 데이터를 포함 하는 형식화 된 데이터 집합을 정의 합니다. 이 연습의 뒷부분에서는 Excel 통합 문서 프로젝트와 콘솔 응용 프로그램 프로젝트에서이 데이터 집합을 참조 합니다.
@@ -150,7 +150,7 @@ ms.locfileid: "99937439"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Excel 통합 문서 프로젝트의 데이터 원본에 데이터 집합을 추가 하려면
 
-1. **솔루션 탐색기** 에서 **AdventureWorksReport** 프로젝트 아래의 **Sheet1.cs** 또는 **sheet1"** 을 두 번 클릭 합니다.
+1. **솔루션 탐색기** 에서 **AdventureWorksReport** 프로젝트 아래에 있는 **sheet1. cs** 또는 **sheet1"** 을 두 번 클릭 합니다.
 
      통합 문서가 디자이너에서 열립니다.
 
@@ -220,7 +220,7 @@ ms.locfileid: "99937439"
 
 5. **확인** 을 클릭합니다.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **datawriter 여부** 프로젝트를 추가 하 고 **Program.cs** 또는 코드 파일을 **엽니다.**
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**솔루션 탐색기** 에 **datawriter 여부** 프로젝트를 추가 하 고 **프로그램 .cs** 또는 module1.vb **.vb** 코드 파일을 엽니다.
 
 ## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>콘솔 응용 프로그램을 사용 하 여 캐시 된 데이터 집합에 데이터 추가
  <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>콘솔 응용 프로그램에서 클래스를 사용 하 여 통합 문서의 캐시 된 데이터 집합을 데이터로 채웁니다.
@@ -237,12 +237,12 @@ ms.locfileid: "99937439"
 
 5. **프로젝트** 탭에서 **AdventureWorksDataSet** 를 선택 하 고 **확인** 을 클릭 합니다.
 
-6. 코드 편집기에서 *Program.cs* 또는 module1.vb 파일을 *엽니다.*
+6. 코드 편집기에서 *프로그램 .cs* 또는 *module1.vb* 파일을 엽니다.
 
 7. 다음을 **사용 하 여** (c #의 경우) 또는 **Imports** (Visual Basic의 경우) 문을 코드 파일의 맨 위에 추가 합니다.
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. `Main` 메서드에 다음 코드를 추가합니다. 이 코드는 다음 개체를 선언 합니다.
 
@@ -255,8 +255,8 @@ ms.locfileid: "99937439"
      > [!NOTE]
      > 다음 코드에서는 파일 확장명이 *.xlsx* 인 통합 문서를 사용 하 고 있다고 가정 합니다. 프로젝트의 통합 문서에 다른 파일 확장명이 있는 경우 필요에 따라 경로를 수정 합니다.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
-     [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet3":::
 
 9. `Main`이전 단계에서 추가한 코드 뒤에 다음 코드를 메서드에 추가 합니다. 이 코드는 다음 작업을 수행합니다.
 
@@ -266,8 +266,8 @@ ms.locfileid: "99937439"
 
    - 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 캐시 된 데이터 집합을 로컬 형식화 된 데이터 집합의 데이터로 채웁니다.
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
-     [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet4":::
 
 10. **솔루션 탐색기** 에서 **datawriter 여부** 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **디버그** 를 가리킨 다음 **새 인스턴스 시작** 을 클릭 합니다.
 
@@ -294,6 +294,6 @@ ms.locfileid: "99937439"
 
 - Excel을 시작 하지 않고 캐시 된 데이터 집합의 데이터 변경 자세한 내용은 [연습: 서버의 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 서버의 통합 문서에서 캐시 된 데이터 변경](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71051c6255f9035079a7888fb3a4c7df2f5eab59
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966645"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827554"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>연습: Word 용 첫 문서 수준 사용자 지정 만들기
 
@@ -124,8 +124,8 @@ ms.locfileid: "99966645"
 
 2. `ThisDocument_Startup` 이벤트 처리기를 다음 코드로 바꿉니다. 문서가 열리면 이 코드에서 두 번째 텍스트 단락을 문서에 추가합니다.
 
-     [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
-     [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs" id="Snippet1":::
 
     > [!NOTE]
     > 이 코드는 인덱스 값 1을 사용하여 <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> 속성의 첫 번째 단락에 액세스합니다. Visual Basic 및 Visual C#은 0부터 시작하는 배열을 사용하지만 Word 개체 모델에서 대다수 컬렉션의 배열 하한은 1입니다. 자세한 내용은 [Office 솔루션에서 코드 작성](../vsto/writing-code-in-office-solutions.md)을 참조 하세요.
@@ -172,7 +172,7 @@ ms.locfileid: "99966645"
 
 - Word 용 문서 수준 사용자 지정 배포: [Office 솔루션을 배포](../vsto/deploying-an-office-solution.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Office 솔루션 개발 개요 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word 솔루션](../vsto/word-solutions.md)

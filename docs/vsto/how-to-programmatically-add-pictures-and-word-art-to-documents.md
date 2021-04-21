@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 445857200dfb269dd71f7cb3d446d025048cb3ac
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910188"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828438"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>방법: 프로그래밍 방식으로 문서에 그림 및 Word 아트 추가
   디자인 타임 또는 런타임에 그림 및 그리기 개체를 문서에 추가할 수 있습니다. WordArt를 사용하면 Microsoft Office Word 문서에 장식 텍스트를 추가할 수 있습니다. 이러한 특수 텍스트 효과는 사용자 지정하고 문서에 삽입할 수 있는 그리기 개체입니다.
@@ -53,8 +53,8 @@ ms.locfileid: "99910188"
 
 1. <xref:Microsoft.Office.Interop.Word.InlineShapes> 컬렉션의 <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> 메서드를 호출하고 해당 파일의 이름을 전달합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
-     [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet108":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet108":::
 
 ## <a name="add-wordart-at-design-time"></a>디자인 타임에 WordArt 추가
  문서 수준 사용자 지정을 개발하는 경우 디자인 타임에 문서에 WordArt를 추가할 수 있습니다.
@@ -78,31 +78,31 @@ ms.locfileid: "99910188"
 
 1. 현재 커서 위치의 왼쪽 및 위쪽 위치를 가져옵니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
-     [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet109":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet109":::
 
 2. 문서에서 <xref:Microsoft.Office.Interop.Word.Shapes> 개체의 <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> 메서드를 호출합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
-     [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet110":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet110":::
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>VSTO 추가 기능에서 커서 위치에 WordArt를 추가하려면
 
 1. 현재 커서 위치의 왼쪽 및 위쪽 위치를 가져옵니다.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet109":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet109":::
 
 2. 활성 문서(또는 지정한 다른 문서)에서 <xref:Microsoft.Office.Interop.Word.Shapes> 개체의 <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> 메서드를 호출합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet110":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet110":::
 
 ## <a name="compile-the-code"></a>코드 컴파일
 
 - *SamplePicture.jpg* 그림이 C 드라이브에 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 프로그래밍 방식으로 기존 문서 열기](../vsto/how-to-programmatically-open-existing-documents.md)
 - [방법: 프로그래밍 방식으로 Word 문서에 텍스트 삽입](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [방법: 프로그래밍 방식으로 검색 후 선택 영역 복원](../vsto/how-to-programmatically-restore-selections-after-searches.md)

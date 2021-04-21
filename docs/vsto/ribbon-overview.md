@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8920c8a402b4566cf95bb74626171cca833d32de
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940867"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825552"
 ---
 # <a name="ribbon-overview"></a>리본 개요
   리본은 쉽게 찾을 수 있도록 관련 명령을 구성 하는 방법입니다. 명령은 리본 메뉴에 컨트롤로 표시 됩니다. 컨트롤은 응용 프로그램 창의 위쪽 가장자리에 가로 스트립을 따라 *그룹* 으로 구성 됩니다. 관련 그룹은 탭에서 구성됩니다.
@@ -112,8 +112,8 @@ ms.locfileid: "99940867"
 
  다음 코드를 추가합니다.
 
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="related-topics"></a>관련 항목
 

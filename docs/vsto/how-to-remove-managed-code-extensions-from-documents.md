@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fea8a8f73155875f9a10e9d8138ee4b345d531d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 129b1bda44abf7283efe1996f1898491025ee9d9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942154"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825448"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>방법: 문서에서 관리 코드 확장명 제거
   Microsoft Office Word 또는 Microsoft Office Excel에 대 한 문서 수준 사용자 지정의 일부인 문서 또는 통합 문서에서 프로그래밍 방식으로 사용자 지정 어셈블리를 제거할 수 있습니다. 그러면 사용자가 문서를 열고 내용을 볼 수 있지만 문서에 추가 하는 사용자 지정 UI (사용자 인터페이스)는 표시 되지 않으며 코드가 실행 되지 않습니다.
@@ -41,18 +41,18 @@ ms.locfileid: "99942154"
 
 2. 다음 **Imports** 또는 **using** 문을 코드 파일의 맨 위에 추가 합니다.
 
-     [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
-     [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet1":::
 
 3. <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>클래스의 정적 메서드를 호출 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 하 고 매개 변수에 대 한 솔루션 문서 경로를 지정 합니다.
 
      다음 코드 예제에서는 데스크톱에 있는 *WordDocument1.docx* 이라는 문서에서 사용자 지정을 제거 하는 것으로 가정 합니다.
 
-     [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
-     [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet2":::
 
 4. 프로젝트를 빌드하고 사용자 지정을 제거 하려는 컴퓨터에서 응용 프로그램을 실행 합니다. 컴퓨터에 Visual Studio 2010 Tools for Office runtime이 설치 되어 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [ServerDocument 클래스를 사용 하 여 서버에서 문서 관리](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
 - [방법: 문서에 관리 코드 확장명 연결](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

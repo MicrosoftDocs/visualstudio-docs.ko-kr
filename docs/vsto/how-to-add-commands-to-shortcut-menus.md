@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f5c244d78ab5a6b5d98550b11c280159f285db7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276dc7b8094c495a1b3896a4a93a068b1005c8d5
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913460"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828451"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>방법: 바로 가기 메뉴에 명령 추가
   이 항목에서는 VSTO 추가 기능을 사용 하 여 Office 응용 프로그램의 바로 가기 메뉴에 명령을 추가 하는 방법을 보여 줍니다.
@@ -39,8 +39,8 @@ ms.locfileid: "99913460"
 
 4. **ThisAddin** 클래스에 다음 코드를 추가합니다. 이 코드는 `CreateRibbonExtensibilityObject` 메서드를 재정의하고 Office 애플리케이션에 리본 XML 클래스를 반환합니다.
 
-     [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
-     [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb" id="Snippet1":::
 
 5. **솔루션 탐색기** 에서 리본 XML 파일을 선택합니다. 기본적으로 리본 XML 파일의 이름은 *Ribbon1.xml* 입니다.
 
@@ -78,10 +78,10 @@ ms.locfileid: "99913460"
 
      다음 콜백 메서드는 **My Button** 단추를 처리합니다. 이 코드는 활성 문서의 현재 커서 위치에 문자열을 추가합니다.
 
-     [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
-     [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs" id="Snippet2":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
 - [연습: 책갈피에 대 한 바로 가기 메뉴 만들기](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Office 솔루션의 선택적 매개 변수](../vsto/optional-parameters-in-office-solutions.md)

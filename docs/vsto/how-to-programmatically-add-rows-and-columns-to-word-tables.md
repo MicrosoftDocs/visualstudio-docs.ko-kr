@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a4077e78da512ef7b49546ae9b5271b5dfd8ff15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cac3e11f73e53441f1bcf20c67dd5659a49a1b0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910168"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828425"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>방법: 프로그래밍 방식으로 Word 표에 행 및 열 추가
   Microsoft Office Word 표에서 셀은 행과 열로 구성됩니다. <xref:Microsoft.Office.Interop.Word.Rows> 개체의 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 메서드를 사용하여 표에 행을 추가하고, <xref:Microsoft.Office.Interop.Word.Columns> 개체의 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 메서드를 사용하여 열을 추가할 수 있습니다.
@@ -46,15 +46,15 @@ ms.locfileid: "99910168"
 
 1. <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 메서드를 사용하여 표에 행을 추가합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#95](codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
-     [!code-csharp[Trin_VstcoreWordAutomation#95](codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet95":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet95":::
 
 ### <a name="to-add-a-column-to-a-table"></a>표에 열을 추가하려면
 
 1. <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 메서드를 사용한 다음 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 메서드를 사용하여 모든 열 너비를 동일하게 만듭니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
-     [!code-csharp[Trin_VstcoreWordAutomation#96](codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet96":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet96":::
 
 ## <a name="vsto-add-in-examples"></a>VSTO 추가 기능 예제
  다음 코드 예제는 VSTO 추가 기능에서 사용할 수 있습니다. 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 실행합니다. 이 예제에서는 활성 문서에 하나 이상의 표가 이미 있다고 가정합니다.
@@ -68,17 +68,17 @@ ms.locfileid: "99910168"
 
 1. <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 메서드를 사용하여 표에 행을 추가합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#95](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet95":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet95":::
 
 ### <a name="to-add-a-column-to-a-table"></a>표에 열을 추가하려면
 
 1. <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 메서드를 사용한 다음 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 메서드를 사용하여 모든 열 너비를 동일하게 만듭니다.
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#96](codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]
+     :::code language="vb" source="codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet96":::
+     :::code language="csharp" source="codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet96":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 프로그래밍 방식으로 Word 표 만들기](how-to-programmatically-create-word-tables.md)
 - [방법: 프로그래밍 방식으로 Word 표의 셀에 텍스트 및 서식 추가](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
 - [방법: 프로그래밍 방식으로 문서 속성을 사용 하 여 Word 표 채우기](how-to-programmatically-populate-word-tables-with-document-properties.md)

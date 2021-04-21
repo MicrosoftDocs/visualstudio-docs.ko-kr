@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d61579181f00d97a74cc48e022bb5d93a05c0f0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937318"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828178"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>연습: 워크시트에서 라디오 단추를 사용하여 차트 업데이트
   이 연습에서는 Microsoft Office Excel 워크시트에서 라디오 단추를 사용 하 여 사용자에 게 옵션 간을 빠르게 전환할 수 있는 방법을 제공 하는 기본 사항을 보여 줍니다. 이 경우 옵션은 차트의 스타일을 변경 합니다.
@@ -171,34 +171,34 @@ ms.locfileid: "99937318"
 
 2. 클래스에 코드를 추가 `ChartOptions` 하 여 `SelectionChanged` 이벤트 및 속성을 만듭니다 `Selection` .
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet13":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet13":::
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>라디오 단추의 CheckedChanged 이벤트를 처리 하려면
 
 1. `CheckedChanged` 라디오 단추의 `areaBlockChart` 이벤트 처리기에서 차트 종류를 설정한 다음 이벤트를 발생시킵니다.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet14":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet14":::
 
 2. `CheckedChanged` 라디오 단추의 `barChart` 이벤트 처리기에서 차트 종류를 설정합니다.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet15":::
 
 3. `CheckedChanged` 라디오 단추의 `columnChart` 이벤트 처리기에서 차트 종류를 설정합니다.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet16":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet16":::
 
 4. `CheckedChanged` 라디오 단추의 `lineChart` 이벤트 처리기에서 차트 종류를 설정합니다.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet17":::
 
 5. C#에서는 라디오 단추에 대해 이벤트 처리기를 추가해야 합니다. `ChartOptions` 생성자의 `InitializeComponent` 호출 아래에 코드를 추가할 수 있습니다. 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet18":::
 
 ## <a name="add-the-user-control-to-the-worksheet"></a>워크시트에 사용자 정의 컨트롤 추가
  솔루션을 빌드하면 새 사용자 정의 컨트롤이 **도구 상자** 에 자동으로 추가 됩니다. 그런 다음 컨트롤을 **도구 상자** 에서 워크시트로 끌어 올 수 있습니다.
@@ -209,7 +209,7 @@ ms.locfileid: "99937318"
 
      **ChartOptions** 사용자 정의 컨트롤이 **도구 상자** 에 추가 됩니다.
 
-2. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 **뷰 디자이너** 를 클릭 합니다.
+2. **솔루션 탐색기** 에서 **sheet1** 또는 **sheet1. cs** 를 마우스 오른쪽 단추로 클릭 한 다음 **뷰 디자이너** 를 클릭 합니다.
 
 3. **ChartOptions** 컨트롤을 **도구 상자** 에서 워크시트로 끌어 옵니다.
 
@@ -224,12 +224,12 @@ ms.locfileid: "99937318"
 
 1. `Sheet1` 클래스에 다음 이벤트 처리기를 추가합니다.
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet19":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet19":::
 
 2. C #에서는 아래와 같이 사용자 정의 컨트롤에 대 한 이벤트 처리기를 이벤트에 추가 해야 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet20":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 통합 문서를 테스트 하 여 라디오 단추를 선택할 때 차트의 스타일이 올바르게 지정 되었는지 확인할 수 있습니다.
@@ -251,5 +251,5 @@ ms.locfileid: "99937318"
 
 - 확인란을 사용 하 여 워크시트의 서식을 변경 합니다. 자세한 내용은 [연습: CheckBox 컨트롤을 사용 하 여 워크시트 서식 변경](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Excel을 사용한 연습](../vsto/walkthroughs-using-excel.md)

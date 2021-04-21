@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21a4b172fe2a29ac098f236cebb33efa43fb11c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7a21f51c42f1f55423019361d1b1535482f4e4b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964175"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828009"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>방법: 프로그래밍 방식으로 사용자 지정 달력 만들기
   이 예에서는 **PersonalCalendar** 이라는 새 일정 폴더를 만든 다음 새 약속 항목을 만들어 Calendar 폴더에 추가 합니다. 그런 다음 코드에서 Calendar 폴더를 표시 합니다.
@@ -29,9 +29,9 @@ ms.locfileid: "99964175"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>예제
- [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [일정 항목 작업](../vsto/working-with-calendar-items.md)
 - [방법: 프로그래밍 방식으로 약속 만들기](../vsto/how-to-programmatically-create-appointments.md)
 - [방법: 프로그래밍 방식으로 모임 요청 만들기](../vsto/how-to-programmatically-create-a-meeting-request.md)

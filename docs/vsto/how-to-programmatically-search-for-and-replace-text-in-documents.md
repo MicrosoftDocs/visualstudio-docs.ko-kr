@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3ef1a32d145169db815915ee93d03893943e71f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2fc5bbfabbe2672ae59c55734a5cf57fc84318
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877904"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825162"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>방법: 프로그래밍 방식으로 문서에서 텍스트 검색 및 바꾸기
   <xref:Microsoft.Office.Interop.Word.Find> 개체는 <xref:Microsoft.Office.Interop.Word.Selection> 및 <xref:Microsoft.Office.Interop.Word.Range> 개체 둘 다의 멤버이며, 둘 중 하나를 사용하여 Microsoft Office Word 문서에서 텍스트를 검색할 수 있습니다. 바꾸기 명령은 찾기 명령의 확장입니다.
@@ -41,23 +41,23 @@ ms.locfileid: "99877904"
 
 1. 변수에 검색 문자열을 할당합니다.
 
-    [!code-vb[Trin_VstcoreWordAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#68)]
-    [!code-csharp[Trin_VstcoreWordAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#68)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet68":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet68":::
 
 2. 이전 검색의 서식을 지웁니다.
 
-    [!code-vb[Trin_VstcoreWordAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#69)]
-    [!code-csharp[Trin_VstcoreWordAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#69)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet69":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet69":::
 
 3. 검색을 실행하고 결과가 포함된 메시지 상자를 표시합니다.
 
-    [!code-vb[Trin_VstcoreWordAutomation#70](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#70)]
-    [!code-csharp[Trin_VstcoreWordAutomation#70](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#70)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet70":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet70":::
 
    다음 예제에서는 전체 메서드를 보여 줍니다.
 
-   [!code-vb[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#67)]
-   [!code-csharp[Trin_VstcoreWordAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#67)]
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet67":::
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet67":::
 
 ## <a name="use-a-range-object"></a>Range 개체 사용
  <xref:Microsoft.Office.Interop.Word.Range> 개체를 사용하면 사용자 인터페이스에 아무것도 표시하지 않고 텍스트를 검색할 수 있습니다. <xref:Microsoft.Office.Interop.Word.Find>검색 조건과 일치 하는 텍스트를 찾은 경우 개체는 **True** 를 반환 하 고 그렇지 않으면 **False** 를 반환 합니다. 또한 텍스트가 발견되는 경우 검색 조건과 일치하도록 <xref:Microsoft.Office.Interop.Word.Range> 개체를 다시 정의합니다.
@@ -68,35 +68,35 @@ ms.locfileid: "99877904"
 
     다음 코드 예제는 문서 수준 사용자 지정에서 사용할 수 있습니다.
 
-    [!code-vb[Trin_VstcoreWordAutomation#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#72)]
-    [!code-csharp[Trin_VstcoreWordAutomation#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#72)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet72":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet72":::
 
     다음 코드 예제는 VSTO 추가 기능에서 사용할 수 있습니다. 이 예제에서는 활성 문서를 사용합니다.
 
-    [!code-vb[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#72)]
-    [!code-csharp[Trin_VstcoreWordAutomationAddIn#72](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#72)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet72":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet72":::
 
 2. 개체의 속성을 사용 하 여 <xref:Microsoft.Office.Interop.Word.Range.Find%2A> <xref:Microsoft.Office.Interop.Word.Range> 먼저 기존 서식 지정 옵션을 지운 다음 문자열 **찾기** 를 검색 합니다.
 
-    [!code-vb[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#73)]
-    [!code-csharp[Trin_VstcoreWordAutomation#73](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#73)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet73":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet73":::
 
 3. 메시지 상자에 검색 결과를 표시하고 <xref:Microsoft.Office.Interop.Word.Range>를 선택하여 표시되도록 합니다.
 
-    [!code-vb[Trin_VstcoreWordAutomation#74](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#74)]
-    [!code-csharp[Trin_VstcoreWordAutomation#74](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#74)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet74":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet74":::
 
     검색에 실패하면 두 번째 단락이 선택됩니다. 성공하면 검색 조건이 표시됩니다.
 
    다음 예제에서는 문서 수준 사용자 지정의 전체 코드를 보여 줍니다. 이 예제를 사용하려면 프로젝트의 `ThisDocument` 클래스에서 코드를 실행합니다.
 
-   [!code-vb[Trin_VstcoreWordAutomation#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#71)]
-   [!code-csharp[Trin_VstcoreWordAutomation#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#71)]
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet71":::
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet71":::
 
    다음 예제에서는 VSTO 추가 기능의 전체 코드를 보여 줍니다. 이 예제를 사용하려면 프로젝트의 `ThisAddIn` 클래스에서 코드를 실행합니다.
 
-   [!code-vb[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#71)]
-   [!code-csharp[Trin_VstcoreWordAutomationAddIn#71](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#71)]
+   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet71":::
+   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet71":::
 
 ## <a name="search-for-and-replace-text-in-documents"></a>문서에서 텍스트 검색 및 바꾸기
  다음 코드는 현재 선택 영역을 검색 하 여 **찾은 문자열의** 모든 항목을 **찾은** 문자열로 바꿉니다.
@@ -105,8 +105,8 @@ ms.locfileid: "99877904"
 
 1. 프로젝트의 `ThisDocument` 또는 `ThisAddIn` 클래스에 다음 예제 코드를 추가합니다.
 
-     [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
-     [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet75":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet75":::
 
      <xref:Microsoft.Office.Interop.Word.Find> 클래스에는 <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> 메서드가 있고 <xref:Microsoft.Office.Interop.Word.Replacement> 클래스에도 자체 <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> 메서드가 있습니다. 찾기 및 바꾸기 작업을 수행 하는 경우 두 개체의 ClearFormatting 지정 메서드를 사용 해야 합니다. <xref:Microsoft.Office.Interop.Word.Find> 개체에서만 사용하는 경우 대체 텍스트에서 예기치 않은 결과가 발생할 수 있습니다.
 
@@ -118,7 +118,7 @@ ms.locfileid: "99877904"
 
     - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne>은 찾은 첫 번째 항목을 바꿉니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [방법: 프로그래밍 방식으로 Word에서 검색 옵션 설정](../vsto/how-to-programmatically-set-search-options-in-word.md)
 - [방법: 프로그래밍 방식으로 문서에서 찾은 항목 반복](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
 - [방법: 프로그래밍 방식으로 문서의 범위 정의 및 선택](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)

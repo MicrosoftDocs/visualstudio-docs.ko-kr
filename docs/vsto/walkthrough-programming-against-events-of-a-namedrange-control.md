@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec1c670867fae277a3c3c8290cd34d0d4be7ddf3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937396"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824967"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>연습: NamedRange 컨트롤의 이벤트에 대 한 프로그래밍
   이 연습에서는 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio에서 Office 개발 도구를 사용 하 여 Microsoft Office Excel 워크시트 및 프로그램에 컨트롤을 추가 하는 방법을 보여 줍니다.
@@ -101,16 +101,16 @@ ms.locfileid: "99937396"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>BeforeDoubleClick 이벤트를 기반으로 NamedRange2에 텍스트를 삽입 하려면
 
-1. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택 합니다.
+1. **솔루션 탐색기** 에서 **sheet1** 또는 **sheet1"** 을 마우스 오른쪽 단추로 클릭 하 고 **코드 보기** 를 선택 합니다.
 
 2. 이벤트 처리기가 다음과 같이 표시 되도록 코드를 추가 합니다 `namedRange1_BeforeDoubleClick` .
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet24":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet24":::
 
 3. C #에서는 아래 이벤트에 표시 된 것 처럼 명명 된 범위에 대 한 이벤트 처리기를 추가 해야 합니다 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> . 이벤트 처리기를 만드는 방법에 대 한 자세한 내용은 [방법: Office 프로젝트에서 이벤트 처리기 만들기](../vsto/how-to-create-event-handlers-in-office-projects.md)를 참조 하세요.
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet25":::
 
 ## <a name="add-code-to-respond-to-the-change-event"></a>변경 이벤트에 응답 하는 코드를 추가 합니다.
 
@@ -118,8 +118,8 @@ ms.locfileid: "99937396"
 
 1. 이벤트 처리기가 다음과 같이 표시 되도록 코드를 추가 합니다 `NamedRange1_Change` .
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet26":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet26":::
 
     > [!NOTE]
     > Excel 범위에서 셀을 두 번 클릭 하면 편집 모드로 전환 되므로 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 텍스트에 대 한 변경 내용이 없는 경우에도 선택 영역이 범위 밖으로 이동 하면 이벤트가 발생 합니다.
@@ -130,8 +130,8 @@ ms.locfileid: "99937396"
 
 1. **NamedRange1_SelectionChange** 이벤트 처리기가 다음과 같이 표시 되도록 코드를 추가 합니다.
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet27":::
 
     > [!NOTE]
     > Excel 범위에서 셀을 두 번 클릭 하면 선택 영역이 범위로 이동 하기 때문에 이벤트가 <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 발생 하기 전에 이벤트가 발생 <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> 합니다.
@@ -158,7 +158,7 @@ ms.locfileid: "99937396"
 
 - 프로젝트를 배포 합니다. 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)
 - [NamedRange 컨트롤](../vsto/namedrange-control.md)

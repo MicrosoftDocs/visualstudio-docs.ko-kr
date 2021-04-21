@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84a0c21bba42263e7b4dad9ad9118f462389ad6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879295"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827502"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   리본 (XML) 항목을 사용 하면 XML을 사용 하 여 리본을 사용자 지정할 수 있습니다. 리본 (비주얼 디자이너) 항목에서 지원 하지 않는 방식으로 리본을 사용자 지정 하려는 경우 리본 (XML) 항목을 사용 합니다. 각 항목에서 수행할 수 있는 작업에 대 한 비교는 [리본 개요](../vsto/Ribbon-overview.md)를 참조 하세요.
@@ -51,8 +51,8 @@ ms.locfileid: "99879295"
 
  다음 코드 예제에서는 `CreateRibbonExtensibilityObject` 메서드를 재정의하고 MyRibbon이라는 리본 XML 클래스를 반환합니다.
 
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
- [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>사용자 지정 리본 메뉴의 동작 정의
  *콜백 메서드* 를 만들어 리본 메뉴의 단추를 클릭 하는 것과 같은 사용자 작업에 응답할 수 있습니다. 콜백 메서드는 Windows Forms 컨트롤의 이벤트와 비슷하지만 UI 요소의 XML에서 특성으로 식별됩니다. 리본 클래스에서 메서드를 작성하고 컨트롤이 특성 값과 동일한 이름을 가진 메서드를 호출합니다. 예를 들어 사용자가 리본의 단추를 클릭할 때 호출 되는 콜백 메서드를 만들 수 있습니다. 콜백 메서드를 만들려면 다음 두 단계가 필요합니다.
@@ -92,8 +92,8 @@ ms.locfileid: "99879295"
 
   모든 콜백 메서드에 메서드를 호출한 컨트롤을 나타내는 <xref:Microsoft.Office.Core.IRibbonControl> 매개 변수가 있습니다. 이 매개 변수를 사용하여 여러 컨트롤에 대해 동일한 콜백 메서드를 다시 사용할 수 있습니다. 다음 코드 예제에서는 사용자가 클릭하는 컨트롤에 따라 다른 작업을 수행하는 **onAction** 콜백 메서드를 보여 줍니다.
 
-  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
-  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs" id="Snippet2":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb" id="Snippet2":::
 
 ## <a name="ribbon-xml-file-reference"></a><a name="RibbonDescriptorFile"></a> 리본 XML 파일 참조
  리본 XML 파일에 요소 및 특성을 추가 하 여 사용자 지정 리본 메뉴를 정의할 수 있습니다. 기본적으로 리본 XML 파일에는 다음 XML이 포함되어 있습니다.
@@ -129,7 +129,7 @@ ms.locfileid: "99879295"
 |---------------|--------------------|-----------------|
 |**onLoad**|**customUI**|응용 프로그램에서 리본 메뉴를 로드할 때 호출 되는 메서드를 식별 합니다.|
 |**idMso**|**]5d**|리본 메뉴에 표시할 기본 제공 탭을 식별 합니다.|
-|**id**|**group**|그룹을 식별합니다.|
+|**ID**|**group**|그룹을 식별합니다.|
 |**label**|**group**|그룹에 나타나는 텍스트를 지정합니다.|
 
  리본 XML 파일의 기본 요소와 특성은 사용할 수 있는 요소 및 특성의 일부에 불과합니다. 사용 가능한 요소 및 특성의 전체 목록은 기술 문서 [개발자를 위한 Office (2007) 리본 사용자 인터페이스 사용자 지정 (2/3 부)](/previous-versions/office/developer/office-2007/aa338199(v=office.12))를 참조 하세요.
@@ -145,7 +145,7 @@ ms.locfileid: "99879295"
 |`OnLoad`|<xref:Microsoft.Office.Core.IRibbonControl> 필드에 `Ribbon` 매개 변수를 할당합니다. Microsoft Office 응용 프로그램은 사용자 지정 리본을 로드할 때이 메서드를 호출 합니다. 이 필드를 사용 하 여 사용자 지정 리본 메뉴를 동적으로 업데이트할 수 있습니다. 자세한 내용은 기술 문서 [개발자 용 Office (2007) 리본 사용자 인터페이스 사용자 지정 (1/3 부)](/previous-versions/office/developer/office-2007/aa338202(v=office.12))를 참조 하세요.|
 |`GetResourceText`|`GetCustomUI` 메서드에서 리본 XML 파일의 내용을 가져오기 위해 호출합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [리본 개요](../vsto/ribbon-overview.md)
 - [연습: 리본 XML을 사용 하 여 사용자 지정 탭 만들기](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [Office UI 사용자 지정](../vsto/office-ui-customization.md)
