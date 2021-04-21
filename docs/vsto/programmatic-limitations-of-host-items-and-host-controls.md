@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fbc3258f3ea7e0b3cc93a2887dfff5a3bfefb19d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 463543a40ac9443959b06cf9f65dad4c99c52ee3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891893"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828828"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>호스트 항목 및 호스트 컨트롤의 프로그래밍에 대 한 제한 사항
   각 호스트 항목 및 호스트 컨트롤은 추가 기능을 통해 해당 네이티브 Microsoft Office Word 또는 Microsoft Office Excel 개체처럼 동작하도록 설계되었습니다. 그러나 런타임에 호스트 항목과 호스트 컨트롤의 동작과 네이티브 Office 개체 간에는 몇 가지 근본적인 차이가 있습니다.
@@ -74,8 +74,8 @@ ms.locfileid: "99891893"
 
  다음 예제에서는 <xref:Microsoft.Office.Tools.Excel.NamedRange> 컨트롤을 만들어 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 메서드에 전달합니다. 코드에서는 명명된 범위의 <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> 속성을 사용하여 <xref:Microsoft.Office.Interop.Excel.Range> 메서드에서 필요한 기본 Office <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 를 반환합니다.
 
- [!code-csharp[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#28)]
- [!code-vb[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#28)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet28":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet28":::
 
 ### <a name="return-types-of-native-office-methods-and-properties"></a>네이티브 Office 메서드 및 속성의 형식 반환
  호스트 항목의 메서드와 속성 대부분은 호스트 항목의 기반이 되는 기본 네이티브 Office 개체를 반환합니다. 예를 들어 Excel에서 <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> 호스트 컨트롤의 <xref:Microsoft.Office.Tools.Excel.NamedRange> 속성은 <xref:Microsoft.Office.Interop.Excel.Worksheet> 호스트 항목이 아닌 <xref:Microsoft.Office.Tools.Excel.Worksheet> 개체를 반환합니다. 마찬가지로 Word에서 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> 호스트 컨트롤의 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 속성은 <xref:Microsoft.Office.Interop.Word.Document> 호스트 항목이 아닌 <xref:Microsoft.Office.Tools.Word.Document> 개체를 반환합니다.
@@ -83,14 +83,14 @@ ms.locfileid: "99891893"
 ### <a name="access-collections-of-host-controls"></a>호스트 컨트롤의 컬렉션 액세스
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 은 호스트 컨트롤의 각 형식에 개별 컬렉션을 제공하지 않습니다. 대신 호스트 항목의 Controls 속성을 사용 하 여 문서 또는 워크시트의 모든 관리 되는 컨트롤 (호스트 컨트롤 및 Windows Forms 컨트롤)을 반복한 다음 관심이 있는 호스트 컨트롤의 형식과 일치 하는 항목을 찾습니다. 다음 코드 예제에서는 Word 문서의 각 컨트롤을 검사하고 컨트롤이 <xref:Microsoft.Office.Tools.Word.Bookmark>인지 여부를 확인합니다.
 
- [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)]
- [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet10":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet10":::
 
  호스트 항목의 컨트롤 속성에 대 한 자세한 내용은 [런타임에 Office 문서에 컨트롤 추가](../vsto/adding-controls-to-office-documents-at-run-time.md)를 참조 하세요.
 
  Word 및 Excel 개체 모델은 문서 및 워크시트에서 네이티브 컨트롤의 컬렉션을 노출하는 속성을 포함합니다. 이러한 속성을 사용하면 관리되는 컨트롤에 액세스할 수 없습니다. 예를 들어 <xref:Microsoft.Office.Tools.Word.Bookmark> 의 <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> 속성 또는 <xref:Microsoft.Office.Interop.Word.Document> 의 <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> 속성을 사용하여 문서의 각 <xref:Microsoft.Office.Tools.Word.Document>호스트 컨트롤을 열거할 수 없습니다. 이러한 속성은 문서의 <xref:Microsoft.Office.Interop.Word.Bookmark> 컨트롤만 포함하며 문서의 <xref:Microsoft.Office.Tools.Word.Bookmark> 호스트 컨트롤은 포함하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [호스트 항목 및 호스트 컨트롤 개요](../vsto/host-items-and-host-controls-overview.md)
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [확장 된 개체를 사용 하 여 Excel 자동화](../vsto/automating-excel-by-using-extended-objects.md)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58cd5f7a26be57ce0cb742e153d88ee455b2f85b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940828"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826111"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 솔루션에 대 한 특정 보안 고려 사항
   Microsoft .NET Framework 및 Microsoft Office에서 제공된 보안 기능을 통해 다양한 보안 위협에 대해 Office 솔루션을 보호할 수 있습니다. 이 항목에서는 이러한 위협 중 일부에 대해 설명하고 이러한 위협으로부터 보호하기 위한 권장 사항을 제공합니다. 또한 Office 솔루션에 영향을 주는 Microsoft Office 보안 설정에 대한 정보를 포함합니다.
@@ -67,13 +67,13 @@ ms.locfileid: "99940828"
 
  개체 모델 보호를 사용하도록 설정할 경우 다음 코드 예제는 보안 경고를 표시합니다. `Microsoft.Office.Interop.Outlook.MailItem` 클래스의 `To` 속성은 개체 모델 보호에 의해 제한됩니다. `Microsoft.Office.Interop.Outlook.MailItem`개체가 `Microsoft.Office.Interop.Outlook.Application` 필드에서 가져오는 대신 **new** 연산자를 사용 하 여 만든에서 해당 개체를 가져오므로 개체는 신뢰할 수 없습니다 `Application` .
 
- [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
- [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb" id="Snippet1":::
 
  다음 코드 예제에서는 `Microsoft.Office.Interop.Outlook.MailItem` 개체 모델 가드에서 신뢰 하는 개체의 제한 된 속성을 사용 하는 방법을 보여 줍니다. 이 코드에서는 신뢰할 수 있는 `Application` 필드를 사용하여 `Microsoft.Office.Interop.Outlook.MailItem`을 가져옵니다.
 
- [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
- [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb" id="Snippet2":::
 
 > [!NOTE]
 > Outlook을 Exchange와 함께 사용할 경우 `ThisAddIn.Application` 에서 모든 Outlook 개체를 가져와도 VSTO 추가 기능에서 전체 Outlook 개체 모델에 액세스하지 못할 수 있습니다. 예를 들어 Exchange 관리자가 outlook 개체 모델을 사용 하 여 주소 정보에 액세스 하려는 모든 시도를 자동으로 거부 하도록 outlook을 설정 하는 경우, 코드 예제에서는 신뢰할 수 있는 필드를 사용 하는 경우에도 이전 코드 예제가 To 속성에 액세스 하는 것을 허용 하지 않습니다 `ThisAddIn.Application` .
@@ -117,5 +117,5 @@ ms.locfileid: "99940828"
 
 6. 세부 정보 창에서 **애플리케이션 추가 기능에 신뢰할 수 있는 게시자의 서명 필요** 또는 **모든 애플리케이션 추가 기능 사용 안 함** 을 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션 보안](../vsto/securing-office-solutions.md)

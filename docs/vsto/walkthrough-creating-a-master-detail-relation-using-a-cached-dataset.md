@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925507"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824850"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>연습: 캐시 된 데이터 집합을 사용 하 여 마스터 세부 관계 만들기
   이 연습에서는 워크시트에서 마스터/세부 관계를 만들고 오프 라인에서 솔루션을 사용할 수 있도록 데이터를 캐시 하는 방법을 보여 줍니다.
@@ -60,7 +60,7 @@ ms.locfileid: "99925507"
 
    Visual Studio가 디자이너에서 새 Excel 통합 문서를 열고 **솔루션 탐색기** 에 **마스터-세부 정보** 프로젝트를 추가 합니다.
 
-## <a name="create-the-data-source"></a>데이터 원본 만들기
+## <a name="create-the-data-source"></a>데이터 원본 생성
  **데이터 원본** 창을 사용하여 형식화된 데이터 세트를 프로젝트에 추가합니다.
 
 ### <a name="to-create-the-data-source"></a>데이터 소스를 만들려면
@@ -138,16 +138,16 @@ ms.locfileid: "99925507"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>데이터 및 컨트롤을 초기화 하려면
 
-1. **솔루션 탐색기** 에서 **Sheet1** 또는 **Sheet1.cs** 를 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
+1. **솔루션 탐색기** 에서 **sheet1** 또는 **sheet1"** 을 마우스 오른쪽 단추로 클릭 한 다음 바로 가기 메뉴에서 **코드 보기** 를 클릭 합니다.
 
 2. 메서드에 다음 코드를 추가 `Sheet1_Startup` 하 여 단추에 대 한 텍스트를 설정 합니다.
 
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
-     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet15":::
 
 3. C #의 경우에는 단추 클릭 이벤트에 대 한 이벤트 처리기를 `Sheet1_Startup` 메서드에 추가 합니다.
 
-     [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet16":::
 
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>레코드를 스크롤할 수 있도록 코드 추가
  <xref:System.Windows.Forms.Control.Click>각 단추의 이벤트 처리기에 코드를 추가 하 여 레코드를 이동 합니다.
@@ -156,13 +156,13 @@ ms.locfileid: "99925507"
 
 1. 의 이벤트에 대 한 이벤트 처리기를 추가 하 <xref:System.Windows.Forms.Control.Click> `Button1` 고 다음 코드를 추가 하 여 레코드를 뒤로 이동 합니다.
 
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
-     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet17":::
 
 2. 의 이벤트에 대 한 이벤트 처리기를 추가 하 <xref:System.Windows.Forms.Control.Click> `Button2` 고 다음 코드를 추가 하 여 레코드를 이동 합니다.
 
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
-     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet18":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet18":::
 
 ## <a name="test-the-application"></a>애플리케이션 테스트
  이제 통합 문서를 테스트 하 여 데이터가 예상 대로 표시 되는지 확인 하 고 오프 라인에서 솔루션을 사용할 수 있습니다.
@@ -190,7 +190,7 @@ ms.locfileid: "99925507"
 
 - 솔루션을 배포합니다. 자세한 내용은 [Office 솔루션 배포](../vsto/deploying-an-office-solution.md) 를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [Office 솔루션의 컨트롤에 데이터 바인딩](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 솔루션의 데이터](../vsto/data-in-office-solutions.md)
 - [데이터 캐시](../vsto/caching-data.md)

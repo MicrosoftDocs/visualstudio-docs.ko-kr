@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 509378b13e48f21a1148d700addd9ac4e78985e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910300"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825695"
 ---
 # <a name="excel-object-model-overview"></a>Excel 개체 모델 개요
   Microsoft Office Excel을 사용하는 솔루션을 개발하려면 Excel 개체 모델에서 제공하는 개체와 상호 작용할 수 있습니다. 이 항목에서는 가장 중요한 개체를 소개합니다.
@@ -50,7 +50,7 @@ ms.locfileid: "99910300"
   이 항목에서는 Excel 개체 모델에 대한 간략한 개요를 제공합니다. 전체 Excel 개체 모델에 대해 자세히 알아볼 수 있는 리소스는 [excel 개체 모델 설명서 사용](#ExcelOMDocumentation)을 참조 하세요.
 
 ## <a name="access-objects-in-an-excel-project"></a>Excel 프로젝트의 개체 액세스
- Excel 용 VSTO 추가 기능 프로젝트를 새로 만들면 Visual Studio에서 자동으로 *ThisAddIn* 또는 *ThisAddIn.cs* 코드 파일을 만듭니다. `Me.Application` 또는 `this.Application`을 사용하여 애플리케이션 개체에 액세스할 수 있습니다.
+ Excel 용 VSTO 추가 기능 프로젝트를 새로 만들면 Visual Studio에서 자동으로 *thisaddin* 또는 *thisaddin* 코드 파일을 만듭니다. `Me.Application` 또는 `this.Application`을 사용하여 애플리케이션 개체에 액세스할 수 있습니다.
 
  Excel에 대한 새 문서 수준 프로젝트를 만들면 새 Excel 통합 문서 또는 Excel 서식 파일 프로젝트를 만들 수 있습니다. Visual Studio는 통합 문서 및 서식 파일 프로젝트에 대한 새 Excel 프로젝트에서 다음과 같은 코드 파일을 자동으로 만듭니다.
 
@@ -63,8 +63,8 @@ ms.locfileid: "99910300"
 
  프로젝트에서 `Globals` 클래스를 사용하여 해당 클래스 외부에서 `ThisWorkbook`, `Sheet1`, `Sheet2` 또는 `Sheet3`에 액세스할 수 있습니다. 자세한 내용은 [Office 프로젝트의 개체에 대 한 전역 액세스](../vsto/global-access-to-objects-in-office-projects.md)를 참조 하세요. 다음 예제에서는 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> `Sheet1` 코드가 `Sheet` *n* 클래스 또는 클래스 중 하나에 배치 되었는지 여부에 관계 없이의 메서드를 호출 합니다 `ThisWorkbook` .
 
- [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
- [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet82":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet82":::
 
  Excel 문서의 데이터는 구조화 수준이 높기 때문에 개체 모델이 계층적이고 간단합니다. Excel에서는 상호 작용할 수 있는 수백 개의 개체를 제공 하지만 사용 가능한 개체의 작은 하위 집합에 집중 하 여 개체 모델에 대 한 유용한 시작을 얻을 수 있습니다. 이러한 개체에는 다음 네 가지가 있습니다.
 

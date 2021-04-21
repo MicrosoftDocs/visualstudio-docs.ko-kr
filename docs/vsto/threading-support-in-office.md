@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dce8bb0667cecbe073c734595d341f9c7b7ccac9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940802"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826085"
 ---
 # <a name="threading-support-in-office"></a>Office의 스레딩 지원
   이 문서에서는 Microsoft Office 개체 모델에서 스레딩을 지 원하는 방법에 대 한 정보를 제공 합니다. Office 개체 모델은 스레드로부터 안전 하지 않지만 Office 솔루션에서 여러 스레드로 작업할 수 있습니다. Office 응용 프로그램은 COM (구성 요소 개체 모델) 서버입니다. COM을 사용 하면 클라이언트가 임의의 스레드에서 COM 서버를 호출할 수 있습니다. 스레드로부터 안전 하지 않은 COM 서버의 경우 COM은 동시 호출을 serialize 하는 메커니즘을 제공 하 여 언제 든 지 서버에서 하나의 논리 스레드만 실행 되도록 합니다. 이 메커니즘을 STA (단일 스레드 아파트) 모델 이라고 합니다. 호출은 serialize 되므로 서버가 사용 중이거나 백그라운드 스레드에서 다른 호출을 처리 하는 동안에는 호출자가 차단 될 수 있습니다.
@@ -65,15 +65,15 @@ ms.locfileid: "99940802"
 ## <a name="start-the-thread-correctly"></a>스레드를 올바르게 시작 합니다.
  새 STA 스레드를 만들 때 스레드를 시작 하기 전에 아파트 상태를 STA로 설정 합니다. 다음 코드 예제에서는 이 작업을 수행하는 방법을 보여 줍니다.
 
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs" id="Snippet5":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb" id="Snippet5":::
 
  자세한 내용은 [관리 되는 스레딩 모범 사례](/dotnet/standard/threading/managed-threading-best-practices)를 참조 하세요.
 
 ## <a name="modeless-forms"></a>모덜리스 폼
  모덜리스 폼을 사용 하면 폼이 표시 되는 동안 응용 프로그램과 상호 작용 하는 형식을 사용할 수 있습니다. 사용자는 폼과 상호 작용 하 고 폼은를 닫지 않고 응용 프로그램과 상호 작용 합니다. Office 개체 모델은 관리 되는 모덜리스 폼을 지원 합니다. 그러나 백그라운드 스레드에서 사용 하면 안 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [스레딩 (c #)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [스레딩(Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
 - [스레드 및 스레딩 사용](/dotnet/standard/threading/using-threads-and-threading)

@@ -40,12 +40,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0d55daba4dee07454a31fcb6fc5fa210e8bcc34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947999"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825058"
 ---
 # <a name="content-controls"></a>콘텐츠 컨트롤
   콘텐츠 컨트롤은 다음과 같은 기능이 있는 문서와 템플릿을 디자인하는 방법을 제공합니다.
@@ -165,7 +165,7 @@ ms.locfileid: "99947999"
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 배열|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 배열|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|없음|
 
  문서 수준 및 VSTO 추가 기능 프로젝트에서 컨트롤 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 속성의 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 메서드를 사용하여 프로그래밍 방식으로 콘텐츠 컨트롤을 데이터 소스에 바인딩할 수 있습니다. 이 작업을 수행 하는 경우 문자열 **텍스트** 를 메서드의 *propertyName* 매개 변수에 전달 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 합니다. **텍스트** 속성은 콘텐츠 컨트롤의 기본 데이터 바인딩 속성입니다.
 
@@ -233,10 +233,10 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Word 프로젝트의 확인란 콘텐츠 컨트롤
  Word 2010에서는 확인란을 나타내는 새로운 형식의 콘텐츠 컨트롤이 도입되었습니다. 그러나는 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Office 프로젝트에서 사용할 수 있는 해당 CheckBoxContentControl 형식을 제공 하지 않습니다. [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 또는 Word 2010 프로젝트에서 확인란 콘텐츠 컨트롤을 만들려면 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 메서드를 사용하여 <xref:Microsoft.Office.Tools.Word.ContentControl> 개체를 만들고 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 값을 메서드에 전달하여 확인란 콘텐츠 컨트롤을 지정합니다. 다음 코드 예제에서는 이 작업을 수행하는 방법을 보여 줍니다.
 
- [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
- [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb" id="Snippet800":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs" id="Snippet800":::
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 - [확장 된 개체를 사용 하 여 Word 자동화](../vsto/automating-word-by-using-extended-objects.md)
 - [방법: Word 문서에 콘텐츠 컨트롤 추가](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [연습: 콘텐츠 컨트롤을 사용 하 여 템플릿 만들기](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
