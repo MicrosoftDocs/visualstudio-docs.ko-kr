@@ -2,19 +2,19 @@
 title: IDE 사용자 지정
 description: 사용자 고유의 개발 스타일 및 요구 사항을 가장 효과적으로 지원하는 방식으로 Visual Studio IDE를 개인 설정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909025"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373169"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE 개인 설정
 
@@ -40,7 +40,7 @@ ms.locfileid: "99909025"
 
 ## <a name="environment-color-themes"></a>환경 색 테마
 
-밝게, 어둡게 및 파란색 중에서 색 테마를 변경하려면 검색 상자에 **환경** 을 입력하고 **환경 > 일반** 을 선택합니다. **옵션** 대화 상자에서 **색 테마** 옵션을 변경합니다.
+밝게, 어둡게, 파랑 및 파랑(추가 대비) 중에서 색 테마를 변경하려면 검색 상자에 **테마** 를 입력하고 **환경 > 일반** 을 선택합니다. **옵션** 대화 상자에서 **색 테마** 옵션을 변경합니다.
 
 편집기에서 색 지정 옵션을 변경하려면 검색 상자에 **환경** 을 입력하고 **환경 > 글꼴 및 색** 을 선택합니다. [방법: 글꼴 및 색 변경](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)을 참조하세요.
 

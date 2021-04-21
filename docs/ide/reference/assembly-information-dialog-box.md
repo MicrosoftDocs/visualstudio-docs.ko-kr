@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836424"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295444"
 ---
 # <a name="assembly-information-dialog-box"></a>어셈블리 정보 대화 상자
 
@@ -65,7 +65,7 @@ Win32 파일 버전 리소스에 대해 특정 버전을 사용하도록 컴파�
 어셈블리 내의 형식을 COM에서 사용할 수 있는지 여부를 지정합니다. <xref:System.Runtime.InteropServices.ComVisibleAttribute>에 해당합니다.
 
 > [!NOTE]
-> .NET Framework 클래스 라이브러리에서 NuGet 패키지를 생성할 때 이러한 속성을 설정하는 방법에 대한 자세한 내용은 [패키지의 프로젝트 속성 구성](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)을 참조하세요.
+> .NET Framework 클래스 라이브러리에서 NuGet 패키지를 생성할 때 이러한 속성을 설정하는 방법에 대한 자세한 내용은 [패키지의 프로젝트 속성 구성](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)을 참조하세요. 그리고 NuGet 패키지와 관련된 라이선스 및 식에 대한 자세한 내용은 [licenses.nuget.org](/nuget/nuget-org/licenses.nuget.org/)를 참조하세요.
 
 ## <a name="see-also"></a>추가 정보
 

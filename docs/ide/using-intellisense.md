@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971325"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221720"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio의 IntelliSense
 
@@ -68,7 +68,7 @@ XML 문서 주석을 사용하여 함수와 매개 변수에 주석을 달 경�
 
 ![C&#35; 코드 파일의 매개 변수 정보](../ide/media/vs2015_paraminfo.png)
 
-**편집** > **IntelliSense** > **요약 정보** 를 선택하거나, **Ctrl**+**I** 를 누르거나, 편집기 도구 모음에서 **요약 정보** 단추를 선택하여 요약 정보를 수동으로 호출할 수 있습니다.
+**편집** > **IntelliSense** > **요약 정보** 를 선택하거나, **Ctrl**+**K**, **Ctrl**+**I** 를 누르거나, 편집기 도구 모음에서 **요약 정보** 단추를 선택하여 요약 정보를 수동으로 호출할 수 있습니다.
 
 오버로드된 함수의 경우 IntelliSense가 모든 오버로드 폼에 대한 정보를 표시하지 못할 수도 있습니다.
 
@@ -93,7 +93,7 @@ IntelliSense의 아이콘은 아이콘 한정자를 사용하여 추가 의미�
 | ![Internal 아이콘 한정자](../ide/media/intellisenseInternalModifier.png)       |    Internal 클래스    |    액세스가 현재 어셈블리로 제한됩니다.    |
 |![Private 아이콘 한정자](../ide/media/intellisensePrivateModifier.png)        |    Private 클래스    |    액세스가 포함하는 클래스 또는 현재 어셈블리 내의 포함하는 클래스에서 파생된 형식으로 제한됩니다. (C# 7.2부터 사용할 수 있습니다.)    |
 
-## <a name="troubleshoot-intellisense"></a>IntelliSense 문제 해결
+## <a name="troubleshoot-intellisense&quot;></a>IntelliSense 문제 해결
 
 경우에 따라 IntelliSense 옵션이 정상적으로 작동하지 않을 수 있습니다.
 
@@ -104,7 +104,7 @@ IntelliSense의 아이콘은 아이콘 한정자를 사용하여 추가 의미�
 **커서가 문자열 리터럴 안에 있습니다.** 다음 예제와 같이 커서가 문자열 리터럴 주변 따옴표에 있는 경우 IntelliSense를 사용할 수 없습니다.
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **자동 옵션이 꺼져 있습니다.** 기본적으로 IntelliSense는 자동으로 작동하지만 비활성화할 수 있습니다. 자동 문 완성을 비활성화한 경우에도 IntelliSense 기능을 호출할 수 있습니다.
