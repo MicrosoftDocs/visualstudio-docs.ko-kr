@@ -10,18 +10,18 @@ author: CaityBuschlen
 ms.author: cabuschl
 manager: ''
 robots: ''
-ms.date: 4/3/2020
+ms.date: 04/20/2020
 ms.faqid: q1_5
-ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 87d2633cb76a92c9a1c73651f3f57b2a139240f1
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "91838223"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107820928"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>내 구독에 대체 ID를 추가하려면 어떻게 해야 하나요? 그리고 대체 ID를 추가하면 내 Azure 크레딧과 Azure DevOps에 어떤 영향을 주나요?
 
-대체 계정을 Visual Studio 구독에 추가하면 구독이 할당된 ID 외에 다른 ID로 Azure DevOps 및 Azure 같은 구독 혜택에 액세스할 수 있습니다. 이전에는 VS(Visual Studio) 구독이 MSA(Microsoft 계정)에 할당된 경우에만 이 기능을 사용할 수 있었습니다. 이 기능이 Azure AD(Azure Active Directory)의 회사 또는 학교 계정까지로 확장되었습니다.
+대체 계정을 Visual Studio 구독에 추가하면 구독이 할당된 ID 외에 다른 ID로 Azure DevOps 및 Azure 같은 구독 혜택에 액세스할 수 있습니다. 이전에 이 기능은 VS(Visual Studio) 구독이 MSA(Microsoft 계정)에 할당된 경우에만 사용할 수 있었습니다.  Azure AD(Azure Active Directory)에서 회사 또는 학교 계정에 대해 이 기능을 확장했습니다.
 
 이 경우 다른 계정에 구독의 복사본을 제공하는 것이 아니라 대체 계정으로 두 가지 혜택에 액세스하는 기능만 제공합니다.
 

@@ -5,19 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 04/13/2021
+ms.date: 04/14/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 424d7e741e7f83687cf0d95055e765939222cd81
-ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
+ms.openlocfilehash: f2a1d033f9e97fe28d4992fc3dcb224c669b0d73
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107386026"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107506326"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,6 +29,7 @@ ms.locfileid: "107386026"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.0 | Preview 2 | 2021년 4월 14일 | 16.10.31213.239 |
 | 16.9.4 | 해제 | 2021년 4월 13일 | 16.9.31205.134 |
 | 16.7.14 | 해제 | 2021년 4월 13일 | 16.7.31205.176 |
 | 16.4.21 | 해제 | 2021년 4월 13일 | 16.4.31205.175 |

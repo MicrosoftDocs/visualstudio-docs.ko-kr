@@ -1,7 +1,7 @@
 ---
 title: 네트워크 기반 설치 업데이트
 description: --layout 명령을 사용하여 네트워크 기반 Visual Studio 설치를 업데이트하는 방법 알아보기
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f6e13333b6cab86f6485ddc18516039c712455a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295951"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800774"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio의 네트워크 기반 설치 업데이트
 
@@ -29,9 +29,9 @@ ms.locfileid: "107295951"
 ## <a name="how-to-update-a-network-layout"></a>네트워크 레이아웃을 업데이트하는 방법
 
 > [!IMPORTANT]
-> 이 지침에서는 네트워크 설치 레이아웃을 이전에 만든 것으로 가정합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md) 페이지를 참조하세요.
+> 이 지침에서는 이전에 네트워크 설치 레이아웃을 만들었고 클라이언트에서 업데이트를 다운로드하는 방법에 대한 몇 가지 사항이 결정되어 있다고 가정합니다. 이렇게 하는 방법에 대한 자세한 내용은 [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md) 및 [Visual Studio 배포에 대한 업데이트 제어](../install/controlling-updates-to-visual-studio-deployments.md) 페이지를 참조하세요.
 
-최신 업데이트를 포함하도록 네트워크 설치 공유를 새로 고치려면 `--layout` 명령을 실행하여 업데이트된 패키지를 점진적으로 다운로드합니다.
+최신 업데이트를 포함하도록 네트워크 설치 공유를 새로 고치려면 `--layout` 매개 변수를 사용해서 부트스트래퍼를 실행하여 업데이트된 패키지를 다운로드합니다.
 
 [네트워크 레이아웃을 처음 만들 때](create-a-network-installation-of-visual-studio.md) 부분 레이아웃을 선택했다면 이러한 설정이 저장됩니다. 이후 모든 레이아웃 명령은 이전 옵션과 함께 지정하는 새 옵션을 사용합니다.
 

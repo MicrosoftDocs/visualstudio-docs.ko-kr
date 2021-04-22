@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571547"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526153"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 
@@ -26,6 +26,8 @@ Bridge to Kubernetes는 연결된 Kubernetes 클러스터와 개발 컴퓨터 �
 
 > [!WARNING]
 > Bridge to Kubernetes는 개발 및 테스트 시나리오에서만 사용하도록 되어 있으며, 프로덕션 클러스터 또는 활성 상태 라이브 서비스에 사용하기에는 적합하지 않거나 지원되지 않습니다.
+
+현재 지원되는 기능과 Bridge to Kubernetes의 향후 로드맵에 대한 정보는 [Bridge to Kubernetes 로드맵](https://github.com/microsoft/mindaro/projects/1)에서 확인할 수 있습니다.
 
 ## <a name="using-bridge-to-kubernetes"></a>Bridge to Kubernetes 사용
 
@@ -53,7 +55,7 @@ Bridge to Kubernetes는 클러스터에 대한 연결을 설정할 때 다음 �
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml을 사용하는 추가 구성
 
-`KubernetesLocalProcessConfig.yaml` 파일을 사용하면 클러스터의 Pod에 사용할 수 있는 환경 변수 및 탑재된 파일을 복제할 수 있습니다. 추가 구성 옵션에 대한 자세한 내용은 [Bridge to Kubernetes 구성][using-config-yaml]을 참조하세요.
+`KubernetesLocalProcessConfig.yaml` 파일을 사용하면 클러스터의 Pod에 사용할 수 있는 환경 변수 및 탑재된 파일을 복제할 수 있습니다. Bridge to Kubernetes 개발에 Visual Studio를 사용하는 경우 KubernetesLocalConfig.yaml 파일이 리디렉션하는 서비스의 프로젝트 파일과 같은 디렉터리에 있어야 합니다. 추가 구성 옵션에 대한 자세한 내용은 [Bridge to Kubernetes 구성][using-config-yaml]을 참조하세요.
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>격리 상태로 개발하기 위한 라우팅 기능 사용
 

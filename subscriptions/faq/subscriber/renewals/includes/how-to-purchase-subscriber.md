@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/12/2021
-ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 04/20/2021
+ms.openlocfilehash: cdacf4bb150d4fb836b4c7088f80f63e738aea15
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104557"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800896"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Visual Studio 구독을 구매하려면 어떻게 하나요?
 
@@ -27,6 +27,8 @@ Microsoft Store를 통해 제공되는 소매용 Visual Studio 구독은 다음�
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
 이러한 각 구독은 초기 구매를 하거나 기존 구독을 갱신하는 옵션을 제공합니다. 갱신 가격에는 상당한 할인이 반영되며 기존 구독에 대해서만 사용할 수 있습니다. 할인된 갱신 가격으로 구독을 갱신할 자격이 되려면 만료되기 전에 구독을 갱신해야 합니다. 
+
+구독 또는 구독에 포함된 혜택 없이 Visual Studio의 일회성 구매를 원하는 경우 Microsoft Store를 방문하여 [Visual Studio Professional 2019](https://www.microsoft.com/p/visual-studio-professional-2019/dg7gmgf0f6q1?cid=msft_web_collection&activetab=pivot%3aoverviewtab)를 확인하세요. 
 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 월간 구독을 사용하면 장기 계약 없이 Visual Studio 및 Azure DevOps를 대여할 수 있습니다. 요금 청구는 Microsoft Azure 구독을 통해 처리됩니다. 아직 Azure 구독이 없는 경우 처음 구매 시 무료로 설정할 수 있습니다.  

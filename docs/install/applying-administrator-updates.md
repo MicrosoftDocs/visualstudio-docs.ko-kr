@@ -2,31 +2,31 @@
 title: Microsoft Endpoint Configuration Manager를 사용하여 Visual Studio에 관리자 업데이트 적용
 titleSuffix: ''
 description: Visual Studio에 관리자 업데이트를 적용하는 방법을 알아봅니다.
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: d7d2950b9495846693d5edee7790b8611cbca170
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547455"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800797"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager를 사용하는 관리자 업데이트 적용
 
-이 문서에서는 Visual Studio 관리자 업데이트의 다양한 유형 및 특징을 설명합니다. 아래에서는 조직 전체에 배포해야 하는 시기 및 방법, 사용 가능한 구성 옵션, 보고서를 확인하고 문제를 해결하는 방법에 대한 정보를 찾을 수 있습니다. 관리자 업데이트를 사용하기 위한 필수 구성 요소에 대한 자세한 내용은 [관리자 업데이트 사용](../install/enabling-administrator-updates.md)을 참조하세요.
+이 문서에서는 Visual Studio 관리자 업데이트의 다양한 유형 및 특징을 설명합니다. 아래에서는 조직 전체에 배포해야 하는 시기 및 방법, 사용 가능한 구성 옵션, 보고서를 확인하고 문제를 해결하는 방법에 대한 정보를 찾을 수 있습니다. 관리자 업데이트를 사용하기 위한 필수 구성 요소에 대한 자세한 내용은 [관리자 업데이트 사용](../install/enabling-administrator-updates.md)을 참조하세요. 관리자 업데이트는 컴퓨터에 Visual Studio가 이미 설치되어 있다고 가정합니다. 관리자 업데이트를 적용해도 새 설치가 시작되지는 않습니다.
 
 ## <a name="understanding-visual-studio-administrator-updates"></a>Visual Studio 관리자 업데이트 이해 
 
-Microsoft 카탈로그 및 WSUS에서 사용하도록 Microsoft 업데이트에 게시되는 Visual Studio 관리자 업데이트 패키지에는 Configuration Manager가 업데이트를 Visual Studio로 다운로드하고 클라이언트 컴퓨터로 배포하는 데 필요한 정보가 포함되어 있습니다. 또한 IT 관리자가 조직 전체에 배포할 업데이트를 결정하는 데 필요한 정보를 포함하고 있으며, 이를 통해 네트워크 레이아웃을 쉽게 유지 관리할 수 있습니다. Visual Studio 관리자 업데이트 패키지에는 제품을 새로 설치하는 데 충분한 정보가 포함되어 있지 않으며, Content Delivery Network에 게시된 실제 제품 이진 파일이 포함되지 않습니다. Visual Studio 관리자 업데이트는 일반 Visual Studio 업데이트와 마찬가지로 누적됩니다. 제품 버전 번호가 더 높고 릴리스 날짜가 더 늦은 Visual Studio 업데이트는 더 빠르고 더 낮은 버전의 상위 집합이라고 가정할 수 있습니다. 
+Microsoft 카탈로그 및 WSUS에서 사용하도록 Microsoft 업데이트에 게시되는 Visual Studio 관리자 업데이트 패키지에는 Configuration Manager가 Visual Studio 업데이트를 다운로드하고 클라이언트 머신에 배포하는 데 필요한 정보가 포함되어 있습니다. 또한 IT 관리자가 조직 전체에 배포할 업데이트를 결정하는 데 필요한 정보가 포함되어 있습니다. 이 패키지를 사용하여 네트워크 레이아웃을 쉽게 유지 관리할 수도 있습니다. Visual Studio 관리자 업데이트 패키지에는 제품을 새로 설치하는 데 충분한 정보가 포함되어 있지 않으며, Content Delivery Network에 게시된 실제 제품 이진 파일이 포함되지 않습니다. Visual Studio 관리자 업데이트는 일반 Visual Studio 업데이트와 마찬가지로 누적됩니다. 제품 버전 번호가 더 높고 릴리스 날짜가 더 늦은 Visual Studio 업데이트는 더 빠르고 더 낮은 버전의 상위 집합이라고 가정할 수 있습니다. 
 
 Visual Studio 관리자 업데이트는 지원되는 Visual Studio 서비스 버전에 적용됩니다. 특정 기간 동안 지원되는 Visual Studio 서비스 기준에 대한 자세한 내용은 [Visual Studio 제품 수명 주기 및 서비스](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)를 참조하세요. 지원되는 Visual Studio 서비스 기준은 모두 안전하게 유지됩니다.  
 
@@ -83,9 +83,9 @@ Visual Studio 관리자 업데이트를 조직의 배포 기본 설정 및 요�
 
 ::: moniker range="vs-2019"
 
-* **서비스 기준 유지**: 위에서 설명한 대로 관리자 업데이트의 기능 업데이트는 Visual Studio 설치를 더 최신 부 버전의 제품으로 업데이트합니다. 그러나 경우에 따라 개발 팀은 안정적이고 안전한 서비스 기준 수준을 유지하기 위해 클라이언트를 더 최신 부 버전으로 업데이트하는 시기를 제어해야 합니다. 서비스 기준을 유지하고 원치 않는 관리자 기능 업데이트를 무시하도록 클라이언트 컴퓨터를 구성하려면 **BaselineStickinessVersions2019** Reg_SZ를 만들고 데이터 값을 클라이언트 컴퓨터가 스냅하고 유지할 수 있는 허용되는 기준을 나타내는 문자열로 설정해야 합니다.  이 문자열에는 **16.4.0,16.7.0** 와 같이 쉼표로 구분된 일련의 서비스 기준 버전이 포함될 수 있습니다. 문자열에 서비스 기준 버전을 원하는 개수만큼 포함할 수 있으며, 지원되는 서비스 기준을 모두 참조하는 축약형인 **All** 이라는 단어도 지원됩니다. 
+* **서비스 기준 유지**: 위에서 설명한 대로 관리자 기능 업데이트는 Visual Studio 설치를 더 최신 부 버전의 제품으로 업데이트합니다. 그러나 Visual Studio 개발자가 안정적이고 안전한 서비스 기준 수준을 유지해야 하고 머신을 더 최신 부 버전으로 업데이트하는 시기를 제어하기를 원하는 경우도 있습니다. 서비스 기준을 유지하고 전송된 원치 않는 관리자 기능 업데이트를 무시하도록 클라이언트 머신을 구성하려면 **BaselineStickinessVersions2019** Reg_SZ 데이터 값을 만들어 클라이언트 머신이 맞추고 유지해야 하는 기본 설정 기준을 나타내는 문자열로 설정해야 합니다. 이 문자열은 **16.7.0** 과 같은 허용되는 서비스 기준 버전을 포함할 수 있습니다.  
 
-     `BaselineStickinessVersions2019` 레지스트리 값의 형식이 잘못된 경우 모든 기능 업데이트가 컴퓨터에 설치되지 않도록 차단됩니다. 또한 [Visual Studio 기능 업데이트 지원 기간](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)에도 주의하세요. 기술적으로는 수명 주기 끝에 도달한 기능 업데이트를 적용할 수 있지만 지원이 종료되어 안전하지 않을 수 있으므로 권장하지 않습니다.
+     `BaselineStickinessVersions2019` 레지스트리 값의 형식이 잘못된 경우 모든 관리자 기능 업데이트가 머신에 설치되지 않도록 차단됩니다. [Visual Studio 기능 업데이트 지원 기간](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)에 주의하세요. 또한 `BaselineStickinessVersions2019` 키의 존재 여부 또는 이 키의 값과 관계없이 기술적으로는 수명 주기 끝에 도달한 관리자 기능 업데이트를 적용할 수 있지만, 지원이 종료되어 안전하지 않을 수 있으므로 권장되지 않습니다.
 
 ::: moniker-end
 

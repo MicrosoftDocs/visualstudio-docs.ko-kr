@@ -2,7 +2,7 @@
 title: '자습서: 간단한 C# 콘솔 앱 확장'
 description: Visual Studio에서 C# 콘솔 앱을 개발하는 방법을 단계별로 알아봅니다.
 ms.custom: get-started
-ms.date: 07/09/2020
+ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e5552cc3d84eb0dd2a44943c36ddaa60c827ceb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cce069b1c4acb1784388b7afb06e810dbe826d59
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909322"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107584129"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>자습서: 간단한 C# 콘솔 앱 확장
 
@@ -39,7 +39,7 @@ ms.locfileid: "99909322"
 
    ![클래스 라이브러리 프로젝트 템플릿 선택 스크린샷](media/vs-2019/calculator2-add-project-dark.png)
 
-1. 프로젝트 이름 **CalculatorLibrary** 를 입력하고 **만들기** 를 선택합니다. Visual Studio에서 새 프로젝트를 만들어 솔루션에 추가합니다.
+1. 프로젝트 이름 **CalculatorLibrary** 를 입력하고 **만들기** 를 선택합니다. 다시, 메시지가 표시되면 .NET 3.1을 선택합니다. Visual Studio에서 새 프로젝트를 만들어 솔루션에 추가합니다.
 
    ![CalculatorLibrary 클래스 라이브러리 프로젝트가 추가된 솔루션 탐색기의 스크린샷](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "99909322"
 
    파일에서 `Class1` 참조의 이름을 바꿀지 묻는 메시지가 나타날 수도 있습니다. 이후 단계에서 코드를 바꿀 예정이므로 여기서 어떤 선택을 해도 괜찮습니다.
 
-1. 첫 번째 프로젝트가 새 클래스 라이브러리에서 제공된 API를 사용할 수 있도록 이제 프로젝트 참조를 추가해야 합니다.  첫 번째 프로젝트에서 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 참조 추가** 를 선택합니다.
+1. 첫 번째 프로젝트가 새 클래스 라이브러리에서 제공된 API를 사용할 수 있도록 이제 프로젝트 참조를 추가해야 합니다.  첫 번째 프로젝트에서 **종속성** 노드를 마우스 오른쪽 단추로 클릭하고 **프로젝트 참조 추가** 를 선택합니다.
 
    ![프로젝트 참조 추가 메뉴 항목의 스크린샷](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "99909322"
     }
    ```
 
-1. 첫 번째 프로젝트에 참조가 있지만 Calculator.DoOperation 호출이 해결되지 않는다는 오류가 표시됩니다. 이는 CalculatorLibrary가 차이 네임스페이스에 있어서 정규화된 참조에 대한 `CalculatorLibrary` 네임스페이스를 추가하기 때문입니다.
+1. 첫 번째 프로젝트에 참조가 있지만 Calculator.DoOperation 호출이 해결되지 않는다는 오류가 표시됩니다. CalculatorLibrary가 다른 네임스페이스에 있기 때문이므로 정규화된 참조에 대한 `CalculatorLibrary` 네임스페이스를 추가합니다.
 
    ```csharp
    result = CalculatorLibrary.Calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -121,14 +121,14 @@ ms.locfileid: "99909322"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>.NET 라이브러리 참조: 로그에 쓰기
 
-1. 이제 모든 작업의 로그를 추가하고 텍스트 파일에 쓰려 한다고 가정하겠습니다. .NET `Trace` 클래스는 다음과 같은 기능을 제공합니다. (기본 인쇄 디버깅 기술에도 유용합니다.)  Trace 클래스는 System.Diagnostics에 있습니다. using 지시문을 추가하여 시작하려면 `StreamWriter` 같은 System.IO 클래스가 필요합니다.
+1. 이제 모든 작업의 로그를 추가하고 텍스트 파일에 쓰려 한다고 가정하겠습니다. .NET `Trace` 클래스는 다음과 같은 기능을 제공합니다. (기본 인쇄 디버깅 기술에도 유용합니다.) Trace 클래스는 System.Diagnostics에 있고 `StreamWriter`와 같은 System.IO 클래스가 필요하므로 *CalculatorLibrary.cs* 맨 위에 using 지시문을 추가하여 시작합니다.
 
    ```csharp
    using System.IO;
    using System.Diagnostics;
    ```
 
-1. Trace 클래스가 사용되는 방법을 고려할 때, 파일 스트림과 연결된 클래스 참조를 유지해야 합니다. 즉, Calculator는 개체로 더 잘 작동하므로 생성자를 추가해 보겠습니다.
+1. Trace 클래스가 사용되는 방법을 고려할 때, 파일 스트림과 연결된 클래스 참조를 유지해야 합니다. 즉, 계산기는 개체로 더 잘 작동하므로 *CalculatorLibrary.cs* 에서 Calculator 클래스의 시작 부분에 생성자를 추가해 보겠습니다.
 
    ```csharp
    public Calculator()
@@ -144,7 +144,7 @@ ms.locfileid: "99909322"
         {
    ```
 
-1. 그리고 정적 `DoOperation` 메서드를 멤버 메서드로 변경해야 합니다.  로그를 위한 각 계산에 출력도 추가하겠습니다. 그러면 DoOperation이 다음 코드와 같이 보입니다.
+1. 그리고 정적 `DoOperation` 메서드를 멤버 메서드로 변경해야 하므로 `static` 키워드를 제거합니다.  로그를 위한 각 계산에 출력도 추가하겠습니다. 그러면 DoOperation이 다음 코드와 같이 보입니다.
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -182,13 +182,13 @@ ms.locfileid: "99909322"
     }
    ```
 
-1. 이제 Program.cs에서 정적 호출이 빨간색 표시선으로 플래그 지정됩니다. 이 문제를 해결하려면 while 루프 바로 앞에 다음 줄을 추가하여 `calculator` 변수를 만듭니다.
+1. 이제 다시 *Program.cs* 에서 정적 호출이 빨간색 표시선으로 플래그 지정됩니다. 이 문제를 해결하려면 `while (!endApp)` 루프 바로 앞에 다음 줄을 추가하여 `calculator` 변수를 만듭니다.
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   다음과 같이 `DoOperation`에 대한 호출 사이트를 수정합니다.
+   그리고 다음과 같이 `DoOperation`의 호출 사이트를 수정하여 소문자로 된 `calculator`라는 개체를 참조하도록 함으로써 이를 정적 메서드 호출이 아닌 멤버 호출로 만듭니다.
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -203,9 +203,154 @@ ms.locfileid: "99909322"
     3 * 3 = 9
     ```
 
+이때 *CalculatorLibrary.cs* 는 다음과 유사하게 표시됩니다.
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculator.log");
+            Trace.Listeners.Add(new TextWriterTraceListener(logFile));
+            Trace.AutoFlush = true;
+            Trace.WriteLine("Starting Calculator Log");
+            Trace.WriteLine(String.Format("Started {0}", System.DateTime.Now.ToString()));
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    Trace.WriteLine(String.Format("{0} + {1} = {2}", num1, num2, result));
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    Trace.WriteLine(String.Format("{0} - {1} = {2}", num1, num2, result));
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    Trace.WriteLine(String.Format("{0} * {1} = {2}", num1, num2, result));
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        Trace.WriteLine(String.Format("{0} / {1} = {2}", num1, num2, result));
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            return result;
+        }
+    }
+}
+```
+
+그리고 *Program.cs* 는 다음과 유사합니다.
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            return;
+        }
+    }
+}
+```
+
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>NuGet 패키지 추가: JSON 파일에 쓰기
 
-1. 이제 개체 데이터를 저장하는 데 많이 사용되는 이식 가능한 형식인 JSON 형식으로 작업을 출력하려 한다고 가정하겠습니다. 이 기능을 구현하려면 NuGet 패키지인 Newtonsoft.Json을 참조해야 합니다. NuGet 패키지는 .NET 클래스 라이브러리를 배포하는 주요 수단입니다. **솔루션 탐색기** 에서 CalculatorLibrary 프로젝트에 대한 **참조** 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택합니다.
+1. 이제 개체 데이터를 저장하는 데 많이 사용되는 이식 가능한 형식인 JSON 형식으로 작업을 출력하려 한다고 가정하겠습니다. 이 기능을 구현하려면 NuGet 패키지인 Newtonsoft.Json을 참조해야 합니다. NuGet 패키지는 .NET 클래스 라이브러리를 배포하는 주요 수단입니다. **솔루션 탐색기** 에서 CalculatorLibrary 프로젝트에 대한 **종속성** 노드를 마우스 오른쪽 단추로 클릭하고 **NuGet 패키지 관리** 를 선택합니다.
 
    ![바로 가기 메뉴의 NuGet 패키지 관리 스크린샷](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -434,6 +579,174 @@ Visual Studio 디버거는 코드를 단계별로 실행하여 프로그래밍 �
 
 1. 'n' 명령을 사용하여 적절하게 앱을 닫습니다.
 
+## <a name="code-complete"></a>코드 완료
+
+모든 단계가 완료된 후 *CalculatorLibrary.cs* 파일의 전체 코드는 다음과 같습니다.
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+using Newtonsoft.Json;
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        JsonWriter writer;
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculatorlog.json");
+            logFile.AutoFlush = true;
+            writer = new JsonTextWriter(logFile);
+            writer.Formatting = Formatting.Indented;
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operations");
+            writer.WriteStartArray();
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operand1");
+            writer.WriteValue(num1);
+            writer.WritePropertyName("Operand2");
+            writer.WriteValue(num2);
+            writer.WritePropertyName("Operation");
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    writer.WriteValue("Add");
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    writer.WriteValue("Subtract");
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    writer.WriteValue("Multiply");
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        writer.WriteValue("Divide");
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            writer.WritePropertyName("Result");
+            writer.WriteValue(result);
+            writer.WriteEndObject();
+
+            return result;
+        }
+
+        public void Finish()
+        {
+            writer.WriteEndArray();
+            writer.WriteEndObject();
+            writer.Close();
+        }
+    }
+}
+```
+
+그리고 *Program.cs* 의 코드는 다음과 같습니다. 
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            calculator.Finish();
+            return;
+        }
+    }
+}
+```
+
 ## <a name="next-steps"></a>다음 단계
 
 축하합니다. 이 자습서를 마쳤습니다. 자세히 알아보려면 다음 자습서를 계속 진행하세요.
@@ -446,5 +759,5 @@ Visual Studio 디버거는 코드를 단계별로 실행하여 프로그래밍 �
 
 ## <a name="see-also"></a>참조
 
-* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [Visual Studio에서 C# 코드를 디버그하는 방법 알아보기](tutorial-debugger.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [Visual Studio에서 C# 코드를 디버그하는 방법 알아보기](tutorial-debugger.md)
