@@ -1,13 +1,12 @@
 ---
 title: XAML 디자이너 개요
 description: XAML 기반 응용 프로그램을 디자인 하는 데 도움이 되는 시각적 인터페이스를 제공 하는 Blend for Visual Studio의 XAML 디자이너 작업 영역 UI 및 기능에 대해 알아봅니다.
-ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
+ms.custom: contperf-fy21q4; SEO-VS-2020
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
-- VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.devlang: CSharp
@@ -15,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d5584380b78bba05f1596a99aa2298789df018f
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966489"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879358"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML 디자이너를 사용하여 UI 만들기
 
@@ -164,7 +163,7 @@ Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 �
 
 속성 사용 및 이벤트 처리에 대한 자세한 내용은 [컨트롤 및 패턴 소개](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [방법: 리소스 만들기 및 적용](../xaml-tools/how-to-create-and-apply-a-resource.md)

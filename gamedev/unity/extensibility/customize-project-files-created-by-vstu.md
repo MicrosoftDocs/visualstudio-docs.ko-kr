@@ -2,7 +2,7 @@
 title: VSTU에서 만든 프로젝트 파일 사용자 지정 | Microsoft Docs
 description: VSTU(Visual Studio Tools for Unity)에서 생성한 프로젝트 파일을 사용자 지정하는 방법을 알아봅니다. C# 코드 예제를 검토합니다.
 ms.custom: ''
-ms.date: 07/26/2018
+ms.date: 04/19/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,64 +12,38 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 071dc7a9f12dcfeb5fff9e59bbbf34dc64f61cf5
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: a4a5973863877db2d071f9be8d4689928b21a689
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341352"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879319"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>VSTU에서 만든 프로젝트 파일 사용자 지정
-Visual Studio Tools for Unity는 프로젝트 파일을 생성하는 동안 Unity 스타일의 콜백을 제공합니다. `VisualStudioIntegration.ProjectFileGeneration` 이벤트로 등록하여 다시 생성될 때마다 프로젝트 파일을 수정합니다.
+Unity는 프로젝트 파일을 생성 하는 동안 콜백을 제공 합니다. 를 `OnGeneratedSlnSolution` `OnGeneratedCSProject` 사용 하 여 및 메서드를 구현 하 여 [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) 프로젝트 또는 솔루션 파일을 다시 생성할 때마다 수정 합니다.
 
 ## <a name="demonstrates"></a>데모
- Visual Studio Tools for Unity에서 생성한 Visual Studio 프로젝트 파일을 사용자 지정하는 방법
+Visual Studio Tools for Unity에서 생성한 Visual Studio 프로젝트 파일을 사용자 지정하는 방법
 
 ## <a name="example"></a>예제
 
 ```csharp
-#if ENABLE_VSTU
 using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Xml.Linq;
-
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-using SyntaxTree.VisualStudio.Unity.Bridge;
-
-[InitializeOnLoad]
-public class ProjectFileHook
+public class ProjectFilePostprocessor : AssetPostprocessor
 {
-    // necessary for XLinq to save the xml project file in utf8
-    class Utf8StringWriter : StringWriter
-    {
-        public override Encoding Encoding
-        {
-            get { return Encoding.UTF8; }
-        }
-    }
+  public static string OnGeneratedSlnSolution(string path, string content)
+  {
+    // TODO: process solution content
+    return content;
+  }
 
-    static ProjectFileHook()
-    {
-        ProjectFilesGenerator.ProjectFileGeneration += (string name, string content) =>
-        {
-            // parse the document and make some changes
-            var document = XDocument.Parse(content);
-            document.Root.Add(new XComment("FIX ME"));
-
-            // save the changes using the Utf8StringWriter
-            var str = new Utf8StringWriter();
-            document.Save(str);
-
-            return str.ToString();
-        };
-    }
+  public static string OnGeneratedCSProject(string path, string content)
+  {
+    // TODO: process project content
+    return content;
+  }
 }
-#endif
 ```
-
-## <a name="see-also"></a>참고 항목
- [예제: 로그 콜백](/cross-platform/share-the-unity-log-callback-with-vstu.md)

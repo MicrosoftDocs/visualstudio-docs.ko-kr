@@ -3,16 +3,19 @@ title: XAML 코드 편집기
 description: Visual Studio에서 XAML 코드 편집기 둘러보기
 ms.date: 06/16/2020
 ms.topic: overview
+f1_keywords:
+- VS.XamlEditor
 monikerRange: vs-2019
+ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962316"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879397"
 ---
 # <a name="xaml-code-editor"></a>XAML 코드 편집기
 
@@ -270,7 +273,7 @@ Visual Studio IDE의 ‘모든’ 설정에 대한 자세한 내용은 [코드 �
 
 > [!NOTE]
 > 바로 가기 키를 사용하여 옵션 대화 상자에 액세스할 수도 있습니다. 방법은 다음과 같습니다. **Ctrl**+**Q** 를 눌러 IDE를 검색하고 **옵션** 을 입력한 다음 **Enter** 를 누릅니다. 다음으로 **Ctrl**+**E** 를 눌러 옵션 대화 상자를 검색하고 **텍스트 편집기** 를 입력하고, **Enter** 를 누르고 **XAML** 을 입력한 다음 **Enter** 를 누릅니다.
->  
+>
 > 바로 가기 키에 대한 자세한 내용은 [Visual Studio 바로 가기 팁](../ide/productivity-shortcuts.md#code-editor) 페이지를 참조하세요.
 
 ### <a name="universal-text-editor-options"></a>범용 텍스트 편집기 옵션

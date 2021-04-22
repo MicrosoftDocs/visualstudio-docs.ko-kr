@@ -2,7 +2,7 @@
 title: 문제 해결 및 알려진 문제(VS Tools for Unity)
 description: Visual Studio Tools for Unity에서 문제 해결을 확인합니다. 알려진 문제에 대한 설명을 확인하고 해당 문제의 해결 방법을 알아봅니다.
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 04/15/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: troubleshooting
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e447c8cb94e536aeed9e01d00098fe4a98c6c006
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 37ee35fa66d37f9b85af01f5012e8ede76e877de
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341279"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879371"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>문제 해결 및 알려진 문제(Visual Studio Tools for Unity)
 
@@ -25,9 +25,15 @@ ms.locfileid: "94341279"
 
 ## <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Unity와 Visual Studio 간의 연결 문제 해결
 
-### <a name="confirm-editor-attaching-is-enabled"></a>편집기 연결이 사용하도록 설정되어 있는지 확인
+### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>확인 `Editor Attaching` 이 사용 하도록 설정 되어 있거나 `Code Optimization On Startup` 가로 설정 된 경우 `Debug`
 
-Unity 메뉴에서 **편집 > 기본 설정** 을 선택한 다음, **외부 도구** 탭을 선택합니다. **편집기 연결** 확인 상자가 사용하도록 설정되어 있는지 확인합니다. 자세한 내용은 [Unity 기본 설정 설명서](https://docs.unity3d.com/Manual/Preferences.html)를 참조하세요.
+Unity 메뉴에서를 선택 `Edit / Preferences` 합니다.
+
+사용 된 Unity 버전에 따라 다음을 수행 합니다.
+- `Code Optimization On Startup`가로 설정 되어 있는지 확인 `Debug` 합니다.
+- 또는 탭을 선택 `External Tools` 합니다. `Editor Attaching` 확인란이 활성화 되어 있는지 확인 합니다. 
+
+자세한 내용은 [Unity 기본 설정 설명서](https://docs.unity3d.com/Manual/Preferences.html)를 참조하세요.
 
 ### <a name="unable-to-attach"></a>연결할 수 없음
 
@@ -60,11 +66,22 @@ FMOD의 경우 일시적인 해결 방법이 있습니다. 즉, `FMOD_STUDIO_INI
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio에서 호환되지 않는 프로젝트
 
-먼저 Unity에서 Visual Studio가 외부 스크립트 편집기로 설정되어 있는지 확인합니다(편집/기본 설정/외부 도구). 다음으로 Unity에 Visual Studio 플러그인이 설치되어 있는지 확인합니다(도움말/정보에 Microsoft Visual Studio Tools for Unity와 같은 메시지가 표시되어야 함). 다음으로 확장이 Visual Studio에 제대로 설치되어 있는지 확인합니다(도움말/정보).
+Visual Studio는 프로젝트 설정에 "호환 되지 않는" 상태를 저장 하 고,를 명시적으로 사용할 때까지 프로젝트를 다시 로드 하지 않는다는 것을 알아야 합니다 `Reload Project` . 따라서 각 문제 해결 단계 후에 솔루션을 다시 열고 호환 되지 않는 모든 프로젝트를 마우스 오른쪽 단추로 클릭 하 고를 선택 `Reload Project` 합니다.
+
+1. 을 사용 하 여 Visual Studio가 Unity에서 외부 스크립트 편집기로 설정 되었는지 확인 `Edit / Preferences / External Tools` 합니다.
+2. Unity 버전에 따라:
+   - Unity에 Visual Studio 플러그 인이 설치 되어 있는지 확인 합니다. `Help / About` 맨 아래에서 Unity 용 도구를 사용 하도록 설정 Microsoft Visual Studio와 같은 메시지가 표시 되어야 합니다.
+   - Unity 2020. x +:에서 최신 Visual Studio 편집기 패키지를 사용 하 고 있는지 확인 `Window / Package Manager` 합니다.
+3. 프로젝트에서 모든 프로젝트/솔루션 파일 및 폴더를 삭제 해 보세요 `.vs` .
+4. 또는을 사용 하 여 프로젝트/솔루션을 다시 만드십시오 `Open C# Project` `Edit / Preferences / External tools / Regenerate Project files` .
+5. Visual Studio에서 게임/Unity 워크 로드를 설치 했는지 확인 합니다.
+6. [여기](#visual-studio-crashes)에 설명 된 대로 MEF 캐시를 정리 해 보세요.
+7. Visual Studio를 다시 설치 해 보세요 (게임/Unity 작업을 시작 하는 데만 사용).
+8. 에서 Unity 확장을 방해할 수 있는 경우 타사 확장을 사용 하지 않도록 설정 해 봅니다 `Tools / Extensions` .
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>추가 다시 로드 또는 열린 모든 창이 손실되는 Visual Studio
 
-자산 처리기나 다른 도구에서 프로젝트 파일을 직접 터치하지 마십시오. 프로젝트 파일을 정말로 조작해야 하는 경우 API를 사용하는 것이 좋습니다. [어셈블리 참조 문제 섹션](#assembly-reference-issues)을 참조하세요.
+자산 처리기나 다른 도구에서 프로젝트 파일을 직접 터치하지 마십시오. 프로젝트 파일을 정말로 조작해야 하는 경우 API를 사용하는 것이 좋습니다. [어셈블리 참조 문제 섹션](#assembly-reference-or-project-property-issues)을 참조하세요.
 
 다시 로드가 추가로 발생하거나 Visual Studio에서 다시 로드 시 열려 있는 창이 모두 손실되면 적절한 .NET 타기팅 팩이 설치되어 있는지 확인해야 합니다. 자세한 내용은 프레임워크에 대한 다음 섹션을 참조하세요.
 
@@ -78,13 +95,15 @@ FMOD의 경우 일시적인 해결 방법이 있습니다. 즉, `FMOD_STUDIO_INI
 
 ## <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows에서 Visual Studio는 Unity 대상 프레임워크를 다운로드하도록 요청합니다.
 
-Visual Studio Tools for Unity를 사용하려면 Windows 8 또는 10에 기본적으로 설치되지 않는 .NET Framework 3.5가 필요합니다. 이 문제를 해결하려면 지침에 따라 .NET framework 3.5를 다운로드하고 설치하세요.
+레거시 Unity 런타임 (.NET 3.5에 해당)을 사용 하는 경우 Visual Studio Tools for Unity에는 Windows 8 또는 10에 기본적으로 설치 되지 않는 .NET framework 3.5이 필요 합니다. 이 문제를 해결하려면 지침에 따라 .NET framework 3.5를 다운로드하고 설치하세요.
 
-새로운 Unity 런타임을 사용하는 경우 .NET 타기팅 팩 버전 4.6 및 4.7.1도 필요합니다. VS2017 설치 관리자를 사용하여 신속하게 설치할 수 없습니다(VS2017 설치, 개별 구성 요소, .NET 범주 수정, 모든 4.x 타기팅 팩 선택).
+새 Unity 런타임을 사용할 때 Unity 버전에 따라 .NET 대상 지정 팩 버전 4.6 또는 4.7.1도 필요 합니다. Visual Studio 설치 관리자를 사용 하 여 신속 하 게 설치할 수 있습니다 (설치, 개별 구성 요소, .NET 범주를 수정 하 고 모든 4.x 대상 팩을 선택).
 
-## <a name="assembly-reference-issues"></a>어셈블리 참조 문제
+## <a name="assembly-reference-or-project-property-issues"></a>어셈블리 참조 또는 프로젝트 속성 문제
 
-프로젝트가 복잡한 전체 참조이거나 이 생성 단계를 더 잘 제어하려는 경우 [API](/cross-platform/customize-project-files-created-by-vstu.md)를 사용하여 생성된 프로젝트 또는 솔루션 콘텐츠를 조작할 수 있습니다. Unity 프로젝트에서 [응답 파일](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)을 사용할 수도 있으며, 이렇게 처리할 예정입니다.
+프로젝트가 복잡한 전체 참조이거나 이 생성 단계를 더 잘 제어하려는 경우 [API](../extensibility/customize-project-files-created-by-vstu.md)를 사용하여 생성된 프로젝트 또는 솔루션 콘텐츠를 조작할 수 있습니다. Unity 프로젝트에서 [응답 파일](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)을 사용할 수도 있으며, 이렇게 처리할 예정입니다.
+
+최신 Visual Studio 및 Unity 버전을 사용 하면 `Directory.Build.props` 생성 된 프로젝트와 함께 사용자 지정 파일을 사용 하는 것이 가장 좋습니다. 그러면 생성 프로세스를 방해 하지 않고 프로젝트 구조에 기여할 수 있습니다. 자세한 내용은 [여기](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets)를 참조하세요.
 
 ## <a name="breakpoints-with-a-warning"></a>경고가 있는 중단점
 
@@ -92,7 +111,7 @@ Visual Studio에서 특정 중단점에 대한 원본 위치를 찾을 수 없�
 
 ## <a name="breakpoints-not-hit"></a>적중되지 않는 중단점
 
-사용하는 스크립트가 현재 Unity 장면에 제대로 로드/사용되었는지 확인합니다. Visual Studio와 Unity를 모두 종료한 다음, 생성된 모든 파일(\*.csproj, \*.sln)과 전체 라이브러리 폴더를 삭제합니다.
+사용하는 스크립트가 현재 Unity 장면에 제대로 로드/사용되었는지 확인합니다. Visual Studio와 Unity를 모두 종료 한 다음 생성 된 모든 파일 ( \* .csproj, \* .sln), `.vs` 폴더 및 전체 라이브러리 폴더를 삭제 합니다. C # 디버깅에 대 한 자세한 내용은 Unity [웹 사이트](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)에서 찾을 수 있습니다.
 
 ## <a name="unable-to-debug-android-players"></a>Android 플레이어를 디버그할 수 없음
 
@@ -102,13 +121,13 @@ Wi-Fi는 유용하지만 대기 시간 때문에 USB에 비해 속도가 느립�
 
 USB는 디버깅하기에 매우 빠릅니다. 이제 Visual Studio Tools for Unity에서 USB 디바이스를 감지할 수 있고 디버깅을 위해 adb 서버와 통신하여 포트를 올바르게 전달할 수 있습니다.
 
-## <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 및 IntelliSense 또는 코드 색 지정 관련 문제입니다.
+## <a name="issues-with-intellisense-or-code-coloration"></a>IntelliSense 또는 코드 색 지정 관련 문제
 
-Visual Studio 2015를 업데이트 3으로 업그레이드해 보세요.
+Visual Studio를 최신 버전으로 업그레이드 해 보세요. [호환 되지 않는 프로젝트](#incompatible-project-in-visual-studio)와 동일한 문제 해결 단계를 시도 합니다.
 
 ## <a name="known-issues"></a>알려진 문제
 
- Visual Studio Tools for Unity에는 디버거가 C# 컴파일러의 Unity 이전 버전과 상호작용하는 방법에서 발생하는 알려진 문제가 있습니다. 문제를 해결하기 위해 노력 중이지만 해결하기 전까지 다음과 같은 문제가 발생할 수 있습니다.
+Visual Studio Tools for Unity에는 디버거가 C# 컴파일러의 Unity 이전 버전과 상호작용하는 방법에서 발생하는 알려진 문제가 있습니다. 문제를 해결하기 위해 노력 중이지만 해결하기 전까지 다음과 같은 문제가 발생할 수 있습니다.
 
 - 디버그할 때 Unity가 충돌되는 경우가 있습니다.
 
@@ -118,11 +137,11 @@ Visual Studio 2015를 업데이트 3으로 업그레이드해 보세요.
 
 ## <a name="report-errors"></a>오류 보고
 
- 충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다!
+충돌, 고정 또는 기타 오류가 발생하는 경우 오류 보고서를 전송하여 Visual Studio Tools for Unity의 품질을 개선할 수 있도록 도와주시기 바랍니다. Visual Studio Tools for Unity의 문제를 조사하고 해결하는 데 도움이 됩니다. 감사합니다!
 
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Visual Studio가 고정될 때 오류를 보고하는 방법
 
- Visual Studio가 Visual Studio Tools for Unity로 디버그할 때 중지되는 경우가 있다는 보고가 있지만 이 문제를 파악하려면 더 많은 데이터가 필요합니다. 아래의 단계를 따라 이 문제를 조사하는 데 도움을 주실 수 있습니다.
+Visual Studio가 Visual Studio Tools for Unity로 디버그할 때 중지되는 경우가 있다는 보고가 있지만 이 문제를 파악하려면 더 많은 데이터가 필요합니다. 아래의 단계를 따라 이 문제를 조사하는 데 도움을 주실 수 있습니다.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Visual Studio가 Visual Studio Tools for Unity로 디버그할 때 중지되는 문제를 보고하려면
 
@@ -130,11 +149,11 @@ Visual Studio 2015를 업데이트 3으로 업그레이드해 보세요.
 
 1. 새 Visual Studio 인스턴스를 엽니다.
 
-1. 프로세스에 연결 대화 상자를 엽니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그** , **프로세스에 연결** 을 선택합니다.
+1. 프로세스에 연결 대화 상자를 엽니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그**, **프로세스에 연결** 을 선택합니다.
 
 1. Visual Studio의 중지된 인스턴스에 디버거를 연결합니다. **프로세스에 연결** 대화 상자에서 **사용 가능한 프로세스** 테이블로부터 Visual Studio의 중지된 인스턴스를 선택한 다음 **연결** 단추를 선택합니다.
 
-1. 디버거를 일시 중지합니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그** , **모두 중단** 을 차례로 선택하거나 **Ctrl+Alt+Break** 를 누르기만 하면 됩니다.
+1. 디버거를 일시 중지합니다. Visual Studio의 새 인스턴스에 있는 주 메뉴에서 **디버그**, **모두 중단** 을 차례로 선택하거나 **Ctrl+Alt+Break** 를 누르기만 하면 됩니다.
 
 1. 스레드 덤프를 만듭니다. [명령] 창에서 다음 명령을 입력하고 **Enter** 키를 누릅니다.
 
@@ -142,7 +161,7 @@ Visual Studio 2015를 업데이트 3으로 업그레이드해 보세요.
     Debug.ListCallStack /AllThreads /ShowExternalCode
     ```
 
-    **명령** 창이 먼저 표시되도록 해야 할 수 있습니다. Visual Studio의 주 메뉴에서 **보기** , **다른 창** , **명령 창** 을 선택합니다.
+    **명령** 창이 먼저 표시되도록 해야 할 수 있습니다. Visual Studio의 주 메뉴에서 **보기**, **다른 창**, **명령 창** 을 선택합니다.
 
 *Mac:*
 

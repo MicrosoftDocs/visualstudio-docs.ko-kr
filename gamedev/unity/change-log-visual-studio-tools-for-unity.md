@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683477"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879384"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
@@ -30,35 +30,35 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - **평가:**
 
-  - `Active Scene`루트 게임 개체를 표시 하는 지역에 추가 됩니다.
+  - 루트 게임 개체를 표시하는 `Active Scene`을 로컬에 추가했습니다.
 
-  - `this.gameObject`Unity 프로젝트에서 널리 사용 되는 경우 지역에 추가 됩니다.
+  - Unity 프로젝트에서 널리 사용되는 `this.gameObject`를 로컬에 추가했습니다.
 
-  - 모든 `Children` `Components` `GameObject` 개체 계층 구조를 쉽게 표시할 수 있도록 모든 인스턴스에 및 그룹을 추가 했습니다.
+  - 모든 개체 계층 구조를 쉽게 표시할 수 있도록 모든 `GameObject` 인스턴스에 `Children` 및 `Components` 그룹을 추가했습니다.
 
-  - `Scene Path` `GameObject` 장면에서 위치를 표시 하기 위해 모든 인스턴스에 추가 됩니다.
+  - 장면에서 위치를 표시하도록 모든 `GameObject`에 `Scene Path`를 추가했습니다.
 
-  - `JobEntityBatch`소스 생성기에서 엔터티를 사용 하는 경우/람다에 대 한 지원이 추가 되었습니다.
+  - 소스 생성기에서 엔터티를 사용하는 경우 `JobEntityBatch`/람다에 대한 지원을 추가했습니다.
 
-  - 버킷 팅 인덱스를 사용 하 여 긴 배열 표시에 대 한 지원이 향상 되었습니다.
+  - (인덱스 버킷팅을 사용하여) 대규모 배열을 표시하도록 지원을 향상했습니다.
   
-  - 2019.4 API에 대 한 누락 된 Unity 메시지를 추가 했습니다.
+  - 2019.4 API에 대해 누락된 Unity 메시지를 추가했습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - 한국어 이외의 언어에 대 한 다양 한 UI 문제를 수정 했습니다.
+  - ENU 이외 언어에 대한 다양한 UI 문제를 해결했습니다.
 
-  - 진단의 안정성 문제를 해결 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 했습니다.
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 진단의 안정성 문제를 해결했습니다.
   
 - **디버깅:**
 
-  - 메서드를 사용할 때 VM 연결 끊기 문제가 해결 `Trace` 되었습니다.
+  - `Trace` 메서드 사용 시 VM 연결 끊김 문제를 해결했습니다.
 
 - **평가:**
 
-  - 예외를 throw 하는 사용 되지 않는 속성의 필터링이 수정 되었습니다.
+  - 예외를 throw하는, 사용되지 않는 속성의 필터링을 수정했습니다.
 
 ## <a name="4900"></a>4.9.0.0
 2021 년 1 월 20 일 릴리스
@@ -67,13 +67,13 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - **통합:**
 
-  - `raytrace shaders`, 및 파일에 대 한 지원이 추가 되었습니다 `UXML` `USS` .
+  - `raytrace shaders`, `UXML`, `USS` 파일에 대한 지원을 추가했습니다.
 
   - `.vsconfig`생성 지원이 추가 되었습니다. 이제 Visual Studio에서 누락 된 구성 요소를 검색 하 고 Unity 프로젝트를 사용할 때 설치 하 라는 메시지를 표시 합니다.
 
-  - 코 루틴으로 사용 되는 모든 메서드에 대해 Unity 메시지 API를 업데이트 했습니다.
+  - (코루틴으로 사용되는 모든 메서드에 대한) Unity 메시지 API를 업데이트했습니다.
 
-  - Android SDK 검색을 업데이트 했습니다.
+  - Android SDK 검색을 업데이트했습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -81,7 +81,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - 인스턴스 선택 대화 상자를 사용할 때 프로세스 새로 고침을 수정 했습니다.
 
-  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)코 루틴 및에 대해 잘못 된 경고를 제공 하는 진단이 수정 되었습니다 `AssetPostprocessor.OnAssignMaterialModel` .
+  - 코루틴 및 `AssetPostprocessor.OnAssignMaterialModel`에 대해 잘못된 경고를 제공하는 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 진단을 수정했습니다.
 
 ## <a name="4820"></a>4.8.2.0
 2020 년 11 월 10 일 릴리스
@@ -1367,7 +1367,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 Preview 2
 릴리스 날짜: 2015년 4월 2일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - **Unity 프로젝트 탐색기:**
 
@@ -1456,7 +1456,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 Preview
 릴리스 날짜: 2014년 11월 12일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Visual Studio 2015가 지원됩니다.
 
@@ -1496,7 +1496,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 10월 9일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 플레이어의 검색을 향상합니다.
 
@@ -1520,7 +1520,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 9월 22일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 원본 위치로 바인딩 중단점을 최적화합니다.
 
@@ -1566,7 +1566,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 7월 29일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 디버거 연결 창에서 디버그할 사용자 지정 IP 및 포트를 입력하는 기능을 추가합니다.
 
@@ -1615,7 +1615,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2014년 1월 7일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 편집기의 원격 검색을 위해 Mavericks에서 Unity의 스크립팅 엔진 네트워크 계층에 있는 문제를 해결합니다.
 
@@ -1643,7 +1643,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 11월 21일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4.3 API와 함께 MonoBehaviour 마법사가 조정되었습니다.
 
@@ -1677,7 +1677,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 9월 24일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1757,7 +1757,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2013년 3월 25일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - 디버거 연결 속도가 크게 향상되었습니다.
 
@@ -1869,7 +1869,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 ## <a name="10110"></a>1.0.11.0
 릴리스 날짜: 2012년 11월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4를 공식 지원합니다.
 
@@ -1879,9 +1879,9 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - 정보 콘솔 메시지를 구문 분석하여 오류 목록 클릭 시 기호로 된 첫 번째 stackframe으로 안내합니다.
 
-- [API](extensibility/customize-project-files-created-by-vstu.md) 를 추가하여 사용자가 프로젝트 생성에 참여할 수 있도록 합니다.
+- API를 추가하여 사용자가 프로젝트 생성에 참여할 수 있도록 합니다.
 
-- [API](extensibility/share-the-unity-log-callback-with-vstu.md) 를 추가하여 사용자가 LogCallback에 참여할 수 있도록 합니다.
+- API를 추가하여 사용자가 LogCallback에 참여할 수 있도록 합니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
@@ -1946,7 +1946,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 14일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Visual Studio 2012를 지원합니다.
 
@@ -1976,7 +1976,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 5일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity에서 디버그 기호가 자동으로 변환됩니다.
 
@@ -1990,7 +1990,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 9월 4일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity에서 파일을 열기 위해 UnityVS의 사용을 비활성화하는 새 구성 옵션입니다.
 
@@ -2018,7 +2018,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 릴리스 날짜: 2012년 8월 28일
 
-### <a name="new-features"></a>새 기능
+### <a name="new-features"></a>새로운 기능
 
 - Unity 4.0 베타에 대한 미리 보기를 지원합니다.
 
