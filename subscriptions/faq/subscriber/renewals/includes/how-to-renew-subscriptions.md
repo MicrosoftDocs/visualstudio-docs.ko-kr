@@ -6,14 +6,14 @@ ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
 ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 04/02/2021
+ms.date: 04/19/2021
 ms.faqid: q4_2
-ms.openlocfilehash: 8d8b516a7572688314d043dc7ca052d30d26dcf4
-ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
+ms.openlocfilehash: c53b866cab32270cfa10b6a8632af776ff9afd92
+ms.sourcegitcommit: 6b74cb197e59c23492722935457c7ec278cadb57
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2021
-ms.locfileid: "106273399"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107736990"
 ---
 ## <a name="how-do-i-renew-visual-studio-subscriptions"></a>Visual Studio 구독을 갱신하려면 어떻게 하나요? 
 
@@ -34,7 +34,7 @@ Visual Studio 구독은 여러 가지 방법으로 획득할 수 있으며, 기�
     - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
 > [!Note]
-> 갱신 가격을 적용받으려면 만료 날짜부터 30일 이내에 구독을 갱신해야 합니다.
+> 갱신 가격을 적용받으려면 만료 후 30일 이내에 구독을 갱신해야 합니다. Microsoft Store를 통해 갱신하는 경우 수신한 5x5 키로 갱신을 활성화해야 합니다. 그렇지 않으면 구독에 업데이트된 종료 날짜가 없거나 구독이 갱신되지 않습니다.
 
 ### <a name="how-to-renew-cloud-subscriptions"></a>클라우드 구독을 갱신하는 방법
 클라우드 구독은 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)를 통해 구매한 구독입니다.  월간 및 연간 클라우드 구독은 취소할 때까지 갱신되므로 갱신을 위해 별도로 수행할 작업이 없습니다.
