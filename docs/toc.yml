@@ -905,15 +905,8 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: 디버그 >>
   href: debugger/index.yml
-- name: 버전 제어
-  expanded: true
-  items:
-    - name: Visual Studio의 새로운 Git 환경
-      href: ide/git-with-visual-studio.md
-    - name: Visual Studio에서 소스 제어를 용이하게 만드는 방법
-      href: ide/git-visual-studio-source-control.md
-    - name: Git와 팀 탐색기 나란히 비교
-      href: ide/git-team-explorer-feature-comparison.md
+- name: 버전 제어 >>
+  href: version-control/index.yml
 - name: 테스트 >>
   displayName: Unit testing
   href: test/index.yml
