@@ -688,6 +688,8 @@
       items:
         - name: 덤프 파일 사용
           href: using-dump-files.md
+        - name: 관리되는 메모리 덤프 디버그
+          href: how-to-debug-managed-memory-dump.md
         - name: 덤프 파일 요약 확장성 API
           href: dump-file-summary-extensibility-api.md
     - name: 디버거 보안
