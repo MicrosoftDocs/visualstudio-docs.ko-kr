@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082025"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913100"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
@@ -146,7 +146,7 @@ Visual Studio 2019를 열면 새 시작 창이 표시됩니다.
 
 **16.8의 새로운 기능**: Git은 이제 Visual Studio 2019의 기본 버전 제어 환경입니다. 지난 두 릴리스 기간 중 피드백에 따라 기능 집합을 구축하고 반복했습니다. 이제 새 환경은 모든 사용자에 대해 기본적으로 설정되어 있습니다. 새 Git 메뉴에서 리포지토리를 복제, 생성 또는 열 수 있습니다. 통합된 Git 도구 창을 사용하여 코드에 변경 내용을 커밋하고 푸시하며, 분기를 관리하고, 원격 리포지토리를 최신 상태로 유지하고, 병합 충돌을 해결합니다.
 
-자세한 내용은 [Visual Studio의 Git 환경](git-with-visual-studio.md) 페이지를 참조하세요.
+자세한 내용은 [Visual Studio의 Git 환경](../version-control/git-with-visual-studio.md) 페이지를 참조하세요.
 
 ### <a name="live-share"></a>Live Share
 
@@ -228,7 +228,7 @@ Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있�
 
    이제 새 Git 버전 제어 환경은 Visual Studio 2019 [버전 16.8](/visualstudio/releases/2019/release-notes/)에서 기본적으로 설정되어 있지만 최신 미리 보기 릴리스에서 환경을 개선하기 위해 기능을 계속 추가하고 있습니다.
 
-   자세한 내용은 [Visual Studio의 Git 환경](git-with-visual-studio.md) 페이지를 참조하세요.
+   자세한 내용은 [Visual Studio의 Git 환경](../version-control/git-with-visual-studio.md) 페이지를 참조하세요.
 
 미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://aka.ms/vspreview/)** 페이지를 참조하세요.
 

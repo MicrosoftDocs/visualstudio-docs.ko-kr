@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 5c965fd73f63906f7a1e055ae5ff051eebab19d5
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683609"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828815"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 시작
 
@@ -82,7 +82,41 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 5. 코드 편집기에서 모든 기존 코드를 다음 코드로 바꿉니다.
 
-   [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
+   ```csharp
+   using System;
+
+   namespace UtilityLibraries
+   {
+       public static class StringLibrary
+       {
+           public static bool StartsWithUpper(this string s)
+           {
+               if (String.IsNullOrWhiteSpace(s))
+                   return false;
+
+               return Char.IsUpper(s[0]);
+           }
+
+           public static bool StartsWithLower(this string s)
+           {
+               if (String.IsNullOrWhiteSpace(s))
+                   return false;
+
+               return Char.IsLower(s[0]);
+           }
+
+           public static bool HasEmbeddedSpaces(this string s)
+           {
+               foreach (var ch in s.Trim())
+               {
+                   if (ch == ' ')
+                       return true;
+               }
+               return false;
+           }
+       }
+   }
+   ```
 
    StringLibrary에는 다음과 같은 세 가지 정적 메서드가 있습니다.
 
@@ -140,7 +174,59 @@ Visual Studio 솔루션에서 Live Unit Testing을 사용하도록 설정하면 
 
 6. 템플릿에서 제공하는 상용구 단위 테스트 코드를 다음 코드로 바꿉니다.
 
-   [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
+   ```csharp
+   using System;
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
+   using UtilityLibraries;
+
+   namespace StringLibraryTest
+   {
+       [TestClass]
+       public class UnitTest1
+       {
+           [TestMethod]
+           public void TestStartsWithUpper()
+           {
+               // Tests that we expect to return true.
+               string[] words = { "Alphabet", "Zebra", "ABC", "Αθήνα", "Москва" };
+               foreach (var word in words)
+               {
+                   bool result = word.StartsWithUpper();
+                   Assert.IsTrue(result,
+                                 $"Expected for '{word}': true; Actual: {result}");
+               }
+           }
+
+           [TestMethod]
+           public void TestDoesNotStartWithUpper()
+           {
+               // Tests that we expect to return false.
+               string[] words = { "alphabet", "zebra", "abc", "αυτοκινητοβιομηχανία", "государство",
+                                  "1234", ".", ";", " " };
+               foreach (var word in words)
+               {
+                   bool result = word.StartsWithUpper();
+                   Assert.IsFalse(result,
+                                  $"Expected for '{word}': false; Actual: {result}");
+               }
+           }
+
+           [TestMethod]
+           public void DirectCallWithNullOrEmpty()
+           {
+               // Tests that we expect to return false.
+               string[] words = { String.Empty, null };
+               foreach (var word in words)
+               {
+                   bool result = StringLibrary.StartsWithUpper(word);
+                   Assert.IsFalse(result,
+                                  $"Expected for '{(word == null ? "<null>" : word)}': " +
+                                  $"false; Actual: {result}");
+               }
+           }
+       }
+   }
+   ```
 
 7. 도구 모음에서 **저장** 아이콘을 선택하여 프로젝트를 저장합니다.
 
@@ -199,11 +285,11 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
 1. 다음 `TestStartsWithLower` 및 `TestDoesNotStartWithLower` 메서드를 프로젝트의 테스트 소스 코드 파일로 추가합니다.
 
-    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet1":::
 
 1. [`Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse`](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) 메서드 호출 바로 다음에 아래 코드를 추가하여 `DirectCallWithNullOrEmpty` 메서드를 수정합니다.
 
-    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet2":::
 
 1. 소스 코드를 수정하면 Live Unit Testing이 새 테스트와 수정된 테스트를 자동으로 실행합니다. 다음 그림처럼 추가한 테스트 2개와 수정한 테스트 1개가 모두 성공했습니다.
 
@@ -228,7 +314,7 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
 1. 다음 메서드를 테스트 파일에 추가합니다.
 
-    [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/unittest2.cs" id="Snippet3":::
 
 1. 테스트를 실행하면 다음 그림과 같이 Live Unit Testing이 `TestHasEmbeddedSpaces` 메서드가 실패했음을 보여 줍니다.
 
@@ -275,7 +361,7 @@ Live Unit Testing에서 확인해야 할 주요 문제점은 불완전한 코드
 
 1. 같음 비교를 <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName> 메서드에 대한 호출로 바꿉니다.
 
-    [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/program2.cs#1)]
+   :::code language="csharp" source="../test/samples/snippets/csharp/lut-start/program2.cs" id="Snippet1":::
 
 1. 실패한 테스트 메서드를 Live Unit Testing에서 자동으로 다시 수행합니다.
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: d29c8be82ba0461231d9cd02eb6799dd38a690ed
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031595"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913035"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 문서의 새로운 기능에 관한 기록
 
@@ -296,7 +296,7 @@ Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 문서에는 2
 
 **업데이트된 문서**
 
-- [Visual Studio의 Git 환경](./git-with-visual-studio.md)
+- [Visual Studio의 Git 환경](../version-control/git-with-visual-studio.md)
   - 대체 텍스트 및 메타데이터를 업데이트함
   - 16.8 GA의 새로운 Git 환경 콘텐츠 업데이트
 - [Visual Studio 2019의 새로운 기능](./whats-new-visual-studio-2019.md)
@@ -482,7 +482,7 @@ Visual Studio 문서의 새로운 기능 기록을 봅니다. 이 문서에는 2
 
 **새 문서**
 
-- [Visual Studio의 새로운 Git 환경(미리 보기)](./git-with-visual-studio.md) - 새 Git 환경 콘텐츠 추가(미리 보기)
+- [Visual Studio의 새로운 Git 환경(미리 보기)](../version-control/git-with-visual-studio.md) - 새 Git 환경 콘텐츠 추가(미리 보기)
 - [C++ EditorConfig 서식 지정 규칙](./cpp-editorconfig-properties.md) - 새 문서
 - [GitHub Codespaces란? (미리 보기)](./codespaces/codespaces-overview.md) - Codespaces 추가(미리 보기) 콘텐츠
 - [codespace를 사용자 지정하는 방법(미리 보기)](./codespaces/customize-codespaces.md) - Codespaces 추가(미리 보기) 콘텐츠

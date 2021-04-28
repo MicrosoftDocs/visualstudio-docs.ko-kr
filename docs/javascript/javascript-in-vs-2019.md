@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0fe13030478f62f759b3eabc8e897c09a4295bad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 267bd8567b60a66bcf9d78c3aef8f02bbc942e0d
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936758"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025880"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019의 JavaScript 및 TypeScript
 
@@ -46,4 +46,4 @@ Visual Studio 2019는 TypeScript 컴파일을 프로젝트에 통합하는 다�
 
 ## <a name="projects"></a>프로젝트
 
-UWP JavaScript 앱은 Visual Studio 2019에서 더 이상 지원되지 않습니다. JavaScript UWP 프로젝트(확장명이 *.jsproj* 인 파일)는 만들거나 열 수 없습니다. Windows에서 제대로 실행되는 [PWA(프로그레시브 웹앱)를 만드는 방법](/microsoft-edge/progressive-web-apps/get-started)에 대한 설명서를 사용하여 자세히 알아볼 수 있습니다.
+UWP JavaScript 앱은 Visual Studio 2019에서 더 이상 지원되지 않습니다. JavaScript UWP 프로젝트(확장명이 *.jsproj* 인 파일)는 만들거나 열 수 없습니다. Windows에서 제대로 실행되는 [PWA(프로그레시브 웹앱)를 만드는 방법](/microsoft-edge/progressive-web-apps-chromium)에 대한 설명서를 사용하여 자세히 알아볼 수 있습니다.

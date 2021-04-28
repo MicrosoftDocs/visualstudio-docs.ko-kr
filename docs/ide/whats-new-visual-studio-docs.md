@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e7dfd0d677412ded44459c7850fa9028142c42
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031582"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913061"
 ---
 # <a name="visual-studio-docs-whats-new-for-march-2021"></a>Visual Studio 문서: 2021년 3월의 새로운 기능
 
@@ -85,9 +85,9 @@ ms.locfileid: "107031582"
 ## <a name="ide"></a>IDE
 
 **새 문서**
-- [Visual Studio에서 소스 제어를 용이하게 만드는 방법](./git-visual-studio-source-control.md) - 새 Visual Studio 소스 제어 토픽 만들기
+- [Visual Studio에서 소스 제어를 용이하게 만드는 방법](../version-control/git-visual-studio-source-control.md) - 새 Visual Studio 소스 제어 토픽 만들기
 - [개발자 명령 프롬프트 및 개발자 PowerShell](./reference/command-prompt-powershell.md) - 개발자 명령 프롬프트 및 개발자 PowerShell
-- [Git과 팀 탐색기 비교](./git-team-explorer-feature-comparison.md) - 팀 탐색기 및 새 Git 기능에 대한 새로운 비교 페이지 추가
+- [Git과 팀 탐색기 비교](../version-control/git-team-explorer-feature-comparison.md) - 팀 탐색기 및 새 Git 기능에 대한 새로운 비교 페이지 추가
 
 **업데이트된 문서**
 
