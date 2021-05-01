@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940555"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941125"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 덤프 파일
 
@@ -43,6 +43,10 @@ Visual Studio 디버거는 관리 코드 또는 네이티브 코드에 대한 �
 ## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a> 요구 사항 및 제한 사항
 
 - 64비트 머신에서 덤프 파일을 디버그하려면 Visual Studio가 64비트 머신에서 실행되고 있어야 합니다.
+
+::: moniker range=">= vs-2019"
+- Visual Studio에서는 Linux OS의 관리형 앱 덤프 파일을 디버그할 수 있습니다. 
+::: moniker-end
 
 - Visual Studio에서는 ARM 디바이스에서 네이티브 애플리케이션의 덤프 파일을 디버깅할 수 있습니다. 또한 ARM 디바이스에서 관리형 앱의 덤프를 디버그할 수 있지만 이는 네이티브 디버거에서만 가능합니다.
 
@@ -116,6 +120,7 @@ Visual Studio에서는 덤프의 모듈을 디버깅하는 데 필요한 파일�
 
 ## <a name="see-also"></a>참조
 
+- [.NET 진단 분석기를 사용하여 관리되는 메모리 덤프를 디버그하는 방법](../debugger/how-to-debug-managed-memory-dump.md)
 - [Just-In-Time 디버깅](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [기호 파일(.pdb) 및 원본 파일 지정](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

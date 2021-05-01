@@ -4,15 +4,15 @@ author: ghogen
 description: Docker Compose 빌드 속성을 편집하여 Visual Studio에서 Docker Compose 애플리케이션을 빌드하고 실행하는 방법을 사용자 지정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 08/12/2019
+ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068299"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025867"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -37,16 +37,17 @@ ms.locfileid: "105068299"
 | 속성 이름 | 위치 | Description | 기본값  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|모든 명령에 대해 docker-compose.exe로 보낼 세미콜론으로 구분된 목록에 추가 작성 파일을 지정합니다. dcproj(docker-compose project) 파일에서 상대 경로가 허용됩니다.|-|
-|DockerComposeBaseFilePath|dcproj|*.yml* 확장명을 사용하지 않고 docker-compose 파일의 파일 이름 중 첫 번째 부분을 지정합니다. 다음은 그 예입니다. <br>1.  DockerComposeBaseFilePath = null/undefined: 기본 파일 경로 *docker-compose* 를 사용하면 파일 이름이 *docker-compose.yml* 및 *docker-compose.override.yml* 이 됩니다.<br>2.   DockerComposeBaseFilePath = *mydockercompose*: 파일 이름은 *mydockercompose.yml* 및 *mydockercompose.override.yml* 이 됩니다.<br> 3.  DockerComposeBaseFilePath = *..\mydockercompose*: 파일이 한 수준 올라갑니다. |docker-compose|
-|DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|
+|DockerComposeBaseFilePath|dcproj|*.yml* 확장명을 사용하지 않고 docker-compose 파일의 파일 이름 중 첫 번째 부분을 지정합니다. 다음은 그 예입니다. <br>1. DockerComposeBaseFilePath = null/undefined: 기본 파일 경로 *docker-compose* 를 사용하면 파일 이름이 *docker-compose.yml* 및 *docker-compose.override.yml* 이 됩니다.<br>2. DockerComposeBaseFilePath = *mydockercompose*: 파일 이름이 *mydockercompose.yml* 및 *mydockercompose.override.yml* 이 됩니다.<br> 3. DockerComposeBaseFilePath = *..\mydockercompose*: 파일이 한 수준 위로 올라갑니다. |docker-compose|
+|DockerComposeBuildArguments|dcproj|`docker-compose build` 명령에 전달할 추가 매개 변수를 지정합니다. 예들 들어 `--parallel --pull`입니다. |
+|DockerComposeDownArguments|dcproj|`docker-compose down` 명령에 전달할 추가 매개 변수를 지정합니다. 예들 들어 `--timeout 500`입니다.|-|  
 |DockerComposeProjectName| dcproj | 지정된 경우 Docker Compose 프로젝트의 프로젝트 이름을 재정의합니다. | ‘dockercompose’ + 자동 생성 해시 |
 |DockerComposeProjectPath|csproj 또는 vbproj|docker-compose 프로젝트(dcproj) 파일의 상대 경로입니다. 서비스 프로젝트를 게시할 때 이 속성을 설정하여 docker-compose.yml 파일에 저장된 관련 이미지 빌드 설정을 찾습니다.|-|
-|DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예를 들어 `--timeout 500`|-|
-|DockerDevelopmentMode|dcproj| “호스트에서 빌드” 최적화(“고속 모드” 디버깅)를 사용할지 여부를 제어합니다.  허용되는 값은 **Fast** 와 **Regular** 입니다. | 빠름 |
-|DockerLaunchAction| dcproj | F5 키나 Ctrl+F5를 누를 때 수행할 시작 작업을 지정합니다.  허용되는 값은 None, LaunchBrowser, LaunchWCFTestClient입니다.|None|
+|DockerComposeProjectsToIgnore|dcproj| 디버그하는 동안 docker-compose 도구에서 무시할 프로젝트를 지정합니다. 이 속성은 모든 프로젝트에 사용할 수 있습니다. 파일 경로는 다음 두 가지 방법 중 하나로 지정할 수 있습니다. <br> 1. dcproj를 기준으로 합니다. 예들 들어 `<DockerComposeProjectsToIgnore>path\to\AngularProject1.csproj</DockerComposeProjectsToIgnore>`입니다. <br> 2. 절대 경로를 사용합니다.<br> **참고**: 해당 경로는 구분 기호 문자 `;`으로 구분되어야 합니다.|-|
+|DockerComposeUpArguments|dcproj|`docker-compose up` 명령에 전달할 추가 매개 변수를 지정합니다. 예들 들어 `--timeout 500`입니다.|-|
+|DockerDevelopmentMode| dcproj | 사용자 프로젝트를 컨테이너에 빌드할지 여부를 제어합니다. **빠름** 또는 **일반** 의 허용 값은 Dockerfile에서 [빌드할 스테이지](https://aka.ms/containerfastmode)를 제어합니다. 디버그 구성은 기본적으로 빠름 모드이며, 그렇지 않을 경우에는 일반 모드입니다. | 빠름 |
+|DockerLaunchAction| dcproj | F5 키나 Ctrl+F5를 누를 때 수행할 시작 작업을 지정합니다.  허용되는 값은 None, LaunchBrowser, LaunchWCFTestClient입니다. | None |
 |DockerLaunchBrowser| dcproj | 브라우저를 시작할지 여부를 나타냅니다. DockerLaunchAction을 지정한 경우에는 무시됩니다. | False |
-|DockerServiceName| dcproj|DockerLaunchAction 또는 DockerLaunchBrowser를 지정한 경우, DockerServiceName은 시작할 서비스의 이름입니다.  이 속성을 사용하여 docker-compose 파일에서 참조할 수 있는 많은 프로젝트 중 시작할 프로젝트를 확인합니다.|-|
+|DockerServiceName| dcproj| DockerLaunchAction 또는 DockerLaunchBrowser가 지정되는 경우 DockerServiceName은 docker-compose 파일에서 참조된 서비스 중 어떤 서비스를 시작할지 지정합니다.|-|
 |DockerServiceUrl| dcproj | 브라우저를 시작할 때 사용할 URL입니다.  유효한 대체 토큰은 “{ServiceIPAddress}”, “{ServicePort}”, “{Scheme}”입니다.  예: {Scheme}://{ServiceIPAddress}:{ServicePort}|-|
 |DockerTargetOS| dcproj | Docker 이미지를 빌드할 때 사용되는 대상 OS입니다.|-|
 
@@ -93,9 +94,16 @@ services:
 > [!NOTE]
 > DockerComposeBuildArguments, DockerComposeDownArguments 및 DockerComposeUpArguments는 Visual Studio 2019 버전 16.3에 새로 추가되었습니다.
 
-## <a name="docker-compose-file-labels"></a>Docker Compose 파일 레이블
+## <a name="overriding-visual-studios-docker-compose-configuration"></a>Visual Studio의 Docker Compose 구성 재정의
 
-*docker-compose.vs.debug.yml*(**디버그** 구성) 또는 *docker-compose.vs.release.yml*(**릴리스** 구성)을 *docker-compose.yml* 파일과 동일한 디렉터리에 배치하여 특정 설정을 재정의할 수도 있습니다.  이 파일에서 다음과 같이 설정을 지정할 수 있습니다.
+*docker-compose.vs.debug.yml*(**빠름** 모드의 경우) 또는 *docker-compose.vs.release.yml*(**일반** 모드의 경우) 파일을 *docker-compose.yml* 파일과 동일한 디렉터리에 배치하여 특정 설정을 재정의할 수 있습니다. 
+
+>[!TIP] 
+>해당 설정의 기본값을 확인하려면 *docker-compose.vs.debug.g.yml* 또는 *docker-compose.vs.release.g.yml* 을 참조합니다.
+
+### <a name="docker-compose-file-labels"></a>Docker Compose 파일 레이블
+
+ *docker-compose.vs.debug.yml* 또는 *docker-compose.vs.release.yml* 에서는 다음과 같이 재정의와 관련된 레이블을 정의할 수 있습니다.
 
 ```yml
 services:
@@ -109,13 +117,26 @@ services:
 |레이블 이름|Description|
 |----------|-----------|
 |com.microsoft.visualstudio.debuggee.arguments|디버깅을 시작할 때 프로그램에 전달되는 인수입니다. .NET Core 앱에서 이 인수는 일반적으로 NuGet 패키지의 추가 검색 경로와 프로젝트의 출력 어셈블리 경로입니다.|
-|com.microsoft.visualstudio.debuggee.killprogram|이 명령은 필요한 경우 컨테이너 내부에서 실행 중인 디버기 프로그램을 중지하는 데 사용됩니다.|
 |com.microsoft.visualstudio.debuggee.program|디버깅을 시작할 때 시작되는 프로그램입니다. .NET Core 앱에서 이 설정은 일반적으로 **dotnet** 입니다.|
 |com.microsoft.visualstudio.debuggee.workingdirectory|디버깅을 시작할 때 시작 디렉터리로 사용되는 디렉터리입니다. 이 설정은 일반적으로 Linux 컨테이너의 경우 */app*, Windows 컨테이너의 경우 *C:\app* 입니다.|
+|com.microsoft.visualstudio.debuggee.killprogram|이 명령은 필요한 경우 컨테이너 내부에서 실행 중인 디버기 프로그램을 중지하는 데 사용됩니다.|
 
-## <a name="customize-the-app-startup-process"></a>앱 시작 프로세스 사용자 지정
+### <a name="customize-the-docker-build-process"></a>Docker 빌드 프로세스 사용자 지정
 
-`entrypoint` 설정을 사용하여 앱을 시작하고 구성에 종속되도록 만들기 전에 명령 또는 사용자 지정 스크립트를 실행할 수 있습니다. 예를 들어 `update-ca-certificates`를 실행하여 **릴리스** 모드가 아닌 **디버그** 모드에서만 인증서를 설정해야 한다면 *docker-compose.ci.build.yml* 에만 다음 코드를 추가할 수 있습니다.
+`build` 속성의 `target` 설정을 사용하여 사용자 Dockerfile에서 빌드할 스테이지를 선언할 수 있습니다. 이 재정의는 *docker-compose.vs.debug.yml* 또는 *docker-compose.vs.release.yml* 에서만 사용할 수 있습니다. 
+
+```yml
+services:
+  webapplication1:
+    build:
+      target: customStage
+    labels:
+      ...
+```
+
+### <a name="customize-the-app-startup-process"></a>앱 시작 프로세스 사용자 지정
+
+`entrypoint` 설정을 사용하여 앱을 시작하고 `DockerDevelopmentMode`에 종속되도록 만들기 전에 명령 또는 사용자 지정 스크립트를 실행할 수 있습니다. 예를 들어 `update-ca-certificates`를 실행하여 **일반** 모드가 아닌 **빠름** 모드에서만 인증서를 설정해야 하는 경우 **오직** *docker-compose.vs.debug.yml* 에 다음 코드를 추가할 수 있습니다.
 
 ```yml
 services:
@@ -124,8 +145,6 @@ services:
     labels:
       ...
 ```
-
-*docker-compose.vs.release.yml* 또는 *docker-compose.vs.debug.yml* 을 생략하는 경우 Visual Studio가 기본 설정에 따라 하나를 생성합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

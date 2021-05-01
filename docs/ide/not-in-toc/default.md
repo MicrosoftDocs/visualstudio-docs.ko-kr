@@ -2,7 +2,7 @@
 title: F1 도움말의 기본 페이지
 description: Visual Studio에 대한 F1 도움말 요청의 기본 페이지
 ms.date: 03/25/2021
-ms.topic: troubleshooting
+ms.topic: error-reference
 ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
@@ -10,26 +10,37 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 9f91a145bc0847eca4303717bbf4602b243f6a3c
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616924"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913048"
 ---
-# <a name="f1-help"></a>F1 도움말
+# <a name="f1-help-match-not-found"></a>F1 도움말: 일치 항목을 찾을 수 없음
 
-원하시는 내용을 찾을 수 없습니다. 죄송합니다. 이 페이지 하단에 있는 단추를 통해 피드백을 보내주시면 개선에 도움이 됩니다. 또는 다음 제안 중 하나를 시도해 보세요.
+원하시는 내용을 찾을 수 없습니다. 죄송합니다. 
 
-## <a name="search-for-help"></a>도움말 검색
+## <a name="now-what"></a>이제 어떻게 합니까?
 
-창, 키워드 또는 API 이름에 대한 F1 도움말을 찾으려면 다음을 수행합니다.
+- 해당 도구를 사용하여 다시 검색합니다. 창, 키워드 또는 API 이름에 대한 F1 도움말을 찾으려면 다음을 수행합니다.
+  - 선호하는 검색 엔진을 사용하여 검색을 시도합니다.
+  - [docs.microsoft.com](/)에서 검색해 봅니다.
 
-- [docs.microsoft.com](/)에서 검색해 봅니다.
-- 검색 엔진을 사용하여 검색해 봅니다.
+- 이 페이지의 맨 아래에 있는 단추를 사용하여 찾고자 했던 항목에 대한 피드백을 남겨주세요.
 
-## <a name="get-help-for-your-programming-language"></a>프로그래밍 언어에 대한 도움말 가져오기
+- [F1 도움말 키를 다시 매핑하거나 사용하지 않도록 설정](../not-in-toc/change-f1-help-key.md)
 
+
+## <a name="next-steps"></a>다음 단계
+
+추가 설명서는 아래에서 확인하거나 목차를 참조하세요. 
+- [.NET API 브라우저](/dotnet/api/)에 대한 참조 설명서 참고
+- [Visual Studio 텍스트 코드 편집기](../../ide/writing-code-in-the-code-and-text-editor.md)에 대한 도움말 확인
+- 기술 자료에서 [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/) 찾아보기
+- [Visual Studio 개요](../../get-started/visual-studio-ide.md) 참조
+
+프로그래밍 가이드:
 - [C# 프로그래밍 가이드](/dotnet/csharp/programming-guide/) 또는 [언어 참조](/dotnet/csharp/language-reference/)
 - [Visual Basic 언어 기능](/dotnet/visual-basic/programming-guide/language-features/) 또는 [언어 참조](/dotnet/visual-basic/language-reference/)
 - [Python 설명서](https://docs.python.org/)
@@ -37,13 +48,3 @@ ms.locfileid: "105616924"
 - [F# 가이드](/dotnet/fsharp/)
 - [TypeScript 설명서](https://www.typescriptlang.org/docs)
 
-## <a name="re-map-or-disable-the-f1-help-key"></a>F1 도움말 키를 다시 매핑하거나 사용하지 않도록 설정
-
-F1 키 매핑을 변경하려면 [F1 도움말 키 변경](../not-in-toc/change-f1-help-key.md)을 참조하세요.
-
-## <a name="useful-links"></a>유용한 링크
-
-- [.NET API 브라우저](/dotnet/api/)에서 참조 문서를 검색합니다.
-- Visual Studio 텍스트 편집기의 도움말은 [코드 편집기 사용](../../ide/writing-code-in-the-code-and-text-editor.md)을 참조하세요.
-- [Visual Studio 문제 해결](/troubleshoot/visualstudio/welcome-visual-studio/) 페이지에서 기술 자료 문서 목록을 찾아봅니다.
-- Visual Studio에 대한 내용은 [Visual Studio 개요](../../get-started/visual-studio-ide.md)를 참조하세요.

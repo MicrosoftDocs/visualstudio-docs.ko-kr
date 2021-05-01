@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c4cd4c110b55837009ea9d081a95180727d331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8070bb93a1dd76ad29832afae15d83788300ae7a
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916532"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941112"
 ---
 # <a name="install-python-interpreters"></a>Python 인터프리터 설치
 
@@ -25,11 +25,11 @@ ms.locfileid: "99916532"
 또는 **환경 추가** 대화 상자에서 표준 Python 인터프리터를 설치할 수 있습니다. **Python 환경** 창 또는 Python 도구 모음에서 **환경 추가** 명령을 선택하고, **Python 설치** 탭을 선택하고, 설치할 인터프리터를 표시하고, **설치** 를 선택합니다.
 ::: moniker-end
 
-Visual Studio 설치 관리자 외부에서 아래 표에 나열된 인터프리터를 수동으로 설치할 수도 있습니다. 예를 들어 Visual Studio를 설치하기 전에 Anaconda 3을 설치한 경우 Visual Studio 설치 관리자를 통해 다시 설치할 필요가 없습니다. 예를 들어 Visual Studio 설치 관리자에 아직 표시되지 않는 사용 가능한 인터프리터의 최신 버전이 있는 경우에도 인터프리터를 수동으로 설치할 수 있습니다.
+Visual Studio 설치 관리자 외부에서 아래 표에 나열된 Python 인터프리터를 수동으로 설치할 수도 있습니다. 예를 들어 Visual Studio를 설치하기 전에 Anaconda 3를 설치한 경우 Visual Studio 설치 관리자를 통해 다시 설치할 필요가 없습니다. 예를 들어 Visual Studio 설치 관리자에 아직 표시되지 않는 사용 가능한 인터프리터의 최신 버전이 있는 경우에도 인터프리터를 수동으로 설치할 수 있습니다.
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio는 Python 버전 2.7과 버전 3.5 이상을 지원합니다. Visual Studio를 사용하여 다른 버전의 Python에서 작성된 코드도 편집할 수 있지만, 해당 버전은 공식적으로 지원되지 않으며 IntelliSense, 디버깅 등의 기능이 작동하지 않을 수 있습니다.
+> Visual Studio는 Python 버전 2.7과 버전 3.5~3.7을 지원합니다. Visual Studio를 사용하여 다른 버전의 Python에서 작성된 코드도 편집할 수 있지만, 해당 버전은 공식적으로 지원되지 않으며 IntelliSense, 디버깅 등의 기능이 작동하지 않을 수 있습니다.
 ::: moniker-end
 
 **Visual Studio 2015 이하** 의 경우 인터프리터 중 하나를 수동으로 설치해야 합니다.
@@ -65,7 +65,7 @@ Python 환경에 대한 새로운 검색 양식을 제공하려는 개발자인 
 
 이 프로세스를 수행하면 Visual Studio에서 사용하는 인터프리터의 위치를 식별하는 레지스트리 항목이 제대로 업데이트됩니다. 설치 관리자를 사용하면 존재할 수 있는 다른 부작용도 처리됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [Python 환경 관리](managing-python-environments-in-visual-studio.md)
 - [프로젝트의 인터프리터 선택](selecting-a-python-environment-for-a-project.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e82073b77231f84452ba51402f407904142bbf8e
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920780"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941099"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>3단계: 대화형 REPL 창 사용
 
@@ -40,7 +40,7 @@ Python용 Visual Studio **대화형** 창은 일반적인 편집-빌드-디버�
 
     ![Python 대화형 창의 즉각적인 결과](media/vs-getting-started-python-12-interactive2.png)
 
-1. 함수 정의와 같이 여러 줄로 된 문을 작성하기 시작하면 **대화형** 창에 명령줄 REPL과 달리 연속되는 줄을 위해 자동 들여쓰기를 제공하는 Python의 **...** 프롬프트가 표시됩니다.
+1. 함수 정의와 같이 여러 줄로 된 문을 작성하기 시작하면 명령줄 REPL과 달리 연속되는 줄을 위해 자동 들여쓰기를 제공하는 Python의 **...** 프롬프트가 **대화형** 창에 표시됩니다. 새로운 **...** 줄을 추가하려면 `Shift+Enter`를 누릅니다.
 
     ![연속 문을 지원하는 Python 대화형 창](media/vs-getting-started-python-13-interactive3.png)
 
