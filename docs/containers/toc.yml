@@ -52,3 +52,5 @@
       href: overview-bridge-to-kubernetes.md
     - name: Bridge to Kubernetes 구성
       href: configure-bridge-to-kubernetes.md
+    - name: Bridge to Kubernetes로 Azure Active Directory 관리 ID 사용
+      href: managed-identity.md
