@@ -3,21 +3,20 @@ title: 프로젝트 하위 집합 로드
 description: 솔루션 필터링에 대해 알아보고 솔루션에서 프로젝트의 하위 집합을 신속하게 로드하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
-ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: jillre
+author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869390"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298732"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio의 필터링된 솔루션
 
@@ -30,6 +29,9 @@ ms.locfileid: "99869390"
 - 솔루션을 다시 열면 Visual Studio는 이전 세션에서 로드된 프로젝트를 기억하여 해당 프로젝트만 로드합니다.
 
 - 하나 이상의 프로젝트 로드 구성을 저장하거나 팀 동료와 구성을 공유하는 솔루션 필터 파일을 만들 수 있습니다.
+
+> [!NOTE]
+> 이 토픽은 Windows용 Visual Studio에만 적용됩니다.
 
 ## <a name="open-a-filtered-solution"></a>필터링된 솔루션 열기
 

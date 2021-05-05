@@ -3,25 +3,25 @@ title: GitHub Codespaces 개요(미리 보기)
 description: Visual Studio를 사용한 GitHub Codespaces에 관한 정보와 이 서비스가 개발 환경을 클라우드로 확장하는 데 어떻게 도움이 되는지 자세히 알아봅니다.
 ms.topic: overview
 ms.date: 09/04/2020
-author: TerryGLee
-ms.author: tglee
+author: gregvanl
+ms.author: gregvanl
 manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ab50c3c2df2cfad6d489d800f47624503844dc9d
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672789"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298745"
 ---
 # <a name="what-is-github-codespaces-preview"></a>GitHub Codespaces란? (미리 보기)
 
-> [!Important] 
-> 2021년 4월 12일부터 Visual Studio 2019에서 GitHub Codespaces에 더 이상 연결할 수 없으며 이 프라이빗 미리 보기는 종료되었습니다. 광범위한 Visual Studio 워크로드에 최적화된 클라우드 기반 내부 루프 및 VDI 솔루션의 진화하는 환경에 중점을 두고 있습니다. 향후 미리 보기 및 로드맵 정보에 대해 자세히 알아보려면 Visual Studio [개발자 커뮤니티 포럼](https://developercommunity.visualstudio.com/home)에 참여하는 것이 좋습니다. 
+> [!Important]
+> 2021년 4월 12일부터 Visual Studio 2019에서 GitHub Codespaces에 더 이상 연결할 수 없으며 이 프라이빗 미리 보기는 종료되었습니다. 광범위한 Visual Studio 워크로드에 최적화된 클라우드 기반 내부 루프 및 VDI 솔루션의 진화하는 환경에 중점을 두고 있습니다. 향후 미리 보기 및 로드맵 정보에 대해 자세히 알아보려면 Visual Studio [개발자 커뮤니티 포럼](https://developercommunity.visualstudio.com/home)에 참여하는 것이 좋습니다.
 
 Codespaces를 소개해 드리겠습니다.
 
@@ -39,9 +39,9 @@ GitHub Codespaces 기능은 몇 가지 기본 개념에 기반하여 빌드됩�
 
 오늘날 대부분 개발자는 특정 개발 및 런타임 스택으로 구성된 원격 설정 또는 VM에서 코딩을 시도합니다. 이렇게 하는 이유는 개발 환경을 로컬에서 설정하는 것이 너무 어렵고 지나친 중단을 초래하며 경우에 따라 거의 불가능하기 때문입니다. 또한 개인은 일상 업무에 필요한 머신에 “장애를 일으킬” 걱정 없이 신기술이나 새 프레임워크를 사용해 보기를 원합니다.
 
-원격 환경과 원격 지원 도구를 사용하면 개발자의 역량이 강화되지만 대개 머신 관리의 오버헤드가 발생합니다. 환경 구성으로 인해 종종 온보딩 및 컨텍스트 전환이 복잡해집니다. GitHub Codespaces는 많은 환경이 동시에 존재할 수 있도록 하여 신속한 온보딩과 컨텍스트 전환을 방해하는 요소를 제거합니다. 
+원격 환경과 원격 지원 도구를 사용하면 개발자의 역량이 강화되지만 대개 머신 관리의 오버헤드가 발생합니다. 환경 구성으로 인해 종종 온보딩 및 컨텍스트 전환이 복잡해집니다. GitHub Codespaces는 많은 환경이 동시에 존재할 수 있도록 하여 신속한 온보딩과 컨텍스트 전환을 방해하는 요소를 제거합니다.
 
-GitHub Codespaces는 환경 설정이 아닌 생산성에 집중할 수 있는 관리형 솔루션을 제공합니다. GitHub Codespaces는 원격 개발을 지원하기 위해 개념적, 기술적으로 Visual Studio 2019를 확장합니다. 
+GitHub Codespaces는 환경 설정이 아닌 생산성에 집중할 수 있는 관리형 솔루션을 제공합니다. GitHub Codespaces는 원격 개발을 지원하기 위해 개념적, 기술적으로 Visual Studio 2019를 확장합니다.
 
 ### <a name="about-codespaces"></a>codespace 정보
 
