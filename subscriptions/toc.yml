@@ -48,6 +48,8 @@
       href: subscription-expiration.md
     - name: 구독 수준 변경 사항
       href: subscription-level-changes.md
+    - name: 제거된 구독
+      href: subscription-removed.md
     - name: 구독 관리자에게 문의
       href: contact-my-admin.md
     - name: 이점

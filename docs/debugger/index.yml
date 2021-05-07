@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/20/2019
-  ms.openlocfilehash: dba9613de34b61222effe16b30078a1b6e54e09d
-  ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+  ms.openlocfilehash: f607412b72f4fcf08dae33124349a77bfa873595
+  ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 12/22/2020
-  ms.locfileid: "97727413"
+  ms.lasthandoff: 05/06/2021
+  ms.locfileid: "108798598"
 landingContent:
 - title: 디버깅 정보
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
     - text: 디버거 소개
       url: debugger-feature-tour.md
     - text: FAQ - 디버깅 기능 찾기
-      url: find-your-debugging-task.md
+      url: find-your-debugging-task.yml
 - title: 시작
   linkLists:
   - linkListType: tutorial

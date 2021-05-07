@@ -415,7 +415,7 @@
         - name: 라이브 Azure Kubernetes 앱 디버그
           href: debug-live-azure-kubernetes.md
         - name: 스냅샷 디버깅 FAQ
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: 스냅샷 디버깅 문제 해결
           href: debug-live-azure-apps-troubleshooting.md
         - name: 시간 이동 디버깅 라이브 Azure 가상 머신 앱
@@ -949,6 +949,6 @@
 - name: 리소스
   items:
     - name: FAQ - 디버깅 기능 찾기
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Visual Studio 디버거의 새로운 기능
       href: what-s-new-for-the-debugger-in-visual-studio.md

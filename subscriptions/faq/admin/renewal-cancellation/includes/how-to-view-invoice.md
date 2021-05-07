@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: 2b91ea18-d8d5-4a75-a2cd-4996e63d77e8
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/21/2021
-ms.openlocfilehash: e74602b38c2ddea670a42894e6ffdfc727cb4d07
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 05/03/2021
+ms.openlocfilehash: f51681e4d30f574db1c4103b0d5362abf748628c
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104464"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108793014"
 ---
 ## <a name="how-do-i-view-my-invoice-for-monthly-and-annual-subscriptions"></a>월간 및 연간 구독에 대한 청구서를 보려면 어떻게 하나요?
 

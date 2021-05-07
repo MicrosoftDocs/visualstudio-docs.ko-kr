@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a673e7467816e71b8240de9e5f68840c9188dcd
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859764"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798234"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>레거시 분석 (FxCop)에서 원본 분석 (.NET 분석기)으로 마이그레이션
 
@@ -28,9 +28,9 @@ ms.locfileid: "99859764"
 
 레거시 분석 및 원본 분석 간의 차이점에 대 한 자세한 내용은 다음을 참조 하세요.
 
-- [소스 코드 분석 대 레거시 분석](../code-quality/net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)
+- [소스 코드 분석 대 레거시 분석](../code-quality/net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)
 
-- [.NET 분석기에 대 한 FAQ](../code-quality/net-analyzers-faq.md)
+- [.NET 분석기에 대 한 FAQ](../code-quality/net-analyzers-faq.yml)
 
 ## <a name="migration"></a>마이그레이션
 
@@ -47,6 +47,6 @@ ms.locfileid: "99859764"
 
 - EditorConfig 또는 규칙 집합 파일을 사용 하 여 미리 정의 된 규칙을 사용 하 여 분석기를 구성 하는 방법에 대해 알아보려면 [규칙 범주 사용](/dotnet/fundamentals/code-analysis/code-quality-rule-options)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [FxCop 분석기에서 .NET 분석기로 마이그레이션](migrate-from-fxcop-analyzers-to-net-analyzers.md)

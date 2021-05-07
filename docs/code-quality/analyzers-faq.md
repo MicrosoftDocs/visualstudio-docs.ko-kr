@@ -1,7 +1,7 @@
 ---
-title: EditorConfig와 분석기 비교
+title: EditorConfig 및 분석기
 ms.date: 03/11/2019
-description: Visual Studio의 .NET Compiler Platform 기반 코드 분석에 대해 알아봅니다. EditorConfig 파일, 규칙 집합 및 기타 항목에 대 한 질문에 대 한 대답을 참조 하세요.
+description: Visual Studio .NET Compiler Platform 기반 코드 분석에 대해 알아봅니다. EditorConfig 파일, 규칙 집합 및 기타 항목에 대한 질문에 대한 답변을 참조하세요.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,38 +12,38 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d67471027f36d0e22c055f4306ce2137d972463
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843750"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108800454"
 ---
 # <a name="code-analysis-faq"></a>코드 분석 FAQ
 
-이 페이지에는 Visual Studio의 .NET Compiler Platform 기반 코드 분석에 대 한 몇 가지 질문과 대답을 포함 합니다.
+이 페이지에는 Visual Studio .NET Compiler Platform 기반 코드 분석에 대한 질문과 대답이 포함되어 있습니다.
 
-## <a name="code-analysis-versus-editorconfig"></a>코드 분석 및 EditorConfig
+## <a name="code-analysis-versus-editorconfig"></a>코드 분석과 EditorConfig 비교
 
-**Q**: 코드 스타일을 확인 하려면 코드 분석 또는 editorconfig를 사용 해야 하나요?
+**Q:** 코드 스타일 확인에 코드 분석 또는 EditorConfig를 사용해야 합니까?
 
-**A**: 코드 분석 및 editorconfig 파일은 직접 작동 합니다. [EditorConfig 파일](/dotnet/fundamentals/code-analysis/code-style-rule-options) 또는 [텍스트 편집기 옵션](../ide/code-styles-and-code-cleanup.md) 페이지에서 코드 스타일을 정의 하는 경우 실제로는 Visual Studio에 기본 제공 되는 코드 분석기를 구성 하는 것입니다. EditorConfig 파일은 분석기 규칙을 사용 하거나 사용 하지 않도록 설정 하 고 NuGet 분석기 패키지를 구성 하는 데 사용할 수 있습니다.
+**A:** 코드 분석 및 EditorConfig 파일이 함께 작동합니다. [EditorConfig 파일](/dotnet/fundamentals/code-analysis/code-style-rule-options) 또는 [텍스트 편집기 옵션](../ide/code-styles-and-code-cleanup.md) 페이지에서 코드 스타일을 정의하는 경우 실제로 Visual Studio 기본 제공되는 코드 분석기를 구성하게 됩니다. EditorConfig 파일을 사용하여 분석기 규칙을 사용하거나 사용하지 않도록 설정하고 NuGet 분석기 패키지를 구성할 수도 있습니다.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig와 규칙 집합 비교
 
-**Q**: 규칙 집합이 나 editorconfig 파일을 사용 하 여 분석기를 구성 해야 하나요?
+**Q:** 규칙 집합 또는 EditorConfig 파일을 사용하여 분석기를 구성해야 합니까?
 
-**A**: 규칙 집합 및 editorconfig 파일은 공존할 수 있으며 분석기를 구성 하는 데 사용할 수 있습니다. EditorConfig 파일 및 규칙 집합을 사용 하 여 규칙을 사용 하거나 사용 하지 않도록 설정 하 고 심각도를 설정할 수 있습니다.
+**A:** 규칙 집합 및 EditorConfig 파일은 공존할 수 있으며 분석기를 구성하는 데 사용할 수 있습니다. EditorConfig 파일 및 규칙 집합을 모두 사용하면 규칙을 사용하거나 사용하지 않도록 설정하고 심각도를 설정할 수 있습니다.
 
-그러나 EditorConfig 파일은 규칙을 구성 하는 또 다른 방법을 제공 합니다.
+그러나 EditorConfig 파일은 규칙을 구성하는 추가적인 방법도 제공합니다.
 
-- .NET 코드 품질 분석기의 경우 EditorConfig 파일을 사용 하 여 [분석할 코드 형식을 정의할](/dotnet/fundamentals/code-analysis/code-quality-rule-options)수 있습니다.
-- Visual Studio에 기본 제공 되는 .NET 코드 스타일 분석기의 경우 EditorConfig 파일을 사용 하 여 코드 베이스에 대해 [기본 설정 된 코드 스타일을 정의할](/dotnet/fundamentals/code-analysis/code-style-rule-options) 수 있습니다.
+- .NET 코드 품질 분석기의 경우 EditorConfig 파일을 사용하여 [분석할 코드 형식을 정의할 수](/dotnet/fundamentals/code-analysis/code-quality-rule-options)있습니다.
+- Visual Studio 기본 제공되는 .NET 코드 스타일 분석기에서는 EditorConfig 파일을 사용하여 코드베이스에 대한 [기본 코드 스타일을 정의할](/dotnet/fundamentals/code-analysis/code-style-rule-options) 수 있습니다.
 
-규칙 집합 및 EditorConfig 파일 외에도 일부 분석기는 c # 및 VB 컴파일러에 대 한 [추가 파일로](../ide/build-actions.md#build-action-values) 표시 된 텍스트 파일을 사용 하 여 구성 됩니다.
+규칙 집합 및 EditorConfig 파일 외에도 일부 분석기는 C# 및 VB 컴파일러에 대한 [추가 파일로](../ide/build-actions.md#build-action-values) 표시된 텍스트 파일을 사용하여 구성됩니다.
 
 > [!NOTE]
-> - EditorConfig 파일은 Visual Studio 2019 버전 16.3 이상에서 규칙을 사용 하도록 설정 하 고 심각도를 설정 하는 데만 사용할 수 있습니다.
-> - EditorConfig 파일은 레거시 분석을 구성 하는 데 사용할 수 없지만 규칙 집합은 사용할 수 있습니다.
+> - EditorConfig 파일은 규칙을 사용하도록 설정하고 Visual Studio 2019 버전 16.3 이상에서만 해당 심각도를 설정하는 데 사용할 수 있습니다.
+> - EditorConfig 파일은 레거시 분석을 구성하는 데 사용할 수 없지만 규칙 집합은 사용할 수 있습니다.
 
 ## <a name="code-analysis-in-ci-builds"></a>CI 빌드에서 코드 분석
 
@@ -69,15 +69,15 @@ ms.locfileid: "99843750"
 
 **Q**: FxCop 분석기와 .net 분석기 간의 차이점은 무엇 인가요?
 
-**A**: fxcop 분석기와 .net 분석기는 모두 fxcop CA 규칙의 .NET Compiler Platform ("Roslyn") 분석기 구현을 참조 합니다. Visual Studio 2019 16.8 및 .NET 5.0 이전에 이러한 분석기는 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 패키지로](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)제공 됩니다. Visual Studio 2019 16.8 및 .NET 5.0부터 이러한 분석기는 [.NET SDK에 포함](/dotnet/fundamentals/code-analysis/overview)되어 있습니다. `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet 패키지로](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)도 사용할 수 있습니다. [FxCop 분석기에서 .net 분석기로의 마이그레이션을](migrate-from-fxcop-analyzers-to-net-analyzers.md)고려 하세요.
+**A**: fxcop 분석기와 .net 분석기는 모두 fxcop CA 규칙의 .NET Compiler Platform ("Roslyn") 분석기 구현을 참조 합니다. Visual Studio 2019 16.8 및 .NET 5.0 이전에 이러한 분석기는 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 패키지로](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)제공 됩니다. Visual Studio 2019 16.8 및 .NET 5.0부터 이러한 분석기는 [.NET SDK 에 포함됩니다.](/dotnet/fundamentals/code-analysis/overview) `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet 패키지로도](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)사용할 수 있습니다. [FxCop 분석기에서 .NET 분석기로 마이그레이션하는 것이](migrate-from-fxcop-analyzers-to-net-analyzers.md)좋습니다.
 
 ## <a name="treat-warnings-as-errors"></a>경고를 오류로 처리
 
-**Q**: 내 프로젝트는 빌드 옵션을 사용 하 여 경고를 오류로 처리 합니다. 레거시 분석에서 원본 코드 분석으로 마이그레이션한 후 모든 코드 분석 경고가 이제 오류로 표시 됩니다. 이를 방지 하려면 어떻게 해야 하나요?
+**Q:** 내 프로젝트에서 빌드 옵션을 사용하여 경고를 오류로 처리합니다. 레거시 분석에서 소스 코드 분석으로 마이그레이션한 후 이제 모든 코드 분석 경고가 오류로 표시됩니다. 이를 방지할 수 있는 방법은 무엇인가요?
 
-**A**: 코드 분석 경고가 오류로 처리 되지 않도록 하려면 다음 단계를 수행 합니다.
+**A:** 코드 분석 경고가 오류로 처리되지 않도록 하려면 다음 단계를 수행합니다.
 
-  1. 다음 콘텐츠를 사용 하 여 props 파일을 만듭니다.
+  1. 다음 콘텐츠를 사용하여 .props 파일을 만듭니다.
 
      ```xml
      <Project>
@@ -87,7 +87,7 @@ ms.locfileid: "99843750"
      </Project>
      ```
 
-  2. .Csproj 또는 .vbproj 프로젝트 파일에 줄을 추가 하 여 이전 단계에서 만든 props 파일을 가져옵니다. 이 줄은 분석기의 props 파일을 가져오는 모든 줄 앞에 배치 해야 합니다. 예를 들어, props 파일 이름이 codeanalysis. props 인 경우:
+  2. .csproj 또는 .vbproj 프로젝트 파일에 줄을 추가하여 이전 단계에서 만든 .props 파일을 가져옵니다. 이 줄은 분석기 .props 파일을 가져오는 줄 앞에 배치해야 합니다. 예를 들어 .props 파일의 이름이 codeanalysis.props인 경우:
 
      ```xml
      ...
@@ -98,11 +98,11 @@ ms.locfileid: "99843750"
 
 ## <a name="code-analysis-solution-property-page"></a>코드 분석 솔루션 속성 페이지
 
-**Q**: 솔루션에 대 한 코드 분석 속성 페이지는 어디에 있나요?
+**Q:** 솔루션의 Code Analysis 속성 페이지는 어디에 있나요?
 
-**A**: 보다 안정적인 공유 속성 그룹을 위해 솔루션 수준의 코드 분석 속성 페이지가 제거 되었습니다. 프로젝트 수준에서 코드 분석을 관리 하기 위해 코드 분석 속성 페이지를 계속 사용할 수 있습니다. 관리 되는 프로젝트의 경우 규칙 구성을 위해 규칙 집합에서 EditorConfig로 마이그레이션하는 것이 좋습니다.  솔루션 또는 리포지토리의 여러/모든 프로젝트에서 규칙 집합을 공유 하는 경우 공유 된 props/targets 파일 또는 *디렉터리* [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 파일에 속성 그룹을 정의 하는 것이 좋습니다. 모든 프로젝트에서 가져오는 이와 같은 일반적인 props 또는 대상이 없는 경우 디렉터리 또는 하위 디렉터리에 정의 된 모든 프로젝트 파일에서 자동으로 가져오는 최상위 솔루션 디렉터리에 이러한 속성 그룹을 추가 하는 것을 고려해 야 합니다 [.](../msbuild/customize-your-build.md)
+**A:** 솔루션 수준의 Code Analysis 속성 페이지가 더 안정적인 공유 속성 그룹을 위해 제거되었습니다. 프로젝트 수준에서 Code Analysis 관리하기 위해 Code Analysis 속성 페이지를 계속 사용할 수 있습니다. (관리되는 프로젝트의 경우 규칙 구성을 위해 규칙 집합에서 EditorConfig로 마이그레이션하는 것이 좋습니다.)  솔루션 또는 리포지토리의 여러/모든 프로젝트에서 규칙 집합을 공유하기 위해 공유 props/targets 파일 또는 *Directory.props/Directory.targets* 파일에서 [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 속성으로 속성 그룹을 정의하는 것이 좋습니다. 모든 프로젝트에서 가져오는 이러한 일반적인 props 또는 대상이 없는 경우 디렉터리 또는 하위 디렉터리에 정의된 모든 프로젝트 파일에서 자동으로 가져오는 최상위 솔루션 디렉터리의 [Directory.props 또는 Directory.targets](../msbuild/customize-your-build.md) 파일에 이러한 속성 그룹을 추가하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>추가 정보
 
 - [분석기 개요](roslyn-analyzers-overview.md)
 - [EditorConfig에 대한 .NET 코딩 규칙 설정](/dotnet/fundamentals/code-analysis/code-style-rule-options)

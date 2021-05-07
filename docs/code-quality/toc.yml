@@ -49,7 +49,7 @@
             - name: 코드 분석 위반 표시 안 함
               href: in-source-suppression-overview.md
         - name: FAQ
-          href: analyzers-faq.md
+          href: analyzers-faq.yml
     - name: 레거시 분석
       items:
         - name: 개요
@@ -92,7 +92,7 @@
             - name: FxCop 분석기에서 .NET 분석기로 마이그레이션
               href: migrate-from-fxcop-analyzers-to-net-analyzers.md
             - name: FAQ
-              href: net-analyzers-faq.md
+              href: net-analyzers-faq.yml
         - name: 규칙 집합
           items:
             - name: 개요
