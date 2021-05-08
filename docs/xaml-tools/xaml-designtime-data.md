@@ -1,18 +1,18 @@
 ---
 title: Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 description: XAML에서 디자인 타임 데이터를 사용하는 방법에 대해 알아봅니다.
-ms.date: 11/17/2020
+ms.date: 04/22/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a9f7f23625bb01c227158f720260f14347d39f9d
+ms.sourcegitcommit: 60b7a6159045a44293043a519c8ea6d915bf2c31
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913074"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108334943"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용
 
@@ -68,7 +68,7 @@ mc:Ignorable="d"
 
 ListView는 데스크톱 앱에 데이터를 표시하는 데 많이 사용되는 방법입니다. 그러나 데이터 없이는 시각화하기 어렵습니다. 이 기능을 사용하여 인라인 디자인 타임 데이터 ItemSource 또는 Items를 만들 수 있습니다. XAML 디자이너는 디자인 타임에 해당 배열에 있는 항목을 ListView에 표시합니다.
 
-### <a name="wpf-net-core--example"></a>WPF .NET Core 예제
+### <a name="wpf-net-core-example"></a>WPF .NET Core 예제
 system:String 형식을 사용하려면 XAML 헤더에 `xmlns:system="clr-namespace:System;assembly=mscorlib`를 포함해야 합니다.
 
 ```xml
@@ -139,7 +139,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 이 경우 이점은 디자인 타임 정적 버전의 모델에 컨트롤을 바인딩할 수 있다는 점입니다.
 
-### <a name="uwp-example"></a>UWP 예제 
+### <a name="uwp-example"></a>UWP 예제
 
 x:Array는 UWP에서 지원되지 않으므로 `<d:ListView.Items>`를 대신 사용할 수 있습니다. system:String 형식을 사용하려면 XAML 헤더에 `http://schemas.microsoft.com/winfx/2009/xaml`를 포함해야 합니다.
 
