@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f8aabb109de02a1beec326407472a841fe16425a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809572"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798455"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 Azure Virtual Machines에서 라이브 ASP.NET 앱 기록 및 재생
 
@@ -37,7 +37,7 @@ TTD 기록 캡처는 애플리케이션을 중지하지 않습니다. 그러나 
 
 ## <a name="prerequisites"></a>사전 요구 사항
 
-* Azure VM(Virtual Machines)에 대한 시간 이동 디버깅은 **Azure 개발 워크로드**가 포함된 Visual Studio 2019 Enterprise 이상에서만 사용할 수 있습니다. (**개별 구성 요소** 탭의 **디버깅 및 테스트** > **스냅샷 디버거**에서 찾을 수 있습니다.)
+* Azure VM(Virtual Machines)에 대한 시간 이동 디버깅은 **Azure 개발 워크로드** 가 포함된 Visual Studio 2019 Enterprise 이상에서만 사용할 수 있습니다. (**개별 구성 요소** 탭의 **디버깅 및 테스트** > **스냅샷 디버거** 에서 찾을 수 있습니다.)
 
     아직 설치되지 않은 경우 [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)를 설치하세요.
 
@@ -51,14 +51,14 @@ TTD 기록 캡처는 애플리케이션을 중지하지 않습니다. 그러나 
     > [!IMPORTANT]
     > TTD를 시작하려면 Azure VM 서비스에 게시된 것과 ‘동일한 버전의 소스 코드’를 열어야 합니다.
 
-1. **디버그 &gt; 스냅샷 디버거 연결...** 을 선택합니다. 웹앱이 배포된 Azure VM 및 Azure 스토리지 계정을 선택합니다. **시간 이동 디버깅 사용** 미리 보기 옵션을 선택한 다음, **연결**을 클릭합니다.
+1. **디버그 &gt; 스냅샷 디버거 연결...** 을 선택합니다. 웹앱이 배포된 Azure VM 및 Azure 스토리지 계정을 선택합니다. **시간 이동 디버깅 사용** 미리 보기 옵션을 선택한 다음, **연결** 을 클릭합니다.
 
       ![Azure 리소스 선택](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
     > [!IMPORTANT]
-    > 처음 VM의 **스냅샷 디버거 연결**을 선택하면 IIS가 자동으로 다시 시작됩니다.
+    > 처음 VM의 **스냅샷 디버거 연결** 을 선택하면 IIS가 자동으로 다시 시작됩니다.
 
-    **모듈**에 대한 메타데이터는 처음에 활성화되지 않습니다. 웹앱으로 이동하면 **컬렉션 시작** 단추가 활성화됩니다. Visual Studio가 이제 스냅샷 디버깅 모드입니다.
+    **모듈** 에 대한 메타데이터는 처음에 활성화되지 않습니다. 웹앱으로 이동하면 **컬렉션 시작** 단추가 활성화됩니다. Visual Studio가 이제 스냅샷 디버깅 모드입니다.
 
    ![스냅샷 디버깅 모드](../debugger/media/snapshot-message.png)
 
@@ -75,11 +75,11 @@ TTD 기록 캡처는 애플리케이션을 중지하지 않습니다. 그러나 
 
    ![snappoint 설정](../debugger/media/time-travel-debugging-set-snappoint-settings.png)
 
-1. snappoint 아이콘(속이 빈 공)을 마우스 오른쪽 단추로 클릭하고 **작업**을 선택합니다. **스냅샷 설정** 창에서 **작업** 확인란을 클릭합니다. 그런 다음, **이 메서드 종료 시점까지 시간 이동 기록을 수집하세요.** 확인란을 클릭합니다.
+1. snappoint 아이콘(속이 빈 공)을 마우스 오른쪽 단추로 클릭하고 **작업** 을 선택합니다. **스냅샷 설정** 창에서 **작업** 확인란을 클릭합니다. 그런 다음, **이 메서드 종료 시점까지 시간 이동 기록을 수집하세요.** 확인란을 클릭합니다.
 
    ![메서드 끝까지 시간 이동 추적 수집](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
-1. **컬렉션 시작**을 클릭하여 snappoint를 켭니다.
+1. **컬렉션 시작** 을 클릭하여 snappoint를 켭니다.
 
    ![snappoint 켜기](../debugger/media/snapshot-start-collection.png)
 
@@ -89,7 +89,7 @@ snappoint가 설정되어 있으면 snappoint가 배치된 코드 줄이 실행�
 
 ## <a name="start-debugging-a-time-travel-recording"></a>시간 이동 기록 디버깅 시작
 
-1. snappoint가 적중되면 진단 도구 창에 스냅샷이 표시됩니다. 이 창을 열려면 **디버그 > Windows > 진단 도구 표시**를 선택합니다.
+1. snappoint가 적중되면 진단 도구 창에 스냅샷이 표시됩니다. 이 창을 열려면 **디버그 > Windows > 진단 도구 표시** 를 선택합니다.
 
    ![snappoint 열기](../debugger/media/snapshot-diagsession-window.png)
 
@@ -103,9 +103,9 @@ snappoint가 설정되어 있으면 snappoint가 배치된 코드 줄이 실행�
 
    ![스냅샷 데이터 검사](../debugger/media/time-travel-debugging-start-debugging.png)
 
-    웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 후속 TTD 활동의 영향을 받지 않습니다. 기본적으로 snappoint당 하나의 스냅샷만 캡처됩니다. 하나의 스냅샷이 캡처되면 해당 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트**를 클릭하여 snappoint를 다시 켤 수 있습니다.
+    웹 사이트 자체는 계속 라이브 상태이며 최종 사용자는 후속 TTD 활동의 영향을 받지 않습니다. 기본적으로 snappoint당 하나의 스냅샷만 캡처됩니다. 하나의 스냅샷이 캡처되면 해당 snappoint가 꺼집니다. snappoint에서 또 하나의 스냅샷을 캡처하려면 **컬렉션 업데이트** 를 클릭하여 snappoint를 다시 켤 수 있습니다.
 
-**도움이 필요하세요?** [문제 해결 및 알려진 문제](../debugger/debug-live-azure-apps-troubleshooting.md)와 [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md) 페이지를 참조하세요.
+**도움이 필요하세요?** [문제 해결 및 알려진 문제](../debugger/debug-live-azure-apps-troubleshooting.md)와 [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml) 페이지를 참조하세요.
 
 ## <a name="set-a-conditional-snappoint"></a>조건부 snappoint 설정
 
@@ -116,4 +116,4 @@ snappoint가 설정되어 있으면 snappoint가 배치된 코드 줄이 실행�
 이 자습서에서는 Azure Virtual Machines에 대한 시간 이동 기록을 수집하는 방법을 알아봤습니다. 스냅샷 디버거에 대한 자세한 정보를 알아볼 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md)
+> [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml)

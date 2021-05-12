@@ -13,12 +13,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 53a7d00548e6d273e2afa2da48669b3d1f3cf827
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 94c65814572c99f95d7a6edc6769e5af0ea6e748
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873326"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798377"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 라이브 ASP.NET Azure 앱 디버그
 
@@ -127,7 +127,7 @@ snappoint가 설정되면 웹 사이트의 브라우저 뷰로 이동하여 표�
 
 앱에 snappoint를 더 추가하고 **컬렉션 업데이트** 단추로 켤 수도 있습니다.
 
-**도움이 필요하세요?** [문제 해결 및 알려진 문제](../debugger/debug-live-azure-apps-troubleshooting.md)와 [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md) 페이지를 참조하세요.
+**도움이 필요하세요?** [문제 해결 및 알려진 문제](../debugger/debug-live-azure-apps-troubleshooting.md)와 [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml) 페이지를 참조하세요.
 
 ## <a name="set-a-conditional-snappoint"></a>조건부 snappoint 설정
 
@@ -170,4 +170,4 @@ snappoint가 적중될 때 스냅샷을 생성하는 것 외에 메시지를 로
 이 자습서에서는 App Services용 스냅샷 디버거를 사용하는 방법을 배웠습니다. 이 기능에 대한 자세한 정보를 알아볼 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md)
+> [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml)

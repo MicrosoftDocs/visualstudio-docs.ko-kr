@@ -35,19 +35,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdc0231b7c42dbdb4aca86040347ec5bfd57607d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0865c71d2893203ca3af925da1d76946d882c4c4
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940672"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798585"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점 사용
 
 중단점은 개발자의 도구 상자에서 가장 중요한 디버깅 기술 중 하나입니다. 디버거 실행을 일시 중지하려는 모든 위치에 중단점을 설정합니다. 예를 들어 코드 변수의 상태를 확인하거나 특정 중단점에서 호출 스택을 확인할 수 있습니다.  중단점을 사용하는 동안 경고 또는 문제를 해결하려는 경우 [Visual Studio 디버거의 중단점 문제 해결](../debugger/troubleshooting-breakpoints.md)을 참조하세요.
 
 > [!NOTE]
-> 해결하려고 하는 작업 또는 문제를 알고 있지만 사용할 중단점의 종류를 알아야 하는 경우 [FAQ - 디버깅 기능 찾기](../debugger/find-your-debugging-task.md#pause-running-code)를 참조하세요.
+> 해결하려고 하는 작업 또는 문제를 알고 있지만 사용할 중단점의 종류를 알아야 하는 경우 [FAQ - 디버깅 기능 찾기](../debugger/find-your-debugging-task.yml#pause-running-code)를 참조하세요.
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> 소스 코드에서 중단점 설정
 

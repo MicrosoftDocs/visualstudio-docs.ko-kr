@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d6c5a4b9485051f8c0293ad72f78e5cdddca59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aad883ac0c3f703b2d6a4e10d3a0ef2468cd8465
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873267"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798442"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio의 스냅샷 디버깅에 대한 문제 해결 및 알려진 문제
 
@@ -249,4 +249,4 @@ Visual Studio 2019를 사용하려면 Azure App Service에 최신 버전의 스�
 - [스냅샷 디버거를 사용하여 라이브 ASP.NET 앱 디버그](../debugger/debug-live-azure-applications.md)
 - [스냅샷 디버거를 사용하여 라이브 ASP.NET Azure Virtual Machines\Virtual Machines Scale Sets 디버그](../debugger/debug-live-azure-virtual-machines.md)
 - [스냅샷 디버거를 사용하여 라이브 ASP.NET Azure Kubernetes 디버그](../debugger/debug-live-azure-kubernetes.md)
-- [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md)
+- [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml)

@@ -14,12 +14,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3a7192ac55dc4138746e3e1e1abe4eaa6928395
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859803"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798338"
 ---
 # <a name="overview-of-source-code-analysis"></a>소스 코드 분석 개요
 
@@ -101,6 +101,6 @@ Visual Studio 확장으로 설치된 분석기에서 규칙의 심각도를 구�
 
 ## <a name="see-also"></a>추가 정보
 
-- [분석기 FAQ](analyzers-faq.md)
+- [분석기 FAQ](analyzers-faq.yml)
 - [사용자 고유의 코드 분석기 작성](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)

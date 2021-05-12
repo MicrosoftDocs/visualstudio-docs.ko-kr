@@ -10,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b9b78771c36dce26744ba74af63922cf1efa48e2
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329356"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798624"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Live Unit Testing를 구성 및 사용하는 방법
 
@@ -185,18 +185,18 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 
 이 대화 상자는 대규모 프로젝트에서 실행되는 많은 수의 동적 테스트 실행으로 인해 성능에 심각한 영향을 줄 수 있다는 경고를 표시합니다. **확인** 을 선택하면 Live Unit Testing에서 솔루션의 모든 테스트를 실행합니다. **취소** 를 선택하면 실행할 테스트를 선택할 수 있습니다. 다음 섹션에서는 이 작업을 수행하는 방법을 설명합니다.
 
-## <a name="include-and-exclude-test-projects-and-test-methods"></a>테스트 프로젝트 및 테스트 메서드 포함 및 제외
+## <a name="include-and-exclude-test-projects-and-test-methods&quot;></a>테스트 프로젝트 및 테스트 메서드 포함 및 제외
 
 여러 테스트 프로젝트를 포함한 솔루션에서는 Live Unit Testing에 참여하는 프로젝트 및 프로젝트의 개별 메서드를 제어할 수 있습니다. 예를 들어 수백 개의 테스트 프로젝트를 포함한 솔루션을 구현하는 경우 Live Unit Testing에 참여할 테스트 프로젝트의 대상 집합을 선택할 수 있습니다. 프로젝트 또는 솔루션에서 모든 테스트를 제외할 것인지, 대부분의 테스트를 포함할지 또는 제외할지, 개별적으로 테스트를 제외할지에 따라 다양한 방법으로 수행할 수 있습니다. Live Unit Testing은 포함/제외 상태를 사용자 설정으로 저장하고 솔루션을 닫고 다시 열 경우 불러옵니다.
 
-### <a name="exclude-all-tests-in-a-project-or-solution"></a>프로젝트 또는 솔루션에서 모든 테스트 제외
+### <a name=&quot;exclude-all-tests-in-a-project-or-solution&quot;></a>프로젝트 또는 솔루션에서 모든 테스트 제외
 
 단위 테스트에서 개별 프로젝트를 선택하려면 Live Unit Testing을 시작한 후에 다음을 수행합니다.
 
 1. **솔루션 탐색기** 에서 솔루션을 마우스 오른쪽 단추로 클릭하고 **Live Unit Testing** > **제외** 를 선택하여 전체 솔루션을 제외합니다.
 1. 테스트에 포함하려는 테스트 프로젝트 각각을 마우스 오른쪽 단추로 클릭하고 **Live Unit Testing** > **포함** 을 선택합니다.
 
-### <a name="exclude-individual-tests-from-the-code-editor-window"></a>코드 편집기 창에서 개별 테스트 제외
+### <a name=&quot;exclude-individual-tests-from-the-code-editor-window&quot;></a>코드 편집기 창에서 개별 테스트 제외
 
 코드 편집기 창을 사용하여 개별 테스트 메서드를 포함하거나 제외시킬 수 있습니다. 코드 편집기 창에서 테스트 메서드의 서명을 마우스 오른쪽 단추로 클릭하고 다음 옵션 중 하나를 선택합니다.
 
@@ -204,13 +204,13 @@ Live Unit Testing이 테스트 결과를 자동으로 실행하고 업데이트�
 - **Live Unit Testing** >  **\<selected method> 제외**
 - **Live Unit Testing** >  **\<selected method> 이외 모두 제외**
 
-### <a name="exclude-tests-programmatically"></a>프로그래밍 방식으로 테스트 제외
+### <a name=&quot;exclude-tests-programmatically&quot;></a>프로그래밍 방식으로 테스트 제외
 
 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 특성을 적용하여 Live Unit Testing에서 해당 검사를 보고하지 않도록 메서드, 클래스 또는 구조를 프로그래밍 방식으로 제외할 수 있습니다.
 
 Live Unit Testing에서 개별 메서드를 제외하려면 다음 특성을 사용합니다.
 
-- xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- xUnit: `[Trait(&quot;Category&quot;, &quot;SkipWhenLiveUnitTesting")]`
 - NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
 
@@ -224,5 +224,5 @@ Live Unit Testing에서 개별 메서드를 제외하려면 다음 특성을 사
 
 - [코드 테스트 도구](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 블로그](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
-- [Live Unit Testing FAQ](live-unit-testing-faq.md)
+- [Live Unit Testing FAQ](live-unit-testing-faq.yml)
 - [Channel 9 비디오: Visual Studio의 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

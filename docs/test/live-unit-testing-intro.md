@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c3e8220857a454dc7ab5c7cb6308650075f9577
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c4da809455a859479d0421bffaa1b257a18c4b5
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887746"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798520"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 개요
 
@@ -34,7 +34,7 @@ Live Unit Testing에 대해 자세히 알아보려면 다음을 수행합니다.
 
 - 다음과 같은 자세한 설명서를 읽어보세요. [Visual Studio Enterprise Edition에서 Live Unit Testing 사용](live-unit-testing.md).
 
-- [Live Unit Testing FAQ](live-unit-testing-faq.md)에서 Live Unit Testing의 새로운 기능과 팁과 기술에 대해 알아보세요.
+- [Live Unit Testing FAQ](live-unit-testing-faq.yml)에서 Live Unit Testing의 새로운 기능과 팁과 기술에 대해 알아보세요.
 
 - Live Unit Testing 및 해당 기능에 대한 개요는 Channel 9 비디오에서 살펴보세요.</p>
 

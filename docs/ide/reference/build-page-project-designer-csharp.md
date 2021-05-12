@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91b254f4c075693e23d8f650356cd97e86a4c746
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836451"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798559"
 ---
 # <a name="build-page-project-designer-c"></a>프로젝트 디자이너, 빌드 페이지(C#)
 
@@ -119,7 +119,7 @@ ms.locfileid: "99836451"
 **특정 경고** - 지정된 경고를 오류로 처리합니다. 여러 경고 번호를 쉼표 또는 세미콜론으로 구분합니다.
 
 > [!TIP]
-> 코드 분석 경고를 오류로 취급하지 않으려면 [코드 분석 FAQ](../../code-quality/analyzers-faq.md#treat-warnings-as-errors)를 참조하세요.
+> 코드 분석 경고를 오류로 취급하지 않으려면 [코드 분석 FAQ](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors)를 참조하세요.
 
 ## <a name="output"></a>출력
 

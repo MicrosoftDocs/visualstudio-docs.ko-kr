@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Tools for Unity 시작 | Microsoft 문서
-description: Unity 개발을 위해 Visual Studio를 설치 하 고 설정 하는 방법에 대해 알아봅니다.
+description: Unity 개발을 위해 Visual Studio 설치하고 설정하는 방법을 알아봅니다.
 ms.custom: ''
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
@@ -13,48 +13,48 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
-ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
+ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
+ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98912570"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109782610"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio 및 Unity 시작
 
 > [!NOTE]
-> 이 가이드에서는 Unity 허브 프로그램을 사용 하 여 Unity를 이미 설치 했다고 가정 합니다. Unity를 처음 접하는 경우 unity에서 [Unity Essentials learning 경로](https://learn.unity.com/pathway/unity-essentials) 를 학습 하 고 완료 하는 것이 좋습니다.
+> 이 가이드에서는 Unity Hub 프로그램을 사용하여 Unity를 이미 설치했다고 가정합니다. Unity를 처음 접하는 경우 Unity Learn을 방문하여 Unity [Essentials 학습 경로를](https://learn.unity.com/pathway/unity-essentials) 먼저 완료하는 것이 좋습니다.
 
-## <a name="install-unity-support-for-visual-studio"></a>Visual Studio에 대 한 Unity 지원 설치
+## <a name="install-unity-support-for-visual-studio"></a>Visual Studio 대한 Unity 지원 설치
 
-Visual Studio Tools for Unity은 c # 등을 작성 하 고 디버깅 하는 기능을 제공 하는 무료 확장입니다. 확장 프로그램에 포함 된 내용에 대 한 전체 목록은 [Unity 용 도구 개요](./visual-studio-tools-for-unity.md) 를 참조 하세요.
+Visual Studio Tools for Unity C# 등의 쓰기 및 디버깅을 지원하는 무료 확장입니다. 확장에 포함된 전체 목록은 [Tools for Unity 개요를](./visual-studio-tools-for-unity.md) 참조하세요.
 
 :::zone pivot="windows"
 
 > [!NOTE]
-> 이 설치 가이드는 Visual Studio 용입니다. Visual Studio Code 사용 하는 경우 [VS Code 설명서를 사용 하 여 Unity 개발](https://code.visualstudio.com/docs/other/unity)을 참조 하세요.
+> 이 설치 가이드는 Visual Studio 위한 것입니다. Visual Studio Code 사용하는 경우 unity [Development with VS Code 설명서를](https://code.visualstudio.com/docs/other/unity)참조하세요.
 
-1. [Visual Studio 설치 관리자를 다운로드](/visualstudio/docs/install/install-visual-studio.md)하거나 이미 설치 되어 있는 경우 실행 합니다.
+1. [Visual Studio 설치 관리자를 다운로드하거나](/visualstudio/install/install-visual-studio.md)이미 설치된 경우 실행합니다.
 2. 원하는 Visual Studio 버전에 대해 **수정**(이미 설치된 경우) 또는 **설치**(새 설치의 경우)를 클릭합니다.
-3. **작업** 탭에서 **게임** 섹션으로 스크롤하고 Unity 워크 로드 **를 사용 하 여 게임 개발** 을 선택 합니다.
+3. **워크로드** 탭에서 게임 섹션으로 **스크롤하고** **Unity를** 사용하여 게임 개발 워크로드를 선택합니다.
 
-    ![설치 관리자에서 Unity를 사용한 게임 개발 작업 상자](../media/vs/unity-workload.png)
+    ![설치 관리자에서 Unity를 통해 게임 개발 워크로드 상자](../media/vs/unity-workload.png)
 
 :::zone-end
 :::zone pivot="macos"
 
 > [!NOTE]
-> 이 설치 가이드는 Mac용 Visual Studio에 대 한 것입니다. Visual Studio Code 사용 하는 경우 [VS Code 설명서를 사용 하 여 Unity 개발](https://code.visualstudio.com/docs/other/unity)을 참조 하세요.
+> 이 설치 가이드는 Mac용 Visual Studio 위한 것입니다. Visual Studio Code 사용하는 경우 unity [Development with VS Code 설명서를](https://code.visualstudio.com/docs/other/unity)참조하세요.
 
-Unity 용 도구는 Mac용 Visual Studio 설치에 포함 되어 있으며 별도의 설치 단계가 필요 하지 않습니다. **Mac용 Visual Studio > Extensions > 게임 개발** 메뉴에서이를 확인할 수 있습니다. **Unity 용 Mac용 Visual Studio 도구** 를 사용 하도록 설정 해야 합니다.
+Unity용 도구는 Mac용 Visual Studio 설치에 포함되어 있으며 별도의 설치 단계가 필요하지 않습니다. Mac용 Visual Studio > 확장 > **게임 개발** 메뉴에서 이를 확인할 수 있습니다. **Mac용 Visual Studio Tools for Unity를** 사용하도록 설정해야 합니다.
 
-![Unity를 사용 하도록 설정 된 Mac용 Visual Studio 도구를 보여 주는 확장 관리자 보기](../media/vsm/unity-workload.png)
+![Mac용 Visual Studio Tools for Unity를 사용하도록 설정된 확장 관리자 보기](../media/vsm/unity-workload.png)
 
 :::zone-end
 
 ## <a name="check-for-updates"></a>업데이트 확인
 
-최신 버그 수정, 기능 및 Unity 지원이 있도록 Visual Studio 및 Mac용 Visual Studio 업데이트를 유지 하는 것이 좋습니다. Unity 버전의 업데이트는 필요 하지 않습니다.
+최신 버그 수정, 기능 및 Unity 지원을 사용할 수 있도록 Visual Studio 및 Mac용 Visual Studio 업데이트하는 것이 좋습니다. 이 경우 Unity 버전을 업데이트할 필요가 없습니다.
 
 :::zone pivot="windows"
 

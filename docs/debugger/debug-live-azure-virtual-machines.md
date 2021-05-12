@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: bdab6b3f559628506dd301d6ced449f1e69152a6
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846963"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798494"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>스냅샷 디버거를 사용하여 Azure Virtual Machines 및 Azure Virtual Machine Scale Sets의 라이브 ASP.NET 앱 디버그
 
@@ -110,11 +110,11 @@ snappoint가 설정되면 웹 사이트의 브라우저 뷰로 이동하여 표�
 
 앱에 snappoint를 더 추가하고 **컬렉션 업데이트** 단추로 켤 수도 있습니다.
 
-**도움이 필요하세요?** [문제 해결 및 알려진 문제](../debugger/debug-live-azure-apps-troubleshooting.md)와 [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md) 페이지를 참조하세요.
+**도움이 필요하세요?** [문제 해결 및 알려진 문제](../debugger/debug-live-azure-apps-troubleshooting.md)와 [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml) 페이지를 참조하세요.
 
 ## <a name="set-a-conditional-snappoint"></a>조건부 snappoint 설정
 
-앱의 특정 상태를 다시 만들기 어려운 경우 조건부 snappoint 사용을 고려해 보세요. 조건부 snappoint를 사용하면 스냅샷을 생성할 시점(예: 검사하려는 특정 값이 변수에 포함되어 있을 때)을 제어할 수 있습니다. 조건은 식, 필터 또는 적중 횟수를 사용하여 설정할 수 있습니다.
+앱의 특정 상태를 다시 만들기 어려운 경우 조건부 snappoint를 사용해 보세요. 조건부 snappoint를 사용하면 스냅샷을 생성할 시점(예: 검사하려는 특정 값이 변수에 포함되어 있을 때)을 제어할 수 있습니다. 조건은 식, 필터 또는 적중 횟수를 사용하여 설정할 수 있습니다.
 
 #### <a name="to-create-a-conditional-snappoint"></a>조건부 snappoint를 만들려면
 
@@ -153,4 +153,4 @@ snappoint가 적중될 때 스냅샷을 생성하는 것 외에 메시지를 로
 이 자습서에서는 Azure Virtual Machines 및 Azure Virtual Machine Scale Sets용 스냅샷 디버거를 사용하는 방법을 배웠습니다. 이 기능에 대한 자세한 정보를 알아볼 수 있습니다.
 
 > [!div class="nextstepaction"]
-> [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.md)
+> [스냅샷 디버깅 FAQ](../debugger/debug-live-azure-apps-faq.yml)

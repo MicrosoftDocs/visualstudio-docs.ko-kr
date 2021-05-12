@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547494"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666798"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>네트워크 기반 Visual Studio 배포에 대한 업데이트 제어
 
@@ -82,7 +82,7 @@ ms.locfileid: "106547494"
 
 **시나리오 3: 클라이언트가 원래 웹에서 설치되었지만 이제는 네트워크 레이아웃에서만 업데이트를 수신해야 함**
 
-클라이언트 컴퓨터가 이미 웹에서 Visual Studio를 설치했을 수 있지만 이제는 관리자가 모든 향후 업데이트를 관리되는 레이아웃에서 제공하려는 경우도 있을 수 있습니다. 이 시나리오를 지원하는 유일한 방법은 원하는 버전의 제품을 사용하여 네트워크 레이아웃을 만든 다음 클라이언트 컴퓨터에서 레이아웃 위치(예: `\\network\share\vs_enterprise.exe`)의 부트스트래퍼를 실행하는 것입니다. 이상적으로는 원래 클라이언트 설치는 ChannelURI가 올바르게 구성된 네트워크 레이아웃의 부트스트래퍼를 사용하여 실행되어야 하지만, 네트워크 레이아웃 위치의 업데이트된 부트스트래퍼를 실행하는 것도 유효합니다. 이러한 작업 중 하나는 클라이언트 머신에서 해당 특정 레이아웃 위치와의 연결을 포함합니다. 이 시나리오가 제대로 작동하려면 레이아웃의 `response.json` 파일에 구성된 ‘ChannelURI’가 원래 설치가 실행될 때 클라이언트 컴퓨터에 설정된 ChannelURI와 동일해야 합니다. 이 값은 원래 인터넷 [릴리스 채널](https://aka.ms/vs/16/release/channel)로 설정되었을 가능성이 높습니다. 
+클라이언트 컴퓨터가 이미 웹에서 Visual Studio를 설치했을 수 있지만 이제는 관리자가 모든 향후 업데이트를 관리되는 레이아웃에서 제공하려는 경우도 있을 수 있습니다. 이 시나리오를 지원하는 유일한 방법은 원하는 버전의 제품을 사용하여 네트워크 레이아웃을 만든 다음 클라이언트 컴퓨터에서 레이아웃 위치(예: `\\server\share\vs_enterprise.exe`)의 부트스트래퍼를 실행하는 것입니다. 이상적으로는 원래 클라이언트 설치는 ChannelURI가 올바르게 구성된 네트워크 레이아웃의 부트스트래퍼를 사용하여 실행되어야 하지만, 네트워크 레이아웃 위치의 업데이트된 부트스트래퍼를 실행하는 것도 유효합니다. 이러한 작업 중 하나는 클라이언트 머신에서 해당 특정 레이아웃 위치와의 연결을 포함합니다. 이 시나리오가 제대로 작동하려면 레이아웃의 `response.json` 파일에 구성된 ‘ChannelURI’가 원래 설치가 실행될 때 클라이언트 컴퓨터에 설정된 ChannelURI와 동일해야 합니다. 이 값은 원래 인터넷 [릴리스 채널](https://aka.ms/vs/16/release/channel)로 설정되었을 가능성이 높습니다. 
 
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Visual Studio IDE에서 알림 제어
