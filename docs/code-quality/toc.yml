@@ -459,6 +459,10 @@
               href: code-metrics-maintainability-index-range-and-meaning.md
             - name: 클래스 결합
               href: code-metrics-class-coupling.md
+            - name: 순환 복잡성
+              href: code-metrics-cyclomatic-complexity.md
+            - name: 상속 수준
+              href: code-metrics-depth-of-inheritance.md
 - name: C++ 코드 분석
   items:
     - name: C 및 C++ 코드 분석
