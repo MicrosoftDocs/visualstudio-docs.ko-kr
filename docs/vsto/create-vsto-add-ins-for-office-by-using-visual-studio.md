@@ -1,9 +1,9 @@
 ---
 title: Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
-description: Visual Studio의 Microsoft Office 개발자 도구를 사용 하 여 Office를 확장 하는 .NET Framework 응용 프로그램을 만드는 방법에 대해 알아봅니다.
+description: Visual Studio Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 애플리케이션을 만드는 방법을 알아봅니다.
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
-ms.date: 08/14/2019
+ms.date: 04/28/2021
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,24 +13,27 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 611feb69dc4c5ebdd340a61c49e76e0d7c33e713
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 990caeec642a745bec5b6e0f2d29ff5d6213d095
+ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947960"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109848320"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio를 사용하여 Office용 VSTO 추가 기능 만들기
+> [!IMPORTANT]
+> VSTO는 [.NET Framework](https://docs.microsoft.com/dotnet/framework/get-started/overview)를 기반으로 합니다. COM 추가 기능도 .NET Framework 작성할 수 있습니다. Office 추가 기능 은 최신 버전의 [.NET인 .NET Core 및 .NET 5+로](https://docs.microsoft.com/dotnet/core/dotnet-five)만들 수 없습니다. .NET Core/.NET 5 이상은 동일한 프로세스에서 .NET Framework 함께 작동할 수 없고 추가 기능 로드 오류가 발생할 수 있기 때문입니다. 계속해서 .NET Framework 사용하여 Office용 VSTO 및 COM 추가 기능 작성을 진행할 수 있습니다. Microsoft는 .NET Core 또는 .NET 5+를 사용하도록 VSTO 또는 COM 추가 기능 플랫폼을 업데이트하지 않습니다. ASP.NET Core를 포함하여 .NET Core 및 .NET 5+를 활용하여 Office 웹 추가 기능 의 서버 쪽을 만들 수 [있습니다.](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
+
   Visual Studio의 Microsoft Office 개발자 도구를 사용하여 Office를 확장하는 .NET Framework 애플리케이션을 만들 수 있습니다. 이러한 애플리케이션을 *Office 솔루션* 이라고도 합니다.
 
  Office 개발자 도구는 다양한 비즈니스 요구 사항에 맞는 Office 솔루션을 만드는 데 사용할 수 있는 기능을 제공합니다. 이 도구에는 Visual Basic 또는 Visual C#을 사용하여 Office 솔루션을 만들 수 있는 프로젝트 템플릿과 Office 솔루션용 사용자 지정 사용자 인터페이스를 만들 수 있는 비주얼 디자이너가 포함되어 있습니다.
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
- Office 개발에 대 한 최신 정보는 [Microsoft Office 개발자 센터](https://developer.microsoft.com/office/docs)를 참조 하세요.
+ Office 개발에 대한 최신 정보는 [Microsoft Office 개발자 센터를 참조하세요.](https://developer.microsoft.com/office/docs)
 
-## <a name="in-this-section"></a>단원 내용
-- [Visual Studio에서 Office 개발 &#40;시작&#41;](getting-started-office-development-in-visual-studio.md)
+## <a name="in-this-section"></a>섹션 내용
+- [Visual Studio&#41;Office 개발 &#40;시작 ](getting-started-office-development-in-visual-studio.md)
 
  Office 솔루션을 만들기 위해 개발 컴퓨터를 구성하는 방법, Office 솔루션 만들기를 시작하는 방법 및 Visual Studio에 포함된 Office 개발용 새 기능에 대한 정보 링크를 제공합니다.
 
@@ -38,7 +41,7 @@ ms.locfileid: "99947960"
 
  이전 버전의 Visual Studio를 사용하여 만든 프로젝트의 업그레이드 프로세스에 대한 정보 링크를 제공합니다.
 
-- [Visual Studio의 Office 솔루션 아키텍처](architecture-of-office-solutions-in-visual-studio.md)
+- [Visual Studio Office 솔루션의 아키텍처](architecture-of-office-solutions-in-visual-studio.md)
 
  문서 수준 사용자 지정과 VSTO 추가 기능 관련 정보를 비롯한 Office 솔루션의 작동 방식에 대한 정보의 링크를 제공합니다.
 
@@ -68,7 +71,7 @@ ms.locfileid: "99947960"
 
 - [프로젝트 솔루션](project-solutions.md)
 
- Project Microsoft Office 자동화 하 고 project VSTO 추가 기능을 만드는 방법에 대 한 정보를 제공 합니다.
+ Microsoft Office 프로젝트를 자동화하고 프로젝트 VSTO 추가 기능을 만드는 방법에 대한 정보를 제공합니다.
 
 - [Visio 솔루션](visio-solutions.md)
 
