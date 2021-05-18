@@ -2,7 +2,7 @@
 title: 문자열 시각화 도우미 대화 상자 | Microsoft Docs
 description: Visual Studio에서 디버그하는 동안 기본 제공 문자열 시각화 도우미 대화 상자를 사용하여 문자열을 표시합니다.
 ms.date: 10/10/2018
-ms.custom: seoapril2019, SEO-VS-2020
+ms.custom: contperf-fy21q4
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3084db99226ab268bb6ce70611628dcafcf1753b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85092f6a339fdaaa3ddaa56112cc351d8b8e9bdc
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904280"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640847"
 ---
 # <a name="string-visualizer-dialog-box"></a>문자열 시각화 도우미 대화 상자
 
 Visual Studio에서 디버그하는 동안 기본 제공 문자열 시각화 도우미를 사용하여 문자열을 볼 수 있습니다. 문자열 시각화 도우미는 데이터 팁 또는 디버거 창에 너무 긴 문자열을 보여 줍니다. 또한 잘 구성되지 않은 문자열을 식별하는 데 도움이 될 수 있습니다.
 
-기본 제공되는 문자열 시각화 도우미에는 일반 텍스트, XML, HTML, JSON 옵션이 포함되어 있습니다. 또한 **Autos** 또는 다른 디버거 창에서 [DataSet, DataTable, DataView](../debugger/dataset-visualizer-dialog-box.md) 개체와 같은 몇 가지 다른 유형에 대한 기본 제공 시각화 도우미를 열 수 있습니다.
+기본 제공되는 문자열 시각화에는 [텍스트](#text-string-data), [XML](#xml-string-data), [HTML](#html-string-data), [JSON](#json-string-data) 옵션이 포함되어 있습니다. 또한 **Autos** 또는 다른 디버거 창에서 [DataSet, DataTable, DataView](../debugger/dataset-visualizer-dialog-box.md) 개체와 같은 몇 가지 다른 유형에 대한 기본 제공 시각화 도우미를 열 수 있습니다.
 
 > [!NOTE]
 > 시각화 도우미에서 XAML 또는 WPF UI 요소를 검사해야 하는 경우 [디버그하는 동안 XAML 속성 검사](../xaml-tools/inspect-xaml-properties-while-debugging.md) 또는 [WPF 트리 시각화 도우미 사용 방법](../debugger/how-to-use-the-wpf-tree-visualizer.md)을 참조하세요.
@@ -44,6 +44,12 @@ Visual Studio에서 디버그하는 동안 기본 제공 문자열 시각화 도
 **식** 필드는 마우스로 가리키는 변수나 식을 표시합니다.
 
 **값** 필드는 문자열 값을 표시합니다. 빈 **값** 은 선택한 시각화 도우미가 문자열을 인식할 수 없음을 의미합니다. 예를 들어 **XML 시각화 도우미** 는 XML 태그나 JSON 문자열이 없는 텍스트 문자열에 대해 빈 **값** 을 표시합니다. 선택한 시각화 도우미가 인식할 수 없는 문자열을 보려면 대신 **텍스트 시각화 도우미** 를 선택하세요. **텍스트 시각화 도우미** 는 일반 텍스트를 표시합니다.
+
+### <a name="text-string-data"></a>텍스트 문자열 데이터
+
+**텍스트 시각화 도우미** 는 일반 텍스트를 표시합니다. C++ 문자열에 사용자 지정 형식 지정이 필요한 경우 [Natvis 시각화](../debugger/create-custom-views-of-native-objects.md)를 만듭니다.
+
+![텍스트 문자열 시각화](../debugger/media/dbg-string-visualizer-text.png "텍스트 문자열 시각화")
 
 ### <a name="json-string-data"></a>JSON 문자열 데이터
 

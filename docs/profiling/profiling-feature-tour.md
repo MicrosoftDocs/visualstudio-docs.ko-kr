@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b5fb35c1cd30f872d2a58504f73596357cc60025
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145380"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729327"
 ---
 # <a name="first-look-at-profiling-tools"></a>프로파일링 도구 살펴보기
 
@@ -31,7 +31,7 @@ Visual Studio에서는 앱의 유형에 따라 다른 성능 문제를 진단할
 
 ## <a name="measure-performance-while-debugging"></a>디버그하는 동안 성능 측정
 
-디버깅 세션 중에 액세스할 수 있는 프로파일링 도구는 [진단 도구] 창에 제공됩니다. 끄지 않았다면 [진단 도구] 창이 자동으로 나타납니다. 창을 표시하려면 **디버그/Windows/진단 도구 표시** 를 클릭합니다. 창이 열리면 데이터를 수집할 도구를 선택할 수 있습니다.
+디버깅 세션 중에 액세스할 수 있는 프로파일링 도구는 [진단 도구] 창에 제공됩니다. 끄지 않았다면 [진단 도구] 창이 자동으로 나타납니다. 창을 표시하려면 **디버그/Windows/진단 도구 표시** 를 클릭합니다(또는 **Ctrl** + **Alt** + **F2** 를 누릅니다). 창이 열리면 데이터를 수집할 도구를 선택할 수 있습니다.
 
 ![진단 도구 창](../profiling/media/prof-tour-diagnostic-tools.png "진단 도구")
 
@@ -239,13 +239,13 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
 |[.NET 개체 할당](../profiling/dotnet-alloc-tool.md)|예(.NET만 해당)|예|예|
-|[GPU 사용량](./gpu-usage.md)|예|예|no|
+|[GPU 사용량](./gpu-usage.md)|예|예|아니요|
 |[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
 |[이벤트 뷰어](../profiling/events-viewer.md)|예|예|예|
 |[.NET Async](../profiling/analyze-async.md)|예(.NET만 해당)|예|예|
 |[.NET 카운터](../profiling/dotnet-counters-tool.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
 |[데이터베이스](../profiling/analyze-database.md)|예(.NET Core만 해당)|no|예(ASP.NET Core만 해당)|
-|[성능 탐색기](#analyze-performance-legacy-tools)|no|no|no|
+|[성능 탐색기](#analyze-performance-legacy-tools)|no|아니요|아니요|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
 ::: moniker-end
 
@@ -254,16 +254,16 @@ Visual Studio 2019에서는 레거시 성능 탐색기 및 성능 마법사와 �
 |----------------------|---------------------|-------------|-------------|
 |[CPU 사용량](../profiling/beginners-guide-to-performance-profiling.md)|예|예|예|
 |[메모리 사용량](../profiling/memory-usage.md)|예|예|예|
-|[GPU 사용량](./gpu-usage.md)|예|예|no|
-|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|no|
+|[GPU 사용량](./gpu-usage.md)|예|예|아니요|
+|[애플리케이션 타임라인](../profiling/application-timeline.md)|예(XAML)|예|아니요|
 |[PerfTips](../profiling/perftips.md)|예|XAML은 예, HTML은 no|예|
-|[성능 탐색기](../profiling/performance-explorer.md)|예|no|예|
+|[성능 탐색기](../profiling/performance-explorer.md)|예|아니요|예|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|Visual Studio Enterprise만 포함된 .NET|
-|[네트워크 사용량](../profiling/network-usage.md)|no|예|no|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|HTML은 예, XAML은 no|no|
-|[JavaScript 메모리](../profiling/javascript-memory.md)|no|HTML은 예, XAML은 no|no|
+|[네트워크 사용량](../profiling/network-usage.md)|아니요|예|아니요|
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|아니요|HTML은 예, XAML은 no|아니요|
+|[JavaScript 메모리](../profiling/javascript-memory.md)|아니요|HTML은 예, XAML은 no|아니요|
 ::: moniker-end
 
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 - [Visual Studio의 디버깅](../debugger/debugger-feature-tour.md)

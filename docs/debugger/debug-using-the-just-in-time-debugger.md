@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bdd35056706491ace6e5e6b2f7c3f6a45464d2e
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873199"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729249"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio에서 Just-In-Time 디버거를 사용하여 디버그
 
@@ -177,7 +177,7 @@ Just-In-Time 디버깅 중에 다음 오류 메시지가 표시될 수 있습니
 
     디버거가 다른 사용자로 실행 중인 프로세스에 연결하려고 했습니다.
 
-    이 문제를 해결하려면 Visual Studio에서 **디버그** > **프로세스에 연결** 을 열고 **사용 가능한 프로세스** 목록에서 디버깅할 프로세스를 찾습니다. 프로세스 이름을 모르는 경우에는 **Visual Studio Just-In-Time 디버거** 대화 상자에서 프로세스 ID를 찾습니다. **사용 가능한 프로세스** 목록에서 프로세스를 선택하고 **연결** 을 선택합니다. **아니요** 를 선택하여 Just-In-Time 디버거 대화 상자를 닫습니다.
+    이 문제를 해결하려면 Visual Studio에서 **디버그** > **프로세스에 연결** 을 열고(또는 **Ctrl** + **Alt** + **P** 를 누르고), **사용 가능한 프로세스** 목록에서 디버깅할 프로세스를 찾습니다. 프로세스 이름을 모르는 경우에는 **Visual Studio Just-In-Time 디버거** 대화 상자에서 프로세스 ID를 찾습니다. **사용 가능한 프로세스** 목록에서 프로세스를 선택하고 **연결** 을 선택합니다. **아니요** 를 선택하여 Just-In-Time 디버거 대화 상자를 닫습니다.
 
 - **로그온한 사용자가 없으므로 디버거를 시작할 수 없습니다.**
 

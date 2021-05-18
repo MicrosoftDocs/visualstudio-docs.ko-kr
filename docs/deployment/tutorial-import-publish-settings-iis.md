@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aeaaff68ab0abe85838456e8c8b69e2520295689
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945034"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729275"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio에서 게시 설정을 가져와서 IIS에 애플리케이션 게시
 
@@ -70,7 +70,7 @@ ms.locfileid: "99945034"
 
     Visual Studio가 프로젝트를 생성합니다.
 
-1. **빌드** > **솔루션 빌드** 를 선택하여 프로젝트를 빌드합니다.
+1. **빌드** > **빌드 솔루션** 을 선택하여(또는 **Ctrl** + **Shift** + **B** 를 눌러) 프로젝트를 빌드합니다.
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>Windows Server에서 웹 배포 설치 및 구성
 

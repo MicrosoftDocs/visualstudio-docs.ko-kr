@@ -5,19 +5,19 @@ description: 날짜별로 정렬된 Visual Studio의 릴리스 버전 및 빌드
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 04/22/2021
+ms.date: 05/11/2021
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 9407d6dcb8a56d4c6844008cfc8cf6ac6fb8384c
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a88e114b664ebf239c375c48536753da3574da11
+ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913022"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109782623"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 빌드 번호 및 릴리스 날짜
 
@@ -29,6 +29,10 @@ ms.locfileid: "107913022"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.10.0 | 미리 보기 3 | 2021년 5월 11일 | 16.10.31306.274 |
+| 16.9.5 | 해제 | 2021년 5월 11일 | 16.9.31229.75 |
+| 16.7.15 | 해제 | 2021년 5월 11일 | 16.7.31229.181 |
+| 16.4.22| 해제 | 2021년 5월 11일 | 16.4.31229.387 |
 | 16.10.0 | 미리 보기 2.1 | 2021년 4월 22일 | 16.10.31220.234 |
 | 16.10.0 | Preview 2 | 2021년 4월 14일 | 16.10.31213.239 |
 | 16.9.4 | 해제 | 2021년 4월 13일 | 16.9.31205.134 |
@@ -224,6 +228,7 @@ ms.locfileid: "107913022"
 
 | **Version**| **채널** | **릴리스 날짜** | **빌드 버전** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.36 | 해제 | 2021년 5월 11일 | 15.9.28307.1525 |
 | 15.9.35 | 해제 | 2021년 4월 13일 | 15.9.28307.1500 |
 | 15.9.34 | 해제 | 2021년 3월 9일 | 15.9.28307.1440 |
 | 15.9.33 | Release | 2021년 2월 10일 | 15.9.28307.1401 |

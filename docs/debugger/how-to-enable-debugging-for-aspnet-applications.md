@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fd620a0c7f4860421b6f8b1a15c0b708c1ba860
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877748"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729262"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio에서 ASP.NET 또는 ASP.NET Core 앱 디버그
 
@@ -51,7 +51,7 @@ Visual Studio에서 ASP.NET 또는 ASP.NET Core 앱을 디버그할 수 있습�
 
 IIS Express는 기본값이며 미리 구성되어 있습니다. 로컬 IIS에서 디버깅하는 경우 [로컬 IIS 디버깅에 대한 요구 사항](#iis)을 충족하는지 확인합니다.
 
-1. Visual Studio **솔루션 탐색기** 에서 ASP.NET 프로젝트를 선택하고 **속성** 아이콘을 클릭하고, **Alt**+**Enter** 키를 누르거나 **속성** 을 마우스 오른쪽 단추로 클릭하여 선택합니다.
+1. Visual Studio **솔루션 탐색기** 에서 ASP.NET 프로젝트를 선택하고 **속성** 아이콘을 클릭하거나, **Alt**+**Enter** 키를 누르거나, **속성** 을 마우스 오른쪽 단추로 클릭하여 선택합니다.
 
 1. **웹** 탭을 선택합니다.
 
@@ -65,7 +65,7 @@ IIS Express는 기본값이며 미리 구성되어 있습니다. 로컬 IIS에�
 
    ![ASP.NET 디버거 설정](media/dbg-aspnet-enable-debugging2.png "ASP.NET 디버거 설정")
 
-1. **파일** > **선택한 항목 저장** 또는 **Ctrl**+**S** 를 사용하여 변경 내용을 저장합니다.
+1. **파일** > **선택한 항목 저장** 을 선택하여(또는 **Ctrl**+**S** 를 눌러) 변경 내용을 저장합니다.
 
 1. 앱을 디버그하려면 앱에서 일부 코드에서 중단점을 설정합니다. Visual Studio 도구 모음에서 구성이 **디버그** 로 설정되어 있는지 확인하고, 원하는 브라우저가 에뮬레이터 필드에서 **IIS Express(\<Browser name>)** 또는 **로컬 IIS(\<Browser name>)** 에 표시되는지 확인합니다.
 
@@ -75,7 +75,7 @@ IIS Express는 기본값이며 미리 구성되어 있습니다. 로컬 IIS에�
 
 IIS Express는 기본값이며 미리 구성되어 있습니다. 로컬 IIS에서 디버깅하는 경우 [로컬 IIS 디버깅에 대한 요구 사항](#iis)을 충족하는지 확인합니다.
 
-1. Visual Studio **솔루션 탐색기** 에서 ASP.NET Core 프로젝트를 선택하고 **속성** 아이콘을 클릭하고, **Alt**+**Enter** 키를 누르거나 **속성** 을 마우스 오른쪽 단추로 클릭하여 선택합니다.
+1. Visual Studio **솔루션 탐색기** 에서 ASP.NET Core 프로젝트를 선택하고 **속성** 아이콘을 클릭하거나, **Alt**+**Enter** 키를 누르거나, **속성** 을 마우스 오른쪽 단추로 클릭하여 선택합니다.
 
 1. **디버그** 탭을 선택합니다.
 
