@@ -1,7 +1,7 @@
 ---
 title: 분석기 구성
-ms.date: 09/02/2020
-description: Roslyn analyzer 규칙을 사용자 지정 하는 방법을 알아봅니다. 분석기 심각도를 조정 하 고 위반을 억제 하 고 파일을 생성 된 코드로 지정 하는 방법을 참조 하세요.
+ms.date: 05/10/2021
+description: Roslyn 분석기 규칙을 사용자 지정하는 방법을 알아봅니다. 분석기 심각도를 조정하고, 위반을 표시하지 않으며, 파일을 생성된 코드로 지정하는 방법을 참조하세요.
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,32 +13,32 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 956e63384619a82b7f0abb7dd3771ed2db9cba01
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 36a9f1651a4aef7742b6bf52f8691f6ae8f9c616
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684377"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973384"
 ---
 # <a name="overview"></a>개요
 
-각 Roslyn analyzer *진단* 또는 규칙에는 프로젝트에 대해 덮어쓰기 및 사용자 지정할 수 있는 기본 심각도 및 비 표시 상태가 있습니다. 이 문서에서는 분석기 심각도 설정 및 분석기 위반 표시를 설명 합니다.
+각 Roslyn 분석기 *진단* 또는 규칙에는 프로젝트에 대해 덮어쓰고 사용자 지정할 수 있는 기본 심각도 및 제거 상태가 있습니다. 이 문서에서는 분석기 심각도 설정 및 분석기 위반 표시 안 함을 다룹니다.
 
 ## <a name="configure-severity-levels"></a>심각도 수준 구성
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 버전 16.3 부터는 [Editorconfig 파일](#set-rule-severity-in-an-editorconfig-file), 전구 [메뉴](#set-rule-severity-from-the-light-bulb-menu)및 오류 목록에서 분석기 규칙 또는 *진단* 의 심각도를 구성할 수 있습니다.
+Visual Studio 2019 버전 16.3부터 [전구 메뉴](#set-rule-severity-from-the-light-bulb-menu)의 [EditorConfig 파일](#set-rule-severity-in-an-editorconfig-file)및 오류 목록에서 분석기 규칙 또는 *진단의* 심각도를 구성할 수 있습니다.
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-분석기를 NuGet 패키지로 [설치](../code-quality/install-roslyn-analyzers.md) 하는 경우 분석기 규칙의 심각도 또는 *진단을* 구성할 수 있습니다. 규칙의 심각도를 [솔루션 탐색기](#set-rule-severity-from-solution-explorer) 또는 [규칙 집합 파일](#set-rule-severity-in-the-rule-set-file)에서 변경할 수 있습니다.
+분석기를 NuGet 패키지로 설치하는 경우 [분석기](../code-quality/install-roslyn-analyzers.md) 규칙 또는 *진단* 의 심각도를 구성할 수 있습니다. 규칙의 심각도를 솔루션 탐색기 또는 [규칙 집합 파일](#set-rule-severity-in-the-rule-set-file) [에서](#set-rule-severity-from-solution-explorer) 변경할 수 있습니다.
 
 ::: moniker-end
 
-다음 표에서는 다양 한 심각도 옵션을 보여 줍니다.
+다음 표에서는 다양한 심각도 옵션을 보여줍니다.
 
 | 심각도(솔루션 탐색기) | 심각도(EditorConfig 파일) | 빌드 시간 동작 | 편집기 동작 |
 |-|-|-|
@@ -55,20 +55,20 @@ Visual Studio 2019 버전 16.3 부터는 [Editorconfig 파일](#set-rule-severit
 
 ![Visual Studio 코드 편집기의 오류 표시선](media/diagnostics-severity-colors.png)
 
-다음 스크린샷은 오류 목록에 표시 되는 것과 동일한 세 가지 위반을 보여 줍니다.
+다음 스크린샷은 오류 목록에 표시되는 것과 동일한 세 가지 위반을 보여줍니다.
 
-![오류 목록에서 오류, 경고 및 정보 위반](media/diagnostics-severities-in-error-list.png)
+![오류 목록의 오류, 경고 및 정보 위반](media/diagnostics-severities-in-error-list.png)
 
 여러 분석기 규칙 또는 진단에는 규칙 위반을 해결하는 데 적용할 수 있는 하나 이상의 연결된 코드 수정이 있습니다. 코드 수정은 다른 형식의 [빠른 작업](../ide/quick-actions.md)과 함께 전구 아이콘 메뉴에 표시됩니다. 이러한 코드 수정에 대한 정보는 [일반적인 빠른 작업](../ide/quick-actions.md)을 참조하세요.
 
 ![분석기 위반 및 빠른 작업 코드 수정](../code-quality/media/built-in-analyzer-code-fix.png)
 
-### <a name="hidden-severity-versus-none-severity"></a>' Hidden ' 심각도와 ' None ' 심각도 비교
+### <a name="hidden-severity-versus-none-severity"></a>'Hidden' 심각도 및 'None' 심각도
 
-`Hidden` 기본적으로 사용 하도록 설정 된 심각도 규칙은 `None` 두 가지 방법에서 사용 안 함 또는 심각도 규칙과 다릅니다.
+`Hidden` 기본적으로 사용하도록 설정된 심각도 규칙은 몇 가지 방법으로 사용 안 함 또는 `None` 심각도 규칙과 다릅니다.
 
-- 심각도 규칙에 대해 코드 수정이 등록 된 경우에는 `Hidden` 숨겨진 진단이 사용자에 게 표시 되지 않더라도 수정 내용이 Visual Studio에서 전구 코드 리팩터링 동작으로 제공 됩니다. 비활성화 된 심각도 규칙의 경우는 그렇지 않습니다 `None` .
-- `Hidden` 심각도 규칙은 [EditorConfig 파일에서 한 번에 여러 분석기 규칙의 규칙 심각도를 설정](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file)하는 항목에 의해 대량으로 구성 될 수 있습니다. `None` 이러한 방식으로는 심각도 규칙을 구성할 수 없습니다. 대신 [각 규칙 ID에 대 한 EditorConfig 파일에서 규칙 심각도를 설정](#set-rule-severity-in-an-editorconfig-file)하는 항목을 통해 구성 해야 합니다.
+- 심각도 규칙에 대해 코드 수정이 등록된 경우 `Hidden` 숨겨진 진단이 사용자에게 표시되지 않더라도 Visual Studio 전구 코드 리팩터링 작업으로 수정이 제공됩니다. 사용하지 않도록 설정 된 심각도 규칙에 대 한 경우가 `None` 아닙니다.
+- `Hidden` 심각도 규칙은 [EditorConfig 파일 에서 한 번에 여러 분석기 규칙의 규칙 심각도를 설정하는 항목에](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file)의해 대량으로 구성될 수 있습니다. `None` 심각도 규칙은 이러한 방식으로 구성할 수 없습니다. 대신 각 규칙 ID 에 대한 [EditorConfig 파일에서 규칙 심각도를 설정하는](#set-rule-severity-in-an-editorconfig-file)항목을 통해 구성해야 합니다.
 
 ::: moniker range=">=vs-2019"
 
@@ -117,9 +117,9 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
 
 #### <a name="manually-configure-rule-severity-in-an-editorconfig-file"></a>EditorConfig 파일에서 규칙 심각도 수동 구성
 
-1. 프로젝트에 대 한 EditorConfig 파일이 아직 없는 경우 [하나를 추가](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)합니다.
+1. 프로젝트에 대한 EditorConfig 파일이 없는 경우 하나를 [추가합니다.](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)
 
-2. 구성 하려는 각 규칙에 해당 하는 파일 확장명으로 항목을 추가 합니다. 예를 들어 c # 파일의 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) 에 대 한 심각도를 설정 하기 위해 `error` 항목은 다음과 같습니다.
+2. 해당 파일 확장명에서 구성하려는 각 규칙에 대한 항목을 추가합니다. 예를 들어 C# 파일의 [경우 CA1822의](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) 심각도를 로 설정하려면 `error` 항목이 다음과 같이 보입니다.
 
    ```ini
    [*.cs]
@@ -127,34 +127,34 @@ EditorConfig 파일에서 단일 항목을 사용 하는 모든 분석기 규칙
    ```
 
 > [!NOTE]
-> IDE 코드 스타일 분석기의 경우 다른 구문 (예:)을 사용 하 여 EditorConfig 파일에서 구성할 수도 있습니다 `dotnet_style_qualification_for_field = false:suggestion` . 그러나 구문을 사용 하 여 심각도를 설정 하는 경우에는 `dotnet_diagnostic` 우선 순위가 우선적으로 적용 됩니다. 자세한 내용은 [EditorConfig에 대 한 언어 규칙](/dotnet/fundamentals/code-analysis/style-rules/language-rules)을 참조 하세요.
+> IDE 코드 스타일 분석기에서 다른 구문(예: )을 사용하여 EditorConfig 파일에서 구성할 수도 `dotnet_style_qualification_for_field = false:suggestion` 있습니다. 그러나 구문을 사용하여 심각도를 설정하는 경우 `dotnet_diagnostic` 우선적으로 적용됩니다. 자세한 내용은 [EditorConfig에 대한 언어 규칙을 참조하세요.](/dotnet/fundamentals/code-analysis/style-rules/language-rules)
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>전구 메뉴에서 규칙 심각도 설정
 
-Visual Studio는 [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
+Visual Studio [빠른 작업](../ide/quick-actions.md) 전구 메뉴에서 규칙의 심각도를 구성하는 편리한 방법을 제공합니다.
 
-1. 위반이 발생 한 후 편집기에서 위반 물결선을 마우스로 가리켜 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 Ctrl 키를 누릅니다  + **.** 누릅니다.
+1. 위반이 발생한 후 편집기에서 위반 물결선 위로 마우스를 가져가고 전구 메뉴를 엽니다. 또는 줄에 커서를 놓고 **Ctrl** 키를 + **누릅니다.** 누릅니다.
 
-2. 전구 메뉴에서 **문제 구성 또는 표시 안 함** 을 선택 하 여 > **\<rule ID> 심각도를 구성** 합니다.
+2. 전구 메뉴에서 구성 **또는 문제 심각도** 구성 안 > **\<rule ID> 함을** 선택합니다.
 
-   ![Visual Studio의 전구 메뉴에서 규칙 심각도 구성](media/configure-rule-severity.png)
+   ![Visual Studio 전구 메뉴에서 규칙 심각도 구성](media/configure-rule-severity.png)
 
-3. 여기에서 심각도 옵션 중 하나를 선택 합니다.
+3. 이 위치에서 심각도 옵션 중 하나를 선택합니다.
 
    ![규칙 심각도를 제안으로 구성](media/configure-rule-severity-suggestion.png)
 
-   Visual Studio는 미리 보기 상자에 표시 된 것 처럼 EditorConfig 파일에 항목을 추가 하 여 요청 된 수준에 대 한 규칙을 구성 합니다.
+   Visual Studio 미리 보기 상자에 표시된 것처럼 EditorConfig 파일에 항목을 추가하여 요청된 수준으로 규칙을 구성합니다.
 
    > [!TIP]
-   > 프로젝트에 EditorConfig 파일이 아직 없는 경우 Visual Studio에서 해당 파일을 만듭니다.
+   > 프로젝트에 EditorConfig 파일이 없는 경우 Visual Studio 만듭니다.
 
 ### <a name="set-rule-severity-from-the-error-list-window"></a>오류 목록 창에서 규칙 심각도 설정
 
-Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 심각도를 구성 하는 편리한 방법을 제공 합니다.
+또한 Visual Studio 오류 목록 상황에 맞는 메뉴에서 규칙의 심각도를 구성하는 편리한 방법을 제공합니다.
 
-1. 위반이 발생 한 후 오류 목록에서 진단 항목을 마우스 오른쪽 단추로 클릭 합니다.
+1. 위반이 발생한 후 오류 목록에서 진단 항목을 마우스 오른쪽 단추로 클릭합니다.
 
-2. 상황에 맞는 메뉴에서 **심각도 설정** 을 선택 합니다.
+2. 상황에 맞는 메뉴에서 **심각도 설정을** 선택합니다.
 
    ![Visual Studio의 오류 목록에서 규칙 심각도 구성](media/configure-rule-severity-error-list.png)
 
@@ -191,31 +191,31 @@ Visual Studio는 또한 오류 목록 상황에 맞는 메뉴에서 규칙의 �
 
 ::: moniker range=">=vs-2019"
 
-#### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>기존 규칙 집합 파일을 EditorConfig 파일로 변환
+#### <a name="convert-an-existing-ruleset-file-to-editorconfig-file"></a>기존 Ruleset 파일을 EditorConfig 파일로 변환
 
-Visual Studio 2019 버전 16.5부터, 규칙 집합 파일은 관리 코드에 대 한 분석기 구성에 대 한 EditorConfig 파일을 사용 하 여 더 이상 사용 되지 않습니다. 분석기 규칙 심각도 구성에 대 한 대부분의 Visual Studio 도구는 규칙 집합 파일 대신 EditorConfig 파일에서 작동 하도록 업데이트 되었습니다. EditorConfig 파일을 사용 하면 Visual Studio IDE 코드 스타일 옵션을 포함 하 여 분석기 규칙 심각도 및 분석기 옵션을 모두 구성할 수 있습니다. 기존 규칙 집합 파일을 EditorConfig 파일로 변환 하는 것이 좋습니다. 또한 EditorConfig 파일을 리포지토리의 루트 또는 솔루션 폴더에 저장 하는 것이 좋습니다. 리포지토리 또는 솔루션 폴더의 루트를 사용 하 여이 파일의 심각도 설정이 각각 전체 리포지토리 또는 솔루션에 자동으로 적용 되는지 확인 합니다.
+Visual Studio 2019 버전 16.5부터 규칙 설정 파일은 관리 코드에 대한 분석기 구성을 위해 EditorConfig 파일을 위해 사용되지 않습니다. 분석기 규칙 심각도 구성을 위한 대부분의 Visual Studio 도구가 규칙 설정 파일 대신 EditorConfig 파일에서 작동하도록 업데이트되었습니다. EditorConfig 파일을 사용하면 Visual Studio IDE 코드 스타일 옵션을 포함하여 분석기 규칙 심각도 및 분석기 옵션을 모두 구성할 수 있습니다. 기존 규칙 구성 파일을 EditorConfig 파일로 변환하는 것이 좋습니다. 또한 EditorConfig 파일을 리포지션 루트 또는 솔루션 폴더에 저장하는 것이 좋습니다. 리포지션 또는 솔루션 폴더의 루트를 사용하여 이 파일의 심각도 설정이 각각 전체 리포지션 또는 솔루션에 자동으로 적용되는지 확인합니다.
 
-기존 규칙 집합 파일을 EditorConfig 파일로 변환 하는 몇 가지 방법이 있습니다.
+기존 규칙 구성 파일을 EditorConfig 파일로 변환하는 몇 가지 방법이 있습니다.
 
-- Visual Studio의 규칙 집합 편집기 (Visual Studio 2019 16.5 이상 필요). 프로젝트에서 특정 규칙 집합 파일을 이미 사용 하는 경우 `CodeAnalysisRuleSet` Visual Studio 내의 규칙 집합 편집기에서 해당 하는 EditorConfig 파일로 변환할 수 있습니다.
+- Visual Studio 규칙 Visual Studio 편집기에서.(2019 16.5 이상 필요) 프로젝트에서 특정 규칙집합 파일을 이미 로 사용하는 경우 Visual Studio `CodeAnalysisRuleSet` 내의 규칙 구성 편집기에서 해당하는 EditorConfig 파일로 변환할 수 있습니다.
 
-    1. 솔루션 탐색기에서 규칙 집합 파일을 두 번 클릭 합니다.
+    1. 솔루션 탐색기 규칙 솔루션 탐색기 파일을 두 번 클릭합니다.
 
-       규칙 집합 파일이 규칙 집합 편집기에서 열립니다. 규칙 집합 편집기 위쪽에 클릭 가능한 **정보 표시줄이** 표시 됩니다.
+       규칙화 파일은 규칙화 편집기에서 열립니다. 규칙 모음 편집기 맨 위에 클릭 가능한 **정보 표시줄이** 표시됩니다.
 
-       ![규칙 집합 편집기에서 규칙 집합을 EditorConfig 파일로 변환](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
+       ![규칙화 편집기에서 Ruleset을 EditorConfig 파일로 변환](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
 
-    2. **정보 표시줄** 링크를 선택 합니다.
+    2. 정보 **표시줄** 링크를 선택합니다.
 
-       그러면 EditorConfig 파일을 생성 하려는 디렉터리를 선택할 수 있는 다른 **이름으로 저장** 대화 상자가 열립니다.
+       그러면 EditorConfig 파일을 생성할 디렉터리를 선택할 수 있는 다른 이름으로 **저장** 대화 상자가 열립니다.
 
-    3. **저장** 단추를 선택 하 여 editorconfig 파일을 생성 합니다.
+    3. **저장** 단추를 선택하여 EditorConfig 파일을 생성합니다.
 
-       생성 된 EditorConfig가 편집기에서 열립니다. 또한 MSBuild 속성은 `CodeAnalysisRuleSet` 프로젝트 파일에서 업데이트 되어 원래 규칙 집합 파일을 더 이상 참조 하지 않습니다.
+       생성된 EditorConfig가 편집기에서 열립니다. 또한 MSBuild `CodeAnalysisRuleSet` 속성은 프로젝트 파일에서 업데이트되므로 더 이상 원래 규칙화 파일을 참조하지 않습니다.
 
 - 명령줄에서:
 
-    1. NuGet 패키지를 설치 합니다. [RulesetToEditorconfigConverter](https://www.nuget.org/packages/Microsoft.CodeAnalysis.RulesetToEditorconfigConverter).
+    1. NuGet 패키지 [Microsoft.CodeAnalysis.RulesetToEditorconfigConverter 를 설치합니다.](https://www.nuget.org/packages/Microsoft.CodeAnalysis.RulesetToEditorconfigConverter)
 
     2. `RulesetToEditorconfigConverter.exe`규칙 집합 파일 및 EditorConfig 파일 경로를 사용 하 여 설치 된 패키지에서 명령줄 인수로 실행 합니다.
 
@@ -289,30 +289,30 @@ dotnet_diagnostic.CA2231.severity = warning
 - **솔루션 탐색기** 에서 파일을 두 번 클릭 하 고 **참조**  >  **분석기** 노드를 마우스 오른쪽 단추로 클릭 한 다음 **활성 규칙 집합 열기** 를 선택 합니다.
 - 프로젝트에 대 한 **코드 분석** 속성 페이지에서 **열기** 를 선택 합니다.
 
-  처음으로 규칙 집합을 편집 하는 경우 Visual Studio에서 기본 규칙 집합 파일의 복사본을 만들고 이름을. a s t a .로 설정 하 고 프로젝트에 추가 합니다 *\<projectname> .* 또한이 사용자 지정 규칙 집합은 프로젝트에 대 한 활성 규칙 집합이 됩니다.
+  처음으로 규칙 집합을 편집 하는 경우 Visual Studio에서 기본 규칙 집합 파일의 복사본을 만들고 이름을. a s t a .로 설정 하 고 프로젝트에 추가 합니다 *\<projectname> .* 또한 이 사용자 지정 규칙 집합은 프로젝트에 대한 활성 규칙 집합이 됩니다.
 
    > [!NOTE]
-   > .NET Core 및 .NET Standard 프로젝트는 **솔루션 탐색기** 에서 규칙 집합에 대 한 메뉴 명령을 지원 하지 않습니다 (예: **활성 규칙 집합 열기**). .NET Core 또는 .NET Standard 프로젝트에 대해 기본이 아닌 규칙 집합을 지정 하려면 프로젝트 파일에 [ **CodeAnalysisRuleSet** 속성](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 을 수동으로 추가 합니다. Visual Studio 규칙 집합 편집기 UI의 규칙 집합 내에서 규칙을 계속 구성할 수 있습니다.
+   > .NET Core 및 .NET Standard 프로젝트는 **솔루션 탐색기** 규칙 집합에 대한 메뉴 명령(예: **활성 규칙 집합 열기)을** 지원하지 않습니다. .NET Core 또는 .NET Standard 프로젝트에 대해 기본값이 아닌 규칙 집합을 지정하려면 [ **CodeAnalysisRuleSet** 속성을](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) 프로젝트 파일에 수동으로 추가합니다. Visual Studio 규칙 집합 편집기 UI에서 규칙 집합 내에서 규칙을 구성할 수 있습니다.
 
-1. 포함 하는 어셈블리를 확장 하 여 규칙을 찾습니다.
+1. 포함하는 어셈블리를 확장하여 규칙을 찾습니다.
 
-1. **작업** 열에서 값을 선택 하 여 드롭다운 목록을 열고 목록에서 원하는 심각도를 선택 합니다.
+1. **작업** 열에서 값을 선택하여 드롭다운 목록을 열고 목록에서 원하는 심각도를 선택합니다.
 
-   ![편집기에 열려 있는 규칙 집합 파일](media/ruleset-file-in-editor.png)
+   ![편집기에서 열린 규칙 집합 파일](media/ruleset-file-in-editor.png)
 
 ::: moniker range=">=vs-2019"
 
-## <a name="configure-generated-code"></a>생성 된 코드 구성
+## <a name="configure-generated-code"></a>생성된 코드 구성
 
-분석기는 프로젝트의 모든 소스 파일에서 실행 되며 위반을 보고 합니다. 그러나 디자이너에서 생성 된 코드 파일, 빌드 시스템에서 생성 된 임시 소스 파일 등 생성 된 코드 파일에는 이러한 위반이 유용 하지 않습니다. 사용자는 이러한 파일을 수동으로 편집할 수 없으며 이러한 종류의 도구 생성 파일에서 위반 문제를 해결 하는 것은 걱정 하지 않습니다.
+분석기는 프로젝트의 모든 원본 파일에서 실행되며 위반을 보고합니다. 그러나 이러한 위반은 디자이너에서 생성된 코드 파일, 빌드 시스템에서 생성된 임시 소스 파일 등 생성된 코드 파일에는 유용하지 않습니다. 사용자는 이러한 파일을 수동으로 편집할 수 없으며 이러한 종류의 도구 생성 파일에서 위반 문제를 해결하는 데 관심이 없습니다.
 
-기본적으로 분석기 드라이버 실행 분석기는 특정 이름, 파일 확장명 또는 자동 생성 된 파일 헤더를 사용 하 여 파일을 생성 된 코드 파일로 처리 합니다. 예를 들어 또는로 끝나는 파일 이름은 `.designer.cs` `.generated.cs` 생성 된 코드로 간주 됩니다. 그러나 이러한 추론은 사용자의 소스 코드에서 생성 된 모든 사용자 지정 코드 파일을 식별 하지 못할 수 있습니다.
+기본적으로 분석기를 실행하는 분석기 드라이버는 특정 이름, 파일 확장명 또는 자동 생성된 파일 헤더의 파일을 생성된 코드 파일로 처리합니다. 예를 들어 `.designer.cs` 또는 `.generated.cs`로 끝나는 파일 이름은 생성된 코드로 간주됩니다. 그러나 이러한 추론은 사용자의 소스 코드에서 생성된 모든 사용자 지정 코드 파일을 식별하지 못할 수 있습니다.
 
-Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://editorconfig.org/)에서 생성 된 코드로 처리할 특정 파일 및/또는 폴더를 구성할 수 있습니다. 이러한 구성을 추가 하려면 다음 단계를 따르세요.
+Visual Studio 2019 16.5부터 최종 사용자는 [EditorConfig](https://editorconfig.org/)파일 에서 생성된 코드로 처리할 특정 파일 및/또는 폴더를 구성할 수 있습니다. 다음 단계에 따라 이러한 구성을 추가합니다.
 
-1. 프로젝트에 대 한 EditorConfig 파일이 아직 없는 경우 [하나를 추가](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)합니다.
+1. 프로젝트에 대한 EditorConfig 파일이 없는 경우 하나를 [추가합니다.](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)
 
-2. `generated_code = true | false`특정 파일 및/또는 폴더에 대 한 항목을 추가 합니다. 예를 들어 이름이 생성 된 코드로 끝나는 모든 파일을 처리 하려면 `.MyGenerated.cs` 항목은 다음과 같습니다.
+2. 특정 `generated_code = true | false` 파일 및/또는 폴더에 대한 항목을 추가합니다. 예를 들어 이름이 로 끝나는 모든 파일을 생성된 코드로 처리하려면 `.MyGenerated.cs` 항목은 다음과 같습니다.
 
    ```ini
    [*.MyGenerated.cs]
@@ -323,60 +323,7 @@ Visual Studio 2019 16.5부터 최종 사용자는 [Editorconfig 파일](https://
 
 ## <a name="suppress-violations"></a>위반 표시 안 함
 
-규칙 위반을 표시 하지 않는 방법에는 여러 가지가 있습니다.
-
-::: moniker range=">=vs-2019"
-
-- **Editorconfig 파일** 에서
-
-  심각도를로 설정 `none` 합니다 (예:) `dotnet_diagnostic.CA1822.severity = none` .
-
-- **분석** 메뉴에서
-
-    >  메뉴 모음에서 **빌드 분석 및 활성 문제 표시 안** 함을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-- **분석** 메뉴에서
-
-    >  메뉴 모음에서 분석 **실행 코드 분석 및 활성 문제 표시 안 함** 을 선택 하 여 현재 위반을 모두 표시 하지 않습니다. 이를 "기준 기준선"이 라고도 합니다.
-
-::: moniker-end
-
-- **솔루션 탐색기** 에서
-
-  규칙의 심각도를 **None** 으로 설정 합니다.
-
-- **규칙 집합 편집기** 에서
-
-  이름 옆에 있는 확인란의 선택을 취소 하거나 **작업** 을 **없음** 으로 설정 합니다.
-
-- **코드 편집기** 에서
-
-  위반 하는 코드 줄에 커서를 놓고 **Ctrl** + **마침표 (.)** 를 눌러 **빠른 작업** 메뉴를 엽니다. 원본/비 표시 제거 파일에서 **caxxxx를 표시 하지 않습니다**  >  .를 선택 합니다.
-
-  ![빠른 작업 메뉴에서 진단 표시 안 함](media/suppress-diagnostic-from-editor.png)
-
-- **오류 목록** 에서
-
-  표시 하지 않을 규칙을 선택한 다음 마우스 오른쪽 단추를 클릭 하 고 소스/비 **표시 안 함 파일에서 표시 안 함** 을 선택  >  합니다.
-
-  - **소스에서** 표시 하지 않는 경우 **변경 내용 미리 보기** 대화 상자가 열리고 소스 코드에 추가 된 c # [#pragma 경고](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) 또는 Visual Basic [#Disable 경고](/dotnet/visual-basic/language-reference/directives/directives) 지시문의 미리 보기가 표시 됩니다.
-
-    ![코드 파일에 #pragma 경고 추가의 미리 보기](media/pragma-warning-preview.png)
-
-  - **비 표시 오류 (Suppression) 파일에서** 를 선택 하면 **변경 내용 미리 보기** 대화 상자가 열리고 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 전역 비 표시 오류 파일에 추가 된 특성의 미리 보기가 표시 됩니다.
-
-    ![SuppressMessage 특성을 비 표시 오류 (suppression) 파일에 추가 하는 미리 보기](media/preview-changes-in-suppression-file.png)
-
-  **변경 내용 미리 보기** 대화 상자에서 **적용** 을 선택 합니다.
-
-  > [!NOTE]
-  > **솔루션 탐색기** 에 **표시 안 함** 메뉴 옵션이 표시 되지 않는 경우에는 위반이 발생 했을 수 있습니다. **오류 목록** 는 라이브 코드 분석과 빌드 모두에서 진단 또는 규칙 위반을 표시 합니다. 빌드 진단은 부실 할 수 있습니다. 예를 들어 위반 문제를 해결 하기 위해 코드를 편집 했지만 다시 빌드하지 않은 경우에는 **오류 목록** 에서 이러한 진단을 표시 하지 않을 수 있습니다. 라이브 분석 또는 IntelliSense의 진단은 항상 최신 원본으로 최신 상태를 유지 하며 **오류 목록** 에서 표시 되지 않을 수 있습니다. 선택에서 *빌드* 진단을 제외 하려면 **빌드 + Intellisense** 에서 **intellisense 전용** 으로 **오류 목록** 원본 필터를 전환 합니다. 그런 다음 앞에서 설명한 대로 표시 하지 않을 진단을 선택 하 고 계속 진행 합니다.
-  >
-  > ![Visual Studio에서 원본 필터 오류 목록](media/error-list-filter.png)
+다양한 방법을 사용하여 규칙 위반을 표시하지 않을 수 있습니다. 자세한 내용은 [코드 분석 위반 표시 안 을 참조하세요.](../code-quality/in-source-suppression-overview.md)
 
 ## <a name="command-line-usage"></a>명령줄 사용
 
