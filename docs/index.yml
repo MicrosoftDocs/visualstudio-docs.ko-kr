@@ -4,9 +4,9 @@ summary: Visual Studio 제품군의 설명서를 살펴봅니다.
 brand: visual-studio
 metadata:
   title: Visual Studio 제품군 설명서
-  description: Windows 및 Mac용 Visual Studio IDE, Visual Studio Code, Visual Studio App Center, GitHub Codespaces 및 Visual Studio 구독을 비롯한 Visual Studio 제품군의 설명서를 살펴보세요.
+  description: 'Windows 및 Mac용 Visual Studio IDE, Visual Studio Code, Visual Studio App Center, GitHub Codespaces 및 Visual Studio 구독을 비롯한 Visual Studio 제품군의 설명서를 살펴보세요.'
   ms.topic: hub-page
-  ms.custom: contperf-fy21q1, contperf-fy21q3
+  ms.custom: 'contperf-fy21q1, contperf-fy21q3'
   ms.date: 03/23/2021
   searchScope: []
   titleSuffix: ''
@@ -15,73 +15,65 @@ metadata:
   ms.manager: jillfra
   monikerRange: '>=vs-2017'
   hide_bc: true
-  ms.openlocfilehash: d9aa5ff71a4dc24b32827f24e0df219db3674df2
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-  ms.translationtype: HT
-  ms.contentlocale: ko-KR
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105073744"
 productDirectory:
   items:
-  - title: Visual Studio
-    imageSrc: ./media/vs-ide-2019.svg
-    links:
-    - url: ./windows/index.yml?view=vs-2019&preserve-view=true
-      text: Visual Studio 2019(현재)
-    - url: ./windows/index.yml?view=vs-2017&preserve-view=true
-      text: Visual Studio 2017
-    - url: /previous-versions/visualstudio/
-      text: 이전 버전
-    - url: /visualstudio/releases/2019/release-notes
-      text: 릴리스 정보
-    - url: https://visualstudio.microsoft.com/
-      text: 제품 페이지
-  - title: Mac용 Visual Studio
-    imageSrc: ./media/vs-mac-2019.svg
-    links:
-    - url: /visualstudio/mac
-      text: Mac용 Visual Studio 2019(현재)
-    - url: /visualstudio/mac/?view=vsmac-2017&preserve-view=true
-      text: Mac용 Visual Studio 2017
-    - url: /visualstudio/releasenotes/vs2019-mac-relnotes
-      text: 릴리스 정보
-    - url: https://visualstudio.microsoft.com/vs/mac/
-      text: 제품 페이지
-  - title: Visual Studio Code
-    imageSrc: ./media/vs-code-logo.svg
-    links:
-    - url: https://code.visualstudio.com/docs
-      text: 설명서
-    - url: https://code.visualstudio.com/updates
-      text: 릴리스 정보
-    - url: https://code.visualstudio.com
-      text: 제품 페이지
-  - title: GitHub Codespaces
-    imageSrc: https://docs.microsoft.com/media/logos/logo_octokitty.svg
-    links:
-    - url: https://docs.github.com/github/developing-online-with-codespaces/
-      text: 설명서
-    - url: https://code.visualstudio.com/docs/remote/codespaces/
-      text: Visual Studio Code에서 사용
-    - url: ./ide/codespaces/use-visual-studio-with-codespaces.md
-      text: Visual Studio에서 사용
-    - url: https://github.com/features/codespaces/
-      text: 제품 페이지
-  - title: Visual Studio 앱 센터
-    imageSrc: ./media/vs-mobile-center.svg
-    links:
-    - url: /appcenter
-      text: 설명서
-    - url: https://visualstudio.microsoft.com/app-center/
-      text: 포털
-  - title: Visual Studio 구독
-    imageSrc: ./media/vs-subscription-temp.svg
-    links:
-    - url: /visualstudio/subscriptions
-      text: 설명서
-    - url: https://visualstudio.microsoft.com/subscriptions
-      text: Visualstudio.com에 대한 정보
-    - url: https://my.visualstudio.com
-      text: 구독자 포털
-    - url: https://manage.visualstudio.com
-      text: 관리자 포털
+    - title: Visual Studio
+      imageSrc: ./media/vs-ide-2019.svg
+      links:
+        - url: ./windows/index.yml?view=vs-2019&preserve-view=true
+          text: Visual Studio 2019(현재)
+        - url: ./windows/index.yml?view=vs-2017&preserve-view=true
+          text: Visual Studio 2017
+        - url: /previous-versions/visualstudio/
+          text: 이전 버전
+        - url: /visualstudio/releases/2019/release-notes
+          text: 릴리스 정보
+        - url: 'https://visualstudio.microsoft.com/'
+          text: 제품 페이지
+    - title: Mac용 Visual Studio
+      imageSrc: ./media/vs-mac-2019.svg
+      links:
+        - url: /visualstudio/mac
+          text: Mac용 Visual Studio 2019(현재)
+        - url: /visualstudio/mac/?view=vsmac-2017&preserve-view=true
+          text: Mac용 Visual Studio 2017
+        - url: /visualstudio/releasenotes/vs2019-mac-relnotes
+          text: 릴리스 정보
+        - url: 'https://visualstudio.microsoft.com/vs/mac/'
+          text: 제품 페이지
+    - title: Visual Studio Code
+      imageSrc: ./media/vs-code-logo.svg
+      links:
+        - url: 'https://code.visualstudio.com/docs'
+          text: 설명서
+        - url: 'https://code.visualstudio.com/updates'
+          text: 릴리스 정보
+        - url: 'https://code.visualstudio.com'
+          text: 제품 페이지
+    - title: GitHub Codespaces
+      imageSrc: 'https://docs.microsoft.com/media/logos/logo_octokitty.svg'
+      links:
+        - url: 'https://docs.github.com/github/developing-online-with-codespaces/'
+          text: 설명서
+        - url: 'https://code.visualstudio.com/docs/remote/codespaces/'
+          text: Visual Studio Code에서 사용
+        - url: 'https://github.com/features/codespaces/'
+          text: 제품 페이지
+    - title: Visual Studio 앱 센터
+      imageSrc: ./media/vs-mobile-center.svg
+      links:
+        - url: /appcenter
+          text: 설명서
+        - url: 'https://visualstudio.microsoft.com/app-center/'
+          text: 포털
+    - title: Visual Studio 구독
+      imageSrc: ./media/vs-subscription-temp.svg
+      links:
+        - url: /visualstudio/subscriptions
+          text: 설명서
+        - url: 'https://visualstudio.microsoft.com/subscriptions'
+          text: Visualstudio.com에 대한 정보
+        - url: 'https://my.visualstudio.com'
+          text: 구독자 포털
+        - url: 'https://manage.visualstudio.com'
+          text: 관리자 포털

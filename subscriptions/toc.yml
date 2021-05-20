@@ -161,7 +161,7 @@
         - name: 슈퍼 관리자 및 관리자
           href: admin-roles.md
         - name: 계약 기본 설정 지정
-          href: admin-prefs.md
+          href: admin-preferences.md
         - name: 개요
           href: using-admin-portal.md
         - name: 월간 구독 추가
