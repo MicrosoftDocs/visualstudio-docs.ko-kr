@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7f1978f0d0679d94bbde3b565ff5680ce89f9063
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: bb387f9a359b6f645dd6a160ffb281375cd747a9
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590032"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349861"
 ---
 ## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>월간 Azure 개발/테스트 개별 크레딧 혜택을 활성화하는 방법
 
@@ -30,7 +30,7 @@ Visual Studio 구독 혜택을 통해 생성된 Azure 구독은 유료 구독에
 
 ## <a name="azure-credit-benefit-activation-errors"></a>Azure 크레딧 혜택 활성화 오류
 
-새 Visual Studio 구독이 있고 월간 Azure 크레딧 혜택을 활성화하려고 할 때 “이 Visual Studio 혜택을 두 번 이상 활성화할 수 없습니다.”라는 오류가 표시되는 경우 이 솔루션의 아래쪽에 있는 “지원 티켓 만들기” 단추를 클릭하여 Visual Studio 구독 지원에 문의하세요. 
+새 Visual Studio 구독이 있고 월간 Azure 크레딧 혜택을 활성화하려고 할 때 “이 Visual Studio 혜택을 두 번 이상 활성화할 수 없습니다.”라는 오류가 표시되는 경우 이 솔루션의 아래쪽에 있는 “온라인 요청” 단추를 클릭하여 Visual Studio 구독 지원팀에 문의하세요. 
 
 한동안 구독이 할당된 경우 다음 몇 가지 사항을 먼저 확인해야 합니다.
 - 구독 포털의 [혜택 페이지](https://my.visualstudio.com/benefits)에서 Azure 월간 크레딧 타일을 확인하여 이 혜택을 아직 활성화하지 않았는지 확인합니다. 
