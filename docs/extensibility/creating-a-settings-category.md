@@ -1,6 +1,6 @@
 ---
-title: 설정 범주 만들기 | Microsoft Docs
-description: Visual Studio 설정 범주를 만들고이를 사용 하 여 설정 파일에서 값을 저장 하 고 복원 하는 방법을 알아봅니다.
+title: 설정 범주 | 만들기 Microsoft Docs
+description: Visual Studio 설정 범주를 만들고 이를 사용하여 설정 파일에서 값을 저장하고 복원하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,38 +12,38 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089344"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687621"
 ---
 # <a name="create-a-settings-category"></a>설정 범주 만들기
 
-이 연습에서는 Visual Studio 설정 범주를 만든 다음이를 사용 하 여 설정 파일에서 값을 저장 하 고 값을 복원 합니다. 설정 범주는 "사용자 지정 설정 지점"으로 표시 되는 관련 속성 그룹입니다. 즉, **설정 가져오기 및 내보내기** 마법사의 확인란을 선택 합니다. **도구** 메뉴에서 찾을 수 있습니다. 설정은 범주로 저장 되거나 복원 되며 개별 설정은 마법사에 표시 되지 않습니다. 자세한 내용은 [환경 설정](../ide/environment-settings.md)을 참조하세요.
+이 연습에서는 Visual Studio 설정 범주를 만들고 이 범주를 사용하여 값을 저장하고 설정 파일에서 값을 복원합니다. 설정 범주는 "사용자 지정 설정 지점"으로 표시되는 관련 속성 그룹입니다. 즉, 설정 가져오기 및 **내보내기** 마법사의 확인란입니다. 도구 **메뉴에서** 찾을 수 있습니다. 설정은 범주로 저장되거나 복원되며 개별 설정은 마법사에 표시되지 않습니다. 자세한 내용은 [환경 설정](../ide/environment-settings.md)을 참조하세요.
 
-클래스에서 파생 시켜 설정 범주를 만듭니다 <xref:Microsoft.VisualStudio.Shell.DialogPage> .
+클래스에서 파생시켜 설정 범주를 <xref:Microsoft.VisualStudio.Shell.DialogPage> 만듭니다.
 
-이 연습을 시작 하려면 먼저 [옵션 만들기 페이지](../extensibility/creating-an-options-page.md)의 첫 번째 섹션을 완료 해야 합니다. 결과 옵션 속성 표를 사용 하 여 범주의 속성을 검토 하 고 변경할 수 있습니다. 속성 범주를 설정 파일에 저장 한 후 파일을 검사 하 여 속성 값이 저장 되는 방법을 확인 합니다.
+이 연습을 시작하려면 먼저 옵션 만들기 페이지 의 첫 번째 [섹션을](../extensibility/creating-an-options-page.md)완료해야 합니다. 결과 옵션 속성 표를 사용하면 범주의 속성을 검사하고 변경할 수 있습니다. 설정 파일에 속성 범주를 저장한 후 파일을 검사하여 속성 값이 저장되는 방식을 확인합니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
- Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
+## <a name="prerequisites"></a>필수 구성 요소
+ Visual Studio 2015부터 다운로드 센터에서 Visual Studio SDK를 설치하지 않습니다. Visual Studio 설정에 선택적 기능으로 포함되어 있습니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual Studio SDK 설치를 참조하세요.](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-settings-category"></a>설정 범주 만들기
- 이 섹션에서는 사용자 지정 설정 지점을 사용 하 여 설정 범주의 값을 저장 하 고 복원 합니다.
+ 이 섹션에서는 사용자 지정 설정 지점을 사용하여 설정 범주의 값을 저장하고 복원합니다.
 
 ### <a name="to-create-a-settings-category"></a>설정 범주를 만들려면
 
-1. [옵션 만들기 페이지](../extensibility/creating-an-options-page.md)를 완료 합니다.
+1. 옵션 [만들기 페이지 를 완료합니다.](../extensibility/creating-an-options-page.md)
 
-2. *VSPackage* 파일을 열고 다음 세 개의 문자열 리소스를 추가 합니다.
+2. *VSPackage.resx* 파일을 열고 다음 세 문자열 리소스를 추가합니다.
 
     |Name|값|
     |----------|-----------|
     |106|내 범주|
     |107|내 설정|
-    |108|I 정수 및 기타 Float|
+    |108|OptionInteger 및 OptionFloat|
 
      이렇게 하면 범주의 이름을 "My Category", 개체 "My Settings" 및 category description "Tiinteger and o s o s"로 설정 하는 리소스가 생성 됩니다.
 
@@ -112,17 +112,19 @@ ms.locfileid: "105089344"
 
      **Description은 Description** **정수 및 기타 float** 로 변경 됩니다.
 
-8. **내 설정** 이 선택 된 유일한 범주 인지 확인 하 고 **다음** 을 클릭 합니다.
+8. **내 설정이** 선택된 유일한 범주인지 확인한 후 **다음을** 클릭합니다.
 
-     **설정 파일 이름** 페이지가 나타납니다.
+     **설정 파일 이름 지정** 페이지가 나타납니다.
 
-9. 새 설정 파일의 이름을 *Mysettings* 로 설정 하 고 해당 디렉터리에 저장 합니다. **Finish** 를 클릭합니다.
+9. 새 설정 파일의 이름을 *MySettings.vssettings로* 지정하고 적절한 디렉터리에 저장합니다. **Finish** 를 클릭합니다.
 
-     **내보내기 완료** 페이지에서 설정을 성공적으로 내보냈습니다.
+   `.vssettings`파일은 Visual Studio 설정 파일입니다. 파일의 스키마가 열려 있습니다. 가장 일반적으로 스키마는 각 범주가 자체 하위 범주 태그를 포함할 수 있는 태그인 XML 구조를 따릅니다. 이러한 하위 범주 태그는 속성 값 태그를 포함할 수 있습니다. 대부분의 패키지는 공용 구조를 사용하지만 Visual Studio 모든 패키지는 선택한 스키마를 사용하여 임의 XML을 파일에 기여할 수 있습니다.
 
-10. **파일** 메뉴에서 **열기** 를 가리킨 다음 **파일** 을 클릭합니다. *Mysettings* 를 찾아 엽니다.
+   **전체 내보내기** 페이지에서 설정을 성공적으로 내보낸 것을 보고합니다.
 
-     파일의 다음 섹션에서 내보낸 속성 범주 (Guid는 다름)를 찾을 수 있습니다.
+10. **파일** 메뉴에서 **열기** 를 가리킨 다음 **파일** 을 클릭합니다. *MySettings.vssettings를* 찾아 엽니다.
+
+     파일의 다음 섹션에서 내보낸 속성 범주를 찾을 수 있습니다(사용자의GUID가 다 다행).
 
     ```
     <Category name="My Category_My Settings"
@@ -135,21 +137,21 @@ ms.locfileid: "105089344"
     </Category>
     ```
 
-     전체 범주 이름은 범주 이름에 밑줄을 추가 하 고 그 뒤에 개체 이름을 추가 하 여 구성 됩니다. 기타 Float 및 to Integer는 내보낸 값과 함께 범주에 표시 됩니다.
+     전체 범주 이름은 범주 이름에 밑호를 추가한 다음 개체 이름을 추가하여 구성됩니다. OptionFloat 및 OptionInteger는 내보낸 값과 함께 범주에 표시됩니다.
 
-11. 설정 파일을 변경 하지 않고 닫습니다.
+11. 설정 파일을 변경하지 않고 닫습니다.
 
-12. **도구** 메뉴에서 **옵션** 을 클릭 하 고 **내 범주** 를 확장 한 **다음 내 그리드 페이지** 를 클릭 하 고 옵션의 **값을 1.0로,** 옵션 **integer** 를 1로 변경 합니다. **확인** 을 클릭합니다.
+12. **도구** 메뉴에서 **옵션,** 내 **범주, 내** **그리드 페이지를** 차례로 클릭한 다음 **OptionFloat** 값을 1.0으로, **OptionInteger를** 1로 변경합니다. **확인** 을 클릭합니다.
 
-13. **도구** 메뉴에서 **설정 가져오기 및 내보내기** 를 클릭 하 고 **선택한 환경 설정 가져오기** 를 선택한 후 **다음** 을 클릭 합니다.
+13. **도구** 메뉴에서 설정 **가져오기 및 내보내기를** 클릭하고 **선택한 환경 설정 가져오기를 선택한** 후 **다음을** 클릭합니다.
 
      **현재 설정 저장** 페이지가 나타납니다.
 
-14. **아니요, 새 설정을 가져옵니다 .를** 선택 하 고 **다음** 을 클릭 합니다.
+14. **아니요를** 선택하고 새 설정을 가져온 후 **다음을** 클릭합니다.
 
      **가져올 설정 컬렉션 선택** 페이지가 나타납니다.
 
-15. 트리 뷰의 **내 설정** 노드에서 *mysettings .vssettings* 파일을 선택 합니다. 파일이 트리 뷰에 표시 되지 않는 경우 **찾아보기** 를 클릭 하 여 찾습니다. **다음** 을 클릭합니다.
+15. 트리 뷰의 **내 설정** 노드에서 *MySettings.vssettings* 파일을 선택합니다. 파일이 트리 뷰에 표시 되지 않는 경우 **찾아보기** 를 클릭 하 여 찾습니다. **다음** 을 클릭합니다.
 
      **가져올 설정 선택** 대화 상자가 나타납니다.
 
