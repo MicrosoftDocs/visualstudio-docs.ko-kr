@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5160608379549abbd469bd6cf1c17e4357eac15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ffef522cb85816c36bee1cb623810fb254d1ddec
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060759"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351944"
 ---
 # <a name="regpkg-utility"></a>RegPkg 유틸리티
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "105060759"
 
  RegPkg.exe 유틸리티는를 사용 하 여 VSPackage를 등록 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 하 고 배포용으로 준비 합니다. 이 유틸리티는 VSPackage 개발 중에 백그라운드에서 사용 됩니다. 이는 실험적 hive에서 VSPackage를 빌드하고 실행할 수 있도록 빌드 프로세스의 일부로 실행 됩니다.
 
- RegPkg는 여러 형식으로 시스템 레지스트리 스크립트를 생성할 수 있습니다. .Msi 프로젝트 또는 Windows Installer XML 도구 집합 파일 등의 배포 프로젝트에 이러한 스크립트를 통합할 수 있습니다.
+ RegPkg는 여러 형식으로 시스템 레지스트리 스크립트를 생성할 수 있습니다. 이러한 스크립트를 .msi 프로젝트, Windows Installer XML 도구 집합 파일 등의 배포 프로젝트에 통합할 수 있습니다.
 
  RegPkg.exe은 일반적으로\VisualStudioIntegration\Tools\Bin\RegPkg.exe에 있습니다 \<*Visual Studio SDK installation path*> . RegPkg는 다음 구문을 따릅니다.
 
@@ -34,9 +34,7 @@ ms.locfileid: "105060759"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /root: root는 지정 된에서 등록을 수행 합니다.
-
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] root.
+ /root: root 지정 된 루트에서 등록 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 을 수행 합니다.
 
  /regfile: FileName 레지스트리를 업데이트 하는 대신 .reg 파일을 만듭니다.  /Vrgfile 또는/rgsfile 또는/wixfile.와 함께 사용할 수 없습니다.
 
