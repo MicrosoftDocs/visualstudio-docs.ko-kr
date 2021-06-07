@@ -2,7 +2,7 @@
 title: 변경 로그(Visual Studio Tools for Unity, Windows) | Microsoft Docs
 description: Visual Studio Tools for Unity, Windows의 변경 로그를 확인합니다. 버전 1.0.0.0부터 4.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/2/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,19 +12,74 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 2ff13b017ffe0d310ddfd1b302c6436e9d708a36
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879384"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448313"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>변경 로그(Visual Studio Tools for Unity, Windows)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
+## <a name="41020"></a>4.10.2.0
+릴리스 날짜: 2021년 5월 25일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 진단이 추가되었습니다. 벡터 계산보다 스칼라 계산에 우선 순위를 줍니다.
+
+- **평가:**
+
+  - 이식 가능한 pdb 기호를 사용하여 표시되는 로컬을 제대로 필터링하기 위한 지원이 추가되었습니다.
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 자산 참조 검색 안정성이 수정되었습니다.
+
+  - 플레이어가 최신 Unity 버전으로 구문 분석 공지하는 문제가 해결되었습니다.
+
+## <a name="41010"></a>4.10.1.0
+릴리스 날짜: 2021년 5월 11일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 빠른 접두사 관련 안정성 문제가 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 해결되었습니다.
+
+  - 스레드의 성능 문제를 해결했습니다.
+
+## <a name="41000"></a>4.10.0.0
+릴리스 날짜: 2021년 4월 13일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 진단이 추가되었습니다. 에 대한 불필요한 간접 참조 `GameObject.gameObject` 호출입니다.
+
+  - [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 진단이 추가되었습니다. `MenuItem` 비정적 메서드에 사용되는 특성입니다.
+
+  - [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 진단이 추가되었습니다. Unity 메시지를 보호해야 합니다(옵트인).
+
+  - [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 진단이 추가되었습니다. 위치 및 회전을 설정하는 비효율적인 방법입니다.
+
+  - [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 진단이 추가되었습니다. Unity 개체에 대한 결합 할당입니다.
+
+  - `IDE0074`에 대한 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 억제 장치가 추가되었습니다. Unity 개체는 결합 할당을 사용하면 안 됩니다.
+
+  - Unity를 대상으로 하는 비보안 C# 프로젝트 검색이 추가되었습니다.
+
+  - CodeLens에 Unity 자산 참조 검색이 추가되었습니다.
+
 ## <a name="4910"></a>4.9.1.0
-2021 년 3 월 2 일 출시
+릴리스 날짜: 2021년 3월 2일
 
 ### <a name="new-features"></a>새로운 기능
 
@@ -61,7 +116,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
   - 예외를 throw하는, 사용되지 않는 속성의 필터링을 수정했습니다.
 
 ## <a name="4900"></a>4.9.0.0
-2021 년 1 월 20 일 릴리스
+릴리스 날짜: 2021년 1월 20일
 
 ### <a name="new-features"></a>새로운 기능
 
@@ -69,7 +124,7 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
   - `raytrace shaders`, `UXML`, `USS` 파일에 대한 지원을 추가했습니다.
 
-  - `.vsconfig`생성 지원이 추가 되었습니다. 이제 Visual Studio에서 누락 된 구성 요소를 검색 하 고 Unity 프로젝트를 사용할 때 설치 하 라는 메시지를 표시 합니다.
+  - `.vsconfig`세대 지원이 추가되었습니다. 이제 Visual Studio 누락된 구성 요소를 검색하고 Unity 프로젝트를 사용할 때 설치하라는 메시지를 표시합니다.
 
   - (코루틴으로 사용되는 모든 메서드에 대한) Unity 메시지 API를 업데이트했습니다.
 
@@ -79,52 +134,52 @@ Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
 - **통합:**
 
-  - 인스턴스 선택 대화 상자를 사용할 때 프로세스 새로 고침을 수정 했습니다.
+  - 인스턴스 선택 대화 상자를 사용할 때 프로세스 새로 고침이 수정되었습니다.
 
   - 코루틴 및 `AssetPostprocessor.OnAssignMaterialModel`에 대해 잘못된 경고를 제공하는 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 진단을 수정했습니다.
 
 ## <a name="4820"></a>4.8.2.0
-2020 년 11 월 10 일 릴리스
+릴리스 날짜: 2020년 11월 10일
 
 ### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
-  - [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md)뿐만 아니라에서 상속 하는 모든 항목에 적용할 진단이 향상 되었습니다 `Component` `MonoBehaviour` .
+  - 뿐만 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 아니라 에서 상속되는 모든 것에 적용하도록 진단이 `Component` 향상되었습니다. `MonoBehaviour`
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - CodeLens 메시지 무효화를 수정 했습니다.
+  - CodeLens 메시지 무효화가 수정되었습니다.
 
 ## <a name="4810"></a>4.8.1.0
-2020 년 10 월 13 일 출시
+릴리스 날짜: 2020년 10월 13일
 
 ### <a name="new-features"></a>새로운 기능
 
 - **평가:**
 
-  - 호출을 사용한 암시적 변환에 대 한 지원이 추가 되었습니다. 이전에는 평가기에서 엄격한 형식 검사를 적용 하 여 `Failed to find a match for method([parameters...])` 경고 메시지를 생성 했습니다.
+  - 호출을 통해 암시적 변환에 대한 지원이 추가되었습니다. 이전에는 평가기에서 엄격한 형식 검사를 적용하여 `Failed to find a match for method([parameters...])` 경고 메시지를 생성했습니다.
 
 - **통합:**
 
-  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 진단이 추가되었습니다. `System.Reflection`,, 또는와 같은 성능 중요 메시지에서는 기능을 사용 하지 않아야 합니다 `Update` `FixedUpdate` `LateUpdate` `OnGUI` .
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 진단이 추가되었습니다. , , 또는 와 같은 성능에 중요한 메시지에 기능을 사용하면 안 `System.Reflection` `Update` `FixedUpdate` `LateUpdate` `OnGUI` 됩니다.
 
-  - [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 모든 정적 메서드에 대 한 지원으로 향상 되 고 suppressors `AssetPostprocessor` .
+  - 모든 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 정적 메서드를 지원하여 및 억제기를 `AssetPostprocessor` 개선했습니다.
 
-  - `CS8618`에 대한 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 억제 장치가 추가되었습니다. `C# 8.0` nullable 참조 형식 및 nullable이 아닌 참조 형식을 소개 합니다. 에서 상속 되는 형식의 초기화 검색 `UnityEngine.Object` 은 지원 되지 않으며 오류가 발생 합니다.
+  - `CS8618`에 대한 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 억제 장치가 추가되었습니다. `C# 8.0` 에서는 nullable 참조 형식과 nullable이 아닌 참조 형식을 도입했습니다. 에서 상속되는 형식의 초기화 `UnityEngine.Object` 검색은 지원되지 않으며 오류가 발생합니다.
 
-  - 이제 Unity 2019. x 및 2020 + 모두에 대해 동일한 플레이어 및 asmdef 프로젝트 생성 메커니즘을 사용 합니다.
+  - 이제 Unity 2019.x 및 2020.x+에 대해 동일한 플레이어 및 asmdef 프로젝트 생성 메커니즘을 사용하고 있습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - 설명의 메시지에 대 한 예기치 않은 완료를 수정 했습니다.
+  - 주석의 메시지에 대한 예기치 않은 완료가 수정되었습니다.
 
 ## <a name="4800"></a>4.8.0.0 
-2020 년 9 월 14 일 출시
+릴리스 날짜: 2020년 9월 14일
 
 ### <a name="bug-fixes"></a>버그 수정
 

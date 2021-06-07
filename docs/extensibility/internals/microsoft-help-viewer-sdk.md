@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8bc2ed473e25dc75d0155bc864aa02c157e3482f
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063320"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448326"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft 도움말 뷰어 SDK
 
@@ -362,7 +362,7 @@ IDE의 도움말 메뉴 항목에서 **디버그 도움말 컨텍스트** 를 �
 
 다음 표에서 대괄호 사이에 표시 되는 모든 문자열은 인식 된 값으로 바꾸어야 하는 자리 표시자입니다. 예를 들어에서 \<meta name="Microsoft.Help.Locale" content="[language code]" /> "[언어 코드]"는 "en-us"와 같은 값으로 바꾸어야 합니다.
 
-| 속성 (HTML 표시) | Description |
+| 속성 (HTML 표시) | 설명 |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | 이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 하며 다른 Microsoft 도움말 태그 위에 삽입 해야 합니다. 이 태그를 사용 하지 않으면 제품 로캘과 연결 된 단어 분리기 (지정 된 경우)를 사용 하 여 항목의 본문 텍스트가 인덱싱됩니다. 그렇지 않으면 en-us 단어 분리기가 사용 됩니다. 이 태그는 ISOC RFC 4646을 준수 합니다. Microsoft 도움말이 제대로 작동 하도록 하려면 일반 언어 특성 대신이 속성을 사용 합니다. |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 다른 로캘이 사용 될 때이 항목에 대 한 로캘을 설정 합니다. 이 태그가 토픽에서 사용 되는 경우 한 번만 사용 해야 합니다. 카탈로그에 둘 이상의 언어로 된 콘텐츠가 포함 된 경우이 태그를 사용 합니다. 카탈로그의 여러 항목은 동일한 ID를 가질 수 있지만 각 항목은 고유한 TopicLocale를 지정 해야 합니다. 카탈로그의 로캘과 일치 하는 TopicLocale를 지정 하는 항목은 목차에 표시 되는 항목입니다. 그러나 항목의 모든 언어 버전은 검색 결과에 표시 됩니다. |
@@ -413,7 +413,7 @@ Microsoft 도움말 뷰어는 토픽 메타 데이터를 기반으로 토픽의 
 
 - 피드백 링크 및 전자 메일 요소
 
-- 고 지 사항 텍스트
+- 고지 사항 텍스트
 
 - 저작권 텍스트
 
@@ -435,7 +435,7 @@ Visual Studio 도움말 뷰어 브랜딩 패키지의 지원 파일은 다음과
 
 - 또는 SelfBranded = false 인 경우 MSHA에 정의 된 고유한 브랜딩 패키지가 있고 콘텐츠가 설치 될 때 사용할 수 있습니다.
 
-사용자 지정 브랜딩 패키지 (.VSP content, SelfBranded = True)를 구현 하는 .Vsps의 경우 계속 하는 한 가지 방법은 대체 브랜딩 패키지 (도움말 뷰어와 함께 설치 됨)로 시작 하 고 파일의 이름을 적절 하 게 변경 하는 것입니다.  \<locale>.Mshc 파일은 파일 확장명이. .mshc로 변경 된 zip 파일 이므로 .mshc를 .zip으로 변경 하 고 내용을 추출 하기만 하면 됩니다. Branding_  아래에서 브랜딩 패키지 요소를 확인 하 고 적절 하 게 수정 합니다. 예를 들어, 로고를 VSP 로고로 변경 하 고 Branding.xml 파일의 로고에 대 한 참조를 변경 하 고, VSP 별 특성 등을 업데이트 Branding.xml 합니다.
+사용자 지정 브랜딩 패키지 (.VSP content, SelfBranded = True)를 구현 하는 .Vsps의 경우 계속 하는 한 가지 방법은 대체 브랜딩 패키지 (도움말 뷰어와 함께 설치 됨)로 시작 하 고 파일의 이름을 적절 하 게 변경 하는 것입니다.  \<locale>.Mshc 파일은 파일 확장명이. .mshc로 변경 된 zip 파일 이므로 .mshc에서 확장명을 변경 .zip 하 여 콘텐츠를 추출 합니다. Branding_  아래에서 브랜딩 패키지 요소를 확인 하 고 적절 하 게 수정 합니다. 예를 들어, 로고를 VSP 로고로 변경 하 고 Branding.xml 파일의 로고에 대 한 참조를 변경 하 고, VSP 별 특성 등을 업데이트 Branding.xml 합니다.
 
 모든 수정 작업이 완료 되 면 원하는 브랜딩 요소를 포함 하는 zip 파일을 만들고 확장을. .mshc로 변경 합니다.
 
@@ -447,7 +447,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 
 **Branding.xml**
 
-| 요소 | Description |
+| 요소 | 설명 |
 | - | - |
 | 기능: | **CollapsibleArea** |
 | 사용: | 축소 콘텐츠 컨트롤 텍스트 확장 |
@@ -461,7 +461,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | ViewColorizedText | 색 보기 |
 | CombinedVBTabDisplayLanguage | Visual Basic (샘플) |
 | VBDeclaration | 선언 |
-| VBUsage | 사용량 |
+| VBUsage | 사용 |
 | 기능: | **사용자 의견, 바닥글 및 로고** |
 | 사용: | 고객이 전자 메일을 통해 현재 항목에 대 한 피드백을 제공할 수 있도록 피드백 컨트롤을 제공 합니다.  콘텐츠의 저작권 텍스트입니다.  로고 정의. |
 | **요소** | **값 (이러한 문자열은 콘텐츠 도입자 요구를 충족 하도록 수정할 수 있습니다.)** |
@@ -471,7 +471,7 @@ Branding.xml 파일에는 토픽에이 포함 되어 있을 때 토픽의 특정
 | LogoTitle | [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] |
 | LogoFileName | vs_logo_bk.gif |
 | LogoFileNameHC | vs_logo_wh.gif |
-| 기능: | **내용을** |
+| 기능: | **고지 사항** |
 | 사용: | 기계 번역 콘텐츠에 대 한 대/소문자 관련 대/소문자 집합입니다. |
 | **요소** | **값** |
 | MT_Editable | 이 문서는 기계 번역 되었습니다. 인터넷에 연결 되어 있는 경우 "온라인에서이 항목 보기"를 선택 하면이 페이지를 편집 가능 모드에서 원본 영어 콘텐츠와 함께 볼 수 있습니다. |
@@ -531,99 +531,99 @@ branding.js 파일에는 Visual Studio 도움말 뷰어 브랜딩 요소에 사�
 
 |**브랜딩 기능**|**JavaScript 함수**|**설명**|
 |-|-|-|
-|Var ...||변수 정의|
-|사용자 코드 언어 가져오기|setUserPreferenceLang|인덱스 #에 코드 언어 매핑|
-|쿠키 값 설정 및 가져오기|getCookie, setCookie||
-|상속 된 멤버|changeMembersLabel|상속 된 멤버 확장/축소|
-|When SelfBranded = False|onLoad|쿼리 문자열을 읽어 인쇄 요청 인지 확인 합니다.  모든 codesnippets를 설정 하 여 사용자의 기본 설정 탭에 집중 합니다.  인쇄 요청 인 경우 isPrinterFriendly를 true로 설정 합니다. 고대비 모드를 확인 합니다.|
+|Var...||변수 정의|
+|사용자 코드 언어 얻기|setUserPreferenceLang|코드 언어에 인덱스 #을 매핑합니다.|
+|쿠키 값 설정 및 받기|getCookie, setCookie||
+|상속된 멤버|changeMembersLabel|상속된 멤버 확장/축소|
+|SelfBranded=False인 경우|Onload|쿼리 문자열을 읽어 인쇄 요청인지 확인합니다.  모든 코드 조각을 설정하여 사용자 기본 설정 탭에 초점을 맞춥니다.  인쇄 요청인 경우 isPrinterFriendly을 true로 설정합니다. 고대비 모드를 확인합니다.|
 |코드 조각|addSpecificTextLanguageTagSet||
 ||getIndexFromDevLang||
 ||ChangeTab||
 ||setCodesnippetLang||
 ||setCurrentLang||
 ||CopyToClipboard||
-|CollapsibleArea|addToCollapsibleControlSet|축소 가능한 모든 컨트롤 개체를 목록에 씁니다.|
-||CA_Click|축소할 수 있는 영역의 상태를 기준으로, 표시할 이미지 및 텍스트를 정의 합니다.|
-|로고에 대 한 대비 지원|Is블랙 배경 ()|배경이 검은색 인지 여부를 확인 하기 위해 호출 됩니다.  고대비 모드의 경우에만 정확 합니다.|
-||isHighContrast()|색이 지정 된 범위를 사용 하 여 고대비 모드 검색|
-||onHighContrast (검정)|고대비가 검색 되 면 호출 됩니다.|
-|.LST 기능|||
-||addToLanSpecTextIdSet (id)||
-||updateLST (currentLang)||
-||getDevLangFromCodeSnippet (lang)||
-|멀티미디어 기능|캡션 (시작, 끝, 텍스트, 스타일)||
+|CollapsibleArea|addToCollapsibleControlSet|모든 축소 가능한 컨트롤 개체를 목록에 씁니다.|
+||CA_Click|축소 가능한 영역의 상태에 따라 는 표시할 이미지와 텍스트를 정의합니다.|
+|로고에 대한 대비 지원|isBlackBackground()|배경이 검은색인지 확인하기 위해 호출됩니다.  고대비 모드일 때만 정확합니다.|
+||isHighContrast()|색이 있는 범위를 사용하여 고대비 모드 감지|
+||onHighContrast(black)|고대비가 감지되면 호출됩니다.|
+|LST 기능|||
+||addToLanSpecTextIdSet(id)||
+||updateLST(currentLang)||
+||getDevLangFromCodeSnippet(lang)||
+|멀티미디어 기능|caption(begin, end, text, style)||
 ||findAllMediaControls(normalizedId)||
-||getActivePlayer (normalizedId)||
-||captionsOnOff (id)||
-||toSeconds (t)||
-||getAllComments (노드)||
-||styleRectify (styleName, styleValue)||
-||showCC (id)||
-||부제목 (id)||
+||getActivePlayer(normalizedId)||
+||captionsOnOff(id)||
+||toSeconds(t)||
+||getAllComments(node)||
+||styleRectify(styleName, styleValue)||
+||showCC(id)||
+||subtitle(id)||
 
 **HTM 파일**
 
-브랜딩 패키지에는 콘텐츠 사용자에 게 유용한 정보를 제공 하는 기능을 지 원하는 HTM 파일 집합이 포함 되어 있습니다. 예를 들어, 설치 되는 콘텐츠 집합을 설명 하는 섹션과 항목의 로컬 항목에서 항목을 찾을 수 없는 경우 사용자에 게 알려 주는 페이지가 포함 된 홈 페이지가 있습니다. 이러한 HTM 파일은 제품 별로 수정할 수 있습니다.  ISO 셸 공급 업체는 기본 브랜딩 패키지를 사용 하 여 이러한 페이지의 동작과 콘텐츠를 요구 사항에 맞게 변경할 수 있습니다.  이러한 파일은 브랜딩 태그가 branding.xml 파일에서 해당 콘텐츠를 가져오기 위해 각 브랜딩 패키지를 참조 합니다.
+브랜딩 패키지에는 도움말 콘텐츠 사용자에게 주요 정보를 전달하는 시나리오를 지원하는 HTM 파일 집합이 포함되어 있습니다. 예를 들어 설치된 콘텐츠 집합을 설명하는 섹션이 포함된 홈페이지와 토픽의 로컬 집합에서 항목을 찾을 수 없는 경우 사용자에게 알리는 페이지가 포함되어 있습니다. 이러한 HTM 파일은 제품별로 수정할 수 있습니다.  ISO Shell 공급업체는 기본 브랜딩 패키지를 사용하여 이러한 페이지의 동작과 콘텐츠를 필요에 따라 변경할 수 있습니다.  이러한 파일은 브랜딩 태그가 branding.xml 파일에서 해당 콘텐츠를 얻기 위해 해당 브랜딩 패키지를 참조합니다.
 
-|**파일**|**사용**|**표시 된 콘텐츠 원본**|
+|**최근에 사용한 파일**|**사용**|**표시된 콘텐츠 원본**|
 |-|-|-|
-|homepage.htm|현재 설치 된 콘텐츠를 표시 하는 페이지 및 해당 콘텐츠에 대 한 사용자에 게 제공 되는 기타 모든 메시지입니다.  이 파일에는이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치 하는 추가 메타 데이터 특성 "Microsoft.Help.Id" content = "-1"이 있습니다.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, 태그 \<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, 태그 \<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, 태그 \<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|책을 설치 하지 않은 경우 제목 섹션 Branding.xml 태그 \<HomePageInstalledBooks> , 응용 프로그램에서 생성 된 데이터  \<HomePageNoBooksInstalled> 입니다.|
-||<HOME_PAGE_SETTINGS_SECTION_ADD/>|제목 섹션 Branding.xml 태그 \<HomePageHelpSettings> , 섹션 텍스트 \<HomePageHelpSettingsText> 입니다.|
-|topiccorrupted.htm|항목이 로컬 집합에 있지만 어떤 이유로 든 표시할 수 없는 경우 (손상 된 콘텐츠)||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, 태그 \<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, 태그 \<TopicCorruptedViewOnlineText>|
-|topicnotfound.htm|로컬 콘텐츠 집합에 항목이 없거나 온라인에서 사용할 수 없는 경우||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, 태그 \<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, 태그 \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, 태그 \<TopicNotFoundText>|
-|contentnotinstalled.htm|제품에 대 한 로컬 콘텐츠가 설치 되어 있지 않은 경우||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, 태그 \<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, 태그 \<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, 태그 \<ContentNotInstalledText>|
+|homepage.htm|현재 설치된 콘텐츠와 해당 콘텐츠에 대해 사용자에게 표시할 수 있는 기타 메시지를 표시하는 페이지입니다.  이 파일에는 이 콘텐츠를 로컬 콘텐츠 TOC의 맨 위에 배치하는 추가 메타데이터 특성 "Microsoft.Help.Id" content="-1"이 있습니다.||
+||<META_HOME_PAGE_TITLE_ADD />|Branding.xml, 태그 \<HomePageTitle>|
+||/> <HOME_PAGE_INTRODUCTION_SECTION_ADD|Branding.xml, 태그 \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD />|Branding.xml, 태그 \<HomePageContentInstallText>|
+||/> <HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD|제목 섹션은 책을 \<HomePageInstalledBooks> 설치하지 않은 경우 애플리케이션에서 생성된 데이터인 태그를  \<HomePageNoBooksInstalled> Branding.xml.|
+||<HOME_PAGE_SETTINGS_SECTION_ADD />|제목 섹션 Branding.xml 태그 \<HomePageHelpSettings> , 섹션 텍스트 \<HomePageHelpSettingsText> .|
+|topiccorrupted.htm|토픽이 로컬 집합에 있지만 어떤 이유로 표시할 수 없는 경우(손상된 콘텐츠)||
+||<META_TOPIC_CORRUPTED_TITLE_ADD />|Branding.xml, 태그 \<TopicCorruptedTitle>|
+||/> <TOPIC_CORRUPTED_SECTION_ADD|Branding.xml, 태그 \<TopicCorruptedViewOnlineText>|
+|topicnotfound.htm|로컬 콘텐츠 집합에서 토픽을 찾을 수 없고 온라인으로 사용할 수 없는 경우||
+||<META_TOPIC_NOT_FOUND_TITLE_ADD />|Branding.xml, 태그 \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD />|Branding.xml, 태그 \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD />|Branding.xml, 태그 \<TopicNotFoundText>|
+|contentnotinstalled.htm|제품에 대한 로컬 콘텐츠가 설치되어 있지 않은 경우||
+||/> <META_CONTENT_NOT_INSTALLED_TITLE_ADD|Branding.xml, 태그 \<ContentNotInstalledTitle>|
+||/> <META_CONTENT_NOT_INSTALLED_ID_ADD|Branding.xml, 태그 \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD />|Branding.xml, 태그 \<ContentNotInstalledText>|
 
 **CSS 파일**
 
-Visual Studio 도움말 뷰어 브랜딩 패키지에는 일관성 있는 Visual Studio 도움말 콘텐츠 프레젠테이션을 지 원하는 두 개의 css 파일이 포함 되어 있습니다.
+Visual Studio 도움말 뷰어 브랜딩 패키지에는 일관된 Visual Studio 도움말 콘텐츠 프레젠테이션을 지원하는 두 개의 css 파일이 포함되어 있습니다.
 
-- SelfBranded = false 인 렌더링을 위한 css 요소를 포함 합니다.
+- Branding.css - SelfBranded=false인 렌더링을 위한 css 요소를 포함합니다.
 
-- 프린터인-SelfBranded = false 인 렌더링을 위한 css 요소를 포함 합니다.
+- Printer.css - SelfBranded=false인 렌더링을 위한 css 요소를 포함합니다.
 
-브랜딩 .css 파일에는 Visual Studio 토픽 프레젠테이션 정의가 포함 되어 있습니다. 즉, 패키지 서비스의 .mshc Branding_에 포함 된에 포함 된 내용이 \<locale> 변경 될 수 있습니다.
+Branding.css 파일에는 Visual Studio 토픽 프레젠테이션에 대한 정의가 포함되어 있습니다(주의할 점은 패키지 서비스의 Branding_ \<locale> .mshc에 포함된 branding.css가 변경될 수 있다는 점입니다).
 
 **그래픽 파일**
 
-Visual Studio 콘텐츠는 Visual Studio 로고 및 기타 그래픽을 표시 합니다.  Visual Studio 도움말 뷰어 브랜딩 패키지의 전체 그래픽 파일 목록은 아래와 같습니다.
+Visual Studio 콘텐츠는 Visual Studio 로고와 기타 그래픽을 표시합니다.  Visual Studio 도움말 뷰어 브랜딩 패키지의 그래픽 파일 전체 목록은 다음과 같습니다.
 
-|**파일**|**사용**|**예**|
+|**최근에 사용한 파일**|**사용**|**예**|
 |-|-|-|
-|clear.gif|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.||
+|clear.gif|축소 가능한 영역을 렌더링하는 데 사용||
 |footer_slice.gif|바닥글 프레젠테이션||
-|info_icon.gif|정보를 표시할 때 사용 됩니다.|고지 사항|
-|online_icon.gif|이 아이콘은 온라인 링크와 연결 됩니다.||
-|tabLeftBD.gif|코드 조각 컨테이너를 렌더링 하는 데 사용 됩니다.||
-|tabRightBD.gif|코드 조각 컨테이너를 렌더링 하는 데 사용 됩니다.||
-|vs_logo_bk.gif|Branding.xml 태그에 정의 된 일반 대비 로고 참조에 사용 \<LogoFileName> 됩니다.  Visual Studio 제품의 경우 로고 이름이 vs_logo_bk.gif 됩니다.||
-|vs_logo_wh.gif|Branding.xml 태그에 정의 된 일반적인 고품질 로고 참조에 사용 \<LogoFileNameHC> 됩니다.  Visual Studio 제품의 경우 로고 이름이 vs_logo_wh.gif 됩니다.||
+|info_icon.gif|정보를 표시할 때 사용됩니다.|고지 사항|
+|online_icon.gif|이 아이콘은 온라인 링크와 연결됩니다.||
+|tabLeftBD.gif|코드 조각 컨테이너를 렌더링하는 데 사용됩니다.||
+|tabRightBD.gif|코드 조각 컨테이너를 렌더링하는 데 사용됩니다.||
+|vs_logo_bk.gif|Branding.xml 태그에 정의된 일반 대비 로고 참조에 \<LogoFileName> 사용됩니다.  Visual Studio 제품의 경우 로고 이름이 vs_logo_bk.gif.||
+|vs_logo_wh.gif|Branding.xml 태그에 정의된 고대비 로고 참조에 \<LogoFileNameHC> 사용됩니다.  Visual Studio 제품의 경우 로고 이름이 vs_logo_wh.gif.||
 |ccOff.png|캡션 그래픽||
 |ccOn.png|캡션 그래픽||
-|ImageSprite.png|축소 가능한 영역을 렌더링 하는 데 사용 됩니다.|확장 또는 축소 그래픽|
+|ImageSprite.png|축소 가능한 영역을 렌더링하는 데 사용|확장 또는 축소 그래픽|
 
 ## <a name="deploy-a-set-of-topics"></a>항목 집합 배포
 
-MSHA 파일과 토픽을 포함 하는 cab 또는 MSHCs 집합으로 구성 된 도움말 뷰어 콘텐츠 배포 집합을 만드는 간단한 자습서입니다. MSHA는 cab 또는 .MSHC 파일 집합을 설명 하는 XML 파일입니다. 도움말 뷰어는 MSHA를 읽어 콘텐츠 목록을 가져올 수 있습니다 (. CAB 또는. .MSHC files)를 로컬 설치에 사용할 수 있습니다.
+MSHA 파일과 토픽을 포함하는 cabs 또는 MSHC 집합으로 구성된 도움말 뷰어 콘텐츠 배포 집합을 만드는 간단하고 빠른 자습서입니다. MSHA는 cabs 또는 MSHC 파일 집합을 설명하는 XML 파일입니다. 도움말 뷰어는 MSHA를 읽어 콘텐츠 목록(.CAB 또는 )을 가져올 수 있습니다. MSHC 파일) 로컬 설치에 사용할 수 있습니다.
 
-이는 도움말 뷰어 MSHA의 기본 XML 스키마를 설명 하는 입문에 불과합니다.  이 간략 한 개요 및 샘플 HelpContentSetup에 대 한 예제 구현이 있습니다.
+도움말 뷰어 MSHA에 대한 매우 기본적인 XML 스키마를 설명하는 입문서일 뿐입니다.  이 간단한 개요 및 샘플 HelpContentSetup.msha 아래에 예제 구현이 있습니다.
 
-이 입문의 목적을 위해 MSHA의 이름은 HelpContentSetup. msha (확장명이 인 모든 이름일 수 있습니다. MSHA). HelpContentSetup. msha (아래 예제)에는 사용 가능한 cab 또는 MSHCs 목록이 포함 되어 있어야 합니다.  파일 형식은 MSHA 내에서 일치 해야 합니다 (MSHA 및 CAB 파일 형식의 조합을 지원 하지 않음). 각 CAB 또는 .mshc에 대해 ... \<div class="package"> \</div> (아래 예제 참조)가 있어야 합니다.
+이 입문서의 목적을 위해 MSHA의 이름은 HelpContentSetup.msha입니다(파일 이름은 확장명을 가진 모든 이름일 수 있습니다.) MSHA). HelpContentSetup.msha(아래 예제)에는 사용 가능한 cab 또는 MSHC 목록이 포함되어야 합니다.  파일 형식은 MSHA 내에서 일관되어야 합니다(MSHA 및 CAB 파일 형식의 조합을 지원하지 않음). 각 CAB 또는 MSHC에 대해 ...가 있어야 \<div class="package"> \</div> 합니다(아래 예제 참조).
 
-참고: 아래 구현 예제에서는 브랜딩 패키지를 포함 했습니다. 필요한 Visual Studio 콘텐츠 렌더링 요소 및 콘텐츠 동작을 얻기 위해이를 포함 하는 것이 중요 합니다.
+참고: 아래 구현 예제에서는 브랜딩 패키지를 포함했습니다. 필요한 Visual Studio 콘텐츠 렌더링 요소 및 콘텐츠 동작을 얻으려면 를 포함해야 합니다.
 
-샘플 HelpContentSetup. msha 파일: ("content set name 1" 및 "content set name 2" 등을 파일 이름으로 바꿉니다.)
+샘플 HelpContentSetup.msha 파일: ("콘텐츠 집합 이름 1" 및 "콘텐츠 집합 이름 2" 등)을 파일 이름으로 대체합니다.
 
 ```html
 <html>
@@ -648,15 +648,15 @@ MSHA 파일과 토픽을 포함 하는 cab 또는 MSHCs 집합으로 구성 된 
 </div>.
 ```
 
-1. "C:\SampleContent"와 같은 로컬 폴더를 만듭니다.
+1. "C:\SampleContent"와 같은 로컬 폴더 만들기
 
-2. 이 예제에서는 .MSHC 파일을 사용 하 여 항목을 포함 합니다.  .MSHC는 파일 확장명이 .zip에서로 변경 된 zip입니다. .MSHC.
+2. 이 예제에서는 MSHC 파일을 사용하여 항목을 포함합니다.  MSHC는 파일 확장명 가 .zip 로 변경된 zip입니다. MSHC.
 
-3. 아래 HelpContentSetup. msha를 텍스트 파일로 만들고 (메모장을 사용 하 여 파일을 만든 후) 위의 설명 된 폴더에 저장 합니다 (1 단계 참조).
+3. 아래 HelpContentSetup.msha를 텍스트 파일로 만들고(메모장에서 파일을 만드는 데 사용) 위의 기록된 폴더에 저장합니다(1단계 참조).
 
-"브랜딩" 클래스가 있으며 고유 합니다. 브랜딩 .mshc 설치 된 콘텐츠에 브랜딩이 포함 되 고 MSHCs에 포함 된 콘텐츠 동작에 브랜딩 패키지에 포함 된 적절 한 지원 요소가 포함 되도록이 입문에 포함 됩니다. 이렇게 하지 않으면 시스템이 리핑한 (설치 된) 콘텐츠의 일부가 아닌 지원 항목을 찾을 때 오류가 발생 합니다.
+"브랜딩" 클래스가 존재하며 고유합니다. 이 입문서에 브랜딩 mshc가 포함되어 있으므로 설치된 콘텐츠에 브랜딩이 포함되고 MSHC에 포함된 콘텐츠 동작에 적절한 지원 요소가 브랜딩 패키지에 포함됩니다. 이렇게 하지 않으면 시스템에서 파급된(설치된) 콘텐츠의 일부가 아닌 지원 항목을 검색할 때 오류가 발생합니다.
 
-Visual Studio 브랜딩 패키지를 가져오려면 C:\Program Files (x86) \Microsoft Help Viewer\v2.3\의 Branding_en-.mshc 파일을 작업 폴더에 복사 합니다.
+Visual Studio 브랜딩 패키지를 가져오려면 C:\Program Files (x86)\Microsoft 도움말 뷰어\v2.3\에서 Branding_en-US.mshc 파일을 작업 폴더에 복사합니다.
 
 ```html
 <html>
@@ -692,44 +692,44 @@ Visual Studio 브랜딩 패키지를 가져오려면 C:\Program Files (x86) \Mic
 
 **요약**
 
-위의 단계를 사용 하 고 확장 하면 .Vsps에서 Visual Studio 도움말 뷰어에 대 한 콘텐츠 집합을 배포할 수 있습니다.
+위의 단계를 사용하고 확장하면 VSP가 Visual Studio 도움말 뷰어에 대한 콘텐츠 집합을 배포할 수 있습니다.
 
-### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio 셸에 도움말 추가 (통합 및 격리)
+### <a name="add-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Visual Studio Shell에 도움말 추가(통합 및 격리)
 
 **소개**
 
-이 연습에서는 Visual Studio Shell 응용 프로그램에 도움말 콘텐츠를 통합 한 다음 배포 하는 방법을 보여 줍니다.
+이 연습에서는 도움말 콘텐츠를 Visual Studio Shell 애플리케이션에 통합한 다음 배포하는 방법을 보여 줍니다.
 
 **요구 사항**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2. [Visual Studio 2013 격리 된 셸 재배포 가능 패키지](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+2. [Visual Studio 2013 격리 셸 재배포](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **개요**
 
-[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]셸은 [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 응용 프로그램의 기반으로 사용할 수 있는 IDE의 버전입니다. 이러한 응용 프로그램에는 사용자가 만든 확장과 함께 격리 셸이 포함 되어 있습니다. SDK에 포함 된 격리 된 셸 프로젝트 템플릿을 사용 [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 하 여 확장을 빌드합니다.
+[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]셸은 [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 애플리케이션을 기반으로 할 수 있는 IDE 버전입니다. 이러한 애플리케이션에는 만드는 확장과 함께 격리된 셸이 포함됩니다. SDK에 포함된 격리 셸 프로젝트 템플릿을 사용하여 [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] 확장을 빌드합니다.
 
-격리 된 셸 기반 응용 프로그램 및 해당 도움말을 만드는 기본 단계는 다음과 같습니다.
+격리 셸 기반 애플리케이션 및 해당 도움말을 만들기 위한 기본 단계는 다음과 같습니다.
 
-1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]ISO 셸 재배포 가능 패키지 (Microsoft 다운로드)를 다운로드 합니다.
+1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]ISO Shell 재배포 가능 파일(Microsoft 다운로드)을 다운로드합니다.
 
-2. Visual Studio에서이 연습의 뒷부분에서 설명 하는 Contoso Help extension과 같은 Isolated 셸을 기반으로 하는 도움말 확장을 만듭니다.
+2. Visual Studio 격리 셸을 기반으로 하는 도움말 확장(예: 이 연습의 후반부에 설명된 Contoso 도움말 확장)을 만듭니다.
 
-3. 확장 및 ISO 셸 재배포 가능 패키지를 배포 MSI (응용 프로그램 설치)로 래핑합니다. 이 연습에는 설치 단계가 포함 되지 않습니다.
+3. 확장 및 ISO Shell 재배포 가능을 배포 MSI(애플리케이션 설정)로 래핑합니다. 이 연습에는 설치 단계가 포함되지 않습니다.
 
-Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 경우 다음과 같이 Visual Studio12를 제품 카탈로그 이름으로 변경 합니다.
+Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 경우 다음과 같이 Visual Studio12를 제품 카탈로그 이름으로 변경합니다.
 
-- C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15. 폴더 만들기
+- C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 폴더를 만듭니다.
 
-- CatalogType.xml 라는 파일을 만들고 폴더에 추가 합니다. 파일에는 다음 코드 줄이 포함 되어야 합니다.
+- CatalogType.xml 파일을 만들고 폴더에 추가합니다. 파일에는 다음 코드 줄이 포함되어야 합니다.
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
     <catalogType>UserManaged</catalogType>
     ```
 
-레지스트리에서 콘텐츠 저장소를 정의 합니다. 통합 셸에서 VisualStudio15을 제품 카탈로그 이름으로 변경 합니다.
+레지스트리에서 콘텐츠 저장소를 정의합니다. 통합 셸의 경우 VisualStudio15를 제품 카탈로그 이름으로 변경합니다.
 
 - HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -741,15 +741,15 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
 **프로젝트 만들기**
 
-격리 된 셸 확장을 만들려면 다음을 수행 합니다.
+격리 셸 확장을 만들려면 다음을 수행합니다.
 
-1. Visual Studio의 **파일** 에서 **새 프로젝트** 를 선택 하 고 **기타 프로젝트 형식** 에서 **확장성** 을 선택한 다음  **Visual Studio Shell 격리** 를 선택 합니다. 프로젝트 이름 `ContosoHelpShell` )을 사용 하 여 Visual Studio 격리 셸 템플릿을 기반으로 하는 확장성 프로젝트를 만듭니다.
+1. Visual Studio **파일** 에서 **새 프로젝트를** 선택하고 기타 **프로젝트 형식에서** **확장성을** 선택한  **다음, Visual Studio 셸 격리를** 선택합니다. 프로젝트 이름을 `ContosoHelpShell` )로 지정하여 Visual Studio 격리 셸 템플릿을 기반으로 확장성 프로젝트를 만듭니다.
 
-2. 솔루션 탐색기의 ContosoHelpShellUI 프로젝트에 있는 리소스 파일 폴더에서 ApplicationCommands. vsct를 엽니다. 이 줄이 주석 처리 되었는지 확인 합니다 ("No_Help" 검색). `<!-- <define name="No_HelpMenuCommands"/> -->`
+2. 솔루션 탐색기 ContosoHelpShellUI 프로젝트의 리소스 파일 폴더에서 ApplicationCommands.vsct를 엽니다. 이 줄이 주석으로 나와 있는지 확인합니다("No_Help"을 검색). `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. F5 키를 선택 하 여 컴파일하고 **디버그** 를 실행 합니다. 격리 된 셸 IDE의 실험적 인스턴스에서 **도움말** 메뉴를 선택 합니다. 도움말 **보기**, **도움말 콘텐츠 추가 및 제거** 및 **도움말 기본 설정 명령 설정이** 표시 되는지 확인 합니다.
+3. F5 키를 선택하여 **디버그를** 컴파일하고 실행합니다. 격리 셸 IDE의 실험적 인스턴스에서 **도움말** 메뉴를 선택합니다. **도움말 보기, 도움말** **콘텐츠 추가 및 제거** 및 도움말 기본 설정 **설정** 명령이 표시되는지 확인합니다.
 
-4. 솔루션 탐색기의 ContosHelpShell 프로젝트에 있는 Shell 사용자 지정 폴더에서 ContosoHelpShell. .pkgdef를 엽니다. Contoso Help catalog를 정의 하려면 다음 줄을 추가 합니다.
+4. 솔루션 탐색기 ContosHelpShell 프로젝트의 셸 사용자 지정 폴더에서 ContosoHelpShell.pkgdef를 엽니다. Contoso 도움말 카탈로그를 정의하려면 다음 줄을 추가합니다.
 
     ```
      [$RootKey$\Help]
@@ -759,7 +759,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
     "BrandingPackage"="ContosoBrandingPackage.mshc"
     ```
 
-5. 솔루션 탐색기의 ContosHelpShell 프로젝트에 있는 Shell 사용자 지정 폴더에서 ContosoHelpShell .pkgdef를 엽니다. F1 도움말을 사용 하려면 다음 줄을 추가 합니다.
+5. 솔루션 탐색기 ContosHelpShell 프로젝트의 셸 사용자 지정 폴더에서 ContosoHelpShell.Application.pkgdef를 엽니다. F1 도움말을 사용하도록 설정하려면 다음 줄을 추가합니다.
 
     ```
     // F1 Help Provider
@@ -775,15 +775,15 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6. 솔루션 탐색기의 ContosoHelpShell 솔루션에 대 한 상황에 맞는 메뉴에서 **속성** 메뉴 항목을 선택 합니다. **구성 속성** 에서 **Configuration Manager** 를 선택 합니다. **구성** 열에서 모든 "Debug" 값을 "Release"로 변경 합니다.
+6. 솔루션 탐색기 ContosoHelpShell 솔루션의 상황에 맞는 메뉴에서 **속성** 메뉴 항목을 선택합니다. **구성 속성에서** **구성 관리자** 선택합니다. **구성** 열에서 모든 "디버그" 값을 "Release"로 변경합니다.
 
-7. 솔루션을 빌드합니다. 그러면 다음 섹션에서 사용 되는 릴리스 폴더에 파일 집합이 만들어집니다.
+7. 솔루션을 빌드합니다. 그러면 릴리스 폴더에 파일 집합이 만들어지며, 이 파일은 다음 섹션에서 사용됩니다.
 
-배포 된 경우로 테스트 하려면 다음을 수행 합니다.
+배포된 것처럼 테스트하려면 다음을 수행합니다.
 
-1. Contoso를 배포 하는 컴퓨터에서 다운로드 한 (위) ISO 셸을 설치 합니다.
+1. Contoso를 배포하는 머신에서 다운로드한(위에서) ISO 셸을 설치합니다.
 
-2. Filefiles \\ (x86)에서 폴더를 만들고 \\ 이름을로 `Contoso` 합니다.
+2. \Program Files (x86) 에 폴더를 만들고 \\ \\ 이름을 로 `Contoso` 지정합니다.
 
 3. ContosoHelpShell release 폴더의 콘텐츠를 \\ filefiles (x86) \Contoso\ 폴더에 복사 합니다.
 
@@ -828,7 +828,7 @@ Visual Studio 콘텐츠 저장소를 만듭니다. 통합 셸 시나리오의 �
 
 12. Contoso IDE 내에서 f1 키를 선택 하 여 F1 기능을 테스트 합니다.
 
-## <a name="additional-resources"></a>추가 자료
+## <a name="additional-resources"></a>추가 리소스
 
 런타임 API에 대 한 자세한 내용은 [Windows 도움말 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)를 참조 하세요.
 

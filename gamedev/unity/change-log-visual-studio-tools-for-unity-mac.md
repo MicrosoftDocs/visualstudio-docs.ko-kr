@@ -2,7 +2,7 @@
 title: 변경 로그(Visual Studio Tools for Unity, Mac) | Microsoft Docs
 description: Visual Studio Tools for Unity, Mac의 변경 로그를 확인합니다. 버전 1.0.0.0부터 2.7.0.0 이상까지 변경 내용을 참조합니다.
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/3/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,111 +12,182 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 2d3faf8e5231ca5d2e99bcf80dc18b6d4f4607cd
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683383"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448300"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>변경 로그(Visual Studio Tools for Unity, Mac)
 
 Visual Studio Tools for Unity에 대한 변경 로그입니다.
 
-## <a name="2920"></a>2.9.2.0
-2021 년 3 월 2 일 출시
+## <a name="21020"></a>2.10.2.0
+릴리스 날짜: 2021년 6월 2일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 진단이 추가되었습니다. 벡터 계산보다 스칼라 계산에 우선 순위를 줍니다.
+
+- **평가:**
+
+  - 이식 가능한 pdb 기호를 사용하여 표시되는 로컬을 제대로 필터링하기 위한 지원이 추가되었습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - Unity 메시지 대화 상자에서 검색 강조 표시를 수정 했습니다.
+  - 플레이어가 최신 Unity 버전으로 구문 분석 공지하는 문제가 해결되었습니다.
 
-  - Unity 프로젝트 treeview의 안정성 문제를 수정 했습니다.
+## <a name="21010"></a>2.10.1.0
+릴리스 날짜: 2021년 5월 11일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 빠른 접두사 관련 안정성 문제가 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 해결되었습니다.
+
+  - 스레드의 성능 문제를 해결했습니다.
+
+  - 필터링이 오류 목록에 표시되지 않은 경고 및 오류를 수정했습니다.
+
+  - Unity 백그라운드 프로세스 필터링을 수정했습니다.
+
+## <a name="21000"></a>2.10.0.0
+릴리스 날짜: 2021년 4월 13일
+
+### <a name="new-features"></a>새로운 기능
+
+- **통합:**
+
+  - [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 진단이 추가되었습니다. 에 대한 불필요한 간접 참조 `GameObject.gameObject` 호출입니다.
+
+  - [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 진단이 추가되었습니다. `MenuItem` 비정적 메서드에 사용되는 특성입니다.
+
+  - [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 진단이 추가되었습니다. Unity 메시지를 보호해야 합니다(옵트인).
+
+  - [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 진단이 추가되었습니다. 위치 및 회전을 설정하는 비효율적인 메서드입니다.
+
+  - [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 진단이 추가되었습니다. Unity 개체에 대한 결합 할당입니다.
+
+  - `IDE0074`에 대한 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 억제 장치가 추가되었습니다. Unity 개체는 결합 할당을 사용하면 안 됩니다.
+
+## <a name="2940"></a>2.9.4.0
+릴리스 날짜: 2021년 4월 6일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - 테스트 열거 관련 문제 해결
+
+## <a name="2930"></a>2.9.3.0
+릴리스 날짜: 2021년 3월 30일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Test Runner 관련 문제 해결 
+
+## <a name="2920"></a>2.9.2.0
+릴리스 날짜: 2021년 3월 2일
+
+### <a name="bug-fixes"></a>버그 수정
+
+- **통합:**
+
+  - Unity 메시지 대화 상자에서 검색 강조 표시를 수정했습니다.
+
+  - Unity 프로젝트 treeview의 안정성 문제를 해결했습니다.
 
 - **디버깅:**
 
-  - 조건부 중단점의 처리 문제를 수정 했습니다.
+  - 조건부 중단점 처리 문제를 해결했습니다.
 
 ## <a name="2910"></a>2.9.1.0
-2021 년 2 월 9 일 출시
+릴리스 날짜: 2021년 2월 9일
 
 ### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
-  - IDE에서 Unity 테스트를 실행 하 고 디버깅 하는 데 대 한 지원이 추가 되었습니다.
+  - IDE에서 Unity 테스트 실행 및 디버깅에 대한 지원 추가
 
 - **평가:**
 
-  - `Active Scene`루트 게임 개체를 표시 하는 지역에 추가 됩니다.
+  - 루트 게임 개체를 표시하는 `Active Scene`을 로컬에 추가했습니다.
 
-  - `this.gameObject`Unity 프로젝트에서 널리 사용 되는 경우 지역에 추가 됩니다.
+  - Unity 프로젝트에서 널리 사용되는 `this.gameObject`를 로컬에 추가했습니다.
 
-  - 모든 `Children` `Components` `GameObject` 개체 계층 구조를 쉽게 표시할 수 있도록 모든 인스턴스에 및 그룹을 추가 했습니다.
+  - 모든 개체 계층 구조를 쉽게 표시할 수 있도록 모든 `GameObject` 인스턴스에 `Children` 및 `Components` 그룹을 추가했습니다.
 
-  - `Scene Path` `GameObject` 장면에서 위치를 표시 하기 위해 모든 인스턴스에 추가 됩니다.
+  - 장면에서 위치를 표시하도록 모든 `GameObject`에 `Scene Path`를 추가했습니다.
 
-  - `JobEntityBatch`소스 생성기에서 엔터티를 사용 하는 경우/람다에 대 한 지원이 추가 되었습니다.
+  - 소스 생성기에서 엔터티를 사용하는 경우 `JobEntityBatch`/람다에 대한 지원을 추가했습니다.
 
-  - 버킷 팅 인덱스를 사용 하 여 긴 배열 표시에 대 한 지원이 향상 되었습니다.
+  - (인덱스 버킷팅을 사용하여) 대규모 배열을 표시하도록 지원을 향상했습니다.
 
-  - 2019.4 API에 대 한 누락 된 Unity 메시지를 추가 했습니다.
+  - 2019.4 API에 대해 누락된 Unity 메시지를 추가했습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - Unity 메시지 대화 상자의 안정성 문제 해결
+  - Unity 메시지 대화 상자의 안정성 문제를 해결했습니다.
 
-  - 한국어 이외의 언어에 대 한 다양 한 UI 문제를 수정 했습니다.
+  - ENU 이외 언어에 대한 다양한 UI 문제를 해결했습니다.
 
-  - 진단의 안정성 문제를 해결 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 했습니다.
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 진단의 안정성 문제를 해결했습니다.
 
 - **디버깅:**
 
-  - 메서드를 사용할 때 VM 연결 끊기 문제가 해결 `Trace` 되었습니다.
+  - `Trace` 메서드 사용 시 VM 연결 끊김 문제를 해결했습니다.
 
 - **평가:**
 
-  - 예외를 throw 하는 사용 되지 않는 속성의 필터링이 수정 되었습니다.
+  - 예외를 throw하는, 사용되지 않는 속성의 필터링을 수정했습니다.
 
 ## <a name="2900"></a>2.9.0.0
-2021 년 1 월 20 일 릴리스
+릴리스 날짜: 2021년 1월 20일
 
 ### <a name="new-features"></a>새로운 기능
 
 - **통합:**
 
-  - `raytrace shaders`, 및 파일에 대 한 지원이 추가 되었습니다 `UXML` `USS` .
+  - `raytrace shaders`, `UXML`, `USS` 파일에 대한 지원을 추가했습니다.
 
-  - 코 루틴으로 사용 되는 모든 메서드에 대해 Unity 메시지 API를 업데이트 했습니다.
+  - (코루틴으로 사용되는 모든 메서드에 대한) Unity 메시지 API를 업데이트했습니다.
 
-  - Android SDK 검색을 업데이트 했습니다.
+  - Android SDK 검색을 업데이트했습니다.
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)코 루틴 및에 대해 잘못 된 경고를 제공 하는 진단이 수정 되었습니다 `AssetPostprocessor.OnAssignMaterialModel` .
+  - 코루틴 및 `AssetPostprocessor.OnAssignMaterialModel`에 대해 잘못된 경고를 제공하는 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 진단을 수정했습니다.
 
 ## <a name="2840"></a>2.8.4.0
-2020 년 12 월 15 일 출시
+릴리스 날짜: 2020년 12월 15일
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **통합:**
 
-  - Unity 이벤트 생성 마법사를 닫을 때 안정성 문제가 해결 되었습니다.
+  - Unity 이벤트 만들기 마법사를 닫을 때 안정성 문제가 해결되었습니다.
 
 ## <a name="2830"></a>2.8.3.0
-2020 년 11 월 10 일 릴리스
+릴리스 날짜: 2020년 11월 10일
 
 ### <a name="bug-fixes"></a>버그 수정
 
 - **디버거:**
 
-  - 솔루션에 VSTU 프로젝트가 없는 경우에도 Unity에 연결을 수정 했습니다.
+  - 솔루션에 VSTU 프로젝트가 없는 경우에도 Unity에 연결하는 문제가 해결되었습니다.
 
 ## <a name="2820"></a>2.8.2.0
 2020 년 10 월 27 일 출시
