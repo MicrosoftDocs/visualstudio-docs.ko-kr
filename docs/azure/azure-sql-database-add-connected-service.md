@@ -8,23 +8,23 @@ ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 9e4a695a26e17e20fbd19081b863d9f108fc16b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26a01bfe2a34422f9596710f832a1c4af699fd3b
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841200"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588490"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>Azure SQL Database에 대 한 연결 추가
 
-Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 다음 중 하나를 Azure SQL database에 연결할 수 있습니다.
+Visual Studio를 사용 하 여 다음 중 하나를 **연결된 서비스** 기능을 사용 하 여 Azure SQL Database에 연결할 수 있습니다.
 
 - .NET Framework 콘솔 앱
 - ASP.NET MVC (.NET Framework) 
 - ASP.NET Core
 - .NET Core (콘솔 앱, WPF, Windows Forms, 클래스 라이브러리 포함)
 - .NET Core 작업자 역할
-- Azure 기능
+- Azure Functions
 - 유니버설 Windows 플랫폼 앱
 - Xamarin
 - Cordova
@@ -33,7 +33,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 연결된 서비스](/visualstudio/mac/connected-services)를 참조하세요.
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 구성 요소
 
 - Azure 워크 로드가 설치 된 Visual Studio
 - 지원 되는 형식 중 하나에 해당 하는 프로젝트
@@ -52,7 +52,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
     ![Azure SQL Database 서비스 추가](./media/azure-sql-database-add-connected-service/azure-sql-database.png)
 
-    아직 로그인 하지 않은 경우 Azure 계정에 로그인 합니다. Azure 계정이 없으면 [무료 평가판](https://azure.microsoft.com/account/free)에 등록할 수 있습니다.
+    아직 로그인 하지 않은 경우 Azure 계정에 로그인 합니다. Azure 계정이 없으면 [평가판](https://azure.microsoft.com/account/free)에 등록할 수 있습니다.
 
 1. **Azure SQL Database 구성** 화면에서 기존 Azure SQL Database를 선택 하 고 **다음** 을 선택 합니다.
 
@@ -86,7 +86,7 @@ Visual Studio를 사용 하면 **연결된 서비스** 기능을 사용 하 여 
 
    ![서비스 종속성](./media/azure-sql-database-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Azure SQL Database 제품 페이지](https://azure.microsoft.com/services/sql-database/)
 - [Azure SQL Database 설명서](/azure/azure-sql/database/)
