@@ -1,6 +1,6 @@
 ---
-title: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
-description: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램을 보다 쉽게 디버깅 하 고 수정할 수 있습니다. 기능 수신기에 코드를 만들고 추가 합니다. 프로젝트를 테스트 합니다. IntelliTrace 데이터를 수집 합니다.
+title: IntelliTrace를 사용하여 SharePoint 애플리케이션 디버그
+description: IntelliTrace를 사용하여 SharePoint 애플리케이션을 보다 쉽게 디버그하고 수정할 수 있습니다. 기능 수신기에 코드를 만들고 추가합니다. 프로젝트를 테스트합니다. IntelliTrace 데이터를 수집합니다.
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,20 +18,20 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e2ce8bc2c493d59b8a06a64ff69838e828315bf2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf7fa6c7255e05c465d6c209db5e9581a49aee64
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952657"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112839"
 ---
-# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용 하 여 SharePoint 응용 프로그램 디버그
+# <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>연습: IntelliTrace를 사용하여 SharePoint 애플리케이션 디버그
 
-IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그할 수 있습니다. 기존 디버거는 현재 시점에서 솔루션의 스냅숏을 제공 합니다. 그러나 IntelliTrace를 사용 하 여 솔루션에서 발생 한 이전 이벤트와 해당 이벤트가 발생 한 컨텍스트를 검토 하 고 코드로 이동할 수 있습니다.
+IntelliTrace를 사용하면 SharePoint 솔루션을 더 쉽게 디버그할 수 있습니다. 기존 디버거는 현재 솔루션의 스냅샷만 제공합니다. 그러나 IntelliTrace를 사용하여 솔루션에서 발생한 과거 이벤트와 발생한 컨텍스트를 검토하고 코드로 이동할 수 있습니다.
 
- 이 연습에서는 Microsoft Monitoring Agent를 사용 하 여 배포 된 응용 프로그램에서 IntelliTrace 데이터를 수집 하 여 Visual Studio에서 SharePoint 2010 또는 SharePoint 2013 프로젝트를 디버깅 하는 방법을 보여 줍니다. 이 데이터를 분석 하려면 Visual Studio Enterprise를 사용 해야 합니다. 이 프로젝트는 기능이 활성화 되 면 작업 목록에 작업을 추가 하 고 공지 목록에 공지를 추가 하는 기능 수신기를 통합 합니다. 이 기능이 비활성화 되 면 작업이 완료 된 것으로 표시 되 고 알림 목록에 두 번째 알림이 추가 됩니다. 그러나이 프로시저에는 프로젝트가 제대로 실행 되지 않도록 하는 논리 오류가 포함 되어 있습니다. IntelliTrace를 사용 하 여 오류를 찾아서 수정 합니다.
+ 이 연습에서는 Microsoft Monitoring Agent 사용하여 배포된 애플리케이션에서 IntelliTrace 데이터를 수집하여 Visual Studio SharePoint 프로젝트를 디버그하는 방법을 보여줍니다. 해당 데이터를 분석하려면 Visual Studio Enterprise 사용해야 합니다. 이 프로젝트는 기능이 활성화될 때 작업 목록에 작업을 추가하고 공지 목록에 공지하는 기능 수신기를 통합합니다. 기능이 비활성화되면 작업이 완료된 것으로 표시되고 두 번째 알림이 알림 목록에 추가됩니다. 그러나 프로시저에는 프로젝트가 올바르게 실행되지 않도록 하는 논리적 오류가 포함되어 있습니다. IntelliTrace를 사용하면 오류를 찾아서 수정할 수 있습니다.
 
- **적용 대상:** 이 항목의 정보는 Visual Studio에서 만든 sharepoint 2010 및 SharePoint 2013 솔루션에 적용 됩니다.
+ **적용된 내용:** 이 항목의 정보는 Visual Studio 만든 SharePoint 솔루션에 적용됩니다.
 
  이 연습에서는 다음 작업을 수행합니다.
 
@@ -41,7 +41,7 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
 - [프로젝트 테스트](#test-the-project)
 
-- [Microsoft Monitoring Agent를 사용 하 여 IntelliTrace 데이터 수집](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
+- [Microsoft Monitoring Agent 사용하여 IntelliTrace 데이터 수집](#collect-intellitrace-data-by-using-microsoft-monitoring-agent)
 
 - [SharePoint 솔루션 디버그 및 수정](#debug-and-fix-the-sharepoint-solution)
 
@@ -51,7 +51,7 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
 이 연습을 완료하려면 다음과 같은 구성 요소가 필요합니다.
 
-- 지원 되는 버전의 Windows 및 SharePoint
+- 지원되는 Windows 및 SharePoint 버전.
 
 - Visual Studio Enterprise.
 
@@ -59,25 +59,25 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
 먼저 기능 수신기가 있는 빈 SharePoint 프로젝트를 만듭니다.
 
-1. SharePoint 2010 또는 SharePoint 2013 솔루션 프로젝트를 만들고 이름을 **IntelliTraceTest** 로 다시 만듭니다.
+1. 설치한 SharePoint 버전을 대상으로 하는 SharePoint 솔루션 프로젝트를 만들고 이름을 **IntelliTraceTest로** 지정합니다.
 
-     프로젝트에 대 한 SharePoint 사이트와 솔루션의 신뢰 수준을 모두 지정할 수 있는 **Sharepoint 사용자 지정 마법사** 가 나타납니다.
+     프로젝트에 대한 SharePoint 사이트와 솔루션의 신뢰 수준을 모두 지정할 수 있는 SharePoint **사용자 지정 마법사가** 나타납니다.
 
-2. **팜 솔루션으로 배포** 옵션 단추를 선택한 다음 **마침** 단추를 선택 합니다.
+2. 팜 **솔루션으로 배포** 옵션 단추를 선택한 **다음, 마침** 단추를 선택합니다.
 
-     IntelliTrace는 팜 솔루션 에서만 작동 합니다.
+     IntelliTrace는 팜 솔루션에서만 작동합니다.
 
-3. **솔루션 탐색기** 에서 **기능** 노드에 대 한 바로 가기 메뉴를 열고 **기능 추가** 를 선택 합니다.
+3. **솔루션 탐색기** **에서 기능** 노드의 바로 가기 메뉴를 열고 **기능 추가를** 선택합니다.
 
-     *Feature1* 가 나타납니다.
+     *Feature1.feature가* 나타납니다.
 
-4. Feature1에 대 한 바로 가기 메뉴를 열고 **이벤트 수신기 추가** 를 선택 하 여 기능에 코드 모듈을 추가 합니다.
+4. Feature1.feature에 대한 바로 가기 메뉴를 열고 **이벤트 수신기 추가를** 선택하여 기능에 코드 모듈을 추가합니다.
 
 ## <a name="add-code-to-the-feature-receiver"></a>기능 수신기에 코드 추가
 
-그런 다음 기능 수신기의 두 메서드에 코드를 추가 합니다. `FeatureActivated` 및 `FeatureDeactivating` . 이러한 메서드는 SharePoint에서 기능이 각각 활성화 또는 비활성화 될 때마다 트리거됩니다.
+다음으로 기능 수신기의 두 메서드인 및 에 코드를 `FeatureActivated` `FeatureDeactivating` 추가합니다. 이러한 메서드는 SharePoint에서 기능이 활성화되거나 비활성화될 때마다 트리거됩니다.
 
-1. 클래스 맨 위에 `Feature1EventReceiver` SharePoint 사이트 및 하위 사이트를 지정 하는 변수를 선언 하는 다음 코드를 추가 합니다.
+1. 클래스 맨 위에 `Feature1EventReceiver` SharePoint 사이트 및 하위 사이트를 지정하는 변수를 선언하는 다음 코드를 추가합니다.
 
     ```vb
     ' SharePoint site and subsite.
@@ -249,90 +249,90 @@ IntelliTrace를 사용 하 여 SharePoint 솔루션을 보다 쉽게 디버그�
 
 ## <a name="test-the-project"></a>프로젝트 테스트
 
-이제 기능이 기능 수신기에 추가 되 고 데이터 수집기가 실행 중 이므로 SharePoint 솔루션을 배포 하 고 실행 하 여 제대로 작동 하는지 테스트 합니다.
+이제 코드가 기능 수신기에 추가되고 데이터 수집기에서 실행 중이면 SharePoint 솔루션을 배포하고 실행하여 제대로 작동하는지 테스트합니다.
 
 > [!IMPORTANT]
-> 이 예에서는 FeatureDeactivating 이벤트 처리기에서 오류가 throw 됩니다. 이 연습의 뒷부분에서 데이터 수집기가 만든 .Itrace 파일을 사용 하 여이 오류를 찾습니다.
+> 이 예제에서는 FeatureDeactivating 이벤트 처리기에서 오류가 throw됩니다. 이 연습의 후반부에서는 데이터 수집기에서 만든 .iTrace 파일을 사용하여 이 오류를 찾습니다.
 
 1. SharePoint에 솔루션을 배포한 다음 브라우저에서 SharePoint 사이트를 엽니다.
 
-     기능이 자동으로 활성화 되어 기능 수신기가 알림과 작업을 추가 합니다.
+     기능이 자동으로 활성화되어 기능 수신기가 알림 및 작업을 추가합니다.
 
-2. 알림 및 작업 목록의 내용을 표시 합니다.
+2. 알림 및 작업 목록의 내용을 표시합니다.
 
-     알림 목록에는 **IntelliTraceTest_Feature1 활성화 된 기능** 이라는 새 알림이 있어야 하 고, 작업 목록에는 **Deactivate feature: IntelliTraceTest_Feature1** 라는 새 태스크가 있어야 합니다. 이러한 항목 중 하나를 누락 하는 경우 기능이 활성화 되어 있는지 확인 합니다. 활성화 되지 않은 경우 활성화 합니다.
+     알림 목록에는 **활성화된 기능이라는** 새 알림이 있어야 합니다. IntelliTraceTest_Feature1 및 작업 목록에는 비활성화 기능이라는 새 작업이 있어야 **합니다. IntelliTraceTest_Feature1.** 이러한 항목 중 하나가 누락된 경우 기능이 활성화되었는지 확인합니다. 활성화되지 않은 경우 활성화합니다.
 
-3. 다음 단계를 수행 하 여 기능을 비활성화 합니다.
+3. 다음 단계를 수행하여 기능을 비활성화합니다.
 
-   1. SharePoint의 **사이트 작업** 메뉴에서 **사이트 설정** 을 선택 합니다.
+   1. SharePoint의 **사이트 작업** 메뉴에서 **사이트 설정** 을 선택합니다.
 
-   2. **사이트 작업** 에서 **사이트 기능 관리** 링크를 선택 합니다.
+   2. **사이트 작업에서** **사이트 기능 관리** 링크를 선택합니다.
 
-   3. **IntelliTraceTest Feature1** 옆의 **비활성화** 단추를 선택 합니다.
+   3. **IntelliTraceTest Feature1** 옆에 있는 **비활성화** 단추를 선택합니다.
 
-   4. 경고 페이지에서 **이 기능 비활성화** 링크를 선택 합니다.
+   4. 경고 페이지에서 **이 기능 비활성화** 링크를 선택합니다.
 
-      FeatureDeactivating () 이벤트 처리기가 오류를 throw 합니다.
+      FeatureDeactivating() 이벤트 처리기가 오류를 throw합니다.
 
-## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent를 사용 하 여 IntelliTrace 데이터 수집
+## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Microsoft Monitoring Agent 사용하여 IntelliTrace 데이터 수집
 
-SharePoint를 실행 하는 시스템에 Microsoft Monitoring Agent를 설치 하는 경우 IntelliTrace에서 반환 하는 일반 정보 보다 더 구체적인 데이터를 사용 하 여 SharePoint 솔루션을 디버그할 수 있습니다. 에이전트는 SharePoint 솔루션이 실행 되는 동안 디버그 정보를 캡처하기 위해 PowerShell cmdlet을 사용 하 여 Visual Studio 외부에서 작동 합니다.
+SharePoint를 실행하는 시스템에 Microsoft Monitoring Agent 설치하는 경우 IntelliTrace에서 반환하는 일반 정보보다 더 구체적인 데이터를 사용하여 SharePoint 솔루션을 디버그할 수 있습니다. 에이전트는 SharePoint 솔루션이 실행되는 동안 PowerShell cmdlet을 사용하여 디버그 정보를 캡처하여 Visual Studio 외부에서 작동합니다.
 
 > [!NOTE]
-> 이 섹션의 구성 정보는이 예제와 관련이 있습니다. 기타 구성 옵션에 대 한 자세한 내용은 [IntelliTrace 독립 실행형 수집기 사용](../debugger/using-the-intellitrace-stand-alone-collector.md)을 참조 하세요.
+> 이 섹션의 구성 정보는 이 예제와 관련이 있습니다. 다른 구성 옵션에 대한 자세한 내용은 [IntelliTrace 독립 실행형 수집기 사용을 참조하세요.](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-1. SharePoint를 실행 하는 컴퓨터에서 [Microsoft Monitoring Agent를 설정 하 고 솔루션 모니터링을 시작](../debugger/using-the-intellitrace-stand-alone-collector.md)합니다.
+1. SharePoint를 실행하는 컴퓨터에서 [Microsoft Monitoring Agent 설정하고 솔루션 모니터링을 시작합니다.](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-2. 기능을 비활성화 합니다.
+2. 기능을 비활성화합니다.
 
-   1. SharePoint의 **사이트 작업** 메뉴에서 **사이트 설정** 을 선택 합니다.
+   1. SharePoint의 **사이트 작업** 메뉴에서 **사이트 설정** 을 선택합니다.
 
-   2. **사이트 작업** 에서 **사이트 기능 관리** 링크를 선택 합니다.
+   2. **사이트 작업에서** **사이트 기능 관리** 링크를 선택합니다.
 
-   3. **IntelliTraceTest Feature1** 옆의 **비활성화** 단추를 선택 합니다.
+   3. **IntelliTraceTest Feature1** 옆에 있는 **비활성화** 단추를 선택합니다.
 
-   4. 경고 페이지에서 **이 기능 비활성화** 링크를 선택 합니다.
+   4. 경고 페이지에서 **이 기능 비활성화** 링크를 선택합니다.
 
-      이 경우 FeatureDeactivating () 이벤트 처리기에서 오류가 발생 하 여 오류가 발생 합니다.
+      오류가 발생합니다(이 경우 FeatureDeactivating() 이벤트 처리기에서 throw된 오류로 인해).
 
-3. PowerShell 창에서 [start-webapplicationmonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) 명령을 실행 하 여 .itrace 파일을 만들고, 모니터링을 중지 하 고, SharePoint 솔루션을 다시 시작 합니다.
+3. PowerShell 창에서 [Stop-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472753(v=sc.20)) 명령을 실행하여 .iTrace 파일을 만들고, 모니터링을 중지하고, SharePoint 솔루션을 다시 시작합니다.
 
-     **Start-webapplicationmonitoring***" \<SharePointSite> \\<SharePointAppName \> "*  
+     **Stop-WebApplicationMonitoring***"<\<SharePointSite> \\ SharePointAppName \> "*  
 
 ## <a name="debug-and-fix-the-sharepoint-solution"></a>SharePoint 솔루션 디버그 및 수정
 
-이제 Visual Studio에서 IntelliTrace 로그 파일을 확인 하 여 SharePoint 솔루션에서 오류를 찾아 수정할 수 있습니다.
+이제 Visual Studio IntelliTrace 로그 파일을 보고 SharePoint 솔루션에서 오류를 찾아 수정할 수 있습니다.
 
-1. \IntelliTraceLogs 폴더에서 Visual Studio의 .Itrace 파일을 엽니다.
+1. \IntelliTraceLogs 폴더의 Visual Studio .iTrace 파일을 엽니다.
 
-     **IntelliTrace 요약** 페이지가 나타납니다. 오류가 처리 되지 않았기 때문에 SharePoint 상관 관계 ID (GUID)가 **분석** 섹션의 처리 되지 않은 예외 영역에 나타납니다. 오류가 발생 한 호출 스택을 보려면 **호출 스택** 단추를 선택 합니다.
+     **IntelliTrace 요약** 페이지가 나타납니다. 오류가 처리되지 않았기 때문에 SharePoint 상관 관계 ID(GUID)가 **분석** 섹션의 처리되지 않은 예외 영역에 나타납니다. 오류가 발생한 **호출 스택을** 보려면 호출 스택 단추를 선택합니다.
 
-2. **디버그 예외** 단추를 선택 합니다.
+2. 예외 **디버그** 단추를 선택합니다.
 
-     메시지가 표시 되 면 기호 파일을 로드 합니다. **IntelliTrace** 창에서 예외는 "throw 됨: 심각한 오류가 발생 했습니다."로 강조 표시 됩니다.
+     메시지가 표시되면 기호 파일을 로드합니다. **IntelliTrace** 창에서 예외는 "Throw됨: 심각한 오류가 발생했습니다!"로 강조 표시됩니다.
 
-     IntelliTrace 창에서 예외를 선택 하 여 실패 한 코드를 표시 합니다.
+     IntelliTrace 창에서 예외를 선택하여 실패한 코드를 표시합니다.
 
-3. SharePoint 솔루션을 연 다음 FeatureDeactivating () 프로시저의 위쪽에서 **throw** 문을 주석으로 처리 하거나 제거 하 여 오류를 수정 합니다.
+3. SharePoint 솔루션을 연 다음 FeatureDeactivating() 프로시저 맨 위에 있는 **throw** 문을 주석으로 제거하거나 제거하여 오류를 수정합니다.
 
-4. Visual Studio에서 솔루션을 다시 빌드한 다음 SharePoint에 다시 배포 합니다.
+4. Visual Studio 솔루션을 다시 빌드한 다음 SharePoint에 다시 배포합니다.
 
-5. 다음 단계를 수행 하 여 기능을 비활성화 합니다.
+5. 다음 단계를 수행하여 기능을 비활성화합니다.
 
-    1. SharePoint의 **사이트 작업** 메뉴에서 **사이트 설정** 을 선택 합니다.
+    1. SharePoint의 **사이트 작업** 메뉴에서 **사이트 설정** 을 선택합니다.
 
-    2. **사이트 작업** 에서 **사이트 기능 관리** 링크를 선택 합니다.
+    2. **사이트 작업에서** **사이트 기능 관리** 링크를 선택합니다.
 
-    3. **IntelliTraceTest Feature1** 옆의 **비활성화** 단추를 선택 합니다.
+    3. **IntelliTraceTest Feature1** 옆에 있는 **비활성화** 단추를 선택합니다.
 
-    4. 경고 페이지에서 **이 기능 비활성화** 링크를 선택 합니다.
+    4. 경고 페이지에서 **이 기능 비활성화** 링크를 선택합니다.
 
-6. 작업 목록을 열고 비활성화 태스크의 **상태** 값이 "완료 됨" 인지 확인 하 고 해당 **% Complete** 값이 100% 인지 확인 합니다.
+6. 작업 목록을 열고 비활성화 작업의 **상태** 값이 "완료"이고 **해당 % 완료** 값이 100%인지 확인합니다.
 
-     이제 코드가 제대로 실행 됩니다.
+     이제 코드가 제대로 실행됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [SharePoint 코드 확인 및 디버그](../sharepoint/verifying-and-debugging-sharepoint-code.md)
 - [IntelliTrace](../debugger/intellitrace.md)
-- [연습: 단위 테스트를 사용 하 여 SharePoint 코드 확인](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
+- [연습: 단위 테스트를 사용하여 SharePoint 코드 확인](/previous-versions/visualstudio/visual-studio-2010/gg599006\(v\=vs.100\))
