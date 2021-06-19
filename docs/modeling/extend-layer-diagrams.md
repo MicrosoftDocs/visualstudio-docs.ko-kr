@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, creating extensions
 - layer models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2ed8700cfb18aacf41464bfdfacaedac557bb00
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935146"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388908"
 ---
 # <a name="extend-dependency-diagrams"></a>종속성 다이어그램 확장
 
@@ -35,9 +35,9 @@ ms.locfileid: "99935146"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-레이어 확장을 실행 하려는 컴퓨터에 적합 한 버전의 Visual Studio가 설치 되어 있어야 합니다. 종속성 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
+레이어 확장을 실행 하려는 컴퓨터에 적합 한 버전의 Visual Studio가 설치 되어 있어야 합니다. 종속성 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [종속성 다이어그램: 지침](../modeling/layer-diagrams-guidelines.md)

@@ -1,6 +1,6 @@
 ---
 title: 앱용 모델 만들기
-description: 모델링 다이어그램을 사용 하 여 코드 및 소프트웨어 시스템에서 지원 해야 하는 사용자 요구 사항에 대 한 아이디어를 이해 하 고 명확 하 게 전달 하는 방법을 알아봅니다.
+description: 모델링 다이어그램을 통해 소프트웨어 시스템에서 지원해야 하는 코드 및 사용자 요구 사항에 대한 아이디어를 이해하고 명확하게 파악하고 전달하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,23 +18,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9adf4445ca4b52e23fce91bb1f574e55fbab4f1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4642c73279340c710ed82d57563bdc3b84aff4f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945385"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389516"
 ---
 # <a name="create-models-for-your-app"></a>앱용 모델 만들기
 
 모델링 다이어그램을 통해 코드에 대한 아이디어 및 소프트웨어 시스템에서 지원해야 하는 사용자 요구 사항을 이해하고 분명히 설명하고 전달할 수 있습니다.
 
-각 종류의 다이어그램을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
+각 유형의 다이어그램을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원을 참조하세요.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 시스템 또는 기존 코드의 아키텍처를 시각화하려면 다음 다이어그램을 만듭니다.
 

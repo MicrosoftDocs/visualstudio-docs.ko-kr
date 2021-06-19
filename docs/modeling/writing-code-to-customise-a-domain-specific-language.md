@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3363857d9a953b61e18eb4b0cb891b20dbed1eb5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2231ef94bee01558e2c26899a5d9a0c855489e94
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923963"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388050"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>도메인 특정 언어를 사용자 지정하는 코드 작성
 
@@ -74,6 +74,6 @@ DSL을 사용 하는 코드를 작성할 수 있는 몇 가지 컨텍스트가 �
 
 - **Serialization**. 저장소는 포함 된 개체를 파일에 serialize 하는 표준 방법을 제공 합니다. Serialize 및 deserialize에 대 한 규칙을 사용자 지정할 수 있습니다. 자세한 내용은 [File Storage 및 XML Serialization 사용자 지정](../modeling/customizing-file-storage-and-xml-serialization.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도메인별 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)

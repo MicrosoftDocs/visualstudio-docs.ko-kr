@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22940fb86ab0cfd7262a3ca7845521847add2dff
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924061"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388128"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>연습: 텍스트 템플릿을 사용하여 코드 생성
 
@@ -105,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ### <a name="add-a-test-code-file"></a>테스트 코드 파일 추가
 
-C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들어:
+C# 파일을 프로젝트에 추가하고, 여기에 원하는 코드의 샘플을 작성합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 using System;
@@ -402,13 +402,13 @@ namespace MyProject
 }
 ```
 
-### <a name="write-and-update-the-application"></a>응용 프로그램 작성 및 업데이트
+### <a name="write-and-update-the-application"></a>애플리케이션 작성 및 업데이트
 
 이제 제네릭 XML 코드를 사용하는 대신 생성된 클래스를 사용하여 강력한 형식의 스타일로 애플리케이션을 작성할 수 있습니다.
 
 XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다. 컴파일러는 애플리케이션 코드를 어디에서 업데이트해야 하는지를 개발자에게 알려 줍니다.
 
-예제 XML 파일이 변경 될 때 클래스를 다시 생성 하려면 **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
+예제 XML 파일이 변경되면 클래스를 다시 생성하려면 **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환을** 클릭합니다.
 
 ## <a name="conclusion"></a>결론
 
@@ -430,7 +430,7 @@ XML 스키마가 변경되면 새 클래스를 쉽게 생성할 수 있습니다
 
 **오류 목록** 에 템플릿 변환 또는 컴파일 오류가 표시된 경우 또는 출력 파일이 정확히 생성되지 않은 경우 [TextTransform 유틸리티 사용하여 파일 생성](../modeling/generating-files-with-the-texttransform-utility.md)에 설명된 방법으로 텍스트 템플릿의 문제를 해결할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

@@ -3,18 +3,18 @@ title: '연습: 모델에 액세스 하는 텍스트 템플릿 디버그'
 description: 모델에 액세스 하는 텍스트 템플릿을 디버그 하는 방법에 대 한 정보를 제공 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d39b1ac72210145cc1efa1c513b7f3b76d8c2e36
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924119"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388232"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>연습: 모델에 액세스하는 텍스트 템플릿 디버깅
 도메인별 언어 솔루션에서 텍스트 템플릿을 수정 하거나 추가 하는 경우 엔진이 템플릿을 소스 코드로 변환 하거나 생성 된 코드를 컴파일할 때 오류가 발생할 수 있습니다. 다음 연습에서는 텍스트 템플릿을 디버깅 하기 위해 수행할 수 있는 몇 가지 작업을 보여 줍니다.

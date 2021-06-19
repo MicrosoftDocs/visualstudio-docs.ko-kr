@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 330a2a8f4173ddb22303064ee7f97ee025d05758
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 84f75298bc2854172eb7ec63bd6412e5703cfad7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924482"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388583"
 ---
 # <a name="understanding-the-dsl-code"></a>DSL 코드 이해
 
@@ -72,7 +72,7 @@ DSL (Domain-Specific Language) 솔루션은 Visual Studio에서 DSL 인스턴스
 
  구성 요소 솔루션 예제에서는 연결 작성기 중 하나의 이름이 ConnectionBuilder입니다. 도메인 관계의 이름이 Connection이므로 이는 우연의 일치입니다.
 
- 관계는 관계 메서드에서 생성 됩니다  `Builder.Connect()` . 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들어:
+ 관계는 관계 메서드에서 생성 됩니다  `Builder.Connect()` . 기본 버전은 소스 및 대상 모델 요소가 적절한지 확인한 다음 관계를 인스턴스화합니다. 예를 들면 다음과 같습니다.
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 

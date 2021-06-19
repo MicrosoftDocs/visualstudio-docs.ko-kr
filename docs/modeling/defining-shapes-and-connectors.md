@@ -1,28 +1,28 @@
 ---
 title: 모양 및 연결선 정의
-description: DSL (도메인별 언어)에서 다이어그램에 대 한 정보를 표시 하는 데 사용할 수 있는 몇 가지 기본 유형의 셰이프를 알아봅니다.
+description: DSL(도메인 특정 언어)로 다이어그램에 대한 정보를 표시하는 데 사용할 수 있는 몇 가지 기본 유형의 도형에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 898bb0f3a923cfeac863b365e4746a63ccbc4c91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622ff598ac2471814e51b0e268c12d40e726fb98
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935328"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385749"
 ---
-# <a name="define-shapes-and-connectors"></a>모양 및 연결선 정의
+# <a name="define-shapes-and-connectors"></a>도형 및 커넥터 정의
 
 DSL(Domain-Specific Language)에서 다이어그램에 정보를 표시하는 데 사용할 수 있는 다양한 기본 모양 형식이 있습니다.
 
-## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 도형 및 연결선의 기본 형식
+## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 셰이프 및 커넥터의 기본 형식
 
-DSL 다이어그램은 선 또는 *커넥터로* interlinked *셰이프* 컬렉션을 보여 줍니다. 이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).
+DSL 다이어그램은 선 또는 커넥터로 상호 연결된 *도형* 컬렉션을 *보여줍니다.* 이러한 모양에는 일반적으로 다음 사항이 적용됩니다(항상은 아님).
 
 - 모양은 모델 요소가 표시되는 표현입니다.
 
@@ -36,9 +36,9 @@ DSL 다이어그램은 선 또는 *커넥터로* interlinked *셰이프* 컬렉�
 
 다음 모양 형식을 사용할 수 있습니다.
 
-|모양 형식|Description|
+|모양 형식|설명|
 |-|-|
-|기하 도형|일반적으로 사용되는 사각형 또는 타원형 모양입니다. 모양 경계를 기준으로 특정 위치에 텍스트 및 아이콘 Decorator를 표시할 수 있습니다. Geometry 셰이프 내에 셰이프를 중첩할 수도 있습니다.|
+|기하 도형|일반적으로 사용되는 사각형 또는 타원형 모양입니다. 모양 경계를 기준으로 특정 위치에 텍스트 및 아이콘 Decorator를 표시할 수 있습니다. 기하 도형 내에 도형을 중첩할 수도 있습니다.|
 |구획 모양|UML 클래스와 같이 헤더 및 구획을 포함하는 사각형입니다. 각 구획은 텍스트 행 목록을 포함할 수 있습니다.<br /><br /> 행은 보통 모양으로 표시되는 요소 아래에 포함된 요소를 나타냅니다. 예를 들어 클래스 다이어그램 솔루션 템플릿에서 DSL을 만들 수 있습니다.|
 |이미지 모양|이미지를 표시하는 모양입니다.|
 |포트 모양|다른 모양의 윤곽에 연결되는 작은 사각형입니다. 대개 구성 요소 모델에 사용됩니다.<br /><br /> 포트로 표시되는 모델 요소는 일반적으로 부모 모양으로 표시되는 요소 아래에 포함됩니다. 구성 요소 솔루션 템플릿에서 DSL을 만드는 경우를 예로 들 수 있습니다.<br /><br /> 기본적으로 포트 모양은 부모의 측면을 따라 슬라이드할 수 있습니다. 부울 규칙을 정의해 이 모양을 특정 위치로 제약할 수 있습니다.<br /><br /> 포트 모양을 매우 작고 투명하게 만들면 부모 모양의 표면에서 고정 연결점을 제공하는 데 사용할 수 있습니다.|

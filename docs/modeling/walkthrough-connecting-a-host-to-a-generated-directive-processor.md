@@ -1,45 +1,45 @@
 ---
-title: 생성 된 지시문 프로세서에 호스트 연결
-description: 지시문 프로세서를 호출 하는 텍스트 템플릿을 지원 하도록 사용자 지정 호스트를 확장 하는 방법을 알아봅니다.
+title: 생성된 지시문 프로세서에 호스트 연결
+description: 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하게 사용자 지정 호스트를 확장하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed51688e5b65e34d7067963dbf7b839b1f022768
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924122"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388323"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>연습: 생성된 지시문 프로세서에 호스트 연결
 
-텍스트 템플릿을 처리 하는 고유한 호스트를 작성할 수 있습니다. 기본 사용자 지정 호스트는 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)에 설명 되어 있습니다. 여러 출력 파일을 생성 하는 등의 기능을 추가 하 여 해당 호스트를 확장할 수 있습니다.
+텍스트 템플릿을 처리하는 호스트를 직접 작성할 수 있습니다. 기본 사용자 지정 호스트는 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기에](../modeling/walkthrough-creating-a-custom-text-template-host.md)설명되어 있습니다. 해당 호스트를 확장하여 여러 출력 파일 생성과 같은 함수를 추가할 수 있습니다.
 
-이 연습에서는 지시문 프로세서를 호출 하는 텍스트 템플릿을 지원 하도록 사용자 지정 호스트를 확장 합니다. 도메인 특정 언어를 정의 하는 경우 도메인 모델에 대 한 *지시문 프로세서* 를 생성 합니다. 지시문 프로세서를 사용 하면 사용자가 모델에 액세스 하는 템플릿을 더 쉽게 작성할 수 있으므로 템플릿에서 어셈블리 및 가져오기 지시문을 작성 해야 하는 필요성이 줄어듭니다.
+이 연습에서는 지시문 프로세서를 호출하는 텍스트 템플릿을 지원하게 사용자 지정 호스트를 확장합니다. 도메인별 언어를 정의하면 도메인 모델에 대한 *지시문 프로세서가* 생성됩니다. 지시문 프로세서를 사용하면 사용자가 모델에 액세스하는 템플릿을 더 쉽게 작성할 수 있어 템플릿에서 어셈블리 및 가져오기 지시문을 작성할 필요가 줄어듭니다.
 
 > [!NOTE]
-> 이 연습은 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)를 기반으로 합니다. 먼저이 연습을 수행 합니다.
+> 이 연습은 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기를](../modeling/walkthrough-creating-a-custom-text-template-host.md)기반으로 합니다. 먼저 해당 연습을 수행합니다.
 
 이 연습에는 다음 작업이 포함됩니다.
 
-- 를 사용 하 여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인 모델을 기반으로 하는 지시문 프로세서를 생성 합니다.
+- 를 사용하여 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인 모델을 기반으로 하는 지시문 프로세서를 생성합니다.
 
-- 사용자 지정 텍스트 템플릿 호스트를 생성 된 지시문 프로세서에 연결 합니다.
+- 사용자 지정 텍스트 템플릿 호스트를 생성된 지시문 프로세서에 연결
 
-- 생성 된 지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
+- 생성된 지시문 프로세서를 통해 사용자 지정 호스트를 테스트합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
@@ -51,11 +51,11 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-또한 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)에서 만든 사용자 지정 텍스트 템플릿 변환이 있어야 합니다.
+또한 연습: 사용자 지정 텍스트 템플릿 [호스트 만들기에서](../modeling/walkthrough-creating-a-custom-text-template-host.md)만든 사용자 지정 텍스트 템플릿 변환이 있어야 합니다.
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Domain-Specific 언어 도구를 사용 하 여 지시문 프로세서 생성
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Domain-Specific 언어 도구를 사용하여 지시문 프로세서 생성
 
-이 연습에서는 Domain-Specific 언어 디자이너 마법사를 사용 하 여 솔루션 DSLMinimalTest 도메인 특정 언어를 만듭니다.
+이 연습에서는 Domain-Specific 언어 디자이너 마법사를 사용하여 DSLMinimalTest 솔루션에 대한 도메인별 언어를 만듭니다.
 
 1. 다음과 같은 특징이 있는 도메인별 언어 솔루션을 만듭니다.
 
@@ -67,50 +67,50 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
    - 회사 이름: Fabrikam
 
-   도메인별 언어 솔루션을 만드는 방법에 대 한 자세한 내용은 [방법: Domain-Specific 언어 솔루션 만들기](../modeling/how-to-create-a-domain-specific-language-solution.md)를 참조 하세요.
+   도메인별 언어 솔루션을 만드는 방법에 대한 자세한 내용은 [방법: Domain-Specific 언어 솔루션 만들기를 참조하세요.](../modeling/how-to-create-a-domain-specific-language-solution.md)
 
 2. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
    > [!IMPORTANT]
-   > 이 단계에서는 지시문 프로세서를 생성 하 고 레지스트리에 대 한 키를 추가 합니다.
+   > 이 단계에서는 지시문 프로세서를 생성하고 레지스트리에 해당 키를 추가합니다.
 
 3. **디버그** 메뉴에서 **디버깅 시작** 을 클릭합니다.
 
-    Visual Studio의 두 번째 인스턴스가 열립니다.
+    Visual Studio 두 번째 인스턴스가 열립니다.
 
-4. 실험적 빌드의 **솔루션 탐색기** 에서 파일 **샘플. min** 을 두 번 클릭 합니다.
+4. 실험적 빌드의 **솔루션 탐색기** **sample.min** 파일을 두 번 클릭합니다.
 
-    파일이 디자이너에서 열립니다. 모델에는 두 가지 요소인 ExampleElement1 및 ExampleElement2와 그 사이의 링크가 있습니다.
+    디자이너에서 파일이 열립니다. 모델에는 ExampleElement1 및 ExampleElement2라는 두 개의 요소와 이들 간의 링크가 있습니다.
 
-5. Visual Studio의 두 번째 인스턴스를 닫습니다.
+5. Visual Studio 두 번째 인스턴스를 닫습니다.
 
-6. 솔루션을 저장 하 고 Domain-Specific 언어 디자이너를 닫습니다.
+6. 솔루션을 저장한 다음 Domain-Specific 언어 디자이너를 닫습니다.
 
-## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>사용자 지정 텍스트 템플릿 호스트를 지시문 프로세서에 연결
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>지시문 프로세서에 사용자 지정 텍스트 템플릿 호스트 연결
 
-지시문 프로세서를 생성 한 후에는 [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)에서 만든 지시문 프로세서 및 사용자 지정 텍스트 템플릿 호스트를 연결 합니다.
+지시문 프로세서를 생성한 후 지시문 프로세서와 연습: 사용자 지정 텍스트 템플릿 호스트 만들기에서 만든 [사용자 지정 텍스트 템플릿 호스트를 연결합니다.](../modeling/walkthrough-creating-a-custom-text-template-host.md)
 
 1. CustomHost 솔루션을 엽니다.
 
 2. **프로젝트** 메뉴에서 **참조 추가** 를 클릭합니다.
 
-     **참조 추가** 대화 상자가 열리고 **.net** 탭이 표시 됩니다.
+     **.NET** 탭이 표시된 **참조 추가** 대화 상자가 열립니다.
 
 3. 다음 참조를 추가합니다.
 
-    - VisualStudio입니다.
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - VisualStudio (영문).
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - VisualStudio. TextTemplating 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - VisualStudio. * 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - VisualStudio. i.
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - VisualStudio. Vshost.exe.
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4. Program.cs 또는 module1.vb의 맨 위에 다음 코드 줄을 추가 합니다.
+4. Program.cs 또는 Module1.vb의 맨 위에 다음 코드 줄을 추가합니다.
 
     ```csharp
     using Microsoft.Win32;
@@ -120,10 +120,10 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     Imports Microsoft.Win32
     ```
 
-5. 속성에 대 한 코드를 찾아 `StandardAssemblyReferences` 다음 코드로 바꿉니다.
+5. 속성에 대한 코드를 찾아 `StandardAssemblyReferences` 다음 코드로 대체합니다.
 
     > [!NOTE]
-    > 이 단계에서는 호스트에서 지원 되는 생성 된 지시문 프로세서에 필요한 어셈블리에 대 한 참조를 추가 합니다.
+    > 이 단계에서는 호스트에서 지원할 생성된 지시문 프로세서에 필요한 어셈블리에 대한 참조를 추가합니다.
 
     ```csharp
     //the host can provide standard assembly references
@@ -156,10 +156,10 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     }
     ```
 
-6. 함수에 대 한 코드를 찾아 `ResolveDirectiveProcessor` 다음 코드로 바꿉니다.
+6. 함수에 대한 코드를 찾아 `ResolveDirectiveProcessor` 다음 코드로 대체합니다.
 
     > [!IMPORTANT]
-    > 이 코드에는 연결 하려는 생성 된 지시문 프로세서의 이름에 대 한 하드 코딩 된 참조가 포함 되어 있습니다. 이 경우 레지스트리에 나열 된 모든 지시문 프로세서를 검색 하 고 일치 하는 항목을 찾으려고 시도 하는 것이 더 일반적입니다. 이 경우 호스트는 생성 된 모든 지시문 프로세서를 사용 합니다.
+    > 이 코드에는 연결하려는 생성된 지시문 프로세서의 이름에 대한 하드 코드된 참조가 포함되어 있습니다. 이 작업을 보다 일반적으로 쉽게 만들 수 있습니다. 이 경우 레지스트리에 나열된 모든 지시문 프로세서를 찾아 일치 항목 찾기를 시도합니다. 이 경우 호스트는 생성된 지시문 프로세서에서 작동합니다.
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -234,18 +234,18 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
 8. **빌드** 메뉴에서 **솔루션 빌드** 를 클릭합니다.
 
-## <a name="test-the-custom-host-with-the-directive-processor"></a>지시문 프로세서를 사용 하 여 사용자 지정 호스트 테스트
+## <a name="test-the-custom-host-with-the-directive-processor"></a>지시문 프로세서를 통해 사용자 지정 호스트 테스트
 
-사용자 지정 텍스트 템플릿 호스트를 테스트 하려면 먼저 생성 된 지시문 프로세서를 호출 하는 텍스트 템플릿을 작성 해야 합니다. 그런 다음 사용자 지정 호스트를 실행 하 고, 텍스트 템플릿의 이름을 전달 하 고, 지시문이 올바르게 처리 되었는지 확인 합니다.
+사용자 지정 텍스트 템플릿 호스트를 테스트하려면 먼저 생성된 지시문 프로세서를 호출하는 텍스트 템플릿을 작성해야 합니다. 그런 다음 사용자 지정 호스트를 실행하고 텍스트 템플릿의 이름을 전달한 다음 지시문이 올바르게 처리되었는지 확인합니다.
 
-### <a name="create-a-text-template-to-test-the-custom-host"></a>텍스트 템플릿을 만들어 사용자 지정 호스트 테스트
+### <a name="create-a-text-template-to-test-the-custom-host"></a>사용자 지정 호스트를 테스트하는 텍스트 템플릿 만들기
 
-1. 텍스트 파일을 만들고 이름을로 `TestTemplateWithDP.tt` 합니다. 메모장과 같은 텍스트 편집기를 사용 하 여 파일을 만들 수 있습니다.
+1. 텍스트 파일을 만들고 이름을 로 `TestTemplateWithDP.tt` 지정합니다. 메모장과 같은 텍스트 편집기를 사용하여 파일을 만들 수 있습니다.
 
 2. 텍스트 파일에 다음을 추가합니다.
 
     > [!NOTE]
-    > 텍스트 템플릿의 프로그래밍 언어는 사용자 지정 호스트의 프로그래밍 언어와 일치 하지 않아도 됩니다.
+    > 텍스트 템플릿의 프로그래밍 언어는 사용자 지정 호스트의 프로그래밍 언어와 일치할 필요가 없습니다.
 
     ```csharp
     Text Template Host Test
@@ -314,7 +314,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     #>
     ```
 
-3. 코드에서을 \<YOUR PATH> 첫 번째 절차에서 만든 디자인 특정 언어의 샘플. min 파일의 경로로 바꿉니다.
+3. 코드에서 를 \<YOUR PATH> 첫 번째 절차에서 만든 디자인별 언어의 Sample.min 파일 경로로 대체합니다.
 
 4. 파일을 저장하고 닫습니다.
 
@@ -329,7 +329,7 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기** 에서 CustomHost.exe 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
+    > 주소를 입력하는 대신 Windows 탐색기 CustomHost.exe 파일로 이동한 다음 파일을 명령 프롬프트 창으로 끌 수 있습니다.
 
 3. 공백을 입력합니다.
 
@@ -340,17 +340,17 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > 주소를 입력 하는 대신 **Windows 탐색기** 에서 TestTemplateWithDP.txt 파일을 찾은 다음이 파일을 명령 프롬프트 창으로 끌어 놓을 수 있습니다.
+    > 주소를 입력하는 대신 Windows 탐색기 TestTemplateWithDP.txt 파일로 이동한 다음 파일을 명령 프롬프트 창으로 끌 수 있습니다.
 
-     사용자 지정 호스트 응용 프로그램이 실행 되어 텍스트 템플릿 변환 프로세스를 시작 합니다.
+     사용자 지정 호스트 애플리케이션이 실행되고 텍스트 템플릿 변환 프로세스가 시작됩니다.
 
-5. **Windows 탐색기** 에서 TestTemplateWithDP.txt 파일이 있는 폴더로 이동 합니다.
+5. **Windows 탐색기** 파일 TestTemplateWithDP.txt 포함된 폴더를 찾습니다.
 
-     폴더에는 파일 TestTemplateWithDP1.txt 포함 되어 있습니다.
+     폴더에는 파일 TestTemplateWithDP1.txt 포함되어 있습니다.
 
 6. 이 파일을 열어 텍스트 템플릿 변환의 결과를 확인합니다.
 
-     생성 된 텍스트 출력의 결과가 다음과 같이 표시 됩니다.
+     생성된 텍스트 출력의 결과가 나타나고 다음과 같이 표시됩니다.
 
     ```
     Text Template Host Test
@@ -362,6 +362,6 @@ DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [연습: 사용자 지정 텍스트 템플릿 호스트 만들기](../modeling/walkthrough-creating-a-custom-text-template-host.md)

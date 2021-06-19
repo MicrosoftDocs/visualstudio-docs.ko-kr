@@ -4,17 +4,17 @@ description: 텍스트 및 이미지 파일 사용자 지정에 대해 알아봅
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42819379aa2b21788686bf0917b1523bf77e6c64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f52c4deda5b934a9b55c5ecfeec95ca633edf15e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935367"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389269"
 ---
 # <a name="customizing-text-and-image-fields"></a>텍스트 및 이미지 필드 사용자 지정
 도형에서 텍스트 데코레이터를 정의할 때 텍스트 데코레이터는 TextField로 표시 됩니다. TextFields 및 기타 ShapeFields를 초기화 하는 예는 DSL 솔루션에서 Dsl\GeneratedCode\Shapes.cs를 검사 합니다.
@@ -263,7 +263,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [다이어그램에 배경 이미지 설정](../modeling/setting-a-background-image-on-a-diagram.md)

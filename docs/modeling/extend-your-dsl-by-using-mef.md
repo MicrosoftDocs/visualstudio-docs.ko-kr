@@ -4,17 +4,17 @@ description: MEF (Managed Extensibility Framework)를 사용 하 여 DSL (도메
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a4572a7210203d6c7525a278430210c954c3405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935068"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388882"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF를 사용하여 DSL 확장
 
@@ -133,7 +133,7 @@ MEF에 대 한 자세한 내용은 [Managed Extensibility Framework (mef)](/dotn
 
    - DSL 프로젝트에 액세스할 수 있는 경우 디렉터리 **dsl \\ bin \\ \*** 에서 어셈블리 파일을 찾을 수 있습니다.
 
-   - DSL VSIX 파일에 액세스할 수 있는 경우 VSIX 파일의 파일 이름 확장명을 ".zip"으로 변경 하 여 어셈블리를 찾을 수 있습니다. .Zip 파일의 압축을 해제 합니다.
+   - DSL VSIX 파일에 액세스할 수 있는 경우 VSIX 파일의 파일 이름 확장명을 ".zip"로 변경 하 여 어셈블리를 찾을 수 있습니다. .zip 파일의 압축을 해제 합니다.
 
 3. 다음 .NET 어셈블리에 대 한 참조를 추가 합니다.
 
@@ -374,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio 확장 전달](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF(Managed Extensibility Framework)](/dotnet/framework/mef/index)

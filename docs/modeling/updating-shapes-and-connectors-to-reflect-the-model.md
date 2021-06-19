@@ -4,17 +4,17 @@ description: Visual Studio의 도메인별 언어에서 기본 모델의 상태�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f3785fe232b20123475bd85be2be7148e5b87e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6439a01de2a02361914ce227c43d903f1b24b405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924351"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388570"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>모양 및 연결선을 업데이트하여 모델 반영
 
@@ -86,7 +86,7 @@ DSL 정의에서 shape 클래스를 마우스 오른쪽 단추로 클릭 하 고
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>OnChildConfigured 된 셰이프 속성을 사용 하 여 초기화
 
-셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 `OnChildConfigured()` 다이어그램 클래스의 부분 정의에 재정의를 적용 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs** 에 있습니다. 예를 들어:
+셰이프를 처음 만들 때 셰이프 속성을 설정 하려면 `OnChildConfigured()` 다이어그램 클래스의 부분 정의에 재정의를 적용 합니다. 다이어그램 클래스는 DSL 정의에 지정 되 고 생성 된 코드는 **Dsl\generated Code\Diagram.cs** 에 있습니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 partial class MyLanguageDiagram

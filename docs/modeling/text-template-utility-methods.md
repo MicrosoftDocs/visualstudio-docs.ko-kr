@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc879a19d3dfcd9e1e8e1bcd79f0488a312e96c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b45bf6418562da5315c986a64a1295c137e982d6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924567"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388687"
 ---
 # <a name="text-template-utility-methods"></a>텍스트 템플릿 유틸리티 메서드
 
@@ -121,7 +121,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-의 유형은 `this.Host` 템플릿이 실행 되는 호스트 유형에 따라 달라 집니다. Visual Studio에서 실행 되는 템플릿에서로 캐스팅 하 여 `this.Host` `IServiceProvider` IDE와 같은 서비스에 액세스할 수 있습니다. 예를 들어:
+의 유형은 `this.Host` 템플릿이 실행 되는 호스트 유형에 따라 달라 집니다. Visual Studio에서 실행 되는 템플릿에서로 캐스팅 하 여 `this.Host` `IServiceProvider` IDE와 같은 서비스에 액세스할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

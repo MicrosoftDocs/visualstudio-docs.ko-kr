@@ -1,30 +1,30 @@
 ---
 title: 모델에서 테스트 개발
-description: 시스템 및 해당 구성 요소의 테스트를 구성 하는 데 도움이 되는 요구 사항 및 아키텍처 모델을 사용 하는 방법을 알아봅니다.
+description: 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4884ec4eb3e316e22e4ba54cd8defe71d4b8018
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dadffd0a2950d55145b24d3172564eb572f98d70
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935172"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389152"
 ---
 # <a name="develop-tests-from-a-model"></a>모델에서 테스트 개발
 요구 사항 및 아키텍처 모델을 사용하여 시스템 및 해당 구성 요소의 테스트를 구성하도록 지원할 수 있습니다. 이렇게 하면 사용자 및 기타 이해 관계자에게 중요한 요구 사항을 테스트하는지 확인할 수 있고 요구 사항이 변경될 때 테스트를 빠르게 업데이트할 수 있습니다. [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]를 사용하는 경우 모델과 테스트 간의 링크를 유지할 수도 있습니다.
 
- 이러한 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
+ 이러한 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 버전 지원을 참조하세요.](../modeling/analyze-and-model-your-architecture.md#VersionSupport)
 
 ## <a name="system-and-subsystem-testing"></a>시스템 및 하위 시스템 테스트
- *승인 테스트* 라고도 하는 *시스템 테스트* 는 사용자의 요구 사항을 충족 하는지 여부를 테스트 하는 것을 의미 합니다. 이러한 테스트는 내부 디자인이 아니라 시스템 외부에 표시되는 동작과 관련이 있습니다.
+ *수용 테스트라고도* 하는 시스템 *테스트는* 사용자의 요구 사항이 충족되는지 여부를 테스트하는 것을 의미합니다. 이러한 테스트는 내부 디자인이 아니라 시스템 외부에 표시되는 동작과 관련이 있습니다.
 
  시스템 테스트는 시스템을 확장하거나 다시 디자인할 때 매우 유용합니다. 코드를 변경할 때 버그가 발생하는 것을 방지하는 데 도움이 됩니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "99935172"
  하위 시스템 테스트는 시스템의 주요 구성 요소에 동일한 원칙을 적용합니다. 각 구성 요소가 다른 구성 요소와 별도로 테스트됩니다. 하위 시스템 테스트는 구성 요소의 사용자 인터페이스 또는 API에 표시되는 동작에 중점을 둡니다.
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>요구 사항 모델에서 시스템 테스트 파생
- 시스템 테스트와 요구 사항 모델 간의 관계를 만들고 유지 관리할 수 있습니다. 이 관계를 설정하려면 요구 사항 모델의 주요 요소에 해당하는 테스트를 작성합니다. Visual Studio는 테스트 및 모델 파트 간에 링크를 만들 수 있도록 하여 해당 관계의 유지 관리를 도와줍니다. 요구 사항 모델에 대 한 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
+ 시스템 테스트와 요구 사항 모델 간의 관계를 만들고 유지 관리할 수 있습니다. 이 관계를 설정하려면 요구 사항 모델의 주요 요소에 해당하는 테스트를 작성합니다. Visual Studio는 테스트 및 모델 파트 간에 링크를 만들 수 있도록 하여 해당 관계의 유지 관리를 도와줍니다. 요구 사항 모델에 대한 자세한 내용은 [모델 사용자 요구 사항 을 참조하세요.](../modeling/model-user-requirements.md)
 
 ### <a name="write-tests-for-each-use-case"></a>각 사용 사례에 대한 테스트 작성
  [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]를 사용하는 경우 요구 사항 모델에 정의된 각 사용 사례에 대한 테스트 그룹을 만들 수 있습니다. 예를 들어 주문 만들기 및 주문에 항목 추가를 포함하는 음식 주문 사용 사례가 있는 경우 전체 사용 사례 및 보다 자세한 사용 사례에 대한 테스트를 모두 만들 수 있습니다.
@@ -55,17 +55,17 @@ ms.locfileid: "99935172"
 - 테스트를 디자인할 때 사후 조건이 달성되었는지 여부를 확인하는 테스트 데이터 선택 항목을 코드 또는 스크립트에서 구분합니다. 예를 들어 단순한 산술 함수 테스트는 입력 4, 출력이 2인지 확인이 될 수 있습니다. 대신, 스크립트를 입력 선택, 출력에 자신을 곱하고 결과가 원래 입력인지 확인으로 디자인합니다. 이 스타일을 사용하면 테스트의 본문을 변경하지 않고 테스트 입력을 확인할 수 있습니다.
 
 #### <a name="linking-tests-to-use-cases"></a>사용 사례에 테스트 연결
- 를 사용 하 여 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 테스트를 디자인 하 고 실행 하는 경우 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목에서 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.
+ 를 사용하여 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 테스트를 디자인하고 실행하는 경우 요구 사항, 사용 사례 또는 사용자 스토리 작업 항목에 따라 테스트를 구성할 수 있습니다. 모델의 사용 사례에 이러한 작업 항목을 연결할 수 있습니다. 이렇게 하면 테스트에 대한 요구 사항 변경을 신속하게 추적할 수 있으며 각 사용 사례의 진행률을 추적하는 데 도움이 됩니다.
 
 ###### <a name="to-link-tests-to-a-use-case"></a>사용 사례에 테스트를 연결하려면
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
 
-    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 프로젝트에서 Team Foundation과 함께 사용 하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목 일 수 있습니다. 자세한 내용은 [agile 도구 및 agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)를 참조 하세요.
+    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 프로젝트에서 Team Foundation과 함께 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Agile 도구 정보 및 Agile 프로젝트 관리를 참조하세요.](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
 2. 모델에서 하나 이상의 사용 사례에 요구 사항 작업 항목을 연결합니다.
 
-    사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭 한 다음 **작업 항목에 연결을** 클릭 합니다.
+    사용 사례 다이어그램에서 사용 사례를 마우스 오른쪽 단추로 클릭한 다음 **작업 항목에 연결을** 클릭합니다.
 
 3. 테스트 도구 모음에 사용 사례를 확인하는 테스트 사례를 추가합니다.
 
@@ -112,7 +112,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>모델에서 하위 시스템 테스트 파생
  대규모 시스템의 전반적인 디자인에서 구성 요소 또는 하위 시스템을 식별할 수 있습니다. 이러한 구성 요소 또는 하위 시스템은 별도로 디자인될 수 있거나, 서로 다른 컴퓨터에 있거나, 다양한 방식으로 다시 결합할 수 있는 재사용 가능한 모듈인 파트를 나타냅니다.
 
- 전체 시스템에 사용하는 것과 동일한 원칙을 각 주요 구성 요소에 적용할 수 있습니다. 대규모 프로젝트에서는 각 구성 요소에 자체 요구 사항 모델이 있을 수 있습니다. 작은 프로젝트에서는 아키텍처 모델 또는 전반적인 디자인을 만들어 주요 구성 요소 및 상호 작용을 표시할 수 있습니다. 자세한 내용은 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)을 참조 하세요.
+ 전체 시스템에 사용하는 것과 동일한 원칙을 각 주요 구성 요소에 적용할 수 있습니다. 대규모 프로젝트에서는 각 구성 요소에 자체 요구 사항 모델이 있을 수 있습니다. 작은 프로젝트에서는 아키텍처 모델 또는 전반적인 디자인을 만들어 주요 구성 요소 및 상호 작용을 표시할 수 있습니다. 자세한 내용은 [앱의 아키텍처 모델링을 참조하세요.](../modeling/model-your-app-s-architecture.md)
 
  두 경우 모두, 요구 사항 모델과 시스템 테스트 간에 관계를 설정하는 것과 동일한 방식으로 모델 요소와 하위 시스템 테스트 간에 관계를 설정할 수 있습니다.
 
@@ -133,7 +133,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> 모델 요소에 테스트 사례 연결
  프로젝트에서 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]를 사용하는 경우 모델의 요소에 테스트를 연결할 수 있습니다. 이렇게 하면 요구 사항 변경의 영향을 받는 테스트를 빠르게 찾을 수 있으며 요구 사항이 인식된 익스텐트를 추적하는 데 도움이 됩니다.
 
- 모든 종류의 요소에 테스트를 연결할 수 있습니다. 몇 가지 예제는 다음과 같습니다.
+ 모든 종류의 요소에 테스트를 연결할 수 있습니다. 다음은 몇 가지 예입니다.
 
 - 실행하는 테스트에 사용 사례를 연결합니다.
 
@@ -149,15 +149,15 @@ Assert (countAfter == countBefore = 1);
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]에서 요구 사항을 만들고 요구 사항에 따라 테스트 도구 모음을 만듭니다.
 
-    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 프로젝트에서 Team Foundation과 함께 사용 하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목 일 수 있습니다. 자세한 내용은 [agile 도구 및 agile 프로젝트 관리 정보](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)를 참조 하세요.
+    만드는 요구 사항은 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]에서 작업 항목이 됩니다. 프로젝트에서 Team Foundation과 함께 사용하는 프로세스 템플릿에 따라 사용자 스토리, 요구 사항 또는 사용 사례 작업 항목일 수 있습니다. 자세한 내용은 [Agile 도구 정보 및 Agile 프로젝트 관리를 참조하세요.](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
 2. 모델에서 하나 이상의 요소에 요구 사항 작업 항목을 연결합니다.
 
-    모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭 한 다음 **작업 항목에 연결을** 클릭 합니다.
+    모델링 다이어그램에서 요소, 주석 또는 관계를 마우스 오른쪽 단추로 클릭한 다음 **작업 항목에 연결을** 클릭합니다.
 
 3. 모델 요소에서 표현된 요구 사항을 확인하는 테스트 사례를 테스트 도구 모음에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)
 - [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)

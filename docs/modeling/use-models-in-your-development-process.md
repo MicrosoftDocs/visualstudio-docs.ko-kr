@@ -1,42 +1,42 @@
 ---
 title: 개발 프로세스에서 모델 사용
-description: Visual Studio에서 모델을 사용 하 여 시스템, 응용 프로그램 또는 구성 요소를 이해 하 고 변경 하는 데 도움을 줍니다.
+description: Visual Studio 모델을 사용하여 시스템, 애플리케이션 또는 구성 요소를 이해하고 변경할 수 있다는 것을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b0d46e1e293d0713cf7e71706fa0188aaea269
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 095a6f17691d3265320a7b77905f70903bec1cb5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959066"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388505"
 ---
 # <a name="use-models-in-your-development-process"></a>개발 프로세스에서 모델 사용
 
-Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. [Channel 9 비디오: 모델링을 통해 아키텍처 향상](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)을 참조 하세요.
+Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 구성 요소를 이해하고 변경할 수 있습니다. 모델은 시스템이 작동하는 세계를 시각화하고, 사용자 요구를 명확하게 설명하고, 시스템 아키텍처를 정의하고, 코드를 분석하고, 코드가 요구 사항을 충족하는지 확인하는 데 도움이 됩니다. [Channel 9 비디오: 모델링을 통해 아키텍처 향상을](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)참조하세요.
 
-각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)를 참조하세요.
+각 모델 형식을 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)를 참조하세요.
 
 모델은 다음과 같은 여러 방식에서 유용할 수 있습니다.
 
-- 모델링 다이어그램을 그리면 요구 사항, 아키텍처 및 전반적인 디자인에 관련된 개념을 명확하게 설명할 수 있습니다. 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
+- 모델링 다이어그램을 그리면 요구 사항, 아키텍처 및 전반적인 디자인에 관련된 개념을 명확하게 설명할 수 있습니다. 자세한 내용은 [모델 사용자 요구 사항 을 참조하세요.](../modeling/model-user-requirements.md)
 
 - 모델로 작업하면 요구 사항 불일치를 노출할 수 있습니다.
 
-- 모델을 사용하여 커뮤니케이션하면 중요한 개념을 자연어보다 더 명확하게 전달할 수 있습니다. 자세한 내용은 [응용 프로그램의 아키텍처 모델링](../modeling/model-your-app-s-architecture.md)을 참조 하세요.
+- 모델을 사용하여 커뮤니케이션하면 중요한 개념을 자연어보다 더 명확하게 전달할 수 있습니다. 자세한 내용은 [앱의 아키텍처 모델링을 참조하세요.](../modeling/model-your-app-s-architecture.md)
 
-- 때로는 모델을 사용하여 코드 또는 데이터베이스 스키마나 문서와 같은 기타 아티팩트를 생성할 수 있습니다. 예를 들어 Visual Studio의 모델링 구성 요소는 모델에서 생성 됩니다. 자세한 내용은 [모델에서 앱 생성 및 구성](../modeling/generate-and-configure-your-app-from-models.md)을 참조 하세요.
+- 때로는 모델을 사용하여 코드 또는 데이터베이스 스키마나 문서와 같은 기타 아티팩트를 생성할 수 있습니다. 예를 들어 Visual Studio 모델링 구성 요소는 모델에서 생성됩니다. 자세한 내용은 [모델에서 앱 생성 및 구성을 참조하세요.](../modeling/generate-and-configure-your-app-from-models.md)
 
 매우 민첩한 프로세스부터 격식 있는 프로세스에 이르기까지 다양한 프로세스에 모델을 사용할 수 있습니다.
 
-## <a name="use-models-to-reduce-ambiguity"></a>모델을 사용 하 여 모호성 줄이기
+## <a name="use-models-to-reduce-ambiguity"></a>모델을 사용하여 모호성 줄이기
 
 모델링 언어는 자연어보다 명확하므로 일반적으로 소프트웨어 개발 중에 필요한 아이디어를 표현하는 데 사용됩니다.
 
@@ -44,15 +44,15 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
 프로젝트가 대규모이고 전 세계 여러 지역에 팀이 있는 경우 모델을 사용하여 일반 텍스트보다 훨씬 더 효과적으로 요구 사항 및 아키텍처를 전달할 수 있습니다.
 
-두 경우 모두, 모델을 만들면 거의 항상 불일치와 모호성이 상당히 감소합니다. 이해 관계자에 따라 시스템이 작동하는 비즈니스 세계에 대한 이해가 다른 경우가 많으며, 개발자마다 시스템 작동 방식에 대한 이해가 서로 다릅니다. 일반적으로 논의의 초점으로 모델을 사용하면 이러한 차이가 노출됩니다. 모델을 사용 하 여 불일치를 줄이는 방법에 대 한 자세한 내용은 [사용자 요구 사항 모델링](../modeling/model-user-requirements.md)을 참조 하세요.
+두 경우 모두, 모델을 만들면 거의 항상 불일치와 모호성이 상당히 감소합니다. 이해 관계자에 따라 시스템이 작동하는 비즈니스 세계에 대한 이해가 다른 경우가 많으며, 개발자마다 시스템 작동 방식에 대한 이해가 서로 다릅니다. 일반적으로 논의의 초점으로 모델을 사용하면 이러한 차이가 노출됩니다. 모델을 사용하여 불일치를 줄이는 방법에 대한 자세한 내용은 모델 [사용자 요구 사항 을 참조하세요.](../modeling/model-user-requirements.md)
 
-## <a name="use-models-with-other-artifacts"></a>다른 아티팩트와 함께 모델 사용
+## <a name="use-models-with-other-artifacts"></a>다른 아티팩트에서 모델 사용
 
-모델 자체는 요구 사항 사양 또는 아키텍처가 아닙니다. 이러한 사항의 일부 측면을 보다 명확하게 표현하기 위한 도구지만 소프트웨어 디자인 중에 필요한 모든 개념을 표현할 수 있는 것은 아닙니다. 따라서 모델은 OneNote 페이지 또는 단락, Microsoft Office 문서, Team Foundation의 작업 항목, 프로젝트 방 벽의 스티커 메모 등의 다른 통신 수단과 함께 사용 해야 합니다. 마지막 항목을 제외하고 이러한 모든 개체 형식을 모델의 요소 파트에 연결할 수 있습니다.
+모델 자체는 요구 사항 사양 또는 아키텍처가 아닙니다. 이러한 사항의 일부 측면을 보다 명확하게 표현하기 위한 도구지만 소프트웨어 디자인 중에 필요한 모든 개념을 표현할 수 있는 것은 아닙니다. 따라서 모델은 OneNote 페이지 또는 단락, Microsoft Office 문서, Team Foundation의 작업 항목 또는 프로젝트실 벽의 스티커 메모와 같은 다른 통신 수단과 함께 사용해야 합니다. 마지막 항목을 제외하고 이러한 모든 개체 형식을 모델의 요소 파트에 연결할 수 있습니다.
 
 일반적으로 모델과 함께 사용되는 사양의 다른 측면은 다음과 같습니다. 프로젝트의 크기 및 스타일에 따라 이러한 측면 중 일부를 사용하거나 전혀 사용하지 않을 수 있습니다.
 
-- 사용자 스토리. 사용자 스토리는 프로젝트 반복 중 하나에서 전달되는 시스템 동작 측면에 대한 간단한 설명으로, 사용자 및 다른 이해 관계자와 함께 논의됩니다. 일반적인 사용자 스토리는 "고객이 다음을 수행할 수 있습니다."가 시작 됩니다. 사용자 스토리는 사용 사례 그룹을 도입 하거나 이전에 개발 된 사용 사례의 확장을 정의할 수 있습니다. 사용 사례를 정의하거나 확장하면 사용자 스토리를 보다 명확하게 설명하는 데 도움이 됩니다.
+- 사용자 스토리. 사용자 스토리는 프로젝트 반복 중 하나에서 전달되는 시스템 동작 측면에 대한 간단한 설명으로, 사용자 및 다른 이해 관계자와 함께 논의됩니다. 일반적인 사용자 스토리는 "고객이 할 수 있습니다..."로 시작됩니다. 사용자 스토리는 사용 사례 그룹을 소개하거나 이전에 개발된 사용 사례의 확장을 정의할 수 있습니다. 사용 사례를 정의하거나 확장하면 사용자 스토리를 보다 명확하게 설명하는 데 도움이 됩니다.
 
 - 변경 요청. 보다 공식적인 프로젝트의 변경 요청은 민첩한 프로젝트의 사용자 스토리와 매우 비슷합니다. 민첩한 접근 방식은 모든 요구 사항을 이전 반복에서 개발된 사항에 대한 변경 내용으로 처리합니다.
 
@@ -78,7 +78,7 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
 다음 제안 사항은 반복적인 프로젝트에서 모델링의 혜택을 인식하는 데 유용할 수 있습니다.
 
-### <a name="sharpen-focus-as-each-iteration-approaches"></a>각 반복 접근 방식에 따라 포커스를 선명 하 게
+### <a name="sharpen-focus-as-each-iteration-approaches"></a>각 반복이 접근함에 따라 포커스 선명하게
 
 각 반복이 임박하면 모델을 사용하여 반복이 끝날 때 전달되는 사항을 정의합니다.
 
@@ -88,7 +88,7 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
 - 각 반복이 거의 끝나면 요구 사항 워크숍을 열어 다음 반복에서 개발할 요구 사항 또는 사용자 스토리를 자세히 정의합니다. 개발자와 시스템 테스터뿐 아니라 우선 순위를 결정할 수 있는 사용자 및 비즈니스 이해 관계자도 초대합니다. 2주 반복에 대한 요구 사항을 정의하는 데 3시간을 할애합니다.
 
-- 워크숍의 목표는 다음 반복이 끝날 때까지 달성할 목표에 대해 모두가 동의하는 것입니다. 모델을 도구 중 하나로 사용하여 요구 사항을 명확하게 설명합니다. 워크숍의 출력은 반복 백로그입니다. 즉, Team Foundation의 개발 작업 목록 및의 테스트 도구 모음입니다 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
+- 워크숍의 목표는 다음 반복이 끝날 때까지 달성할 목표에 대해 모두가 동의하는 것입니다. 모델을 도구 중 하나로 사용하여 요구 사항을 명확하게 설명합니다. 워크샵의 출력은 반복 백로그입니다. 즉, Team Foundation의 개발 작업 목록과 의 테스트 도구 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 모음입니다.
 
 - 요구 사항 워크숍에서는 예상 개발 작업을 결정해야 하는 경우에만 디자인을 논의합니다. 그렇지 않으면 사용자가 직접 경험할 수 있는 시스템 동작만 논의합니다. 요구 사항 모델을 아키텍처 모델과 별도로 유지합니다.
 
@@ -96,11 +96,11 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 
 ### <a name="link-model-to-work-items"></a>작업 항목에 모델 연결
 
-요구 사항 워크숍 후에 요구 사항 모델을 자세히 설명하고 개발 작업에 모델을 연결합니다. Team Foundation의 작업 항목을 모델의 요소에 연결 하 여이 작업을 수행할 수 있습니다.
+요구 사항 워크숍 후에 요구 사항 모델을 자세히 설명하고 개발 작업에 모델을 연결합니다. Team Foundation의 작업 항목을 모델의 요소에 연결하여 이 작업을 수행할 수 있습니다.
 
 작업 항목에 모든 요소를 연결할 수 있지만 가장 유용한 요소는 다음과 같습니다.
 
-- 비즈니스 규칙 또는 서비스 품질 요구 사항을 설명하는 주석. 자세한 내용은 [모델 사용자 요구 사항](../modeling/model-user-requirements.md)을 참조 하세요.
+- 비즈니스 규칙 또는 서비스 품질 요구 사항을 설명하는 주석. 자세한 내용은 [모델 사용자 요구 사항 을 참조하세요.](../modeling/model-user-requirements.md)
 
 ### <a name="link-model-to-tests"></a>테스트에 모델 연결
 
@@ -135,10 +135,10 @@ Visual Studio에서 모델을 사용하여 시스템, 애플리케이션 또는 
 |-|-|
 |**비디오**|![비디오에 대 한 링크 ](../data-tools/media/playvideo.gif) [MSDN 방법 비디오: UML 모델 및 다이어그램을 만들고 사용 하는 방법 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![비디오 채널 9에 대 한 링크 ](../data-tools/media/playvideo.gif) [: Visual Studio 2010를 사용 하는 UML](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![비디오에 대 한 링크 ](../data-tools/media/playvideo.gif) [MSDN How Do Do 시리즈: UML 도구 및 확장성 (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**포럼**|- [Visual Studio 시각화 및 모델링 도구](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 시각화 및 모델링 SDK(DSL 도구)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**기술 문서 및 저널**|[MSDN 아키텍처 센터](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**블로그**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
+|**기술 문서 및 저널**|[MSDN 아키텍처 센터](/previous-versions/dn630665(v=msdn.10))|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Agile 개발에서 모델 사용](/previous-versions/ff398061(v=vs.140))
 - [앱용 모델 만들기](../modeling/create-models-for-your-app.md)

@@ -4,17 +4,17 @@ description: 모델이 나타내는 내용 및 모델에서 응용 프로그램�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9299880c2d06cf323351a234239bed71597072a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68339159ed9926490f22a82cd30ce69f45ab6a30
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902707"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388869"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>모델에서 앱 생성 및 구성
 모델에서 애플리케이션의 일부를 생성하거나 구성할 수 있습니다.
@@ -72,7 +72,7 @@ ms.locfileid: "99902707"
 
      예를 들어 UML 클래스 다이어그램이 상자와 화살표의 컬렉션인 경우 이론상 이 표기법을 사용하여 무엇이든 정의할 수 있습니다. 그러나 실제로 형식 집합을 설명하는 경우를 제외하고 클래스 다이어그램을 사용하지 않는 것이 좋습니다. 예를 들어 클래스 다이어그램을 조정 하 여 다양 한 유형의 웹 페이지를 설명할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도메인별 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)
 - [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)

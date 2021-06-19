@@ -3,18 +3,18 @@ title: Windows Forms 기반 도메인 특정 언어 만들기
 description: Windows Forms를 사용 하 여 도메인별 언어 모델의 상태를 표시 하는 방법에 대 한 정보를 제공 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a77a22b7ed888b28f12154974d735213952899c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945411"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389542"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows Forms 기반 Domain-Specific 언어 만들기
 
@@ -141,7 +141,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
     다른 속성에 대 한 기본 설정은 그대로 둡니다.
 
-4. 디자인 뷰에서 FarmControl.cs를 엽니다.
+4. 디자인 뷰에서 FarmControl를 엽니다.
 
     데이터 소스 창에서 FarmControl로 **팜을** 끌어 옵니다.
 
@@ -237,7 +237,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 ### <a name="make-the-properties-update-immediately"></a>속성을 즉시 업데이트 하도록 설정
 
-1. FarmControl.cs의 디자인 뷰에서 Name, Size 또는 IsOrganic와 같은 간단한 필드를 선택 합니다.
+1. FarmControl의 디자인 뷰에서 Name, Size 또는 IsOrganic와 같은 단순 필드를 선택 합니다.
 
 2. 속성 창에서 **데이터 바인딩** 을 확장 하 고 **(고급)** 을 엽니다.
 
@@ -249,7 +249,7 @@ Dsl 정의 파일을 업데이트 하 여 dsl을 정의 하는 경우에는 `UI`
 
 ### <a name="provide-add-buttons"></a>추가 단추 제공
 
-1. FarmControl.cs의 디자인 뷰에서 도구 상자를 사용 하 여 폼에 단추를 만듭니다.
+1. FarmControl의 디자인 뷰에서 도구 상자를 사용 하 여 폼에 단추를 만듭니다.
 
     단추의 이름과 텍스트 (예:)를 편집 `New Sheep` 합니다.
 
@@ -323,7 +323,7 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 따라서를 사용 하 여 새 요소를 만드는 것이 좋습니다 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> . 자세한 내용은 [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [Domain-Specific 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -17,17 +17,17 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47613a2f74ce1c89a6b032e46fa18b978c1c5f0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7c94834aeb6aa82efdb53dead97e26daa667c0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945294"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389490"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -45,11 +45,11 @@ ms.locfileid: "99945294"
 
 2. 코드 요소를 그룹으로 변환하려면 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
 
-    \- 또는 -
+    \- 또는-
 
     새 그룹을 추가하려면 `<Nodes>` 섹션을 찾습니다. 새 `<Node/>` 요소를 추가합니다.
 
-3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예를 들어:
+3. `<Node/>` 요소에 `Group` 특성을 추가하여 그룹을 확장된 상태로 표시할지 축소된 상태로 표시할지를 지정합니다. 예를 들면 다음과 같습니다.
 
    ```xml
    <Nodes>
@@ -66,7 +66,7 @@ ms.locfileid: "99945294"
 
    - 그룹 코드 요소와 자식 코드 요소 간의 `Category` 관계를 지정하는 `Contains` 특성
 
-     예를 들어:
+     예를 들면 다음과 같습니다.
 
    ```xml
    <Links>
@@ -98,7 +98,7 @@ ms.locfileid: "99945294"
     Stroke="StrokeValue"
     ```
 
-     예를 들어:
+     예를 들면 다음과 같습니다.
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -203,7 +203,7 @@ ms.locfileid: "99945294"
     Shape="ShapeFilePathLocation"
     ```
 
-     예를 들어:
+     예를 들면 다음과 같습니다.
 
     ```xml
     <Nodes>
@@ -238,7 +238,7 @@ ms.locfileid: "99945294"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     예를 들어:
+     예를 들면 다음과 같습니다.
 
     ```xml
     <Links>
@@ -268,7 +268,7 @@ ms.locfileid: "99945294"
 
 2. `<Style/>` 요소에 `<Condition/>` 특성이 포함된 `Expression` 요소를 추가하여 부울 값을 반환하는 식을 지정합니다.
 
-    예를 들어:
+    예를 들면 다음과 같습니다.
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -316,7 +316,7 @@ ms.locfileid: "99945294"
 
 3. `<Condition/>` 요소의 다음 줄에서 한 개 또는 여러 개의 `<Setter/>` 요소를 추가하여 조건을 만족하는 맵, 코드 요소 또는 링크에 적용할 `Property` 특성과 고정 `Value` 특성 또는 계산된 `Expression` 특성을 지정합니다.
 
-    예를 들어:
+    예를 들면 다음과 같습니다.
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -373,11 +373,11 @@ ms.locfileid: "99945294"
 
  `Coverage` 속성에 따라 코드 요소의 배경색을 설정합니다. 스타일은 `if-else` 문과 마찬가지로 나타나는 순서대로 확인됩니다.
 
- 이 예제에서는 다음이 적용됩니다.
+ 이 예제에서:
 
-1. `Coverage`가 > 80 이면 `Background` 속성을 녹색으로 설정 합니다.
+1. `Coverage`가 > 80이면 `Background` 속성을 녹색으로 설정합니다.
 
-2. Else `Coverage` 가 50 > 경우 속성 `Background` 의 값을 기준으로 속성을 주황색 음영으로 설정 합니다 `Coverage` .
+2. 그렇지 않으면 `Coverage` 가 > 50인 경우 `Background` 속성의 값에 따라 속성을 주황색 음영으로 `Coverage` 설정합니다.
 
 3. 또한 `Background` 속성은 `Coverage` 속성 값에 따라 빨간색 음영으로 설정합니다.
 
@@ -444,7 +444,7 @@ ms.locfileid: "99945294"
 
 1. 텍스트 또는 XML 편집기에서 .dgml 파일을 엽니다.
 
-2. 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다. 속성 이름 및 해당 값을 지정합니다. 예를 들어:
+2. 해당 코드 요소에 대한 `<Node/>` 요소를 찾습니다. 속성 이름 및 해당 값을 지정합니다. 예를 들면 다음과 같습니다.
 
     ```xml
     <Nodes>
@@ -466,7 +466,7 @@ ms.locfileid: "99945294"
 
 2. 소스 코드 요소의 이름과 대상 코드 요소의 이름을 둘 다 포함하는 `<Link/>` 요소를 찾습니다.
 
-3. `<Node/>` 요소에서 속성 이름 및 해당 값을 지정합니다. 예를 들어:
+3. `<Node/>` 요소에서 속성 이름 및 해당 값을 지정합니다. 예를 들면 다음과 같습니다.
 
     ```xml
     <Links>
@@ -491,7 +491,7 @@ ms.locfileid: "99945294"
 
 - 원하는 코드 요소에 대한 `<Node/>` 요소를 찾습니다.
 
-- `<Node/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들어:
+- `<Node/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들면 다음과 같습니다.
 
     ```xml
     <Nodes>
@@ -513,7 +513,7 @@ ms.locfileid: "99945294"
 
 2. 소스 코드 요소의 이름과 대상 코드 요소의 이름을 둘 다 포함하는 `<Link/>` 요소를 찾습니다.
 
-3. `<Link/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들어:
+3. `<Link/>` 요소에 `Category` 특성을 추가하여 범주 이름을 지정합니다. 예를 들면 다음과 같습니다.
 
     ```xml
     <Links>
@@ -535,7 +535,7 @@ ms.locfileid: "99945294"
 
 2. 부모 범주에 대한 `<Category/>` 요소를 추가한 다음 자식 범주의 `BasedOn` 요소에 `<Category/>` 특성을 추가합니다.
 
-     예를 들어:
+     예를 들면 다음과 같습니다.
 
     ```xml
     <Nodes>
@@ -553,7 +553,7 @@ ms.locfileid: "99945294"
 
      이 예제에서 `MyFirstNode`의 `Category` 특성은 `Background`의 `MyParentCategory` 특성을 상속하므로 이 노드의 배경은 녹색입니다.
 
-## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> 코드 요소 및 링크에 문서 또는 Url 연결
+## <a name="link-documents-or-urls-to-code-elements-and-links"></a><a name="AddReferences"></a> 코드 요소 및 링크에 문서 또는 URL 연결
  맵의 .dgml 파일을 편집하고 코드 요소에 대한 `Reference` 요소 또는 링크에 대한 `<Node/>` 요소에 `<Link/>` 특성을 추가하여 코드 요소 또는 링크에 문서 또는 URL을 연결할 수 있습니다. 그런 다음 코드 요소 또는 링크에서 해당 콘텐츠를 열고 볼 수 있습니다. `Reference` 특성은 해당 내용의 경로를 지정합니다. 이 경로는 .dgml 파일의 위치를 기준으로 하는 상대 경로이거나 절대 경로일 수 있습니다.
 
 > [!CAUTION]
@@ -563,7 +563,7 @@ ms.locfileid: "99945294"
 
 - 클래스에 대한 변경 내용을 설명하기 위해 작업 코드 요소, 문서 또는 다른 .dgml 파일의 URL을 클래스의 코드 요소에 연결할 수 있습니다.
 
-- 소프트웨어의 논리 아키텍처에서 레이어를 나타내는 그룹 코드 요소에 종속성 다이어그램을 연결할 수 있습니다.
+- 소프트웨어의 논리 아키텍처에서 계층을 나타내는 그룹 코드 요소에 종속성 다이어그램을 연결할 수 있습니다.
 
 - 인터페이스를 노출하는 구성 요소에 대한 자세한 정보가 표시되도록 해당 인터페이스의 코드 요소에 구성 요소 다이어그램을 연결할 수 있습니다.
 
@@ -584,7 +584,7 @@ ms.locfileid: "99945294"
      > [!NOTE]
      > `Reference` 특성은 요소마다 하나씩만 있을 수 있습니다.
 
-     예를 들어:
+     예를 들면 다음과 같습니다.
 
    ```xml
    <Nodes>
@@ -605,11 +605,11 @@ ms.locfileid: "99945294"
 
       2. `Id` 특성을 새 참조 특성의 이름으로 설정합니다.
 
-      3. 특성을 추가 하 `IsReference` 고로 설정 `True` 하 여 해당 참조가 코드 요소의 **참조로 이동** 바로 가기 메뉴에 표시 되도록 합니다.
+      3. 특성을 추가하고 로 `IsReference` `True` 설정하여 참조가 코드 요소의 참조로 이동 바로 가기 **메뉴에 표시되도록 합니다.**
 
-      4. 특성을 사용 `Label` 하 여 코드 요소의 **참조로 이동** 바로 가기 메뉴에서 표시 텍스트를 지정 합니다.
+      4. 특성을 사용하여 `Label` 코드 요소의 **참조로 이동** 바로 가기 메뉴에서 표시 텍스트를 지정합니다.
 
-      예를 들어:
+      예를 들면 다음과 같습니다.
 
    ```xml
    <Nodes>
@@ -621,7 +621,7 @@ ms.locfileid: "99945294"
    </Properties>
    ```
 
-    맵에서 코드 요소 이름은 밑줄이 그어진 상태로 표시됩니다. 코드 요소 또는 링크에 대 한 바로 가기 메뉴를 열면 선택할 연결 된 코드 요소를 포함 하는 **참조로 이동** 바로 가기 메뉴가 표시 됩니다.
+    맵에서 코드 요소 이름은 밑줄이 그어진 상태로 표시됩니다. 코드 요소 또는 링크에 대한 바로 가기 메뉴를 열면 선택할 연결된 코드 요소가 포함된 **참조로 이동** 바로 가기 메뉴가 표시됩니다.
 
 4. `ReferenceTemplate` 특성을 사용하여 URL 등의 일반 문자열을 지정합니다. 이 특성은 여러 참조에서 해당 문자열을 반복하는 대신 사용됩니다.
 
@@ -638,7 +638,7 @@ ms.locfileid: "99945294"
    </Properties>
    ```
 
-5. 참조된 코드 요소 또는 맵의 코드 요소를 보려면 코드 요소 또는 링크에 대한 바로 가기 메뉴를 엽니다. **참조로 이동** 을 선택 하 고 코드 요소를 선택 합니다.
+5. 참조된 코드 요소 또는 맵의 코드 요소를 보려면 코드 요소 또는 링크에 대한 바로 가기 메뉴를 엽니다. **참조로 이동을** 선택한 다음, 코드 요소를 선택합니다.
 
 ## <a name="see-also"></a>참조
 

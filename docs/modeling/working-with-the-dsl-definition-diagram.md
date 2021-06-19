@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Show Map Lines
 - Domain-Specific Language Tools, Show As Class
 - Domain-Specific Language Tools, Bring Tree Here
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 705134b5dfa31bb317360073e336abebcefdb13d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f401fe0509fc425fff873a7dc224c69359156861
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923967"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388076"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 정의 다이어그램 작업
 정의의 다이어그램은 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 도메인별 언어를 정의 하는 데 중요 한 도구입니다. 도메인 모델에 요소를 추가하고 다이어그램에 대해 관계를 정의할 수 있으며 보다 읽기 쉽도록 다이어그램의 레이아웃을 수정할 수 있습니다.
@@ -72,6 +72,6 @@ ms.locfileid: "99923967"
 ### <a name="show-as-class"></a>Show As Class
  도메인 관계에 파생 관계가 있거나 다른 도메인 관계와 포함 또는 참조 관계가 있는 경우 관계를 마우스 오른쪽 단추로 클릭 한 다음 **클래스로 표시** 를 클릭 하 여 관계를 클래스로 표시할 수 있습니다. 관계는 **도메인 속성** 구획을 사용 하 여 표시 되며 상속 및 관계 트리를 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

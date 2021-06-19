@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f2d62433d150f61e9a7e21cceb20eb715a0767a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924329"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388362"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>종속성 다이어그램을 사용하여 코드 유효성 검사
 
@@ -44,7 +44,7 @@ ms.locfileid: "99924329"
 
    코드를 다른 아키텍처로 이동할 때 아직 작업이 필요한 코드 또는 종속성을 찾을 수 있습니다.
 
-**Requirements**
+**요구 사항**
 
 - Visual Studio
 
@@ -52,7 +52,7 @@ ms.locfileid: "99924329"
 
 - 종속성 다이어그램이 포함 된 모델링 프로젝트가 있는 솔루션입니다. 이 종속성 다이어그램은 유효성을 검사 하려는 c # 또는 Visual Basic 프로젝트의 아티팩트에 연결 해야 합니다. [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)를 참조 하세요.
 
-이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조하세요.
 
 Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어그램에서 수동으로 코드의 유효성을 검사할 수 있습니다. 로컬 빌드 또는 Azure Pipelines 빌드를 실행할 때 자동으로 코드의 유효성을 검사할 수도 있습니다. [Channel 9 비디오: 종속성 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)를 참조 하세요.
 
@@ -182,7 +182,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
-\- 또는 -
+\- 또는-
 
 1. **솔루션 탐색기** 에서 종속성 다이어그램 또는 다이어그램이 포함 된 모델링 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
 
@@ -236,7 +236,7 @@ Visual Studio 또는 명령 프롬프트에서 열려 있는 종속성 다이어
 | DV3001: **누락 된 링크** | '*LayerName*' 계층은 찾을 수 없는 '*아티팩트*'에 연결 됩니다. 어셈블리 참조가 있는지 확인하세요. |
 | DV9001: **아키텍처 분석에서 내부 오류가 발생 했습니다** . | 결과가 불완전할 수 있습니다. 자세한 내용은 상세 빌드 이벤트 로그를 참조하세요. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio의 실시간 종속성 유효성 검사](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [개발하는 동안 시스템 유효성 검사](../modeling/validate-your-system-during-development.md)
