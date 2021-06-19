@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2f026f62c5440b48b04d05e080515c47dd11979
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941361"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390648"
 ---
 # <a name="properties-of-domain-properties"></a>도메인 속성의 속성
 *도메인 속성* 은 값을 보유할 수 있는 모델 요소의 기능입니다. 예를 들어 `Person` 도메인 클래스는 `Name` 및 `BirthDate` 속성을 포함할 수 있습니다. DSL 정의에서 도메인 속성은 다이어그램의 도메인 클래스 상자와 DSL 탐색기의 도메인 클래스 아래에 나열됩니다. 자세한 내용은 [Domain-Specific 언어를 정의 하는 방법](../modeling/how-to-define-a-domain-specific-language.md)을 참조 하세요.
@@ -34,7 +34,7 @@ ms.locfileid: "99941361"
 
   다이어그램 또는 DSL 탐색기에서 도메인 속성을 선택하면 속성 창에서 다음 항목을 확인할 수 있습니다. 이러한 항목을 사용 하는 방법에 대 한 자세한 내용은 [Domain-Specific 언어 사용자 지정 및 확장](../modeling/customizing-and-extending-a-domain-specific-language.md)을 참조 하세요.
 
-|속성|Description|기본값|
+|속성|설명|기본값|
 |-|-|-|
 |**설명**|생성된 디자이너의 UI(사용자 인터페이스)를 문서화하는 데 사용되는 설명입니다.|\<none>|
 |**표시 이름**|이 도메인 속성에 대해 생성된 디자이너에 표시되는 이름입니다. "Song Title"과 같이 공백과 문장 부호를 포함할 수 있습니다.|\<none>|
@@ -48,8 +48,8 @@ ms.locfileid: "99941361"
 |**이름**|이 도메인 속성의 이름입니다. 유효한 식별자 (예: **SongTitle**) 여야 합니다.|\<none>|
 |**참고**|이 도메인 속성과 관련된 비공식적인 참고 사항입니다.|\<none>|
 |**Setter Access Modifier**|setter의 액세스 한정자입니다. 이 속성은 프로그램 코드가 속성을 설정할 수 있는 범위를 제어합니다.|`public`|
-|**유형**|속성의 형식입니다. 사용 가능한 형식 목록에 추가 하려면 DSL 탐색기에서 DSL 루트를 마우스 오른쪽 단추로 클릭 하 고 **외부 형식 추가** 를 클릭 합니다.|`String`|
+|**형식**|속성의 형식입니다. 사용 가능한 형식 목록에 추가 하려면 DSL 탐색기에서 DSL 루트를 마우스 오른쪽 단추로 클릭 하 고 **외부 형식 추가** 를 클릭 합니다.|`String`|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

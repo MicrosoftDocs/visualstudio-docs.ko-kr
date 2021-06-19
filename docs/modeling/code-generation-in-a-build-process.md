@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a785bf0fc337d1934efe4f47adaac7efe7f1f1b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7db1b41df5007678c84be71f34aea110c04348c1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861805"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389750"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>빌드 프로세스에서 텍스트 변환 호출
 
@@ -67,7 +67,7 @@ Visual Studio가 설치 되지 않은 컴퓨터에서 [빌드 서버](/azure/dev
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`
 
-\- 또는 -
+\- 또는-
 
 `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`
 
@@ -285,7 +285,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 이러한 지시문은 MSBuild와 Visual Studio 호스트에서 모두 T4parameterValues의 값을 가져옵니다.
 
-## <a name="q--a"></a>Q&A
+## <a name="q--a"></a>Q & A
 
 **빌드 서버에서 템플릿을 변환 하려면 어떻게 해야 하나요? 코드를 체크 인하기 전에 이미 Visual Studio에서 템플릿을 변환 했습니다.**
 
@@ -293,25 +293,25 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 **텍스트 템플릿 변환에 사용할 수 있는 다른 옵션은 무엇이 있습니까?**
 
-- 명령 스크립트에서 [Texttransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 를 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용 하는 것이 더 쉽습니다.
+- 명령 스크립트에서 [Texttransform 유틸리티](../modeling/generating-files-with-the-texttransform-utility.md) 를 사용할 수 있습니다. 대부분의 경우 MSBuild를 사용하는 것이 더 쉽습니다.
 
-- [Visual Studio 확장에서 텍스트 변환을 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)합니다.
+- [Visual Studio 확장명 에서 텍스트 변환을 호출합니다.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-- [디자인 타임 텍스트 템플릿은](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio에 의해 변환 됩니다.
+- [디자인 타임 텍스트 템플릿은](../modeling/design-time-code-generation-by-using-t4-text-templates.md) Visual Studio 의해 변환됩니다.
 
-- 런타임 [텍스트 템플릿은](../modeling/run-time-text-generation-with-t4-text-templates.md) 응용 프로그램에서 런타임에 변환 됩니다.
+- [런타임 텍스트 템플릿은](../modeling/run-time-text-generation-with-t4-text-templates.md) 애플리케이션에서 런타임에 변환됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 ::: moniker range="vs-2017"
 
-- T4 MSbuild 템플릿에 대 한 유용한 지침은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- 의 T4 MSbuild 템플릿에 좋은 지침이 있습니다. `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- T4 MSbuild 템플릿에 대 한 유용한 지침은 `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- 의 T4 MSbuild 템플릿에 좋은 지침이 있습니다. `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

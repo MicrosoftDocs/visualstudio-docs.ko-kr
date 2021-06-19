@@ -6,22 +6,22 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e78e88884801b7aa7fcbcfe1147afd6fad653fd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa2be8f4da963c21d9f7f68939421dd7d2d72d0b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954373"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390114"
 ---
 # <a name="model-your-app39s-architecture"></a>앱&#39;s 아키텍처 모델링
 소프트웨어 시스템 또는 응용 프로그램이 사용자 요구를 충족하는지 확인하기 위해 소프트웨어 시스템 또는 응용 프로그램의 전체 구조 및 동작 설명의 일부로 Visual Studio에서 모델을 만들 수 있습니다. 모델을 사용하여 디자인 전체에서 사용되는 패턴을 설명할 수도 있습니다. 이러한 모델은 기존 아키텍처를 이해하고, 변경 내용을 논의하고, 의도를 명확하게 전달하는 데 도움이 됩니다.
 
- 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+ 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조하세요.
 
  모델의 목적은 자연어 설명에서 발생하는 모호성을 줄이고, 사용자와 동료들이 디자인을 시각화하고 대체 디자인을 논의할 수 있도록 돕는 것입니다. 모델은 다른 문서 또는 논의와 함께 사용해야 합니다. 모델 자체는 아키텍처의 완전한 사양을 나타내지 않습니다.
 

@@ -4,17 +4,17 @@ description: 컴퓨터 또는 다른 컴퓨터에 DSL (도메인별 언어)을 �
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6082ec8860f7f50e758eb65a8471ece94103aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 879028746eac10160492f03651ef8b51714e9c6a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950413"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391012"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL의 MSI 및 VSIX 배포
 도메인 특정 언어를 사용자의 컴퓨터 또는 다른 컴퓨터에 설치할 수 있습니다. Visual Studio가 대상 컴퓨터에 이미 설치 되어 있어야 합니다.
@@ -90,7 +90,7 @@ ms.locfileid: "99950413"
 
    - DSL 탐색기에서 루트 노드를 클릭 하 고 속성 창에서 다음을 검토 합니다.
 
-       - Description
+       - 설명
 
        - 버전
 

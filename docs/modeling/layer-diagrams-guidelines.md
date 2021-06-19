@@ -9,23 +9,23 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f4baed4851681065f3f7ccafecd3af339398f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f46e2b774cd4da2ef9cdb9ddef7efd19f731ade7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957376"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391025"
 ---
 # <a name="dependency-diagrams-guidelines"></a>종속성 다이어그램: 지침
 
 Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에서 앱의 아키텍처를 설명 합니다. 종속성 다이어그램으로 코드의 유효성을 검사 하 여 코드를이 디자인과 일관 되 게 유지 해야 합니다. 빌드 프로세스에 레이어 유효성 검사를 포함할 수도 있습니다. [Channel 9 비디오: 종속성 다이어그램을 사용 하 여 아키텍처 디자인 및 유효성 검사](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture)를 참조 하세요.
 
-이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조하세요.
 
 > [!NOTE]
 > .NET Core 프로젝트에 대 한 종속성 다이어그램은 Visual Studio 2019 버전 16.2부터 지원 됩니다.
@@ -174,7 +174,7 @@ Visual Studio에서 *종속성 다이어그램* 을 만들어 상위 수준에�
 
 코드의 이후 변경 내용이 종속성 다이어그램을 따르는지 확인 하려면 솔루션의 표준 빌드 프로세스에 레이어 유효성 검사를 포함 합니다. 다른 팀 멤버가 솔루션을 빌드할 때마다 코드의 종속성과 종속성 다이어그램 간의 차이점이 빌드 오류로 보고 됩니다. 빌드 프로세스에 레이어 유효성 검사를 포함 하는 방법에 대 한 자세한 내용은 [종속성 다이어그램을 사용 하 여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [종속성 다이어그램: 참조](../modeling/layer-diagrams-reference.md)
 - [코드에서 종속성 다이어그램 만들기](../modeling/create-layer-diagrams-from-your-code.md)

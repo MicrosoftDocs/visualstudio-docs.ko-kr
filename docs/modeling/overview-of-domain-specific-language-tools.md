@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
 - Domain-Specific Language
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbae3a1b36e6a948766c7dc31d4a8ea8af6d70c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 004c9929b33878359fa23735189d60939953755a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897763"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390908"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>도메인별 언어 도구 개요
 Visual Studio에서 호스팅되는 도메인 특정 언어 도구(DSL 도구)를 사용하면 도메인 특정 언어를 설계한 후 사용자가 해당 언어를 기반으로 모델을 만드는 데 필요한 모든 것을 생성할 수 있습니다.

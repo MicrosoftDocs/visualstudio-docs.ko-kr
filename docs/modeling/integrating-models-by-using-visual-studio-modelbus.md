@@ -4,17 +4,17 @@ description: 모델 간에 링크를 만드는 방법과 다른 도구에서 모
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c1d076edc09f7978dcc188b167ce953f631068
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 350398d91d73a722956d195b300311f313ff34db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957415"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391064"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Visual Studio를 사용 하 여 모델 통합 Modelbus
 
@@ -516,7 +516,7 @@ DSL 정의 다이어그램을 마우스 오른쪽 단추로 클릭 하 고 **Mod
 
 - **DslPackage\source.extention.tt** 에서 `|ModelBusAdapter|` 는 MEF 구성 요소로 추가 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 프로그램 코드로 파일에서 모델 열기](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [방법: 끌어서 놓기 처리기 추가](../modeling/how-to-add-a-drag-and-drop-handler.md)

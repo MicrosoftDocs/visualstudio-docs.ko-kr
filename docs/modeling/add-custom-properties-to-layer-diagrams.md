@@ -1,55 +1,55 @@
 ---
 title: 종속성 다이어그램에 사용자 지정 속성 추가
-description: 종속성 다이어그램에 대 한 확장 코드를 작성할 때 종속성 다이어그램의 요소를 사용 하 여 값을 저장 하는 방법에 대해 알아봅니다.
+description: 종속성 다이어그램에 대한 확장 코드를 작성할 때 종속성 다이어그램의 요소와 함께 값을 저장하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d63c6793290786499dd75ffd139f9905f46e7ab1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70588a2d472a1170b58911eece4fa70831064f72
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946464"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389854"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>종속성 다이어그램에 사용자 지정 속성 추가
 
-종속성 다이어그램에 대 한 확장 코드를 작성 하는 경우 종속성 다이어그램의 요소와 함께 값을 저장할 수 있습니다. 값은 다이어그램이 저장되고 다시 열릴 때 유지됩니다. 사용자가 보고 편집할 수 있도록 이러한 속성이 **속성** 창에 표시 될 수도 있습니다. 예를 들어 사용자가 각 레이어에 대한 정규식을 지정하고, 각 레이어의 클래스 이름이 사용자가 지정한 패턴을 따르는지 확인하기 위해 유효성 검사 코드를 작성하도록 허용할 수 있습니다.
+종속성 다이어그램에 대한 확장 코드를 작성할 때 종속성 다이어그램의 요소와 함께 값을 저장할 수 있습니다. 값은 다이어그램이 저장되고 다시 열릴 때 유지됩니다. 사용자가 보고 편집할 수 있도록 이러한 속성이 **속성** 창에 표시되도록 할 수도 있습니다. 예를 들어 사용자가 각 레이어에 대한 정규식을 지정하고, 각 레이어의 클래스 이름이 사용자가 지정한 패턴을 따르는지 확인하기 위해 유효성 검사 코드를 작성하도록 허용할 수 있습니다.
 
-## <a name="non-visible-properties"></a>표시 되지 않는 속성
+## <a name="non-visible-properties"></a>보이지 않는 속성
 
-코드에서 종속성 다이어그램의 요소에 값을 연결 하려면 MEF 구성 요소를 정의 하지 않아도 됩니다. `Properties` [Ilayerelement](/previous-versions/ff644511(v=vs.140))에 이라는 사전이 있습니다. 레이어 요소의 사전에 마샬링할 수 값을 추가하기만 하면 됩니다. 종속성 다이어그램의 일부로 저장 됩니다.
+코드가 종속성 다이어그램의 요소에 값을 연결하도록 하려면 MEF 구성 요소를 정의할 필요가 없습니다. `Properties` [ILayerElement](/previous-versions/ff644511(v=vs.140))에 라는 사전이 있습니다. 레이어 요소의 사전에 마샬링할 수 값을 추가하기만 하면 됩니다. 종속성 다이어그램의 일부로 저장됩니다.
 
 ## <a name="editable-properties"></a>편집 가능한 속성
 
 **초기 준비**
 
 > [!IMPORTANT]
-> 속성이 표시 되도록 하려면 계층 속성을 표시할 각 컴퓨터에서 다음과 같이 변경 합니다.
+> 속성을 표시하려면 계층 속성을 표시할 각 컴퓨터에서 다음과 같이 변경합니다.
 >
-> 1. **관리자 권한으로 실행** 을 사용 하 여 메모장을 실행 합니다. *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest* 를 엽니다.
-> 2. **콘텐츠** 요소 내에 다음을 추가 합니다.
+> 1. **관리자 권한으로 실행을** 사용하여 메모장을 실행합니다. *%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest* 를 엽니다.
+> 2. **Content** 요소 내에 다음을 추가합니다.
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio 응용 프로그램 시작 메뉴의 **Visual Studio Tools** 섹션에서 **개발자 명령 프롬프트** 를 엽니다. 다음을 입력합니다.
+> 3. **Visual Studio** 애플리케이션 시작 메뉴의 Visual Studio Tools 섹션에서 **개발자 명령 프롬프트** 엽니다. 다음을 입력합니다.
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
 > 4. Visual Studio를 다시 시작합니다.
 
-**코드가 VSIX 프로젝트에 있는지 확인**
+**코드가 VSIX 프로젝트에 있는지 확인합니다.**
 
-속성이 명령, 제스처 또는 유효성 검사 프로젝트의 일부인 경우에는 아무것도 추가할 필요가 없습니다. 사용자 지정 속성에 대한 코드는 MEF 구성 요소로 정의된 Visual Studio 확장성 프로젝트에 정의되어야 합니다. 자세한 내용은 [종속성 다이어그램에 명령 및 제스처 추가](../modeling/add-commands-and-gestures-to-layer-diagrams.md) 또는 [종속성 다이어그램에 사용자 지정 아키텍처 유효성 검사 추가](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)를 참조 하세요.
+속성이 명령, 제스처 또는 유효성 검사 프로젝트의 일부인 경우 아무 것도 추가할 필요가 없습니다. 사용자 지정 속성에 대한 코드는 MEF 구성 요소로 정의된 Visual Studio 확장성 프로젝트에 정의되어야 합니다. 자세한 내용은 [종속성 다이어그램에 명령 및 제스처 추가 또는 종속성 다이어그램에](../modeling/add-commands-and-gestures-to-layer-diagrams.md) [사용자 지정 아키텍처 유효성 검사 추가를 참조하세요.](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 
 **사용자 지정 속성 정의**
 
@@ -63,13 +63,13 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-[Ilayerelement](/previous-versions/ff644511(v=vs.140)) 또는 해당 파생 클래스 (다음을 포함)에 대 한 속성을 정의할 수 있습니다.
+[ILayerElement](/previous-versions/ff644511(v=vs.140)) 또는 다음과 같은 파생 클래스에서 속성을 정의할 수 있습니다.
 
-- `ILayerModel` -모델
+- `ILayerModel` - 모델
 
-- `ILayer` -각 계층
+- `ILayer` - 각 계층
 
-- `ILayerDependencyLink` -레이어 간 링크
+- `ILayerDependencyLink` - 레이어 간 링크
 
 - `ILayerComment`
 
@@ -162,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [종속성 다이어그램 확장](../modeling/extend-layer-diagrams.md)
