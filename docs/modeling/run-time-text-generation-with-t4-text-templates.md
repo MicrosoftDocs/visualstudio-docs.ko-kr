@@ -12,17 +12,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96d37bc586f9e8d6134377244c3181a52ec11a84
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937955"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387556"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성
 
@@ -109,7 +109,7 @@ Language 매개 변수는 프로젝트의 언어에 따라 달라 집니다.
 
 ### <a name="plain-content"></a>일반 콘텐츠
 
-응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예를 들어:
+응용 프로그램에서 생성 하려는 텍스트를 포함 하도록 **.tt** 파일을 편집 합니다. 예를 들면 다음과 같습니다.
 
 ```html
 <html><body>
@@ -121,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>포함 된 프로그램 코드
 
-및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예를 들어:
+및 사이에 프로그램 코드를 삽입할 수 있습니다 `<#` `#>` . 예를 들면 다음과 같습니다.
 
 ```csharp
 <table>
@@ -184,7 +184,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 일반적으로 템플릿은 응용 프로그램의 다른 부분에서 일부 데이터를 가져와야 합니다. 이 작업을 쉽게 수행 하기 위해 템플릿으로 작성 된 코드는 partial 클래스입니다. 프로젝트의 다른 파일에 같은 클래스의 다른 부분을 만들 수 있습니다. 이 파일에는 템플릿에 포함 된 코드와 응용 프로그램의 나머지 부분에 모두 액세스할 수 있는 매개 변수, 속성 및 함수를 포함 하는 생성자가 포함 될 수 있습니다.
 
-예를 들어 별도의 파일 **MyWebPageCode.cs** 을 만들 수 있습니다.
+예를 들어 별도의 파일인 MyWebPageCode을 만들 수 있습니다 **.**
 
 ```csharp
 partial class MyWebPage
@@ -292,27 +292,27 @@ Partial 정의에서 템플릿 클래스에 필드를 추가할 수도 있습니
 <#@include file="CommonHeader.txt" #>
 ```
 
-포함 된 콘텐츠는 프로그램 코드와 일반 텍스트를 혼합 하 여 포함할 수 있으며 다른 include 지시문 및 기타 지시문을 포함할 수 있습니다.
+포함된 콘텐츠는 프로그램 코드와 일반 텍스트의 혼합을 포함할 수 있으며 다른 include 지시문 및 기타 지시문을 포함할 수 있습니다.
 
-Include 지시문은 템플릿 파일이 나 포함 된 파일의 텍스트에 있는 모든 위치에서 사용할 수 있습니다.
+포함 지시문은 템플릿 파일 또는 포함된 파일의 텍스트 내 어디에서나 사용할 수 있습니다.
 
-### <a name="inheritance-between-run-time-text-templates"></a>Run-Time 텍스트 템플릿 간 상속
+### <a name="inheritance-between-run-time-text-templates"></a>Run-Time 텍스트 템플릿 간의 상속
 
-추상 일 수 있는 기본 클래스 템플릿을 작성 하 여 런타임 템플릿 간에 콘텐츠를 공유할 수 있습니다. `inherits`지시문의 매개 변수를 사용 `<@#template#>` 하 여 다른 런타임 템플릿 클래스를 참조 합니다.
+추상적일 수 있는 기본 클래스 템플릿을 작성하여 런타임 템플릿 간에 콘텐츠를 공유할 수 있습니다. `inherits`지시문의 매개 변수를 사용하여 `<@#template#>` 다른 런타임 템플릿 클래스를 참조합니다.
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>상속 패턴: 기본 메서드의 조각
 
-뒤에 나오는 예제에서 사용 된 패턴에서 다음 사항을 확인 합니다.
+다음 예제에 사용된 패턴에서 다음 사항을 알아차리세요.
 
-- 기본 클래스는 `SharedFragments` 클래스 기능 블록 내에서 메서드를 정의 합니다 `<#+ ... #>` .
+- 기본 클래스는 `SharedFragments` 클래스 기능 블록 내에서 메서드를 정의합니다. `<#+ ... #>`
 
-- 기본 클래스에는 자유 텍스트가 포함 되어 있지 않습니다. 대신 모든 텍스트 블록이 클래스 기능 메서드 내에서 발생 합니다.
+- 기본 클래스에는 자유 텍스트가 없습니다. 대신 모든 텍스트 블록은 클래스 기능 메서드 내에서 발생합니다.
 
-- 파생 클래스는에 정의 된 메서드를 호출 합니다 `SharedFragments` .
+- 파생 클래스는 에 정의된 메서드를 `SharedFragments` 호출합니다.
 
-- 응용 프로그램은 `TextTransform()` 파생 클래스의 메서드를 호출 하지만 기본 클래스를 변환 하지는 않습니다 `SharedFragments` .
+- 애플리케이션은 `TextTransform()` 파생 클래스의 메서드를 호출하지만 기본 클래스 를 변환하지는 `SharedFragments` 않습니다.
 
-- 기본 클래스와 파생 클래스 모두 런타임 텍스트 템플릿입니다. 즉, **사용자 지정 도구** 속성이 **Texttemplatingfilepreprocessor** 로 설정 됩니다.
+- 기본 및 파생 클래스는 모두 런타임 텍스트 템플릿입니다. 즉, **사용자 지정 도구** 속성이 **TextTemplatingFilePreprocessor 로 설정됩니다.**
 
 **SharedFragments.tt:**
 
@@ -357,7 +357,7 @@ end 1
 
 #### <a name="inheritance-pattern-text-in-base-body"></a>상속 패턴: 기본 본문의 텍스트
 
-템플릿 상속 사용에 대 한이 대체 방법에서 텍스트의 대부분은 기본 템플릿에서 정의 됩니다. 파생 된 템플릿은 기본 콘텐츠에 맞는 데이터 및 텍스트 조각을 제공 합니다.
+템플릿 상속을 사용하는 이 대체 방법에서는 텍스트의 대부분이 기본 템플릿에 정의됩니다. 파생된 템플릿은 기본 콘텐츠에 맞는 데이터 및 텍스트 조각을 제공합니다.
 
 **AbstractBaseTemplate1.tt:**
 
@@ -408,7 +408,7 @@ protected override void SpecificFragment(int n)
 #>
 ```
 
-**응용 프로그램 코드:**
+**애플리케이션 코드:**
 
 ```csharp
 ...
@@ -431,11 +431,11 @@ End material for DerivedTemplate1.
 
 ## <a name="related-topics"></a>관련 항목
 
-디자인 타임 템플릿: 템플릿을 사용 하 여 응용 프로그램의 일부가 되는 코드를 생성 하려는 경우 [T4 텍스트 템플릿을 사용 하 여 디자인 타임 코드 생성](../modeling/design-time-code-generation-by-using-t4-text-templates.md)을 참조 하세요.
+디자인 타임 템플릿: 애플리케이션의 일부가 되는 코드를 생성하기 위해 템플릿을 사용하려면 [T4 텍스트 템플릿을 사용하여 디자인 타임 코드 생성을 참조하세요.](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
-런타임 템플릿은 템플릿 및 해당 콘텐츠가 컴파일 타임에 결정 되는 모든 응용 프로그램에서 사용할 수 있습니다. 런타임에 변경 되는 템플릿에서 텍스트를 생성 하는 Visual Studio 확장을 작성 하려는 경우 [VS 확장에서 텍스트 변환 호출](../modeling/invoking-text-transformation-in-a-vs-extension.md)을 참조 하세요.
+런타임 템플릿은 컴파일 시간에 템플릿과 해당 콘텐츠가 결정되는 모든 애플리케이션에서 사용할 수 있습니다. 그러나 런타임에 변경되는 템플릿에서 텍스트를 생성하는 Visual Studio 확장을 작성하려면 [VS 확장에서 텍스트 변환 호출을 참조하세요.](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)
 - [T4 텍스트 템플릿 쓰기](../modeling/writing-a-t4-text-template.md)

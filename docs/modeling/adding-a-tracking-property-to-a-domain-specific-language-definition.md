@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 546636ec3de4656bf0f6480dfaa5141d38e963d6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862013"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384917"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>도메인 특정 언어 정의에 추적 속성 추가
 
@@ -44,7 +44,7 @@ ms.locfileid: "99862013"
 
 - **속성** 창에서 추적 속성이 사용자에 의해 업데이트 됨 상태에 있는 경우 해당 값은 굵은 글꼴로 표시 됩니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 연습을 시작 하려면 먼저 다음 구성 요소를 설치 해야 합니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "99862013"
 
 ## <a name="create-the-project"></a>프로젝트 만들기
 
-1. Domain-Specific 언어 디자이너 프로젝트를 만듭니다. 이름을 `TrackingPropertyDSL`이라고 지정합니다.
+1. Domain-Specific 언어 디자이너 프로젝트를 만듭니다. 이름을 `TrackingPropertyDSL`로 지정합니다.
 
 2. **도메인 특정 언어 디자이너 마법사** 에서 다음 옵션을 설정 합니다.
 
@@ -153,7 +153,7 @@ ms.locfileid: "99862013"
 
 3. **코드 파일** 템플릿을 선택 하 고 **이름을** 로 설정한 `NamespaceTrackingProperty.cs` 다음 **확인** 을 클릭 합니다.
 
-     NamespaceTrackingProperty.cs 파일을 만들고 편집용으로 엽니다.
+     NamespaceTrackingProperty 파일을 만들고 편집용으로 엽니다.
 
 4. 폴더에서 `ExampleModel.cs,``HelperClasses.cs` , 및 코드 파일을 만듭니다. `Serialization.cs` `TypeDescriptor.cs`
 
@@ -161,9 +161,9 @@ ms.locfileid: "99862013"
 
 ## <a name="add-helper-classes-to-support-tracking-properties"></a>추적 속성을 지원 하기 위한 도우미 클래스 추가
 
-HelperClasses.cs 파일에 `TrackingHelper` 다음과 같이 및 클래스를 추가 합니다 `CriticalException` . 이러한 클래스는이 연습의 뒷부분에서 참조 합니다.
+이 파일을 추가 하려면 `TrackingHelper` 다음과 같이 및 클래스를 추가 합니다 `CriticalException` . 이러한 클래스는이 연습의 뒷부분에서 참조 합니다.
 
-1. HelperClasses.cs 파일에 다음 코드를 추가 합니다.
+1. 이 파일에 다음 코드를 추가 합니다.
 
     ```csharp
     using System;
@@ -249,7 +249,7 @@ HelperClasses.cs 파일에 `TrackingHelper` 다음과 같이 및 클래스를 �
 
 ### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Examplemodel.store.customer 도메인 클래스에 대 한 형식 설명자를 수정 하려면
 
-1. TypeDescriptor.cs 파일에 다음 코드를 추가 합니다.
+1. 다음 코드를 TypeDescriptor 파일에 추가 합니다.
 
     ```csharp
     using System;
@@ -311,7 +311,7 @@ HelperClasses.cs 파일에 `TrackingHelper` 다음과 같이 및 클래스를 �
 
 생성 된 코드는 ExampleElement 도메인 클래스에 대 한 형식 설명 공급자를 정의 합니다. 그러나이 형식 설명 공급자를 사용 하도록 DSL에 지시 하는 코드를 추가 해야 합니다.
 
-1. Package.cs 파일에 다음 코드를 추가 합니다.
+1. 다음 코드를 패키지 .cs 파일에 추가 합니다.
 
     ```csharp
     using System.ComponentModel;
@@ -349,7 +349,7 @@ DefaultNamespace 속성은 네임 스페이스 추적 속성을 계산 하는 �
 
 ### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>추적 된 속성에 대 한 속성 처리기를 수정 하려면
 
-1. ExampleModel.cs 파일에 다음 코드를 추가 합니다.
+1. Examplemodel.store.customer 파일에 다음 코드를 추가 합니다.
 
     ```csharp
     using System.Linq;
@@ -425,7 +425,7 @@ DefaultNamespace 속성은 네임 스페이스 추적 속성을 계산 하는 �
 
 ### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>사용자 지정 형식 설명자에 대 한 메서드를 추가 하려면
 
-1. NamespaceTrackingProperty.cs 파일에 다음 코드를 추가 합니다.
+1. NamespaceTrackingProperty 파일에 다음 코드를 추가 합니다.
 
     ```csharp
     using System;
@@ -592,7 +592,7 @@ XML serialization에 대 한 사용자 지정 사후 로드 동작을 지 원하
 
 ### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>사용자 지정 사후 로드 동작을 지 원하는 코드를 추가 하려면
 
-1. Serialization.cs 파일에 다음 코드를 추가 합니다.
+1. Serialization .cs 파일에 다음 코드를 추가 합니다.
 
     ```csharp
     using System;
@@ -756,7 +756,7 @@ XML serialization에 대 한 사용자 지정 사후 로드 동작을 지 원하
 
 둘 이상의 추적 속성을 사용 하거나 둘 이상의 DSL에서 추적 속성을 구현할 계획인 경우 텍스트 템플릿을 만들어 각 추적 속성을 지 원하는 공통 코드를 생성할 수 있습니다. 텍스트 템플릿에 대 한 자세한 내용은 [코드 생성 및 T4 텍스트 템플릿](../modeling/code-generation-and-t4-text-templates.md)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f98dca6759b9e4a77e71139b6d9ec9b394d99b04
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861844"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385424"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>계산된 스토리지 속성 및 사용자 지정 스토리지 속성
 DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언어 탐색기에서 사용자에 게 표시 될 수 있으며 프로그램 코드에서 액세스할 수 있습니다. 그러나 속성은 값이 저장 되는 방식에 따라 달라 집니다.
@@ -24,7 +24,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 ## <a name="kinds-of-domain-properties"></a>도메인 속성의 종류
  DSL 정의에서 다음 표에 나열 된 것 처럼 도메인 속성의 **종류** 를 설정할 수 있습니다.
 
-|도메인 속성 종류|Description|
+|도메인 속성 종류|설명|
 |-|-|
 |**Standard** (기본값)|*저장소* 에 저장 되 고 파일로 serialize 되는 도메인 속성입니다.|
 |**계산**|저장소에 저장 되지 않지만 다른 값에서 계산 되는 읽기 전용 도메인 속성입니다.<br /><br /> 예를 들어는 `Person.Age` 에서 계산할 수 있습니다 `Person.BirthDate` .<br /><br /> 계산을 수행 하는 코드를 제공 해야 합니다. 일반적으로 다른 도메인 속성의 값을 계산 합니다. 그러나 외부 리소스를 사용할 수도 있습니다.|
@@ -49,7 +49,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 
 5. 오류 메시지를 두 번 클릭 합니다.
 
-     Dsl\GeneratedCode\DomainClasses.cs 또는 DomainRelationships.cs가 열립니다. 강조 표시 된 메서드 호출 위에서 주석에는 *속성* 가져오기 ()에 대 한 구현을 제공 하 라는 메시지가 표시 됩니다.
+     Dsl\GeneratedCode\DomainClasses.cs 또는 DomainRelationships 열립니다. 강조 표시 된 메서드 호출 위에서 주석에는 *속성* 가져오기 ()에 대 한 구현을 제공 하 라는 메시지가 표시 됩니다.
 
     > [!NOTE]
     > 이 파일은 DslDefinition. dsl에서 생성 됩니다. 이 파일을 편집 하는 경우 다음 번에 **모든 템플릿 변환** 을 클릭 하면 변경 내용이 손실 됩니다. 대신, 필요한 메서드를 별도의 파일에 추가 합니다.
@@ -68,7 +68,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
     }  }
     ```
 
-8. **Kind** 를 **사용자 지정 저장소** 로 설정 하는 경우에도 메서드를 제공 해야 `Set` 합니다. 예를 들어:
+8. **Kind** 를 **사용자 지정 저장소** 로 설정 하는 경우에도 메서드를 제공 해야 `Set` 합니다. 예를 들면 다음과 같습니다.
 
     ```
     void SetAgeValue(int value)
@@ -92,7 +92,7 @@ DSL (도메인별 언어)의 모든 도메인 속성은 다이어그램과 언�
 
 - 그러나 데이터베이스 또는 파일 내용과 같은 외부 리소스 또는 저장소 외부의 개체를 업데이트 해야 합니다. 이렇게 하면 synchronism에 저장 된 값으로 유지 됩니다.
 
-  예를 들어:
+  예를 들면 다음과 같습니다.
 
 ```
 void SetAgeValue(int value)
@@ -109,7 +109,7 @@ void SetAgeValue(int value)
 
  트랜잭션에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [도메인 속성의 속성](../modeling/properties-of-domain-properties.md)

@@ -6,23 +6,23 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2697e3d17e289297bcad57155c1c9ea6f1880acc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2bcc16a6f2be70ae9ba0bfec0f3a24c94213dcf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922707"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387166"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>방법: 모양 또는 데코레이터 클릭 가로채기
 다음 절차에서는 셰이프 또는 아이콘 데코레이터의 클릭을 가로채는 방법을 보여 줍니다. 클릭, 두 번 클릭, 끌기 및 기타 제스처를 가로채 고 요소가 응답 하도록 만들 수 있습니다.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>셰이프 클릭을 차단 하려면
- Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. 를 재정의 `OnDoubleClick()` 하거나 이름이로 시작 하는 다른 메서드 중 하나를 재정의 `On...` 합니다. 예를 들어:
+ Dsl 프로젝트에서 생성 된 코드 파일과 별도의 코드 파일에서 shape 클래스에 대 한 partial 클래스 정의를 작성 합니다. 를 재정의 `OnDoubleClick()` 하거나 이름이로 시작 하는 다른 메서드 중 하나를 재정의 `On...` 합니다. 예를 들면 다음과 같습니다.
 
 ```csharp
 public partial class MyShape // change
@@ -395,7 +395,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [변경 내용에 대한 대응 및 전파](../modeling/responding-to-and-propagating-changes.md)
 - [데코레이터의 속성](../modeling/properties-of-decorators.md)

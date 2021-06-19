@@ -4,17 +4,17 @@ description: Visual Studio 용 모델링 SDK를 사용 하 여 만든 DSL (도�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2637703e068a98e20f209d5de51a6003a4dd7f4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941491"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386737"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>도메인 특정 언어 시작
 
@@ -39,7 +39,7 @@ Dsl의 주요 응용 프로그램 중 하나는 프로그램 코드, 구성 파�
 
 이 개요의 나머지 부분에서는 Visual Studio에서 도메인별 언어를 만들고 사용 하는 기본 작업을 소개 하는 연습입니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 DSL을 정의하려면 다음 구성 요소를 설치해야 합니다.
 
@@ -121,7 +121,7 @@ DSL 솔루션을 만든 후 바로 실행할 수 있습니다. 나중에 DSL 정
 
 3. Visual Studio의 실험적 인스턴스에서 **솔루션 탐색기** 에서 **Test** 라는 모델 파일을 엽니다.
 
-     \- 또는 -
+     \- 또는-
 
      디버깅 프로젝트를 마우스 오른쪽 단추로 클릭 하 고 **추가** 를 가리킨 다음 **항목** 을 클릭 합니다. **항목 추가** 대화 상자에서 DSL의 파일 형식을 선택 합니다.
 
@@ -173,7 +173,7 @@ DSL은 DSL 인스턴스인 모델을 읽고 업데이트 하는 데 사용할 �
 
 3. **솔루션 탐색기** 도구 모음에서 **모든 템플릿 변환** 을 클릭 합니다.
 
-     \- 또는 -
+     \- 또는-
 
      다시 생성 하려는 템플릿을 마우스 오른쪽 단추로 클릭 한 다음 **사용자 지정 도구 실행** 을 클릭 합니다.
 
@@ -281,81 +281,81 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
    ![패밀리 트리 다이어그램, 도구 상자 및 탐색기](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>새 클래스 정의
- 도메인 클래스와 관계를 모델에 추가할 수 있습니다. 예를 들어 도시를 나타내는 새 클래스를 만들고, 해당 사용자가 타운에 있는 것을 나타내는 새 관계를 만들 수 있습니다.
+ 도메인 클래스 및 관계를 모델에 추가할 수 있습니다. 예를 들어, 새 클래스를 만들어서 도시에 거주했음을 나타내는 새 관계를 만들 수 있습니다.
 
- 모델 다이어그램에서 서로 다른 형식을 고유 하 게 만들려면 도메인 클래스를 다른 종류의 셰이프 또는 기 하 도형 및 색을 사용 하는 도형에 매핑할 수 있습니다.
+ 모델 다이어그램에서 서로 다른 형식을 구분하기 위해 도메인 클래스를 다양한 종류의 도형 또는 다른 기하 도형 및 색이 있는 셰이프에 매핑할 수 있습니다.
 
-##### <a name="to-add-and-display-a-new-domain-class"></a>새 도메인 클래스를 추가 하 고 표시 하려면
+##### <a name="to-add-and-display-a-new-domain-class"></a>새 도메인 클래스를 추가하고 표시하려면
 
-1. 도메인 클래스를 추가 하 고이를 모델 루트의 자식으로 만듭니다.
+1. 도메인 클래스를 추가하고 모델 루트의 자식으로 만듭니다.
 
-    1. DSL 정의 다이어그램에서 **포함 관계** 도구를 클릭 하 고 루트 클래스 **FamilyTreeModel** 을 클릭 한 다음 다이어그램의 빈 부분을 클릭 합니다.
+    1. DSL 정의 다이어그램에서 **관계 포함** 도구를 클릭하고 루트 클래스 **FamilyTreeModel** 을 클릭한 다음 다이어그램의 빈 부분을 클릭합니다.
 
-         포함 관계를 사용 하 여 FamilyTreeModel에 연결 된 새 도메인 클래스가 표시 됩니다.
+         포함 관계로 FamilyTreeModel에 연결된 새 도메인 클래스가 나타납니다.
 
-         이름을 설정 합니다 (예: **타운**).
+         이름(예: **Town**)을 설정합니다.
 
         > [!NOTE]
-        > 모델의 루트를 제외한 모든 도메인 클래스는 하나 이상의 포함 관계의 대상 이거나 포함의 대상인 클래스에서 상속 되어야 합니다. 이러한 이유로 포함 관계 도구를 사용 하 여 도메인 클래스를 만드는 것이 편리 합니다.
+        > 모델의 루트를 제외한 모든 도메인 클래스는 하나 이상의 포함 관계의 대상이거나 포함 대상인 클래스에서 상속해야 합니다. 이러한 이유로 포함 관계 도구를 사용하여 도메인 클래스를 만드는 것이 편리합니다.
 
-    2. **이름** 과 같이 새 클래스에 도메인 속성을 추가 합니다.
+    2. 도메인 속성을 새 클래스에 추가합니다(예: **이름).**
 
-2. 사람 및 타운 간에 참조 관계를 추가 합니다.
+2. Person과 Town 간에 참조 관계를 추가합니다.
 
-    1. **참조 관계** 도구를 클릭 하 고 Person을 클릭 한 다음 마을를 클릭 합니다.
+    1. 참조 **관계** 도구를 클릭하고 Person을 클릭한 다음, Town을 클릭합니다.
 
          ![DSL 정의 조각: 패밀리 트리 루트](../modeling/media/familyt_root.png)
 
         > [!NOTE]
         > 참조 관계는 모델 트리의 한 부분에서 다른 부분으로의 상호 참조를 나타냅니다.
 
-3. 모델 다이어그램에서 도시를 나타내는 셰이프를 추가 합니다.
+3. 모델 다이어그램에서 쉐이프를 나타내는 도형을 추가합니다.
 
-    1. **Geometry 셰이프** 를 도구 상자에서 다이어그램으로 끌고 이름을 TownShape 합니다 (예: ).
+    1. 도구 상자에서 다이어그램으로 **기하 도형을** 끌어서 이름을 바꿉니다(예: **TownShape).**
 
-    2. 속성 창에서 채우기 색, 기 하 도형 등의 새 모양의 모양 필드를 설정 합니다.
+    2. 속성 창 채우기 색 및 기하 도형과 같은 새 도형의 모양 필드를 설정합니다.
 
-    3. 데코레이터를 추가 하 여 타운의 이름을 표시 하 고 이름을 NameDecorator로 바꿉니다. Position 속성을 설정 합니다.
+    3. Decorator를 추가하여 도시의 이름을 표시하고 이름을 NameDecorator로 바꿉니다. 해당 Position 속성을 설정합니다.
 
-4. TownShape에 마을 도메인 클래스를 매핑합니다.
+4. Town 도메인 클래스를 TownShape에 매핑합니다.
 
-    1. **다이어그램 요소 맵** 도구를 클릭 하 고 마을 도메인 클래스를 클릭 한 다음 TownShape shape 클래스를 클릭 합니다.
+    1. **다이어그램 요소 맵** 도구를 클릭한 다음, Town 도메인 클래스, TownShape 셰이프 클래스를 차례로 클릭합니다.
 
-    2. **DSL 정보** 창의 **데코레이터 맵** 탭에서 지도 커넥터가 선택 된 상태에서 NameDecorator를 확인 하 고 **표시 속성** 을 이름으로 설정 합니다.
+    2. 맵 커넥터가 선택된 **DSL 세부 정보** 창의 **데코레이터 맵** 탭에서 NameDecorator를 선택하고 **표시 속성을** 이름으로 설정합니다.
 
-5. 커넥터를 만들어 사람과 도시 간의 관계를 표시 합니다.
+5. 커넥터를 만들어 Person과 To-Person 간의 관계를 표시합니다.
 
-    1. 도구 상자에서 다이어그램으로 연결선을 끌어 옵니다. 이름을 바꾸고 모양 속성을 설정 합니다.
+    1. 도구 상자에서 다이어그램으로 커넥터를 끌어 냅니다. 이름을 바꾸고 모양 속성을 설정합니다.
 
-    2. **다이어그램 요소 맵** 도구를 사용 하 여 새 커넥터를 개인 및 타운 간의 관계에 연결 합니다.
+    2. **다이어그램 요소 맵** 도구를 사용하여 새 커넥터를 Person과 Town 간의 관계에 연결합니다.
 
          ![추가된 모양 맵을 사용하여 패밀리 트리 정의](../modeling/media/familyt_shapemap.png)
 
-6. 새 타운을 만들기 위한 요소 도구를 만듭니다.
+6. 새 도시를 만들기 위한 요소 도구를 만듭니다.
 
-    1. **DSL 탐색기** 에서 **편집기** , **도구 상자 탭** 을 차례로 확장 합니다.
+    1. **DSL 탐색기에서** **편집기,** **도구 상자 탭을 확장합니다.**
 
-    2. 마우스 오른쪽 단추 *\<your DSL>* 를 클릭 한 다음 **새 요소 도구 추가** 를 클릭 합니다.
+    2. 마우스 오른쪽 단추를 *\<your DSL>* 클릭한 다음 새 요소 도구 **추가** 를 클릭합니다.
 
-    3. 새 도구의 **Name** 속성을 설정 하 고 **Class** 속성을 타운으로 설정 합니다.
+    3. 새 도구의 **Name** 속성을 설정하고 Class **속성을** Town으로 설정합니다.
 
-    4. **도구 상자 아이콘** 속성을 설정 합니다. **[...]** 를 클릭 하 고 **파일 이름** 필드에서 아이콘 파일을 선택 합니다.
+    4. 도구 **상자 아이콘** 속성을 설정합니다. **[...]를** 클릭하고 **파일 이름** 필드에서 아이콘 파일을 선택합니다.
 
-7. 도시와 사람 간에 링크를 만들기 위한 연결선 도구를 만듭니다.
+7. 두 사람 사이의 연결을 만들기 위한 커넥터 도구를 만듭니다.
 
-    1. 마우스 오른쪽 단추로 클릭 한 *\<your DSL>* 다음 **새 커넥터 도구 추가** 를 클릭 합니다.
+    1. 를 마우스 오른쪽 *\<your DSL>* 단추로 클릭한 다음 **새 커넥터 도구 추가를** 클릭합니다.
 
-    2. 새 도구의 이름 속성을 설정 합니다.
+    2. 새 도구의 Name 속성을 설정합니다.
 
-    3. **Connectionbuilder** 속성에서 Person-Town 관계의 이름을 포함 하는 작성기를 선택 합니다.
+    3. **ConnectionBuilder** 속성에서 Person-Town 관계의 이름이 포함된 작성기를 선택합니다.
 
-    4. **도구 상자 아이콘** 을 설정 합니다.
+    4. 도구 **상자 아이콘** 을 설정합니다.
 
-8. DSL 정의를 저장 하 고 **모든 템플릿 변환** 을 클릭 한 다음 **f5** 키를 누릅니다.
+8. DSL 정의를 저장하고 **모든 템플릿 변환을** 클릭한 다음 **F5** 키를 누릅니다.
 
-9. Visual Studio의 실험적 인스턴스에서 테스트 모델 파일을 엽니다. 새 도구를 사용 하 여 마을을 도시와 사람 간에 링크를 만들 수 있습니다. 올바른 요소 형식 간에만 링크를 만들 수 있습니다.
+9. Visual Studio 실험적 인스턴스에서 테스트 모델 파일을 엽니다. 새 도구를 사용하여 초보자와 사람 간의 링크와 을 만듭니다. 올바른 형식의 요소 간에만 링크를 만들 수 있습니다.
 
-10. 각 사용자가 거주 하는 마을을 나열 하는 코드를 만듭니다. 텍스트 템플릿은 이러한 코드를 실행할 수 있는 위치 중 하나입니다. 예를 들어 다음 코드를 포함 하도록 디버깅 솔루션에서 기존 Sample.tt 파일을 수정할 수 있습니다.
+10. 각 사람이 살고 있는 도시를 나열하는 코드를 만듭니다. 텍스트 템플릿은 이러한 코드를 실행할 수 있는 위치 중 하나입니다. 예를 들어 디버깅 솔루션에서 기존 Sample.tt 파일을 수정하여 다음 코드를 포함할 수 있습니다.
 
     ```
     <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" debug="true" #>
@@ -380,36 +380,36 @@ DSL에 대 한 다양 한 확장을 만들 수 있습니다. 다음 예에서는
 
     ```
 
-     * .Tt 파일을 저장 하면 사용자 및 해당 residences 목록이 포함 된 자회사 파일이 생성 됩니다. 자세한 내용은 [Domain-Specific 언어에서 코드 생성](../modeling/generating-code-from-a-domain-specific-language.md)을 참조 하세요.
+     *.tt 파일을 저장하면 사람과 그 구성원의 목록이 포함된 자회사 파일이 생성됩니다. 자세한 내용은 [Domain-Specific 언어에서 코드 생성을 참조하세요.](../modeling/generating-code-from-a-domain-specific-language.md)
 
 ## <a name="validation-and-commands"></a>유효성 검사 및 명령
- 유효성 검사 제약 조건을 추가 하 여이 DSL을 추가로 개발할 수 있습니다. 이러한 제약 조건은 모델이 올바른 상태 인지 확인 하기 위해 정의할 수 있는 메서드입니다. 예를 들어 자식의 출생 날짜가 부모 항목 보다 최신 인지 확인 하기 위한 제약 조건을 정의할 수 있습니다. DSL 사용자가 제약 조건을 위반 하는 모델을 저장 하려고 하면 유효성 검사 기능이 경고를 표시 합니다. 자세한 내용은 [Domain-Specific 언어로 유효성 검사](../modeling/validation-in-a-domain-specific-language.md)를 참조 하세요.
+ 유효성 검사 제약 조건을 추가하여 이 DSL을 추가로 개발할 수 있습니다. 이러한 제약 조건은 모델이 올바른 상태인지 확인하는 정의할 수 있는 메서드입니다. 예를 들어 제약 조건을 정의하여 자식의 생년월일이 부모의 생년월일보다 늦도록 할 수 있습니다. DSL 사용자가 제약 조건을 위반하는 모델을 저장하려고 하면 유효성 검사 기능에 경고가 표시됩니다. 자세한 내용은 [Domain-Specific 언어의 유효성 검사를 참조하세요.](../modeling/validation-in-a-domain-specific-language.md)
 
- 사용자가 호출할 수 있는 메뉴 명령을 정의할 수도 있습니다. 명령은 모델을 수정할 수 있습니다. 또한 Visual Studio의 다른 모델과 외부 리소스와 상호 작용할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)을 참조 하세요.
+ 사용자가 호출할 수 있는 메뉴 명령을 정의할 수도 있습니다. 명령은 모델을 수정할 수 있습니다. 또한 Visual Studio 및 외부 리소스의 다른 모델과 상호 작용할 수 있습니다. 자세한 내용은 [방법: 표준 메뉴 명령 수정을 참조하세요.](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 
 ## <a name="deploying-the-dsl"></a>DSL 배포
- 다른 사용자가 도메인별 언어를 사용할 수 있도록 하려면 VSIX (Visual Studio Extension) 파일을 배포 합니다. DSL 솔루션을 빌드할 때 만들어집니다.
+ 다른 사용자가 도메인 특정 언어를 사용할 수 있도록 VSIX(Visual Studio Extension) 파일을 배포합니다. DSL 솔루션을 빌드할 때 만들어집니다.
 
- 솔루션의 bin 폴더에서 .vsix 파일을 찾습니다. 설치 하려는 컴퓨터에 복사 합니다. 해당 컴퓨터에서 VSIX 파일을 두 번 클릭 합니다. DSL은 해당 컴퓨터에 있는 Visual Studio의 모든 인스턴스에서 사용할 수 있습니다.
+ 솔루션의 bin 폴더에서 .vsix 파일을 찾습니다. 설치하려는 컴퓨터에 복사합니다. 해당 컴퓨터에서 VSIX 파일을 두 번 클릭합니다. DSL은 해당 컴퓨터의 모든 Visual Studio 인스턴스에서 사용할 수 있습니다.
 
- 동일한 절차를 사용 하 여 Visual Studio의 실험적 인스턴스를 사용할 필요가 없도록 컴퓨터에 DSL을 설치할 수 있습니다.
+ Visual Studio 실험적 인스턴스를 사용할 필요가 없도록 동일한 절차를 사용하여 자신의 컴퓨터에 DSL을 설치할 수 있습니다.
 
  자세한 내용은 [도메인 특정 언어 솔루션 배포](msi-and-vsix-deployment-of-a-dsl.md)를 참조하세요.
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> 이전 실험적 Dsl 제거
- 더 이상 원치 않는 실험적 Dsl을 만든 경우에는 Visual Studio 실험적 인스턴스를 다시 설정 하 여 컴퓨터에서 제거할 수 있습니다.
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> 이전 실험적 DSL 제거
+ 더 이상 원하지 않는 실험적 DSL을 만든 경우 Visual Studio 실험적 인스턴스를 다시 설정하여 컴퓨터에서 제거할 수 있습니다.
 
- 그러면 모든 실험적 Dsl 및 기타 실험적 Visual Studio 확장을 컴퓨터에서 제거 합니다. 이러한 확장은 디버깅 모드에서 실행 된 확장입니다.
+ 이렇게 하면 모든 실험적 DSL 및 기타 실험적 Visual Studio 확장이 컴퓨터에서 제거됩니다. 디버깅 모드에서 실행된 확장입니다.
 
- 이 절차는 VSIX 파일을 실행 하 여 완전히 설치 된 Dsl 또는 다른 Visual Studio 확장을 제거 하지 않습니다.
+ 이 절차에서는 VSIX 파일을 실행하여 완전히 설치된 DSL 또는 기타 Visual Studio 확장을 제거하지 않습니다.
 
-#### <a name="to-reset-the-visual-studio-experimental-instance"></a>Visual Studio 실험적 인스턴스를 다시 설정 하려면
+#### <a name="to-reset-the-visual-studio-experimental-instance"></a>Visual Studio 실험적 인스턴스를 다시 설정하려면
 
-1. **시작**, **모든 프로그램**, **Microsoft Visual Studio 2010 SDK**, **도구** 를 차례로 클릭 한 다음 **Microsoft Visual Studio 2010 실험적 인스턴스를 다시 설정** 합니다.
+1. **시작을** 클릭하고 **모든 프로그램**, **Microsoft Visual Studio 2010 SDK**, **도구** 를 클릭한 다음 **Microsoft Visual Studio 2010 실험적 인스턴스를 다시** 설정합니다.
 
-2. 계속 사용 하려는 실험적 Dsl 또는 기타 실험적 Visual Studio 확장을 다시 빌드합니다.
+2. 여전히 사용하려는 실험적 DSL 또는 기타 실험적 Visual Studio 확장을 다시 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [모델, 클래스 및 관계 이해](../modeling/understanding-models-classes-and-relationships.md)
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)

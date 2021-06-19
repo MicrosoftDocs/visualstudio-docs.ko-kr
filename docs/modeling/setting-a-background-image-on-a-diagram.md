@@ -4,17 +4,17 @@ description: Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 �
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca83bd9f6ac88e26247f6c9beea9c242a505887c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9304117932b92408f12a23747253de66dfd767d1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873777"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385671"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>다이어그램에 배경 이미지 설정
 Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사용 하 여 생성 된 디자이너의 배경 이미지를 설정할 수 있습니다.
@@ -43,7 +43,7 @@ Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사�
 
 10. Dsl\Properties\Resources.resx 파일이 있으며 그 아래에 Resources.Designer.cs 파일이 있는지 확인합니다.
 
-11. Resources.Designer.cs이 없는 경우 **솔루션 탐색기** 에서 파일 리소스 .resx를 클릭 합니다.
+11. Node.js가 없는 경우 **솔루션 탐색기** 에서 파일의 .resx를 클릭 합니다.
 
 12. **속성** 창에서 `Custom Tool` 속성을 `ResXFileCodeGenerator`로 설정합니다.
 
@@ -102,7 +102,7 @@ Visual Studio 시각화 및 모델링 SDK에서 사용자 지정 코드를 사�
 
      프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [모양 및 연결선 정의](../modeling/defining-shapes-and-connectors.md)
 - [텍스트 및 이미지 필드 사용자 지정](../modeling/customizing-text-and-image-fields.md)

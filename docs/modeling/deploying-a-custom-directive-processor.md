@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - text templates, custom directive processors
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30233bf34f523ef53d95cef153fd604cef0b6447
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935341"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384904"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>사용자 지정 지시문 처리기 배포
 
@@ -68,7 +68,7 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
     2. 솔루션 탐색기에서 이 파일을 선택하고 다음과 같이 속성을 설정합니다.
 
-         **빌드 작업**  =  **콘텐츠**
+         **빌드 작업** = **콘텐츠**
 
          **출력 디렉터리**  =  에 복사 **항상 복사**
 
@@ -184,20 +184,20 @@ Visual Studio 또는 MSBuild에서 텍스트 템플릿을 변환 하려는 경�
 
    사용자 지정 지시문 프로세서가 GAC에 없는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|이름|Type|데이터|
+|속성|Type|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|인스턴스|REG_SZ|**\<Namespace Name>.\<Class Name>**|
+|클래스|REG_SZ|**\<Namespace Name>.\<Class Name>**|
 |CodeBase|REG_SZ|**\<Your Path>\\ 어셈블리 이름<\>**|
 
  어셈블리가 GAC에 있는 경우 레지스트리 하위 키는 다음 표와 같습니다.
 
-|이름|Type|데이터|
+|속성|Type|데이터|
 |-|-|-|
 |(기본값)|REG_SZ|(값 설정 안 됨)|
-|인스턴스|REG_SZ|\<**Your Fully Qualified Class Name**>|
+|클래스|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |어셈블리|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [사용자 지정 T4 텍스트 템플릿 지시문 프로세서 만들기](../modeling/creating-custom-t4-text-template-directive-processors.md)

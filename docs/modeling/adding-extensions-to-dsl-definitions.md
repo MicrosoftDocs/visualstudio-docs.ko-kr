@@ -4,17 +4,17 @@ description: DSL 정의 확장을 사용 하 여 DSL (도메인별 언어)에 �
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1208c152534206a0ed2894fc0e41d844e0b77d47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d9f1c92ebb879517d497af41fe98cec4492bd95
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861961"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384891"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>DSL 정의에 확장 추가
 
@@ -36,6 +36,6 @@ DSL 확장에는 다음과 같은 기능이 포함 될 수 있습니다.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [관련 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

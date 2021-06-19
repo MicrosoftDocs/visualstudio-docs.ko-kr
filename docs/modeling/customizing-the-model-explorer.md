@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ae5ea3c24ea72c911f686c7a0a92191785d9d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c842988f3e5c9f1bbed5a859e73680cb109ecd43
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935380"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385905"
 ---
 # <a name="customizing-the-model-explorer"></a>모델 탐색기 사용자 지정
 다음과 같이 도메인별 언어 디자이너에 대 한 탐색기의 모양과 동작을 변경할 수 있습니다.
@@ -44,7 +44,7 @@ ms.locfileid: "99935380"
 
 1. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]작업 흐름 솔루션 템플릿을 사용 하 여 솔루션을 만듭니다.
 
-2. 솔루션의 **Dsl\resources** 폴더에 16x16 픽셀 아이콘이 포함 된 .bmp 파일을 배치 합니다.
+2. 16x16 픽셀 아이콘이 포함 된 .bmp 파일을 솔루션의 **Dsl\resources** 폴더에 배치 합니다.
 
 3. **DSL 탐색기** 에서 **탐색기 동작** 을 마우스 오른쪽 단추로 클릭 한 다음 **새 탐색기 노드 설정 추가** 를 클릭 합니다.
 
@@ -113,6 +113,6 @@ ms.locfileid: "99935380"
 
      탐색기에는 **행위자** 노드만 표시 되 고 **주석** 노드는 표시 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

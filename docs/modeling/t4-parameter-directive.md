@@ -1,36 +1,36 @@
 ---
 title: T4 매개 변수 지시문
-description: Visual Studio에서 매개 변수 지시문은 외부 컨텍스트에서 전달 된 값에서 초기화 되는 템플릿 코드의 속성을 선언 하는 방법에 대해 알아봅니다.
+description: Visual Studio 매개 변수 지시문은 외부 컨텍스트에서 전달된 값에서 초기화된 템플릿 코드의 속성을 선언합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe68d31d214ae4be8fca35f1e90e63690f3ad581
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ef80179d43996669b9d883fd2ca9163208d18d7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924610"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386100"
 ---
 # <a name="t4-parameter-directive"></a>T4 매개 변수 지시문
 
-Visual Studio 텍스트 템플릿에서 `parameter` 지시문은 외부 컨텍스트에서 전달 된 값에서 초기화 되는 템플릿 코드의 속성을 선언 합니다. 텍스트 변환을 호출 하는 코드를 작성 하는 경우 이러한 값을 설정할 수 있습니다.
+Visual Studio 텍스트 템플릿에서 `parameter` 지시문은 외부 컨텍스트에서 전달된 값에서 초기화된 템플릿 코드의 속성을 선언합니다. 텍스트 변환을 호출하는 코드를 작성하는 경우 이러한 값을 설정할 수 있습니다.
 
-## <a name="using-the-parameter-directive"></a>매개 변수 지시어 사용
+## <a name="using-the-parameter-directive"></a>매개 변수 지시문 사용
 
 ```
 <#@ parameter type="Full.TypeName" name="ParameterName" #>
 ```
 
- `parameter`지시문은 외부 컨텍스트에서 전달 된 값에서 초기화 되는 템플릿 코드의 속성을 선언 합니다. 텍스트 변환을 호출 하는 코드를 작성 하는 경우 이러한 값을 설정할 수 있습니다. 값은 사전 또는에서 전달 될 수 있습니다 `Session` <xref:System.Runtime.Remoting.Messaging.CallContext> .
+ `parameter`지시문은 외부 컨텍스트에서 전달된 값에서 초기화된 템플릿 코드의 속성을 선언합니다. 텍스트 변환을 호출하는 코드를 작성하는 경우 이러한 값을 설정할 수 있습니다. 값은 사전 또는 에서 전달할 수 `Session` <xref:System.Runtime.Remoting.Messaging.CallContext> 있습니다.
 
- 원격으로 사용할 수 있는 형식의 매개 변수를 선언할 수 있습니다. 즉,를 사용 하 여 형식을 선언 <xref:System.SerializableAttribute> 하거나에서 파생 해야 합니다 <xref:System.MarshalByRefObject> . 이렇게 하면 템플릿이 처리 되는 AppDomain에 매개 변수 값을 전달할 수 있습니다.
+ 모든 remotable 형식의 매개 변수를 선언할 수 있습니다. 즉, 형식을 로 선언하거나 <xref:System.SerializableAttribute> 에서 파생되어야 <xref:System.MarshalByRefObject> 합니다. 이렇게 하면 템플릿이 처리되는 AppDomain에 매개 변수 값을 전달할 수 있습니다.
 
- 예를 들어 다음 콘텐츠를 사용 하 여 텍스트 템플릿을 작성할 수 있습니다.
+ 예를 들어 다음 내용이 있는 텍스트 템플릿을 작성할 수 있습니다.
 
 ```
 <#@ template language="C#" #>
@@ -43,7 +43,7 @@ Line <#= i #>
 ```
 
 ## <a name="passing-parameter-values-to-a-template"></a>템플릿에 매개 변수 값 전달
- 메뉴 명령이 나 이벤트 처리기와 같은 Visual Studio 확장을 작성 하는 경우 텍스트 템플릿 서비스를 사용 하 여 템플릿을 처리할 수 있습니다.
+ 메뉴 명령 또는 이벤트 처리기와 같은 Visual Studio 확장을 작성하는 경우 텍스트 템플릿 서비스를 사용하여 템플릿을 처리할 수 있습니다.
 
 ```csharp
 // Get a service provider - how you do this depends on the context:
@@ -61,9 +61,9 @@ string result = t4.ProcessTemplate("MyTemplateFile.t4",
 ```
 
 ## <a name="passing-values-in-the-call-context"></a>호출 컨텍스트에서 값 전달
- 또는에서 값을 논리 데이터로 전달할 수 있습니다 <xref:System.Runtime.Remoting.Messaging.CallContext> .
+ 또는 에서 값을 논리 데이터로 전달할 수 <xref:System.Runtime.Remoting.Messaging.CallContext> 있습니다.
 
- 다음 예제에서는 두 가지 방법을 모두 사용 하 여 값을 전달 합니다.
+ 다음 예제에서는 두 메서드를 모두 사용하여 값을 전달합니다.
 
 ```csharp
 ITextTemplating t4 = this.Store.GetService(typeof(STextTemplating)) as ITextTemplating;
@@ -84,10 +84,10 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Run-Time (전처리) 텍스트 템플릿에 값 전달
- 일반적으로 `<#@parameter#>` 전처리 된 런타임 텍스트 템플릿에는 지시문을 사용할 필요가 없습니다. 대신, 매개 변수 값을 전달 하는 데 사용할 수 있는 생성 된 코드에 대 한 추가 생성자 또는 설정 가능한 속성을 정의할 수 있습니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Run-Time(전처리) 텍스트 템플릿에 값 전달
+ 일반적으로 `<#@parameter#>` 런타임(전처리) 텍스트 템플릿과 함께 지시문을 사용할 필요는 없습니다. 대신 매개 변수 값을 전달하는 생성된 코드에 대한 추가 생성자 또는 settable 속성을 정의할 수 있습니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
- 그러나 런타임 템플릿에서를 사용 하려는 경우 `<#@parameter>` 세션 사전을 사용 하 여 값을 전달할 수 있습니다. 예를 들어 파일을 이라는 전처리 된 템플릿으로 만들었다고 가정 합니다 `PreTextTemplate1` . 다음 코드를 사용 하 여 프로그램에서 템플릿을 호출할 수 있습니다.
+ 그러나 런타임 템플릿에서 를 사용하려는 경우 `<#@parameter>` 세션 사전을 사용하여 값을 전달할 수 있습니다. 예를 들어 파일을 라는 전처리된 템플릿으로 만들었다고 `PreTextTemplate1` 가정합니다. 다음 코드를 사용하여 프로그램에서 템플릿을 호출할 수 있습니다.
 
 ```csharp
 PreTextTemplate1 t = new PreTextTemplate1();
@@ -98,7 +98,7 @@ t.Initialize(); // Must call this to transfer values.
 string resultText = t.TransformText();
 ```
 
-## <a name="obtaining-arguments-from-texttemplateexe"></a>TextTemplate.exe에서 인수 가져오기
+## <a name="obtaining-arguments-from-texttemplateexe"></a>TextTemplate.exe 인수 얻기
 
 > [!IMPORTANT]
-> `parameter`지시문은 `-a` 유틸리티의 매개 변수에 설정 된 값을 검색 하지 않습니다 `TextTransform.exe` . 이러한 값을 가져오려면 지시문에서를 설정 하 `hostSpecific="true"` `template` 고를 사용 `this.Host.ResolveParameterValue("","","argName")` 합니다.
+> `parameter`지시문은 유틸리티의 매개 변수에 설정된 값을 검색하지 `-a` `TextTransform.exe` 않습니다. 이러한 값을 얻으려면 지시문에서 를 설정하고 `hostSpecific="true"` `template` 를 `this.Host.ResolveParameterValue("","","argName")` 사용합니다.

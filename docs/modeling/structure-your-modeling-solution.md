@@ -4,17 +4,17 @@ description: 전체 계층화 다이어그램의 계층에 해당 하는 여러 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0bfc178c2aea86a04123815ae946226691477
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54275c55d3d7a80dc2df1721585bc6c39ba8b06e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899798"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385489"
 ---
 # <a name="structure-your-modeling-solution"></a>모델링 솔루션 구성
 
@@ -24,7 +24,7 @@ ms.locfileid: "99899798"
 
 이 항목에서는 여러 팀 멤버는 물론 여러 팀이 필요할 만큼 큰 프로젝트에서 작업 중이라고 가정합니다. 프로젝트의 코드와 모델은 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]와 같은 소스 제어 시스템에 저장됩니다. 적어도 일부 팀 멤버는 Visual Studio를 사용하여 모델을 개발하고, 다른 팀 멤버는 다른 Visual Studio 버전을 사용하여 모델을 볼 수 있습니다.
 
-각 도구 및 모델링 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조 하세요.
+각 도구 및 모델링 기능을 지 원하는 Visual Studio 버전을 확인 하려면 [아키텍처 및 모델링 도구에 대 한 버전 지원](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조 하세요.
 
 ## <a name="solution-structure"></a>솔루션 구조
 
@@ -108,7 +108,6 @@ ms.locfileid: "99899798"
 
 [모델 구성 및 관리](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [개발 프로세스에서 모델 사용](../modeling/use-models-in-your-development-process.md)
-- [Visual Studio 아키텍처 도구 사용 지침](../modeling/visual-studio-architecture-tooling-guidance.md)

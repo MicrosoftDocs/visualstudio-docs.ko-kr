@@ -10,17 +10,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40341a0c74b371c4c84429474e58c7d338bb8059
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 956955a9c2feb9982bee0101965336be2ca29ab7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935432"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385814"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>도구 및 도구 상자 사용자 지정
 
@@ -166,7 +166,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>연결 작성기용 사용자 지정 코드
  사용자 인터페이스에는 연결 작성기의 여러 사용자 지정 형식을 정의하는 4개 확인란이 있습니다.
 
-- 소스 또는 대상 역할 지시문에 대 한 **사용자 지정 허용** 확인란
+- 원본 또는 대상 역할 지시문의 **사용자 지정 수락** 확인란
 
 - 원본 또는 대상 역할 지시문의 **사용자 지정 연결** 확인란
 
@@ -177,10 +177,10 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   이러한 사용자 지정을 수행하려면 프로그램 코드를 입력해야 합니다. 입력해야 하는 코드를 확인하려면 위의 확인란 중 하나를 선택하고 모든 템플릿 변환을 클릭한 후에 솔루션을 빌드합니다. 그러면 오류 보고서가 표시됩니다. 오류 보고서를 두 번 클릭하면 추가해야 하는 코드를 설명하는 주석이 표시됩니다.
 
 > [!NOTE]
-> 사용자 지정 코드를 추가하려면 GeneratedCode 폴더의 코드 파일이 아닌 별도의 코드 파일에 부분 클래스 정의를 만듭니다. 작업 내용 손실을 방지하려면 생성된 코드 파일을 편집해서는 안 됩니다. 자세한 내용은 [생성 된 클래스 재정의 및 확장](../modeling/overriding-and-extending-the-generated-classes.md)을 참조 하세요.
+> 사용자 지정 코드를 추가하려면 GeneratedCode 폴더의 코드 파일이 아닌 별도의 코드 파일에 부분 클래스 정의를 만듭니다. 작업 내용 손실을 방지하려면 생성된 코드 파일을 편집해서는 안 됩니다. 자세한 내용은 [재정의 및 생성된 클래스 확장을 참조하세요.](../modeling/overriding-and-extending-the-generated-classes.md)
 
 #### <a name="creating-custom-connection-code"></a>사용자 지정 연결 코드 만들기
- 각 링크 연결 지시문에서 **소스 역할 지시문** 탭은 끌 수 있는 형식을 정의 합니다. 마찬가지로 **대상 역할 지시문** 탭은 끌 수 있는 형식을 정의 합니다. 각 형식에 대해 **사용자 지정 수락** 플래그를 설정 하 고 추가 코드를 제공 하 여 해당 링크 연결 지시문에 대해 연결을 허용할지 여부를 추가로 지정할 수 있습니다.
+ 각 링크 연결 지시문에서 **원본 역할 지시문 탭은** 끌 수 있는 형식을 정의합니다. 마찬가지로 대상 **역할 지시문 탭은** 끌 수 있는 형식을 정의합니다. 각 형식에 대해 **사용자 지정 수락** 플래그를 설정하고 추가 코드를 제공하여 연결(해당 링크 연결 지시문의 경우)을 허용할지 여부를 추가로 지정할 수 있습니다.
 
  연결 설정 시 수행되는 작업도 사용자 지정할 수 있습니다. 예를 들어 특정 클래스에서/클래스로 끌기가 수행되는 경우만 사용자 지정하거나 단일 링크 연결 지시문이 적용되는 모든 경우를 사용자 지정하거나 전체 FlowBuilder 연결 작성기를 사용자 지정할 수 있습니다. 이러한 각 옵션에 대해 사용자 지정 플래그를 적절한 수준으로 설정할 수 있습니다. 모든 템플릿을 변환하고 솔루션 빌드를 시도하는 경우 오류 메시지에 생성된 코드의 주석이 표시됩니다. 이러한 주석을 통해 입력해야 하는 코드를 확인할 수 있습니다.
 
@@ -190,7 +190,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  ![연결 작성기](../modeling/media/connectionbuilder_3.png)
 
- 따라서 중첩된 구성 요소에서 OutPort로의 연결이 가능하도록 지정할 수 있습니다. 이러한 연결을 지정 하기 위해 다음 그림에 표시 된 것 처럼 **DSL 세부 정보** 창에서 **InPort** 형식에 대해 **사용자 지정 허용** 을 원본 역할로 설정 하 고 **outport** 형식을 대상 역할로 설정 합니다.
+ 따라서 중첩된 구성 요소에서 OutPort로의 연결이 가능하도록 지정할 수 있습니다. 이러한 연결을 지정하려면 다음 그림과 같이 **DSL 세부 정보** **창에서 InPort** 형식의 **사용자 지정 수락 사용을** 원본 역할로 설정하고 **OutPort** 형식을 대상 역할로 설정합니다.
 
  **DSL 탐색기의 링크 연결 지시문**
 
@@ -198,7 +198,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **DSL 세부 정보 창의 링크 연결 지시문**
 
- ![DSL 정보 창의 링크 연결 지시문](../modeling/media/connectionbuilder_4b.png)
+ ![DSL 세부 내용 창의 연결 지시문](../modeling/media/connectionbuilder_4b.png)
 
  그런 다음 ConnectionBuilder 클래스에서 메서드를 입력해야 합니다.
 
@@ -223,18 +223,18 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 // And similar for OutPorts...
 ```
 
- 프로그램 코드를 사용 하 여 모델을 사용자 지정 하는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
+ 프로그램 코드를 사용하여 모델을 사용자 지정하는 자세한 내용은 프로그램 [코드에서 모델 탐색 및 업데이트를 참조하세요.](../modeling/navigating-and-updating-a-model-in-program-code.md)
 
- 예를 들어 비슷한 코드를 통해 사용자가 부모-자식 링크를 포함하는 루프를 만들지 못하도록 지정할 수 있습니다. 이러한 제한 사항은 사용자가 언제 든 지 위반할 수 없기 때문에 ' hard ' 제약 조건으로 간주 됩니다. 사용자가 저장할 수 없는 잘못 된 구성을 만들어 일시적으로 무시할 수 있는 ' 소프트 ' 유효성 검사를 만들 수도 있습니다.
+ 예를 들어 비슷한 코드를 통해 사용자가 부모-자식 링크를 포함하는 루프를 만들지 못하도록 지정할 수 있습니다. 이러한 제한은 사용자가 언제든지 위반할 수 없으므로 '하드' 제약 조건으로 간주됩니다. 사용자가 저장할 수 없는 잘못된 구성을 만들어 일시적으로 무시할 수 있는 '소프트' 유효성 검사를 만들 수도 있습니다.
 
 ### <a name="good-practice-in-defining-connection-builders"></a>적절한 연결 작성기 정의 사례
  개념적으로 관련이 있는 경우에만 단일 연결 작성기가 여러 관계 형식을 만들도록 정의해야 합니다. 작업 흐름 샘플에서는 같은 작성기를 사용하여 작업 간에 그리고 작업과 개체 간에 흐름을 만듭니다. 그러나 같은 작성기를 사용해 주석과 작업 간에 관계를 만들면 관계를 혼동할 수도 있습니다.
 
  여러 관계 형식에 대해 연결 작성기 하나를 정의하는 경우에는 연결 작성기가 같은 소스 및 대상 개체 쌍의 형식 두 개 이상과 일치하지 않도록 해야 합니다. 이렇게 하지 않으면 결과를 예측할 수가 없습니다.
 
- 사용자 지정 코드를 사용 하 여 ' hard ' 제약 조건을 적용할 수 있지만 사용자가 일시적으로 잘못 된 연결을 만들 수 있어야 하는지 여부를 고려해 야 합니다. 사용자가 일시적으로 잘못된 연결을 설정할 수 있어야 하는 경우에는 사용자가 변경 내용을 저장할 때까지 연결 유효성을 검사하지 않도록 제약 조건을 수정할 수 있습니다.
+ 사용자 지정 코드를 사용하여 '하드' 제약 조건을 적용하지만 사용자가 일시적으로 잘못된 연결을 만들 수 있는지 여부를 고려해야 합니다. 사용자가 일시적으로 잘못된 연결을 설정할 수 있어야 하는 경우에는 사용자가 변경 내용을 저장할 때까지 연결 유효성을 검사하지 않도록 제약 조건을 수정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [요소 만들기 및 이동 사용자 지정](../modeling/customizing-element-creation-and-movement.md)
 - [복사 동작 사용자 지정](../modeling/customizing-copy-behavior.md)

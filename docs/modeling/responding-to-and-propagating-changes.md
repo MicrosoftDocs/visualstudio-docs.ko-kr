@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6066a40ea09698bec6caba38d5d55aa8b269e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6fc8345ca90414f410dde9a089d9529ed19536b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937942"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387582"
 ---
 # <a name="respond-to-and-propagate-changes"></a>변경 내용에 대 한 응답 및 전파
 
@@ -54,7 +54,7 @@ ms.locfileid: "99937942"
 
 - **규칙 및 이벤트에 이벤트 인수 전달** 이벤트와 규칙에는 `EventArgs` 모델 변경 방법에 대 한 정보가 포함 된 매개 변수가 전달 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [방법: 모양 또는 데코레이터 클릭 가로채기](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [Domain-Specific 언어를 사용자 지정 하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

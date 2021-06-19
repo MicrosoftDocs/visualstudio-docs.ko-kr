@@ -4,17 +4,17 @@ description: Visual Studio 디자인 타임 텍스트 템플릿에서 어셈블�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d214764e8067e1165eeacc044bddc1994230562
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38b5a7fe2308884d4837a068770af67435ada70e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899681"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386360"
 ---
 # <a name="t4-assembly-directive"></a>T4 Assembly 지시문
 
@@ -38,7 +38,7 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문은
 
 - 어셈블리의 절대 경로
 
-  구문을 사용 하 여와 `$(variableName)` 같은 Visual Studio 변수를 참조 하 `$(SolutionDir)` 고 `%VariableName%` 환경 변수를 참조할 수 있습니다. 예를 들어:
+  구문을 사용 하 여와 `$(variableName)` 같은 Visual Studio 변수를 참조 하 `$(SolutionDir)` 고 `%VariableName%` 환경 변수를 참조할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -90,6 +90,6 @@ Visual Studio 디자인 타임 텍스트 템플릿에서 `assembly` 지시문은
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [T4 Include 지시문](../modeling/t4-include-directive.md)

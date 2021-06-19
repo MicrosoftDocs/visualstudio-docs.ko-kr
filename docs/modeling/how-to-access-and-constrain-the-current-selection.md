@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83903c8ff911fdd1d4900714137a7f6976513dad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28d0f99743535965b3cf203d461fac5d0193607c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890567"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386607"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>방법: 현재 선택 항목 액세스 및 제약
 
@@ -103,7 +103,7 @@ ms.locfileid: "99890567"
 
 4. ClassDiagram 클래스의 partial 클래스 정의를 사용자 지정 코드 파일에 추가 합니다.
 
-     `ClassDiagram`클래스는 클래스에서 파생 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 되며, DSL 프로젝트에서 생성 된 코드 파일 Diagram.cs에 정의 됩니다.
+     `ClassDiagram`클래스는 클래스에서 파생 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 되 고, 생성 된 코드 파일 (다이어그램. cs)에서 DSL 프로젝트에 정의 됩니다.
 
 5. <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A>클래스의 속성을 재정의 `ClassDiagram` 하 여 사용자 지정 선택 규칙을 반환 합니다.
 
@@ -211,7 +211,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>
 - <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>

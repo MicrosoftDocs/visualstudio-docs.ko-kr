@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b44631971db277adcb0292f43a8592775fb3a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccbc82801c3570c74e96010d5f9fc0e0e7940937
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922691"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387101"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>방법: 도메인별 언어에서 표준 메뉴 명령 수정
 
@@ -57,7 +57,7 @@ DSL에서 자동으로 정의되는 일부 표준 명령의 동작을 수정할 
 
 2. **Dslpackage** 에서 **custom Code** 라는 폴더를 만듭니다. 이 폴더에서 라는 새 클래스 파일을 만듭니다 `CommandSet.cs` .
 
-3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들어:
+3. 새 파일에 생성된 partial 클래스와 이름 및 네임스페이스가 같은 partial 선언을 작성합니다. 예를 들면 다음과 같습니다.
 
     ```csharp
     using System;
@@ -145,7 +145,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 요소에서 요소로 이동 하는 방법과 개체 및 링크를 만드는 방법에 대 한 자세한 내용은 [프로그램 코드에서 모델 탐색 및 업데이트](../modeling/navigating-and-updating-a-model-in-program-code.md)를 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [도메인별 언어를 사용자 지정하는 코드 작성](../modeling/writing-code-to-customise-a-domain-specific-language.md)

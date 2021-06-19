@@ -10,22 +10,22 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d04366c908494386edc9921129db27df0ead4f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce03349a5179e8dd78220fffd1ff6b21d1a3b495
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941413"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387322"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>방법: 도메인별 언어 솔루션 만들기
 DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용 하 여 만듭니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 이 절차를 시작 하기 전에 다음 구성 요소를 설치 합니다.
 
@@ -89,11 +89,11 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
 - 다른 파일 확장명을 입력 합니다.
 
-     \- 또는 -
+     \- 또는-
 
 - Visual Studio 실험적 인스턴스를 다시 설정 합니다. 이렇게 하면 이전에 빌드한 모든 Dsl의 등록이 취소 됩니다. **시작** 메뉴에서 **모든 프로그램**, **Microsoft Visual Studio 2010 SDK**, **도구** 를 차례로 클릭 한 다음 **Microsoft Visual Studio 2010 실험적 인스턴스를 다시 설정** 합니다. 다시 사용 하려는 다른 모든 Dsl을 다시 작성할 수 있습니다.
 
-     \- 또는 -
+     \- 또는-
 
 - 이 파일 확장명을 사용 하는 Visual Studio 확장이 컴퓨터에 완전히 설치 된 경우 제거 합니다. **도구** 메뉴에서 **확장 관리자** 를 클릭 합니다.
 
@@ -118,7 +118,7 @@ DSL (도메인 특정 언어)은 특수화 된 Visual Studio 솔루션을 사용
 
  강력한 이름 지정에 대 한 자세한 내용은 [Strong-Named 어셈블리 만들기 및 사용](/dotnet/standard/assembly/create-use-strong-named)을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [도메인별 언어 정의 방법](../modeling/how-to-define-a-domain-specific-language.md)
 - [도메인 특정 언어 도구 용어집](/previous-versions/bb126564(v=vs.100))

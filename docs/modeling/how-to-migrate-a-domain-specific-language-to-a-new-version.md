@@ -3,18 +3,18 @@ title: '방법: Domain-Specific 언어 프로젝트 마이그레이션'
 description: 도메인 특정 언어 프로젝트를 최신 버전의 Visual Studio로 마이그레이션하는 방법에 대 한 정보를 제공 합니다.
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: bbefb1cd5ae546c5454660b6782f9c76f35a63f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8119f465e32d3754dc446524286e0a2c12dedc40
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922703"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387192"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>방법: 도메인별 언어를 새 버전으로 마이그레이션
 도메인 특정 언어를 정의 하 고 사용 하는 프로젝트는 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] 와 함께 배포 된 버전에서로 마이그레이션할 수 있습니다 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] .
@@ -86,6 +86,6 @@ ms.locfileid: "99922703"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [관련 블로그 게시물](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

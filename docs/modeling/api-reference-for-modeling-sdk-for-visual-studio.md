@@ -4,17 +4,17 @@ description: Visual Studio 시각화 및 모델링 SDK에서 Dsl (도메인별 �
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9393c8e01cb304b6a89ac9b400f3efc29d8c056
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9603ace5751443c04d0a7503a43e08c044269817
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861916"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385463"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio용 모델링 SDK에 대한 API 참조
 
@@ -44,6 +44,6 @@ Visual Studio 시각화 및 모델링 SDK는 DSL (도메인별 언어) 도구를
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|바로 가기 (상황에 맞는) 메뉴 명령을 정의할 수 있습니다.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|유효성 검사 제약 조건을 정의할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [T4 텍스트 변환 사용자 지정](../modeling/customizing-t4-text-transformation.md)

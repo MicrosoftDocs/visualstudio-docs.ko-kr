@@ -11,25 +11,25 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 ms.custom: SEO-VS-2020
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f131276172a9df91dd8408149fae66a2f28ca9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05cdd769a59c4101fbc05a7e51893752e2532f42
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938046"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385827"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>시나리오: 시각화 및 모델링을 사용하여 디자인 변경
 
 Visual Studio에서 시각화 및 모델링 도구를 사용하여 소프트웨어 시스템이 사용자의 요구를 충족하는지 확인합니다.
 코드 맵, 종속성 다이어그램 및 클래스 다이어그램과 같은 도구를 사용하여 다음을 수행합니다.
 
-각 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+각 도구를 지원하는 Visual Studio 버전을 확인하려면 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조하세요.
 
 - 사용자의 요구 사항 및 비즈니스 프로세스를 분명하게 설명합니다.
 
@@ -112,7 +112,7 @@ Team Foundation Server에 대한 자세한 내용은 다음을 참조하세요.
 - [종속성 다이어그램을 사용하여 코드 유효성 검사](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 일부 Visual Studio 버전에서는 시각화 및 모델링을 위해 코드 맵의 종속성 유효성 검사 및 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)을 참조하세요.
+> 일부 Visual Studio 버전에서는 시각화 및 모델링을 위해 코드 맵의 종속성 유효성 검사 및 읽기 전용 버전을 지원합니다. 이 기능을 지원하는 Visual Studio 버전을 확인하려면 [아키텍처 및 모델링 도구에 대한 에디션 지원](../modeling/analyze-and-model-your-architecture.md#VersionSupport)을 참조하세요.
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>시스템 정보 이해 및 전달
 

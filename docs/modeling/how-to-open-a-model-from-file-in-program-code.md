@@ -1,65 +1,65 @@
 ---
 title: '방법: 프로그램 코드로 파일에서 모델 열기'
-description: ModelBus는 모델의 모델 또는 요소를 참조 하는 표준 메커니즘과 모델을 이동한 경우 모델을 찾는 표준 메커니즘을 제공 합니다.
+description: ModelBus는 모델의 모델 또는 요소를 참조하고 이동한 경우 모델을 찾기 위한 표준 메커니즘을 제공한다는 것을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97de2d7e79dc44ff785663c4d04dc65851430472
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922675"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387062"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>방법: 프로그램 코드로 파일에서 모델 열기
 
-모든 응용 프로그램에서 DSL 모델을 열 수 있습니다.
+모든 애플리케이션에서 DSL 모델을 열 수 있습니다.
 
-Visual Studio 확장에서이 목적을 위해 ModelBus를 사용할 수 있습니다. ModelBus는 모델의 모델 또는 요소를 참조 하 고 모델을 이동한 경우 모델을 찾기 위한 표준 메커니즘을 제공 합니다. 자세한 내용은 [Visual Studio를 사용 하 여 모델 통합 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)을 참조 하세요.
+Visual Studio 확장에서 이 용도로 ModelBus를 사용할 수 있습니다. ModelBus는 모델의 모델 또는 요소를 참조하고 이동한 경우 모델을 찾기 위한 표준 메커니즘을 제공합니다. 자세한 내용은 [Visual Studio 사용하여 모델 통합을 참조하세요.](../modeling/integrating-models-by-using-visual-studio-modelbus.md)
 
 ## <a name="target-framework"></a>대상 프레임워크
 
-응용 프로그램 프로젝트의 **대상 프레임 워크** 를 .NET Framework 4 이상으로 설정 합니다.
+애플리케이션 프로젝트의 **대상 프레임워크를** .NET Framework 4 이상으로 설정합니다.
 
-1. DSL 모델을 읽을 응용 프로그램에 대 한 Visual Studio 프로젝트를 엽니다.
+1. DSL 모델을 읽으려는 애플리케이션에 대한 Visual Studio 프로젝트를 엽니다.
 
-2. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 한 다음 **속성** 을 클릭 합니다.
+2. **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭한 다음 **속성을** 클릭합니다.
 
-3. 프로젝트 속성 창의 **응용 프로그램** 탭에서 **대상 프레임 워크** 필드를 **.NET Framework 4** 이상으로 설정 합니다.
+3. 프로젝트 속성 창의 **애플리케이션** 탭에서 **대상 프레임워크** 필드를 .NET Framework **4** 이상으로 설정합니다.
 
 > [!NOTE]
-> 대상 프레임 워크는 **4 개의 클라이언트 프로필 .NET Framework** 되어서는 안 됩니다.
+> 대상 프레임워크는 **4 클라이언트 프로필 .NET Framework** 않아야 합니다.
 
 ## <a name="references"></a>참조
 
-Visual Studio 응용 프로그램 프로젝트에 다음 참조를 추가 합니다.
+Visual Studio 애플리케이션 프로젝트에 다음 참조를 추가합니다.
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-  - **참조 추가** 대화 상자의 **.net** 탭에 표시 되지 않는 경우 **찾아보기** 탭을 클릭 하 고로 이동 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` 합니다.
+  - **참조 추가** 대화 상자의 **.NET** 탭 아래에 이 항목이 표시되지 않으면 **찾아보기** 탭을 클릭하고 로 `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\` 이동합니다.
 
-- Dsl 어셈블리는 DSL 프로젝트의 bin 폴더 아래에서 찾을 수 있습니다. 해당 이름은 일반적으로 *회사* 의 형식입니다. *프로젝트* `.Dsl.dll` .
+- DSL 어셈블리는 DSL 프로젝트의 bin 폴더 아래에 있습니다. 해당 이름은 일반적으로 *YourCompany 형식입니다.* *YourProject* `.Dsl.dll` .
 
-## <a name="important-classes-in-the-dsl"></a>DSL의 중요 한 클래스
+## <a name="important-classes-in-the-dsl"></a>DSL의 중요한 클래스
 
-DSL을 읽는 코드를 작성 하려면 먼저 DSL에 의해 생성 된 클래스의 이름을 알아야 합니다. DSL 솔루션에서 **dsl** 프로젝트를 열고 **generatedcode** 폴더를 확인 합니다. 또는 프로젝트 **참조** 에서 dsl 어셈블리를 두 번 클릭 하 고 **개체 브라우저** 에서 dsl 네임 스페이스를 엽니다.
+DSL을 읽는 코드를 작성하려면 DSL에서 생성된 일부 클래스의 이름을 알아야 합니다. DSL 솔루션에서 **Dsl** 프로젝트를 열고 **GeneratedCode** 폴더를 찾습니다. 또는 **참조** 프로젝트에서 DSL 어셈블리를 두 번 클릭하고 **개체 브라우저** 에서 DSL 네임스페이스를 엽니다.
 
-다음은 식별 해야 하는 클래스입니다.
+다음은 식별해야 하는 클래스입니다.
 
-- 해당 *클래스* -의 루트 클래스 이름입니다 `DslDefinition.dsl` .
+- *YourDslRootClass* - 에 있는 루트 클래스의 `DslDefinition.dsl` 이름입니다.
 
-- *이름* `SerializationHelper` -이 클래스는 `SerializationHelper.cs` DSL 프로젝트에서에 정의 됩니다.
+- *YourDslName* `SerializationHelper` - 이 클래스는 `SerializationHelper.cs` DSL 프로젝트에서 에 정의됩니다.
 
-- *이름* `DomainModel` -이 클래스는 `DomainModel.cs` DSL 프로젝트에서에 정의 됩니다.
+- *YourDslName* `DomainModel` - 이 클래스는 `DomainModel.cs` DSL 프로젝트에서 에 정의됩니다.
 
 ## <a name="read-from-a-file"></a>파일에서 읽습니다.
 
-다음 예제는 중요 한 클래스가 다음과 같은 DSL을 읽도록 설계 되었습니다.
+다음 예제는 중요한 클래스가 다음과 같은 DSL을 읽도록 설계되었습니다.
 
 - FamilyTreeModel
 
@@ -107,7 +107,7 @@ namespace StandaloneReadDslConsole
 
 ## <a name="save-to-a-file"></a>파일에 저장
 
-이전 코드와 다음에 추가 하 여 모델을 변경한 다음 파일에 저장 합니다.
+이전 코드에 다음과 같은 추가는 모델을 변경한 다음 파일에 저장합니다.
 
 ```csharp
 using (Transaction t =

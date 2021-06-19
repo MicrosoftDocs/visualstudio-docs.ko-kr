@@ -4,17 +4,17 @@ description: Visual Studio 텍스트 템플릿에서 output 지시어는 변환 
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e7c255d767e9b35764e03a76f9cda516dbe606
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8105edc57e68aa7cedcb612ec4f6bcd0ef367d2f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899606"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386113"
 ---
 # <a name="t4-output-directive"></a>T4 Output 지시문
 
@@ -24,7 +24,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일�
 
  `<#@output extension=".cs"#>`
 
- 그러면 Visual Studio에서 이름이 **MyTemplate.cs** 인 파일을 생성 합니다.
+ 그러면 Visual Studio에서 MyTemplate 라는 파일을 생성 **합니다.**
 
  전처리된 런타임 텍스트 템플릿에는 `output` 지시문이 필요하지 않습니다. 대신 애플리케이션은 `TextTransform()`을 호출하여 생성된 문자열을 가져옵니다. 자세한 내용은 [T4 텍스트 템플릿을 사용하여 런타임 텍스트 생성](../modeling/run-time-text-generation-with-t4-text-templates.md)을 참조하세요.
 
@@ -52,7 +52,7 @@ Visual Studio 텍스트 템플릿에서 `output` 지시문은 변환 된 파일�
  허용 되는 값: 유효한 모든 파일 이름 확장명입니다.
 
 ## <a name="encoding-attribute"></a>encoding 특성
- 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들어:
+ 출력 파일을 생성할 때 사용할 인코딩을 지정합니다. 예를 들면 다음과 같습니다.
 
  `<#@ output encoding="utf-8"#>`
 
