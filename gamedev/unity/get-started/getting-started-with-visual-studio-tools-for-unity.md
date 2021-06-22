@@ -1,7 +1,6 @@
 ---
 title: Visual Studio Tools for Unity 시작 | Microsoft 문서
 description: Unity 개발을 위해 Visual Studio를 설치 하 고 설정 하는 방법에 대해 알아봅니다.
-ms.custom: acquisition
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -13,12 +12,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 8eea998731c4d29e533d1e6bf21d4a2870a81ff5
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 706700c8343d934f7a9a5ce32f98bf96e67d4259
+ms.sourcegitcommit: 07e6db4bf2966863093e3974c60c3b46e6953416
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386698"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112488847"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio 및 Unity 시작
 
