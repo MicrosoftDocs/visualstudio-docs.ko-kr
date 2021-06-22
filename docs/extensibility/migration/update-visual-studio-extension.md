@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 확장 업데이트
-description: Visual studio 2022를 사용 하도록 Visual Studio 확장을 업데이트 하는 방법에 대해 알아봅니다.
+description: Visual Studio 2022에서 작동하도록 Visual Studio 확장을 업데이트하는 방법을 알아봅니다.
 ms.date: 06/08/2021
 ms.topic: conceptual
 author: leslierichardson95
@@ -9,56 +9,61 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 514c9654a741e4e1e565f0cb2becdbe3157fab0c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
+ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308589"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "112424655"
 ---
-# <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Visual studio 2022 용 Visual Studio 확장 업데이트
+# <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>Visual Studio 2022에 대한 Visual Studio 확장 업데이트
 
-이 가이드에 따라 Visual Studio 2022 미리 보기를 사용 하도록 확장을 업데이트할 수 있습니다. Visual Studio 2022 Preview는 64 비트 응용 프로그램으로, VS SDK에서 몇 가지 주요 변경 사항을 소개 합니다. 이 가이드에서는 visual studio 2022의 현재 미리 보기를 사용 하 여 확장을 작동 하는 데 필요한 단계를 안내 하므로 Visual Studio 2022가 GA에 도달 하기 전에 확장을 사용자가 설치할 수 있습니다.
+> [!IMPORTANT]
+> 이 가이드의 조언은 Visual Studio 2019 및 2022에서 작동하기 위해 주요 변경 내용이 필요한 확장을 마이그레이션하는 개발자를 안내하기 위한 것입니다. 이러한 경우 두 개의 VSIX 프로젝트와 조건부 컴파일을 갖는 것이 좋습니다.
+> 대부분의 확장은 이 가이드의 확장 현대화에 대한 조언을 따르지 않아도 되는 사소한 변경으로 Visual Studio 2019년 및 2022년 둘 다에서 작동할 수 있습니다.
+> Visual Studio 2022에서 확장을 시도하고 확장에 가장 적합한 옵션을 평가합니다.
+
+이 가이드에 따라 Visual Studio 2022 미리 보기에서 작동하도록 확장을 업데이트할 수 있습니다. Visual Studio 2022 미리 보기는 64비트 애플리케이션이며 VS SDK의 몇 가지 주요 변경 내용을 소개합니다. 이 가이드에서는 Visual Studio 2022의 현재 미리 보기에서 확장이 작동하도록 하는 데 필요한 단계를 안내하므로 Visual Studio 2022가 GA에 도달하기 전에 사용자가 확장을 설치할 수 있도록 준비할 수 있습니다.
 
 ## <a name="installing"></a>설치
 
-Visual [studio 2022 preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022)에서 visual Studio 2022 preview를 설치 합니다.
+Visual Studio 2022 미리 보기에서 [Visual Studio 2022 미리 보기를 설치합니다.](https://visualstudio.microsoft.com/vs/preview/vs2022)
 
-### <a name="extensions-written-in-a-net-language"></a>.NET 언어로 작성 된 확장 프로그램
+### <a name="extensions-written-in-a-net-language"></a>.NET 언어로 작성된 확장
 
-관리 되는 확장에 대 한 Visual Studio 2022를 대상으로 하는 VS SDK는 NuGet에서 *배타적* 으로 사용 됩니다.
+관리되는 확장용 Visual Studio 2022를 대상으로 하는 VS SDK는 NuGet에서만 사용할 수 있습니다. 
 
-- [VisualStudio](https://www.nuget.org/packages/Microsoft.VisualStudio.Sdk/) (17.x 버전) 메타 패키지는 필요한 참조 어셈블리를 대부분 또는 모두 가져옵니다.
-- Visual Studio 2022 호환 VSIX를 작성할 수 있도록 [Microsoft..](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools/) n a m a. x 버전의 패키지를 VSIX 프로젝트에서 참조 해야 합니다.
+- [Microsoft.VisualStudio.Sdk(17.x](https://www.nuget.org/packages/Microsoft.VisualStudio.Sdk/) 버전) 메타 패키지는 필요한 대부분의 또는 모든 참조 어셈블리를 제공합니다.
+- [microsoft.VSSDK.BuildTools(17.x](https://www.nuget.org/packages/Microsoft.VSSDK.BuildTools/) 버전) 패키지는 VSIX 프로젝트에서 참조되어야 Visual Studio 2022 규격 VSIX를 빌드할 수 있습니다.
 
-확장은 "Any CPU" 또는 "x64" 플랫폼으로 컴파일해야 *합니다* . "X86" 플랫폼은 Visual Studio 2022의 64 비트 프로세스와 호환 되지 않습니다.
+확장은 "모든 CPU" 또는 "x64" 플랫폼으로 *컴파일해야 합니다.* "x86" 플랫폼은 Visual Studio 2022의 64비트 프로세스와 호환되지 않습니다.
 
-### <a name="extensions-written-in-c"></a>C + +로 작성 된 확장
+### <a name="extensions-written-in-c"></a>C++로 작성된 확장
 
-C + +로 컴파일된 확장에 대 한 VS SDK는 정상적으로 설치 된 Visual Studio SDK와 함께 사용할 수 있습니다.
+C++로 컴파일된 확장용 VS SDK는 일반적으로 설치된 Visual Studio SDK에서 사용할 수 있습니다.
 
-확장은 Visual Studio 2022 SDK 및 amd64에 대해 특별히 컴파일해야 *합니다* .
+확장은 특히 Visual Studio 2022 SDK 및 amd64에 대해 *컴파일되어야 합니다.*
 
 ### <a name="update-your-extension-to-visual-studio-2022"></a>Visual Studio 2022로 확장 업데이트
 
-#### <a name="extensions-with-running-code"></a>실행 중인 코드가 포함 된 확장
+#### <a name="extensions-with-running-code"></a>실행 중인 코드가 있는 확장
 
-실행 중인 코드가 포함 된 확장은 Visual Studio 2022 용으로 특별히 컴파일해야 *합니다* . Visual Studio 2022는 특별히 Visual Studio 2022를 대상으로 하지 않는 확장을 로드 하지 않습니다.
+실행 중인 코드가 있는 확장은 Visual Studio 2022용으로 특별히 *컴파일되어야 합니다.* Visual Studio 2022는 특히 Visual Studio 2022를 대상으로 하지 않는 확장을 로드하지 않습니다.
 
-Visual studio 2022 확장을 Visual Studio 2022로 마이그레이션하는 방법에 대해 알아봅니다.
+Visual Studio 2022 이전 확장을 Visual Studio 2022로 마이그레이션하는 방법을 알아봅니다.
 
-1. [프로젝트를 현대화](#modernize-your-vsix-project).
-1. Visual Studio 2022 및 이전 버전을 대상으로 지정할 수 있도록 [소스 코드를 공유 프로젝트로 리팩터링](#use-shared-projects-for-multi-targeting) 합니다.
-1. [Visual Studio 2022 대상 VSIX 프로젝트](#add-a-visual-studio-2022-target)와 [패키지/어셈블리 다시 매핑 테이블](migrated-assemblies.md)을 추가 합니다.
-1. [필요한 코드를 조정](#handle-breaking-api-changes)합니다.
+1. [프로젝트를 현대화합니다.](#modernize-your-vsix-project)
+1. [소스 코드를 공유 프로젝트로 리팩터링하여](#use-shared-projects-for-multi-targeting) Visual Studio 2022 및 이전 버전을 대상으로 지정할 수 있습니다.
+1. [Visual Studio 2022 대상 VSIX 프로젝트](#add-a-visual-studio-2022-target)및 [패키지/어셈블리 다시 매핑 테이블을 추가합니다.](migrated-assemblies.md)
+1. [필요한 코드를 조정합니다.](#handle-breaking-api-changes)
 1. [Visual Studio 2022 확장 테스트](#test-your-extension)
-1. [Visual Studio 2022 확장을 게시](#publish-your-extension)합니다.
+1. [Visual Studio 2022 확장](#publish-your-extension)게시
 
-#### <a name="extensions-without-running-code"></a>코드를 실행 하지 않고 확장
+#### <a name="extensions-without-running-code"></a>코드를 실행하지 않는 확장
 
-실행 중인 코드 (예: 프로젝트/항목 템플릿)를 포함 하지 않는 확장은 두 개의 고유 VSIXs 프로덕션을 포함 하 여 위의 단계를 수행 하는 데 필요 *하지 않습니다* .
+실행 코드(예: 프로젝트/항목 템플릿)를 포함하지 않는 확장은 두 개의 고유한 VSIX의 프로덕션을 포함하여 위의 단계를 수행할 필요가 *없습니다.*
 
-대신, 해당 `source.extension.vsixmanifest` 파일에서 다음과 같이 두 개의 설치 대상을 선언 하도록 단일 VSIX를 수정 해야 합니다.
+대신, 해당 파일이 다음과 같이 두 `source.extension.vsixmanifest` 개의 설치 대상을 선언할 수 있도록 하나의 VSIX를 수정해야 합니다.
 
 ```xml
 <Installation>
@@ -71,22 +76,22 @@ Visual studio 2022 확장을 Visual Studio 2022로 마이그레이션하는 방�
 </Installation>
 ```
 
-공유 프로젝트 및 여러 VSIXs 사용에 대 한이 문서의 단계를 건너뛸 수 있습니다. [테스트](#test-your-extension)를 진행할 수 있습니다.
+공유 프로젝트 및 여러 VSIX 사용에 대한 이 문서의 단계를 건너뛸 수 있습니다. [테스트를](#test-your-extension)진행할 수 있습니다!
 
 > [!NOTE]
-> Visual studio 2022 Preview를 사용 하 여 *새* visual studio 확장을 작성 하 고 visual studio 2019 또는 이전 버전을 대상으로 하려는 경우 [이 가이드](target-previous-versions.md)를 확인 하세요.
+> Visual Studio 2022 Preview를 사용하여 *새* Visual Studio 확장을 작성하고 Visual Studio 2019 또는 이전 버전을 대상으로 지정하려는 경우 [이 가이드를](target-previous-versions.md)확인하세요.
 
 ### <a name="msbuild-tasks"></a>MSBuild 작업
 
-MSBuild 작업을 작성 하는 경우 Visual Studio 2022에서 64 비트 MSBuild.exe 프로세스로 로드 될 가능성이 높습니다. 작업에서 32 비트 프로세스를 실행 해야 하는 경우 [이 msbuild 설명서](../../msbuild/how-to-configure-targets-and-tasks.md#usingtask-attributes-and-task-parameters) 를 참조 하 여 msbuild가 32 비트 프로세스에서 작업을 로드 하는 것을 알 수 있도록 합니다.
+MSBuild 작업을 작성할 경우 Visual Studio 2022에서는 64비트 MSBuild.exe 프로세스에 로드될 가능성이 훨씬 더 높습니다. 작업을 실행하기 위해 32비트 프로세스가 필요한 경우 MSBuild가 32비트 프로세스에서 작업을 로드하는 것을 알고 있는지 확인하려면 [이 MSBuild 설명서를](../../msbuild/how-to-configure-targets-and-tasks.md#usingtask-attributes-and-task-parameters) 참조하세요.
 
 ## <a name="modernize-your-vsix-project"></a>VSIX 프로젝트 현대화
 
-Visual Studio 2022 지원을 확장에 추가 하기 전에 다음을 비롯 하 여 기존 프로젝트를 정리 하 고 현대화 하는 것이 좋습니다.
+확장에 Visual Studio 2022 지원을 추가하기 전에 다음을 포함하여 계속 진행하기 전에 이 시간을 내어 기존 프로젝트를 정리하고 현대화하는 것이 좋습니다.
 
-1. [packages.config에서로 `PackageReference` 마이그레이션합니다 ](/nuget/consume-packages/migrate-packages-config-to-package-reference).
+1. [packages.config 로 마이그레이션합니다. `PackageReference` ](/nuget/consume-packages/migrate-packages-config-to-package-reference)
 
-1. 직접 어셈블리 VS SDK 어셈블리 참조를 PackageReference items로 바꿉니다.
+1. 직접 어셈블리 VS SDK 어셈블리 참조를 PackageReference 항목으로 바꿉니다.
 
    ```diff
    -<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
@@ -94,7 +99,7 @@ Visual Studio 2022 지원을 확장에 추가 하기 전에 다음을 비롯 하
    ```
 
    > [!TIP]
-   > *많은* 어셈블리 참조를 *하나의* PackageReference로 바꿀 수 있습니다.
+   > *많은* 어셈블리 참조를 메타패키지에 *대한 하나의* PackageReference로 바꿀 수 있습니다.
    >
    >```diff
    >-<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
@@ -103,44 +108,44 @@ Visual Studio 2022 지원을 확장에 추가 하기 전에 다음을 비롯 하
    >+<PackageReference Include="Microsoft.VisualStudio.Sdk" >Version="..." />
    >```
 
-   대상으로 하는 Visual Studio의 최소 버전과 일치 하는 패키지 버전을 선택 해야 합니다.
+   대상으로 하는 Visual Studio 최소 버전과 일치하는 패키지 버전을 선택해야 합니다.
 
-   VS SDK에 고유 하지 않은 일부 어셈블리 (예: Newtonsoft.Json.dll)는 Visual studio 2022 이전에는 간단한 참조를 통해 검색 가능 하지만 visual studio `<Reference Include="Newtonsoft.Json" />` 2022에서는 MSBuild의 기본 어셈블리 검색 경로에서 일부 Visual studio 런타임 및 SDK 디렉터리를 제거 하기 2022 때문에 패키지 참조가 대신 필요 합니다.
+   VS SDK에 고유하지 않은 일부 어셈블리(예: Newtonsoft.Json.dll)는 2022년 Visual Studio 전에 간단한 참조를 통해 검색할 수 `<Reference Include="Newtonsoft.Json" />` 있었지만 Visual Studio 2022에서는 Visual Studio 2022에서 MSBuild의 기본 어셈블리 검색 경로에서 일부 Visual Studio 런타임 및 SDK 디렉터리를 제거하기 때문에 패키지 참조가 필요합니다.
 
-   직접 어셈블리 참조에서 NuGet 패키지 참조로 전환 하는 경우 NuGet이 종속성의 전이적 닫기를 자동으로 설치 하므로 추가 어셈블리 참조 및 분석기 패키지를 선택할 수 있습니다. 이는 일반적으로 정상 이지만 빌드 중에 추가 경고가 플래그가 지정 될 수 있습니다. 이러한 경고를 해결 하 고 최대한 많은 문제를 해결 하 고 코드 영역을 사용 하 여 해결할 수 없는 경고를 억제 `#pragma warning disable <id>` 합니다.
+   직접 어셈블리 참조에서 NuGet 패키지 참조로 전환할 때 NuGet이 자동으로 전이적 종료를 설치하기 때문에 추가 어셈블리 참조 및 분석기 패키지를 선택할 수 있습니다. 일반적으로 정상이지만 빌드하는 동안 추가 경고가 플래그가 지정될 수 있습니다. 이러한 경고를 처리하고 가능한 한 많이 해결하고 코드 내 영역을 사용하여 해결할 수 없는 경고를 표시하지 않는 것이 `#pragma warning disable <id>` 좋습니다.
 
-## <a name="use-shared-projects-for-multi-targeting"></a>다중 대상 지정을 위해 공유 프로젝트 사용
+## <a name="use-shared-projects-for-multi-targeting"></a>다중 대상 지정에 공유 프로젝트 사용
 
-[공유 프로젝트](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) 는 Visual Studio 2015에서 도입 된 프로젝트 형식입니다. Visual Studio의 공유 프로젝트를 사용 하면 소스 코드 파일을 여러 프로젝트 간에 공유 하 고, 조건부 컴파일 기호와 고유한 참조 집합을 사용 하 여 다른 방식으로 빌드할 수 있습니다.
+[공유 프로젝트는](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) Visual Studio 2015년에 도입된 프로젝트 형식입니다. 의 공유 프로젝트를 Visual Studio 소스 코드 파일을 여러 프로젝트 간에 공유하고 조건부 컴파일 기호 및 고유한 참조 집합을 사용하여 다르게 빌드할 수 있습니다.
 
-Visual Studio 2022에는 모든 이전 VS 버전의 고유한 참조 어셈블리 집합이 필요 하기 때문에, 공유 프로젝트를 사용 하 여 확장을 Visual Studio 2022 및 Visual Studio 2022 (이상 버전)로 편리 하 게 다중 대상으로 지정 하 여 코드 공유를 제공 하지만 고유한 참조를 제공 하는 것이 좋습니다.
+Visual Studio 2022에는 모든 이전 VS 버전의 고유한 참조 어셈블리 집합이 필요하기 때문에 공유 프로젝트를 사용하여 2022 및 Visual Studio 2022 이전 버전(이상 버전)Visual Studio 확장을 편리하게 다중 대상으로 지정하여 코드 공유와 고유한 참조를 제공합니다.
 
-Visual Studio 확장의 컨텍스트에서 visual studio 2022 이상 및 Visual Studio 2019 및 이전 버전에 대 한 VSIX 프로젝트 하나를 사용할 수 있습니다. 이러한 각 프로젝트에는 `source.extension.vsixmanifest` 및 16KB sdk 또는 17.x sdk에 대 한 패키지 참조만 포함 됩니다. 이러한 VSIX 프로젝트에는 두 VS 버전에서 공유할 수 있는 모든 소스 코드를 호스팅하는 새 공유 프로젝트에 대 한 공유 프로젝트 참조도 있습니다.
+Visual Studio 확장의 컨텍스트에서 Visual Studio 2022 이상용 VSIX 프로젝트 하나와 Visual Studio 2019 및 이전 버전용 VSIX 프로젝트를 하나 가질 수 있습니다. 이러한 각 프로젝트에는 `source.extension.vsixmanifest` 16.x SDK 또는 17.x SDK에 대한 및 패키지 참조만 포함됩니다. 또한 이러한 VSIX 프로젝트에는 두 VS 버전 간에 공유할 수 있는 모든 소스 코드를 호스트하는 새 공유 프로젝트에 대한 공유 프로젝트 참조가 있습니다.
 
-이 문서에서는 Visual Studio 2019를 대상으로 하 고 Visual Studio 2022에서 확장을 사용 하려는 VSIX 프로젝트가 이미 있다고 가정 합니다.
+이 문서의 시작점으로, Visual Studio 2019를 대상으로 하는 VSIX 프로젝트가 이미 있고 확장이 Visual Studio 2022에서 작동하도록 가정합니다.
 
-이러한 모든 단계는 Visual Studio 2019을 사용 하 여 완료할 수 있습니다.
+이러한 모든 단계는 Visual Studio 2019에서 완료할 수 있습니다.
 
-1. 아직 수행 하지 않은 경우 [프로젝트를 현대화](#modernize-your-vsix-project) 하 여 나중에이 업데이트 프로세스의 단계를 용이 하 게 합니다.
+1. 아직 수행하지 않은 경우 [프로젝트를 현대화하여](#modernize-your-vsix-project) 이 업데이트 프로세스의 이후 단계를 용이하게 합니다.
 
-1. VS SDK를 참조 하는 각 기존 프로젝트의 솔루션에 새 공유 프로젝트를 추가 합니다.
-   ![새 프로젝트 명령 추가 ](media/update-visual-studio-extension/add-new-project.png)
+1. VS SDK를 참조하는 각 기존 프로젝트에 대해 솔루션에 새 공유 프로젝트를 추가합니다.
+   ![새 프로젝트 추가 명령 ](media/update-visual-studio-extension/add-new-project.png)
     ![ 새 프로젝트 템플릿](media/update-visual-studio-extension/new-shared-project-template.png)
 
-1. 각 VS SDK 참조 프로젝트의 참조를 해당 하는 공유 프로젝트에 추가 합니다.
+1. 각 VS SDK 참조 프로젝트의 참조를 해당 공유 프로젝트에 추가합니다.
    :::image type="content" source="media/update-visual-studio-extension/add-shared-project-reference.png" alt-text="공유 프로젝트 참조 추가" lightbox="media/update-visual-studio-extension/add-shared-project-reference.png":::
 
-1. 각 VS SDK 참조 프로젝트의 모든 소스 코드 (.cs, .resx 포함)를 해당 공유 프로젝트로 이동 합니다.
-`source.extension.vsixmanifest`VSIX 프로젝트에 파일을 그대로 둡니다.
-   ![공유 프로젝트에 모든 원본 파일이 포함 되어 있습니다.](media/update-visual-studio-extension/source-files-in-shared-project.png)
+1. 각 VS SDK 참조 프로젝트에서 해당 공유 프로젝트로 모든 소스 코드(.cs, .resx 포함)를 이동합니다.
+VSIX 프로젝트에 파일을 그대로 `source.extension.vsixmanifest` 둡니다.
+   ![공유 프로젝트에는 모든 원본 파일이 포함됩니다.](media/update-visual-studio-extension/source-files-in-shared-project.png)
 
-1. 메타 데이터 파일 (릴리스 정보, 라이선스, 아이콘 등) 및 VSCT 파일은 공유 디렉터리로 이동 하 여 VSIX 프로젝트에 연결 된 파일로 추가 해야 합니다.
-   ![메타 데이터 및 VSCT 파일을 연결 된 파일로 추가](media/update-visual-studio-extension/add-linked-items-to-vsix.png)
-    - 메타 데이터 파일의 경우 빌드를로 설정 하 `Content` 고 VSIX에 Include를로 설정 `true` 합니다.
+1. 메타데이터 파일(릴리스 정보, 라이선스, 아이콘 등) 및 VSCT 파일은 공유 디렉터리로 이동하고 VSIX 프로젝트에 연결된 파일로 추가되어야 합니다.
+   ![메타데이터 및 VSCT 파일을 연결된 파일로 추가](media/update-visual-studio-extension/add-linked-items-to-vsix.png)
+    - 메타데이터 파일의 경우 BuildAction을 로 `Content` 설정하고 VSIX에 포함을 `true` 로 설정합니다.
 
-      ![VSIX에 메타 데이터 파일 포함](./media/update-visual-studio-extension/include-metadata-files-in-vsix.png)
-    - VSCT 파일의 경우 빌드를로 설정 하 `VSCTCompile` 고 VSIX에 포함 하지 않습니다.
-      Visual Studio에서는이 설정이 지원 되지 않지만 프로젝트를 언로드하고로 변경 하 여 빌드 작업을 수동으로 변경할 수 있습니다. `Content``VSCTCompile`
+      ![VSIX에 메타데이터 파일 포함](./media/update-visual-studio-extension/include-metadata-files-in-vsix.png)
+    - VSCT 파일의 경우 BuildAction을 으로 설정하고 `VSCTCompile` VSIX에 포함하지 않습니다.
+      Visual Studio 이 설정이 지원되지 않는다고 불만을 제기하지만 프로젝트를 언로드하고 를 로 변경하여 빌드 작업을 수동으로 변경할 수 있습니다. `Content``VSCTCompile`
 
     ```diff
     -<Content Include="..\SharedFiles\VSIXProject1Package.vsct">
@@ -154,25 +159,25 @@ Visual Studio 확장의 컨텍스트에서 visual studio 2022 이상 및 Visual 
 
       ![VSCT 파일을 VSCTCompile로 설정](media/update-visual-studio-extension/build-linked-vsct-files.png)
 
-1. 프로젝트를 빌드하여 새 오류가 도입 되지 않았는지 확인 합니다.
+1. 프로젝트를 빌드하여 새 오류가 도입되지 않은지 확인합니다.
 
-이제 프로젝트에서 Visual Studio 2022 지원을 추가할 준비가 되었습니다.
+이제 프로젝트가 Visual Studio 2022 지원을 추가할 준비가 되었습니다.
 
 ## <a name="add-a-visual-studio-2022-target"></a>Visual Studio 2022 대상 추가
 
-이 문서에서는 [Visual Studio 확장을 공유 프로젝트로 요소](#use-shared-projects-for-multi-targeting)를 구분 하는 단계를 완료 했다고 가정 합니다.
+이 문서에서는 공유 프로젝트를 사용하여 [Visual Studio 확장을 팩터하는](#use-shared-projects-for-multi-targeting)단계를 완료했다고 가정합니다.
 
-Visual Studio 2019를 사용 하 여 완료할 수 있는 다음 단계를 사용 하 여 확장에 Visual Studio 2022 지원 추가를 계속 합니다.
+Visual Studio 2019를 사용하여 완료될 수 있는 다음 단계를 사용하여 확장에 Visual Studio 2022 지원을 추가합니다.
 
-1. 새 VSIX 프로젝트를 솔루션에 추가 합니다. 이 프로젝트는 Visual Studio 2022를 대상으로 합니다. 템플릿과 함께 제공 된 소스 코드를 모두 제거 하 고 *`source.extension.vsixmanifest` 파일을 보관* 합니다.
+1. 솔루션에 새 VSIX 프로젝트를 추가합니다. 2022년 Visual Studio 대상으로 하는 프로젝트입니다. 템플릿과 함께 있는 소스 코드를 제거하지만 *`source.extension.vsixmanifest` 파일을 유지합니다.*
 
-1. 새 VSIX 프로젝트에서 Visual Studio 2019 대상 VSIX가 참조 하는 동일한 공유 프로젝트에 공유 프로젝트 참조를 추가 합니다.
+1. 새 VSIX 프로젝트에서 Visual Studio 2019 대상 VSIX가 참조하는 것과 동일한 공유 프로젝트에 공유 프로젝트 참조를 추가합니다.
 
-   ![하나의 공유 프로젝트와 두 개의 VSIX 프로젝트를 포함 하는 솔루션](media/update-visual-studio-extension/shared-project-with-two-heads.png)
+   ![하나의 공유 프로젝트와 두 개의 VSIX 프로젝트가 있는 솔루션](media/update-visual-studio-extension/shared-project-with-two-heads.png)
 
-1. 새 VSIX 프로젝트가 올바르게 빌드되는지 확인 합니다. 컴파일러 오류를 해결 하려면 원본 VSIX 프로젝트와 일치 하는 참조를 추가 해야 할 수도 있습니다.
+1. 새 VSIX 프로젝트가 제대로 빌드되는지 확인합니다. 컴파일러 오류를 해결하려면 원래 VSIX 프로젝트와 일치하는 참조를 추가해야 할 수 있습니다.
 
-1. 관리 되는 VS 확장의 경우 NuGet 패키지 관리자를 사용 하거나 프로젝트 파일을 직접 편집 하 여 Visual Studio 2022에서 대상 프로젝트 파일의 16kb (또는 이전 버전)에서 17.x 패키지 버전으로 패키지 참조를 업데이트 합니다.
+1. 관리되는 VS 확장의 경우 NuGet 패키지 관리자 사용하거나 프로젝트 파일을 직접 편집하여 패키지 참조를 16.x(또는 이전 버전)에서 Visual Studio 2022년 대상 프로젝트 파일의 17.x 패키지 버전으로 업데이트합니다.
 
     ```diff
     -<PackageReference Include="Microsoft.VisualStudio.SDK" Version="16.0.206" />
@@ -181,17 +186,17 @@ Visual Studio 2019를 사용 하 여 완료할 수 있는 다음 단계를 사�
     +<PackageReference Include="Microsoft.VSSDK.BuildTools" Version="17.0.63-preview.1" />
     ```
 
-   Nuget.org에서 실제로 사용할 수 있는 버전을 사용 합니다. 이전에 사용 된 것은 데모용 으로만 사용 됩니다.
+   nuget.org 실제로 사용할 수 있는 버전을 사용합니다. 이전에 사용된 것은 데모용으로만 사용됩니다.
 
-   대부분의 경우 패키지 Id가 변경 되었습니다. Visual Studio 2022의 변경 내용 목록은 [패키지/어셈블리 매핑 표](migrated-assemblies.md) 를 참조 하세요.
+   대부분의 경우 패키지 ID가 변경되었습니다. Visual Studio 2022의 변경 내용 목록은 [패키지/어셈블리 매핑 표를](migrated-assemblies.md) 참조하세요.
 
-   C + +로 작성 된 확장에는를 사용 하 여 컴파일할 수 있는 SDK가 아직 없습니다.
+   C++로 작성된 확장에는 컴파일할 수 있는 SDK가 아직 없습니다.
 
-1. C + + 프로젝트의 경우 amd64에 대해 컴파일되어야 합니다. 관리 되는 확장의 경우 대상으로 지정 하는 모든 CPU에 대해 프로젝트를 변경 하는 것이 좋습니다 `x64` . Visual Studio 2022에서 확장이 항상 64 비트 프로세스에서 로드 됨을 반영 합니다. `Any CPU` 는 해도 되지만 x64 전용 네이티브 이진 파일을 참조 하는 경우 경고를 생성할 수 있습니다.
+1. C++ 프로젝트의 경우 amd64용으로 컴파일해야 합니다. 관리되는 확장의 경우 `x64` 2022년 Visual Studio 확장이 항상 64비트 프로세스에 로드되는 것을 반영하도록 프로젝트를 모든 CPU 빌드에서 대상 로 변경하는 것이 좋습니다. `Any CPU` 도 괜찮지만 x64 전용 네이티브 이진 파일을 참조하는 경우 경고가 발생할 수 있습니다.
 
-   확장이 네이티브 모듈에 있을 수 있는 모든 종속성은 x86 이미지에서 amd64 이미지로 업데이트 되어야 합니다.
+   네이티브 모듈에 대한 확장의 모든 종속성은 x86 이미지에서 amd64 이미지로 업데이트해야 합니다.
 
-1. `source.extension.vsixmanifest`Visual Studio 2022를 대상으로 하는 파일을 편집 합니다. `<InstallationTarget>`Visual Studio 2022을 반영 하 고 amd64 페이로드를 나타내려면 태그를 설정 합니다.
+1. 대상 `source.extension.vsixmanifest` 지정 Visual Studio 2022를 반영하도록 파일을 편집합니다. Visual Studio `<InstallationTarget>` 2022를 반영하도록 태그를 설정하고 amd64 페이로드를 나타냅니다.
 
    ```xml
    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
@@ -199,11 +204,11 @@ Visual Studio 2019를 사용 하 여 완료할 수 있는 다음 단계를 사�
    </InstallationTarget>
    ```
 
-   Visual Studio 2019에서이 파일에 대 한 디자이너는 새 요소를 노출 하지 않으므로 `ProductArchitecture` 이 변경 작업은 **솔루션 탐색기** 의 **연결 프로그램** 명령을 통해 액세스할 수 있는 xml 편집기를 사용 하 여 수행 해야 합니다.
+   Visual Studio 2019에서 이 파일의 디자이너는 새 요소를 노출하지 `ProductArchitecture` 않으므로 이 변경은 xml 편집기를 사용하여 수행해야 하며, 이 작업은 **솔루션 탐색기** 의 **Open With** 명령을 통해 액세스할 수 있습니다.
 
-   이 `ProductArchitecture` 요소는 중요 합니다. Visual Studio 2022는 확장을 설치 *하지 않습니다* .
+   이 `ProductArchitecture` 요소는 중요합니다. Visual Studio 2022는 확장을 *설치하지 않습니다.*
 
-   | 요소 | 값 | Description |
+   | 요소 | 값 | 설명 |
    | - | - | - |
    | ProductArchitecture | X86, AMD64 | 이 VSIX에서 지원하는 플랫폼입니다. 대/소문자 구분 안 함 요소당 하나의 플랫폼과 InstallTarget당 하나의 요소. 17.0 미만 제품 버전의 경우 기본값은 x86이며 생략할 수 있습니다.  제품 버전 17.0 이상의 경우 이 요소가 필요하며 기본값이 없습니다. Visual Studio 2022의 경우 이 요소에 유효한 콘텐츠는 "amd64"뿐입니다. |
 
