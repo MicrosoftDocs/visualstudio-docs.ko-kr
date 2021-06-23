@@ -1,6 +1,6 @@
 ---
-title: XAML 디자이너 개요
-description: XAML 기반 앱을 디자인하는 데 도움이 되는 시각적 인터페이스를 제공하는 Blend for Visual Studio XAML 디자이너 작업 영역 UI 및 기능에 대해 알아봅니다.
+title: Visual Studio를 사용 하 여 Ui 만들기 XAML 디자이너
+description: XAML 기반 응용 프로그램을 디자인 하는 데 도움이 되는 시각적 인터페이스를 제공 하는 Blend for Visual Studio의 XAML 디자이너 작업 영역 UI 및 기능에 대해 알아봅니다.
 ms.date: 03/03/2020
 ms.topic: conceptual
 ms.custom: contperf-fy21q4, SEO-VS-2020
@@ -14,21 +14,21 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565234"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550690"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML 디자이너를 사용하여 UI 만들기
 
-Visual Studio 및 Blend for Visual Studio XAML 디자이너 WPF 및 UWP와 같은 XAML 기반 앱을 디자인하는 데 도움이 되는 시각적 인터페이스를 제공합니다. 도구 상자 창(Blend for Visual Studio의 자산 창)에서 컨트롤을 끌고 속성 창에서 속성을 설정하여 앱에 대한 사용자 인터페이스를 만들 수 있습니다. XAML 뷰에서 직접 XAML을 편집할 수도 있습니다.
+Visual Studio 및 Blend for Visual Studio의 XAML 디자이너는 WPF 및 UWP와 같은 XAML 기반 응용 프로그램을 디자인 하는 데 도움이 되는 시각적 인터페이스를 제공 합니다. 도구 상자 창(Blend for Visual Studio의 자산 창)에서 컨트롤을 끌고 속성 창에서 속성을 설정하여 앱에 대한 사용자 인터페이스를 만들 수 있습니다. XAML 뷰에서 직접 XAML을 편집할 수도 있습니다.
 
 고급 사용자의 경우 [XAML 디자이너를 사용자 지정](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)할 수 있습니다.
 
 > [!NOTE]
-> Xamarin.Forms는 XAML 디자이너를 지원하지 않습니다. Xamarin.Forms XAML IS를 보고 앱이 실행되는 동안 편집하려면 Xamarin.Forms에 대한 XAML 핫 다시 로드 사용합니다. 자세한 내용은 [Xamarin.Forms용 XAML 핫 다시 로드(미리 보기)](/xamarin/xamarin-forms/xaml/hot-reload/) 페이지를 참조하세요.
+> Xamarin.ios는 XAML 디자이너를 지원 하지 않습니다. 앱이 실행 되는 동안 Xamarin Forms XAML Ui를 보고 편집 하려면 Xamarin.ios에 대해 XAML 핫 다시 로드를 사용 합니다. 자세한 내용은 [xamarin.ios에 대 한 XAML 핫 다시 로드 (미리 보기)](/xamarin/xamarin-forms/xaml/hot-reload/) 페이지를 참조 하세요.
 
 ## <a name="xaml-designer-workspace"></a>XAML 디자이너 작업 영역
 
@@ -92,7 +92,7 @@ XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동�
 
 **모눈선에 맞추기 켜기/끄기**
 
-**눈금선에 맞추기를** 사용하도록 설정하면 아트보드로 끌어올 때 요소가 가장 가까운 가로 및 세로 눈금선과 정렬되는 경향이 있습니다.
+**모눈선에 맞추기** 를 사용 하는 경우 요소가 아트 보드로 끌면 가장 가까운 가로 및 세로 모눈선에 맞춰집니다.
 
 **아트보드 배경 토글**
 
@@ -108,7 +108,7 @@ XAML 디자이너는 앱의 렌더링된 XAML 태그에 대한 XAML 뷰 및 동�
 
 ### <a name="xaml-view"></a>XAML 뷰
 
-XAML 보기에서 **XAML** 편집기가 포함된 창은 활성 창이며 XAML 편집기는 기본 제작 도구입니다. XAML(Extensible Application Markup Language)은 애플리케이션의 사용자 인터페이스를 지정하는 데 사용할 수 있는 선언적인 XML 기반 어휘를 제공합니다. XAML 뷰에는 IntelliSense, 자동 서식 지정, 구문 강조 표시 및 태그 탐색이 포함됩니다. 다음 이미지는 IntelliSense 메뉴가 열린 XAML 뷰를 보여줍니다.
+Xaml **뷰에서 xaml** 편집기가 포함 된 창이 활성 창이 며 xaml 편집기는 기본 제작 도구입니다. XAML(Extensible Application Markup Language)은 애플리케이션의 사용자 인터페이스를 지정하는 데 사용할 수 있는 선언적인 XML 기반 어휘를 제공합니다. XAML 뷰에는 IntelliSense, 자동 서식 지정, 구문 강조 표시 및 태그 탐색이 포함됩니다. 다음 이미지는 IntelliSense 메뉴가 열린 XAML 뷰를 보여줍니다.
 
 ![XAML 뷰](media/xaml-editor.png)
 
@@ -118,14 +118,14 @@ Visual Studio의 문서 개요 창은 Blend for Visual Studio의 [개체 및 타
 
 - 아트보드의 모든 요소에 대한 계층 구조를 표시합니다.
 
-- 요소를 수정할 수 있도록 선택합니다. 예를 들어 계층 구조에서 이동하거나 속성 창 해당 속성을 설정할 수 있습니다. 자세한 내용은 [XAML 디자이너에서 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)을 참조하세요.
+- 요소를 수정 하려면 요소를 선택 합니다. 예를 들어 계층의 주위로 이동 하거나 속성 창에서 속성을 설정할 수 있습니다. 자세한 내용은 [XAML 디자이너에서 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)을 참조하세요.
 
 - 컨트롤인 요소의 템플릿을 만들고 수정합니다.
 
 - [애니메이션을 만듭니다](animate-objects-in-xaml-designer.md)(Blend for Visual Studio에만 해당).
 
-Visual Studio 문서 개요 창을 보려면 메뉴 모음에서 다른 Windows 문서 개요 **보기를**  >    >  선택합니다.
-Blend for Visual Studio 개체 및 타임라인 창을 보려면 메뉴 모음에서 문서 개요 **보기를**  >  선택합니다.
+Visual Studio에서 문서 개요 창을 보려면 메뉴 모음에서   >  **다른 창**  >  **문서 개요** 보기를 선택 합니다.
+Blend for Visual Studio에서 개체 및 타임라인 창을 보려면 메뉴 모음에서   >  **문서 개요** 보기를 선택 합니다.
 
 ![Visual Studio의 문서 개요 창](media/document-outline-window.png)
 
@@ -133,11 +133,11 @@ Blend for Visual Studio 개체 및 타임라인 창을 보려면 메뉴 모음�
 
 **표시/숨기기**
 
-아트보드 요소를 표시하거나 숨깁니다. 표시된 경우 눈 기호로 표시됩니다. **Ctrl** + **H를** 눌러 요소를 숨기고 **Shift** + **Ctrl** + **H를** 눌러 표시할 수도 있습니다.
+아트보드 요소를 표시하거나 숨깁니다. 표시된 경우 눈 기호로 표시됩니다. **Ctrl** + **h** 를 눌러 요소를 숨기고  + **ctrl** + **h** 를 눌러 표시할 수도 있습니다.
 
 **잠금/잠금해제**
 
-아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠겨 있는 경우 자물쇠 기호로 표시됩니다. **Ctrl** + **L을** 눌러 요소를 잠그고 **Shift** + **Ctrl** + **L을** 눌러 잠금을 해제할 수도 있습니다.
+아트보드 요소를 잠그거나 잠금 해제합니다. 잠긴 요소는 수정할 수 없습니다. 잠겨 있는 경우 자물쇠 기호로 표시됩니다. **Ctrl** + **l** 을 눌러 요소를 잠그고  + **ctrl** + **l** 키를 눌러 잠금을 해제할 수도 있습니다.
 
 **범위를 pageRoot로 되돌립니다.**
 
@@ -145,7 +145,7 @@ Blend for Visual Studio 개체 및 타임라인 창을 보려면 메뉴 모음�
 
 ## <a name="properties-window"></a>속성 창
 
-**속성** 창을 사용하면 컨트롤에 속성 값을 설정할 수 있습니다. 다음과 같이 나타납니다.
+**속성** 창에서 컨트롤에 대 한 속성 값을 설정할 수 있습니다. 다음과 같이 나타납니다.
 
 ![속성 창](media/xaml-designer-properties-window.png)
 
@@ -155,7 +155,7 @@ Blend for Visual Studio 개체 및 타임라인 창을 보려면 메뉴 모음�
 - 왼쪽 위 모서리에 현재 선택한 요소를 나타내는 아이콘이 있습니다.
 - 속성을 범주별로 또는 사전순으로 정렬하려면 **정렬 기준** 목록에서 **범주**, **이름** 또는 **소스** 를 클릭합니다.
 - 컨트롤에 대한 이벤트의 목록을 보려면 번개 기호를 표시하는 **이벤트** 단추를 클릭합니다.
-- 속성을 검색하려면 검색 상자에 속성 이름을 입력하기 시작합니다. **속성** 창에는 입력할 때 검색과 일치하는 속성이 표시됩니다.
+- 속성을 검색하려면 검색 상자에 속성 이름을 입력하기 시작합니다. 사용자가 입력할 때 검색 조건과 일치 하는 속성이 **속성** 창에 표시 됩니다.
 
 일부 속성에서는 아래쪽 화살표 단추를 선택하여 고급 속성을 설정할 수 있습니다.
 
@@ -163,7 +163,7 @@ Blend for Visual Studio 개체 및 타임라인 창을 보려면 메뉴 모음�
 
 속성 사용 및 이벤트 처리에 대한 자세한 내용은 [컨트롤 및 패턴 소개](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [XAML 디자이너의 요소 작업](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [방법: 리소스 만들기 및 적용](../xaml-tools/how-to-create-and-apply-a-resource.md)
