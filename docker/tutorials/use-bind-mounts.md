@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
+ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841681"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112574115"
 ---
 # <a name="use-bind-mounts"></a>바인드 탑재 사용
 
@@ -49,14 +49,15 @@ ms.locfileid: "99841681"
 
     ```bash
     docker run -dp 3000:3000 \
-        -w /app -v ${PWD}:/app \
+        -w /app \
+        -v "%cd%:/app" \
         node:12-alpine \
         sh -c "yarn install && yarn run dev"
     ```
 
     - `-dp 3000:3000` - 이전과 같습니다. 백그라운드에서 분리 모드로 실행되며 포트 매핑을 만듭니다.
     - `-w /app` - 명령이 실행되는 현재 디렉터리 또는 “작업 디렉터리”를 설정합니다.
-    - `-v ${PWD}:/app` - 컨테이너에 있는 호스트의 현재 디렉터리를 `/app` 디렉터리로 바인드 탑재합니다.
+    - `-v "%cd%:/app"` - 컨테이너에 있는 호스트의 현재 디렉터리를 `/app` 디렉터리로 바인드 탑재합니다.
     - `node:12-alpine` - 사용할 이미지입니다. Dockerfile에 있는 앱의 기본 이미지입니다.
     - `sh -c "yarn install && yarn run dev"` - 명령입니다. `sh`를 사용하여 셸을 시작하고(alpine에는 `bash`가 없음) `yarn install`을 실행하여 ‘모든’ 종속성을 설치한 다음, `yarn run dev`를 실행합니다. `package.json`을 살펴보면 `dev` 스크립트에서 `nodemon`을 시작하는 것을 확인할 수 있습니다.
 
