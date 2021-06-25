@@ -1,9 +1,9 @@
 ---
 title: CommandPlacements 요소 | Microsoft Docs
-description: Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacements 그룹화를 그룹화 합니다. CommandPlacements 요소는 선택 사항입니다.
+description: CommandPlacements 요소는 CommandPlacement 요소 및 기타 CommandPlacements 그룹화 그룹을 그룹화합니다. CommandPlacements 요소는 선택 사항입니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CommandPlacements
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3547d1c5b94285ce113b3a3c112568aa5a9a5f65
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21e0feb3913b148b4320e69461bc5035655a392d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089604"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901892"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 요소
-Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacements 그룹화를 그룹화 합니다.
+CommandPlacements 요소는 CommandPlacement 요소 및 기타 CommandPlacements 그룹화 그룹을 그룹화합니다.
 
- CommandPlacements 요소는 선택 사항입니다. 보조 위치에 명령, 그룹 또는 메뉴를 포함 하지 않아야 하는 경우 *. vsct* 파일에이 섹션을 포함 하지 않아도 됩니다.
+ CommandPlacements 요소는 선택 사항입니다. 명령, 그룹 또는 메뉴가 보조 위치에 포함되어야 하는 경우 *.vsct* 파일에 이 섹션을 포함할 필요가 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -43,20 +43,20 @@ Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacement
 
 |attribute|설명|
 |---------------|-----------------|
-|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
+|조건|선택 사항입니다. [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|CommandPlacements|CommandPlacement 요소 및 기타 Commandplacement 그룹화를 그룹화 합니다.|
-|[CommandPlacement 요소](../extensibility/commandplacement-element.md)|단추, 그룹 및 메뉴를 두 개 이상의 그룹이 나 메뉴에 포함할 수 있습니다.|
+|CommandPlacements|CommandPlacement 요소 및 기타 CommandPlacements 그룹화 그룹을 그룹화합니다.|
+|[CommandPlacement 요소](../extensibility/commandplacement-element.md)|단추, 그룹 및 메뉴를 두 개 이상의 그룹 또는 메뉴에 포함할 수 있습니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의 합니다.|
+|[CommandTable 요소](../extensibility/commandtable-element.md)|명령을 나타내는 모든 요소를 정의합니다.|
 
 ## <a name="example"></a>예제
 
@@ -71,4 +71,4 @@ Commandplacements 요소는 Commandplacements 요소 및 기타 CommandPlacement
 
 ## <a name="see-also"></a>참조
 - [CommandPlacement 요소](../extensibility/commandplacement-element.md)
-- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 명령 테이블(.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

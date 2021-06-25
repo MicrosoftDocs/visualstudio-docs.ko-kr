@@ -2,7 +2,7 @@
 description: 이 함수는 소스 제어 플러그 인에만 의미가 있는 문자열인 프로젝트 경로를 사용자에 게 묻는 메시지를 표시 합니다.
 title: SccGetProjPath 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 93266464249b8de037a618bab55ede31988384cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063970"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901073"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 함수
 이 함수는 소스 제어 플러그 인에만 의미가 있는 문자열인 프로젝트 경로를 사용자에 게 묻는 메시지를 표시 합니다. 사용자가 다음과 같은 경우 호출 됩니다.
@@ -90,7 +90,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|프로젝트를 만들거나 검색 했습니다.|
 |SCC_I_OPERATIONCANCELED|작업이 취소되었습니다.|

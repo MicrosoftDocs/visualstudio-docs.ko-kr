@@ -3,7 +3,7 @@ title: 레거시 언어 Service1 구현 | Microsoft Docs
 description: MPF (관리 되는 패키지 프레임 워크)를 사용 하 여 확장 된 언어 서비스 기능을 지 원하는 레거시 언어 서비스를 구현 하는 방법에 대해 알아봅니다. 1/2 부.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e3f11a9ea60595b2372921702282c2bb4d8dcd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34be4e54fbce413fe5ba916892216a9234d4ba93
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085912"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901151"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>레거시 언어 서비스 구현 1
 MPF (관리 되는 패키지 프레임 워크)의 클래스를 사용 하 여 구문 강조 표시, 중괄호 일치 및 IntelliSense 완료와 같은 다양 한 기능을 지 원하는 레거시 언어 서비스를 구현할 수 있습니다.

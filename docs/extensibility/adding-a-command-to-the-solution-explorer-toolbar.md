@@ -3,7 +3,7 @@ title: 솔루션 탐색기 도구 모음에 명령 추가 | Microsoft Docs
 description: Visual Studio의 솔루션 탐색기 도구 모음에 명령을 실행 하는 단추를 추가 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf6ffcded95d142578ed118ab26b57914eb36c37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0aa75bd1a229be147e3462845a61266a650e072e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060096"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900241"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>솔루션 탐색기 도구 모음에 명령 추가
 이 연습에서는 **솔루션 탐색기** 도구 모음에 단추를 추가 하는 방법을 보여 줍니다.
@@ -31,7 +31,7 @@ ms.locfileid: "105060096"
 > [!NOTE]
 > 명령 테이블 구성 (*.ctc*) 파일 대신 XML 명령 테이블 (*.cvsct*) 파일을 사용 하 여 메뉴와 명령이 vspackage에 표시 되는 방식을 정의 합니다. 자세한 내용은 [Visual Studio 명령 테이블 (를 참조 하세요. Vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-menu-command"></a>메뉴 명령을 사용 하 여 확장 만들기

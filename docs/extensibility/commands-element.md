@@ -3,7 +3,7 @@ title: Commands 요소 | Microsoft Docs
 description: Commands 요소는 VSPackage 도구 모음에 있는 명령 컬렉션을 나타내고 메뉴, 그룹, 단추, combos 및 비트맵 섹션을 포함할 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Commands
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 671e855a31af17310fdab58689d8775b490cb93a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e4c7b058acdd634079d0ca60dddb9f80e0e26ff0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089591"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901872"
 ---
 # <a name="commands-element"></a>Commands 요소
 VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션에는 메뉴, 그룹, 단추, combos 및 비트맵과 같이 최대 5 개의 하위 섹션이 포함 될 수 있습니다.
@@ -50,7 +50,7 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Menus 요소](../extensibility/menus-element.md)|VSPackage가 구현 하는 모든 메뉴를 정의 합니다.|
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|
@@ -60,7 +60,7 @@ VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다. 컬렉션
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE에 제공 하는 명령을 나타내는 모든 요소를 정의 합니다. 가능한 요소는 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자입니다.|
 

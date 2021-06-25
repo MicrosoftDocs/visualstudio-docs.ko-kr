@@ -1,9 +1,9 @@
 ---
 title: 프로젝트 항목에 특성 추가 | Microsoft Docs
-description: 셸 Interop 메서드 GetItemAttribute 및 SetItemAttribute를 사용 하 여 Visual Studio에서 프로젝트 항목에 특성을 추가 하는 방법에 대해 알아봅니다.
+description: 셸 Interop 메서드 GetItemAttribute 및 SetItemAttribute를 사용하여 Visual Studio 프로젝트 항목에 특성을 추가하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
@@ -12,19 +12,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee65a22e0a296047f5a401e00495ee25403d64e0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 36fc5905fd2b1423865982a80a6cb2ba6a803cc5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094915"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902022"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>프로젝트 항목에 특성 추가
-메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 및는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 프로젝트 항목의 특성 값을 가져오고 설정 합니다. SetItemAttribute가 아직 없는 경우 특성을 만들어 프로젝트 항목 메타 데이터에 추가 합니다.
+메서드 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 및 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 프로젝트 항목의 특성 값을 얻고 설정합니다. SetItemAttribute는 특성이 아직 없는 경우 해당 특성을 만들어 프로젝트 항목 메타데이터에 추가합니다.
 
 ## <a name="add-an-attribute-to-a-project-item"></a>프로젝트 항목에 특성 추가
 
-- 다음 코드에서는 <xref:EnvDTE.DTE> automation 개체와 메서드를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 프로젝트 항목에 특성을 추가 합니다. 프로젝트 항목 ID는 프로젝트 항목 이름 "program .cs"에서 가져옵니다. "MyAttribute" 특성은이 프로젝트 항목에 추가 되 고 "MyValue" 값이 지정 됩니다.
+- 다음 코드에서는 <xref:EnvDTE.DTE> 자동화 개체와 메서드를 사용하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 특성을 프로젝트 항목에 추가합니다. 프로젝트 항목 ID는 프로젝트 항목 이름 "program.cs"에서 가져온 것입니다. "MyAttribute" 특성이 이 프로젝트 항목에 추가되고 "MyValue" 값이 지정됩니다.
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -46,4 +46,4 @@ ms.locfileid: "105094915"
     ```
 
 ## <a name="see-also"></a>참조
-- [MSBuild 프로젝트 파일에 데이터 보관](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [MSBuild 프로젝트 파일에 데이터 유지](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

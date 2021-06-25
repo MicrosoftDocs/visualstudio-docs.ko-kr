@@ -2,7 +2,7 @@
 description: 이 함수는 기존 소스 제어 프로젝트를 열거나 새 프로젝트를 만듭니다.
 title: SccOpenProject 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: baada63e84e95fd466e0e5640c592dfe303d8e1a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1326319b483aa707b77e0d7142d816b01fc7d3b1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063762"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902399"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 함수
 이 함수는 기존 소스 제어 프로젝트를 열거나 새 프로젝트를 만듭니다.
@@ -79,7 +79,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|프로젝트를 여는 동안 성공 했습니다.|
 |SCC_E_INITIALIZEFAILED|프로젝트를 초기화할 수 없습니다.|

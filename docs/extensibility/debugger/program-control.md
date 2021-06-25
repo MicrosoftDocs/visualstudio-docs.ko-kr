@@ -3,7 +3,7 @@ title: 프로그램 제어 | Microsoft Docs
 description: 실행, 단계별 실행, 계속, 스레드 일시 중단/재개 등 프로그램 수준에서 발생 하는 Visual Studio 디버깅의 루틴에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d869094eff3713a3c9e7ec63a8003bb12a018c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7b2946309c72fbdddf2794c1da1e773e9a529368
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094681"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900716"
 ---
 # <a name="program-control"></a>프로그램 제어
 Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이 프로그램 수준에서 발생 합니다.
@@ -40,7 +40,7 @@ Visual Studio 디버깅에서는 다음의 단계별 실행 및 계속 루틴이
 ## <a name="methods-of-program-control"></a>Program 컨트롤의 메서드
  다음 표에서는 최소 기능 디버그 엔진 (DE) 및 실행 제어를 위해 구현 해야 하는 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 의 메서드를 보여 줍니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
 |[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|프로그램에 포함 된 모든 스레드를 중지 된 상태로 계속 실행 합니다. 실행 제어에 필요 합니다.|
 |[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|프로그램에 포함 된 모든 스레드를 중지 된 상태로 계속 실행 합니다. 실행 제어에 필요 합니다.|

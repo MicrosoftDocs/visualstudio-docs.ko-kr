@@ -3,7 +3,7 @@ title: 출력에 대 한 프로젝트 구성 | Microsoft Docs
 description: 모든 구성에서 지원할 수 있는 빌드 프로세스와 출력 항목을 사용 가능 하 게 설정할 수 있는 인터페이스 및 메서드를 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e37999ad9f3bada375c1897207e1e4c15546e8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8b718e70bac0d9e09936daf743420acc04a1c4ad
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082012"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899877"
 ---
 # <a name="project-configuration-for-output"></a>출력에 대한 프로젝트 구성
-모든 구성은 실행 파일, 리소스 파일 등의 출력 항목을 생성 하는 빌드 프로세스 집합을 지원할 수 있습니다. 이러한 출력 항목은 사용자에 게 전용 이며 실행 파일 (.exe, .dll, .lib) 및 소스 파일 (.idl, .h 파일)과 같은 관련 된 출력 형식을 연결 하는 그룹에 배치할 수 있습니다.
+모든 구성은 실행 파일, 리소스 파일 등의 출력 항목을 생성 하는 빌드 프로세스 집합을 지원할 수 있습니다. 이러한 출력 항목은 사용자를 대상으로 하며 실행 파일 (.exe, .dll, .lib) 및 소스 파일 (.idl, .h 파일)과 같은 관련 출력 형식을 연결 하는 그룹에 배치 될 수 있습니다.
 
  출력 항목은 메서드를 통해 사용할 수 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> 있고 메서드로 열거할 수 있습니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> . 출력 항목을 그룹화 하려는 경우 프로젝트도 인터페이스를 구현 해야 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> .
 

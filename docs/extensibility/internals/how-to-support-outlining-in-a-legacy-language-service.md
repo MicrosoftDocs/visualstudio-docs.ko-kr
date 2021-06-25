@@ -3,7 +3,7 @@ title: '방법: 레거시 언어 서비스에서 개요 지원 | Microsoft Docs'
 description: 레거시 언어 서비스에서 텍스트의 다른 영역에 대 한 개요, 확장 또는 축소에 대 한 지원을 제공 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c275a6a466cc58187293f6ebd84a39fdf8064e6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 028d1a9aae21aae8c6368e4eea3820aabd200be6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078687"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901801"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>방법: 레거시 언어 서비스에서 개요 지원
 개요는 텍스트의 여러 영역을 확장 하거나 축소 하는 데 사용 됩니다. 개요를 사용 하는 방법은 언어 마다 다르게 정의할 수 있습니다. 자세한 내용은 [개요](../../ide/outlining.md)를 참조하세요.

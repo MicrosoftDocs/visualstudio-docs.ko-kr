@@ -3,7 +3,7 @@ title: 중첩 된 프로젝트에 대 한 명령 처리 구현 | Microsoft Docs
 description: Visual Studio IDE (통합 개발 환경)에서 중첩 된 프로젝트에 대 한 명령 처리를 구현 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad154fd3739369b0ccf7e5d896d1b9f1728c68e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4324e207d7b424295137f9523ed0bed538b3d806
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085782"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899988"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>중첩된 프로젝트에 대한 명령 처리 구현
 IDE는를 통해 전달 되는 명령 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 및 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 인터페이스를 중첩 된 프로젝트에 전달 하거나 부모 프로젝트가 명령을 필터링 하거나 재정의할 수 있습니다.

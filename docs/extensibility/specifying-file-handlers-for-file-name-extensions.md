@@ -3,7 +3,7 @@ title: 파일 이름 확장명에 대 한 파일 처리기 지정 | Microsoft Do
 description: OpenWithList 및 Openwithlist를 사용 하 여 Visual Studio SDK에서 파일 확장명을 처리 하는 응용 프로그램을 확인 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65705467b1531e139c0ec857d6a7b57015d5f2f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6ab370b4be8c12ad0df0c4822bcc7b487fb4aa21
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089968"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899448"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>파일 이름 확장명에 대한 파일 처리기 지정
 특정 파일 확장명이 있는 파일을 처리 하는 응용 프로그램을 확인 하는 방법에는 여러 가지가 있습니다. OpenWithList 및 Openwithlist 동사는 파일 확장명에 대 한 레지스트리 항목에서 파일 처리기를 지정 하는 두 가지 방법입니다.
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- 파일 확장명에 대 한 기본값으로 지정 된 ProgID가 기본 파일 처리기입니다. 이전 버전의와 함께 제공 되는 파일 확장명에 대 한 ProgID를 수정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하거나 다른 응용 프로그램에서 가져올 수 있는 경우 `OpenWithProgids` 파일 확장명에 대 한 키를 등록 하 고 지원 되는 이전 progid와 함께 목록에 새 ProgID를 지정 해야 합니다. 예를 들어:
+ 파일 확장명에 대 한 기본값으로 지정 된 ProgID가 기본 파일 처리기입니다. 이전 버전의와 함께 제공 되는 파일 확장명에 대 한 ProgID를 수정 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 하거나 다른 응용 프로그램에서 가져올 수 있는 경우 `OpenWithProgids` 파일 확장명에 대 한 키를 등록 하 고 지원 되는 이전 progid와 함께 목록에 새 ProgID를 지정 해야 합니다. 예를 들면 다음과 같습니다.
 
 ```
 HKEY_CLASSES_ROOT\

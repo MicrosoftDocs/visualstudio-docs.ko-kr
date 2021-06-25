@@ -3,7 +3,7 @@ title: 파일 상태 코드 열거자 | Microsoft Docs
 description: SccStatus 열거자에는 소스 제어 시스템에서 파일의 상태를 지정 하는 상수 값이 포함 되어 있으며 SccQueryInfo 및 POPLISTFUNC에 사용 됩니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95de8a29efcd56880cdaf452c9f21b90bba1c5c9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074953"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900969"
 ---
 # <a name="file-status-code-enumerator"></a>파일 상태 코드 열거자
 열거자에는 `SccStatus` 소스 제어 시스템에서 파일의 상태를 지정 하는 명명 된 상수 값이 포함 되어 있습니다. 이 열거형은 [Sccqueryinfo](../extensibility/sccqueryinfo-function.md) 및 콜백 함수에서 사용 됩니다 `POPLISTFUNC` (자세한 내용은 [POPLISTFUNC](../extensibility/poplistfunc.md) 참조).

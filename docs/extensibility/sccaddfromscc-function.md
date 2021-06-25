@@ -2,7 +2,7 @@
 description: 사용자는이 함수를 사용 하 여 소스 제어 시스템에 이미 있는 파일을 찾은 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다.
 title: SccAddFromScc 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be67fd18c6cac7217da0d79aaef766e942e15fb9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 48560f135d73c4e53ba132845f4c768cdf4ac982
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085678"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904879"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 함수
 사용자는이 함수를 사용 하 여 소스 제어 시스템에 이미 있는 파일을 찾은 다음 해당 파일을 현재 프로젝트의 일부로 만들 수 있습니다. 예를 들어이 함수는 파일을 복사 하지 않고 공용 헤더 파일을 현재 프로젝트로 가져올 수 있습니다. 파일의 반환 배열에는 `lplpFileNames` 사용자가 IDE 프로젝트에 추가 하려는 파일 목록이 포함 되어 있습니다.
@@ -54,7 +54,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|파일이 성공적으로 배치 되어 프로젝트에 추가 되었습니다.|
 |SCC_I_OPERATIONCANCELED|작업을 취소 했지만 아무런 효과가 없습니다.|

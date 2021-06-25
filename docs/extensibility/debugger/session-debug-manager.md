@@ -3,7 +3,7 @@ title: 세션 디버그 관리자 | Microsoft Docs
 description: 여러 컴퓨터에서 여러 프로세스의 프로그램을 디버깅 하는 여러 디버그 엔진을 관리 하는 세션 디버그 관리자에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - session debug manager, unifying session views
 - session debug manager, broadcasting
@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 217a2d401e61c58a58d958bb754265a19a2a367d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079464"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902087"
 ---
 # <a name="session-debug-manager"></a>세션 디버그 관리자
 세션 디버그 관리자 (SDM)는 개수에 관계 없이 여러 컴퓨터의 여러 프로세스에서 많은 프로그램을 디버그 하는 디버그 엔진 (DE)을 관리 합니다. SDM은 디버그 엔진 멀티플렉서 뿐만 아니라 IDE에 대 한 디버그 세션의 통합 보기를 제공 합니다.

@@ -3,7 +3,7 @@ title: 필요한 이벤트를 보내는 중 | Microsoft Docs
 description: 디버그 엔진을 만들어 Visual Studio 디버깅에서 프로그램에 연결 하는 데 필요한 순서가 지정 된 이벤트에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - debugging [Debugging SDK], required events
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a53f4d7a89b1f5902f576490d827148e9fb816bf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b04ca7ed68b975bc68fa509cdc75dc507b9603d6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070377"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902269"
 ---
 # <a name="send-the-required-events"></a>필요한 이벤트 보내기
 이 절차를 사용 하 여 필요한 이벤트를 전송 합니다.

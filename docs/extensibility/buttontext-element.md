@@ -3,7 +3,7 @@ title: ButtonText 요소 | Microsoft Docs
 description: ButtonText 요소를 사용 하면 다양 한 메뉴에 표시 되는 텍스트를 지정할 수 있습니다. 다른 텍스트 필드가 지정 된 경우에도 ButtonText 요소는 비워 둘 수 없습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fa9ad6aab9d42113f3e01760e191184e168b62d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf20a6876dd7ba52413a11f30a3d0130b32e535d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068117"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900719"
 ---
 # <a name="buttontext-element"></a>ButtonText 요소
 이 필드를 사용 하면 다양 한 메뉴에 표시 되는 텍스트를 지정할 수 있습니다. 기본적으로 요소는 `ButtonText` 메뉴 컨트롤러에 표시 됩니다. `ButtonText`다른 텍스트 필드가 비어 있는 경우에도 요소가 기본값이 됩니다. `ButtonText`다른 텍스트 필드가 지정 된 경우에도 요소를 비워 둘 수 없습니다.
@@ -40,7 +40,7 @@ ms.locfileid: "105068117"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Strings 요소](../extensibility/strings-element.md)|및 등의 텍스트 요소를 `ButtonText` 그룹화 `CommandName` 합니다.|
 

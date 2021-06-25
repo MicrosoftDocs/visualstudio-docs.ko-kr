@@ -1,9 +1,9 @@
 ---
 title: 프로세스 디버그 관리자 | Microsoft Docs
-description: 세션 디버그 관리자와 디버그 엔진에서 프로그램을 사용할 수 있도록 하는 Visual Studio의 구성 요소인 프로세스 디버그 관리자에 대해 알아봅니다.
+description: 세션 디버그 관리자 및 디버그 엔진에서 프로그램을 사용할 수 있도록 하는 Visual Studio 구성 요소인 프로세스 디버그 관리자에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
@@ -13,17 +13,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c332b28e48b24065b5e359332df65c61365f1763
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 04fb89f4b009640760d624f1efa197cdaa56bda7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067726"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900748"
 ---
 # <a name="process-debug-manager"></a>프로세스 디버그 관리자
-프로세스 디버그 관리자 (PDM)는 프로그램 및 프로세스를 관리 하 여 세션 디버그 관리자와 디버그 엔진에서 사용할 수 있도록 하는 Visual Studio의 구성 요소입니다.
+PDM(프로세스 디버그 관리자)은 프로그램 및 프로세스를 관리하여 세션 디버그 관리자 및 디버그 엔진에서 사용할 수 있도록 하는 Visual Studio 구성 요소입니다.
 
- PDM은 디버그할 수 있는 모든 프로세스를 관리 합니다. 디버그 하려면 프로그램을 PDM에 등록 해야 합니다. 이 등록은 프로그램이 시작 될 때 포트나 디버그 엔진에 의해 수행 됩니다.
+ PDM은 디버그할 수 있는 모든 프로세스를 관리합니다. 디버그하려면 프로그램을 PDM에 등록해야 합니다. 이 등록은 포트 또는 디버그 엔진을 통해 프로그램이 시작될 때 수행됩니다.
 
 ## <a name="see-also"></a>참조
 - [프로세스](../../extensibility/debugger/processes.md)

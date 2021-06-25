@@ -3,7 +3,7 @@ title: 필요한 포트 공급자 인터페이스 | Microsoft Docs
 description: 포트 공급자가 실행 해야 하는 인터페이스에 대해 알아봅니다. 포트 공급자는 포트를 제공 하 고 구현 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - port suppliers, required interfaces
 - debugging [Debugging SDK], port suppliers
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5755ce47a2b76c9a0d38b1f7eed3b38d64c876
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96cf70302839a9de3c5fb0fec01136d9700ee17e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070611"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902373"
 ---
 # <a name="required-port-supplier-interfaces"></a>필요한 포트 공급자 인터페이스
 포트 공급자는 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 인터페이스를 구현 해야 합니다. [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)

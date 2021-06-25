@@ -1,9 +1,9 @@
 ---
-title: 기호 요소 | Microsoft Docs
-description: 기호 요소는 다른 VSCT 요소에 사용 되는 Guid 및 Id를 정의 합니다. 이 문서에는 예제가 포함 되어 있습니다.
+title: Symbols 요소 | Microsoft Docs
+description: Symbols 요소는 다른 VSCT 요소에서 사용되는GUID 및 ID를 정의합니다. 이 문서에는 예제가 포함되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Symbols element (VSCT XML schema)
 - VSCT XML schema elements, Symbols
@@ -13,19 +13,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a013bbe438d1e4dd1f6b5149dcb7da78835fd09
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b593f353714f2fbb6f5b726fa2bbc0da449043ea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056053"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901736"
 ---
 # <a name="symbols-element"></a>Symbols 요소
-다른 VSCT 요소에 사용 되는 Guid 및 Id를 정의 합니다. 비관리 코드의 경우이 정보는 일반적으로 [Extern 요소](../extensibility/extern-element.md)에 지정 된 헤더 파일에서 가져옵니다. 관리 코드는 기호 요소의 자식 요소를 사용 하 여이 정보를 정의 합니다.
+다른 VSCT 요소에서 사용하는GUID 및 ID를 정의합니다. 비 관리 코드의 경우 이 정보는 일반적으로 [Extern 요소](../extensibility/extern-element.md)에 지정된 헤더 파일에서 제공됩니다. 관리 코드는 Symbols 요소의 자식 요소를 사용하여 이 정보를 정의합니다.
 
- 기존 .cto 파일에서 .cvsct 파일을 만들면 기호가 symbol 요소의 자식으로 생성 됩니다. 자세한 내용은 [방법: 만들기를 참조 하세요. 기존에서 vsct 파일 Cto 파일](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+ 기존 .cto 파일에서 .vsct 파일을 만드는 경우 기호가 Symbols 요소의 자식으로 생성됩니다. 자세한 내용은 [방법: 만들기를 참조하세요. 기존 의 Vsct 파일입니다. Cto 파일.](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)
 
- 기호 요소는 전처리기에서 사용할 이름-값 쌍을 정의 하는 [Define 요소](../extensibility/define-element.md)와 혼동 해서는 안 됩니다.
+ Symbols 요소는 전처리기에서 사용할 이름-값 쌍을 정의하는 [Define 요소](../extensibility/define-element.md)와 혼동해서는 안 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,22 +41,22 @@ ms.locfileid: "105056053"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |없음||
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|GuidSymbol|GUID 기호를 정의 합니다. GuidSymbol에는 이름 및 값의 두 가지 필수 특성이 있습니다. 이름은 기호의 이름이 고, 값은 GUID의 값입니다.<br /><br /> 예를 들면 다음과 같습니다.\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
-|IDSymbol|기호를 정의 합니다. IDSymbol에는 이름 및 값의 두 가지 필수 특성이 있습니다. 이름은 기호의 이름이 고, 값은 기호 값을 나타내는 문자열입니다.<br /><br /> 예를 들면 다음과 같습니다.\<IDSymbol name="MyMenuGroup" value="0x1020" />|
+|GuidSymbol|GUID 기호를 정의합니다. GuidSymbol에는 이름과 값의 두 가지 필수 특성이 있습니다. 이름은 기호의 이름이고 값은 문자열인 GUID의 값입니다.<br /><br /> 예를 들면 다음과 같습니다.\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|
+|IDSymbol|기호를 정의합니다. IDSymbol에는 이름과 값의 두 가지 필수 특성이 있습니다. 이름은 기호의 이름이고 값은 문자열로 기호의 값입니다.<br /><br /> 예를 들면 다음과 같습니다.\<IDSymbol name="MyMenuGroup" value="0x1020" />|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[CommandTable 요소](../extensibility/commandtable-element.md)|Vsct 파일의 루트 요소입니다.|
+|[CommandTable 요소](../extensibility/commandtable-element.md)|.vsct 파일의 루트 요소입니다.|
 
 ## <a name="example"></a>예제
 

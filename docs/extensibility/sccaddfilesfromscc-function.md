@@ -2,7 +2,7 @@
 description: 이 함수는 소스 제어에서 현재 열려 있는 프로젝트에 파일 목록을 추가 합니다.
 title: SccAddFilesFromSCC 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAddFilesFromSCC
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056e918642e75bbd74c310499544cb2500428646
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6fa08ec93383fa661d1e2dd055b3139b2ba90f34
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060473"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904866"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 함수
 이 함수는 소스 제어에서 현재 열려 있는 프로젝트에 파일 목록을 추가 합니다.
@@ -79,7 +79,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|프로젝트가 열려 있지 않습니다.|
 |SCC_E_OPNOTPERFORMED|에서 지정한 것과 동일한 프로젝트에 대 한 연결이 아닙니다. `lpAuxProjPath.`|

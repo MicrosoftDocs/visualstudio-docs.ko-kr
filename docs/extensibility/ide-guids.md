@@ -1,9 +1,9 @@
 ---
-title: IDE Guid | Microsoft Docs
-description: VSConstants 클래스는 IDE의 일부 파트에 대 한 Guid 집합을 게시 합니다. 이 문서에서는 Guid를 나열 합니다.
+title: IDE | Microsoft Docs
+description: VSConstants 클래스는 IDE의 일부 부분에 대한 일련의GUID를 게시합니다. 이 문서에서는GUID를 나열합니다.
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
@@ -13,16 +13,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6351ea576c8976bd12fe206d8c4dbbe5f34a72d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069857"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904931"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
-<xref:Microsoft.VisualStudio.VSConstants>클래스는 아래 표에 나와 있는 것 처럼 IDE (통합 개발 환경)의 일부 부분에 대 한 guid를 게시 합니다.
+<xref:Microsoft.VisualStudio.VSConstants>클래스는 아래 표에 나열된 대로 IDE(통합 개발 환경)의 일부의GUID를 게시합니다.
 
 ## <a name="core-systems"></a>핵심 시스템
 
@@ -37,7 +37,7 @@ ms.locfileid: "105069857"
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.HtmlEditor_guid>|C76D83F8-A489-11D0-8195-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.TextEditor_guid>|8B382828-6202-11d1-8870-0000F87579D2|
 
-## <a name="broadly-visible-components"></a>광범위 하 게 표시 되는 구성 요소
+## <a name="broadly-visible-components"></a>광범위하게 표시되는 구성 요소
 
 |상수|GUID|
 |--------------|----------|
@@ -46,7 +46,7 @@ ms.locfileid: "105069857"
 |Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>파일, 가상 및 물리적 폴더와 하위 프로젝트
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>파일, 가상 및 물리적 폴더 및 subProjects
 
 |상수|GUID|
 |--------------|----------|
@@ -67,7 +67,7 @@ ms.locfileid: "105069857"
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-efdf150da82|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
@@ -95,7 +95,7 @@ ms.locfileid: "105069857"
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>작업 목록 Guid
+## <a name="task-list-guids"></a>작업 목록GUID
 
 |상수|GUID|
 |--------------|----------|
@@ -111,7 +111,7 @@ ms.locfileid: "105069857"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>구성 요소 선택기 페이지 Guid
+## <a name="component-selector-page-guids"></a>구성 요소 선택기 페이지GUID
 
 |상수|GUID|
 |---------------|----------|
@@ -119,7 +119,7 @@ ms.locfileid: "105069857"
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>기타 셸 Guid
+## <a name="miscellaneous-shell-guids"></a>기타 셸GUID
 
 |상수|GUID|
 |---------------|----------|

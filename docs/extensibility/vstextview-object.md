@@ -3,7 +3,7 @@ title: VSTextView 개체 | Microsoft Docs
 description: VSTextView 개체는 사용자가 텍스트 버퍼의 유니코드 텍스트를 보고 편집할 수 있도록 하는 창입니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VSTextView
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7ec65ed2beb866bfbb4e35fd5b290d3457ad3a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 90fad54be26c11db31d649d0ae6b25c108a6b361
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062163"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905165"
 ---
 # <a name="vstextview-object"></a>VSTextView 개체
 
@@ -28,7 +28,7 @@ ms.locfileid: "105062163"
 
 다음 표에서는 개체의 인터페이스를 보여 줍니다 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> .
 
-|인터페이스|Description|
+|인터페이스|설명|
 |---------------|-----------------|
 |[IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource)|표준 OLE 인터페이스입니다.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IDropTarget>|표준 OLE 인터페이스입니다.|

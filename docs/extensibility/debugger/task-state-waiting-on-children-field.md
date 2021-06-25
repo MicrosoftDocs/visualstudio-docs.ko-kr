@@ -1,8 +1,8 @@
 ---
-description: 태스크가 대리자 실행을 완료 하 고 연결 된 자식 작업이 완료 될 때까지 암시적으로 대기 합니다.
-title: TASK_STATE_WAITING_ON_CHILDREN 필드 | Microsoft Docs
+description: 태스크가 대리자 실행을 완료했으며 연결된 자식 작업이 완료되길 암시적으로 기다리고 있습니다.
+title: 필드 | TASK_STATE_WAITING_ON_CHILDREN Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - TASK_STATE_WAITING_ON_CHILDREN field, Task class [.NET Framework debug engines]
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 955523b58703023add8b4bf312a98df8f792d3ef
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b795a20ba19b1309b3f3bf972beed70549d72d88
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075291"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900163"
 ---
 # <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 필드
-태스크가 대리자 실행을 완료 하 고 연결 된 자식 작업이 완료 될 때까지 암시적으로 대기 합니다.
+태스크가 대리자 실행을 완료했으며 연결된 자식 작업이 완료되길 암시적으로 기다리고 있습니다.
 
  **네임스페이스:** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **어셈블리:** mscorlib ( *mscorlib.dll*)
+ **어셈블리:** mscorlib(mscorlib.dll) **
 
- .NET Framework에서이 내부 멤버에 액세스할 수 없기 때문에 다음 구문이 CIL (공용 중간 언어)에서 제공 됩니다.
+ .NET Framework 이 내부 멤버에 액세스할 수 없으므로 다음 구문은 CIL(공용 중간 언어)로 제공됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,7 +34,7 @@ ms.locfileid: "105075291"
 ```
 
 ## <a name="remarks"></a>설명
- [M_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에이 값이 포함 되어 있으면 <xref:System.Threading.Tasks.Task.Status%2A> 속성은을 반환 합니다 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .
+ [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 필드에 이 값이 포함되어 있으면 <xref:System.Threading.Tasks.Task.Status%2A> 속성은 를 반환합니다. <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>
 
 ## <a name="see-also"></a>참조
 - [Task 클래스](../../extensibility/debugger/task-class-internal-members.md)

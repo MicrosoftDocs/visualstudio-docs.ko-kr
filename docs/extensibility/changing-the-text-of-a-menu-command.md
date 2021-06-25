@@ -3,7 +3,7 @@ title: 메뉴 명령의 텍스트 변경 | Microsoft Docs
 description: 이 코드 예제를 검토 하 여 IMenuCommandService 서비스를 사용 하 여 메뉴 명령의 텍스트 레이블을 변경 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - menus, changing text
 - text, menus
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 541acf1bcf448541fe6c440eb2aada687cfbe0e9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068065"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904993"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>메뉴 명령의 텍스트를 변경 합니다.
 다음 단계에서는 서비스를 사용 하 여 메뉴 명령의 텍스트 레이블을 변경 하는 방법을 보여 줍니다 <xref:System.ComponentModel.Design.IMenuCommandService> .

@@ -1,8 +1,8 @@
 ---
-description: 이 함수는 이전에 체크 아웃 한 파일을 소스 제어 시스템으로 체크 인하고 변경 내용을 저장 하 고 새 버전을 만듭니다.
+description: 이 함수는 이전에 체크 아웃된 파일을 소스 제어 시스템에 체크 인하여 변경 내용을 저장하고 새 버전을 만듭니다.
 title: SccCheckin 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6864549c6825092b6ad26be199f8c7b5ea6bab6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d324c03096df5178decd6f6954928df3f2c6b9aa
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060434"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904749"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 함수
-이 함수는 이전에 체크 아웃 한 파일을 소스 제어 시스템으로 체크 인하고 변경 내용을 저장 하 고 새 버전을 만듭니다. 이 함수는 체크 인할 파일의 개수 및 이름 배열을 사용 하 여 호출 됩니다.
+이 함수는 이전에 체크 아웃된 파일을 소스 제어 시스템에 체크 인하여 변경 내용을 저장하고 새 버전을 만듭니다. 이 함수는 체크 인할 파일 이름 배열과 개수로 호출됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,54 +40,54 @@ SCCRTN SccCheckin (
 ### <a name="parameters"></a>매개 변수
  pvContext
 
-진행 소스 제어 플러그 인 컨텍스트 구조입니다.
+[in] 소스 제어 플러그 인 컨텍스트 구조입니다.
 
- hWnd
+ Hwnd
 
-진행 SCC 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.
+[in] SCC 플러그 인이 제공하는 모든 대화 상자의 부모로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
- n
+ nFiles
 
-진행 체크 인 되도록 선택한 파일 수입니다.
+[in] 체크 인할 파일 수입니다.
 
- lpFileNames 이름
+ lpFileNames
 
-진행 체크 인할 파일의 정규화 된 로컬 경로 이름 배열입니다.
+[in] 체크 인할 파일의 정규화된 로컬 경로 이름 배열입니다.
 
  lpComment
 
-진행 체크 인 되는 선택한 각 파일에 적용할 설명입니다. 이 매개 변수는 `NULL` 소스 제어 플러그 인에서 주석을 요청 해야 하는 경우입니다.
+[in] 체크 인할 선택한 각 파일에 적용할 주석입니다. 이 매개 변수는 `NULL` 소스 제어 플러그 인에서 주석을 묻는 메시지를 표시해야 하는 경우 입니다.
 
  fOptions
 
-진행 명령 플래그 (0 또는) `SCC_KEEP_CHECKEDOUT` 입니다.
+[in] 명령 플래그(0 또는 `SCC_KEEP_CHECKEDOUT` )입니다.
 
  pvOptions
 
-진행 SCC 플러그 인 관련 옵션입니다.
+[in] SCC 플러그 인 관련 옵션입니다.
 
 ## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|SCC_OK|파일이 체크 인 되었습니다.|
-|SCC_E_FILENOTCONTROLLED|선택한 파일은 소스 코드 제어에 있지 않습니다.|
-|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 원본 제어 시스템에 액세스 하는 동안 문제가 발생 했습니다. 다시 시도 하는 것이 좋습니다.|
-|SCC_E_NONSPECIFICERROR|일반 오류입니다. 파일이 체크 인 되지 않았습니다.|
-|SCC_E_NOTCHECKEDOUT|사용자가 파일을 체크 아웃 하지 않았으므로 체크 인할 수 없습니다.|
-|SCC_E_CHECKINCONFLICT|다음 이유로 인해 체크 인을 수행할 수 없습니다.<br /><br /> -다른 사용자가 미리 체크 인하고 `bAutoReconcile` false 였습니다.<br /><br /> -또는-<br /><br /> -자동 병합을 수행할 수 없습니다 (예: 파일이 이진 인 경우).|
-|SCC_E_VERIFYMERGE|파일이 자동으로 병합 되었지만 사용자 확인 보류 중에 체크 인 되지 않았습니다.|
-|SCC_E_FIXMERGE|파일이 자동으로 병합 되었지만 수동으로 해결 해야 하는 병합 충돌로 인해 체크 인 되지 않았습니다.|
-|SCC_E_NOTAUTHORIZED|사용자가이 작업을 수행할 수 없습니다.|
-|SCC_I_OPERATIONCANCELED|작업이 완료 되기 전에 취소 되었습니다.|
-|SCC_I_RELOADFILE|파일이 나 프로젝트를 다시 로드 해야 합니다.|
+|SCC_OK|파일이 성공적으로 체크 인되었습니다.|
+|SCC_E_FILENOTCONTROLLED|선택한 파일이 소스 코드 제어에 있지 않습니다.|
+|SCC_E_ACCESSFAILURE|네트워크 또는 경합 문제로 인해 소스 제어 시스템에 액세스하는 데 문제가 있었습니다. 다시 시도 하는 것이 좋습니다.|
+|SCC_E_NONSPECIFICERROR|지정되지 않은 오류입니다. 파일이 체크 인되지 않았습니다.|
+|SCC_E_NOTCHECKEDOUT|사용자가 파일을 체크 아웃하지 않았으므로 체크 인할 수 없습니다.|
+|SCC_E_CHECKINCONFLICT|다음과 같은 이유로 체크 인을 수행할 수 없습니다.<br /><br /> - 다른 사용자가 미리 체크 인했으며 `bAutoReconcile` false입니다.<br /><br /> 또는<br /><br /> - 자동 병합을 수행할 수 없습니다(예: 파일이 이진 파일인 경우).|
+|SCC_E_VERIFYMERGE|파일이 자동으로 병합되었지만 보류 중인 사용자 확인에서 체크 인되지 않았습니다.|
+|SCC_E_FIXMERGE|파일이 자동으로 병합되었지만 수동으로 해결해야 하는 병합 충돌로 인해 체크 인되지 않았습니다.|
+|SCC_E_NOTAUTHORIZED|사용자가 이 작업을 수행할 수 없습니다.|
+|SCC_I_OPERATIONCANCELED|작업이 완료되기 전에 취소되었습니다.|
+|SCC_I_RELOADFILE|파일 또는 프로젝트를 다시 로드해야 합니다.|
 |SCC_E_FILENOTEXIST|로컬 파일을 찾을 수 없습니다.|
 
 ## <a name="remarks"></a>설명
- 주석은 체크 인 된 모든 파일에 적용 됩니다. 주석 인수는 문자열일 수 있습니다 `null` .이 경우 소스 제어 플러그 인은 각 파일에 대 한 주석 문자열을 사용자에 게 표시할 수 있습니다.
+ 주석은 체크 인되는 모든 파일에 적용됩니다. comment 인수는 문자열일 수 `null` 있으며, 이 경우 소스 제어 플러그 인은 사용자에게 각 파일에 대한 주석 문자열을 입력하라는 메시지를 표시할 수 있습니다.
 
- `fOptions`인수에 플래그 값을 지정 `SCC_KEEP_CHECKEDOUT` 하 여 파일을 확인 하 고 다시 체크 아웃할 사용자의 의도를 나타낼 수 있습니다.
+ `fOptions`인수에 플래그 값을 `SCC_KEEP_CHECKEDOUT` 지정하여 파일을 체크 인하고 다시 체크 아웃하려는 사용자의 의도를 나타낼 수 있습니다.
 
 ## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

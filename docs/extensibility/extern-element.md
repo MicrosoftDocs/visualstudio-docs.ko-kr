@@ -3,7 +3,7 @@ title: Extern 요소 | Microsoft Docs
 description: Extern 요소는 컴파일 타임에. vsct 파일과 병합할 외부 헤더 파일 (.h)을 참조 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Extern
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 502b93f18aacfed26d3ea440c017e6de5281a35d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074992"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900189"
 ---
 # <a name="extern-element"></a>Extern 요소
 Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 파일 (*.h*)을 참조 합니다. 병합할 파일은 VSCT 컴파일러에 지정 된 포함 경로에 있거나 [include 요소](../extensibility/include-element.md)에서 참조 되어야 합니다. 파일은 다른 *. vsct* 파일 또는 c + + 헤더 파일 일 수 있습니다.
@@ -40,7 +40,7 @@ Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |href|필수 요소. 헤더 파일에 대 한 경로입니다.<br /><br /> href = "stdidcmd"|
 |조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
@@ -48,13 +48,13 @@ Extern 요소는 컴파일 타임에 *. vsct* 파일과 병합할 외부 헤더 
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |없음|없음|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage IDE에 제공 하는 명령, 즉 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자를 나타내는 모든 요소를 정의 합니다.|
 

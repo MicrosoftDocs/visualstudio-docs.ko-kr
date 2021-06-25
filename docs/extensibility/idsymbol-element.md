@@ -3,7 +3,7 @@ title: IDSymbol 요소 | Microsoft Docs
 description: 'IDSymbol 요소는 메뉴, 그룹 또는 명령을 나타내는 GUID: ID 쌍의 ID를 포함 합니다.'
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59089ab981bc97100386b3e1907ef903ede3bd0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e5158b16fb2d12a7d1a93c0296126e915a138269
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069844"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904944"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 요소
 `IDSymbol`요소는 메뉴, 그룹 또는 명령을 나타내는 GUID: id 쌍의 id를 포함 합니다. GUID는 부모 요소에서 가져옵니다 `GuidSymbol` . 요소에는 `IDSymbol` `name` 특성에 포함 된 ID에 대 한 친숙 한 이름을 제공 하는 특성이 있습니다 `value` .
@@ -34,17 +34,17 @@ ms.locfileid: "105069844"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |name|필수 요소. ID 기호의 이름입니다.|
-|값|필수 요소. ID 기호의 숫자 ID 값입니다.|
+|value|필수 요소. ID 기호의 숫자 ID 값입니다.|
 
 ### <a name="child-elements"></a>자식 요소
  없음
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[GuidSymbol 요소](../extensibility/guidsymbol-element.md)|메뉴, 그룹 또는 명령을 나타내는 GUID: ID 쌍의 GUID를 포함 합니다. `IDSymbol` 요소를 그룹화합니다.|
 

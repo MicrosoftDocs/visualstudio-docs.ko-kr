@@ -2,7 +2,7 @@
 description: 이 함수는 소스 제어 플러그 인에서 MSSCCPRJ.SCC 생성을 지원 하는지 여부를 확인 합니다. 지정 된 각 파일에 대 한 SCC 파일
 title: SccWillCreateSccFile 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f9e6df29b9f44d852c7c84488a3febf590fcc0e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063723"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900449"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 함수
 이 함수는 소스 제어 플러그 인에서 MSSCCPRJ.SCC 생성을 지원 하는지 여부를 확인 합니다. 지정 된 각 파일에 대 한 SCC 파일
@@ -54,9 +54,9 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|SCC_OK|성공했습니다.|
+|SCC_OK|성공.|
 |SCC_E_INVALIDFILEPATH|배열의 경로 중 하나가 잘못 되었습니다.|
 |SCC_E_NONSPECIFICERROR|일반 오류입니다.|
 

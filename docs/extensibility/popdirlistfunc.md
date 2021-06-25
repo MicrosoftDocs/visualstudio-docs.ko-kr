@@ -3,7 +3,7 @@ title: POPDIRLISTFUNC | Microsoft Docs
 description: 소스 제어에서 찾을 수 있도록 업데이트 디렉터리에 전달 되는 POPDIRLISTFUNC 콜백 함수에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - POPLISTFUNC
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090254"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900397"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 이 함수는 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 함수에 제공 되는 콜백 함수로, 디렉터리 및 파일 이름 (선택 사항)의 컬렉션을 업데이트 하 여 소스 제어에서 찾을 수 있도록 합니다.
@@ -52,7 +52,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>반환 값
  IDE에서 적절 한 오류 코드를 반환 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|처리를 계속합니다.|
 |SCC_I_OPERATIONCANCELED|처리를 중지합니다.|

@@ -3,7 +3,7 @@ title: 중단점 (Visual Studio SDK) | Microsoft Docs
 description: 보류 중, 바인딩 및 오류와 같은 세 가지 유형의 중단점에 대해 알아봅니다. 이 문서에서는 형식을 구현 하는 데 사용 되는 인터페이스를 나열 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b834d9b80d8abca12ea9230d3b451fb4e251859e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1fce472faf95aa77f87ab02d78a3da640b6bd3bf
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055208"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901489"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>중단점(Visual Studio SDK)
 중단점에는 보류 중, 바인딩 및 오류의 세 가지 유형이 있습니다.

@@ -3,7 +3,7 @@ title: 프로젝트 컨텍스트 | Microsoft Docs
 description: Visual Studio IDE에서 프로젝트 컨텍스트를 사용 하 여 사용자가 프로젝트 및 프로젝트 항목을 추가 하거나 사용할 때 작업을 수행 하는 방법을 결정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38571b51c31b20bd38e50dd32644be4c262e0702
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 73e3c8a94607e7e0b31bacddac8e7f19b6139328
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062865"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899825"
 ---
 # <a name="project-context"></a>프로젝트 컨텍스트
 사용자가 프로젝트 및 프로젝트 항목을 추가 하거나 사용할 때 IDE는 프로젝트 컨텍스트의 개념을 사용 하 여 다양 한 작업을 수행 해야 하는 방법을 결정 합니다.

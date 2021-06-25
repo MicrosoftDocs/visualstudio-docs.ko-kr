@@ -3,7 +3,7 @@ title: Icon 요소 | Microsoft Docs
 description: 사용 된 비트맵 및 비트맵 스트립의 슬롯에 대 한 특성이 포함 된 Visual Studio IDE 확장에 사용 되는 아이콘을 나타내는 Icon 요소에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Icon
 - Icon element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52ccb8093b61e0458f7c3caefea6f826609aa51d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7ad5bfdf000232ef92a9e9a27b12152df36a4335
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082142"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900826"
 ---
 # <a name="icon-element"></a>Icon 요소
 Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성은 비트맵 스트립에서 슬롯을 선택 합니다. 이 요소는 선택적입니다. 이 요소에 포함 되지 않은 경우 GuidOfficeIcon의 값 **: msotcidNoIcon** 이 포함 됩니다.
@@ -34,20 +34,20 @@ Icon 태그의 guid 특성은 정의 된 비트맵의 guid입니다. `id`특성�
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |guid|필수 요소. 정의 된 비트맵의 guid입니다.|
 |id|필수 요소. 비트맵 스트립에서 슬롯을 선택 합니다.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |없음|없음|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Buttons 요소](../extensibility/buttons-element.md)||
 

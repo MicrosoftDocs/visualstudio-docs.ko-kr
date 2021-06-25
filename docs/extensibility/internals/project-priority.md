@@ -3,7 +3,7 @@ title: 프로젝트 우선 순위 | Microsoft Docs
 description: 항목이 둘 이상의 프로젝트의 멤버인 경우 Visual Studio IDE에서 사용 하는 우선 순위 스키마를 사용 하 여 항목을 여는 데 가장 적합 한 프로젝트를 확인 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefb6b1670da812a36efcc1baa3cb23f23e2561
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2ac0556e63b25f0f2a0df399cb23d5e2e9473008
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064490"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899643"
 ---
 # <a name="project-priority"></a>프로젝트 우선 순위
 프로젝트 항목은 일반적으로 솔루션에 있는 하나의 프로젝트의 멤버입니다. 따라서 IDE는 항목을 여는 데 사용 되는 프로젝트를 쉽게 확인할 수 있습니다. 그러나 항목이 둘 이상의 프로젝트의 멤버인 경우 IDE는 우선 순위 체계를 사용 하 여 항목을 여는 데 가장 적합 한 프로젝트를 결정 합니다.

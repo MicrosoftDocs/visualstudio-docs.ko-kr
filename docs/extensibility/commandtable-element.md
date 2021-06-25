@@ -3,7 +3,7 @@ title: CommandTable 요소 | Microsoft Docs
 description: CommandTable은 VSPackage에서 IDE에 제공 하는 명령의 레이아웃 및 유형을 정의 하는 vsct 파일의 루트 요소입니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CommandTable
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 507bdd20602c680f58b62e85251eaaa592982bc7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 55faf4ee8bdc7ec261508fd07f5a573e7a29560f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089526"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901853"
 ---
 # <a name="commandtable-element"></a>CommandTable 요소
 CommandTable은 *vsct* 파일의 루트 요소입니다. 이 파일은 VSPackage에서 IDE에 제공 하는 명령의 실제 레이아웃 및 형식을 정의 하는 파일입니다. 명령에는 메뉴 항목, 메뉴, 도구 모음, 콤보 상자 등이 포함 될 수 있습니다. 자세한 내용은 [Visual Studio 명령 테이블 (vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)을 참조 하세요.
@@ -46,14 +46,14 @@ CommandTable은 *vsct* 파일의 루트 요소입니다. 이 파일은 VSPackage
 
 ### <a name="attributes"></a>특성
 
-| attribute | Description |
+| attribute | 설명 |
 |-----------| - |
 | xmlns | 필수 요소. XML 네임 스페이스:<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns: xs = " <http://www.w3.org/2001/XMLSchema> " |
 | 언어 | 선택 사항입니다. Language 특성은 명령 테이블의 모든 요소에 대 한 기본 언어를 지정 하는 데 사용할 수 있습니다 \<Strings> .  언어가 지정 되지 않은 경우 현재 프로세스의 언어가 사용 됩니다.<br /><br /> language = "en-us" |
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Extern 요소](../extensibility/extern-element.md)|선택 사항입니다. 컴파일러에 대 한 전처리기 지시문을 포함 합니다.|
 |[Include 요소](../extensibility/include-element.md)|선택 사항입니다. 컴파일에 포함할 파일에 대 한 경로를 포함 합니다.|
@@ -67,7 +67,7 @@ CommandTable은 *vsct* 파일의 루트 요소입니다. 이 파일은 VSPackage
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |없음||
 

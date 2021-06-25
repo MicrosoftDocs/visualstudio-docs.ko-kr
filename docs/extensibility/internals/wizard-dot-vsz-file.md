@@ -3,7 +3,7 @@ title: 마법사 (. .Vsz 파일 | Microsoft Docs
 description: IDE에서 마법사를 시작 하는 데 사용 하는 .vsz 파일에 대해 알아봅니다. 파일에는 호출할 마법사와 마법사에 전달할 정보 등이 포함 되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - .vsz files
 - vsz files
@@ -14,18 +14,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: de687dae79fa1613090fb400f73ab658ee5d66cb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074238"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900657"
 ---
 # <a name="wizard-vsz-file"></a>마법사(.Vsz) 파일
 
 IDE (통합 개발 환경)는 .vsz 파일을 사용 하 여 마법사를 시작 합니다. 이러한 .vsz 파일에는 IDE에서 호출할 마법사와 마법사에 전달할 정보를 결정 하는 데 사용 하는 정보가 포함 되어 있습니다.
 
-.Vsz 파일은 섹션이 없는 .ini 형식의 텍스트 파일 버전입니다. IDE에 알려진 정보는 파일의 시작 부분에 저장 됩니다. Ide에서 호출 하는 마법사와 IDE에 전달할 .vsz 파일에 있는 매개 변수의 링크를 제공 합니다. 파일의 나머지 부분에서는 마법사와 관련 된 매개 변수를 제공 하며 IDE에서 수집 하 여 특정 마법사에 전달 합니다.
+.Vsz 파일은 섹션이 없는 .ini 서식 있는 텍스트 파일의 버전입니다. IDE에 알려진 정보는 파일의 시작 부분에 저장 됩니다. Ide에서 호출 하는 마법사와 IDE에 전달할 .vsz 파일에 있는 매개 변수의 링크를 제공 합니다. 파일의 나머지 부분에서는 마법사와 관련 된 매개 변수를 제공 하며 IDE에서 수집 하 여 특정 마법사에 전달 합니다.
 
 다음 예제에서는 .vsz 파일의 내용을 보여 줍니다.
 
@@ -38,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 다음은 .vsz 파일의 일부입니다.
 
-|파트|Description|
+|부분|설명|
 |----------|-----------------|
 |VSWizard|파일의 첫 번째 매개 변수는 템플릿 파일 형식의 버전 번호입니다. 이 버전 번호는 6.0, 7.0, 7.1 또는 8.0 이어야 합니다. 다른 숫자는 시작할 수 없으며 잘못 된 형식 오류가 발생 합니다.|
 |마법사|이 필드에는 마법사의 OLE ProgID 또는 IDE에서 공동으로 생성 되는 마법사의 CLSID에 대 한 GUID 문자열 표현이 포함 되어 있습니다.|

@@ -3,7 +3,7 @@ title: VSIX 확장 스키마 2.0 참조 | Microsoft Docs
 description: Vsix 확장 스키마 2.0은 vsix 패키지의 콘텐츠를 설명 하는 VSIX 배포 매니페스트 파일의 파일 형식을 정의 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b94c7b2cacb7ad78031721156bdd90cb666c4f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 66393bbe6383fcc6cae942a3d7e86f1d701a9634
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062293"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905243"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 확장 스키마 2.0 참조
 VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합니다. 파일 형식은 스키마의 영향을 받습니다. 이 스키마의 버전 2.0에서는 사용자 지정 형식 및 특성을 추가할 수 있습니다.  매니페스트의 스키마를 확장할 수 있습니다. 매니페스트 로더는 인식할 수 없는 XML 요소와 특성을 무시 합니다.
@@ -63,7 +63,7 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 
 - `<License>` -이 선택적 요소는 패키지에 포함 된 라이선스 파일 (.txt, .rtf)의 상대 경로입니다.
 
-- `<ReleaseNotes>` -이 선택적 요소는 패키지 (.txt, .rtf)에 포함 된 릴리스 정보 파일에 대 한 상대 경로 이거나 릴리스 정보를 표시 하는 웹 사이트의 URL입니다.
+- `<ReleaseNotes>` -이 선택적 요소는 패키지에 포함 된 릴리스 정보 파일 (.txt, .rtf) 또는 릴리스 정보를 표시 하는 웹 사이트의 URL에 대 한 상대 경로입니다.
 
 - `<Icon>` -이 선택적 요소는 패키지에 포함 된 이미지 파일 (png, bmp, jpeg, ico)의 상대 경로입니다. 아이콘 이미지는 32x32 픽셀 이어야 하며 (또는 해당 크기로 축소 됨) listview UI에 나타납니다. 요소가 지정 되지 않은 경우 `Icon` UI는 기본값을 사용 합니다.
 
@@ -112,86 +112,86 @@ VSIX 배포 매니페스트 파일은 VSIX 패키지의 콘텐츠를 설명 합�
 
     - VisualStudio.
 
-    - VisualStudio
+    - Microsoft.VisualStudio.VSLS
 
     - My.Shell.App
 
-  - `Version` -이 특성은이 SKU의 최소 및 최대 지원 버전을 포함 하는 버전 범위를 지정 합니다. 패키지에서 지 원하는 Sku 버전을 자세히 확인할 수 있습니다. 버전 범위 표기법은 [10.0-11.0]입니다. 여기서
+  - `Version` - 이 특성은 이 SKU의 지원되는 최소 및 최대 버전을 가진 버전 범위를 지정합니다. 패키지는 지원하는 S SKU의 버전을 자세히 설명할 수 있습니다. 버전 범위 표기 표기는 [10.0 - 11.0]입니다. 여기서
 
-    - [-최소 버전 포함.
+    - [ - 최소 버전 포함.
 
-    - ]-최대 버전 포함.
+    - ] - 최대 버전(포함)입니다.
 
-    - (-최소 버전 제외.
+    - ( - 최소 버전이 배타적입니다.
 
-    - )-최대 버전 전용입니다.
+    - ) - 최대 버전을 배타적입니다.
 
-    - 단일 버전 #-지정 된 버전에만 해당 합니다.
+    - 단일 버전 # - 지정된 버전만 해당합니다.
 
     > [!IMPORTANT]
-    > VSIX 스키마 버전 2.0는 Visual Studio 2012에서 도입 되었습니다. 이 스키마를 사용 하려면 컴퓨터에 Visual Studio 2012 이상이 설치 되어 있어야 하 고 해당 제품의 일부인 VSIXInstaller.exe를 사용 해야 합니다. Visual Studio 2012 이상 VSIXInstaller를 사용 하 여 이전 버전의 Visual Studio를 대상으로 지정할 수 있지만 이후 버전의 설치 관리자를 사용 하는 경우에만 사용할 수 있습니다.
+    > VSIX 스키마 버전 2.0은 2012년 Visual Studio 도입되었습니다. 이 스키마를 사용하려면 컴퓨터에 Visual Studio 2012 이상 설치되어 있어야 하며 해당 제품의 일부인 VSIXInstaller.exe 사용해야 합니다. Visual Studio 2012 이상 VSIXInstaller를 사용하여 이전 버전의 Visual Studio 대상으로 지정할 수 있지만 설치 관리자의 이후 버전을 사용해야 합니다.
 
-    Visual Studio 2017 버전 번호는 [Visual studio 빌드 번호 및 릴리스 날짜](../install/visual-studio-build-numbers-and-release-dates.md)에서 찾을 수 있습니다.
+    Visual Studio 2017 버전 번호는 [빌드 번호 및 릴리스 날짜 Visual Studio](../install/visual-studio-build-numbers-and-release-dates.md)찾을 수 있습니다.
 
-    Visual Studio 2017 릴리스에 대 한 버전을 표현 하는 경우 부 버전은 항상 **0** 이어야 합니다. 예를 들어 Visual Studio 2017 버전 15.3.26730.0는 [15.0.26730.0, 16.0)로 표현 되어야 합니다. Visual Studio 2017 이상 버전 번호에만 필요 합니다.
+    Visual Studio 2017 릴리스의 버전을 표현할 때 부 버전은 항상 **0이어야** 합니다. 예를 들어 Visual Studio 2017 버전 15.3.26730.0은 [15.0.26730.0,16.0)으로 표현되어야 합니다. 이는 Visual Studio 2017 이상 버전 번호에만 필요합니다.
 
-  - `AnyAttribute*` - `<InstallationTarget>` 요소는 런타임에 노출 되는 개방형 특성 집합을 이름-값 쌍 사전으로 허용 합니다.
+  - `AnyAttribute*` - `<InstallationTarget>` 요소는 런타임에 이름-값 쌍 사전으로 노출되는 개방형 특성 집합을 허용합니다.
 
-### <a name="dependencies-element"></a>종속성 요소
- 이 요소는이 패키지가 선언 하는 종속성 목록을 포함 합니다. 종속성을 지정 하는 경우 해당 패키지 (로 식별 됨 `Id` )가 이전에 설치 되어 있어야 합니다.
+### <a name="dependencies-element"></a>Dependencies 요소
+ 이 요소에는 이 패키지에서 선언하는 dependencies 목록이 포함되어 있습니다. 모든 dependencies가 지정된 경우 해당 패키지(로 식별)가 `Id` 이전에 설치되어 있어야 합니다.
 
-- `<Dependency>` 요소-이 자식 요소에는 다음과 같은 특성이 있습니다.
+- `<Dependency>` 요소 - 이 자식 요소에는 다음과 같은 특성이 있습니다.
 
-  - `Id` -이 특성은 종속 패키지의 고유 ID 여야 합니다. 이 id 값은 `<Metadata><Identity>Id` 이 패키지가 종속 된 패키지의 특성과 일치 해야 합니다. `Id`특성은 네임 스페이스 규칙을 따릅니다. Company.Product.Feature.Name. 특성은 영숫자 문자만 포함할 수 있으며 100 자로 제한 됩니다.
+  - `Id` - 이 특성은 종속 패키지의 고유 ID여야 합니다. 이 ID `<Metadata><Identity>Id` 값은 이 패키지가 종속된 패키지의 특성과 일치해야 합니다. `Id`특성은 네임스페이스 규칙인 Company.Product.Feature.Name 따릅니다. 특성은 영숫자 문자만 포함할 수 있으며 100자로 제한됩니다.
 
-  - `Version` -이 특성은이 SKU의 최소 및 최대 지원 버전을 포함 하는 버전 범위를 지정 합니다. 패키지에서 지 원하는 Sku 버전을 자세히 확인할 수 있습니다. 버전 범위 표기법은 [12.0, 13.0]입니다. 여기서는 다음과 같습니다.
+  - `Version` - 이 특성은 이 SKU의 지원되는 최소 및 최대 버전을 가진 버전 범위를 지정합니다. 패키지는 지원하는 S SKU의 버전을 자세히 설명할 수 있습니다. 버전 범위 표기 표기는 [12.0, 13.0]입니다. 여기서는 다음과 같습니다.
 
-    - [-최소 버전 포함.
+    - [ - 최소 버전 포함.
 
-    - ]-최대 버전 포함.
+    - ] - 최대 버전(포함)입니다.
 
-    - (-최소 버전 제외.
+    - ( - 최소 버전이 배타적입니다.
 
-    - )-최대 버전 전용입니다.
+    - ) - 최대 버전을 배타적입니다.
 
-    - 단일 버전 #-지정 된 버전에만 해당 합니다.
+    - 단일 버전 # - 지정된 버전만 해당합니다.
 
-  - `DisplayName` -이 특성은 대화 상자 및 오류 메시지와 같은 UI 요소에 사용 되는 종속 패키지의 표시 이름입니다. 종속 패키지를 MSI로 설치 하지 않는 한이 특성은 선택 사항입니다.
+  - `DisplayName` - 이 특성은 대화 상자 및 오류 메시지와 같은 UI 요소에 사용되는 종속 패키지의 표시 이름입니다. MSI에서 종속 패키지를 설치하지 않는 한 특성은 선택 사항입니다.
 
-  - `Location` -이 선택적 특성은이 VSIX 내에서 중첩 된 VSIX 패키지에 대 한 상대 경로를 지정 하거나 종속성의 다운로드 위치에 대 한 URL을 지정 합니다. 이 특성은 사용자가 필수 구성 요소 패키지를 찾는 데 사용 됩니다.
+  - `Location` - 이 선택적 특성은 중첩된 VSIX 패키지에 대한 이 VSIX 내의 상대 경로 또는 종속성에 대한 다운로드 위치의 URL을 지정합니다. 이 특성은 사용자가 필수 구성 조건 패키지를 찾는 데 사용됩니다.
 
-  - `AnyAttribute*` - `Dependency` 요소는 런타임에 이름-값 쌍 사전으로 노출 되는 개방형 특성 집합을 허용 합니다.
+  - `AnyAttribute*` - `Dependency` 요소는 런타임에 이름-값 쌍 사전으로 노출되는 개방형 특성 집합을 허용합니다.
 
-### <a name="assets-element"></a>자산 요소
- 이 요소에는 `<Asset>` 이 패키지에 표시 되는 각 확장 프로그램 또는 콘텐츠 요소에 대 한 태그 목록이 포함 되어 있습니다.
+### <a name="assets-element"></a>Assets 요소
+ 이 요소에는 이 `<Asset>` 패키지에서 표시한 각 확장명 또는 콘텐츠 요소에 대한 태그 목록이 포함됩니다.
 
-- `<Asset>` -이 요소에는 다음과 같은 특성 및 요소가 포함 됩니다.
+- `<Asset>` - 이 요소에는 다음과 같은 특성 및 요소가 포함됩니다.
 
-  - `Type` -이 요소가 나타내는 확장 또는 콘텐츠의 형식입니다. 각 `<Asset>` 요소에는 단일가 있어야 `Type` 하지만 여러 `<Asset>` 요소가 같을 수도 있습니다 `Type` . 이 특성은 네임 스페이스 규칙에 따라 정규화 된 이름으로 표시 되어야 합니다. 알려진 형식은 다음과 같습니다.
+  - `Type` - 이 요소가 나타내는 확장명 또는 콘텐츠의 형식입니다. 각 `<Asset>` 요소에는 단일 가 있어야 `Type` 하지만 여러 요소가 동일한 `<Asset>` 을 가질 수 `Type` 있습니다. 이 특성은 네임스페이스 규칙에 따라 정규화된 이름으로 표현되어야 합니다. 알려진 형식은 다음과 같습니다.
 
-    1. VisualStudio. VsPackage
+    1. Microsoft.VisualStudio.VsPackage
 
     2. Microsoft.VisualStudio.MefComponent
 
-    3. VisualStudio. ToolboxControl
+    3. Microsoft.VisualStudio.ToolboxControl
 
-    4. VisualStudio
+    4. Microsoft.VisualStudio.Samples
 
-    5. VisualStudio
+    5. Microsoft.VisualStudio.ProjectTemplate
 
-    6. VisualStudio
+    6. Microsoft.VisualStudio.ItemTemplate
 
-    7. VisualStudio
+    7. Microsoft.VisualStudio.Assembly
 
-       사용자 고유의 형식을 만들고 고유한 이름을 지정할 수 있습니다. Visual Studio 내에서 런타임에 코드는 확장 관리자 API를 통해 이러한 사용자 지정 형식을 열거 하 고 액세스할 수 있습니다.
+       고유한 형식을 만들고 고유한 이름을 지정할 수 있습니다. Visual Studio 내의 런타임에 코드는 확장 관리자 API를 통해 이러한 사용자 지정 형식을 열거하고 액세스할 수 있습니다.
 
-  - `Path` -자산을 포함 하는 패키지 내의 파일 또는 폴더에 대 한 상대 경로입니다.
+  - `Path` - 자산이 포함된 패키지 내의 파일 또는 폴더에 대한 상대 경로입니다.
 
-  - `TargetVersion` -지정 된 자산이 적용 되는 버전 범위입니다. 여러 버전의 자산을 다른 버전의 Visual Studio에 전달 하는 데 사용 됩니다. 적용 하려면 Visual Studio 2017.3 이상이 필요 합니다.
+  - `TargetVersion` - 지정된 자산이 적용되는 버전 범위입니다. 여러 버전의 자산을 다른 버전의 Visual Studio 배송하는 데 사용됩니다. Visual Studio 2017.3 이상에 영향을 주어야 합니다.
 
-  - `AnyAttribute*` -런타임에 이름-값 쌍 사전으로 노출 되는 개방형 특성 집합입니다.
+  - `AnyAttribute*` - 런타임에 이름-값 쌍 사전으로 노출되는 개방형 특성 집합입니다.
 
-    `<AnyElement>*` -시작 태그와 끝 태그 사이에 구조화 된 콘텐츠를 사용할 수 `<Asset>` 있습니다. 모든 요소는 XmlElement 개체의 목록으로 노출 됩니다. VSIX 확장은 매니페스트 파일에서 구조화 된 유형별 메타 데이터를 정의 하 고 런타임에 열거할 수 있습니다.
+    `<AnyElement>*` - 시작 태그와 끝 태그 사이에 모든 구조적 콘텐츠가 `<Asset>` 허용됩니다. 모든 요소는 XmlElement 개체 목록으로 노출됩니다. VSIX 확장은 매니페스트 파일에서 구조화된 형식별 메타데이터를 정의하고 런타임에 열거할 수 있습니다.
 
 ### <a name="sample-manifest"></a>샘플 매니페스트
 

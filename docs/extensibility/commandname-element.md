@@ -1,9 +1,9 @@
 ---
 title: CommandName 요소 | Microsoft Docs
-description: CommandName 요소는 옵션 대화 상자의 키보드 범주에 표시 되는 텍스트와 사용자 지정 대화 상자의 명령 목록에 표시 되는 텍스트를 지정 합니다.
+description: CommandName 요소는 옵션 대화 상자의 키보드 범주와 사용자 지정 대화 상자의 명령 목록에 표시되는 텍스트를 지정합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba74c0a61ddf01407f2af6ebb8053e2f1e4fe6ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 193e97880fbc543568636e1979a847877e42db14
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089630"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902009"
 ---
 # <a name="commandname-element"></a>CommandName 요소
-`CommandName`요소는 **옵션** 대화 상자의 키보드 범주에 표시 되는 텍스트와 **사용자 지정** 대화 상자의 **명령** 목록에 표시 되는 텍스트를 지정 합니다.
+`CommandName`요소는 **옵션** 대화 상자의 키보드 범주 및 **사용자 지정** 대화 상자의 **명령** 목록에 표시되는 텍스트를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,9 +40,9 @@ ms.locfileid: "105089630"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[Strings 요소](../extensibility/strings-element.md)|및 등의 텍스트 요소를 `ButtonText` 그룹화 `CommandName` 합니다.|
+|[Strings 요소](../extensibility/strings-element.md)|및 와 같은 텍스트 요소를 `ButtonText` `CommandName` 그룹화합니다.|
 
 ## <a name="see-also"></a>참조
-- [Visual Studio 명령 테이블 (.vvsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 명령 테이블(.vsct) 파일](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

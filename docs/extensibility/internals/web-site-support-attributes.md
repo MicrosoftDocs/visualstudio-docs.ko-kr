@@ -3,7 +3,7 @@ title: 웹 사이트 지원 특성 | Microsoft Docs
 description: 웹 사이트 프로젝트를 사용 하 여 Visual Studio의 기능을 확장 하는 데 필요한 웹 사이트 지원 특성에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5259914b238927a58a7297a8e9c0b6fcef0f04c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 348fd16234e38cd7832ae18e7b28e6abe0bc63d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069103"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901775"
 ---
 # <a name="web-site-support-attributes"></a>웹 사이트 지원 특성
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트를 확장 하 여 웹 프로그래밍 언어에 대 한 지원을 제공할 수 있습니다. 언어는를 사용 하 여 등록 해야 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 이렇게 하면 언어를 선택할 때 **새 웹 사이트** 대화 상자에 프로젝트 템플릿이 표시 될 수 있습니다.

@@ -1,9 +1,9 @@
 ---
-title: 배포 관리를 위한 프로젝트 구성 | Microsoft Docs
-description: 디버깅 및 설치를 위해 예상 되는 위치에 배포 하는 방법과 Visual Studio에서 배포를 지 원하는 프로젝트를 지 원하는 두 가지 방법에 대해 알아봅니다.
+title: 배포 | 관리를 위한 프로젝트 구성 Microsoft Docs
+description: 디버깅 및 설치를 위해 예상되는 위치에 배포하는 방법과 Visual Studio 배포를 지원하는 프로젝트를 지원하는 두 가지 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
@@ -13,31 +13,31 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589403f126a4fd614911c1deb99e9acd32d1ec7d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3c6077665ccc3bbe5f87b91a1d2fc5636e08539d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074420"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899903"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>배포 관리를 위한 프로젝트 구성
-배포는 디버깅 및 설치를 위해 빌드 프로세스에서 예상 위치로 출력 항목을 물리적으로 이동 하는 동작입니다. 예를 들어 웹 응용 프로그램은 로컬 컴퓨터에서 빌드한 다음 서버에 배치할 수 있습니다.
+배포는 빌드 프로세스에서 디버깅 및 설치를 위한 예상 위치로 출력 항목을 물리적으로 이동하는 작업입니다. 예를 들어 웹 애플리케이션을 로컬 컴퓨터에 빌드한 다음 서버에 배치할 수 있습니다.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에서는 프로젝트를 배포에 포함 시킬 수 있는 두 가지 방법을 지원 합니다.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 에서는 프로젝트를 배포에 포함할 수 있는 두 가지 방법을 지원합니다.
 
-- 배포 프로세스의 제목입니다.
+- 배포 프로세스의 주체입니다.
 
-- 배포 프로세스의 관리자입니다.
+- 배포 프로세스의 관리자로.
 
-  솔루션을 배포 하려면 먼저 배포 옵션을 구성 하는 배포 프로젝트를 추가 해야 합니다. 배포 프로젝트가 아직 없는 경우 **빌드** 메뉴에서 **솔루션 배포** 를 선택 하거나 솔루션을 마우스 오른쪽 단추로 클릭 하 여 배포 프로젝트를 만들 것인지 묻는 메시지가 표시 됩니다. **예** 를 클릭 하면 **원격 배포 마법사** 프로젝트가 선택 된 **새 프로젝트 추가** 대화 상자가 열립니다.
+  솔루션을 배포하려면 먼저 배포 프로젝트를 추가하여 배포 옵션을 구성해야 합니다. 배포 프로젝트가 아직 없는 경우 **빌드** 메뉴에서 **솔루션 배포를** 선택하거나 솔루션을 마우스 오른쪽 단추로 클릭할 때 프로젝트를 만들 것인지 묻는 메시지가 표시됩니다. **예를** 클릭하면 **원격 배포 마법사** 프로젝트가 선택된 새 프로젝트 **추가** 대화 상자가 열립니다.
 
-  원격 배포 마법사는 응용 프로그램 유형 (Windows 또는 웹), 포함할 프로젝트 출력 그룹, 포함 하려는 추가 파일 및 배포 하려는 원격 컴퓨터를 요청 합니다. 마법사의 마지막 페이지에는 선택한 옵션에 대 한 요약이 표시 됩니다.
+  원격 배포 마법사는 애플리케이션 유형(Windows 또는 웹), 포함할 프로젝트 출력 그룹, 포함하려는 추가 파일 및 배포하려는 원격 컴퓨터를 요청합니다. 마법사의 마지막 페이지에는 선택한 옵션의 요약이 표시됩니다.
 
-  배포 프로세스의 대상인 프로젝트는 대체 환경으로 이동 해야 하는 출력 항목을 생성 합니다. 이러한 출력 항목은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 프로젝트에서 출력을 그룹화 할 수 있도록 하는 기본 용도의 인터페이스에 대 한 매개 변수로 설명 됩니다. 구현에 대 한 자세한 내용은 `IVsProjectCfg2` [출력에 대 한 프로젝트 구성](../../extensibility/internals/project-configuration-for-output.md)을 참조 하세요.
+  배포 프로세스의 주체인 프로젝트는 대체 환경으로 이동해야 하는 출력 항목을 생성합니다. 이러한 출력 항목은 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 프로젝트에 출력을 그룹화할 수 있도록 허용하는 경우의 기본 목적인 인터페이스에 대한 매개 변수로 설명됩니다. 구현과 관련된 자세한 내용은 `IVsProjectCfg2` [출력에 대한 프로젝트 구성을 참조하세요.](../../extensibility/internals/project-configuration-for-output.md)
 
-  배포 프로세스를 관리 하는 배포 프로젝트는이 명령을 선택할 때 배포 명령을 사용 하도록 설정 하 고 응답 합니다. 배포 프로젝트는 배포를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 수행 하 고 배포 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> 상태 이벤트를 보고 하는 인터페이스를 호출 하는 인터페이스를 구현 합니다.
+  배포 프로세스를 관리하는 배포 프로젝트는 배포 명령을 사용하도록 설정하고 이 명령을 선택하면 응답합니다. 배포 프로젝트는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 인터페이스를 구현하여 배포를 수행하고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> 인터페이스를 호출하여 배포 상태 이벤트를 보고합니다.
 
-  구성에서는 빌드 또는 배포 작업에 영향을 주는 종속성을 지정할 수 있습니다. 빌드 또는 배포 종속성은 구성 자체가 빌드하거나 배포 되기 전이나 후에 빌드해야 하거나 배포 해야 하는 프로젝트입니다. 프로젝트 간의 빌드 종속성은 인터페이스로 설명 되며 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 인터페이스를 사용 하 여 종속성을 배포 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 합니다. 자세한 내용은 [빌드하기 위한 프로젝트 구성](../../extensibility/internals/project-configuration-for-building.md)을 참조 하세요.
+  구성은 빌드 또는 배포 작업에 영향을 주는 dependencies를 지정할 수 있습니다. 빌드 또는 배포는 구성 자체가 빌드되거나 배포되기 전이나 후에 빌드하거나 배포해야 하는 프로젝트입니다. 프로젝트 간의 빌드 의존도는 인터페이스를 통해 설명하고 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> 인터페이스를 통해 dependencies를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 배포합니다. 자세한 내용은 [빌드를 위한 프로젝트 구성을 참조하세요.](../../extensibility/internals/project-configuration-for-building.md)
 
 ## <a name="see-also"></a>참조
 - [구성 옵션 관리](../../extensibility/internals/managing-configuration-options.md)

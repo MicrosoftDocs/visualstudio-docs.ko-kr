@@ -1,8 +1,8 @@
 ---
-description: 이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작 합니다.
+description: 이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작합니다.
 title: SccBeginBatch 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5af4d8fb1d8524f16493603bb5d46ee4bdbd03ba
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 08b9199b98e566a71bfeb95124ebd85781e69950
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060447"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904762"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 함수
-이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작 합니다. [Sccendbatch](../extensibility/sccendbatch-function.md) 가 호출 되어 일괄 처리가 종료 됩니다. 이러한 일괄 처리는 중첩 될 수 없습니다.
+이 함수는 소스 제어 작업의 일괄 처리 시퀀스를 시작합니다. 일괄 처리를 종료하기 위해 [SccEndBatch가](../extensibility/sccendbatch-function.md) 호출됩니다. 이러한 일괄 처리는 중첩되지 않을 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,17 +33,17 @@ SCCRTN SccBeginBatch(void);
  없음
 
 ## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|SCC_OK|작업 배치가 성공적으로 시작 되었습니다.|
-|SCC_E_UNKNOWNERROR|일반 오류입니다.|
+|SCC_OK|작업 일괄 처리가 성공적으로 시작되었습니다.|
+|SCC_E_UNKNOWNERROR|지정되지 않은 오류입니다.|
 
 ## <a name="remarks"></a>설명
- 원본 제어 일괄 처리는 여러 프로젝트 또는 여러 컨텍스트에서 동일한 작업을 실행 하는 데 사용 됩니다. 일괄 처리는 일괄 처리 작업을 수행 하는 동안 사용자 환경에서 중복 프로젝트별 대화 상자를 제거 하는 데 사용할 수 있습니다. `SccBeginBatch`함수와 [Sccendbatch](../extensibility/sccendbatch-function.md) 는 작업의 시작과 끝을 나타내는 함수 쌍으로 사용 됩니다. 중첩 될 수 없습니다. `SccBeginBatch` 일괄 처리 작업이 진행 중임을 나타내는 플래그를 설정 합니다.
+ 소스 제어 일괄 처리는 여러 프로젝트 또는 여러 컨텍스트에서 동일한 작업을 실행하는 데 사용됩니다. 일괄 처리를 사용하여 일괄 처리 작업 중에 사용자 환경의 중복 프로젝트별 대화 상자를 제거할 수 있습니다. `SccBeginBatch`함수와 [SccEndBatch는](../extensibility/sccendbatch-function.md) 작업의 시작과 끝을 나타내는 함수 쌍으로 사용됩니다. 중첩할 수 없습니다. `SccBeginBatch` 는 일괄 처리 작업이 진행 중임을 나타내는 플래그를 설정합니다.
 
- 일괄 처리 작업이 적용 되는 동안 소스 제어 플러그 인은 사용자에 게 모든 질문에 대 한 대화 상자를 하나 이상 표시 하 고 모든 후속 작업에 대해 해당 대화 상자에서 응답을 적용 해야 합니다.
+ 일괄 처리 작업이 적용되는 동안 소스 제어 플러그 인은 사용자에게 질문에 대한 최대 하나의 대화 상자를 표시하고 모든 후속 작업에 해당 대화 상자의 응답을 적용해야 합니다.
 
 ## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)
