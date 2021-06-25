@@ -3,7 +3,7 @@ title: Visual Studio 도구 모음의 Guid 및 Id | Microsoft Docs
 description: Visual Studio IDE (통합 개발 환경)에 포함 된 도구 모음 및 포함 된 그룹에 대 한 GUID 및 ID 값 목록을 봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -18,12 +18,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3d2ba6c92a2913ec63a59751a4181454aa67fa67
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082077"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898112"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 도구 모음의 Guid 및 Id
 이 항목에서는 Visual Studio IDE (통합 개발 환경) 및 포함 된 그룹에 포함 된 도구 모음의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는 *vsct* 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
@@ -88,7 +88,7 @@ ms.locfileid: "105082077"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |들여쓰기|IDG_VS_EDITTOOLBAR_INDENT|
-|의견|IDG_VS_EDITTOOLBAR_COMMENT|
+|설명|IDG_VS_EDITTOOLBAR_COMMENT|
 |책갈피|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>디버그 도구 모음 그룹
@@ -133,10 +133,10 @@ ms.locfileid: "105082077"
 |호출 브라우저|IDM_VS_TOOL_CALLBROWSER1. x|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
 |중단점|guidVSDebugGroup: IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
 |디스어셈블리|guidVSDebugGroup: IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
-|메모리 1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1 ... 3-4|IDG_MEMORY_EXPRESSION1. 3-4<br /><br /> IDG_MEMORY_COLUMNS1. 3-4|
-|프로세스|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
+|메모리 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1... 4|IDG_MEMORY_EXPRESSION1. 4<br /><br /> IDG_MEMORY_COLUMNS1. 4|
+|프로세스|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
 ## <a name="see-also"></a>참조
 - [도구 모음에 메뉴 컨트롤러 추가](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [도구 창에 도구 모음 추가](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
-- [Visual Studio 메뉴의 Guid 및 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+- [Visual Studio 메뉴의GUID 및 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

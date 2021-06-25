@@ -3,7 +3,7 @@ title: 시작 기반 첨부 파일 | Microsoft Docs
 description: 프로그램에 대 한 시작 기반 첨부 파일에 대해 알아봅니다 .이는 자동 이며 수동 첨부 파일의 경로와 같은 경로를 따릅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, launching
 - debug engines, attaching to programs
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe698d8d1b29f02ae3971fc95a66c4823f7252c7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 97bbc098e766a1025c372ff35c5849bfe652649f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059719"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904336"
 ---
 # <a name="launch-based-attachment"></a>시작 기반 첨부 파일
 프로그램에 대 한 시작 기반 첨부 파일은 자동입니다. 프로그램을 호스트 하는 프로세스가 SDM에 의해 시작 되 면 시작 기반 첨부 파일은 수동 첨부 파일 방법과 비슷한 경로를 따릅니다. 자세한 내용은 [프로그램에 연결](../../extensibility/debugger/attaching-to-the-program.md)을 참조 하세요.

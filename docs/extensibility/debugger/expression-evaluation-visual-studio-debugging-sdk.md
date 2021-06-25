@@ -1,9 +1,9 @@
 ---
-title: 식 계산 (Visual Studio 디버깅 SDK) | Microsoft Docs
-description: 중단 모드에서 IDE는 프로그램 변수를 포함 하는 식을 평가 합니다. 디버그 엔진이 식을 구문 분석 하 고 계산 하는 방법을 알아봅니다.
+title: 식 계산(Visual Studio 디버깅 SDK) | Microsoft Docs
+description: 중단 모드 중에 IDE는 프로그램 변수와 관련된 식을 평가합니다. 디버그 엔진이 식을 구문 분석하고 평가하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
@@ -13,32 +13,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6a79a3268f0bd4acebde795109d39466032a2f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf213c30ef26490b44579d83c68b2640360584a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096800"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904515"
 ---
-# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>식 계산 (Visual Studio 디버깅 SDK)
-중단 모드에서 IDE는 여러 프로그램 변수를 포함 하는 간단한 식을 계산 해야 합니다. 디버그 엔진 (DE)은 해당 평가를 수행 하기 위해 IDE 창 중 하나에 입력 된 식을 구문 분석 하 고 평가 해야 합니다.
+# <a name="expression-evaluation-visual-studio-debugging-sdk"></a>식 계산(Visual Studio 디버깅 SDK)
+중단 모드 중에 IDE는 여러 프로그램 변수가 포함된 단순 식을 평가해야 합니다. 평가를 수행하려면 디버그 엔진(DE)이 IDE 창 중 하나에 입력된 식을 구문 분석하고 평가해야 합니다.
 
- 식은 [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 메서드를 사용 하 여 생성 되 고 결과 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스로 표시 됩니다.
+ 식은 [IDebugExpressionContext2::P arseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 메서드를 사용하여 만들어지고 결과 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스로 표시됩니다.
 
- **IDebugExpression2** 인터페이스는 DE에 의해 구현 되 고 ide에 식 계산 결과를 표시 하기 위해 **EvalAsync** 메서드를 호출 하 여 ide에 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 반환 합니다. [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 은 식의 값을 **조사식** 창 또는 **지역** 창에 넣는 데 사용 되는 구조체를 반환 합니다.
+ **IDebugExpression2** 인터페이스는 DE에 의해 구현되고 **해당 EvalAsync** 메서드를 호출하여 IDE에 식 계산 결과를 표시하기 위해 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 IDE에 반환합니다. [IDebugProperty2::GetPropertyInfo는](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 식 값을 **조사식** 창이나 지역 창에 넣는 데 사용되는 **구조체를 반환합니다.**
 
- 디버그 패키지 또는 세션 디버그 관리자 (SDM)는 [IDebugExpression2:: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 또는 [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 를 호출 하 여 평가 결과를 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 가져옵니다. `IDebugProperty2` 에는 식의 이름, 유형 및 값을 반환 하는 메서드가 있습니다. 이 정보는 다양 한 디버거 창에 표시 됩니다.
+ 디버그 패키지 또는 SDM(세션 디버그 관리자)은 [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 또는 [EvaluateSync를](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 호출하여 평가 결과를 나타내는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 인터페이스를 얻습니다. `IDebugProperty2` 에는 식의 이름, 형식 및 값을 반환하는 메서드가 있습니다. 이 정보는 다양한 디버거 창에 표시됩니다.
 
 ## <a name="using-expression-evaluation"></a>식 계산 사용
- 식 계산을 사용 하려면 다음 표에 나와 있는 것 처럼 [IDebugExpressionContext2::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 메서드와 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스의 모든 메서드를 구현 해야 합니다.
+ 식 계산을 사용하려면 다음 표와 같이 [IDebugExpressionContext2::P arseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 메서드와 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 인터페이스의 모든 메서드를 구현해야 합니다.
 
-|메서드|Description|
+|메서드|설명|
 |------------|-----------------|
-|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|식을 비동기식으로 계산 합니다.|
-|[중단이](../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 계산을 종료 합니다.|
-|[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|식을 동기적으로 계산 합니다.|
+|[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|식을 비동기적으로 계산합니다.|
+|[중단](../../extensibility/debugger/reference/idebugexpression2-abort.md)|비동기 식 계산을 종료합니다.|
+|[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|식을 동기적으로 계산합니다.|
 
- 동기 및 비동기 평가를 수행 하려면 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 메서드를 구현 해야 합니다. 비동기 식 계산에는 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)의 구현이 필요 합니다.
+ 동기 및 비동기 평가에서는 [IDebugProperty2::GetPropertyInfo 메서드를](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 구현해야 합니다. 비동기 식 평가에는 [IDebugExpressionEvaluationCompleteEvent2를](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)구현해야 합니다.
 
 ## <a name="see-also"></a>참조
 - [실행 제어 및 상태 평가](../../extensibility/debugger/execution-control-and-state-evaluation.md)

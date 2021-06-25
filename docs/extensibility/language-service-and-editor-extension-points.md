@@ -3,7 +3,7 @@ title: 언어 서비스 및 편집기 확장 위치 | Microsoft Docs
 description: 대부분의 언어 서비스 기능을 포함 하 여 확장할 수 있는 Visual Studio 코드 편집기의 확장 요소에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d71e6c7cd7569c9e73134345584a8237337bc7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 293851f1f3e72508a9bc119fb7551b0118ab2a9b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073302"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903149"
 ---
 # <a name="language-service-and-editor-extension-points"></a>언어 서비스 및 편집기 확장 위치
 편집기는 대부분의 언어 서비스 기능을 포함 하 여 Managed Extensibility Framework (MEF) 구성 요소 부분으로 확장할 수 있는 확장 위치를 제공 합니다. 기본 확장 지점 범주는 다음과 같습니다.

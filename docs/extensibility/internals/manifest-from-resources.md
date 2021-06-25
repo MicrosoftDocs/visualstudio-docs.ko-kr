@@ -1,73 +1,73 @@
 ---
 title: Manifest from Resources | Microsoft Docs
-description: Manifest from Resources 도구를 사용 하 여 Visual Studio 이미지 서비스에서 사용할 .png 또는 .xaml 파일을 imagemanifest 파일에 추가 하는 방법에 대해 알아봅니다.
+description: Manifest from Resources 도구를 사용하여 Visual Studio Image Service에서 사용할 .imagemanifest 파일에 .png 또는 .xaml 파일을 추가하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f69a46362b3076025a63625adb1ee4a478622259
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095175"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903180"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
-Manifest from Resources 도구는 이미지 리소스 (.png 또는 .xaml 파일) 목록을 사용 하 고 Visual Studio 이미지 서비스에서 해당 이미지를 사용할 수 있도록 하는 imagemanifest 파일을 생성 하는 콘솔 응용 프로그램입니다. 또한이 도구를 사용 하 여 기존. imagemanifest에 이미지를 추가할 수 있습니다. 이 도구는 이미지에 대 한 높은 DPI 및 테마 지원 기능을 Visual Studio 확장에 추가 하는 데 유용 합니다. Imagemanifest 파일은 Visual Studio 확장 (.vsix)의 일부로 포함 되 고 배포 되어야 합니다.
+Manifest from Resources 도구는 이미지 리소스 목록(.png 또는 .xaml 파일)을 사용하고 해당 이미지를 Visual Studio Image Service와 함께 사용할 수 있는 .imagemanifest 파일을 생성하는 콘솔 애플리케이션입니다. 또한 이 도구를 사용하여 기존 .imagemanifest에 이미지를 추가할 수 있습니다. 이 도구는 Visual Studio 확장에 이미지에 대한 높은 DPI 및 테마 지원을 추가하는 데 유용합니다. 생성된 .imagemanifest 파일은 에 포함되고 Visual Studio 확장명(.vsix)의 일부로 배포되어야 합니다.
 
 ## <a name="how-to-use-the-tool"></a>이 도구를 사용 하는 방법
  **구문**
 
- ManifestFromResources/resources: \<Dir1> ; \<Img1> /assembly: \<AssemblyName>\<Optional Args>
+ ManifestFromResources /resources: \<Dir1> ; \<Img1> /assembly: \<AssemblyName>\<Optional Args>
 
  **인수**
 
-|**스위치 이름**|**참고**|**필수 또는 선택**|
+|**스위치 이름**|**참고**|**필수 또는 선택 사항**|
 |-|-|-|
-|/리소스|세미콜론으로 구분 된 이미지 또는 디렉터리 목록입니다. 이 목록에는 매니페스트에 포함 될 이미지의 전체 목록이 항상 포함 되어야 합니다. 일부 목록만 지정 된 경우에는 포함 되지 않은 항목이 손실 됩니다.<br /><br /> 지정 된 리소스 파일이 이미지 스트립 인 경우 각 하위 이미지를 매니페스트에 추가 하기 전에 도구에서 개별 이미지로 분할 합니다.<br /><br /> 이미지가 .png 파일인 경우 도구에서 이미지에 대 한 올바른 특성을 채울 수 있도록 다음과 같이 이름을 지정 하는 것이 \<Name> 좋습니다.. \<Width> \<Height> n.|필수|
-|/assembly|관리 되는 어셈블리의 이름 (확장명 포함 안 함) 또는 리소스를 호스팅하는 네이티브 어셈블리의 런타임 경로 (매니페스트의 런타임 위치에 상대적)입니다.|필수|
-|/manifest|Imagemanifest 파일에 지정할 이름입니다. 다른 위치에 파일을 만들기 위한 절대 경로 또는 상대 경로를 포함할 수도 있습니다. 기본 이름은 어셈블리 이름과 일치 합니다.<br /><br /> 기본값: \<Current Directory> \\<\> imagemanifest|선택 사항|
-|/guidName|생성 된 매니페스트의 모든 이미지에 대 한 GUID 기호에 지정할 이름입니다.<br /><br /> 기본값: AssetsGuid|선택 사항|
-|/rootPath|관리 되는 리소스 Uri를 만들기 전에 제거 해야 하는 루트 경로입니다. (이 플래그는 도구가 상대 URI 경로를 잘못 가져와 리소스를 로드 하지 못하는 경우에 도움을 주는 것입니다.)<br /><br /> 기본값: \<Current Directory>|선택 사항|
-|/recursive|이 플래그를 설정 하면/cvvval 인수에서 디렉터리를 재귀적으로 검색 하도록 도구에 지시 합니다. 이 플래그를 생략 하면 디렉터리에 대 한 최상위 수준 전용 검색이 발생 합니다.|선택 사항|
-|/isNative|어셈블리 인수가 네이티브 어셈블리의 경로인 경우이 플래그를 설정 합니다. 어셈블리 인수가 관리 되는 어셈블리의 이름인 경우이 플래그를 생략 합니다. 이 플래그에 대 한 자세한 내용은 참고 섹션을 참조 하세요.|선택 사항|
-|/newGuids|이 플래그를 설정 하면 기존 매니페스트에서 항목을 병합 하지 않고 이미지의 GUID 기호에 대 한 새 값을 만들도록 도구에 지시 합니다.|선택 사항|
-|/newIds|이 플래그를 설정 하면 기존 매니페스트의 값을 병합 하는 대신 모든 이미지에 대 한 새 ID 기호 값을 만들도록 도구에 지시 합니다.|선택 사항|
-|/noLogo|이 플래그를 설정 하면 제품 및 저작권 정보 인쇄를 중지 합니다.|선택 사항|
-|/?|도움말 정보를 인쇄 합니다.|선택 사항|
-|/help|도움말 정보를 인쇄 합니다.|선택|
+|/resources|세미콜론으로 구분된 이미지 또는 디렉터리 목록입니다. 이 목록에는 항상 매니페스트에 포함될 이미지의 전체 목록이 포함되어야 합니다. 부분 목록만 지정하면 포함되지 않은 항목이 손실됩니다.<br /><br /> 지정된 리소스 파일이 이미지 스트립인 경우 도구는 각 하위 이미지를 매니페스트에 추가하기 전에 별도의 이미지로 분할합니다.<br /><br /> 이미지가 .png 파일인 경우 도구가 이미지에 대한 올바른 특성을 채울 수 있도록 다음과 같은 이름의 서식을 지정하는 것이 \<Name> 좋습니다. \<Width> . . \<Height>.png.|필수|
+|/assembly|관리되는 어셈블리의 이름(확장명 포함 안 함) 또는 리소스를 호스트하는 네이티브 어셈블리의 런타임 경로(매니페스트의 런타임 위치 기준)입니다.|필수|
+|/manifest|생성된 .imagemanifest 파일에 지정할 이름입니다. 또한 다른 위치에 파일을 만드는 절대 또는 상대 경로를 포함할 수 있습니다. 기본 이름은 어셈블리 이름과 일치합니다.<br /><br /> 기본값: \<Current Directory> \\<어셈블리 \> .imagemanifest|선택 사항|
+|/guidName|생성된 매니페스트의 모든 이미지에 대한 GUID 기호에 지정할 이름입니다.<br /><br /> 기본값: AssetsGuid|선택 사항|
+|/rootPath|관리되는 리소스 URI를 만들기 전에 제거해야 하는 루트 경로입니다. (이 플래그는 도구에서 상대 URI 경로가 잘못되어 리소스를 로드하지 못하는 경우에 도움이 됩니다.)<br /><br /> 기본값: \<Current Directory>|선택 사항|
+|/recursive|이 플래그를 설정하면 /resources 인수의 디렉터리를 재귀적으로 검색하도록 도구에 지시합니다. 이 플래그를 생략하면 디렉터리의 최상위 수준 전용 검색이 발생합니다.|선택 사항|
+|/isNative|어셈블리 인수가 네이티브 어셈블리의 경로인 경우 이 플래그를 설정합니다. 어셈블리 인수가 관리되는 어셈블리의 이름이면 이 플래그를 생략합니다. 이 플래그에 대한 자세한 내용은 참고 섹션을 참조하세요.|선택 사항|
+|/newGuids|이 플래그를 설정 하면 기존 매니페스트에서 하나를 병합 하는 대신 이미지의 GUID 기호에 대 한 새 값을 만들려면 도구에 지시 합니다.|선택 사항|
+|/newIds|이 플래그를 설정 하면 기존 매니페스트에서 값을 병합 하는 대신 모든 이미지에 대 한 새 ID 기호 값을 만들려면 도구에 지시 합니다.|선택 사항|
+|/noLogo|이 플래그를 설정하면 제품 및 저작권 정보의 인쇄가 중지됩니다.|선택 사항|
+|/?|도움말 정보를 출력합니다.|선택 사항|
+|/help|도움말 정보를 출력합니다.|선택|
 
  **예제**
 
-- ManifestFromResources/resources: D:\Images/assembly: My.resources. Name/isNative
+- ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative
 
-- ManifestFromResources/resources:D:\Images\Image1.png;D: \Images\Image1.xaml/assembly: \Imags\stststs: MyImageManifest. imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest
 
-- ManifestFromResources/resources:D:\Images\Image1.png;D: \Images\Image1.xaml/assembly: \Imags/guidName: MyImages/newGuids/newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
-## <a name="notes"></a>메모
+## <a name="notes"></a>참고
 
-- 이 도구는 .png 및 .xaml 파일만 지원 합니다. 다른 모든 이미지 또는 파일 형식은 무시 됩니다. 리소스를 구문 분석 하는 동안 발견 된 모든 지원 되지 않는 형식에 대 한 경고가 생성 됩니다. 도구에서 리소스 구문 분석을 마칠 때 지원 되는 이미지를 찾을 수 없는 경우 오류가 생성 됩니다.
+- 도구는 .png 및 .xaml 파일만 지원합니다. 다른 이미지 또는 파일 형식은 무시됩니다. 리소스를 구문 분석하는 동안 지원되지 않는 모든 형식에 대한 경고가 생성됩니다. 도구가 리소스 구문 분석이 완료될 때 지원되는 이미지가 없으면 오류가 생성됩니다.
 
-- .Png 이미지에 대해 권장 되는 형식에 따라이 도구는 이미지의 실제 크기와 다른 경우에도 .png의 크기/차원 값을 서식 지정 된 크기로 설정 합니다.
+- .png 이미지에 대해 제안된 형식에 따라 도구는 이미지의 실제 크기와 다르더라도 .png 크기/차원 값을 형식 지정 크기로 설정합니다.
 
-- .Png 이미지에 대 한 너비/높이 형식을 생략할 수 있지만이 도구는 이미지의 실제 너비/높이를 읽고 이미지의 크기/차원 값에 사용 합니다.
+- .png 이미지에 대해 너비/높이 형식을 생략할 수 있지만 도구는 이미지의 실제 너비/높이를 읽고 이미지의 크기/차원 값에 사용합니다.
 
-- Imagemanifest에 대해이 도구를 동일한 이미지 스트립에 여러 번 실행 하면 도구에서 이미지 스트립을 독립 실행형 이미지로 분할 하 여 기존 매니페스트에 추가 하기 때문에 매니페스트 항목이 중복 됩니다.
+- 동일한 .imagemanifest에 대해 동일한 이미지 스트립에서 이 도구를 여러 번 실행하면 중복된 매니페스트 항목이 발생합니다. 도구에서 이미지 스트립을 독립 실행형 이미지로 분할하고 기존 매니페스트에 추가하려고 하기 때문입니다.
 
-- 병합 (/newGuids 또는/newIds 생략)은 도구 생성 매니페스트에 대해서만 수행 해야 합니다. 다른 방법으로 사용자 지정 되거나 생성 된 매니페스트는 올바르게 병합 되지 않을 수 있습니다.
+- 병합(/newGuids 또는 /newIds 생략)은 도구 생성 매니페스트에 대해서만 수행해야 합니다. 다른 수단을 통해 사용자 지정되거나 생성된 매니페스트는 올바르게 병합되지 않을 수 있습니다.
 
-- 네이티브 어셈블리에 대해 생성 된 매니페스트를 생성 한 후에 직접 편집 하 여 ID 기호가 네이티브 어셈블리의 .rc 파일에서 리소스 Id와 일치 하도록 해야 할 수도 있습니다.
+- 네이티브 어셈블리에 대해 생성된 매니페스트는 ID 기호가 네이티브 어셈블리의 .rc 파일의 리소스 ID와 일치하도록 생성 후 직접 편집해야 할 수 있습니다.
 
 ## <a name="sample-output"></a>샘플 출력
  **간단한 이미지 매니페스트**
 
- 이미지 매니페스트는 다음 .xml 파일과 유사 합니다.
+ 이미지 매니페스트는 이 .xml 파일과 유사합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -91,9 +91,9 @@ Manifest from Resources 도구는 이미지 리소스 (.png 또는 .xaml 파일)
 </ImageManifest>
 ```
 
- **이미지 스트립의 이미지 매니페스트**
+ **이미지 스트립에 대한 이미지 매니페스트**
 
- 이미지 스트립의 이미지 매니페스트는 다음 .xml 파일과 유사 합니다.
+ 이미지 스트립에 대한 이미지 매니페스트는 이 .xml 파일과 유사합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -128,9 +128,9 @@ Manifest from Resources 도구는 이미지 리소스 (.png 또는 .xaml 파일)
 </ImageManifest>
 ```
 
- **네이티브 어셈블리 이미지 리소스에 대 한 이미지 매니페스트**
+ **네이티브 어셈블리 이미지 리소스에 대한 이미지 매니페스트**
 
- 네이티브 이미지에 대 한 이미지 매니페스트는 다음 .xml 파일과 유사 합니다.
+ 네이티브 이미지에 대한 이미지 매니페스트는 이 .xml 파일과 유사합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

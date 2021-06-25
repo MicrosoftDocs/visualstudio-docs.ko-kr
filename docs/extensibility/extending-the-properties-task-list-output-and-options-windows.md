@@ -3,7 +3,7 @@ title: 속성, 작업 목록, 출력, 옵션 창 확장
 description: Visual Studio의 도구 창에 대 한 정보를 새 옵션 페이지와 속성 페이지의 새 설정에 통합 하는 방법에 대해 알아봅니다.
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties pane
 - task list
@@ -17,17 +17,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3334ba3694ee3c1354c152b013c38472e4b90b72
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070143"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903283"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>속성, 작업 목록, 출력 및 옵션 창 확장
 Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습에서는 도구 창에 대 한 정보를 새 **옵션** 페이지 및 **속성** 페이지의 새 설정에 통합 하는 방법과 **작업 목록** 및 **출력** 창에 쓰는 방법을 보여 줍니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 구성 요소
  Visual Studio 2015 부터는 다운로드 센터에서 Visual Studio SDK를 설치 하지 않습니다. Visual Studio 설치 프로그램에서 선택적 기능으로 포함 됩니다. VS SDK는 나중에 설치할 수도 있습니다. 자세한 내용은 [Visual STUDIO SDK 설치](../extensibility/installing-the-visual-studio-sdk.md)를 참조 하세요.
 
 ## <a name="create-an-extension-with-a-tool-window"></a>도구 창을 사용 하 여 확장 만들기
@@ -69,7 +69,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     using System;
     ```
 
-2. TodoWindow에 대 한 공용 참조를 추가 하 고 TodoWindowControl 생성자가 TodoWindow 매개 변수를 사용 하도록 합니다. 코드는 다음과 같습니다.
+2. TodoWindow에 대 한 공용 참조를 추가 하 고 TodoWindowControl 생성자가 TodoWindow 매개 변수를 사용 하도록 합니다. 코드는 다음과 유사합니다.
 
     ```csharp
     public TodoWindow parent;
@@ -81,7 +81,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-3. *TodoWindow* 에서 TodoWindow 매개 변수를 포함 하도록 TodoWindowControl 생성자를 변경 합니다. 코드는 다음과 같습니다.
+3. *TodoWindow* 에서 TodoWindow 매개 변수를 포함 하도록 TodoWindowControl 생성자를 변경 합니다. 코드는 다음과 유사합니다.
 
     ```csharp
     public TodoWindow() : base(null)
@@ -418,7 +418,7 @@ Visual Studio의 모든 도구 창에 액세스할 수 있습니다. 이 연습�
     }
     ```
 
-3. 그런 다음에 대 한 개인 참조 `TodoTaskProvider` 및 `CreateProvider()` 메서드를 클래스에 추가 `TodoWindowControl` 합니다. 코드는 다음과 같습니다.
+3. 그런 다음에 대 한 개인 참조 `TodoTaskProvider` 및 `CreateProvider()` 메서드를 클래스에 추가 `TodoWindowControl` 합니다. 코드는 다음과 유사합니다.
 
     ```csharp
     private TodoWindowTaskProvider taskProvider;

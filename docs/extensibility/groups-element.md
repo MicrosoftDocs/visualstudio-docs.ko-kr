@@ -1,9 +1,9 @@
 ---
 title: Groups 요소 | Microsoft Docs
-description: Groups 요소는 VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다. 이 문서에는 예제가 포함 되어 있습니다.
+description: Groups 요소는 VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다. 이 문서에는 예제가 포함되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab9ca0a55d8d07aa2541e8884ee92c1c308cabe9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f20e19e19539e71a4dbed74a0dd5bb9af62a15f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057574"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902828"
 ---
 # <a name="groups-element"></a>Groups 요소
 VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
@@ -43,14 +43,14 @@ VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Group 요소](../extensibility/group-element.md)|단일 명령 그룹을 나타냅니다.|
 |[Groups 요소](../extensibility/groups-element.md)|VSPackage의 명령 그룹을 정의 하는 항목을 포함 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|
 

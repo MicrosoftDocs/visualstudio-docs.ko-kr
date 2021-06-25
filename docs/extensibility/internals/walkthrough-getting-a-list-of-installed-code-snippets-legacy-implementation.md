@@ -3,7 +3,7 @@ title: 설치 된 코드 조각 목록 가져오기 (레거시) | Microsoft Docs
 description: 특정 언어 GUID에 대 한 모든 코드 조각을 가져오는 방법에 대해 알아봅니다. 이러한 조각에 대 한 바로 가기를 IntelliSense 완성 목록에 삽입할 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f94d481a2884c64cb42b170d9d1abfa25c913a9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 051f356e7b6b6f1a92ba475617f48e5c6074f402
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069142"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898876"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>연습: 설치된 코드 조각 목록 가져오기(레거시 구현)
 코드 조각은 메뉴 명령 (설치 된 코드 조각 목록 중에서 선택할 수 있음)을 사용 하거나 IntelliSense 완성 목록에서 코드 조각 바로 가기를 선택 하 여 소스 버퍼에 삽입할 수 있는 코드 조각입니다.

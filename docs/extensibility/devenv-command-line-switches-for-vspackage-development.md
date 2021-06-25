@@ -3,7 +3,7 @@ title: VSPackage 개발용 Devenv Command-Line 스위치 | Microsoft Docs
 description: 개발자가 Visual Studio IDE를 시작 하는 파일 devenv.exe를 실행할 때 명령줄에서 작업을 자동화 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - /Setup command line switch
 - /ResetSkipPkgs command line switch
@@ -20,12 +20,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cca255390d9f5637f0bf4f5b24f2d0fd6b4e83
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ea08b4714a79e09fce5933b67997a032532481f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091268"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904245"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 개발을 위한 Devenv 명령줄 스위치
 
@@ -43,7 +43,7 @@ ms.locfileid: "105091268"
 
 Visual Studio 설명서에서는 사용자 수준 명령줄 스위치에 대해 설명 합니다 `devenv` . 자세한 내용은 [Devenv 명령줄 스위치](../ide/reference/devenv-command-line-switches.md)를 참조 하세요. `devenv`또한이 도구는 VSPackage 개발, 배포 및 디버깅에 유용한 추가 명령줄 스위치를 지원 합니다.
 
-| 명령줄 스위치 | Description |
+| 명령줄 스위치 | 설명 |
 |---------------------| - |
 | `/ResetSkipPkgs` | 문제가 있는 Vspackage 로드를 방지 하려는 사용자가 추가한 모든 건너뛰기 로드 옵션을 지운 다음 Visual Studio를 시작 합니다. SkipLoading 태그가 있으면 VSPackage 로드를 사용할 수 없습니다. 태그를 지우면 VSPackage을 다시 로드할 수 있습니다.<br /><br /> 이 스위치는 인수가 필요 없습니다. |
 | `/RootSuffix` | 대체 위치를 사용 하 여 Visual Studio를 시작 합니다. 다음 명령은 Visual Studio SDK 설치 관리자에서 만든 바로 가기로 실행 됩니다.<br /><br /> `devenv /RootSuffix exp`<br /><br /> 이 경우는 `exp` 특정 접미사를 사용 하는 위치를 식별 합니다 (예: `10.0Exp` 대신 `10.0` ). 실험적 인스턴스를 사용 하면 코드를 작성 하는 데 사용 하 고 있는 Visual Studio의 인스턴스와 별도로 VSPackage을 디버그할 수 있습니다.<br /><br /> 이 스위치는 VSRegEx.exe을 사용 하 여 만든 위치를 식별 하는 모든 문자열을 사용할 수 있습니다. 자세한 내용은 [실험적 인스턴스](../extensibility/the-experimental-instance.md)를 참조 하세요. |

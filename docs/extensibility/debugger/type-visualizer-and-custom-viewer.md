@@ -3,7 +3,7 @@ title: 형식 시각화 도우미 및 사용자 지정 뷰어 | Microsoft Docs
 description: 특정 형식의 데이터를 표시 하는 사용자 지정 뷰어 및 형식 시각화 요소와 이러한 구성 요소 간의 차이점에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 869f0997ee166b9b7eb29c1a313854437d670ee4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c18bb49c740362d42a4a54bf52f6998629acb0c0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057821"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904424"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>형식 시각화 도우미 및 사용자 지정 뷰어
 형식 시각화 도우미는 특정 형식의 데이터를 표시 하는 구성 요소입니다. 형식은 모두 시각화 도우미를 구현 하는 사용자에 게 달려 있습니다. 최종 사용자 또는 시각화 도우미의 타사 공급자 여야 합니다.

@@ -2,7 +2,7 @@
 description: 이 함수는 지정 된 명령에 대 한 고급 옵션을 사용자에 게 표시 합니다.
 title: SccGetCommandOptions 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetCommandOptions
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6fc53f806989062a306260840a8f324a26d4669
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7972d874668649b8bb86adc15008880c5fc4152e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068377"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903933"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 함수
 이 함수는 지정 된 명령에 대 한 고급 옵션을 사용자에 게 표시 합니다.
@@ -54,9 +54,9 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|SCC_OK|성공했습니다.|
+|SCC_OK|성공.|
 |SCC_I_ADV_SUPPORT|원본 제어 플러그 인은 명령에 대 한 고급 옵션을 지원 합니다.|
 |SCC_I_OPERATIONCANCELED|사용자가 소스 제어 플러그 인 **옵션** 대화 상자를 취소 했습니다.|
 |SCC_E_OPTNOTSUPPORTED|소스 제어 플러그 인에서이 작업을 지원 하지 않습니다.|

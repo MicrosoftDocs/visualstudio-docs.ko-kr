@@ -3,19 +3,19 @@ title: Visual Studio에 대 한 애니메이션 | Microsoft Docs
 description: Visual Studio IDE에서 일관 되 고 사용자에 게 친숙 한 애니메이션 스타일을 유지 하는 데 도움이 되는 규칙에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ebfd4f396a5ae0e04ff5e7cc0f52bba1825ec5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f1e8e61e5decea326fcb7f670ed2ab58f0137530
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060265"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902789"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio의 애니메이션
 ## <a name="animation-fundamentals"></a>애니메이션 기본 사항
@@ -120,7 +120,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 한 요소가 다른 요소에 테더 링 된
 
-##### <a name="state"></a>주
+##### <a name="state"></a>시스템 상태
 
 - 콘텐츠 업데이트
 
@@ -130,7 +130,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 오류
 
-##### <a name="structure"></a>구조
+##### <a name="structure"></a>구조체
 
 - 한 노드에서 구조 피벗
 
@@ -165,7 +165,7 @@ Visual Studio UI에서 애니메이션은 통신 도구로만 작동 합니다. 
 
 - 온라인으로 추가 정보 찾기 또는 현재 작업에 대 한 학습 등 작업 중에 사용자에 게 확인
 
-##### <a name="notifications"></a>알림
+##### <a name="notifications"></a>공지
 
 - 오류 조건에 대해 사용자에 게 경고
 

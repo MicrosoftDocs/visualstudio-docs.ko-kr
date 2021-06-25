@@ -3,7 +3,7 @@ title: 레거시 언어 서비스 인터페이스 | Microsoft Docs
 description: 레거시 언어 서비스 기능을 제공 하는 Visual Studio SDK에서 사용할 수 있는 인터페이스에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77647daeae2cf6e3bc76f9b0f2a58608b5bb28a4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 75697e1d212b24b743fed62284b384985749fe7b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074518"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898606"
 ---
 # <a name="legacy-language-service-interfaces"></a>레거시 언어 서비스 인터페이스
 특정 프로그래밍 언어의 경우 한 번에 하나의 언어 서비스 인스턴스만 있을 수 있습니다. 그러나 단일 언어 서비스에서는 두 개 이상의 편집기를 사용할 수 있습니다.
@@ -43,7 +43,7 @@ ms.locfileid: "105074518"
 ## <a name="additional-language-service-interfaces"></a>추가 언어 서비스 인터페이스
  다른 인터페이스는 언어 서비스와 함께 제공 될 수 있습니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 텍스트 버퍼의 각 인스턴스에 대해 이러한 인터페이스의 개별 인스턴스를 요청 합니다. 따라서 이러한 각 인터페이스를 자체 개체에 구현 해야 합니다. 다음 표에서는 텍스트 버퍼 인스턴스당 하나의 인스턴스가 필요한 인터페이스를 보여 줍니다.
 
-|인터페이스|Description|
+|인터페이스|설명|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|드롭다운 표시줄과 같은 코드 창 장식을 관리 합니다. 메서드를 사용 하 여이 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> . <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>코드 창 마다 하나씩 있습니다.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|언어 키워드와 구분 기호를 색으로 합니다. 메서드를 사용 하 여이 인터페이스를 가져올 수 있습니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> . <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 는 그리기 타임에 호출 됩니다. 내에서 계산 집약적인 작업을 수행 하지 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 않거나 성능이 저하 될 수 있습니다.|

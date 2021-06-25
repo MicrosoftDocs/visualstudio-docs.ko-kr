@@ -3,7 +3,7 @@ title: 메시지 열거자 | Microsoft Docs
 description: 이 열거자의 멤버는 SccOpenProject를 호출할 때 IDE에서 제공 하는 콜백 함수인 TEXTOUTPROC 함수에 사용 됩니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 113f9fe8470b718a219e967b41bc92ecab2cf3c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c49f79ccdcfc4aa0325b89dfb38f3f8d4da721
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063996"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902594"
 ---
 # <a name="message-enumerator"></a>메시지 열거자
 다음 플래그는 함수에 사용 됩니다 `TEXTOUTPROC` .이 함수는 IDE에서 [Sccopenproject](../extensibility/sccopenproject-function.md) 를 호출할 때 제공 하는 콜백 함수입니다 (콜백 함수에 대 한 자세한 내용은 [lptextoutproc](../extensibility/lptextoutproc.md) 참조).

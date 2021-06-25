@@ -3,7 +3,7 @@ title: 새 항목 추가 대화 상자에 항목 추가 | Microsoft Docs
 description: 프로젝트에 사용할 템플릿 및 프로젝트 요소를 표시할 수 있도록 Visual Studio에서 새 항목 추가 대화 상자에 항목을 추가 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574cc5384018d14fdc05a834876002bbcbdbaaf7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70bc1a0c4d90d8cab0b2193550773745fc2dd47e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079101"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904411"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>새 항목 추가 대화 상자에 항목 추가
 **새 항목 추가** 대화 상자에 항목을 추가 하는 프로세스는 레지스트리 키로 시작 합니다. 다음 레지스트리 항목에 표시 된 것 처럼 **Additemtemplates** 섹션에는 **새 항목 추가** 대화 상자에서 사용할 수 있는 항목이 배치 된 디렉터리의 경로와 이름이 포함 되어 있습니다.
@@ -37,7 +37,7 @@ ms.locfileid: "105079101"
 
  **Sortpriority** = dword: 00000064
 
-| Name | Type | 데이터 ( *.rgs* 파일) | Description |
+| 속성 | Type | 데이터 ( *.rgs* 파일) | 설명 |
 |------------------|-----------| - | - |
 | @ (기본값) | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | **항목 템플릿 추가** 의 리소스 ID입니다. |
 | Val 템플릿 디렉터리 | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | **새 항목 추가** 마법사의 대화 상자에 표시 되는 프로젝트 항목의 경로입니다. |

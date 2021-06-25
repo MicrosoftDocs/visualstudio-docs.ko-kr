@@ -3,7 +3,7 @@ title: Combos 요소 | Microsoft Docs
 description: Combos 요소는 콤보 상자에 표시 되는 명령을 정의 하는 콤보 요소를 그룹화 합니다. 이 문서에는 예제가 포함 되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be9135e2f863f3ab277e6c7408579d7ef8242bce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c293fa827187461c5a6b84333c503a2f5cc231
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089721"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903920"
 ---
 # <a name="combos-element"></a>Combos 요소
 [Combo 요소](../extensibility/combo-element.md) 요소를 그룹화 합니다.
@@ -43,14 +43,14 @@ ms.locfileid: "105089721"
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Combos 요소](../extensibility/combos-element.md)|그룹 콤보 요소입니다.|
 |[Combo 요소](../extensibility/combo-element.md)|콤보 상자에 표시 되는 명령을 정의 합니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage 도구 모음에 있는 명령 컬렉션을 나타냅니다.|
 

@@ -1,9 +1,9 @@
 ---
-title: 개체 관리자에 제공 되는 기호 목록 표시 | Microsoft Docs
-description: IVsSimpleObjectList2 인터페이스를 구현 하 여 Visual Studio의 개체 관리자에 기호 목록을 노출 하 고 기호 검색 도구를 업데이트 하는 방법을 알아봅니다.
+title: 개체 관리자 | 제공된 기호 목록 노출 Microsoft Docs
+description: IVsSimpleObjectList2 인터페이스를 구현하여 기호 목록을 Visual Studio 개체 관리자에 노출하고 기호 검색 도구를 업데이트하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -16,26 +16,26 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cf4cef21746834a92abfd8b2e1df3f61e08b2dd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fceb8b2d4a79243117e03aab57ce239b13c3d750
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078892"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898177"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>방법: 라이브러리에서 제공 하는 기호 목록을 개체 관리자에 게 노출
-기호 검색 도구, **클래스 뷰**, **개체 브라우저**, **호출 브라우저** 및 **찾기 결과** 는 새 데이터에 대 한 요청을 개체 관리자에 게 전달 합니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . 개체 관리자는 적절 한 라이브러리를 찾고 새 기호 목록을 요청 합니다. 라이브러리는 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 인터페이스를 통해 개체 관리자에 게 요청 된 데이터를 제공 하 여 응답 합니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]개체 관리자는 인터페이스의 메서드를 호출 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 하 여 데이터를 가져오고이를 사용 하 여 기호 검색 도구의 뷰를 채우거 나 업데이트 합니다.
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>방법: 라이브러리에서 제공하는 기호 목록을 개체 관리자에 노출
+, **개체 브라우저** 호출 브라우저 **및** 기호 찾기 결과 **클래스 뷰** **기호** 검색 도구는 새 데이터에 대한 요청을 개체 관리자에 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 전달합니다. 개체 관리자는 적절한 라이브러리를 찾아서 새 기호 목록을 요청합니다. 라이브러리는 인터페이스를 통해 요청된 데이터를 개체 관리자에 제공하여 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 응답합니다. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]개체 관리자는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 인터페이스의 메서드를 호출하여 데이터를 가져오고 이를 사용하여 기호 검색 도구의 뷰를 채우거나 업데이트합니다.
 
- 도구가 호출 되거나 노드가 확장 되거나 뷰가 새로 고쳐질 때 라이브러리에서 데이터에 대 한 요청을 받을 수 있습니다. 기호 검색 도구를 처음 호출 하는 경우 개체 관리자는 라이브러리에 최상위 목록을 제공 하도록 요청 합니다. 사용자가 목록 노드를 확장 하면 해당 노드 아래의 자식 목록이 라이브러리에 제공 됩니다. 모든 개체 관리자 조회는 관심 있는 항목의 인덱스를 포함 합니다. 새 목록을 표시 하려면 개체 관리자는 목록에 있는 항목의 수, 항목의 형식, 이름, 접근성 및 기타 속성을 결정 해야 합니다.
+ 라이브러리는 도구가 호출되거나 노드가 확장되거나 뷰가 새로 고쳐질 때 데이터에 대한 요청을 받을 수 있습니다. 기호 검색 도구가 처음으로 호출되면 개체 관리자는 라이브러리에 최상위 목록을 제공하도록 요청합니다. 사용자가 목록 노드를 확장하면 라이브러리는 해당 노드 아래의 자식 목록을 제공합니다. 모든 개체 관리자 조회에는 관심 있는 항목의 인덱스가 포함됩니다. 새 목록을 표시하려면 개체 관리자가 목록에 있는 항목 수, 항목 유형, 이름, 접근성 및 기타 속성을 결정해야 합니다.
 
 > [!NOTE]
-> 다음 관리 코드 예제에서는 인터페이스를 구현 하 여 기호 목록을 제공 하는 방법을 보여 줍니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> . 개체 관리자는이 인터페이스의 메서드를 호출 하 고 가져온 데이터를 사용 하 여 기호 검색 도구를 채우거 나 업데이트 합니다.
+> 다음 관리 코드 예제에서는 인터페이스를 구현하여 기호 목록을 제공하는 방법을 보여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 있습니다. 개체 관리자는 이 인터페이스의 메서드를 호출하고 가져온 데이터를 사용하여 기호 검색 도구를 채우거나 업데이트합니다.
 >
-> 네이티브 코드 기호 공급자 구현에는 인터페이스를 사용 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> 합니다.
+> 네이티브 코드 기호 공급자 구현의 경우 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> 인터페이스를 사용합니다.
 
-## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>개체 관리자에 기호 목록을 제공 하려면
+## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>개체 관리자에 기호 목록을 제공하려면
 
-1. 메서드를 구현 하 여 기호 목록의 항목 수를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> . 다음 예제에서는 개체 관리자가 목록의 항목 수에 대 한 정보를 가져오는 방법을 보여 줍니다.
+1. 메서드를 구현하여 기호 목록의 항목 수를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> 확인합니다. 다음 예제에서는 개체 관리자 목록의 항목 수에 대 한 정보를 가져오는 방법을 보여 있습니다.
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -57,7 +57,7 @@ ms.locfileid: "105078892"
 
     ```
 
-2. 메서드를 구현 하 여 지정 된 목록 항목의 범주와 특성에 대 한 정보를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> . 항목 범주는 열거형에서 지정 됩니다 <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> . 다음 예제에서는 개체 관리자가 지정 된 범주에 대 한 항목의 특성을 가져오는 방법을 보여 줍니다.
+2. 메서드를 구현하여 지정된 목록 항목의 범주 및 특성에 대한 정보를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> 얻습니다. 항목 범주는 <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> 열거형에 지정됩니다. 다음 예제에서는 개체 관리자가 지정된 범주에 대한 항목의 특성을 가져오는 방법을 보여줍니다.
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -152,7 +152,7 @@ ms.locfileid: "105078892"
 
     ```
 
-3. 메서드를 구현 하 여 지정 된 목록 항목의 텍스트 표현을 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> . 다음 예제에서는 지정 된 항목의 전체 이름을 가져오는 방법을 보여 줍니다.
+3. 메서드를 구현하여 지정된 목록 항목의 텍스트 표현을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> 얻습니다. 다음 예제에서는 지정된 된 항목의 전체 이름을 가져오는 방법에 설명 합니다.
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -170,7 +170,7 @@ ms.locfileid: "105078892"
 
     ```
 
-4. 메서드를 구현 하 여 지정 된 목록 항목에 대 한 아이콘 정보를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> . 아이콘은 목록 항목의 형식 (클래스, 메서드 등) 및 접근성 (private, public 등)을 나타냅니다. 다음 예제에서는 지정 된 항목 특성을 기반으로 아이콘 정보를 가져오는 방법을 보여 줍니다.
+4. 메서드를 구현하여 지정된 목록 항목에 대한 아이콘 정보를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> 얻습니다. 아이콘은 목록 항목의 형식(클래스, 메서드 등) 및 접근성(private, public 등)을 나타냅니다. 다음 예제에서는 지정된 된 항목 특성에 따라 아이콘 정보를 가져오는 방법을 보여 있습니다.
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -252,7 +252,7 @@ ms.locfileid: "105078892"
 
     ```
 
-5. 메서드를 구현 하 여 지정 된 목록 항목을 확장할 수 있는지 여부에 대 한 정보를 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> . 다음 예제에서는 지정 된 항목을 확장할 수 있는지 여부에 대 한 정보를 가져오는 방법을 보여 줍니다.
+5. 메서드를 구현하여 지정된 목록 항목을 확장할 수 있는지 여부에 대한 정보를 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> 얻습니다. 다음 예제에서는 지정된 된 항목을 확장할 수 있는지 여부에 대 한 정보를 가져오는 방법에 설명 합니다.
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -279,7 +279,7 @@ ms.locfileid: "105078892"
 
     ```
 
-6. 메서드를 구현 하 여 지정 된 목록 항목 기호의 자식 목록을 가져옵니다 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> . 다음 예제에서는 **호출** 또는 **호출자** 그래프에 대해 지정 된 항목 기호의 자식 목록을 가져오는 방법을 보여 줍니다.
+6. 메서드를 구현하여 지정된 목록 항목의 기호 자식 목록을 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> 얻습니다. 다음 예제에서는 **호출** 또는 **호출자** 그래프에 대 한 지정된 된 항목의 기호의 자식 목록을 가져오는 방법에 설명 합니다.
 
     ```vb
     ' Call graph list.
@@ -468,6 +468,6 @@ ms.locfileid: "105078892"
 
 ## <a name="see-also"></a>참조
 - [기호 검색 도구 지원](../../extensibility/internals/supporting-symbol-browsing-tools.md)
-- [방법: 개체 관리자를 사용 하 여 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
+- [방법: 개체 관리자에 라이브러리 등록](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [방법: 라이브러리에서 기호 식별](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
 - [레거시 언어 서비스 확장성](../../extensibility/internals/legacy-language-service-extensibility.md)

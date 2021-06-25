@@ -3,7 +3,7 @@ title: 오류 코드 | Microsoft Docs
 description: 이 문서에는 소스 제어 플러그 인 API 함수에 대 한 오류 코드, 값 및 설명 목록이 포함 되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - error codes, source control plug-ins
 - source control plug-ins, error codes
@@ -14,17 +14,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32557b2a476be9f662decc9992771fe359967a94
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: eedc9311bcafdd4241e065b40079abed3977dcef
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070169"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898307"
 ---
 # <a name="error-codes"></a>오류 코드
 소스 제어 플러그 인 API 함수에서 오류를 반환 하는 경우 다음 오류 코드 중 하나 여야 합니다. 모든 오류는 음수, 경고 또는 정보 오류 코드가 긍정적 이며 success는 0입니다.
 
-|오류 코드|값|Description|
+|오류 코드|값|설명|
 |----------------|-----------|-----------------|
 |`SCC_I_SHARESUBPROJOK`|7|플러그 인은 두 단계에서 소스 제어의 파일 추가를 지원 합니다. 자세한 내용은 [Sccsetoption](../extensibility/sccsetoption-function.md)를 참조 하세요.|
 |`SCC_I_FILEDIFFERS`|6|로컬 파일이 소스 제어 데이터베이스의 파일과 다릅니다 (예: [Sccdiff](../extensibility/sccdiff-function.md) 에서이 값을 반환할 수 있음).|

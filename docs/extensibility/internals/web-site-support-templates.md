@@ -3,7 +3,7 @@ title: 웹 사이트 지원 템플릿 | Microsoft Docs
 description: 웹 사이트 지원 템플릿에 대해 알아봅니다. Visual Studio 웹 사이트 프로젝트 및 항목 템플릿은 재사용 가능 하 고 사용자 지정할 수 있는 웹 사이트 프로젝트 및 항목 스텁을 제공 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a1bd391d13a6d650cb4d23ce78789a66ef50c2e3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069098"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898898"
 ---
 # <a name="web-site-support-templates"></a>웹 사이트 지원 템플릿
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 웹 사이트 프로젝트 및 항목 템플릿은 새 웹 사이트 프로젝트 및 항목을 처음부터 새로 만들 필요가 없도록 하 여 개발 프로세스를 가속화 하는 재사용 가능 하 고 사용자 지정 가능한 웹 사이트 프로젝트 및 항목 스텁을 제공 합니다. 템플릿에 대 한 자세한 내용은 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [프로젝트 템플릿 및 항목 템플릿 만들기](../../ide/creating-project-and-item-templates.md)를 참조 하세요.
@@ -151,40 +151,40 @@ ms.locfileid: "105069098"
 
 - 숨김은. *확장*
 
-     Webform 클래스를 구현 하는 종속 파일입니다. Codebehind 언어는이 파일의 *확장명* 을 결정 합니다.
+     Webform 클래스를 구현 하는 종속 파일입니다. codebehind 언어는 이 파일의 *확장자를* 결정합니다.
 
-- ContentPage .aspx
+- ContentPage.aspx
 
-     콘텐츠 페이지로 서의 웹 페이지 시작 콘텐츠입니다. 이 웹 페이지에 연결 된 codebehind 종속 파일이 없습니다.
+     콘텐츠 페이지로 웹 페이지의 시작 콘텐츠입니다. 이 웹 페이지에는 연결된 codebehind 종속 파일이 없습니다.
 
-- ContentPage_cb .aspx
+- ContentPage_cb.aspx
 
-     콘텐츠 페이지로 서의 웹 페이지 시작 콘텐츠입니다. 이 웹 페이지에는 연결 된 codebehind 종속 파일이 있습니다.
+     콘텐츠 페이지로 웹 페이지의 시작 콘텐츠입니다. 이 웹 페이지에는 연결된 codebehind 종속 파일이 있습니다.
 
-- WebForm
+- WebForm.vstemplate
 
-     새 웹 페이지의 내용과 종속 파일 (있는 경우)을 결정 하는 템플릿 파일입니다.
+     새 웹 페이지의 내용과 해당 종속 파일(있는 경우)을 결정하는 템플릿 파일입니다.
 
 ### <a name="new-master-page"></a>새 마스터 페이지
- 이 템플릿은 **새 마스터 페이지 추가** 명령에 대 한 응답으로 새 마스터 페이지를 만듭니다.
+ 이 템플릿은 새 마스터 페이지 **추가** 명령에 대한 응답으로 새 마스터 페이지를 만듭니다.
 
- 종속 된 코드 숨김 소스 파일을 만들려면 **별도의 파일에 코드 삽입** 을 선택 합니다. 그렇지 않으면 빈 스크립팅 블록을 포함 하는 단일 웹 페이지가 만들어지고 \<% Page %> 종속 파일을 후크 하는 지시문이 없습니다.
+ 종속 codebehind 소스 파일을 만들려면 **별도의 파일에 코드 배치를** 선택합니다. 그렇지 않으면 빈 스크립팅 블록이 있고 종속 파일을 연결하는 지시문이 없는 단일 웹 \<% Page %> 페이지가 만들어집니다.
 
-- MasterPage 마스터
+- MasterPage.master
 
-     마스터 페이지의 시작 콘텐츠입니다. 이 마스터 페이지에 연결 된 codebehind 종속 파일이 없습니다.
+     마스터 페이지의 시작 콘텐츠입니다. 이 마스터 페이지에는 연결된 codebehind 종속 파일이 없습니다.
 
-- MasterPage_cb 마스터
+- MasterPage_cb.master
 
-     마스터 페이지의 시작 콘텐츠입니다. 이 마스터 페이지에는 연결 된 codebehind 종속 파일이 있습니다.
+     마스터 페이지의 시작 콘텐츠입니다. 이 마스터 페이지에는 연결된 codebehind 종속 파일이 있습니다.
 
-- 숨김은. *확장*
+- Codebehind. *확장*
 
-     마스터 페이지 클래스를 구현 하는 종속 파일입니다. Codebehind 언어는이 파일의 *확장명* 을 결정 합니다.
+     마스터 페이지 클래스를 구현하는 종속 파일입니다. codebehind 언어는 이 파일의 *확장자를* 결정합니다.
 
-- MasterPage .vstemplate
+- MasterPage.vstemplate
 
-     새 마스터 페이지의 내용과 종속 파일 (있는 경우)을 결정 하는 템플릿 파일입니다.
+     새 마스터 페이지의 내용과 해당 종속 파일(있는 경우)을 결정하는 템플릿 파일입니다.
 
 ## <a name="see-also"></a>참조
 - [웹 사이트 지원](../../extensibility/internals/web-site-support.md)

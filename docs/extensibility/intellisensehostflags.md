@@ -1,9 +1,9 @@
 ---
 title: IntelliSenseHostFlags | Microsoft Docs
-description: IntelliSenseHostFlags 열거형은 IntelliSense 호스트 플래그를 지정 합니다. 이 문서에서는 열거형 값에 대해 설명 합니다.
+description: IntelliSenseHostFlags 열거형은 IntelliSense 호스트 플래그를 지정합니다. 이 문서에서는 열거형 값에 대해 설명합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IntellisenseHostFlags
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83a3911670a10710ad6ae5cd6496fb76af6c27bb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 33345f86c69d0faeaa5863534e21eca5ecc176cc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079139"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902620"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
-IntelliSense 호스트 플래그를 지정 합니다.
+IntelliSense 호스트 플래그를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -40,16 +40,16 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>매개 변수
 
-|멤버|Description|
+|구성원|Description|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|컨텍스트 버퍼는 읽기 전용입니다.|
-|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에 IntelliSense 대상 (함축)이 포함 되어 있습니다 `!IHF_READONLYCONTEXT` .|
-|`IHF_SINGLELINESUBJECT`|제목 텍스트는 여러 줄을 사용할 수 없습니다.|
+|`IHF_NOSEPARATESUBJECT`|제목 텍스트가 없습니다. 컨텍스트 버퍼에는 IntelliSense-target이 포함됩니다(을 `!IHF_READONLYCONTEXT` 의미함).|
+|`IHF_SINGLELINESUBJECT`|주체 텍스트는 여러 줄로 지원되지 않습니다.|
 |`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer`와 동일합니다.|
-|`IHF_OVERTYPE`|편집 (주체 또는 컨텍스트)은 겹쳐쓰기 모드에서 수행 해야 합니다.|
+|`IHF_OVERTYPE`|편집(주체 또는 컨텍스트)은 overtype 모드에서 수행해야 합니다.|
 
 ## <a name="requirements"></a>요구 사항
- SingleFileeditor. idl
+ SingleFileeditor.idl
 
 ## <a name="see-also"></a>참조
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

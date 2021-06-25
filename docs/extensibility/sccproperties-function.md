@@ -2,7 +2,7 @@
 description: 이 함수는 파일 또는 프로젝트에 대 한 소스 제어 속성을 표시 합니다.
 title: SccProperties 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccProperties
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56306bb7c248ea500e16964c0929f34a27187298
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cd50353ab29c05e5e5db2dc2b3f363af46ca8aa7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056521"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904193"
 ---
 # <a name="sccproperties-function"></a>SccProperties 함수
 이 함수는 파일 또는 프로젝트에 대 한 소스 제어 속성을 표시 합니다.
@@ -49,7 +49,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|속성이 표시 되었습니다.|
 |SCC_I_RELOADFILE|버전 제어 시스템에서 파일 속성을 수정 하 여 IDE에서이 파일을 다시 로드 해야 합니다.|

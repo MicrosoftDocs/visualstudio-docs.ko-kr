@@ -1,9 +1,9 @@
 ---
 title: UsedCommands 요소 | Microsoft Docs
-description: UsedCommands 요소는 UsedCommand 요소 및 기타 UsedCommands 그룹화를 그룹화 합니다. UsedCommands 요소는 선택 사항입니다.
+description: UsedCommands 요소는 UsedCommand 요소 및 기타 UsedCommands 그룹화 그룹을 그룹화합니다. UsedCommands 요소는 선택 사항입니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - UsedCommands
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05c9571c0ca8252789f0e07ebfce66926fb19ff
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21233527c9fcfb97fd45a8eeed60c04927df8ba1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060213"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903036"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 요소
-UsedCommands 요소는 UsedCommand 요소 및 기타 UsedCommands 그룹화를 그룹화 합니다.
+UsedCommands 요소는 UsedCommand 요소 및 기타 UsedCommands 그룹화 그룹을 그룹화합니다.
 
- UsedCommands 요소는 선택 사항입니다. 패키지 외부에 정의 된 명령을 호출 하지 않는 경우에는이 섹션을. vsct 파일에 포함 하지 않아도 됩니다.
+ UsedCommands 요소는 선택 사항입니다. 패키지 외부에 정의된 명령을 호출하지 않는 경우 .vsct 파일에 이 섹션을 포함할 필요가 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -42,19 +42,19 @@ UsedCommands 요소는 UsedCommand 요소 및 기타 UsedCommands 그룹화를 �
 
 |attribute|설명|
 |---------------|-----------------|
-|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
+|조건|선택 사항입니다. [조건부 특성 을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[UsedCommand 요소](../extensibility/usedcommand-element.md)|다른 코드에 의해 구현 되는 명령입니다.|
+|[UsedCommand 요소](../extensibility/usedcommand-element.md)|다른 코드에 의해 구현되는 명령입니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE (통합 개발 환경)에 제공 하는 명령 (예: 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자)을 나타내는 요소를 모두 정의 합니다.|
+|[CommandTable 요소](../extensibility/commandtable-element.md)|VSPackage가 IDE(통합 개발 환경)에 제공하는 명령(예: 메뉴 항목, 메뉴, 도구 모음 및 콤보 상자)을 나타내는 모든 요소를 정의합니다.|
 
 ## <a name="example"></a>예제
 

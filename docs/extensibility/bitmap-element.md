@@ -3,7 +3,7 @@ title: Bitmap 요소 | Microsoft Docs
 description: Bitmap 요소는 비트맵을 정의 합니다. 비트맵은 리소스 또는 파일에서 로드 됩니다. 이 문서에는 예제가 포함 되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32f07857f2d04989b0de021988b2961d4a1553d2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c8f3daf25a3ffe025bcdef65dbaa6def942d0fb4
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068221"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903322"
 ---
 # <a name="bitmap-element"></a>Bitmap 요소
 비트맵을 정의 합니다. 비트맵은 리소스 또는 파일에서 로드 됩니다.
@@ -34,7 +34,7 @@ ms.locfileid: "105068221"
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
 |guid|필수 요소. GUID/ID 명령 식별자의 GUID입니다.<br /><br /> 비트맵에 대 한 guid 특성은 VSPackage 또는 다른 명령 그룹과 연결 되지 않습니다.  비트맵 정의에서 고유 해야 하며 다른 용도로 사용 하면 안 됩니다.|
 |Resid로|GUID/ID 명령 식별자의 ID입니다. Resid로 또는 href 특성이 필요 합니다.<br /><br /> Resid로 특성은 명령 테이블을 병합 하는 동안 로드할 비트맵 스트립을 결정 하는 정수 리소스 ID입니다.  명령 테이블을 로드 하는 경우 리소스 ID로 지정 된 비트맵이 동일한 모듈의 리소스에서 로드 됩니다.|
@@ -47,7 +47,7 @@ ms.locfileid: "105068221"
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[비트맵 요소](../extensibility/bitmaps-element.md)|비트맵 요소를 그룹화 합니다.|
 

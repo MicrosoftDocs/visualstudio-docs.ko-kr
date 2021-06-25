@@ -3,19 +3,19 @@ title: Visual Studio의 공용 컨트롤 패턴 | Microsoft Docs
 description: Visual Studio 공용 컨트롤에서 Windows 데스크톱 상호 작용 지침을 따르고 이러한 지침을 보강 하는 특수 한 상황에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e55bb5f4473971f99ce04f9e48b7e05ec13f94c6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 12d514bdc0aa37598ad57e0466bf57ba75ed2601
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090111"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899305"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio의 일반 컨트롤 패턴
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 공용 컨트롤
@@ -301,7 +301,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 > [!NOTE]
 > 사용자는 이러한 단추 (선택 키 없음)로 이동 하 여 적절 한 순서로 배치할 수 있습니다. `name`단추의 속성을 화면 판독기가 단추 작업을 올바르게 해석 하기 위해 수행 하는 동작에 매핑합니다.
 
-| 함수 | 단추 |
+| 기능 | 단추 |
 | --- | --- |
 | 추가 | ![그래픽 "추가" 단추](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 제거 | ![그래픽 "제거" 단추](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
@@ -309,7 +309,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 | 모두 제거 | ![그래픽 "모두 제거" 단추](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | 위로 이동 | ![그래픽 "위로 이동" 단추](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
 | 아래로 이동 | ![그래픽 "아래로 이동" 단추](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703-13_ButtonMoveDown") |
-| 삭제 | ![그래픽 "삭제" 단추](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| DELETE | ![그래픽 "삭제" 단추](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>크기 조정 및 간격
 그래픽 단추의 크기 조정은 **[찾아보기 ...]** 단추 (26x23 픽셀)의 약식 버전과 동일 합니다.
@@ -343,7 +343,7 @@ Visual Studio의 단추 대부분은 유틸리티 대화 상자에 표시 되며
 
 ![잘못 됨: 트리 뷰 노드의 스타일이 잘못 되었습니다.](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />잘못 됨: 트리 뷰 노드의 스타일이 잘못 되었습니다.
 
-#### <a name="selection"></a>선택
+#### <a name="selection"></a>선택 영역
 트리 뷰 내에서 노드를 선택 하면 강조 표시는 tree view 컨트롤의 전체 너비로 확장 됩니다. 이렇게 하면 사용자가 선택한 항목을 명확 하 게 식별할 수 있습니다. 선택 색은 현재 Visual Studio 테마를 반영 해야 합니다.
 
 ![수정: 선택한 노드를 강조 표시 하 여 tree view 컨트롤의 전체 너비에 맞춥니다.](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />수정: 선택한 노드를 강조 표시 하 여 tree view 컨트롤의 전체 너비에 맞춥니다.
@@ -377,17 +377,17 @@ Visual Studio 트리 컨트롤은 일반적인 키보드 탐색을 따라야 합
 
 - **오른쪽 화살표:** 트리의 노드 확장
 
-- **왼쪽 화살표:** 트리의 노드 축소
+- **왼쪽 화살표:** 트리에서 노드 축소
 
-- **키 입력:** 선택한 항목 시작, 로드, 실행
+- **키를 입력합니다.** 선택한 항목 시작, 로드, 실행
 
-##### <a name="trid-tree-view-and-grid-view"></a>Trid (트리 뷰 및 그리드 뷰)
-Trid 컨트롤은 그리드 내에서 트리 뷰를 포함 하는 복잡 한 컨트롤입니다. 트리를 확장 하 고 축소 하 고 탐색 하는 것은 트리 뷰와 동일한 키보드 명령을 준수 해야 하며 다음과 같이 추가 됩니다.
+##### <a name="trid-tree-view-and-grid-view"></a>Trid(트리 뷰 및 그리드 보기)
+trid 컨트롤은 그리드 내에 트리 뷰를 포함하는 복잡한 컨트롤입니다. 트리 확장, 축소 및 탐색은 트리 보기와 동일한 키보드 명령을 준수해야 하며 다음과 같은 추가가 있습니다.
 
-- **오른쪽 화살표:** 노드를 확장 합니다. 노드가 확장 된 후에는 오른쪽의 가장 가까운 열로 계속 이동 해야 합니다. 행의 끝에서 탐색을 중지 해야 합니다.
+- **오른쪽 화살표:** 노드를 확장합니다. 노드가 확장되면 오른쪽에 있는 가장 가까운 열로 계속 이동해야 합니다. 탐색은 행의 끝에서 중지되어야 합니다.
 
-- **탭:** 오른쪽의 가장 가까운 셀로 이동 합니다.  행의 끝에서 탐색은 다음 행으로 계속 됩니다.
+- **탭:** 오른쪽에서 가장 가까운 셀로 이동합니다.  행의 끝에서 탐색은 다음 행으로 계속 진행합니다.
 
-- **Shift + Tab:** 왼쪽의 가장 가까운 셀로 이동 합니다.  행의 시작 부분에서 탐색은 이전 행의 맨 오른쪽 셀로 계속 됩니다.
+- **Shift + 탭:** 왼쪽에서 가장 가까운 셀로 이동합니다.  행의 시작 부분에서 탐색은 이전 행에서 가장 오른쪽 셀로 계속 이동합니다.
 
-![Visual Studio의 trid 컨트롤](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Visual Studio의 trid 컨트롤
+![Visual Studio trid 컨트롤](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Visual Studio trid 컨트롤

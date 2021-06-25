@@ -2,7 +2,7 @@
 description: 이 항목에서는 AsyncVoidMethodBuilder 클래스의 내부 멤버에 대해 설명 합니다. System.runtime.compilerservices.
 title: AsyncVoidMethodBuilder 구조-내부 멤버 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, AsyncVoidMethodBuilder structure [.NET Framework]
 - AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4097bce1f7fd90c5b73a3bb450a873561d76d9c1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d6606e26d14ba114ed8346c0cc11a81f8bdd3e8e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055338"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903635"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 구조-내부 멤버
 이 항목에서는 클래스의 내부 멤버에 대해 설명 합니다 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> . 이 클래스에 대 한 일반 정보는 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 참조 항목을 참조 하세요.
@@ -38,7 +38,7 @@ ms.locfileid: "105055338"
 
 ## <a name="internal-members"></a>내부 멤버
 
-|Name|Description|
+|속성|설명|
 |----------|-----------------|
 |[ObjectIdForDebugger 속성](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|디버거에 대해이 작성기를 고유 하 게 식별 하는 데 사용할 수 있는 개체를 가져옵니다.|
 |[m_objectIdForDebugger 필드](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|디버거에서이 작성기를 고유 하 게 식별 하는 데 사용 되는 지연 된 초기화 개체를 나타냅니다.|

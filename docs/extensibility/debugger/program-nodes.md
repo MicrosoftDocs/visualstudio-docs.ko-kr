@@ -3,7 +3,7 @@ title: 프로그램 노드 | Microsoft Docs
 description: 이 문서에서는 Visual Studio의 디버거 아키텍처에서 프로그램 노드의 정의 및 역할에 대해 설명 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - program nodes, debugging context
 - debugging [Debugging SDK], program nodes
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5658026b60006a58ba168ca713028b9876a3c57d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4c26fa95a5fedf325591ce517e7c12ecebcd705c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094629"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899084"
 ---
 # <a name="program-nodes"></a>프로그램 노드
 디버거 아키텍처에서 *프로그램 노드* 는 다음과 같습니다.

@@ -2,7 +2,7 @@
 description: 이 함수는 소스 제어 플러그 인의 동작을 제어 하는 옵션을 설정 합니다.
 title: SccSetOption 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 031de256b231bbd95e7535af80448db5140cba7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 18e33cbb8dbee9b332456826ed33e46e4d2e76de
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090150"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904102"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 함수
 이 함수는 소스 제어 플러그 인의 동작을 제어 하는 옵션을 설정 합니다.
@@ -49,7 +49,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|옵션을 설정 했습니다.|
 |SCC_I_SHARESUBPROJOK|`nOption`가이 `SCC_OPT_SHARESUBPROJ` 고 소스 제어 플러그 인이 IDE에서 대상 폴더를 설정할 수 있는 경우 반환 됩니다.|
@@ -60,7 +60,7 @@ SCCRTN SccSetOption(
 
  옵션 및 해당 값 요약:
 
-|`nOption`|`dwValue`|Description|
+|`nOption`|`dwValue`|설명|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|백그라운드 이벤트 큐를 사용 하거나 사용 하지 않도록 설정 합니다.|
 |`SCC_OPT_USERDATA`|임의 값|[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 콜백 함수에 전달할 사용자 값을 지정 합니다.|

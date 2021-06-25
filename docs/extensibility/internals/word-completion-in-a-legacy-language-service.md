@@ -3,7 +3,7 @@ title: 레거시 언어 서비스의 단어 완성 | Microsoft Docs
 description: Visual Studio SDK의 레거시 언어 서비스에 대해 단어 완성 기능을 지원할 수 있습니다. VSPackage에서 레거시 언어 서비스를 구현 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360778e4dbc89130e8a533640fefb188047fe8ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ea386aea3a17b0fb0d93ff9872f92e86a166be5c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074082"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902633"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>레거시 언어 서비스의 단어 완성
 단어 완성은 부분적으로 형식화 된 단어에서 누락 된 문자를 채웁니다. 완료 문자가 하나만 있는 경우 완료 문자를 입력 하면 단어가 완료 됩니다. 부분 단어가 둘 이상의 가능성과 일치 하는 경우 가능한 완성 목록이 표시 됩니다. 완성 문자는 식별자에 사용 되지 않는 모든 문자일 수 있습니다.

@@ -3,7 +3,7 @@ title: 컨텍스트 매개 변수 | Microsoft Docs
 description: 마법사를 추가 하거나 구현할 때 프로젝트의 상태를 정의 하는 Visual Studio IDE (통합 개발 환경)의 컨텍스트 매개 변수에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - wizards, context parameters
 - context parameters
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 536e5abf92884c5c19399e73b4e1773e66919657
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057080"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898229"
 ---
 # <a name="context-parameters"></a>컨텍스트 매개 변수
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE (통합 개발 환경)에서 마법사를 **새 프로젝트**, **새 항목 추가** 또는 **하위 프로젝트 추가** 대화 상자에 추가할 수 있습니다. 추가 된 마법사는 **파일** 메뉴 또는 **솔루션 탐색기** 에서 프로젝트를 마우스 오른쪽 단추로 클릭 하 여 사용할 수 있습니다. IDE는 컨텍스트 매개 변수를 마법사의 구현에 전달 합니다. 컨텍스트 매개 변수는 IDE에서 마법사를 호출할 때 프로젝트의 상태를 정의 합니다.
@@ -27,7 +27,7 @@ ms.locfileid: "105057080"
 
 ## <a name="context-parameters-for-new-project"></a>새 프로젝트에 대 한 컨텍스트 매개 변수
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |-------------------------| - |
 | `WizardType` | 등록 된 마법사 유형 ( <xref:EnvDTE.Constants.vsWizardNewProject> ) 또는 마법사의 유형을 나타내는 GUID입니다. 구현에서 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 마법사의 GUID는 {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}입니다. |
 | `ProjectName` | 고유한 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 이름인 문자열입니다. |
@@ -39,7 +39,7 @@ ms.locfileid: "105057080"
 
 ## <a name="context-parameters-for-add-new-item"></a>새 항목 추가에 대 한 컨텍스트 매개 변수
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |-------------------------| - |
 | `WizardType` | 등록 된 마법사 유형 ( <xref:EnvDTE.Constants.vsWizardAddItem> ) 또는 마법사의 유형을 나타내는 GUID입니다. 구현에서 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 마법사의 GUID는 {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}입니다. |
 | `ProjectName` | 고유한 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 이름인 문자열입니다. |
@@ -50,7 +50,7 @@ ms.locfileid: "105057080"
 
 ## <a name="context-parameters-for-add-sub-project"></a>하위 프로젝트 추가에 대 한 컨텍스트 매개 변수
 
-| 매개 변수 | Description |
+| 매개 변수 | 설명 |
 |-------------------------| - |
 | `WizardType` | 등록 된 마법사 유형 ( <xref:EnvDTE.Constants.vsWizardAddSubProject> ) 또는 마법사의 유형을 나타내는 GUID입니다. 구현에서 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 마법사의 GUID는 {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}입니다. |
 | `ProjectName` | 고유한 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 프로젝트 이름인 문자열입니다. |

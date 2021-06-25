@@ -2,7 +2,7 @@
 description: 이 함수는 보기 및 컴파일을 위해 하나 이상의 파일 복사본을 검색 하지만 편집할 수는 없습니다.
 title: SccGet 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 172e0ec5fdba4b91c3cf86ea964b4a98a23a5fa8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 805c19b0c326e8389b4e1905edf370ad042aac92
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060343"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904554"
 ---
 # <a name="sccget-function"></a>SccGet 함수
 이 함수는 보기 및 컴파일을 위해 하나 이상의 파일 복사본을 검색 하지만 편집할 수는 없습니다. 대부분의 시스템에서 파일은 읽기 전용으로 태그가 지정 됩니다.
@@ -64,7 +64,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|가져오기 작업의 성공입니다.|
 |SCC_E_FILENOTCONTROLLED|파일이 소스 제어에 있지 않습니다.|

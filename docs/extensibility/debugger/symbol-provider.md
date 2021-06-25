@@ -3,7 +3,7 @@ title: 기호 공급자 | Microsoft Docs
 description: 식 계산기에서 변수와 식을 평가할 수 있도록 Visual Studio에서 제공 하는 기호 공급자에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 132e3c15eed86c9008e49b74b6da6e5da5a3ce33
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3332bbf705d8e3149d864dbb35418fd4c12c523b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079386"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902919"
 ---
 # <a name="symbol-provider"></a>기호 공급자
 식 계산기 구현은 변수와 식을 계산 하기 위해 언어 컴파일러에 의해 생성 된 기호화 된 디버그 정보에 액세스 해야 합니다. 기호 처리기 라고도 하는 SP (기호 공급자)의 인터페이스를 사용 하 여이를 수행 합니다.

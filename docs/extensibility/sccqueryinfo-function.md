@@ -2,7 +2,7 @@
 description: 이 함수는 소스 제어에서 선택한 파일 집합에 대 한 상태 정보를 가져옵니다.
 title: SccQueryInfo 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 911219605859025f1877d040b5932714b10f836a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 369bbd8d783e5d33ea1519b7ad8a4a37476dc62b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073900"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904141"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 함수
 이 함수는 소스 제어에서 선택한 파일 집합에 대 한 상태 정보를 가져옵니다.
@@ -54,7 +54,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|쿼리가 성공 했습니다.|
 |SCC_E_ACCESSFAILURE|원본 제어 시스템에 액세스 하는 데 문제가 발생 했습니다. 네트워크 또는 경합 문제로 인해 발생 했을 수 있습니다. 다시 시도 하는 것이 좋습니다.|

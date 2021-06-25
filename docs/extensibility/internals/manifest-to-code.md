@@ -3,19 +3,19 @@ title: Manifest to Code | Microsoft Docs
 description: Visual Studio 이미지 서비스에서 사용 하기 위해 imagemanifest 파일을 사용 하는 코드의 매니페스트 도구를 사용 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e63349b27ec8ea5617f6d1836ce9ece3251662d3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095162"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903167"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code 도구는 Visual Studio 이미지 서비스에 대해 imagemanifest 파일을 사용 하 고 c + +, c #, VB 또는 Visual Studio 확장용 vsct 파일에서 이미지 매니페스트의 값을 참조 하기 위한 래퍼 파일을 생성 하는 콘솔 응용 프로그램입니다. 이 도구는 Visual Studio 이미지 서비스에서 직접 이미지를 요청 하는 데 사용할 수 있는 래퍼 파일을 생성 하거나 코드가 자체 UI 및 렌더링을 처리 하지 않는 경우 Api를 통해 매니페스트 값을 전달 하는 데 사용할 수 있습니다.
@@ -47,7 +47,7 @@ Manifest to Code 도구는 Visual Studio 이미지 서비스에 대해 imagemani
 
 - ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: VSCT/imageIdClass: MyImageIds
 
-## <a name="notes"></a>메모
+## <a name="notes"></a>참고
 
 - Manifest from Resources 도구에 의해 생성 된 이미지 매니페스트와 함께이 도구를 사용 하는 것이 좋습니다.
 

@@ -1,9 +1,9 @@
 ---
 title: UsedCommand 요소 | Microsoft Docs
-description: VSPackage는 UsedCommand 요소를 사용 하 여 다른 vsct 파일에 정의 된 명령에 액세스할 수 있습니다.
+description: UsedCommand 요소를 사용하면 VSPackage가 다른 .vsct 파일에 정의된 명령에 액세스할 수 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ff89cba5dbc1e54afaf51fb659e07c29e53009
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9d120353b9d6191bfcaae38151eb970ab1071b99
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060226"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903049"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 요소
-VSPackage에서 다른. vsct 파일에 정의 된 명령에 액세스할 수 있습니다. 예를 들어 VSPackage에서 셸에서 정의한 표준 **복사** 명령을 사용 하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령을 다시 구현 하지 않고 메뉴 또는 도구 모음에 명령을 추가할 수 있습니다.
+VSPackage가 다른 .vsct 파일에 정의된 명령에 액세스할 수 있도록 합니다. 예를 들어 VSPackage가 셸에서 정의한 표준 **복사** 명령을 사용하는 경우 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 명령을 다시 구현하지 않고 메뉴 또는 도구 모음에 추가할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,26 +34,26 @@ VSPackage에서 다른. vsct 파일에 정의 된 명령에 액세스할 수 있
 
 ### <a name="attributes"></a>특성
 
-|attribute|Description|
+|attribute|설명|
 |---------------|-----------------|
-|guid|필수 요소. 명령을 식별 하는 GUID ID 쌍의 GUID입니다.|
-|id|필수 요소. 명령을 식별 하는 GUID ID 쌍의 ID입니다.|
-|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
+|guid|필수 요소. 명령을 식별하는 GUID ID 쌍의 GUID입니다.|
+|id|필수 요소. 명령을 식별하는 GUID ID 쌍의 ID입니다.|
+|조건|선택 사항입니다. [조건부 특성 을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|없음||
+|None||
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소 및 기타 UsedCommands 그룹화를 그룹화 합니다.|
+|[UsedCommands 요소](../extensibility/usedcommands-element.md)|UsedCommand 요소 및 기타 UsedCommands 그룹화 그룹화|
 
 ## <a name="remarks"></a>설명
- VSPackage는 요소에 명령을 추가 하 여 `<UsedCommands>` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage에 명령이 필요 함을 환경에 알립니다. `<UsedCommand>`패키지에 필요한 모든 명령에 요소를 추가 해야 합니다 .이는 Visual Studio의 모든 버전 및 구성에 포함 될 수 없습니다. 예를 들어 패키지에서 Visual C++와 관련 된 명령을 호출 하는 경우 명령 `<UsedCommand>` 에 대 한 요소를 포함 하지 않으면 Visual Web Developer 사용자가이 명령을 사용할 수 없습니다.
+ `<UsedCommands>`VSPackage는 요소에 명령을 추가하여 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage에 명령이 필요하다는 것을 환경에 알릴 수 있습니다. 패키지에 필요한 모든 명령에 대한 요소를 추가해야 합니다. `<UsedCommand>` 이 요소는 Visual Studio 모든 버전 및 구성에 포함되지 않을 수 있습니다. 예를 들어 패키지에서 Visual C++ 특정 명령을 호출하는 경우 명령에 대한 요소를 포함하지 않는 한 Visual Web Developer 사용자가 명령을 사용할 수 `<UsedCommand>` 없습니다.
 
 ## <a name="example"></a>예제
 

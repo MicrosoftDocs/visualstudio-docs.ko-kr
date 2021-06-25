@@ -1,41 +1,41 @@
 ---
 title: DTE를 사용하여 Visual Studio 시작
-description: DTE를 사용 하 여 Visual Studio를 시작 하 여 주요 릴리스의 side-by-side 설치를 지 원하는 방법에 대해 알아봅니다. 이 문서에는 코드 예제가 포함 되어 있습니다.
+description: DTE를 사용하여 주 릴리스의 side-by-side 설치를 지원하는 Visual Studio 시작하는 방법을 알아봅니다. 이 문서에는 코드 예제가 포함되어 있습니다.
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 253c7f106f1d139f694fea3d469385f200c84029
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060580"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903114"
 ---
 # <a name="launch-visual-studio-using-dte"></a>DTE를 사용하여 Visual Studio 시작
 
-Visual Studio 2017부터 DTE를 사용 하 여 Visual Studio를 시작 하는 메커니즘은 이전 버전의 Visual Studio를 실행 하는 것과 다릅니다. Visual Studio 2017 이상에서 주요 릴리스를 함께 설치할 수 있으므로 이러한 변경이 필요 합니다. 예를 들어 미리 보기와 릴리스 버전을 함께 설치할 수 있습니다.
+Visual Studio 2017부터 DTE를 사용하여 Visual Studio 시작하는 메커니즘은 이전 버전의 Visual Studio 시작하는 것과 다릅니다. Visual Studio 2017 이상에서는 주 릴리스의 함께 설치를 지원하기 때문에 이 변경이 필요합니다(예: 미리 보기 및 릴리스 버전을 함께 설치할 수 있습니다).
 
-이 문서의 나머지 부분에서는 DTE를 사용 하 여 Visual Studio 2019를 시작 하는 데 사용할 수 있는 코드를 보여 줍니다.
+이 문서의 나머지 부분에서는 DTE를 사용하여 Visual Studio 2019를 시작하는 데 사용할 수 있는 코드를 보여줍니다.
 
 ## <a name="set-up-the-project"></a>프로젝트 설정
 
-실행 중인 코드를 보려면 다음 단계를 수행 하 여 프로젝트를 만듭니다.
+실행 코드를 실행하려면 다음 단계에 따라 프로젝트를 만듭니다.
 
-1. .NET Framework에 대 한 새 **콘솔 앱** 프로젝트를 만듭니다.
+1. .NET Framework 대한 새 **콘솔 앱** 프로젝트를 만듭니다.
 
-2. [Microsoft.VisualStudio.Setup.Configuration를 설치 합니다. ](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/)NuGet 패키지를 Interop 하 고 어셈블리에 대 한 참조를 추가 합니다.
+2. Microsoft.VisualStudio.Setup.Config[ uration을 설치합니다. Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 패키지 및 어셈블리에 대한 참조를 추가합니다.
 
-3. EnvDTE에 대 한 참조를 추가 합니다.
+3. EnvDTE에 대한 참조를 추가합니다.
 
-4. 다음 [예제 코드](#example-code) 를 *프로그램 .cs* 파일에 붙여넣습니다.
+4. 다음 [예제 코드를](#example-code) *Program.cs* 파일에 붙여넣습니다.
 
-5. **F5** 키를 눌러 프로그램을 실행 합니다. 프로그램이 종료 되기 전에 Visual Studio 2019가 열려 있어야 합니다.
+5. **F5** 키를 눌러 프로그램을 실행합니다. 프로그램이 종료되기 전에 Visual Studio 2019가 열려 있어야 합니다.
 
 ## <a name="example-code"></a>예제 코드
 

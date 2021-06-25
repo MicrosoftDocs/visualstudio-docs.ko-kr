@@ -1,8 +1,8 @@
 ---
-description: 로컬 파일 목록이 지정 된 경우이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 확인 합니다.
+description: 로컬 파일 목록이 제공되면 이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 결정합니다.
 title: SccEnumChangedFiles 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10f14fb915d461255eddbd4a00747dfbdf59cde4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2b0707c049013fd3a0272d1f024e4fdbc342bab1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085561"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904541"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 함수
-로컬 파일 목록이 지정 된 경우이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 확인 합니다.
+로컬 파일 목록이 제공되면 이 함수는 소스 코드 제어 데이터베이스의 해당 버전과 다른 파일을 결정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -38,28 +38,28 @@ SCCRTN SccEnumChangedFiles(
 ### <a name="parameters"></a>매개 변수
  pContext
 
-진행 소스 제어 플러그 인 컨텍스트 포인터입니다.
+[in] 소스 제어 플러그 인 컨텍스트 포인터입니다.
 
- hWnd
+ Hwnd
 
-진행 소스 제어 플러그 인이 제공 하는 대화 상자의 부모로 사용할 수 있는 IDE 창에 대 한 핸들입니다.
+[in] 소스 제어 플러그 인이 제공하는 모든 대화 상자의 부모로 사용할 수 있는 IDE 창에 대한 핸들입니다.
 
  cFiles
 
-진행 배열에 지정 된 파일 이름의 수 `lpFileNames` 입니다. 또한 배열의 크기를 지정 합니다 `plIsFileDifferent` .
+[in] 배열에 지정된 파일 이름 `lpFileNames` 수입니다. 배열의 크기도 `plIsFileDifferent` 지정합니다.
 
- lpFileNames 이름
+ lpFileNames
 
-진행 확인할 로컬 파일 이름 배열입니다.
+[in] 확인할 로컬 파일 이름의 배열입니다.
 
  plIsFileDifferent
 
-[in, out] 각 파일의 차이점 상태를 나타내는 값의 배열입니다. 배열에는 최소한의 항목이 있어야 합니다 `cFiles` . 0이 아닌 값은 파일이 다른 것을 의미 합니다.
+[in, out] 각 파일의 차이 상태를 나타내는 값의 배열입니다(배열에는 최소한 항목이 있어야 `cFiles` 합니다). 0이 아닌 경우 파일이 다르다는 의미입니다.
 
 ## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|작업이 완료되었습니다.|
 |SCC_UNSPECIFIEDERROR|일반 오류.|

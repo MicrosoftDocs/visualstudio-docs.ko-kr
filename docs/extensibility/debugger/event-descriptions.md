@@ -3,7 +3,7 @@ title: 이벤트 설명 | Microsoft Docs
 description: 이벤트 유형과 사용 이유에 대해 알아보세요. 각 이벤트 유형에는 특정 목적이 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
@@ -12,19 +12,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd8c6dbb4eddfcffa779b70b17819bf5e92c0c45
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ee2eedac924b3bbd58fac6980da9151a88da9196
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096969"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902646"
 ---
 # <a name="event-descriptions"></a>이벤트 설명
 각 이벤트 유형에는 특정 목적이 있습니다.
 
 ## <a name="events-and-the-reasons-for-their-use"></a>이벤트 및 사용 이유
 
-|이벤트|Description|
+|이벤트|설명|
 |-----------|-----------------|
 |문서 이벤트 활성화|디버그 엔진 (DE)에서 IDE를 열거나 문서를 전경으로 가져올 때 발생 합니다.|
 |중단점 바인딩 또는 중단점 오류 이벤트|중단점이 바인딩되거나 중단점을 바인딩할 수 없고 오류가 반환 될 때 전송 됩니다.|

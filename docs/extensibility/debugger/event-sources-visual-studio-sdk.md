@@ -1,9 +1,9 @@
 ---
-title: 이벤트 소스 (Visual Studio SDK) | Microsoft Docs
-description: Visual Studio 디버깅에서 디버그 엔진과 세션 디버그 관리자의 두 이벤트 소스에 대해 알아봅니다.
+title: 이벤트 원본(Visual Studio SDK) | Microsoft Docs
+description: Visual Studio 디버깅에서 발생하는 두 가지 이벤트 소스인 디버그 엔진과 세션 디버그 관리자에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
@@ -12,18 +12,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6213a1462c391d13bbdf8a20ac61e232cafb49
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a1956cb3643b9f49fae6bb42bbb46675b7b2398
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097008"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898567"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>이벤트 소스 (Visual Studio SDK)
-이벤트에는 디버그 엔진 (DE)과 세션 디버그 관리자 (SDM)의 두 가지 소스가 있습니다. DE에서 전송 된 이벤트에 NULL이 아닌 엔진이 있으며,이 경우 SDM에서 전송 된 이벤트에는 NULL 엔진이 있습니다.
+# <a name="event-sources-visual-studio-sdk"></a>이벤트 원본(Visual Studio SDK)
+디버그 엔진(DE) 및 SDM(세션 디버그 관리자)의 두 가지 이벤트 원본이 있습니다. DE에서 전송된 이벤트에는 NULL이 아닌 엔진이 있지만 SDM에서 전송된 이벤트에는 NULL 엔진이 있습니다.
 
 ## <a name="example"></a>예제
-다음 예제에서는 **IDebugProgramCreateEvent2** 를 DE에서 SDM으로 보내는 방법을 보여 줍니다.
+다음 예제에서는 DE에서 **SDM으로 IDebugProgramCreateEvent2를** 보내는 방법을 보여줍니다.
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
@@ -75,4 +75,4 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 ```
 
 ## <a name="see-also"></a>참조
-- [이벤트 전송](../../extensibility/debugger/sending-events.md)
+- [이벤트 보내기](../../extensibility/debugger/sending-events.md)
