@@ -1,9 +1,9 @@
 ---
 title: Menus 요소 | Microsoft Docs
-description: Menus 요소는 VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다. 이 문서에는 예제가 포함 되어 있습니다.
+description: Menus 요소는 VSPackage가 구현하는 모든 메뉴와 도구 모음을 정의합니다. 이 문서에는 예제가 포함되어 있습니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064009"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905581"
 ---
 # <a name="menus-element"></a>Menus 요소
-VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.
+VSPackage에서 구현하는 모든 메뉴와 도구 모음을 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,18 +39,18 @@ VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.
 
 |attribute|설명|
 |---------------|-----------------|
-|조건|선택 사항입니다. [조건부 특성](../extensibility/vsct-xml-schema-conditional-attributes.md)을 참조 하세요.|
+|조건|선택 사항입니다. [조건부 특성을](../extensibility/vsct-xml-schema-conditional-attributes.md)참조하세요.|
 
 ### <a name="child-elements"></a>자식 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
-|[Menus 요소](../extensibility/menus-element.md)|VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.|
+|[Menus 요소](../extensibility/menus-element.md)|VSPackage에서 구현하는 모든 메뉴와 도구 모음을 정의합니다.|
 |[Menu 요소](../extensibility/menu-element.md)|단일 메뉴 또는 도구 모음을 나타냅니다.|
 
 ### <a name="parent-elements"></a>부모 요소
 
-|요소|Description|
+|요소|설명|
 |-------------|-----------------|
 |[Commands 요소](../extensibility/commands-element.md)|VSPackage의 명령 컬렉션을 나타냅니다.|
 
@@ -80,5 +80,5 @@ VSPackage가 구현 하는 모든 메뉴와 도구 모음을 정의 합니다.
 ```
 
 ## <a name="see-also"></a>참조
-- [Vspackage 사용자 인터페이스 요소를 추가 하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackages에서 사용자 인터페이스 요소를 추가하는 방법](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [명령, 메뉴 및 도구 모음](../extensibility/internals/commands-menus-and-toolbars.md)

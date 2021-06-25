@@ -3,7 +3,7 @@ title: 코드 컨텍스트 | Microsoft Docs
 description: 프로그램이 중단점에서 중지 되었을 때 존재 하는 코드의 위치를 설명 하는 Visual Studio 디버깅의 코드 컨텍스트에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c668cd1fa80efe24fa596cc4e9f311e2db519246
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3e3bd252990e52f4ecaede0cc5026067b28434bc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055039"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905724"
 ---
 # <a name="code-context"></a>코드 컨텍스트
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]디버깅에서 **코드 컨텍스트** 는 다음과 같습니다.

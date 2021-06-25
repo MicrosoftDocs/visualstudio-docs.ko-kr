@@ -2,7 +2,7 @@
 description: 이 함수는 현재 상태에 대 한 정규화 된 디렉터리 목록을 검사 합니다.
 title: SccDirQueryInfo 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccDirQueryInfo
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81087d4f4da3435fb7bc80ec4a965394c7d6c7f3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9a3e65fa03c7fc2b6a8ce83ba2bb39250547aadb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060330"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904619"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 함수
 이 함수는 현재 상태에 대 한 정규화 된 디렉터리 목록을 검사 합니다.
@@ -54,7 +54,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>반환 값
  이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
 |SCC_OK|쿼리가 성공 했습니다.|
 |SCC_E_OPNOTSUPPORTED|소스 코드 제어 시스템에서이 작업을 지원 하지 않습니다.|

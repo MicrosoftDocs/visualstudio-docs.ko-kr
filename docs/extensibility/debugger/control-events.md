@@ -3,7 +3,7 @@ title: 컨트롤 이벤트 | Microsoft Docs
 description: IDebugEvent2 인터페이스를 사용 하 여 프로그램을 제어 하는 실행 중에 이벤트를 보내는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeee5ed91eca7666d08dfd08ec02b850a7739db9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cb7249ece3ab38ff6f378f3c48ce36a995677604
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085535"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905698"
 ---
 # <a name="control-events"></a>컨트롤 이벤트
 프로그램의 제어 된 실행 중에 이벤트를 전송 해야 합니다. 모든 이벤트는 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 인터페이스를 사용 하 여 전송 되며 [IDebugEvent2:: getattributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 메서드를 구현 해야 하는 특성이 있습니다.

@@ -3,7 +3,7 @@ title: 디버그 엔진 | Microsoft Docs
 description: 디버그 엔진이 인터프리터 또는 운영 체제와 함께 작동 하 여 실행 제어, 중단점 및 식 평가와 같은 서비스를 제공 하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13dd7165a5f85dc0122f97aaee838c528207f96
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 87c4648ed37ef4fad0d79b7048593ff0c5b7d6d0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067948"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905711"
 ---
 # <a name="debug-engine"></a>디버그 엔진
 DE (디버그 엔진)는 인터프리터 또는 운영 체제와 함께 작동 하 여 실행 제어, 중단점 및 식 평가와 같은 디버깅 서비스를 제공 합니다. DE는 디버깅 중인 프로그램의 상태를 모니터링 하는 일을 담당 합니다. 이 작업을 수행 하기 위해 DE는 CPU 또는 런타임에서 제공 하는 Api의 지원 되는 런타임에서 사용할 수 있는 모든 메서드를 사용 합니다.

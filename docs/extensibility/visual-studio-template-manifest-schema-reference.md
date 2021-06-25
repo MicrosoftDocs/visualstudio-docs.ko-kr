@@ -3,19 +3,19 @@ title: Visual Studio 템플릿 매니페스트 스키마 참조 | Microsoft Docs
 description: 이 스키마 참조는 Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 되는 Visual Studio 템플릿 매니페스트 파일의 형식을 설명 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 259d2dd050f4681053f331bfd4ec39dd7b214059
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062501"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905386"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 템플릿 매니페스트 스키마 참조
 이 스키마는 Visual Studio 프로젝트 또는 항목 템플릿에 대해 생성 되는 Visual Studio 템플릿 매니페스트 (*vstman*) 파일의 형식을 설명 합니다. 또한이 스키마는 템플릿에 대 한 위치 및 기타 관련 정보를 설명 합니다.
@@ -51,7 +51,7 @@ ms.locfileid: "105062501"
 
 ### <a name="child-elements"></a>자식 요소
 
-- **RelativePathOnDisk**: 디스크에 있는 템플릿 파일의 상대 경로입니다. 또한이 위치는 **새 프로젝트** 또는 **새 항목** 대화 상자에 표시 된 템플릿 트리에서 템플릿의 배치를 정의 합니다. 디렉터리와 개별 파일로 배포 된 템플릿의 경우이 경로는 템플릿 파일을 포함 하는 디렉터리를 참조 합니다. *.Zip* 파일로 배포 된 템플릿의 경우이 경로는 *.zip* 파일의 경로 여야 합니다.
+- **RelativePathOnDisk**: 디스크에 있는 템플릿 파일의 상대 경로입니다. 또한이 위치는 **새 프로젝트** 또는 **새 항목** 대화 상자에 표시 된 템플릿 트리에서 템플릿의 배치를 정의 합니다. 디렉터리와 개별 파일로 배포 된 템플릿의 경우이 경로는 템플릿 파일을 포함 하는 디렉터리를 참조 합니다. *.zip* 파일로 배포 된 템플릿의 경우이 경로는 *.zip* 파일에 대 한 경로 여야 합니다.
 
 - * * VSTemplateHeader: 헤더를 설명 하는 [서식 데이터](../extensibility/templatedata-element-visual-studio-templates.md) 요소입니다.
 

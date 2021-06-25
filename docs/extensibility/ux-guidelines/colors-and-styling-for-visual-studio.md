@@ -1,132 +1,132 @@
 ---
-title: Visual Studio의 색 및 스타일 지정 | Microsoft Docs
-description: 미적 이유가 아니라 Visual Studio 사용자 환경에서 통신 도구로 색을 사용 하는 방법에 대해 알아봅니다.
+title: Visual Studio | 색 및 스타일 Microsoft Docs
+description: Visual Studio 사용자 환경이 순수한 미적 이유 대신 색을 통신 도구로 사용하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc98e3c2717b14ac1933e5b41269af1efb8e932f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 307a4013c06258524c60619c6eff40e4d64740b6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089916"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904489"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio의 색 및 스타일 지정
 
-## <a name="use-color-in-visual-studio"></a>Visual Studio에서 색 사용
+## <a name="use-color-in-visual-studio"></a>Visual Studio 색 사용
 
-Visual Studio에서 색은 주로 데코레이션 뿐만 아니라 통신 도구로 사용 됩니다. 최소 색을 사용 하 고 다음을 수행 하려는 경우에 대비 합니다.
+Visual Studio 색은 주로 장식뿐만 아니라 통신 도구로 사용됩니다. 색을 최소한으로 사용하고 다음을 수행하려는 상황에 대비하여 예약합니다.
 
-- 의미 또는 정보 (예: 플랫폼 또는 언어 한정자)를 전달 합니다.
+- 의미 또는 소속 통신(예: 플랫폼 또는 언어 한정자)
 
-- 상태 변경을 나타내는 등의 관심
+- 관심 끌기(예: 상태 변경 표시)
 
 - 가독성 향상 및 UI 탐색을 위한 랜드마크 제공
 
-- 원활 증가
+- 바람직성 향상
 
-Visual Studio의 UI 요소에 색을 할당 하기 위한 몇 가지 옵션이 있습니다. 어떤 옵션을 사용 해야 하는지 또는 올바르게 사용 하는 방법을 파악 하기 어려울 수 있습니다. 이 항목은 다음 작업을 도와 줍니다.
+Visual Studio UI 요소에 색을 할당하는 몇 가지 옵션이 있습니다. 어떤 옵션을 사용해야 하는지 또는 올바르게 사용하는 방법을 파악하기가 어려울 수 있습니다. 이 항목은 다음을 도와 드립니다.
 
-- Visual Studio에서 색을 정의 하는 데 사용 되는 다양 한 서비스 및 시스템을 이해 합니다.
+- Visual Studio 색을 정의하는 데 사용되는 다양한 서비스 및 시스템을 이해합니다.
 
-- 지정 된 요소에 대 한 올바른 옵션을 선택 합니다.
+- 지정된 요소에 대해 올바른 옵션을 선택합니다.
 
-- 선택한 옵션을 올바르게 사용 합니다.
+- 선택한 옵션을 올바르게 사용합니다.
 
 > [!NOTE]
-> UI 요소에 대 한 16 진수, RGB 또는 시스템 색을 하드 코딩 하지 마십시오. 서비스를 사용 하면 색상을 유연 하 게 조정할 수 있습니다. 또한 서비스를 사용 하지 않을 경우 [VSColor 서비스](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)의 테마 전환 기능을 활용할 수 없습니다.
+> 16진수, RGB 또는 시스템 색을 UI 요소에 하드 코딩하지 않습니다. 서비스를 사용하면 유연하게 튜닝할 수 있습니다. 또한 서비스가 없으면 [VSColor 서비스의](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)테마 전환 기능을 활용할 수 없습니다.
 
-### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio 인터페이스 요소에 색을 할당 하는 방법
+### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>Visual Studio 인터페이스 요소에 색을 할당하는 메서드
 
-UI 요소에 가장 적합 한 방법을 선택 합니다.
+UI 요소에 가장 적합한 메서드를 선택합니다.
 
-| UI | 메서드 | 무엇인가요? |
+| Your UI | 메서드 | 무엇인가요? |
 | --- | --- | --- |
-| 포함 되거나 독립 실행형 대화 상자가 있습니다. | **시스템 색** | 운영 체제에서 일반적인 대화 상자 컨트롤과 같은 UI 요소의 색과 모양을 정의할 수 있도록 하는 시스템 이름입니다. |
-| 전반적인 VS 환경과 일치 시키고 공유 토큰의 범주 및 의미 체계와 일치 하는 UI 요소를 포함 하는 사용자 지정 UI가 있습니다. | **공통 공유 색** | 특정 UI 요소에 대해 미리 정의 된 기존 색 토큰 이름 |
-| 개별 기능이 나 기능 그룹이 있으며 유사한 요소에 대 한 공유 색이 없습니다. | **사용자 지정 색** | 영역에 고유 하며 다른 UI와 공유 하지 않는 색 토큰 이름 |
-| 최종 사용자가 UI 나 콘텐츠를 사용자 지정할 수 있도록 허용 하려고 합니다 (예: 텍스트 편집기나 특수 디자이너 창). | **최종 사용자 사용자 지정**<br /><br />**(도구 &gt; 옵션 대화 상자)** | **도구 &gt; 옵션** 대화 상자의 "글꼴 및 색" 페이지 또는 하나의 UI 기능과 관련 된 특수 한 페이지에 정의 된 설정입니다. |
+| 포함된 대화 상자 또는 독립 실행형 대화 상자가 있습니다. | **시스템 색** | 운영 체제에서 일반적인 대화 상자 컨트롤과 같은 UI 요소의 색과 모양을 정의할 수 있도록 하는 시스템 이름입니다. |
+| 전체 VS 환경과 일관성을 유지하려는 사용자 지정 UI가 있고 공유 토큰의 범주 및 의미 체계 의미와 일치하는 UI 요소가 있습니다. | **공통 공유 색** | 특정 UI 요소에 대해 미리 정의된 기존 색 토큰 이름 |
+| 개별 기능 또는 기능 그룹이 있으며 비슷한 요소에 대한 공유 색이 없습니다. | **사용자 지정 색** | 영역과 관련되고 다른 UI와 공유되지 않는 색 토큰 이름 |
+| 최종 사용자가 UI 또는 콘텐츠(예: 텍스트 편집기 또는 특수 디자이너 창)를 사용자 지정할 수 있도록 허용하려고 합니다. | **최종 사용자 지정**<br /><br />**(도구 &gt; 옵션 대화 상자)** | **도구 &gt; 옵션** 대화 상자의 "글꼴 및 색" 페이지 또는 하나의 UI 기능과 관련한 특수 페이지에 정의된 설정입니다. |
 
 ### <a name="visual-studio-themes"></a>Visual Studio 테마
 
-Visual Studio는 밝은 색, 어둡게, 파랑의 세 가지 색 테마를 제공 합니다. 내게 필요한 옵션을 위해 디자인 된 시스템 차원 색 테마 인 고대비 모드도 검색 합니다.
+Visual Studio 밝은 색 테마, 어둡게 및 파랑의 세 가지 색 테마를 제공합니다. 또한 접근성을 위해 설계된 시스템 차원의 색 테마인 고대비 모드를 검색합니다.
 
-사용자에 게는 처음 Visual Studio를 사용 하는 동안 테마를 선택 하 라는 메시지가 표시 되며, 나중에 **도구 &gt; 옵션 &gt; 환경 &gt; 일반** 으로 이동 하 고 "색 테마" 드롭다운 메뉴에서 새 테마를 선택 하 여 테마를 전환할 수 있습니다.
+사용자는 Visual Studio 처음 사용하는 동안 테마를 선택하라는 메시지가 표시되며 나중에 도구 옵션 **&gt; 환경 &gt; &gt; 일반으로** 가서 "색 테마" 드롭다운 메뉴에서 새 테마를 선택하여 테마를 전환할 수 있습니다.
 
-또한 사용자는 제어판을 사용 하 여 전체 시스템을 여러 고대비 테마 중 하나로 전환할 수 있습니다. 사용자가 고대비 테마를 선택 하면 visual Studio 색 테마 선택 기가 더 이상 Visual Studio의 색에 영향을 주지 않습니다. 단, 사용자가 고대비 모드를 끝내 면 테마 변경 내용이 저장 됩니다. 고대비 모드에 대 한 자세한 내용은 [고대비 색 선택](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)을 참조 하세요.
+사용자는 제어판 사용하여 전체 시스템을 여러 고대비 테마 중 하나로 전환할 수도 있습니다. 사용자가 고대비 테마를 선택하면 사용자가 고대비 모드를 종료할 때 테마 변경 내용이 저장되지만 Visual Studio 색 테마 선택기는 더 이상 Visual Studio 색에 영향을 주지 않습니다. 고대비 모드에 대한 자세한 내용은 [고대비 색 선택을 참조하세요.](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ChoosingHighContrastColors)
 
 ### <a name="the-vscolor-service"></a>VSColor 서비스
 
-Visual Studio는 VSColor 서비스 라고 하는 환경 색 서비스를 제공 합니다 .이를 통해 각 Visual Studio 테마에 대 한 색 값을 포함 하는 명명 된 항목에 UI 요소의 색 값을 바인딩할 수 있습니다. 이렇게 하면 현재 사용자가 선택한 테마 또는 시스템 고대비 모드가 반영 되도록 색이 자동으로 변경 됩니다. 서비스를 사용 하면 모든 테마 관련 색 변경의 구현이 한 곳에서 처리 되며, 서비스에서 공통 된 공유 색을 사용 하는 경우 UI는 이후 버전의 Visual Studio에서 새 테마를 자동으로 반영 합니다.
+Visual Studio VSColor 서비스라고 하는 환경 색 서비스를 제공하며, 이를 통해 UI 요소의 색 값을 각 Visual Studio 테마의 색 값이 포함된 명명된 항목에 바인딩할 수 있습니다. 이렇게 하면 현재 사용자가 선택한 테마 또는 시스템 고대비 모드를 반영하도록 색이 자동으로 변경됩니다. 서비스의 사용은 모든 테마 관련 색 변경의 구현이 한 곳에서 처리된다는 것을 의미하며, 서비스에서 공통 공유 색을 사용하는 경우 UI는 이후 버전의 Visual Studio 새 테마를 자동으로 반영합니다.
 
 ### <a name="implementation"></a>구현
 
-Visual Studio 소스 코드에는 토큰 이름 목록과 각 테마에 대 한 각 색 값을 포함 하는 여러 패키지 정의 파일이 포함 되어 있습니다. Color service는 이러한 패키지 정의 파일에 정의 된 VSColors를 읽습니다. 이러한 색은 XAML 태그 또는 코드에서 참조 된 다음 `IVsUIShell5.GetThemedColor` 메서드 또는 DynamicResource 매핑을 통해 로드 됩니다.
+Visual Studio 소스 코드에는 토큰 이름 목록과 각 테마의 해당 색 값이 포함된 여러 패키지 정의 파일이 포함되어 있습니다. 색 서비스는 이러한 패키지 정의 파일에 정의된 VSColors를 읽습니다. 이러한 색은 XAML 태그 또는 코드에서 참조된 다음 `IVsUIShell5.GetThemedColor` 메서드 또는 DynamicResource 매핑을 통해 로드됩니다.
 
 ### <a name="system-colors"></a>시스템 색
 
-공용 컨트롤은 기본적으로 시스템 색을 참조 합니다. 포함 된 대화 상자 또는 독립 실행형 대화 상자를 만들 때와 같이 UI에서 시스템 색을 사용 하 게 하려면 아무것도 수행할 필요가 없습니다.
+공용 컨트롤은 기본적으로 시스템 색을 참조합니다. 포함된 대화 상자나 독립 실행형 대화 상자를 만들 때처럼 UI에서 시스템 색을 사용하도록 하려면 아무 것도 수행할 필요가 없습니다.
 
 ### <a name="common-shared-colors-in-the-vscolor-service"></a>VSColor 서비스의 공통 공유 색
 
-인터페이스 요소는 전체 Visual Studio 환경을 반영 해야 합니다. 디자인 하는 UI 구성 요소에 적절 한 공통 공유 색을 다시 사용 하 여 인터페이스가 다른 Visual Studio 인터페이스와 일치 하는지 확인 하 고 테마가 추가 되거나 업데이트 될 때 색이 자동으로 업데이트 됩니다.
+인터페이스 요소는 전체 Visual Studio 환경을 반영해야 합니다. 디자인하는 UI 구성 요소에 적합한 공통 공유 색을 다시 사용하면 인터페이스가 다른 Visual Studio 인터페이스와 일치하고 테마가 추가되거나 업데이트될 때 색이 자동으로 업데이트됩니다.
 
-공통 된 공유 색을 사용 하기 전에이를 올바르게 사용 하는 방법을 이해 해야 합니다. 공통 공유 색의 잘못 된 사용으로 인해 사용자에 게 일관 되지 않거나, 당황 하거나, 혼동 될 수 있습니다.
+공통 공유 색을 사용하기 전에 올바르게 사용하는 방법을 이해해야 합니다. 일반적인 공유 색을 잘못 사용하면 사용자에게 일관되지 않거나, 불편하거나, 혼동을 초래할 수 있습니다.
 
-### <a name="user-customizable-colors"></a>사용자 지정이 가능한 색
+### <a name="user-customizable-colors"></a>사용자 지정 가능한 색
 
-참조: [최종 사용자에 대 한 색 노출](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
+참조: [최종 사용자에 대한 색 노출](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers)
 
-때로는 코드 편집기 또는 디자인 화면을 만들 때와 같이 최종 사용자가 UI를 사용자 지정할 수 있도록 하는 것이 좋습니다. 사용자 지정 가능한 UI 구성 요소는 **도구 &gt; 옵션** 대화 상자의 **글꼴 및 색** 섹션에서 찾을 수 있으며, 사용자는 전경색, 배경색 또는 둘 다를 변경 하도록 선택할 수 있습니다.
+코드 편집기 또는 디자인 표면을 만들 때와 같이 최종 사용자가 UI를 사용자 지정할 수 있도록 하는 경우가 있습니다. 사용자 지정 가능한 UI 구성 요소는 사용자가 전경색, 배경색 또는 둘 다 변경하도록 선택할 수 있는 **도구 &gt; 옵션** 대화 상자의 **글꼴 및** 색 섹션에 있습니다.
 
 ![도구 &gt; 옵션 대화 상자](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />도구 &gt; 옵션 대화 상자
 
 ## <a name="the-vscolor-service"></a><a name="BKMK_TheVSColorService"></a> VSColor 서비스
 
-Visual Studio는 VSColor 서비스 또는 셸 색 서비스 라고도 하는 환경 색 서비스를 제공 합니다. 이 서비스를 사용 하면 UI 요소의 색 값을 각 테마에 대 한 색을 포함 하는 이름-값 색 집합에 바인딩할 수 있습니다. 모든 UI 요소에 대해 VSColor 서비스를 사용 하 여 현재 사용자가 선택한 테마를 반영 하도록 색을 자동으로 변경 하 고, 환경 색 서비스에 바인딩된 UI가 이후 버전의 Visual Studio에서 새 테마와 통합 되도록 합니다.
+Visual Studio VSColor 서비스 또는 셸 색 서비스라고도 하는 환경 색 서비스를 제공합니다. 이 서비스를 사용하면 UI 요소의 색 값을 각 테마의 색이 포함된 이름-값 색 집합에 바인딩할 수 있습니다. VSColor 서비스는 모든 UI 요소에 사용해야 하므로 색이 현재 사용자가 선택한 테마를 반영하도록 자동으로 변경되고 환경 색 서비스에 바인딩된 UI가 이후 버전의 Visual Studio 새 테마와 통합되도록 해야 합니다.
 
 ### <a name="how-the-service-works"></a>서비스의 작동 방식
 
-환경 색 서비스는 UI 구성 요소에 대 한 .pkgdef에 정의 된 VSColors를 읽습니다. 이러한 VSColors는 XAML 태그 또는 코드에서 참조 되며 또는 매핑을 통해 로드 됩니다 `IVsUIShell5.GetThemedColor` `DynamicResource` .
+환경 색 서비스는 UI 구성 요소에 대한 .pkgdef에 정의된 VSColors를 읽습니다. 이러한 VSColors는 XAML 태그 또는 코드에서 참조되고 또는 `IVsUIShell5.GetThemedColor` 매핑을 통해 로드됩니다. `DynamicResource`
 
 ![환경 색 서비스 아키텍처](../../extensibility/ux-guidelines/media/0302-a_environmentcolorservicearchitecture.png "0302-a_EnvironmentColorServiceArchitecture")<br />환경 색 서비스 아키텍처
 
 ### <a name="accessing-the-service"></a>서비스 액세스
 
-사용 중인 색 토큰의 종류와 사용 하는 코드의 종류에 따라 VSColor 서비스에 액세스할 수 있는 여러 가지 방법이 있습니다.
+사용 중인 색 토큰의 종류 및 코드 종류에 따라 VSColor 서비스에 액세스하는 방법에는 여러 가지가 있습니다.
 
-#### <a name="predefined-environment-colors"></a>미리 정의 된 환경 색
+#### <a name="predefined-environment-colors"></a>미리 정의된 환경 색
 
 ##### <a name="from-native-code"></a>네이티브 코드에서
 
-셸은 색의에 대 한 액세스를 제공 하는 서비스를 제공 합니다 `COLORREF` . 서비스/인터페이스는 다음과 같습니다.
+셸은 색의 에 대한 액세스를 제공하는 서비스를 `COLORREF` 제공합니다. 서비스/인터페이스는 다음과 같습니다.
 
 ```
 IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 ```
 
-VSShell80 파일에서 열거형은 `__VSSYSCOLOREX` 셸 색 상수를 포함 합니다. 이를 사용 하려면 MSDN에 설명 된의 값 중 하나 `enum __VSSYSCOLOREX` 또는 Windows 시스템 API에서 받아들이는 일반 인덱스 번호 중 하나를 인덱스 값으로 전달 `GetSysColor` 합니다. 이렇게 하면 두 번째 매개 변수에 사용 해야 하는 색의 RGB 값이 반환 됩니다.
+VSShell80.idl 파일에서 열거형에는 `__VSSYSCOLOREX` 셸 색 상수가 있습니다. 이를 사용하려면 MSDN에 설명된 값 중 하나 `enum __VSSYSCOLOREX` 또는 Windows 시스템 API가 허용하는 일반 인덱스 번호 중 하나로 인덱스 값으로 `GetSysColor` 전달합니다. 이렇게 하면 두 번째 매개 변수에 사용해야 하는 색의 RGB 값이 다시 표시됩니다.
 
-펜 또는 브러시를 새 색으로 저장 하는 경우 `AdviseBroadcastMessages` (Visual Studio shell)에서 및 메시지를 수신 해야 합니다 `WM_SYSCOLORCHANGE` `WM_THEMECHANGED` .
+새 색으로 펜 또는 브러시를 저장하는 경우 `AdviseBroadcastMessages` Visual Studio 셸에서 해제하고 및 메시지를 수신 대기해야 `WM_SYSCOLORCHANGE` `WM_THEMECHANGED` 합니다.
 
-네이티브 코드에서 색 서비스에 액세스 하려면 다음과 같은 호출을 수행 합니다.
+네이티브 코드에서 색 서비스에 액세스하려면 다음과 유사한 호출을 수행합니다.
 
 ```
 pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 ```
 
 > [!NOTE]
-> 에서 반환 하는 값에는 `COLORREF` `GetVSSysColorEx()` 테마 색의 R, G, B 구성 요소만 포함 됩니다. 테마 항목에서 투명도를 사용 하는 경우를 반환 하기 전에 알파 채널 값을 삭제 합니다. 따라서 관심 있는 환경 색을 투명도 채널이 중요 한 위치에 사용 해야 하는 경우 `IVsUIShell5.GetThemedColor` `IVsUIShell2::GetVSSysColorEx` 이 항목의 뒷부분에 설명 된 대로를 대신 사용 해야 합니다.
+> `COLORREF`에서 반환되는 값에는 `GetVSSysColorEx()` 테마 색의 R,G,B 구성 요소만 포함됩니다. 테마 항목에서 투명도를 사용하는 경우 알파 채널 값은 반환하기 전에 삭제됩니다. 따라서 투명도 채널이 중요한 곳에서 관심 있는 환경 색을 사용해야 하는 경우 `IVsUIShell5.GetThemedColor` `IVsUIShell2::GetVSSysColorEx` 이 항목의 후반부에 설명된 대로 대신 를 사용해야 합니다.
 
 ##### <a name="from-managed-code"></a>관리 코드에서
 
-네이티브 코드를 통해 VSColor 서비스에 액세스 하는 것은 매우 간단 합니다. 그러나 관리 코드를 사용 하 여 작업 하는 경우에는 서비스를 사용 하는 방법을 결정 하기가 어려울 수 있습니다. 이 점을 염두에 두면 다음 과정을 보여 주는 c # 코드 조각이 있습니다.
+네이티브 코드를 통해 VSColor 서비스에 액세스하는 것은 매우 간단합니다. 그러나 관리 코드를 통해 작업하는 경우 서비스를 사용하는 방법을 결정하는 것이 어려울 수 있습니다. 이 점을 염두에 두고 이 프로세스를 보여 주는 C# 코드 조각은 다음과 같습니다.
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -149,7 +149,7 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
 }
 ```
 
-Visual Basic에서 작업 하는 경우 다음을 사용 합니다.
+Visual Basic 작업하는 경우 다음을 사용합니다.
 
 ```vb
 Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
@@ -157,7 +157,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 
 ##### <a name="from-wpf-ui"></a>WPF UI에서
 
-응용 프로그램의로 내보낸 값을 통해 Visual Studio 색에 바인딩할 수 있습니다 `ResourceDictionary` . 다음은 color 테이블의 리소스를 사용 하는 방법과 XAML의 환경 글꼴 데이터에 바인딩하는 예입니다.
+애플리케이션의 로 내보낸 값을 통해 Visual Studio 색에 바인딩할 수 `ResourceDictionary` 있습니다. 다음은 색 테이블의 리소스를 사용하고 XAML의 환경 글꼴 데이터에 바인딩하는 예제입니다.
 
 ```xml
 <Style TargetType="{x:Type Button}">
@@ -170,11 +170,11 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 </Style>
 ```
 
-#### <a name="helper-classes-and-methods-for-managed-code"></a>관리 코드에 대 한 도우미 클래스 및 메서드
+#### <a name="helper-classes-and-methods-for-managed-code"></a>관리 코드에 대한 도우미 클래스 및 메서드
 
-관리 코드의 경우 셸의 관리 되는 패키지 프레임 워크 라이브러리 ()에는 `Microsoft.VisualStudio.Shell.12.0.dll` 테마가 적용 된 색의 사용을 용이 하 게 하는 몇 가지 도우미 클래스가 포함 되어 있습니다.
+관리 코드의 경우 셸의 Managed Package Framework 라이브러리( `Microsoft.VisualStudio.Shell.12.0.dll` )에는 테마 색을 쉽게 사용할 수 있도록 하는 몇 가지 도우미 클래스가 포함되어 있습니다.
 
-MPF의 클래스에 있는 도우미 메서드에는 `Microsoft.VisualStudio.Shell.VsColors` 및가 포함 됩니다 `GetThemedGDIColor()` `GetThemedWPFColor()` . 이러한 도우미 메서드는 `System.Drawing.Color` `System.Windows.Media.Color` WINFORMS 또는 WPF UI에서 사용할 테마 항목의 색 값을 또는로 반환 합니다.
+`Microsoft.VisualStudio.Shell.VsColors`MPF의 클래스에 있는 도우미 메서드에는 `GetThemedGDIColor()` 및 가 `GetThemedWPFColor()` 포함됩니다. 이러한 도우미 메서드는 `System.Drawing.Color` `System.Windows.Media.Color` WINFORMS 또는 WPF UI에서 사용할 테마 항목의 색 값을 또는로 반환 합니다.
 
 ```csharp
 IVsUIShell5 shell5;
@@ -309,7 +309,7 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 
 대부분의 일반적인 UI 요소에는 고대비 색이 이미 정의 되어 있습니다. 사용자 고유의 시스템 색 이름을 선택할 때 이러한 사용 패턴을 참조 하 여 UI 요소가 유사한 구성 요소와 일치 하도록 할 수 있습니다.
 
-| 시스템 색 | 사용량 |
+| 시스템 색 | 사용 |
 | --- | --- |
 | ActiveCaption | -활성 IDE 및 rafted 창의 단추 문자 모양 가리키기 및 누르기<br />-IDE 및 rafted 창의 제목 표시줄 배경<br />-기본 상태 표시줄 배경 |
 | ActiveCaptionText | -제목 표시줄 전경 (텍스트 및 문자 모양)의 활성 IDE 및 rafted 창<br />-마우스로 가리키면 활성 창 단추의 배경색과 테두리 |
@@ -324,115 +324,115 @@ Windows에서는 텍스트, 배경 및 이미지의 색 대비를 높이는 여�
 | HighlightText | -모든 가리키기 및 누름 foregrounds (텍스트 및 문자 모양)<br />-포커스가 있는 도구 창 및 문서 탭 창 컨트롤 전경<br />-포커스가 있는 도구 창 제목 표시줄 테두리<br />-포커스가 있는 provisional 탭 전경<br />-문서 웰 오버플로 단추 테두리 가리키기 및 누르기<br />-선택한 아이콘 테두리|
 | HotTrack | -누름 스크롤 막대 thumb 배경 및 테두리 누름<br />-누를 때 스크롤 막대 화살표 문자 모양 |
 | InactiveCaption | -비활성 IDE 및 rafted 창 단추 문자 모양 가리키기<br />-IDE 및 rafted 창의 제목 표시줄 배경<br />-사용 하지 않도록 설정 된 검색 컨트롤 배경 |
-| InactiveCaptionText | -비활성 IDE 및 rafted windows 제목 표시줄 전경 (텍스트 및 문자 모양)<br />-비활성 창 단추 배경 및 테두리 가리키기<br />-포커스가 없는 도구 창 단추 배경 및 테두리<br />-사용 하지 않도록 설정 된 검색 컨트롤 전경 |
-| 메뉴 | -드롭다운 메뉴 배경<br />-검사 및 사용 안 함 확인 표시 배경 |
-| 확장 | -드롭다운 메뉴 테두리<br />-확인 표시<br />-메뉴 문자 모양<br />-드롭다운 메뉴 텍스트<br />-선택한 아이콘 테두리 |
-| 스크롤 막대 | -스크롤 막대 및 스크롤 막대 화살표 배경, 모든 상태 |
-| 시간 범위 | -자동 숨기기 탭 배경<br />-메뉴 모음 및 명령 선반 배경<br />-Open 및 provisional 탭 모두에 대해 포커스가 없는 또는 선택 하지 않은 문서 창 탭 배경 및 문서 테두리<br />-포커스가 없는 도구 창 제목 표시줄 배경<br />-도구 창 탭 배경, 선택 및 선택 취소 |
-| WindowFrame | -IDE 테두리 |
-| WindowText | -탭 전경 자동 숨기기<br />-선택한 도구 창 탭 전경<br />-포커스가 없는 document window tab and 포커스가 없는 또는 선택 하지 않은 provisional 탭 전경<br />-트리 뷰 기본 전경 및 선택 되지 않은 문자 모양 위로 가리키기<br />-도구 창 선택한 탭 테두리<br />-스크롤 막대 thumb 배경, 테두리 및 문자 모양 |
+| InactiveCaptionText | -비활성 IDE 및 rafted windows 제목 표시줄 전경 (텍스트 및 문자 모양)<br />-비활성 창 단추 배경 및 테두리 가리키기<br />-포커스가 없는 도구 창 단추 배경 및 테두리<br />- 검색 컨트롤 포그라운드 사용 안 함 |
+| 메뉴 | - 드롭다운 메뉴 배경<br />- 확인 표시 배경 확인 및 사용 안 함 |
+| MenuText | - 드롭다운 메뉴 테두리<br />- 확인 표시<br />- 메뉴 문자<br />- 드롭다운 메뉴 텍스트<br />- 선택한 아이콘 테두리 |
+| 스크롤 막대 | - 스크롤 막대 및 스크롤 막대 화살표 배경, 모든 상태 |
+| 시간 범위 | - 탭 배경 자동 숨기기<br />- 메뉴 모음 및 명령 보관 배경<br />- 열려 있는 탭과 빈 탭 모두에 대해 할당되지 않거나 선택되지 않은 문서 창 탭 배경 및 문서 테두리<br />- 사용되지 않는 도구 창 제목 표시줄 배경<br />- 도구 창 탭 배경(선택 및 선택 취소) |
+| WindowFrame | - IDE 테두리 |
+| WindowText | - 탭 전경 자동 숨기기<br />- 선택한 도구 창 탭 전경<br />- 할당되지 않은 문서 창 탭 및 사용되지 않거나 선택되지 않은 비표시 탭 전경<br />- 트리 뷰 기본 전경 및 선택되지 않은 문자로 가리키기<br />- 도구 창이 선택한 탭 테두리<br />- 스크롤 막대 엄지 배경, 테두리 및 문자 |
 
-## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a> 최종 사용자에 대 한 색 노출
+## <a name="exposing-colors-for-end-users"></a><a name="BKMK_ExposingColorsForEndUsers"></a> 최종 사용자의 색 노출
 
 ### <a name="overview"></a>개요
 
-코드 편집기 또는 디자인 화면을 만들 때와 같이 최종 사용자가 UI를 사용자 지정할 수 있도록 하려는 경우가 있습니다. 이 작업을 수행 하는 가장 일반적인 방법은 **도구 &gt; 옵션** 대화 상자를 사용 하는 것입니다. 특수 컨트롤이 필요한 매우 특수 한 UI가 없는 경우 사용자 지정을 제공 하는 가장 쉬운 방법은 대화 상자의 **환경** 섹션 내 **글꼴 및 색** 페이지를 사용 하는 것입니다. 사용자는 사용자 지정을 위해 노출 하는 각 요소에 대해 전경색, 배경색 또는 둘 다를 변경 하도록 선택할 수 있습니다.
+코드 편집기 또는 디자인 표면을 만들 때와 같이 최종 사용자가 UI를 사용자 지정할 수 있도록 허용하는 경우가 있습니다. 이 작업을 수행하는 가장 일반적인 방법은 **도구 &gt; 옵션** 대화 상자를 사용하는 것입니다. 특수한 컨트롤이 필요한 매우 특수한 UI가 없는 경우 사용자 지정을 제공하는 가장 쉬운 방법은 대화 상자의 **환경** 섹션에 있는 **글꼴 및 색** 페이지를 통하는 것입니다. 사용자 지정을 위해 노출하는 각 요소에 대해 사용자는 전경색, 배경색 또는 둘 다 변경하도록 선택할 수 있습니다.
 
-### <a name="building-a-vspackage-for-your-customizable-colors"></a>사용자 지정 가능한 색에 대 한 VSPackage 빌드
+### <a name="building-a-vspackage-for-your-customizable-colors"></a>사용자 지정 가능한 색에 대한 VSPackage 빌드
 
-VSPackage는 글꼴 및 색 속성 페이지에서 사용자 지정 범주와 표시 항목을 통해 글꼴 및 색을 제어할 수 있습니다. 이 메커니즘을 사용 하는 경우 Vspackage는 [Ivsfontandcolordefaultsprovider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 인터페이스 및 관련 된 인터페이스를 구현 해야 합니다.
+VSPackage는 사용자 지정 범주를 통해 글꼴 및 색을 제어하고 글꼴 및 색 속성 페이지에 항목을 표시할 수 있습니다. 이 메커니즘을 사용하는 경우 VSPackages는 [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) 인터페이스 및 관련 인터페이스를 구현해야 합니다.
 
-원칙적으로이 메커니즘을 사용 하 여 기존의 모든 표시 항목과 해당 항목을 포함 하는 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 표시 항목을 수정 하는 데 사용 하면 안 됩니다. 텍스트 편집기 범주에 대 한 자세한 내용은 [글꼴 및 색 개요](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015)를 참조 하세요.
+원칙에 따라 이 메커니즘을 사용하여 모든 기존 표시 항목과 해당 항목이 포함된 범주를 수정할 수 있습니다. 그러나 텍스트 편집기 범주 또는 해당 표시 항목을 수정하는 데 사용하면 안 됩니다. 텍스트 편집기 범주에 대한 자세한 내용은 [글꼴 및 색 개요를 참조하세요.](/previous-versions/visualstudio/visual-studio-2015/extensibility/font-and-color-overview?preserve-view=true&view=vs-2015)
 
-사용자 지정 범주 또는 표시 항목을 구현 하려면 VSPackage가 다음을 수행 해야 합니다.
+사용자 지정 범주를 구현하거나 항목을 표시하려면 VSPackage는 다음을 수행해야 합니다.
 
-- **레지스트리에서 범주를 만들거나 식별 합니다.** **글꼴 및 색** 속성 페이지의 IDE 구현에서는이 정보를 사용 하 여 지정 된 범주를 지 원하는 서비스를 올바르게 쿼리 합니다.
+- **레지스트리에서 범주를 만들거나 식별합니다.** IDE의 **글꼴 및 색** 속성 페이지 구현에서는 이 정보를 사용하여 지정된 범주를 지원하는 서비스를 올바르게 쿼리합니다.
 
-- **레지스트리에서 그룹을 만들거나 식별 합니다 (선택 사항).** 두 개 이상의 범주의 합집합을 나타내는 그룹을 정의 하는 것이 유용할 수 있습니다. 그룹이 정의 된 경우 IDE는 자동으로 하위 범주를 병합 하 고 그룹 내에 표시 항목을 배포 합니다.
+- **레지스트리에서 그룹을 만들거나 식별합니다(선택 사항).** 둘 이상의 범주의 합집합을 나타내는 그룹을 정의하는 것이 유용할 수 있습니다. 그룹이 정의된 경우 IDE는 자동으로 하위 범주를 병합하고 그룹 내에 표시 항목을 배포합니다.
 
-- **IDE 지원을 구현 합니다.**
+- **IDE 지원을 구현합니다.**
 
-- **글꼴 및 색 변경을 처리 합니다.**
+- **글꼴 및 색 변경을 처리합니다.**
 
-#### <a name="to-create-or-identify-categories"></a>범주를 만들거나 식별 하려면
+#### <a name="to-create-or-identify-categories"></a>범주를 만들거나 식별하려면
 
-에서 특수 한 유형의 범주 레지스트리 항목을 생성 `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` 합니다 `<Category>` . 여기서는 범주의 지역화 되지 않은 이름입니다.
+에서 특수한 유형의 범주 레지스트리 항목을 `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<Category\>]` 생성합니다. 여기서 `<Category>` 는 범주의 지역화가 아닌 이름입니다.
 
-레지스트리를 다음 두 값으로 채웁니다.
+레지스트리를 다음 두 값으로 채웁합니다.
 
-| Name | 형식 | 데이터 | Description |
+| 속성 | Type | 데이터 | Description |
 | --- | --- | --- | --- |
-| 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
-| 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
+| 범주 | REG_SZ | GUID | 범주를 식별하기 위해 만든 GUID |
+| 패키지 | REG_SZ | GUID | 범주를 지원하는 VSPackage 서비스의 GUID |
 
- 레지스트리에 지정 된 서비스는 해당 범주에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 구현을 제공 해야 합니다.
+ 레지스트리에 지정된 서비스는 해당 범주에 대한 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 구현을 제공해야 합니다.
 
-#### <a name="to-create-or-identify-groups"></a>그룹을 만들거나 식별 하려면
+#### <a name="to-create-or-identify-groups"></a>그룹을 만들거나 식별하려면
 
-에서 특수 한 유형의 범주 레지스트리 항목을 생성 `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` `<group>` 합니다. 여기서는 그룹의 지역화 되지 않은 이름입니다.
+에서 특수한 유형의 범주 레지스트리 항목을 `[HKLM\SOFTWARE\Microsoft \Visual Studio\\<Visual Studio version\>\FontAndColors\\<group\>]` 생성합니다. 여기서 `<group>` 은 그룹의 지역화가 아닌 이름입니다.
 
-레지스트리를 다음 두 값으로 채웁니다.
+레지스트리를 다음 두 값으로 채웁합니다.
 
-| Name | 형식 | 데이터 | Description |
+| 속성 | Type | 데이터 | Description |
 |--- | --- | --- | --- |
-| 범주 | REG_SZ | GUID | 범주를 식별 하기 위해 만든 GUID입니다. |
-| 패키지 | REG_SZ | GUID | 범주를 지 원하는 VSPackage 서비스의 GUID입니다. |
+| 범주 | REG_SZ | GUID | 범주를 식별하기 위해 만든 GUID |
+| 패키지 | REG_SZ | GUID | 범주를 지원하는 VSPackage 서비스의 GUID |
 
-레지스트리에 지정 된 서비스는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 해당 그룹에 대 한 구현을 제공 해야 합니다.
+레지스트리에 지정된 서비스는 해당 그룹에 대한 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 구현을 제공해야 합니다.
 
-![IVsFontAndColorGroup의 구현](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />`IVsFontAndColorGroup`의 구현입니다.
+![IVsFontAndColorGroup 구현](../../extensibility/ux-guidelines/media/0304-a_fontandcolorgroup.png "0304-a_FontAndColorGroup")<br />`IVsFontAndColorGroup`의 구현입니다.
 
-### <a name="to-implement-ide-support"></a>IDE 지원을 구현 하려면
+### <a name="to-implement-ide-support"></a>IDE 지원을 구현하려면
 
-지정 [](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject)된 각 범주 또는 그룹 GUID에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인터페이스 또는 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> IDE에 대 한 인터페이스를 반환 하는 GetObject를 구현 합니다.
+제공된 각 범주 또는 그룹 GUID에 대해 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인터페이스 또는 IDE에 대한 인터페이스를 반환하는 [GetObject](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.getobject)를 구현합니다. <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>
 
-VSPackage은 지원 되는 모든 범주에 대해 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인터페이스의 별도 인스턴스를 구현 합니다.
+VSPackage는 지원하는 모든 범주에 대해 [별도의 IVsFontAndColorDefaults 인터페이스 인스턴스를 구현합니다.](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults)
 
-[Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 를 통해 구현 된 메서드는 IDE에를 제공 해야 합니다.
+[IVsFontAndColorDefaults를](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 통해 구현된 메서드는 IDE에 다음을 제공해야 합니다.
 
 - 범주의 표시 항목 목록
 
 - 표시 항목의 지역화할 수 있는 이름
 
-- 범주의 각 구성원에 대 한 정보를 표시 합니다.
+- 범주의 각 멤버에 대한 정보 표시
 
 > [!NOTE]
-> 모든 범주에는 하나 이상의 표시 항목이 포함 되어야 합니다.
+> 모든 범주에는 하나 이상의 표시 항목이 포함되어야 합니다.
 
-IDE는 인터페이스를 사용 하 여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 여러 범주의 합집합을 정의 합니다.
+IDE는 인터페이스를 사용하여 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 여러 범주의 합집합을 정의합니다.
 
-구현에서는 다음과 같이 IDE를 제공 합니다.
+해당 구현은 IDE에 다음을 제공합니다.
 
-- 지정 된 그룹을 구성 하는 범주 목록
+- 지정된 그룹을 구성하는 범주 목록
 
-- 그룹 내의 각 범주를 지 원하는 [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 의 인스턴스에 대 한 액세스
+- 그룹 내의 각 범주를 지원하는 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 인스턴스에 대한 액세스
 
-- 지역화 가능한 그룹 이름
+- 지역화할 수 있는 그룹 이름
 
 #### <a name="updating-the-ide"></a>IDE 업데이트
 
-IDE는 글꼴 및 색 설정에 대 한 정보를 캐시 합니다. 따라서 IDE 글꼴 및 색 구성을 수정한 후 캐시가 최신 상태 인지 확인 하는 것이 가장 좋습니다.
+IDE는 글꼴 및 색 설정에 대한 정보를 캐시합니다. 따라서 IDE 글꼴 및 색 구성을 수정한 후에는 캐시가 최신 상태로 유지되도록 하는 것이 가장 좋습니다.
 
-캐시 업데이트는 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) 인터페이스를 통해 수행 되며, 선택 된 항목에 대해 전역적으로 또는만 수행할 수 있습니다.
+캐시 업데이트는 [IvsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) 인터페이스를 통해 수행되며 전역적으로 또는 선택한 항목에서만 수행할 수 있습니다.
 
 ### <a name="handling-font-and-color-changes"></a>글꼴 및 색 변경 처리
 
-VSPackage에 표시 되는 텍스트의 색 지정을 제대로 지원 하려면 VSPackage를 지 원하는 색 지정 서비스에서 글꼴 및 색 속성 페이지를 통해 사용자가 시작한 변경 내용에 응답 해야 합니다.
+VSPackage가 표시하는 텍스트의 색 지정을 제대로 지원하려면 VSPackage를 지원하는 색 지정 서비스가 글꼴 및 색 속성 페이지를 통해 사용자가 시작한 변경 내용에 응답해야 합니다.
 
-이렇게 하려면 VSPackage에서 다음을 수행 해야 합니다.
+이렇게 하려면 VSPackage는 다음을 수행해야 합니다.
 
-- [Ivsfontandcolorevents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) 인터페이스를 구현 하 여 **IDE에서 생성 된 이벤트를 처리** 합니다. IDE는 글꼴 및 색 페이지의 사용자 수정에 따라 적절 한 메서드를 호출 합니다. 예를 들어 새 글꼴이 선택 된 경우 [On글꼴 changed](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) 메서드를 호출 합니다.
+- [는 IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) 인터페이스를 구현하여 **IDE에서 생성된 이벤트를 처리합니다.** IDE는 글꼴 및 색 페이지의 사용자 수정에 따라 적절한 메서드를 호출합니다. 예를 들어 새 글꼴이 선택된 경우 [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) 메서드를 호출합니다.
 
   **OR**
 
-- **변경 내용에 대 한 IDE를 폴링합니다**. 시스템 구현 [Ivsfontandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스를 통해이 작업을 수행할 수 있습니다. 주로 지 속성 지원을 위해 [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드는 표시 항목의 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대 한 자세한 내용은 MSDN 문서 [저장 된 글꼴 및 색 설정 액세스](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015)를 참조 하세요.
+- **변경 내용에 대해 IDE를 폴링합니다.** 이 작업은 시스템 구현 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스를 통해 수행할 수 있습니다. [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) 메서드는 주로 지속성을 지원하지만 표시 항목에 대한 글꼴 및 색 정보를 가져올 수 있습니다. 글꼴 및 색 설정에 대한 자세한 내용은 MSDN 문서 저장된 글꼴 및 색 설정 액세스 를 [참조하세요.](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-stored-font-and-color-settings?preserve-view=true&view=vs-2015)
 
 > [!NOTE]
-> 폴링 결과가 올바른지 확인 하려면 [Ivsfontandcolorcachemanager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) 인터페이스를 사용 하 여 [Ivsivandcolorstorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스의 검색 메서드를 호출 하기 전에 캐시 플러시 및 업데이트가 필요한 지 확인 합니다.
+> 폴링 결과가 올바른지 확인하려면 [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) 인터페이스를 사용하여 [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) 인터페이스의 검색 메서드를 호출하기 전에 캐시 플러시 및 업데이트가 필요한지 확인합니다.
 
-#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>인터페이스를 구현 하지 않고 사용자 지정 글꼴 및 색 범주 등록
+#### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>인터페이스를 구현하지 않고 사용자 지정 글꼴 및 색 범주 등록
 
-다음 코드 예제에서는 인터페이스를 구현 하지 않고 사용자 지정 글꼴 및 색 범주를 등록 하는 방법을 보여 줍니다.
+다음 코드 예제에서는 인터페이스를 구현하지 않고 사용자 지정 글꼴 및 색 범주를 등록하는 방법을 보여줍니다.
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp Tool Window]
@@ -443,15 +443,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
     "NameID"=dword:00000064
 ```
 
-이 코드 예제는 다음과 같습니다.
+이 코드 예제의 경우:
 
-- `"NameID"` = 패키지의 지역화 된 범주 이름에 대 한 리소스 ID
+- `"NameID"` = 패키지에 있는 지역화된 범주 이름의 리소스 ID
 - `"ToolWindowPackage"` = 패키지 GUID
-- `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"` 는 단지 예제 이며 실제 값은 구현자에서 제공 하는 새 GUID 일 수 있습니다.
+- `"Category"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"` 는 예제일 뿐이며 실제 값은 구현자가 제공하는 새 GUID일 수 있습니다.
 
-### <a name="set-the-font-and-color-property-category-guid"></a>글꼴 및 색 속성 범주 GUID를 설정 합니다.
+### <a name="set-the-font-and-color-property-category-guid"></a>글꼴 및 색 속성 범주 GUID 설정
 
-아래 코드 예제에서는 범주 Guid를 설정 하는 방법을 보여 줍니다.
+아래 코드 예제에서는 범주GUID를 설정하는 것을 보여줍니다.
 
 ```csharp
 // m_pView is your IVsTextView

@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Visual Studio SDK의 소스 제어 VSPackage 관련 인터페이스에 대해 알아봅니다. 패키지는 일부 인터페이스를 구현 하 고 소스 제어에 다른 인터페이스를 사용 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f35a11c801a8535c2b903909e2514b9879d3347c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6385307c91541204d58228b489160888f79dec85
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095032"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903335"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>관련 서비스 및 인터페이스(소스 제어 VSPackage)
 
@@ -41,7 +41,7 @@ ms.locfileid: "105095032"
 
 - 선택 사항: 엔터티는이 인터페이스를 구현 하 여 보다 다양 한 기능 집합을 제공할 수 있습니다.
 
-| 인터페이스 | 용도 | 구현 방법 | 구현한? |
+| 인터페이스 | 목적 | 구현 방법 | 구현한? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | 편집기는 파일을 수정 하거나 저장 하기 전에이 인터페이스를 호출 합니다. 소스 제어 VSPackage는 체크 아웃에 실패 하는 경우 파일을 체크 아웃 하거나 작업을 거부할 수 있습니다. | 소스 제어 VSPackage | 권장 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | 이 인터페이스는 소스 제어를 사용 하 여 프로젝트를 등록 및 등록 취소 하 고 기본 소스 제어 문자 모양에 대 한 지원을 제공 하는 등 프로젝트의 기본 소스 제어 기능을 제공 합니다 | 소스 제어 VSPackage | 필수 |
