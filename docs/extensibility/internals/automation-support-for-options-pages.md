@@ -3,7 +3,7 @@ title: 옵션 페이지에 대 한 자동화 지원 | Microsoft Docs
 description: Visual Studio 자동화 모델에서 Vspackage의 사용자 지정 도구 옵션 페이지를 사용할 수 있도록 설정 하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b587af698cf7f044c02baab1a8207be1457d6cfd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5a4f6b33b7a5e17c610831db5d4387065915ea00
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086224"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901658"
 ---
 # <a name="automation-support-for-options-pages"></a>옵션 페이지에 대 한 자동화 지원
 Vspackage는의 **도구** 메뉴 (**도구 옵션** 페이지)에 사용자 지정 **옵션** 대화 상자를 제공 하 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 고 자동화 모델에 사용할 수 있도록 설정할 수 있습니다.

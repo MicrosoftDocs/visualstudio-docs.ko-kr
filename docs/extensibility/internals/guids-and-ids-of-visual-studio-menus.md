@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 메뉴의 Guid 및 Id | Microsoft Docs
-description: Visual studio IDE (통합 개발 환경)에 포함 된 Visual Studio 메뉴 모음에서 메뉴 및 그룹에 대 한 GUID 및 ID 값 목록을 봅니다.
+title: Visual Studio 메뉴의GUID 및 | Microsoft Docs
+description: Visual Studio IDE(통합 개발 환경)에 포함된 Visual Studio 메뉴 모음에서 메뉴 및 그룹의 GUID 및 ID 값 목록을 봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - visual studio menus
 - visual studio groups
@@ -17,22 +17,22 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9f5066c5ae5c9fa57517406b8eca388747979c4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bceee5fce8a77ad5169020bd3d21896bdbc71443
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082090"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898073"
 ---
-# <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 메뉴의 Guid 및 Id
-이 문서에서는 Visual Studio 메뉴 모음에서 메뉴 및 그룹의 GUID 및 ID 값을 열거 합니다. 이러한 값은 Visual Studio SDK의 일부로 설치 되는 *vsct* 파일에 정의 되어 있습니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)을 참조 하세요.
+# <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 메뉴의GUID 및 ID
+이 문서에서는 Visual Studio 메뉴 모음에서 메뉴 및 그룹의 GUID 및 ID 값을 열거합니다. 이러한 값은 Visual Studio SDK의 일부로 설치된 *.vsct* 파일에 정의됩니다. 자세한 내용은 [IDE 정의 명령, 메뉴 및 그룹을 참조하세요.](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 
- *. Vsct* 파일에 정의 된 IDE (통합 개발 환경) 개체를 사용 하는 방법에 대 한 자세한 내용은 [메뉴 및 명령 확장](../../extensibility/extending-menus-and-commands.md)을 참조 하세요.
+ *.vsct* 파일에 정의된 IDE(통합 개발 환경) 개체를 작업하는 방법에 대한 자세한 내용은 [메뉴 및 명령 확장을 참조하세요.](../../extensibility/extending-menus-and-commands.md)
 
- Visual Studio 메뉴 모음의 메뉴와 그룹은 GUID를 사용 합니다 `guidSHLMainMenu` . 메뉴 모음 자체의 ID는 `IDM_VS_TOOL_MAINMENU` 입니다.
+ Visual Studio 메뉴 모음의 메뉴 및 그룹은 GUID를 `guidSHLMainMenu` 사용합니다. 메뉴 모음 자체의 ID는 `IDM_VS_TOOL_MAINMENU` 입니다.
 
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음의 그룹
- 메뉴 모음에 메뉴를 추가 하려면 이러한 그룹 중 하나를 부모로 설정 합니다.
+ 메뉴 모음에 메뉴를 추가하려면 이러한 그룹 중 하나를 부모로 설정합니다.
 
 |그룹|ID|
 |-----------|--------|
@@ -46,7 +46,7 @@ ms.locfileid: "105082090"
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|
 
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Visual Studio 메뉴 모음의 메뉴
- 기존 Visual Studio 메뉴에 그룹을 추가 하려면 다음 메뉴 중 하나를 부모로 설정 합니다. 하위 메뉴는이 목록에 포함 되지 않습니다.
+ 기존 Visual Studio 메뉴에 그룹을 추가하려면 다음 메뉴 중 하나를 부모로 설정합니다. 하위 항목은 이 목록에 포함되지 않습니다.
 
 |메뉴|ID|
 |----------|--------|
@@ -56,7 +56,7 @@ ms.locfileid: "105082090"
 |리팩터링|IDM_VS_MENU_REFACTORING|
 |Project|IDM_VS_MENU_PROJECT|
 |빌드|IDM_VS_MENU_BUILD|
-|서식|IDM_VS_MENU_FORMAT|
+|형식|IDM_VS_MENU_FORMAT|
 |도구|IDM_VS_MENU_TOOLS|
 |확장|IDM_VS_MENU_EXTENSIONS|
 |시간 범위|IDM_VS_MENU_WINDOW|
@@ -65,21 +65,21 @@ ms.locfileid: "105082090"
 |도움말|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Visual Studio 메뉴의 그룹
- 다음 목록에서는 Visual Studio 메뉴 모음의 메뉴에서 직접 상속 되는 그룹을 보여 줍니다. Visual Studio 메뉴에 명령을 추가 하는 가장 빠른 방법은 이러한 그룹 중 하나를 부모로 설정 하는 것입니다. 하위 메뉴에서 상속 된 그룹은이 섹션에 표시 되지 않습니다.
+ 다음 목록에서는 Visual Studio 메뉴 모음의 메뉴에서 직접 하위 그룹을 보여줍니다. Visual Studio 메뉴에 명령을 추가하는 가장 빠른 방법은 이러한 그룹 중 하나를 부모로 설정하는 것입니다. 하위 항목에서 하위 그룹 이 섹션에 표시 되지 않습니다.
 
 ### <a name="file-menu-groups"></a>파일 메뉴 그룹
 
 |그룹|ID|
 |-----------|--------|
-|새로 만들기/열기|IDG_VS_FILE_FILE|
+|새로 열기/열기|IDG_VS_FILE_FILE|
 |추가|IDG_VS_FILE_ADD|
-|해결 방법|IDG_VS_FILE_SOLUTION|
+|솔루션|IDG_VS_FILE_SOLUTION|
 |기타|IDG_VS_FILE_MISC|
 |저장|IDG_VS_FILE_SAVE|
 |이름 바꾸기|IDG_VS_FILE_RENAME|
 |브라우저|IDG_VS_FILE_BROWSER|
 |인쇄|IDG_VS_FILE_PRINT|
-|가장 최근에 사용 됨|IDG_VS_FILE_MRU|
+|가장 최근에 사용|IDG_VS_FILE_MRU|
 |이동|IDG_VS_FILE_MOVE|
 |종료|IDG_VS_FILE_EXIT|
 
@@ -90,7 +90,7 @@ ms.locfileid: "105082090"
 |실행 취소/다시 실행|IDG_VS_EDIT_UNDOREDO|
 |잘라내기/복사/붙여넣기|IDG_VS_EDIT_CUTCOPY|
 |선택|IDG_VS_EDIT_SELECT|
-|GoTo|IDG_VS_EDIT_GOTO|
+|고토|IDG_VS_EDIT_GOTO|
 |찾기|IDG_VS_EDIT_FIND|
 |개체|IDG_VS_EDIT_OBJECTS|
 |OLE 동사|IDG_VS_EDIT_OLEVERBS|
@@ -140,8 +140,8 @@ ms.locfileid: "105082090"
 
 |그룹|ID|
 |-----------|--------|
-|해결 방법|IDG_VS_BUILD_SOLUTION|
-|선택|IDG_VS_BUILD_SELECTION|
+|솔루션|IDG_VS_BUILD_SOLUTION|
+|선택 영역|IDG_VS_BUILD_SELECTION|
 |프로필 기반 최적화|IDG_VS_PGO_SELECTION|
 |기타|IDG_VS_BUILD_MISC|
 |취소|IDG_VS_BUILD_CANCEL|

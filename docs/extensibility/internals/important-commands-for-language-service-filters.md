@@ -1,9 +1,9 @@
 ---
-title: 언어 서비스 필터에 대 한 중요 한 명령 | Microsoft Docs
-description: Visual Studio에서 완전 한 기능을 갖춘 언어 서비스 필터를 만들 때 지원 해야 하는 중요 한 명령에 대해 알아봅니다.
+title: 언어 서비스 필터에 대한 중요 명령 | Microsoft Docs
+description: Visual Studio 완전한 기능을 갖춘 언어 서비스 필터를 만들 때 지원해야 하는 중요한 명령에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - language services, filters
 - language services, commands to support
@@ -13,32 +13,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d27f1c3057266d1b167999f3178a3e554a78ddb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8dd5f65248411a7ea6b892d5b4c800718456339f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069558"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899058"
 ---
 # <a name="important-commands-for-language-service-filters"></a>언어 서비스 필터에 대한 중요 명령
-완전 한 기능을 갖춘 언어 서비스 필터를 만들려는 경우 다음 명령을 처리 하는 것이 좋습니다. 명령 식별자의 전체 목록은 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 관리 코드에 대 한 열거와 비관리 코드에 대 한 Stdidcmd 헤더 파일에 정의 되어 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 있습니다. Stdidcmd 파일은 *Visual STUDIO SDK 설치 경로*\VisualStudioIntegration\Common\Inc.에서 찾을 수 있습니다.
+모든 기능을 갖춘 언어 서비스 필터를 만들려면 다음 명령을 처리하는 것이 좋습니다. 명령 식별자의 전체 목록은 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 관리 코드에 대한 열거형 및 비관리 코드에 대한 Stdidcmd.h 헤더 파일에 정의되어 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 있습니다. Visual Studio *SDK 설치 경로*\VisualStudioIntegration\Common\Inc에서 Stdidcmd.h 파일을 찾을 수 있습니다.
 
 ## <a name="commands-to-handle"></a>처리할 명령
 
 > [!NOTE]
-> 다음 표의 모든 명령을 필터링 하는 것은 필수가 아닙니다.
+> 다음 표의 모든 명령에 대해 필터링해야 하는 것은 아닙니다.
 
-|명령|Description|
+|명령|설명|
 |-------------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 마우스 오른쪽 단추를 클릭할 때 보냅니다. 이 명령은 바로 가기 메뉴를 제공할 시간 임을 나타냅니다. 이 명령을 처리 하지 않으면 텍스트 편집기는 언어별 명령이 없는 기본 바로 가기 메뉴를 제공 합니다. 이 메뉴에 사용자 고유의 명령을 포함 하려면 명령을 처리 하 고 바로 가기 메뉴를 직접 표시 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 사용자가 CTRL + J를 입력 하면 전송 됩니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>에서 메서드를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 하 여 문 완성 상자를 표시 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 문자를 입력 하면 전송 됩니다. 이 명령을 모니터링 하 여 트리거 문자를 입력 하는 시기를 확인 하 고 구문 색 지정, 중괄호 일치 및 오류 표식과 같은 문 완성, 메서드 팁 및 텍스트 마커를 제공 합니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A>문 완성을 위해의 메서드를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 하 고 메서드 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> 팁에 대해 메서드를 호출 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> . 텍스트 표식을 지원 하려면이 명령을 모니터링 하 여 입력 하는 문자에서 표식을 업데이트 해야 하는지 여부를 확인 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 Enter 키를 입력할 때 전송 됩니다. 에서 메서드를 호출 하 여 메서드 팁 창을 해제할 시기를 결정 하려면이 명령을 모니터링 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 합니다. 기본적으로 텍스트 뷰는이 명령을 처리 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 백스페이스 키를 입력 하면 전송 됩니다. 모니터를 통해에서 메서드를 호출 하 여 메서드 팁 창을 해제할 시기를 결정할 수 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 있습니다. 기본적으로 텍스트 뷰는이 명령을 처리 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|메뉴 또는 바로 가기 키에서 전송 됩니다. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A>에서 메서드를 호출 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 하 여 팁 창을 매개 변수 정보로 업데이트 합니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 변수를 마우스로 가리키거나 커서를 변수에 배치 하 고 **편집** 메뉴의 **IntelliSense** 에서 **요약 정보** 를 선택할 때 보냅니다. 에서 메서드를 호출 하 여 팁의 변수 형식을 반환 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> . 디버깅이 활성 상태인 경우 팁에도 변수 값이 표시 됩니다.|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 사용자가 CTRL + 스페이스바를 입력 하면 전송 됩니다. 이 명령은에서 메서드를 호출 하도록 언어 서비스에 지시 합니다 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> .|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|메뉴에서 전송 됩니다. 일반적으로 **편집** **메뉴에서** 선택 영역을 **주석** 으로 처리 하거나 주석 **처리를 제거** 합니다. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 사용자가 선택한 텍스트를 주석 처리 하려고 함을 나타냅니다. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 사용자가 선택한 텍스트의 주석 처리를 제거 하려고 함을 나타냅니다. 이러한 명령은 언어 서비스에 의해서만 구현 될 수 있습니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 마우스 오른쪽 단추를 클릭할 때 전송됩니다. 이 명령은 바로 가기 메뉴를 제공할 때임을 나타냅니다. 이 명령을 처리하지 않으면 텍스트 편집기에서 언어별 명령 없이 기본 바로 가기 메뉴를 제공합니다. 이 메뉴에 사용자 고유의 명령을 포함하려면 명령을 처리하고 바로 가기 메뉴를 직접 표시합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 사용자가 Ctrl+J를 형식화할 때 전송됩니다. 에서 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 메서드를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 호출하여 문 완성 상자를 표시합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 문자를 형식화할 때 전송합니다. 이 명령을 모니터링하여 트리거 문자가 입력되는 시기를 확인하고 문 완성, 메서드 팁 및 텍스트 표식(예: 구문 색 지정, 중괄호 일치 및 오류 표식)을 제공합니다. 문 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 완성을 위해 에서 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 메서드를 호출하고 메서드 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> 팁에 대해 에서 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> 메서드를 호출합니다. 텍스트 마커를 지원하려면 이 명령을 모니터링하여 입력할 문자에 표식 업데이트가 필요한지 여부를 확인합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 Enter 키를 입력할 때 전송합니다. 에서 메서드를 호출하여 메서드 팁 창을 해제할 시기를 확인하려면 이 명령을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 모니터링합니다. 기본적으로 텍스트 보기는 이 명령을 처리합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 백스페이스 키를 형식화할 때 전송됩니다. 모니터를 사용하여 에서 메서드를 호출하여 메서드 팁 창을 해제할 시기를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> 결정합니다. 기본적으로 텍스트 보기는 이 명령을 처리합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|메뉴 또는 바로 가기 키에서 전송됩니다. 에서 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> 메서드를 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 호출하여 팁 창을 매개 변수 정보로 업데이트합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|사용자가 변수를 마우스로 가리키거나 변수에 커서를 놓고 **편집** 메뉴의 **IntelliSense에서** **빠른 정보를** 선택하면 전송됩니다. 에서 메서드를 호출하여 팁에 있는 변수의 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> 형식을 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 반환합니다. 디버깅이 활성 상태이면 팁에 변수 값도 표시되어야 합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 사용자가 Ctrl+스페이스바를 형식화할 때 전송됩니다. 이 명령은 에서 메서드를 호출하도록 언어 서비스에 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 지시합니다.|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|일반적으로 편집 메뉴의 **고급에서** **선택 영역 주석 처리** 또는 주석 처리 **제거** **메뉴에서** 전송됩니다. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 는 사용자가 선택한 텍스트를 주석으로 표시하려고 함을 나타냅니다. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 는 사용자가 선택한 텍스트의 압축을 풀려고 함을 나타냅니다. 이러한 명령은 언어 서비스에서만 구현할 수 있습니다.|
 
 ## <a name="see-also"></a>참조
 - [레거시 언어 서비스 개발](../../extensibility/internals/developing-a-legacy-language-service.md)

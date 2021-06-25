@@ -1,8 +1,8 @@
 ---
-description: 이 함수는 검사할 디렉터리 목록이 지정 된 경우 소스 제어에 저장 되는 디렉터리 및 파일 (옵션)을 결정 합니다.
+description: 이 함수는 검사할 디렉터리 목록이 지정된 경우 소스 제어에 저장되는 디렉터리 및 파일(선택 사항)을 결정합니다.
 title: SccPopulateDirList 함수 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccPopulateDirList
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d04fc7796db57dedcf8af495c67876cd4974ab1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf2620ff42106be7c858c5104dbf9cb2521252ab
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063749"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902360"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 함수
-이 함수는 검사할 디렉터리 목록이 지정 된 경우 소스 제어에 저장 되는 디렉터리 및 파일 (옵션)을 결정 합니다.
+이 함수는 검사할 디렉터리 목록이 지정된 경우 소스 제어에 저장되는 디렉터리 및 파일(선택 사항)을 결정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,38 +39,38 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>매개 변수
  pContext
 
-진행 소스 제어 플러그 인 컨텍스트 포인터입니다.
+[in] 소스 제어 플러그 인 컨텍스트 포인터입니다.
 
  nDirs
 
-진행 배열의 디렉터리 경로 수 `lpDirPaths` 입니다.
+[in] 배열의 디렉터리 경로 `lpDirPaths` 수입니다.
 
  lpDirPaths
 
-진행 검사할 디렉터리 경로 배열입니다.
+[in] 검사할 디렉터리 경로의 배열입니다.
 
  pfnPopulate
 
-진행 각 디렉터리 경로 및 (선택 사항)의 파일 이름에 대해 호출할 콜백 함수 `lpDirPaths` (자세한 내용은 [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) 참조).
+[in] 의 각 디렉터리 경로 및 파일 이름(선택 사항)에 대해 를 호출하는 콜백 `lpDirPaths` 함수입니다(자세한 내용은 [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) 참조).
 
  pvCallerData
 
-진행 변경 되지 않은 상태로 콜백 함수로 전달 되는 값입니다.
+[in] 콜백 함수에 변경되지 않고 전달할 값입니다.
 
  fOptions
 
-진행 디렉터리 처리 방법을 제어 하는 값의 조합입니다. 가능한 값에 대 한 [특정 명령에서 사용 하는 bitflags](../extensibility/bitflags-used-by-specific-commands.md) 의 "PopulateDirList flags" 섹션을 참조 하세요.
+[in] 디렉터리 처리 방법을 제어하는 값의 조합입니다(가능한 값은 [특정 명령에서 사용되는 Bitflags의](../extensibility/bitflags-used-by-specific-commands.md) "PopulateDirList 플래그" 섹션 참조).
 
 ## <a name="return-value"></a>반환 값
- 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환 해야 합니다.
+ 이 함수의 소스 제어 플러그 인 구현은 다음 값 중 하나를 반환해야 합니다.
 
-|값|Description|
+|값|설명|
 |-----------|-----------------|
-|SCC_OK|작업을 완료 했습니다.|
+|SCC_OK|‘작업이 성공적으로 완료되었습니다.’|
 |SCC_E_UNKNOWNERROR|오류가 발생했습니다.|
 
 ## <a name="remarks"></a>설명
- 소스 제어 리포지토리에 실제로 있는 디렉터리 및 파일 이름 (선택 사항)만 콜백 함수에 전달 됩니다.
+ 소스 제어 리포지토리에 실제로 있는 디렉터리 및 파일 이름(선택 사항)만 콜백 함수에 전달됩니다.
 
 ## <a name="see-also"></a>참조
 - [소스 제어 플러그 인 API 함수](../extensibility/source-control-plug-in-api-functions.md)

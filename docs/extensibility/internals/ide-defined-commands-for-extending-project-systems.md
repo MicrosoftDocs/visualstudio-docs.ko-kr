@@ -3,7 +3,7 @@ title: 프로젝트 시스템 확장에 대 한 IDE-Defined 명령 | Microsoft D
 description: 프로젝트 시스템을 확장 하는 데 사용 되는 Visual Studio IDE (통합 개발 환경)에 정의 된 명령 및 명령 그룹에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fedca7081c531fef257e20e64426f8b35e88e87
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4525802bf308d740ea5c468fac171e74bff2b34e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086003"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901164"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>프로젝트 시스템 확장을 위한 IDE 정의 명령
 프로젝트 시스템을 확장 하려는 경우 IDE에서 제공 하는 명령 및 명령 그룹을 사용할 수 있습니다 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
@@ -28,7 +28,7 @@ ms.locfileid: "105086003"
 ## <a name="command-menus"></a>명령 메뉴
  다음 표에서는 프로젝트 extender를 호출 하는 고급 명령을 입력할 수 있는 유용한 위치인 명령 메뉴를 보여 줍니다.
 
-|명령 메뉴|Description|
+|명령 메뉴|설명|
 |------------------|-----------------|
 |IDM_VS_MENU_PROJECT|**프로젝트** 최상위 메뉴입니다.|
 |IDM_VS_TOOL_PROJWIN|**솔루션 탐색기** 도구 모음입니다.|
@@ -36,7 +36,7 @@ ms.locfileid: "105086003"
 ## <a name="shortcut-menus"></a>바로 가기 메뉴
  다음 표에서는 **솔루션 탐색기** 에서 단일 노드를 선택 하거나 선택 **솔루션 탐색기** 된 모든 노드가 같은 유형인 경우에 적용 되는 바로 가기 메뉴를 보여 줍니다.
 
-|바로 가기 메뉴|Description|
+|바로 가기 메뉴|설명|
 |-------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|프로젝트 노드를 선택 하는 경우에 적용 됩니다.|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|파일이 선택 된 경우에 적용 됩니다.|
@@ -47,7 +47,7 @@ ms.locfileid: "105086003"
 
  다음 표에서는 **솔루션 탐색기** 의 선택이 여러 계층에 걸쳐 있을 때 적용 되는 바로 가기 메뉴를 보여 줍니다.
 
-|바로 가기 메뉴|Description|
+|바로 가기 메뉴|설명|
 |-------------------|-----------------|
 |IDM_VS_CTXT_XPROJ_SLNPROJ|현재 선택 영역에 솔루션 노드 및 루트 프로젝트 노드가 포함 된 경우 적용 됩니다.|
 |IDM_VS_CTXT_XPROJ_SLNITEM|현재 선택 영역에 솔루션 노드와 프로젝트 항목이 포함 된 경우 적용 됩니다.|
@@ -58,7 +58,7 @@ ms.locfileid: "105086003"
 ## <a name="command-groups"></a>명령 그룹
  다음 표에서는 프로젝트를 확장할 때 사용할 수 있는 명령 그룹과 바로 가기 메뉴를 통해 액세스할 수 있는 명령 그룹을 보여 줍니다 <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> .
 
-|명령 그룹|Description|
+|명령 그룹|설명|
 |-------------------|-----------------|
 |IDG_VS_CTXT_PROJECT_BUILD|프로젝트를 빌드, 다시 빌드 및 배포 하기 위한 명령입니다.|
 |IDG_VS_CTXT_COMPILELINK|프로젝트를 컴파일하고 연결 하는 명령입니다.|

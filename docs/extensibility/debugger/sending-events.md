@@ -3,7 +3,7 @@ title: 이벤트 전송 | Microsoft Docs
 description: 디버거와 디버그 엔진이 DCOM을 기반으로 하는 이벤트 모델을 사용 하는 방법에 대해 알아봅니다. 이벤트는 COM 개체로 전송 됩니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], sending events
 ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 135dd0278ee765ef88ae6cef39675a2fa92236d7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6e9af2618150df522a459e47f312c1dc1e6a220c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070393"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902256"
 ---
 # <a name="send-events"></a>이벤트 보내기
 디버거와 디버그 엔진 (DE) 간의 통신 메커니즘은 DCOM을 기반으로 하는 이벤트 모델입니다. 이벤트는 COM 개체로 전송 되며 각 이벤트에는 다음을 지정 하는 매개 변수가 있습니다.

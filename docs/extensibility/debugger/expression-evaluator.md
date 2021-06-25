@@ -3,7 +3,7 @@ title: 식 계산기 | Microsoft Docs
 description: 중단 모드에서 런타임에 변수와 식을 구문 분석 하 고 평가 하는 언어의 구문을 검사 하는 식 계산기에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6876bea4174df7f5ac293ea0d470f5922d7492d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 998f361d8008257cb8f4a888b4d4fbb985c9c977
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055026"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900982"
 ---
 # <a name="expression-evaluator"></a>식 계산기
 식 계산기 (EE)는 런타임에 변수와 식을 구문 분석 하 고 평가 하 여 IDE가 중단 모드에 있을 때 사용자가 볼 수 있도록 하는 언어의 구문을 검사 합니다.

@@ -3,19 +3,19 @@ title: Visual Studio 용 UX Essentials | Microsoft Docs
 description: 화면 해상도에 대 한 정보를 비롯 하 여 Visual Studio 용으로 개발 하는 새로운 기능에 대 한 이러한 사용자 환경 모범 사례를 검토 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce44b9234465af6bf52ce8baa0e60e641e845d3c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 74b27e87e6f16130573ef6671286501f77e44352
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105052673"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899422"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio용 UX Essentials
 
@@ -85,7 +85,7 @@ ms.locfileid: "105052673"
 
  이 경우 경고에 사용 되는 아이콘에 "" 아이콘이 포함 되어 있기 때문에 추가 문제가 있습니다 &times; . 따라서 해당 아이콘 옆에는 일반적인 제거 아이콘을 사용할 수 없습니다. 결과적으로 UI는 제거 단추인 clunky 컨트롤을 사용 합니다.
 
- ![UI를 오류 상태에 배치 하는 것은 기본적으로 Visual Studio 앤티 pattern입니다.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-패턴")<br />UI를 오류 상태에 배치 하는 것은 기본적으로 Visual Studio 앤티 pattern입니다.
+ ![UI를 오류 상태에 배치 하는 것은 기본적으로 Visual Studio 앤티 pattern입니다.](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />UI를 오류 상태에 배치 하는 것은 기본적으로 Visual Studio 앤티 pattern입니다.
 
 #### <a name="alternatives"></a>대안
 
@@ -114,21 +114,21 @@ UI를 해제 하기 전에 사용자가 설명 텍스트를 읽을 수 있도록
 
 이러한 상황에 적합 한 디자인은 Internet Explorer, Office 및 Visual Studio에 공통적인 패턴을 따르는 것입니다. 마우스로 가리키면 사용자가 도구 설명 설명을 볼 수 있고 한 번 클릭 하면 UI가 숨겨집니다.
 
- ![설명 텍스트 앤티&#45;패턴 &#45; 올바릅니다.](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-패턴을 수정 합니다.")<br />올바른 비디오 링크 패턴
+ ![설명 텍스트 앤티&#45;패턴 &#45; 올바릅니다.](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-pattern-correct")<br />올바른 비디오 링크 패턴
 
 ### <a name="using-command-bars-for-settings"></a>설정에 명령 모음 사용
 
 **그림은** 이 앤티 패턴을 나타냅니다. 명령 단추 아래에 설정을 추가 하는 명령에만 적용 됩니다. 이 스케치에는 선택한 설정을 적용 하는 디버깅 시작 (예: 브라우저에서 보기, 디버깅 하지 않고 시작 및 한 단계씩 코드 실행) 외에도 명령이 있습니다.
 
-![그림 A: 명령 모음 앤티 pattern](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-FigureA")<br />그림 A: 명령 모음 앤티 pattern
+![그림 A: 명령 모음 앤티 pattern](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />그림 A: 명령 모음 앤티 pattern
 
 **그림 B** 에 표시 된 것 처럼 약간 더 나은 방법으로 도구 모음에이 유형의 설정을 저장 하 고 있습니다. 분할 단추는 공간을 절약 하는 반면 드롭다운 보다 향상 된 기능 이므로, 두 디자인 모두 도구 모음을 사용 하 여 실제 명령이 아닌 항목의 수준을 올립니다.
 
-![그림 B: 더 우수 하지만 명령 모음 앤티 패턴이 있습니다.](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-FigureB")<br />그림 B: 더 우수 하지만 명령 모음 앤티 패턴이 있습니다.
+![그림 B: 더 우수 하지만 명령 모음 앤티 패턴이 있습니다.](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />그림 B: 더 우수 하지만 명령 모음 앤티 패턴이 있습니다.
 
 **그림 C** 에 표시 된 올바른 방법에서이 설정은 일련의 명령에 연결 됩니다. 설정 되는 전역 설정이 없으며 네 개의 명령 간에만 전환 하 고 있습니다. 이 경우 도구 모음에서 명령을 사용할 수 있습니다.
 
-![그림 C: Visual Studio 명령 모음 패턴의 올바른 사용](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-패턴")<br />그림 C: Visual Studio 명령 모음 패턴의 올바른 사용
+![그림 C: Visual Studio 명령 모음 패턴의 올바른 사용](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />그림 C: Visual Studio 명령 모음 패턴의 올바른 사용
 
 ### <a name="control-anti-patterns"></a>컨트롤 앤티앨리어싱
  일부 앤티 패턴은 단순히 컨트롤이 나 컨트롤 그룹을 사용 하거나 표시 하지 않을 수 있습니다.
@@ -154,17 +154,17 @@ UI를 해제 하기 전에 사용자가 설명 텍스트를 읽을 수 있도록
 
 2. "자세한 정보"는 개념 항목에 대 한 링크에 대 한 적절 한 텍스트가 아닙니다. 사용자의 목표는 자세히 알아보는 것이 아니라 선택한 결과를 이해 하는 것입니다.
 
-   ![색 서비스를 무시 하 고 하이퍼링크에 대해 "자세한 정보"를 사용 하는 것은 Visual Studio 안티 패턴입니다.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />색 서비스를 무시 하 고 하이퍼링크에 대해 "자세한 정보"를 사용 하는 것은 Visual Studio 안티 패턴입니다.
+   ![색 서비스를 무시하고 하이퍼링크에 "자세히 알아보기"를 사용하는 것은 Visual Studio 안티패션입니다.](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />색 서비스를 무시하고 하이퍼링크에 "자세히 알아보기"를 사용하는 것은 Visual Studio 안티패션입니다.
 
-**향상 되는 솔루션:** 사용자가 링크를 클릭 하 여 요청 하는 질문을 합니다. 예를 들어:
+**더 나은 솔루션:** 링크를 클릭하여 사용자가 묻는 질문을 제기합니다. 예를 들면 다음과 같습니다.
 
-- Microsoft Azure 서비스는 어떻게 작동 하나요?
+- Windows Azure 서비스는 어떻게 작동하나요?
 
-- Microsoft Azure Mobile Services 프로젝트는 언제 필요 한가요?
+- Windows Azure Mobile Services 프로젝트는 언제 필요한가요?
 
-#### <a name="using-click-here-for-links"></a>링크에 대 한 "여기를 클릭" 사용
- 하이퍼링크는 설명이 포함 되어야 합니다. 이 패턴은 "여기를 클릭 하십시오." 또는 비슷한 변형을 사용 하는 앤티앨리어싱입니다.
+#### <a name="using-click-here-for-links"></a>링크에 "여기 클릭" 사용
+ 하이퍼링크는 자체 설명적이어야 합니다. "여기 클릭" 또는 유사한 변형을 사용하는 것은 안티 패턴입니다.
 
- **잘못 됨:** "새 프로젝트를 만드는 방법에 대 한 지침을 보려면 여기를 클릭 하십시오."
+ **불량:** "새 프로젝트를 만드는 방법에 대한 지침은 여기를 클릭하세요."
 
- **양호:** "새 프로젝트를 만드는 어떻게 할까요??"
+ **양호:** "새 프로젝트를 만들 어떻게 할까요??"

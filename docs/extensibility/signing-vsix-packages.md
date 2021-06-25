@@ -3,7 +3,7 @@ title: VSIX 패키지 서명 | Microsoft Docs
 description: 확장 어셈블리에 서명 하는 방법에 대해 알아봅니다. Vsix 설치 관리자가 VSIX에 서명 되었다는 메시지와 서명 자체에 대 한 정보를 표시 합니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - signature
 - signing
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2a2c9703eb41c1a3e5baa023d8240b56ccbb13b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d481c75754c7bc49369987d4bf6dc3aa33e96fdc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056365"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899162"
 ---
 # <a name="signing-vsix-packages"></a>VSIX 패키지 서명
 확장 어셈블리는 Visual Studio에서 실행할 수 있을 때까지 서명할 필요가 없지만 그렇게 하는 것이 좋습니다.
