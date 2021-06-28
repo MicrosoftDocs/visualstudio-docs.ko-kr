@@ -7,16 +7,16 @@ ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
-ms.author: heaths
-manager: jmartens
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd0fcd294983d6a6567676f06703b4bd1dd376c4
+ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893596"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112990508"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio 찾기
 
@@ -26,8 +26,8 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 
 | 코드 | 패키지 |
 | ---- | --- |
-| 네이티브 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| 관리 대상 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| 기본 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
+| 관리 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 경로 또는 현재 프로세스가 지정 된 단일 인스턴스를 찾거나 모든 인스턴스를 열거할 수 있습니다. Visual Studio를 찾는 방법의 전체 예제는 [샘플](https://github.com/Microsoft/vs-setup-samples) 을 참조 하세요.
 
@@ -41,7 +41,7 @@ Visual Studio 2017부터 동일한 버전 또는 심지어 버전의 여러 인�
 | [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell cmdlet은 다양 한 정보를 개체로 반환 하는 2.0 이상 버전을 지원 합니다 .이는 _vswhere_ 와 동일한 조건에 따라 인스턴스를 찾고 인스턴스에 대 한 훨씬 더 많은 속성을 검색 하는 데 사용할 수 있습니다. 예는 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 를 참조 하세요. |
 | [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 는 _VSIXInstaller_ 를 자동으로 찾고 **.vsix* 파일을 설치 하기 위해 명령줄을 전달 합니다. 이 기능은 쿼리 Api를 직접 지원 하지 않는 설치 관리자에서 유용할 수 있습니다. 예는 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 를 참조 하세요. |
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 2017 설정 변경](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [DTE를 사용하여 Visual Studio 시작](launch-visual-studio-dte.md)
