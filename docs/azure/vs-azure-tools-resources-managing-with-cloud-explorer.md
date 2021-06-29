@@ -7,12 +7,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 08ccab99df40247390894aa53d5073a3aff0c561
-ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
+ms.openlocfilehash: 775045247cda106d31cf1517e727b9dda5142c4f
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112997659"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038618"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
 
@@ -28,7 +28,7 @@ ms.locfileid: "112997659"
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=vs-2019"
 
 클라우드 탐색기를 사용하여 Azure 리소스 및 리소스 그룹을 보고, 해당 속성을 검사하고, Visual Studio 내에서 핵심 개발자 진단 작업을 수행할 수 있습니다.
 

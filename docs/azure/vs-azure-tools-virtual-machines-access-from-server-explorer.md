@@ -7,12 +7,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: ab67a81d761f2e17c82b75fb59a201188cf80986
-ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
+ms.openlocfilehash: f95542c79e6f8cde83866caa082b8e025b069589
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112997633"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038579"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>서버 탐색기에서 Azure Virtual Machines 액세스
 
@@ -26,7 +26,7 @@ ms.locfileid: "112997633"
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=vs-2019"
 
 Azure에서 호스팅되는 가상 머신이 있는 경우 서버 탐색기에서 액세스할 수 있습니다. 처음에 Azure 구독에 로그인해야 모바일 서비스를 볼 수 있습니다. 로그인하려면 서버 탐색기에서 Azure 노드에 대한 바로 가기 메뉴를 열고 **Microsoft Azure에 연결** 을 선택할 수 있습니다.
 
