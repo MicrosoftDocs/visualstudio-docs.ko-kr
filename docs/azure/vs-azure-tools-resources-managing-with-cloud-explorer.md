@@ -7,32 +7,46 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 532195bad81fc9162b854493d5aca9bb2fa7f600
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08ccab99df40247390894aa53d5073a3aff0c561
+ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843945"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112997659"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리
+
+::: moniker range=">=vs-2022"
+> [!Important]
+> 클라우드 탐색기 2022년 Visual Studio 사용 중지되었습니다. 대신 다음 대안을 사용할 수 있습니다.
+> - Microsoft Azure Storage Explorer [](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 사용은 Microsoft의 독립 실행형 무료 앱입니다. 이 앱을 통해 Windows, macOS 및 Linux에서 시각적으로 Azure Storage 데이터를 사용할 수 있습니다.
+> - [Kudu 콘솔](https://github.com/projectkudu/kudu/wiki/Kudu-console)은 App Service 서버와 해당 파일 시스템에 대한 직접적인 관리자 권한 명령줄 액세스를 제공합니다. 이는 모두 유용한 디버깅 도구이며 패키지를 설치하는 등의 CLI 작업을 허용합니다.
+>
+> 필요한 경우 Azure Portal을 사용하거나 이전 버전의 Visual Studio 서버 탐색기 Azure 노드를 계속 사용할 수 있습니다.
+>
+> Visual Studio 2022에 대한 자세한 내용은 [릴리스 정보](/visualstudio/releases/2022/release-notes-preview/)를 참조하세요.
+
+::: moniker-end
+
+::: moniker range="<=vs-2017"
 
 클라우드 탐색기를 사용하여 Azure 리소스 및 리소스 그룹을 보고, 해당 속성을 검사하고, Visual Studio 내에서 핵심 개발자 진단 작업을 수행할 수 있습니다.
 
 [Azure Portal](https://portal.azure.com)에서와 마찬가지로 클라우드 탐색기는 Azure Resource Manager 스택을 토대로 구축되었습니다. 따라서 클라우드 탐색기는 Azure 리소스 그룹과 같은 리소스 및 논리 앱과 API 앱과 같은 Azure 서비스를 이해하고 RBAC([역할 기반 액세스 제어](/azure/role-based-access-control/role-assignments-portal))를 지원합니다.
 
-## <a name="prerequisites"></a>사전 준비 사항
+## <a name="prerequisites"></a>필수 조건
 
 * **Azure 워크로드** 가 선택된 Visual Studio 2017 이상([Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 참조). [.NET용 Microsoft Azure SDK 2.9](https://www.microsoft.com/download/details.aspx?id=51657)가 포함된 이전 버전의 Visual Studio를 사용할 수도 있습니다.
 * Microsoft Azure 계정 - 계정이 없는 경우 [평가판을 등록](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)하거나 [Visual Studio 구독자 혜택을 활성화](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)할 수 있습니다.
 
 > [!NOTE]
-> 클라우드 탐색기를 보려면 **Ctrl** + **Q** 를 눌러 검색 상자를 활성화 한 다음 **클라우드 탐색기** 을 입력 합니다.
+> 클라우드 탐색기 보려면 **Ctrl** + **Q를** 눌러 검색 상자를 활성화한 다음 **클라우드 탐색기** 입력합니다.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>클라우드 탐색기에 Azure 계정 추가
 
-Azure 계정과 연결 된 리소스를 보려면 먼저 **클라우드 탐색기** 에 계정을 추가 해야 합니다.
+Azure 계정과 연결된 리소스를 보려면 먼저 계정을 **클라우드 탐색기** 추가해야 합니다.
 
-1. **클라우드 탐색기** 에서 **계정 관리** 단추를 선택 합니다.
+1. **클라우드 탐색기** 에서 **계정 관리** 단추를 선택합니다.
 
    ![클라우드 탐색기 Azure 계정 설정 아이콘](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -46,7 +60,7 @@ Azure 계정과 연결 된 리소스를 보려면 먼저 **클라우드 탐색�
 
    ![클라우드 탐색기: 표시할 Azure 구독 선택](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. 검색 하려는 리소스를 포함 하는 구독을 선택 하면 해당 구독과 리소스가 **클라우드 탐색기** 표시 됩니다.
+1. 리소스를 찾아보려는 구독을 선택하면 해당 구독 및 리소스가 **클라우드 탐색기** 표시됩니다.
 
    ![Azure 계정에 대한 클라우드 탐색기 리소스 목록](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
@@ -99,8 +113,10 @@ Azure 리소스를 보려면 **리소스 종류** 또는 **리소스 그룹** �
 
 ## <a name="find-resources-in-cloud-explorer"></a>클라우드 탐색기에서 리소스 찾기
 
-Azure 계정 구독에서 특정 이름의 리소스를 찾으려면 **클라우드 탐색기** 의 **검색** 상자에 이름을 입력 합니다.
+Azure 계정 구독에서 특정 이름의 리소스를 찾으려면 **클라우드 탐색기** **의 검색** 상자에 이름을 입력합니다.
 
   ![클라우드 탐색기에서 리소스 찾기](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
 **검색** 상자에 문자를 입력하면 해당 문자와 일치하는 리소스만 리소스 트리에 나타납니다.
+
+::: moniker-end
