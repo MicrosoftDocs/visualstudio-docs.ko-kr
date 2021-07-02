@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
-ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
+ms.openlocfilehash: ad3737ccfa4b0dae8ad427bd79e4adeb2756795b
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112574115"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222762"
 ---
 # <a name="use-bind-mounts"></a>바인드 탑재 사용
 
@@ -32,8 +31,8 @@ ms.locfileid: "112574115"
 | -------- | ------------- | ----------- |
 | 호스트 위치 | Docker 선택 | 사용자 제어 |
 | 탑재 예(`-v` 사용) | my-volume:/usr/local/data | /path/to/data:/usr/local/data |
-| 새 볼륨에 컨테이너 내용을 채웁니다. | 예 | 아니요 |
-| 볼륨 드라이버 지원 | 예 | 아니요 |
+| 새 볼륨에 컨테이너 내용을 채웁니다. | 예 | 예 |
+| 볼륨 드라이버 지원 | 예 | 예 |
 
 ## <a name="start-a-dev-mode-container"></a>개발 모드 컨테이너 시작
 
