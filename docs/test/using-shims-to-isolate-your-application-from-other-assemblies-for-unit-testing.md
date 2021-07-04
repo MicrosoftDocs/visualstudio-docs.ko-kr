@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 72a976ccd487abdfa2c6501c0dcafee07dc5f4ae
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006405"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042862"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim을 사용하여 유닛 테스트를 위한 앱 격리
 
@@ -429,7 +429,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 생성된 각 shim 형식에는 `IShimBehavior` 인터페이스의 인스턴스가 `ShimBase<T>.InstanceBehavior` 속성을 통해 포함됩니다. 클라이언트가 명시적으로 shim되지 않은 인스턴스 멤버를 호출할 때마다 동작이 사용됩니다.
 
-동작이 명시적으로 설정되지 않은 경우 정적 `ShimsBehaviors.Current` 속성에서 반환한 인스턴스를 사용합니다. 기본적으로 이 속성은 `NotImplementedException` 예외를 throw하는 동작을 반환합니다.
+동작이 명시적으로 설정되지 않은 경우 정적 `ShimBehaviors.Current` 속성에서 반환한 인스턴스를 사용합니다. 기본적으로 이 속성은 `NotImplementedException` 예외를 throw하는 동작을 반환합니다.
 
 이 동작은 shim 인스턴스의 `InstanceBehavior` 속성을 설정하여 언제든지 변경할 수 있습니다. 예를 들어 다음 코드 조각은 아무 작업을 하지 않거나 반환 형식의 기본값, 즉 `default(T)`를 반환하는 동작으로 shim을 변경합니다.
 
@@ -437,26 +437,26 @@ public class ShimMyClass : ShimBase<MyClass> {
 // unit test code
 var shim = new ShimMyClass();
 //return default(T) or do nothing
-shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
+shim.InstanceBehavior = ShimBehaviors.DefaultValue;
 ```
 
-정적 `ShimsBehaviors.Current` 속성을 설정하여 `InstanceBehavior` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
+정적 `ShimBehaviors.Current` 속성을 설정하여 `InstanceBehavior` 속성이 명시적으로 설정되지 않은 shim된 모든 인스턴스에 대해 전역적으로 동작을 변경할 수도 있습니다.
 
 ```csharp
 // unit test code
 // change default shim for all shim instances
 // where the behavior has not been set
-ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
+ShimBehaviors.Current = ShimBehaviors.DefaultValue;
 ```
 
 ## <a name="detect-environment-accesses"></a>환경 액세스 검색
 
-해당 shim 형식의 정적 속성 `Behavior`에 `ShimsBehaviors.NotImplemented` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
+해당 shim 형식의 정적 속성 `Behavior`에 `ShimBehaviors.NotImplemented` 동작을 할당하면 정적 메서드를 포함하여 특정 형식의 모든 메서드에 동작을 연결할 수 있습니다.
 
 ```csharp
 // unit test code
 // assigning the not implemented behavior
-ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
+ShimMyClass.Behavior = ShimBehaviors.NotImplemented;
 // shorthand
 ShimMyClass.BehaveAsNotImplemented();
 ```

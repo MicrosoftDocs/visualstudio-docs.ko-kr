@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6da05729be409b142f6c9cec2c543fb2b9171ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af76de5dbcc7a70722acf0ee01cfed93dbad761
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869429"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308261"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Visual Studio에서 코드를 작동하게 하기
 
@@ -100,7 +100,7 @@ IDE 아래쪽에 있는 **오류 목록** 탭에 새로운 경고나 업데이�
 
 경험이 생기면 화살표 키와 **Ctrl**+**를 신속하게 사용할 수 있습니다.** 빠른 옵션 리팩터링 기회를 쉽게 확인하고 코드를 정리할 수 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="run-code-cleanup"></a>코드 정리 실행
 

@@ -5,24 +5,24 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2c8510a1ba83243d2d92b538d80876a8b0f20079
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03a192657a46c2db15cb2d1121735905f06da478
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935660"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306672"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>서비스 기준선에서 Visual Studio 업데이트
 
-제품 수명 주기 동안 Visual Studio를 자주 업데이트합니다. 업데이트에는 다음과 같은 두 가지 유형이 있습니다. 
+제품 수명 주기 동안 Visual Studio를 자주 업데이트합니다. 업데이트에는 다음과 같은 두 가지 유형이 있습니다.
 
 * **부 릴리스 업데이트**(예: 새 기능 및 구성 요소가 포함된 16.0~16.1)  
 * **서비스 업데이트**(예: 중요 문제로 수정 대상이 된 사항만 포함된 16.0.4~16.0.5)
@@ -51,7 +51,7 @@ ms.locfileid: "99935660"
 
 인터넷 기반 설치인 경우 존재하지 않는 채널 매니페스트를 포함한 `--channelUri`를 설치 시작에 사용되는 명령줄에 추가합니다. 그러면 Visual Studio는 업데이트에 대한 최신 릴리스를 사용할 수 없게 됩니다. 예를 들면 다음과 같습니다.
 
-```cmd
+```shell
 vs_enterprise.exe --channelUri c:\doesnotexist.chman
 ```
 
@@ -69,19 +69,31 @@ vs_enterprise.exe --channelUri c:\doesnotexist.chman
 
 1. Visual Studio 설치 관리자 업데이트:
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --quiet --update
     ```
 
+::: moniker range="vs-2019"
+ 
 2. Visual Studio 애플리케이션 자체 업데이트:
-
-    ```cmd
+    ```shell
     vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
     ```
 
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+2. Visual Studio 애플리케이션 자체 업데이트:
+    ```shell
+    vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart --channelUri c:\doesnotexist.chman
+    ```
+
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 설치](install-visual-studio.md)
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)

@@ -1,7 +1,7 @@
 ---
 title: C# 디버그 구성에 대한 프로젝트 설정 | Microsoft Docs
 description: 프로젝트 속성 페이지의 디버그 탭 및 빌드 탭을 사용하여 Visual Studio에서 C# 디버그 구성의 프로젝트 설정을 변경하는 방법을 알아봅니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1adc574241ba34f8170f1c8b1f38c198e3b6ff58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3377187412f95e090c7403ddd6f898a18f6cec9f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842697"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386503"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 디버그 구성을 위한 프로젝트 설정
 

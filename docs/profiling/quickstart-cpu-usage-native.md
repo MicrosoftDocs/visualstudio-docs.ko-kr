@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86b5e44f5b9e2fec07fef4e54a48ff89ebb2ff74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c68cc67d768dbe2b1c42671a02360e5cef2b56b
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861636"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760941"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터(C++) 분석
 
@@ -39,7 +39,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
    **Windows 콘솔 애플리케이션** 프로젝트 템플릿이 표시되지 않으면 **새 프로젝트** 대화 상자의 왼쪽 창에서 **Visual Studio 설치 관리자 열기** 링크를 선택합니다. Visual Studio 설치 관리자가 시작됩니다. **C++를 사용한 데스크톱 개발** 워크로드를 선택한 다음, **수정** 단추를 선택합니다.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    시작 창이 열려 있지 않으면 **파일** > **시작 창** 을 선택합니다.
 
    시작 창에서 **새 프로젝트 만들기** 를 선택합니다.

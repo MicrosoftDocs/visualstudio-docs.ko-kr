@@ -3,19 +3,19 @@ title: Visual Studio Test Controller 2019 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 자동화된 테스트를 여러 컴퓨터에 배포합니다.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/24/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 7e401ff1cfaea4821b987636261e2dfea8660b3d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: f72eea5ebbe8ca6f8197002c03237733af6bc2c2
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683648"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449931"
 ---
 ## <a name="test-controller"></a>Test Controller
 

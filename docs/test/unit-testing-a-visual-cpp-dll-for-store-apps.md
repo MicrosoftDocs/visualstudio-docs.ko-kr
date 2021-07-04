@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: 5117ffb8731ef06f054b0ecbfc651aef2563078e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1981b3876d2e42e992ef261738da2443edfc114
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962628"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042914"
 ---
 # <a name="how-to-test-a-c-dll"></a>C++ DLL 테스트 방법
 
@@ -26,7 +26,7 @@ ms.locfileid: "99962628"
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> 솔루션 및 단위 테스트 프로젝트 만들기
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 먼저 새 테스트 프로젝트를 만듭니다. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다. **새 프로젝트 추가** 대화 상자에 "test"를 입력한 다음, **언어** 를 C++로 설정합니다. 그런 다음 프로젝트 템플릿 목록에서 **유닛 테스트 앱(유니버설 Windows)** 을 선택합니다.
 
@@ -81,7 +81,7 @@ ms.locfileid: "99962628"
 
 ## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> 솔루션에 DLL 프로젝트 추가
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 **솔루션 탐색기** 에서 솔루션 이름을 선택합니다. 바로 가기 메뉴에서 **추가** 를 선택한 다음, **새 프로젝트** 를 선택합니다. **새 프로젝트 추가** 대화 상자에서 **언어** 를 C++로 설정하고 검색 상자에 "DLL"을 입력합니다. 결과 목록에서 **단위 테스트 앱(유니버설 Windows - C++/CX)** 을 선택합니다.
 

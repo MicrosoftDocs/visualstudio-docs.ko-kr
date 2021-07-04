@@ -13,12 +13,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 274eda05a8af5c9be4fbbf67e3e78f254d1a7902
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 005743ad730184edb8a709b4c15867f857290f9b
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867518"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687630"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Android용 Visual Studio 에뮬레이터
 
@@ -29,6 +29,6 @@ Android용 Visual Studio Emulator는 Android 디바이스를 에뮬레이트하�
 > - Visual Studio 2015 이후에는 Android용 Visual Studio Emulator가 지원되지 않습니다.
 > - Android 6.0 이상인 에뮬레이터 이미지는 Android용 Visual Studio Emulator에서 사용할 수 없습니다.
 > - Google Android 에뮬레이터는 이제 [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v)를 지원합니다.
-> - 모바일 디바이스 개발용 C++ 및 Visual Studio Apache Cordova용 도구는 Google Android Emulator와 함께 작동합니다. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator)을 참조하세요. (더 이상 이 문서의 설명대로 Hyper-V를 사용하지 않도록 설정할 필요가 없습니다.)
+> - 모바일 디바이스 개발용 C++ 및 Visual Studio Apache Cordova용 도구는 Google Android Emulator와 함께 작동합니다. 자세한 내용은 [Android에서 Apache Cordova 앱 실행](/previous-versions/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator)을 참조하세요. (더 이상 이 문서의 설명대로 Hyper-V를 사용하지 않도록 설정할 필요가 없습니다.)
 >
 > Google Android Emulator를 구성하고 사용하는 방법에 대한 자세한 내용은 [Android Emulator 설정](/xamarin/android/get-started/installation/android-emulator/)을 참조하세요.

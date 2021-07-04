@@ -17,16 +17,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 339b3661760ee539bb4135c59863e7e9fdae5afc
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 41247c13e8b35fd6e6cd26ac0ad0ea82f742fbb0
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295821"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306698"
 ---
-# <a name="visual-studio-images-on-azure"></a><a id="top"> </a> Azure의 Visual Studio 이미지
+# <a name="visual-studio-images-on-azure"></a>Azure의 Visual Studio 이미지
 
-사전 구성된 Azure VM(가상 머신)에서 Visual Studio를 사용하는 것이 제대로 실행되는 개발 환경을 처음부터 구현하는 쉽고 빠른 방법입니다. 다양한 Visual Studio 구성이 적용된 시스템 이미지를 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure)에서 사용할 수 있습니다.
+미리 구성된 Azure VM(가상 머신)에서 Visual Studio를 사용하면 아무 작업도 하지 않고 실행 중인 개발 환경으로 빠르고 쉽게 이동할 수 있습니다. 다양한 Visual Studio 구성이 적용된 시스템 이미지를 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure)에서 사용할 수 있습니다.
 
 Azure를 처음 사용하세요? [체험 Azure 계정을 만드세요](https://azure.microsoft.com/free).
 
@@ -34,12 +34,12 @@ Azure를 처음 사용하세요? [체험 Azure 계정을 만드세요](https://a
 
 최신 주요 버전인 Visual Studio 2019, Visual Studio 2017 및 Visual Studio 2015의 이미지는 Azure Marketplace에서 찾을 수 있습니다.  출시된 각 주 버전에 대해 원래 RTW("released to web") 버전과 최신 업데이트 버전이 표시됩니다.  이러한 각 버전에는 Visual Studio Enterprise 및 Visual Studio Community Edition이 제공됩니다.  이 이미지는 최신 Visual Studio 및 Windows 업데이트가 포함되도록 최소한 매월 업데이트됩니다.  이미지의 이름은 그대로 유지되지만, 각 이미지의 설명에는 설치된 제품 버전 및 이미지의 '당시' 날짜가 포함됩니다.
 
-| 릴리스 버전                                                                                                                                          | 버전              |    제품 버전    |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: 최신(버전 16.8)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.8.0    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.20    |
-| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.29   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.28   |
+| 릴리스 버전                                                                                                                                                | 버전              | 제품 버전       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|-----------------------|
+| [Visual Studio 2019: 최신(버전 16.8)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | 버전 16.8.0        |
+| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | 버전 16.0.20       |
+| [Visual Studio 2017: 최신(버전 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | 버전 15.9.29       |
+| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | 버전 15.0.28       |
 | [Visual Studio 2015: 최신(업데이트 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | 버전 14.0.25431.01 |
 
 > [!NOTE]
@@ -92,8 +92,9 @@ Azure를 사용하면 VM의 크기를 조정하여 처음에 선택한 내용을
 ## <a name="after-the-vm-is-running-whats-next"></a>VM을 실행한 후 다음 단계는 무엇인가요?
 
 Visual Studio는 Azure의 "BYOL(사용자 라이선스 필요)" 모델을 따릅니다. 전용 하드웨어를 설치하는 것과 마찬가지로, 첫 번째 단계 중 하나는 Visual Studio 설치의 사용을 허가하는 것입니다. Visual Studio의 잠금을 해제하려면 다음 중 하나를 수행합니다.
-- Visual Studio 구독과 연결된 Microsoft 계정으로 로그인합니다.
-- 초기 구매 시 제공된 제품 키로 Visual Studio의 잠금을 해제합니다.
+
+* Visual Studio 구독과 연결된 Microsoft 계정으로 로그인합니다.
+* 초기 구매 시 제공된 제품 키로 Visual Studio의 잠금을 해제합니다.
 
 자세한 내용은 [Visual Studio에 로그인](../ide/signing-in-to-visual-studio.md) 및 [Visual Studio 잠금 해제 방법](../ide/how-to-unlock-visual-studio.md)을 참조하세요.
 

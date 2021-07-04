@@ -6,28 +6,28 @@ ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f1a400506f7766ba22ffbc1debde687b1709a21
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984906"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760928"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 및 TypeScript 지원
 
 Mac용 Visual Studio에서는 구문 강조 표시, 코드 서식 지정 및 IntelliSense를 통해 JavaScript 및 TypeScript에 대한 지원을 제공합니다.
 
-![typescript 편집기 지원](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![typescript 편집기 지원](/visualstudio/mac/media/tsjseditor-2019.gif)
 
 JavaScript 작성 방법에 대한 자세한 내용은 [JavaScript 코드 작성](/scripting/javascript/writing-javascript-code) 가이드를 참조하세요.
 
 ## <a name="adding-a-javascript-file"></a>JavaScript 파일 추가
 
-JavaScript 파일은 주로 **새 파일** 대화 상자를 통해 ASP.NET Core 프로젝트에 추가됩니다. JavaScript 파일을 추가하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 파일**로 이동합니다.
+JavaScript 파일은 주로 **새 파일** 대화 상자를 통해 ASP.NET Core 프로젝트에 추가됩니다. JavaScript 파일을 추가하려면 프로젝트를 마우스 오른쪽 단추로 클릭하고 **추가 > 새 파일** 로 이동합니다.
 
 ![프로젝트에 새 파일 추가](media/javascript-image1.png)
 
-**새 파일** 대화 상자에서 **웹 > 빈 JS 파일** 또는 **웹 > TypeScript 파일**을 선택합니다. 이름을 지정한 후 **새로 만들기**를 선택합니다.
+**새 파일** 대화 상자에서 **웹 > 빈 JS 파일** 또는 **웹 > TypeScript 파일** 을 선택합니다. 이름을 지정한 후 **새로 만들기** 를 선택합니다.
 
 ![템플릿에서 새 typescript 파일 만들기](media/javascript-image2.png)
 

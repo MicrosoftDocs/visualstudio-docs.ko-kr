@@ -1,7 +1,7 @@
 ---
 title: 디버거에서 중단점 문제 해결 | Microsoft Docs
 description: 중단점을 사용할 수 없거나 설정할 수 없는 경우 속이 빈 원으로 표시됩니다. 중단점을 설정할 때 발생할 수 있는 문제에 관한 정보를 여기에서 확인합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bb7d2d15e9cb04b541fba3d68607fb250054b707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0801a687529b5e0f8cdf34030460f0b5fe45bc91
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870430"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386386"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio 디버거에서 중단점 문제 해결
 

@@ -3,19 +3,19 @@ title: Visual Studio Team Explorer 2017 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 테스터를 위한 통합된 테스트 도구를 제공합니다.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 2f60ee53234d45ca43ea60fa4a56e51d7d23e914
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 560457caff5d67cff0d6a6b72c1612283e1f340f
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868593"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449880"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio 핵심 편집기(Visual Studio Team Explorer 2017에 포함)
 

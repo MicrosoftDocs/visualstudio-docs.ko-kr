@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5fe8755450fd5068688064bf36b08c741c862
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3dcd034a76fbc371c95a2bbf386687830e3b63d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878645"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687649"
 ---
 # <a name="secure-applications"></a>보안 애플리케이션
 
@@ -45,6 +45,6 @@ ms.locfileid: "99878645"
 - [.NET의 보안](/dotnet/standard/security/index)
 - [Azure 보안](/azure/security/)
 - [Windows 10 Mobile 보안 가이드](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Apache Cordova 플랫폼 보안 기능](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [Apache Cordova 플랫폼 보안 기능](/previous-versions/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
 - [ASP.NET Core 보안](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Windows Forms 보안](/dotnet/framework/winforms/windows-forms-security)

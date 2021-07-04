@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 966b08a912a7bab59998daf39590a6fd46920eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e5689c0108231be26ddf7d598227137f7bc1f7
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969531"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433781"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript 코드 컴파일(Node.js)
 
@@ -115,7 +115,7 @@ ASP.NET Core 프로젝트의 경우 [NuGet 패키지](../javascript/compile-type
 
 ### <a name="run-the-application"></a>애플리케이션 실행
 
-앱을 컴파일한 후 실행하는 방법에 대한 지침은 [첫 번째 Node.js 앱 만들기](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application)를 참조하세요.
+앱을 컴파일한 후 실행하는 방법에 대한 지침은 [첫 번째 Node.js 앱 만들기](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-app)를 참조하세요.
 
 ## <a name="automate-build-tasks"></a>빌드 작업 자동화
 

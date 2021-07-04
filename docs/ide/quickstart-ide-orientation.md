@@ -1,7 +1,7 @@
 ---
 title: '빠른 시작: Visual Studio IDE 둘러보기'
 description: Visual Studio IDE(통합 개발 환경)의 창, 메뉴, 기타 UI 기능 일부에 대해 알아봅니다.
-ms.custom: SEO-VS-2020
+ms.custom: vs-acquisition
 titleSuffix: ''
 ms.date: 03/02/2021
 ms.topic: quickstart
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 0e3a0c62c1ec13ba6fec464a2903512b2acf33ad
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683959"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386295"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>빠른 시작: 먼저 Visual Studio IDE 살펴보기
 
@@ -209,7 +209,7 @@ Visual Studio를 사용하는 동안 문제가 발생하거나 제품을 개선�
 > [!div class="nextstepaction"]
 > [프로젝트 및 솔루션에 대한 자세한 정보](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 - [Visual Studio IDE 개요](../get-started/visual-studio-ide.md)
 - [Visual Studio의 추가 기능](../ide/advanced-feature-overview.md)

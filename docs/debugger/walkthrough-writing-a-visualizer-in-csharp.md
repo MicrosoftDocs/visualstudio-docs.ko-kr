@@ -1,7 +1,7 @@
 ---
 title: C#에서 시각화 도우미 작성 | Microsoft Docs
 description: 연습을 수행하여 C#에서 간단한 시각화 도우미를 만듭니다. 시각화 도우미 항목 템플릿을 사용하거나 사용하지 않고 필요한 단계를 보여 줍니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f127d178a8103cfaa01c43970848f5772827440f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86123ece79f7bbde4f4f91fac657dcc235056c0b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884067"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384996"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>연습: C\#에서 시각화 도우미 작성
 

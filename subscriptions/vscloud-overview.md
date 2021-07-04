@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: 장기 계약 없이 월간 또는 연간 기준으로 Visual Studio Professional 또는 Visual Studio Enterprise를 임대합니다.
-ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 5e6346b640415b7888826669427512a75427f0cc
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672545"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043109"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Enterprise 및 Visual Studio Professional 클라우드 구독 구입
 [Visual Studio Marketplace](https://marketplace.visualstudio.com)에서 Visual Studio Professional 및 Visual Studio Enterprise [구독](https://visualstudio.microsoft.com/subscriptions/)을 구입할 수 있습니다. 이를 **“클라우드 구독”** 이라고 합니다.
@@ -125,7 +125,7 @@ A:  다른 클라우드 연간 구독을 구입할 수 없지만 Visual Studio �
 
 ## <a name="related-resources"></a>관련 참고 자료
 - [Visual Studio 구독 관리 포털](https://manage.visualstudio.com/)
-- [Visual Studio 클라우드 구독 청구 FAQ](vscloud-billing-faq.md)
+- [Visual Studio 클라우드 구독 청구 FAQ](vscloud-billing-faq.yml)
 - [CSP에 대한 Visual Studio 클라우드 구독 구매](vscloud-csp.md)
 - - Visual Studio 구독의 판매, 구독, 계정, 청구 관련 지원을 받으려면 Visual Studio [구독 지원](https://visualstudio.microsoft.com/subscriptions/support/)을 참조하세요.
 

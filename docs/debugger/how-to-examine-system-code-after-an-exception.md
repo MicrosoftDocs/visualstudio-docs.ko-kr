@@ -1,7 +1,7 @@
 ---
 title: 예외 발생 후 시스템 코드 검사 | Microsoft Docs
 description: 시스템 호출에서 코드를 검사하여 예외의 원인을 확인하는 방법을 알아봅니다. 이 프로시저는 시스템 코드에 대한 기호가 로드되지 않은 경우에도 적용됩니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f906fd39ed9b0b0af5a9ade344ab05a33e469a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f05ae1486089eaa63ef47a9953578db2a0b6662a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877683"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384657"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>방법: 예외 발생 후 시스템 코드 검사
 예외가 발생하면 예외의 원인을 확인하기 위해 시스템 호출 내부 코드를 검사할 수 있습니다. 다음 절차에서는 시스템 코드에 대해 로드된 기호가 없거나 내 코드만을 사용하는 경우 이러한 작업을 수행하는 방법에 대해 설명합니다.

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 09a33db9df8e1309792cd6a3722bb82333348d84
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161315"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038657"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>C# 개발자용 Visual Studio 생산성 가이드
 
@@ -64,7 +64,7 @@ Visual Studio에서 개발자 생산성을 높이는 방법을 알아봅니다. 
 > [!NOTE]
 > 기본 Visual Studio keybindings의 바인딩을 해제한 일부 확장 위의 명령을 사용하려면 **도구** > **설정 가져오기 및 내보내기** > **모든 설정 다시 설정** 또는 **도구** > **옵션** > **키보드** > **다시 설정** 으로 이동하여 Visual Studio의 기본값으로 키 바인딩을 복원합니다.
 
-바로 가기 키와 명령에 대한 자세한 내용은 [생산성 바로 가기](../ide/productivity-shortcuts.md) 및 [인기 바로 가기 키](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)를 참조하세요.
+바로 가기 키와 명령에 대한 자세한 내용은 [생산성 바로 가기](../ide/productivity-shortcuts.md) 및 [인기 바로 가기 키](default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
 ## <a name="navigate-quickly-to-files-or-types"></a>파일 또는 형식으로 빠르게 이동
 
@@ -152,7 +152,7 @@ Visual Studio에는 많은 리팩터링, 코드 생성 작업 및 코드 수정�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
 - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)

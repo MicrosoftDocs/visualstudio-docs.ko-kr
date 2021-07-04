@@ -1,7 +1,7 @@
 ---
 title: Windows Form 디버그 | Microsoft Docs
 description: 연습을 수행하여 일반적인 관리형 애플리케이션인 Windows Form을 만들고 디버그하는 방법을 알아봅니다. C#, Visual Basic, C++ 또는 F#를 사용할 수 있습니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73b58326bb594f275a508e5ba7fb17071f283ac2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884132"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385177"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>연습: Windows Form 디버깅
 Windows Form은 가장 일반적인 관리형 애플리케이션 중 하나입니다. Windows Form은 표준 Windows 애플리케이션을 만듭니다. Visual Basic, C# 또는 C++를 사용하여 이 연습을 완료할 수 있습니다.

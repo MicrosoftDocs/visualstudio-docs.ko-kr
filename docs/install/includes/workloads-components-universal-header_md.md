@@ -1,17 +1,17 @@
 ---
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 03/16/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a3b5686ea36b77b6024fd1e95aee393877e0eaa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 00ccf2df85c4b845fa768cebfbb58a86648df6e7
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868617"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449625"
 ---
 이 페이지의 표에는 명령줄에서 Visual Studio를 설치하는 데 사용할 수 있는 ID 또는 VSIX 매니페스트에서 종속성으로 지정할 수 있는 ID가 나열되어 있습니다. Visual Studio에 대한 업데이트를 릴리스할 때 추가 구성 요소가 추가됩니다.
 

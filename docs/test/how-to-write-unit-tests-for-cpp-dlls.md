@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 06ad7bd437fca98c7be92a1e12ce31234d876b28
-ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
+ms.openlocfilehash: 6e8df96c6345d84531ef04eae56f7f60dcc3eefe
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100563423"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042875"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Visual Studio에서 C++ DLL에 대한 단위 테스트 작성
 
@@ -58,7 +58,7 @@ ms.locfileid: "100563423"
 
   1. 기본 단위 테스트 프로젝트를 만듭니다.
 
-      ::: moniker range="vs-2019"
+      ::: moniker range=">=vs-2019"
 
       1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다. **새 프로젝트 추가** 대화 상자에서 **언어** 를 C++로 설정하고 검색 상자에 "test"를 입력합니다. 그런 다음, **네이티브 단위 테스트 프로젝트** 를 선택합니다.
 
@@ -90,7 +90,7 @@ ms.locfileid: "100563423"
 
   1. 기본 단위 테스트 프로젝트를 만듭니다.
 
-      ::: moniker range="vs-2019"
+      ::: moniker range=">=vs-2019"
 
       1. **파일** 메뉴에서 **새로 만들기** > **프로젝트** 를 차례로 선택합니다. **새 프로젝트 추가** 대화 상자에서 **언어** 를 C++로 설정하고 검색 상자에 "test"를 입력합니다. 그런 다음, **네이티브 단위 테스트 프로젝트** 를 선택합니다.
 

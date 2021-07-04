@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
-ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
+ms.openlocfilehash: 6dc4137157e2fa5136a0b8c86c5cf72f284a9eb7
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105981292"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307378"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio 오프라인 설치에 필요한 인증서 설치
 
@@ -42,7 +42,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 [네트워크 레이아웃](../install/create-a-network-installation-of-visual-studio.md) 또는 [로컬 오프라인 캐시](../install/create-an-offline-installation-of-visual-studio.md)를 만들면 필요한 인증서가 Certificates 폴더에 다운로드됩니다. 각 인증서 파일을 마우스 오른쪽 단추로 클릭하고 인증서 설치를 선택한 다음, 인증서 관리자 마법사를 클릭하여 인증서를 수동으로 설치할 수 있습니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
 
@@ -60,7 +60,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
 
 2. 다음 명령으로 배치 파일을 만듭니다.
 
-   ```cmd
+   ```shell
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
@@ -70,7 +70,7 @@ Visual Studio 설치 엔진은 신뢰할 수 있는 콘텐츠만 설치합니다
    
    또는 다음 명령을 사용하여 Windows와 함께 제공되는 certutil.exe를 사용하는 일괄 처리 파일을 만듭니다.
    
-      ```cmd
+      ```shell
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"

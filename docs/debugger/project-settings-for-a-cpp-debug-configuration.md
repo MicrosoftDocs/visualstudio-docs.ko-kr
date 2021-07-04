@@ -1,7 +1,7 @@
 ---
 title: C++ 디버그 구성에 대한 프로젝트 설정
 description: 속성 페이지에서 C 및 C++ 디버깅을 구성합니다. 이 문서에서는 설정을 설명하고 해당 범주를 알려 줍니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34dd9b82a642c9e9ec32dde383a8c2e02ac57aa2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842723"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385190"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 디버그 구성에 대한 프로젝트 설정
 C 또는 C++ 디버그 구성에 대한 프로젝트 설정은 **속성 페이지** 대화 상자에서 변경할 수 있습니다. [방법: 디버그 및 릴리스 구성 설정](../debugger/how-to-set-debug-and-release-configurations.md)을 참조하세요. 다음 표에서는 **속성 페이지** 대화 상자에서 디버거 관련 설정을 확인할 수 있는 위치에 대해 설명합니다.

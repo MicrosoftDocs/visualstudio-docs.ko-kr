@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f3c611ae157be4f2ea89254856bdd3b6fba448d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399379"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687682"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio에서 플랫폼 간 모바일 개발
 
@@ -110,7 +110,7 @@ Xamarin용 Visual Studio Tools를 사용하면 동일한 솔루션 및 공유 �
 |**자세히**|
 |--------------------|
 |[Visual Studio 설치](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Apache Cordova용 도구 Visual Studio 시작](/visualstudio/cross-platform/tools-for-cordova/)|
+|[Apache Cordova용 도구 Visual Studio 시작](/previous-versions/visualstudio/cross-platform/tools-for-cordova/)|
 |[Android 용 Visual Studio 에뮬레이터에 대해 알아보기](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end

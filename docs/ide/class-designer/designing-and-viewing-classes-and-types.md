@@ -19,16 +19,19 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85921343ac52c066735d607ce32635e953cf2e6a
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850297"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254787"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Class Designer를 사용하여 클래스와 형식 디자인 및 보기
 
 Visual Studio에서 **클래스 디자이너** 를 사용하여 코드의 클래스와 기타 형식을 디자인, 시각화 및 리팩터링할 수 있습니다. C#, Visual Basic 또는 C++ 프로젝트에서 클래스를 만들고 편집하려면 클래스 다이어그램을 사용합니다. 또한 클래스 다이어그램을 사용하여 프로젝트 구조를 더 잘 이해하거나 코드를 다시 구성할 수 있습니다.
+
+>[!NOTE]
+>.NET Core 프로젝트에서는 아직 클래스 디자이너를 사용할 수 없습니다.
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>클래스 다이어그램을 사용하여 할 수 있는 작업
 

@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0584673880a56bbde0ef44ad14c24acca252c5a2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949456"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307481"
 ---
 # <a name="disable-or-move-the-package-cache"></a>패키지 캐시를 사용하지 않도록 설정 또는 이동
 
@@ -34,7 +34,7 @@ ms.locfileid: "99949456"
 
 새로운 설치 관리자를 사용하여 Visual Studio 또는 기타 제품을 설치, 수정 또는 복구하기 전에 설치 관리자에 대한 `--nocache` 스위치를 사용하여 설치 관리자를 시작할 수 있습니다.
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
@@ -42,7 +42,7 @@ ms.locfileid: "99949456"
 
 캐시를 다시 사용하도록 설정하려면 `--cache`를 전달합니다. 필요한 패키지만 캐시되므로 모든 패키지를 복원해야 할 경우에는 네트워크 연결을 끊기 전에 Visual Studio를 복구해야 합니다.
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 
@@ -56,7 +56,7 @@ Visual Studio를 설치, 수정 또는 복구하기 전에 캐시가 사용되�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 설치](install-visual-studio.md)
 * [엔터프라이즈 배포에 대한 기본값 설정](set-defaults-for-enterprise-deployments.md)

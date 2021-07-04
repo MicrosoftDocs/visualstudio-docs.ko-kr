@@ -1,7 +1,7 @@
 ---
 title: VB 디버그 구성의 프로젝트 설정 | Microsoft Docs
 description: Visual Studio의 속성 페이지 창에서 Visual Basic 디버그 구성의 프로젝트 설정을 변경하는 방법을 알아봅니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1f0e7aa0e6ee7523f8ff7ae1f3c8e34745a3af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f16d0dde62a23d8272cb89aec46f2ce952f18979
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842710"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385212"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 디버그 구성에 대한 프로젝트 설정은 [디버그 및 릴리스 구성](../debugger/how-to-set-debug-and-release-configurations.md)에 설명된 것처럼 **속성 페이지** 창에서 변경할 수 있습니다. 다음 표에서는 **속성 페이지** 창에서 디버거 관련 설정을 확인할 수 있는 위치에 대해 설명합니다.

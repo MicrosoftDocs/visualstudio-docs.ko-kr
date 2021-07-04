@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 906097e0356922cdcc5afbabb1771348962ea4ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54fdd71d848d1edad93fe38598d71c9dbbede7f
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859504"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308118"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>UWP(유니버설 Windows 플랫폼)용 앱 개발
 
@@ -50,7 +50,7 @@ Windows 10 Phone, Windows 10 데스크톱 또는 Xbox에서 이 앱을 실행합
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows) - Visual Studio 2019는 Windows 10에서만 UWP 개발을 지원합니다. 자세한 내용은 Visual Studio [플랫폼 대상 지정](/visualstudio/releases/2019/compatibility/) 및 [시스템 요구 사항](/visualstudio/releases/2019/system-requirements/)을 참조하세요.
 

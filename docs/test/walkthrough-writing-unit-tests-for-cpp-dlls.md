@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: cfdc580b94760cb0c5160918210ba6c3dd8fa2f6
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727543"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042927"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>방법: C++ DLL에 대한 단위 테스트 작성
 
@@ -86,7 +86,7 @@ ms.locfileid: "97727543"
 
 ## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> DLL 프로젝트 만들기
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 다음 단계에서는 Visual Studio 2019에서 DLL 프로젝트를 만드는 방법을 보여줍니다.
 

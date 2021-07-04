@@ -1,7 +1,7 @@
 ---
 title: 고급 기능
 description: 숙련된 개발자나 이미 Visual Studio에 익숙한 개발자에게 보다 적합한 고급 기능에 대해 알아봅니다.
-ms.custom: SEO-VS-2020
+ms.custom: vs-acquisition
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6cc6604816921b054b0c909177c8e641493920a8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862085"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386198"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio의 기능
 
@@ -82,13 +82,9 @@ Visual Studio를 사용하여 Android, iOS 및 기타 [모바일 디바이스](h
 
 - [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/)을 사용하여 C# 및 F#으로 iOS, Android 및 Windows용 모바일 앱을 빌드합니다.
 
-- HTML, CSS, JavaScript 등의 표준 웹 기술을 사용하여 [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)로 iOS, Android 및 Windows용 모바일 앱을 빌드할 수 있습니다.
-
 - [Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md)를 사용하여 C#으로 2D 및 3D 게임을 빌드합니다.
 
 - iOS, Android 및 Windows 디바이스용 네이티브 C++ 앱을 빌드합니다. [플랫폼 간 개발용 C++](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development)를 사용하여 iOS, Android 및 Windows용으로 빌드된 라이브러리에서 공통 코드를 공유합니다.
-
-- [Android Emulator](../cross-platform/visual-studio-emulator-for-android.md)를 사용하여 Android 앱을 배포, 테스트 및 디버그합니다.
 
 ## <a name="connect-to-databases"></a>데이터베이스에 연결
 

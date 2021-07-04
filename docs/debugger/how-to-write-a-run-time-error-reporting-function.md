@@ -1,7 +1,7 @@
 ---
 title: 런타임 오류 보고 함수 작성 | Microsoft Docs
 description: Visual Studio에서 사용자 지정 런타임 오류 보고 함수를 작성하는 예제를 확인합니다. _CrtDbgReportW와 동일한 선언을 포함하고 1 값을 반환해야 합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23f5234cb0184de14f7506fd540004a200a65a4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ff82afdfda8af746533f07f21d330c359a1618c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925355"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385139"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>방법: 런타임 오류 보고 함수 작성(C++)
 사용자 지정 런타임 오류 보고 함수는 `_CrtDbgReportW`와 동일하게 선언해야 합니다. 이 함수는 디버거에 1을 값으로 반환해야 합니다.

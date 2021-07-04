@@ -1,7 +1,7 @@
 ---
 title: 편집하며 계속하기 설정/해제 | Microsoft Docs
 description: 디자인 타임에 Visual Studio 옵션에서 편집하며 계속하기를 사용하거나 사용하지 않도록 설정하는 방법을 알아봅니다. 편집하며 계속하기는 디버그 빌드에서만 작동합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -27,12 +27,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 51ff58b02e4ea0a197b6a13f12487226269413ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 261963cbc1aee63374d6a9c147f42678208c39ec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884379"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384709"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>방법: 편집하며 계속하기 설정/해제(C#, VB, C++)
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: aa0c95e3a9f3598cd6399b565adb75faccac22a8
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683624"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761149"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>빠른 시작: Visual Studio에서 CPU 사용량 데이터 분석(ASP.NET Core)
 
@@ -41,7 +41,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
 
    표시되는 대화 상자의 가운데 창에서 **MVC** 를 선택한 다음 **확인** 을 클릭합니다.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Visual Studio 2019의 시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 시작 창이 열려있지 않다면 **파일**  >  **시작 창** 을 선택한 후 **새 프로젝트 만들기** 를 선택합니다.
 
    검색 상자에 **web app** 을 입력하고 **C#** 을 언어로 선택한 다음 **ASP.NET Core 웹 애플리케이션(Model-View-Controller)** 을 선택한 후 **다음** 을 선택합니다. 다음 화면에서 프로젝트의 이름을 *MyProfilingApp_MVC* 로 지정한 후 **다음** 을 선택합니다.
@@ -169,7 +169,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
     ```
 
     ::: moniker-end
-    ::: moniker range="vs-2019"
+    ::: moniker range=">=vs-2019"
 
     ```csharp
     public IActionResult Privacy()
@@ -215,7 +215,7 @@ Windows 8 이상에서는 디버거(**진단 도구** 창)를 포함한 프로�
    ::: moniker range="vs-2017"
    Visual Studio 2017에서 코드를 실행하려면 **정보** 링크를 클릭합니다.
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    Visual Studio 2019에서 코드를 실행하려면 **개인 정보** 링크를 클릭합니다.
    ::: moniker-end
 

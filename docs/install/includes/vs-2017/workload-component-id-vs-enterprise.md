@@ -3,19 +3,19 @@ title: Visual Studio Enterprise 2017 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: 작업 및 구성 요소 ID를 사용하여 명령줄로 Visual Studio를 설치하거나 VSIX 매니페스트에서 종속성으로 지정합니다.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: d250a1b00c65c24d38a47f7a9a2791f9ef7a2e82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 977c50d42a5c3b59a397714a656f6fd84d94de36
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881847"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449872"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Visual Studio 핵심 편집기(Visual Studio Enterprise 2017에 포함)
 
@@ -272,7 +272,7 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.277
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 15.0.26720.2 | 권장
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | 옵션
 Component.Microsoft.VisualStudio.RazorExtension | Razor 언어 서비스 | 15.0.26720.2 | 옵션
-Component.Microsoft.Web.LibraryManager | 라이브러리 관리자 | 15.8.27705.0 | Optional
+Component.Microsoft.Web.LibraryManager | 라이브러리 관리자 | 15.8.27705.0 | 선택
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 옵션
 Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | 옵션
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 타기팅 팩 | 15.6.27406.0 | 옵션
@@ -295,7 +295,7 @@ Microsoft.VisualStudio.Component.CodeClone | 코드 복제본 | 15.0.26208.0 | �
 Microsoft.VisualStudio.Component.CodeMap | 코드 맵 | 15.0.26208.0 | 옵션
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 연결 및 게시 도구 | 15.9.28107.0 | 옵션
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 실시간 종속성 유효성 검사 | 15.0.26208.0 | 옵션
-Microsoft.VisualStudio.Component.DockerTools | 컨테이너 개발 도구 | 15.8.27906.1 | Optional
+Microsoft.VisualStudio.Component.DockerTools | 컨테이너 개발 도구 | 15.8.27906.1 | 선택
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 컨테이너 개발 도구 - 빌드 도구 | 15.7.27617.1 | 옵션
 Microsoft.VisualStudio.Component.FSharp | F# 언어 지원 | 15.8.27825.0 | 옵션
 Microsoft.VisualStudio.Component.FSharp.Desktop | F# 데스크톱 언어 지원 | 15.8.27825.0 | 옵션
@@ -416,7 +416,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK(10.0.17134.
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | 옵션
 Microsoft.VisualStudio.Component.WinXP | C++용 Windows XP 지원 | 15.8.27924.0 | 옵션
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 및 UCRT SDK | 15.6.27406.0 | 옵션
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++용 Windows XP 지원 | 15.8.27705.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++용 Windows XP 지원 | 15.8.27705.0 | 선택
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK(10.0.15063.0) | 15.8.27825.0 | 옵션
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK(10.0.16299.0) | 15.8.27825.0 | 옵션
 
@@ -440,7 +440,7 @@ Microsoft.VisualStudio.Component.Graphics.Win81 | 그래픽 도구 Windows 8.1 S
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 권장
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 프로파일링 도구 | 15.0.26823.1 | 권장
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK(10.0.17763.0) | 15.9.28307.102 | 권장
-Component.Android.NDK.R12B | Android NDK(R12B) | 12.1.10 | Optional
+Component.Android.NDK.R12B | Android NDK(R12B) | 12.1.10 | 선택
 Component.Android.SDK23.Private | Android SDK 설치(API 레벨 23)(JavaScript를 통한 모바일 개발에 대한 로컬 설치/C++) | 15.9.28016.0 | 옵션
 Component.Ant | Apache Ant(1.9.3) | 1.9.3.8 | 옵션
 Component.Cocos | Cocos | 15.0.26906.1 | 옵션
@@ -499,11 +499,11 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 핵심 기능 | 
 Component.Android.NDK.R15C | Android NDK(R15C) | 15.2.1 | 권장
 Component.Ant | Apache Ant(1.9.3) | 1.9.3.8 | 권장
 Component.MDD.Android | C++ Android 개발 도구 | 15.0.26606.0 | 권장
-Component.Android.NDK.R12B | Android NDK(R12B) | 12.1.10 | Optional
-Component.Android.NDK.R12B_3264 | Android NDK(R12B)(32비트) | 12.1.11 | Optional
-Component.Android.NDK.R13B | Android NDK(R13B) | 13.1.7 | Optional
-Component.Android.NDK.R13B_3264 | Android NDK(R13B)(32비트) | 13.1.8 | Optional
-Component.Android.NDK.R15C_3264 | Android NDK(R15C)(32비트) | 15.2.1 | Optional
+Component.Android.NDK.R12B | Android NDK(R12B) | 12.1.10 | 선택
+Component.Android.NDK.R12B_3264 | Android NDK(R12B)(32비트) | 12.1.11 | 선택
+Component.Android.NDK.R13B | Android NDK(R13B) | 13.1.7 | 선택
+Component.Android.NDK.R13B_3264 | Android NDK(R13B)(32비트) | 13.1.8 | 선택
+Component.Android.NDK.R15C_3264 | Android NDK(R15C)(32비트) | 15.2.1 | 선택
 Component.Google.Android.Emulator.API23.Private | Google Android 에뮬레이터(API 레벨 23)(로컬 설치) | 15.6.27413.0 | 옵션
 Component.HAXM.Private | Intel HAXM(Hardware Accelerated Execution Manager)(로컬 설치) | 15.9.28307.421 | 옵션
 Component.Incredibuild | IncrediBuild - 빌드 가속화 | 15.7.27617.1 | 옵션
@@ -851,10 +851,10 @@ Component.CPython2.x64 | Python 2 64비트(2.7.14) | 2.7.14 | 옵션
 Component.CPython2.x86 | Python 2 32비트(2.7.14) | 2.7.14 | 옵션
 Component.CPython3.x86 | Python 3 32비트(3.6.6) | 3.6.6 | 옵션
 Component.Microsoft.VisualStudio.RazorExtension | Razor 언어 서비스 | 15.0.26720.2 | 옵션
-Component.Microsoft.Web.LibraryManager | 라이브러리 관리자 | 15.8.27705.0 | Optional
+Component.Microsoft.Web.LibraryManager | 라이브러리 관리자 | 15.8.27705.0 | 선택
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 옵션
 Microsoft.Component.ClickOnce | ClickOnce 게시 도구 | 15.8.27825.0 | 옵션
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Optional
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 선택
 Microsoft.Component.NetFX.Native | .NET 네이티브 | 15.0.26208.0 | 옵션
 Microsoft.Component.PythonTools.UWP | Python IoT 지원 | 15.0.26606.0 | 옵션
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 유니버설 CRT SDK | 15.6.27309.0 | 옵션
@@ -876,7 +876,7 @@ Microsoft.VisualStudio.Component.ClassDesigner | 클래스 디자이너 | 15.0.2
 Microsoft.VisualStudio.Component.CodeClone | 코드 복제본 | 15.0.26208.0 | 옵션
 Microsoft.VisualStudio.Component.CodeMap | 코드 맵 | 15.0.26208.0 | 옵션
 Microsoft.VisualStudio.Component.DiagnosticTools | .NET 프로파일링 도구 | 15.8.27729.1 | 옵션
-Microsoft.VisualStudio.Component.DockerTools | 컨테이너 개발 도구 | 15.8.27906.1 | Optional
+Microsoft.VisualStudio.Component.DockerTools | 컨테이너 개발 도구 | 15.8.27906.1 | 선택
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 컨테이너 개발 도구 - 빌드 도구 | 15.7.27617.1 | 옵션
 Microsoft.VisualStudio.Component.GraphDocument | DGML 편집기 | 15.0.27005.2 | 옵션
 Microsoft.VisualStudio.Component.Graphics | 이미지 및 3D 모델 편집기 | 15.6.27406.0 | 옵션

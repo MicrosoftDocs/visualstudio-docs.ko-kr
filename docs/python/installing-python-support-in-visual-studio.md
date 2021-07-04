@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09fb452d579130cdf6597ada3af509b35f24ff43
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881648"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254812"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows의 Visual Studio에서 Python 지원 설치 방법
 
@@ -88,7 +88,6 @@ Visual Studio용 Python 지원(Visual Studio용 Python 도구 또는 PTVS라고�
     | **Cookiecutter 템플릿 지원** | Cookiecutter 그래픽 UI를 설치하여 템플릿을 검색하고, 템플릿 옵션을 입력하고, 프로젝트 및 파일을 만듭니다. [Cookiecutter 확장 사용](using-python-cookiecutter-templates.md)을 참조하세요. |
     | **Python 웹 지원** | Bottle, Flask 및 Django 프레임워크를 사용하는 프로젝트에 대한 템플릿과 함께 HTML, CSS 및 JavaScript 편집 지원을 포함하는 웹 개발용 도구를 설치합니다. [Python 웹 프로젝트 템플릿](python-web-application-project-templates.md)을 참조하세요. |
     | **Python 네이티브 개발 도구** | C++ 컴파일러 및 Python에 대한 기본 확장을 개발하는 데 필요한 기타 구성 요소를 설치합니다. [Python용 C++ 확장 만들기](working-with-c-cpp-python-in-visual-studio.md)를 참조하세요. 또한 전체 C++ 지원을 사용하려면 **C++를 사용한 데스크톱 개발** 워크로드를 설치하세요. |
-    | **Azure Cloud Services 핵심 도구** | Python에서 개발자 Azure Cloud Services에 대한 추가 지원을 제공합니다. [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요. |
     ::: moniker-end
 
 1. 설치가 끝나면 설치 관리자는 Visual Studio를 수정, 실행, 복구 또는 제거하는 옵션을 제공합니다. **수정** 단추는 설치된 구성 요소의 Visual Studio에 대한 업데이트를 사용할 수 있으면 **업데이트** 로 변경됩니다. (**수정** 옵션은 드롭다운 메뉴에서 사용할 수 있습니다.) "Visual Studio"를 검색하여 Windows **시작** 메뉴에서 Visual Studio 및 설치 관리자를 시작할 수도 있습니다.

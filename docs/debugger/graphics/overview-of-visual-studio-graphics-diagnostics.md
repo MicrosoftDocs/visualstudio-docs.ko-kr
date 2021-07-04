@@ -1,7 +1,7 @@
 ---
 title: 그래픽 진단 개요 | Microsoft Docs
 description: Visual Studio 그래픽 진단은 Direct3D 작업을 기록하고 로그를 분석하여 렌더링 및 성능 문제를 해결하는 도구 집합입니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 02/09/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae7969a3eb0e33b46755cdb3fa92cc2bcbe19c8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24b67b9585db973e6cbef3b1c28c6068e7c37034
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905182"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386204"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단 개요
 Visual Studio *그래픽 진단* 은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 다음, 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중인 앱 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단을 사용할 수 있습니다.

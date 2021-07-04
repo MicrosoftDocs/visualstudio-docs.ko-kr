@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 01048bc9b21287eb62693096b34a1ea8305e0ee9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3aefba3880443269dbdb1c933e2c12b2f8001469
+ms.sourcegitcommit: fc05a763b59e212c86350d117a1900a1f2686ec8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851870"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111551282"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Visual Studio용 R 도구와 함께 Docker 컨테이너 사용
 
@@ -22,7 +22,7 @@ RTVS(Visual Studio용 R 도구) 버전 1.3 이상은 설치된 [Windows용 Docke
 
 ## <a name="create-a-container"></a>컨테이너 만들기
 
-1. **작업 영역** 창의 오른쪽 모서리에서 **컨테이너** 단추를 선택합니다(**R 도구** > **Windows** > **작업 영역**). Windows용 Docker가 설치되지 않은 경우 창에 표시되고 다운로드에 대한 링크를 제공합니다. Docker를 설치하면 컴퓨터를 다시 시작해야 합니다.
+1. **작업 영역** 창의 오른쪽 모서리에서 **컨테이너** 단추를 선택합니다(**R 도구** > **Windows** > **작업 영역**). Windows용 Docker가 설치되지 않은 경우 창에 표시되고 다운로드에 대한 링크를 제공합니다. Docker를 설치하려면 컴퓨터를 다시 시작해야 할 수 있습니다.
 
     ![컨테이너 명령을 사용하는 Visual Studio용 R 도구(VS2017)의 작업 영역 창](media/container-workspaces-window.png)
 
@@ -53,7 +53,7 @@ RTVS(Visual Studio용 R 도구) 버전 1.3 이상은 설치된 [Windows용 Docke
 RTVS는 아래 Docker 파일에서 설명한 microsoft/rtvs 이미지와 같은 사용자 빌드 이미지를 사용하여 만든 컨테이너의 관리를 감지하고 허용합니다. 여기에서 사용된 기본 이미지에는 rtvs-daemon, R 3.4.2 및 공통 R 패키지가 미리 설치되어 있습니다. **참고**: 필요에 따라 여기에 표시된 사용자 이름 및 암호를 변경합니다.
 
 ```docker
-FROM microsoft/rtvs:1.3-ub1604-r3.4.2
+FROM mcr.microsoft.com/rtvs:1.3-ub1604-r3.4.2
 RUN useradd --create-home ruser1
 RUN echo "ruser1:foobar" | chpasswd
 

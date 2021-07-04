@@ -1,7 +1,7 @@
 ---
 title: 웹 양식 디버그 | Microsoft Docs
 description: 연습을 수행하여 중단점을 설정하고 변수를 검토하는 방법을 비롯하여 ASP.NET 웹 애플리케이션(Web Form)을 디버그하는 방법을 알아봅니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 476d36a8ea303f2dd6062eaf0a597c47df580ff7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18347b7ba9ff52778b5acef685acd8f1ee400793
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884171"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385211"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>연습: Web Form 디버그
 이 연습 과정에서는 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 웹 애플리케이션(Web Form)의 디버깅 방법을 보여 줍니다. 또한 실행을 시작하고 중지하며, 중단점을 설정하고, **조사식** 창에서 변수를 검사하는 방법을 보여 줍니다.

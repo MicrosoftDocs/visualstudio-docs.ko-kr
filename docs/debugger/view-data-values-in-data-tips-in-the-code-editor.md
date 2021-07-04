@@ -1,7 +1,7 @@
 ---
 title: DataTips에서 변수 값 보기 | Microsoft Docs
 description: DataTips를 사용하여 디버그하는 동안 배열 및 구조체를 비롯한 변수에 관한 정보를 편리하게 표시합니다. 값을 수정할 수도 있습니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904919"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386477"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>코드 편집기에서 DataTips의 데이터 값 보기
 

@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 4ddb15c8bc5bf90663c5431d2379af61b43e73a6
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493077"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043096"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Mac용 Visual Studio에서 Docker 시작
 
@@ -42,24 +42,25 @@ Mac용 Visual Studio에서 **docker-compose** 라는 새 프로젝트를 솔루�
 Dockerfile은 최종 Docker 이미지를 만들기 위한 레시피입니다. 그 안의 명령을 이해하려면 [Dockerfile 참조](https://docs.docker.com/engine/reference/builder/)를 참조하세요.
 
 ```
-FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
 WORKDIR /app
 EXPOSE 80
+EXPOSE 443
 
-FROM microsoft/dotnet:2.2-sdk AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
 COPY DockerDemo/DockerDemo.csproj DockerDemo/
-RUN dotnet restore DockerDemo/DockerDemo.csproj
+RUN dotnet restore "DockerDemo/DockerDemo.csproj"
 COPY . .
-WORKDIR /src/DockerDemo
-RUN dotnet build DockerDemo.csproj -c Release -o /app
+WORKDIR "/src/DockerDemo"
+RUN dotnet build "DockerDemo.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish DockerDemo.csproj -c Release -o /app
+RUN dotnet publish "DockerDemo.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "DockerDemo.dll"]
 ```
 

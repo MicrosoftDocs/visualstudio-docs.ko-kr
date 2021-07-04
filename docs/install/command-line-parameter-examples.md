@@ -5,19 +5,19 @@ ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5685de34235dcd9b903cbf5be6371ebf3f1e84c3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868532"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307546"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 설치에 대한 명령줄 매개 변수 예
 
@@ -37,7 +37,7 @@ ms.locfileid: "99868532"
 
 * 대화형 프롬프트 없이 진행률이 표시되는 Visual Studio의 최소 인스턴스를 설치합니다.
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
@@ -45,7 +45,7 @@ ms.locfileid: "99868532"
 
 * 대화형 프롬프트 없이 진행률이 표시되는 명령줄을 사용하여 Visual Studio 인스턴스를 업데이트합니다.
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --update --quiet --wait
    vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
    ```
@@ -55,7 +55,7 @@ ms.locfileid: "99868532"
 
 * 제품을 설치해야만 반환되는 프랑스어 언어 팩을 포함한 Visual Studio의 데스크톱 인스턴스를 자동으로 설치합니다.
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
@@ -66,7 +66,7 @@ ms.locfileid: "99868532"
 
 * 배치 파일 또는 스크립트에서 다음 명령을 실행하기 전에 Visual Studio 설치 관리자가 완료될 때까지 기다리는 데 사용합니다. 일괄 처리 파일의 경우 [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md) 페이지에 나오는 대로 `%ERRORLEVEL%` 환경 변수가 명령의 반환 값을 포함합니다. 일부 명령 유틸리티는 추가 매개 변수가 있어야 완료될 때까지 기다리고 설치 관리자의 반환 값을 가져올 수 있습니다. 다음은 PowerShell 스크립트 명령 ‘Start-Process’와 함께 사용되는 추가 매개 변수에 대한 예제입니다.
 
-   ```cmd
+   ```shell
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
    echo %errorlevel%
    ```
@@ -76,7 +76,7 @@ ms.locfileid: "99868532"
    Write-Output $process.ExitCode 
    ```
 
-   또는
+   or
 
    ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -94,7 +94,7 @@ ms.locfileid: "99868532"
 
 * Visual Studio 핵심 편집기를 다운로드합니다(최소한의 Visual Studio 구성). 영어 언어 팩만 포함:
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
@@ -102,7 +102,7 @@ ms.locfileid: "99868532"
 
 * .NET 데스크톱 및 .NET 웹 워크로드를 모든 권장 구성 요소 및 GitHub 확장명과 함께 다운로드합니다. 영어 언어 팩만 포함:
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
@@ -115,7 +115,7 @@ ms.locfileid: "99868532"
 
 * Visual Studio Enterprise Edition에서 사용할 수 있는 모든 워크로드 및 구성 요소의 대화형 설치를 시작합니다.
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --all
    ```
 
@@ -123,7 +123,7 @@ ms.locfileid: "99868532"
 
 * Node.js 개발 지원을 통해 Visual Studio Community 버전이 이미 설치된 머신에 Visual Studio Professional의 두 번째 명명된 인스턴스를 설치합니다.
 
-   ```cmd
+   ```shell
    vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
@@ -134,7 +134,7 @@ ms.locfileid: "99868532"
 
 * 기본 설치된 Visual Studio 인스턴스에서 프로파일링 도구 구성 요소를 제거합니다.
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
@@ -147,9 +147,22 @@ ms.locfileid: "99868532"
 
 * 기본 설치된 Visual Studio 인스턴스에서 프로파일링 도구 구성 요소를 제거합니다.
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
+   --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
+   --passive
+  ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* 기본 설치된 Visual Studio 인스턴스에서 프로파일링 도구 구성 요소를 제거합니다.
+
+  ```shell
+   vs_enterprise.exe modify ^
+   --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
   ```
@@ -190,13 +203,13 @@ ms.locfileid: "99868532"
 
 * 내보내기를 사용하여 설치에서 선택 사항을 저장합니다.
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
 * 내보내기를 사용하여 사용자 지정 선택 사항을 처음부터 저장합니다.
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
   ```
 
@@ -210,19 +223,19 @@ ms.locfileid: "99868532"
 
 * --config를 사용하여 이전에 저장한 설치 구성 파일에서 워크로드 및 구성 요소를 설치합니다.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
   ```
 
 * --config를 사용하여 기존 설치에 워크로드 및 구성 요소를 추가합니다.
 
-  ```cmd
+  ```shell
   vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 관리자 가이드](visual-studio-administrator-guide.md)
 * [명령줄 매개 변수를 사용하여 Visual Studio 설치](use-command-line-parameters-to-install-visual-studio.md)

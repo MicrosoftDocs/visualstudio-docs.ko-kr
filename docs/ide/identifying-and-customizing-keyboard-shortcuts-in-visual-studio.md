@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221251"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038605"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Visual Studio에서 바로 가기 키 식별 및 사용자 지정
 
@@ -35,7 +35,7 @@ Visual Studio 명령에 대한 바로 가기 키를 확인하고, 해당 바로 
 
 - 바로 가기를 선택한 컨텍스트 위치. 예를 들어 **F2** 바로 가기는 **설정 디자이너** 를 사용 중인 경우 `Edit.EditCell` 명령을 호출하고, **팀 탐색기** 를 사용 중인 경우 `File.Rename` 명령을 호출합니다.
 
-설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. [인기 있는 바로 가기 키](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)에서 수십 가지 명령의 기본 바로 가기 키를 확인할 수도 있습니다. 모든 기본 바로 가기의 전체 목록(**일반 개발** 설정 기준)은 [모든 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
+설정, 사용자 지정 여부 및 컨텍스트에 관계없이 언제든지 **옵션** 대화 상자에서 바로 가기 키를 찾아 변경할 수 있습니다. [인기 있는 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts)에서 수십 가지 명령의 기본 바로 가기 키를 확인할 수도 있습니다. 모든 기본 바로 가기의 전체 목록(**일반 개발** 설정 기준)은 [모든 바로 가기 키](../ide/default-keyboard-shortcuts-in-visual-studio.md)를 참조하세요.
 
 바로 가기가 ‘전역’ 컨텍스트의 명령에 할당되었고 다른 컨텍스트가 없는 경우, 바로 가기는 항상 해당 명령을 호출합니다. 하지만 바로 가기가 전역 컨텍스트에서 한 명령에 할당되고 특정 컨텍스트에서는 다른 명령에 할당될 수도 있습니다. 특정 컨텍스트에서 이러한 바로 가기를 사용하는 경우, 바로 가기는 전역 컨텍스트가 아닌 특정 컨텍스트의 명령을 호출합니다.
 

@@ -1,7 +1,7 @@
 ---
 title: .NET 서비스에 프로파일러를 연결하여 앱 통계 수집
 description: Visual Studio 프로파일링 도구 명령줄 도구를 사용하여 .NET Framework 서비스에 프로파일러를 연결하고 샘플링 방법을 통해 성능 통계를 가져옵니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
@@ -11,12 +11,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3808f004d9813e846a10c2b672b6406f9cc54cde
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92b5e24100e43a6a03352c49111226298160521b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958884"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385476"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>방법: 명령줄을 통해 .NET 서비스에 프로파일러를 연결하여 애플리케이션 통계 수집
 이 문서에서는 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 프로파일링 도구 명령줄 도구를 사용하여 프로파일러를 .NET Framework 서비스에 연결하고 샘플링 방법을 통해 성능 통계를 수집하는 방법에 대해 설명합니다.

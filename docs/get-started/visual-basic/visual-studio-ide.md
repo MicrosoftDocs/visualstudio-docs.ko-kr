@@ -4,6 +4,7 @@ description: Visual Basic 개발자가 Visual Studio를 사용하여 코드를 �
 ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682976"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386633"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE 시작 | Visual Basic
 
@@ -432,7 +433,7 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
 
    프로젝트 전체에서 변수의 이름이 변경됩니다. 이 경우에는 두 군데밖에 없습니다.
 
-4. 이제 IntelliSense를 살펴보겠습니다. `Console.WriteLine("Hello " + username + "!")` 줄 아래에 다음 코드 조각을 입력합니다.
+4. 이제 IntelliSense를 살펴보겠습니다. `Console.WriteLine("Hello &quot; + username + &quot;!")` 줄 아래에 다음 코드 조각을 입력합니다.
 
     ```vb
    Dim now = Date.
@@ -481,13 +482,13 @@ IDE를 개인 설정할 수 있는 다른 방법을 배우려면 [Visual Studio 
 
 ::: moniker-end
 
-## <a name="debug-code"></a>코드 디버그
+## <a name="debug-code&quot;></a>코드 디버그
 
 코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점* 을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
 
-중단점을 설정하여 프로그램이 "이동 중"일 때 `username` 변수의 값을 확인하겠습니다.
+중단점을 설정하여 프로그램이 &quot;이동 중&quot;일 때 `username` 변수의 값을 확인하겠습니다.
 
-1. `Console.WriteLine("Hello " + username + "!")`이라고 표시된 코드 줄을 찾습니다. 이 코드 줄에 중단점을 설정하려면, 즉 이 줄에서 프로그램이 실행을 일시 중지하도록 하려면 편집기의 맨 왼쪽 여백을 클릭합니다. 코드 줄의 아무 곳이나 클릭한 다음, **F9** 키를 누를 수도 있습니다.
+1. `Console.WriteLine(&quot;Hello &quot; + username + &quot;!")`이라고 표시된 코드 줄을 찾습니다. 이 코드 줄에 중단점을 설정하려면, 즉 이 줄에서 프로그램이 실행을 일시 중지하도록 하려면 편집기의 맨 왼쪽 여백을 클릭합니다. 코드 줄의 아무 곳이나 클릭한 다음, **F9** 키를 누를 수도 있습니다.
 
    맨 왼쪽 끝에 빨간색 원이 표시되고 코드가 빨간색으로 강조 표시됩니다.
 

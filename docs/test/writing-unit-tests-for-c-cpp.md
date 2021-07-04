@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 877c9163d05f458ce45a46d6b3e6d14e354df591
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217465"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042889"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Visual Studio에서 C/C++에 대한 단위 테스트 작성
 
@@ -51,7 +51,7 @@ Visual Studio Marketplace에서 Google Test 어댑터 및 Boost.Test 어댑터 �
 
 다음 섹션에서는 C++ 단위 테스트를 시작하기 위한 기본 단계를 보여 줍니다. 기본 구성은 Microsoft 및 Google Test 프레임워크에서 유사합니다. Boost.Test에서는 수동으로 테스트 프로젝트를 만들어야 합니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ### <a name="create-a-test-project-in-visual-studio-2019"></a>Visual Studio 2019에서 테스트 프로젝트 만들기
 

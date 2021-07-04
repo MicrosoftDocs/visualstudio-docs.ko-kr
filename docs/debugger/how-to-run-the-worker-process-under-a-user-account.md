@@ -1,7 +1,7 @@
 ---
 title: 사용자 계정으로 작업자 프로세스 실행 | Microsoft Docs
 description: Visual Studio에서 사용자 계정으로 ASP.NET 작업자 프로세스(aspnet_wp.exe 또는 w3wp.exe)를 실행할 수 있도록 컴퓨터를 설정합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8642ed1643b88cdcb28bfa8cabef9200a59cb8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 752d09a0d0c6fe49e49e1298d475c90c86991836
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881310"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384644"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>방법: 사용자 계정으로 작업자 프로세스 실행
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 작업자 프로세스(aspnet_wp.exe 또는 w3wp.exe)를 사용자 계정으로 실행할 수 있도록 컴퓨터를 설정하려면 다음 단계를 따르세요.

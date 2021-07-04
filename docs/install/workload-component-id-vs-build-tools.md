@@ -3,10 +3,10 @@ title: Visual Studio Build Tools 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 기존 Windows 기반 애플리케이션을 빌드합니다.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/25/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 73be2972b3f0bb5d34ee95f2cfb25087e9759cdc
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 696dae30cdbe242772c9277f534283339c6c329b
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683440"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565195"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Visual Studio Build Tools 구성 요소 디렉터리
 

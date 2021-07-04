@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: a338b6f62aee6ec342ef6a16abec71cb6a833bc0
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572995"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042966"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio에서 Google Test for C++를 사용하는 방법
 
@@ -21,7 +21,7 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 
 ![Google 테스트 설치](media/cpp-google-component.png)
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Visual Studio 2019에서 Google Test 프로젝트 추가
 
@@ -38,7 +38,7 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Visual Studio 2017에서 Google Test 프로젝트 추가
 
 1. **솔루션 탐색기** 에서 솔루션 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **새 프로젝트** 를 선택합니다.
-2. 왼쪽 창에서 **Visual C++** >**테스트** 를 선택한 다음, 가운데 창에서 **Google Test 프로젝트** 를 선택합니다.
+2. 왼쪽 창에서 **Visual C++** > **테스트** 를 선택한 다음, 가운데 창에서 **Google Test 프로젝트** 를 선택합니다.
 3. 테스트 프로젝트에 이름을 지정하고 **확인** 을 클릭합니다.
 
 ![새 Google Test 프로젝트](media/cpp-gtest-new-project.png)
@@ -65,7 +65,7 @@ Visual Studio 2017 이상에서는 Google Test가 **C++를 통한 데스크톱 �
 
 ## <a name="write-and-run-tests"></a>테스트 작성 및 실행
 
-이제 Google Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 자세한 내용은 [Google Test 입문](https://github.com/google/googletest/blob/master/docs/primer.md)을 참조하세요. **테스트 탐색기** 를 사용한 테스트 검색, 실행 및 그룹화에 대한 내용은 [테스트 탐색기를 사용하여 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
+이제 Google Test를 작성하고 실행할 준비가 되었습니다. 테스트 매크로에 대한 자세한 내용은 [Google Test 입문](https://github.com/google/googletest/blob/master/docs/primer.md)을 참조하세요. **테스트 탐색기** 를 사용한 테스트 검색, 실행 및 그룹화에 관한 정보는 [테스트 탐색기를 통한 단위 테스트 실행](run-unit-tests-with-test-explorer.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

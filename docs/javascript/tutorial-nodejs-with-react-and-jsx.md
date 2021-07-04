@@ -1,7 +1,7 @@
 ---
 title: Node.js 및 React 앱 만들기
 description: Visual Studio 템플릿에서 Node.js 웹 애플리케이션 프로젝트를 만드는 방법을 알아봅니다.
-ms.custom: ''
+ms.custom: vs-acquisition
 ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,18 +12,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 3299f38e99c6b96cacd3c3661937a29bdec3c93d
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729301"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550703"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 React 앱 만들기
 
 Visual Studio를 사용하면 쉽게 Node.js 프로젝트를 만들고 IntelliSense 및 Node.js를 지원하는 다른 기본 제공 기능을 경험할 수 있습니다. Visual Studio용 이 자습서에서는 Visual Studio 템플릿에서 Node.js 웹 애플리케이션 프로젝트를 만듭니다. 그런 다음, React를 사용하여 간단한 앱을 만듭니다.
 
-이 자습서에서는 다음 작업 방법을 알아봅니다.
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * NPM 패키지 추가
@@ -117,7 +117,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 * react
 * react-dom
 * express
-* 경로
+* path
 * ts-loader
 * typescript
 * webpack
@@ -308,7 +308,7 @@ webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번�
 
 1. 명령 프롬프트에 다음 명령을 입력합니다.
 
-    `node_modules\.bin\webpack app.tsx --config webpack-config.js`
+    `node_modules\.bin\webpack ./app.tsx --config webpack-config.js`
 
     명령 프롬프트 창에 결과가 표시됩니다.
 
@@ -336,7 +336,7 @@ Visual Studio 2019부터 빌드 스크립트가 필요합니다. 앞의 섹션�
 
    ```json
    "scripts": {
-    "build": "webpack-cli app.tsx --config webpack-config.js"
+    "build": "webpack-cli ./app.tsx --config webpack-config.js"
    }
    ```
 

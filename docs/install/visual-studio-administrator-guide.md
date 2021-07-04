@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: ba41c545c2af2e0490ef0410fde7849706123940
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547416"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306711"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 관리자 가이드
 
@@ -34,7 +34,7 @@ ms.locfileid: "106547416"
 
 조직 전체에 Visual Studio를 배포하기 전에 몇 가지 결정할 사항과 완료할 작업이 있습니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * 각 대상 컴퓨터가 [최소 설치 요구 사항](/visualstudio/releases/2019/system-requirements/)을 충족하는지 확인합니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "106547416"
 
   인터넷에 연결되지 않은 컴퓨터의 경우 최소 레이아웃을 만드는 것이 오프라인 Visual Studio 인스턴스를 업데이트하는 가장 쉽고 빠른 방법입니다. 자세한 내용은 [최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](update-minimal-layout.md)를 참조하세요.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * 회사에 필요한 [워크로드 및 구성 요소](workload-and-component-ids.md?view=vs-2019&preserve-view=true)를 결정합니다.
 
@@ -78,7 +78,7 @@ ms.locfileid: "106547416"
 
 * 그룹 정책을 사용할지 여부 및 개별 컴퓨터에 대한 고객 피드백을 사용하지 않도록 Visual Studio를 구성할지 여부를 결정합니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>1단계 - Visual Studio 제품 파일 다운로드
 

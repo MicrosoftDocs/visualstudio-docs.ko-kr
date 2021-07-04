@@ -2,19 +2,19 @@
 title: Visual Studio Build Tools 2017 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 작업 및 구성 요소 ID를 사용하여 기존 Windows 기반 애플리케이션을 빌드합니다.
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3fe0d729902ea454d9f81e51e4957bf2c7d37d1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881938"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449842"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 개발 빌드 도구
 
@@ -283,7 +283,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK(10.0.17134.
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | 옵션
 Microsoft.VisualStudio.Component.WinXP | C++용 Windows XP 지원 | 15.8.27924.0 | 옵션
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 및 UCRT SDK | 15.6.27406.0 | 옵션
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++용 Windows XP 지원 | 15.8.27705.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | C++용 Windows XP 지원 | 15.8.27705.0 | 선택
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK(10.0.15063.0) | 15.8.27825.0 | 옵션
 Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK(10.0.16299.0) | 15.8.27825.0 | 옵션
 
