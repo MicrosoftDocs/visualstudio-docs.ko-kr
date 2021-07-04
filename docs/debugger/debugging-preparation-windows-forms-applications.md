@@ -1,7 +1,7 @@
 ---
 title: Windows Forms 앱 디버깅 준비 | Microsoft Docs
 description: Visual Studio에서 Windows Forms 프로젝트 템플릿으로 만든 Windows Forms 애플리케이션을 디버그하기 위한 준비 단계를 수행합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: c2181fe0b0189b0c0472f4d7cadd6a7c8e172a9b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684145"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387751"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>디버깅 준비 중: Windows Forms 응용 프로그램
 

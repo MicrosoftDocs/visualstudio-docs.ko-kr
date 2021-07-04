@@ -1,7 +1,7 @@
 ---
 title: CPU 샘플링 초보자를 위한 지침
 description: Visual Studio 프로파일링 도구가 애플리케이션에서 함수가 사용되는 기간을 표시하여 애플리케이션의 속도를 높이는 영역을 안내하는 방법을 알아봅니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9368ca0bf2c10afb86f61683bf58b631c4ba5f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07a0593e5139479c1b2d82f7b2f4cd78fde8a884
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954386"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387985"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 샘플링 초보자를 위한 지침
 Visual Studio 프로파일링 도구를 사용하여 애플리케이션의 성능 문제를 분석할 수 있습니다. 다음 절차에서는 **샘플링** 데이터 사용 방법을 보여 줍니다.

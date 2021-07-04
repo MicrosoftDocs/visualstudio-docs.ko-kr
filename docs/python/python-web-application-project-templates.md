@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 6553017034dc46cfd1c035564a83dde89d77d057
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104805993"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254851"
 ---
 # <a name="python-web-application-project-templates"></a>Python 웹 애플리케이션 프로젝트 템플릿
 
@@ -31,7 +31,17 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 ![웹앱의 새 프로젝트 대화 상자](media/projects-new-project-dialog-web.png)
 
+::: moniker range="<=vs-2017"
+
 앞에서 설명한 일반 **웹 프로젝트** 템플릿은 코드가 없고 Python 프로젝트라는 사실 외에 다른 가정이 없는 빈 Visual Studio 프로젝트만 제공합니다. **Azure Cloud Service** 템플릿에 대한 자세한 내용은 [Python용 Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+앞에서 설명한 일반 **웹 프로젝트** 템플릿은 코드가 없고 Python 프로젝트라는 사실 외에 다른 가정이 없는 빈 Visual Studio 프로젝트만 제공합니다.
+
+::: moniker-end
 
 다른 모든 템플릿은 Bottle, Flask 또는 Django 웹 프레임워크를 기반으로 하며, 다음 섹션에 설명된 대로 세 개의 일반 그룹으로 나뉩니다. 이러한 템플릿으로 만든 앱에는 충분한 코드가 포함되어 로컬에서 앱을 실행하고 디버그할 수 있습니다. 또한 각 항목은 프로덕션 웹 서버에서 사용하는 데 필요한 [WSGI 앱 개체](https://www.python.org/dev/peps/pep-3333/)(python.org)를 제공합니다.
 
@@ -79,7 +89,11 @@ Python 웹앱을 Azure에 배포하는 방법에 대한 정보는 [Azure App Ser
 
 Microsoft Azure App Service에 배포할 때는 [사이트 확장](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)으로 Python 버전을 선택하고 패키지를 수동으로 설치합니다. 또한 Azure App Service는 Visual Studio에서 배포할 때 *requirements.txt* 파일에서 패키지를 자동으로 설치하지 **않으므로**[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md)의 구성 세부 정보를 따릅니다.
 
+::: moniker range="<=vs-2017"
+
 Microsoft Azure Cloud Services는 *requirements.txt* 파일을 *지원합니다*. 자세한 내용은 [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
+
+::: moniker-end
 
 ## <a name="debugging"></a>디버깅
 
@@ -141,11 +155,15 @@ Pyramid 앱은 현재 `pcreate` 명령줄 도구를 사용하여 최적으로 �
 
 공유하려는 다른 프레임워크 설정이 있거나 다른 프레임워크 설정을 요청하려면 [GitHub에서 문제](https://github.com/Microsoft/PTVS/issues)를 엽니다.
 
+::: moniker range="<=vs-2017"
+
 ## <a name="convert-a-project-to-azure-cloud-service"></a>프로젝트를 Azure Cloud Service로 변환
 
 **Microsoft Azure 클라우드 서비스 프로젝트로 변환** 명령(아래 이미지)은 클라우드 서비스 프로젝트를 솔루션에 추가합니다. 이 프로젝트에는 사용되는 가상 컴퓨터 및 서비스에 대한 배포 설정 및 구성이 포함됩니다. 클라우드 서비스에 배포하려면 클라우드 프로젝트에서 **Publish** 명령을 사용합니다. Python 프로젝트에서 **Publish** 명령을 사용하면 여전히 웹 사이트에 배포됩니다. 자세한 내용은 [Azure Cloud Service 프로젝트](python-azure-cloud-service-project-template.md)를 참조하세요.
 
 ![Microsoft Azure Cloud Service 프로젝트 명령으로 변환](media/template-web-convert-menu.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>참고 항목
 

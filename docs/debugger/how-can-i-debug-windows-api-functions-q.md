@@ -1,7 +1,7 @@
 ---
 title: Windows API 함수 디버그 | Microsoft Docs
 description: NT 기호가 로드된 Windows API 함수를 디버그하는 방법을 알아봅니다. 32비트 코드에서 데코레이트된 형식의 함수 이름을 사용하여 중단점을 설정합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d84bdc20ab4601798e1f967c1352468e750fa9bd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 89fdbcf9d18a7794e1fb2520384db0f9bcec3147
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155215"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386945"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 함수를 어떻게 디버깅할 수 있습니까?
 NT 기호가 로드된 Windows API 함수를 디버깅하려면 다음 작업을 수행해야 합니다.

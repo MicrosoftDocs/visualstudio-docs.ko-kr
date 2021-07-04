@@ -1,7 +1,7 @@
 ---
 title: 디버거에서 디스어셈블리 코드 보기 | Microsoft Docs
 description: Visual Studio에서 디스어셈블리 창을 사용하여 컴파일러에서 만든 명령에 따라 어셈블리 코드를 표시합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7d772ed757b231ce68fe27b74123f7f5878d0ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8cc67b2f8136ea426eb56c25fb3c345198701f1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845050"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387465"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio 디버거에서 디스어셈블리 코드 보기(C#, C++, Visual Basic, F#)
 

@@ -1,11 +1,9 @@
 ---
 title: 변수에 조사식 설정 | Microsoft Docs
 description: 디버그하는 동안 조사식 및 간략한 조사식의 변수 및 식을 확인합니다. 조사식은 여러 개의 변수를 표시할 수 있고, 간략한 조사식은 변수 1개만 그리고 중단 상태일 때만 표시할 수 있습니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: how-to
-f1_keywords:
-- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8a0c1e9d0ee72425317f299a3e68f091cc93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 246f82b2d55e8e15bb5a56afba846a8b5dc8f245
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883989"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924905"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>조사식 창 및 간략한 조사식을 사용하여 변수 보기
 

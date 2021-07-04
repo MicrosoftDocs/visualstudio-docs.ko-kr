@@ -1,7 +1,7 @@
 ---
 title: 웹앱 디버깅 - 문제 해결 | Microsoft Docs
 description: 웹 애플리케이션에서 오류를 디버그하고 해결하는 데 사용할 수 있는 일반적인 절차에 대한 링크를 검색합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e256e62152d774eb5e296784d934f205a1003d2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01b298d84bd626a73c0b21526281dc788f7e2f8b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872289"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387725"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>웹 애플리케이션 디버그: 문제 해결
 이 단원에는 오류를 해결하는 데 사용할 수 있는 일반적인 절차가 포함되어 있습니다.

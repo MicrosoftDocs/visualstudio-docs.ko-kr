@@ -1,7 +1,7 @@
 ---
 title: C++ 프로젝트 디버깅 준비 | Microsoft Docs
 description: Visual Studio에서 Visual C++ 프로젝트 템플릿으로 만든 기본 프로젝트 형식의 디버그 준비에 대한 정보를 가져옵니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d91d18208a2d05fc4d4b60da98e3e3f8e3c0c835
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 258671ca0426cb877d7cdf4bfc0b0f8f6095253c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683043"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387842"
 ---
 # <a name="debugging-preparation-c-project-types"></a>디버깅 준비 중: C++ 프로젝트 형식
 이 단원에서는 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 프로젝트 템플릿으로 만든 기본 프로젝트 형식을 디버깅하는 방법에 대해 설명합니다.

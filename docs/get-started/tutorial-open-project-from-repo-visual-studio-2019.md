@@ -1,7 +1,7 @@
 ---
 title: '자습서: Visual Studio 2019의 리포지토리에서 프로젝트 열기'
 description: Visual Studio 2019를 사용하여 Git 또는 Azure DevOps 리포지토리에서 프로젝트를 여는 방법을 알아봅니다.
-ms.custom: get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: 76dcd5061e2e12688f5119598071c3235e620967
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: b6f7cd57a1753ca5926ac73a9bb4c8c918d1bd10
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671715"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389945"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>자습서: 리포지토리에서 프로젝트 열기
 

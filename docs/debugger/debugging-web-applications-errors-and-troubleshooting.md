@@ -1,7 +1,7 @@
 ---
 title: 웹앱 디버깅 - 오류 및 문제 해결
 description: 문제 해결 페이지, 발생할 수 있는 각 오류에 대해 설명하는 페이지 등 웹 애플리케이션을 디버그하는 데 도움이 되는 참조 페이지 링크를 찾을 수 있습니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cce4bcbf946dad69fc3e11a7b54365fc549c699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7b77afecaaadd65e203bda52dfc9cb92bef52ff
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872302"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387712"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>웹 애플리케이션 디버그: 오류 및 문제 해결
 웹 애플리케이션을 디버깅하려고 할 때 다음과 같은 오류가 발생할 수 있습니다.

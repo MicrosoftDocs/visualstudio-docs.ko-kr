@@ -6,7 +6,6 @@ ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
-- vs.toolbox
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841901"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925217"
 ---
 # <a name="toolbox"></a>도구 상자
 
@@ -37,7 +36,7 @@ ms.locfileid: "99841901"
 
 프로젝트가 대상으로 하는 .NET 버전도 도구 상자에 표시되는 컨트롤 집합에 영향을 줍니다. 필요한 경우 프로젝트의 속성 페이지에서 대상 프레임워크 버전을 변경할 수 있습니다. **솔루션 탐색기** 에서 프로젝트 노드를 선택한 다음, 메뉴 모음에서 **프로젝트** > **프로젝트 이름 속성** 을 선택합니다. **애플리케이션** 탭에서 **대상 프레임워크** 드롭다운을 사용합니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![대상 프레임워크 드롭다운의 옵션을 보여 주는 애플리케이션 대화 상자의 스크린샷](media/vs-2019/toolbox-change-dotnet-version.png ".NET 버전을 변경할 수 있는 대화 상자의 스크린샷")
 

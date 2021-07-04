@@ -209,9 +209,7 @@
           href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
     - name: .mdf 파일 업그레이드
       href: upgrade-dot-mdf-files.md
-    - name: 데이터 액세스 오류 문제 해결
-      href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: 참고
+- name: 참조
   items:
     - name: O/R 디자이너(Linq to SQL)
       items:

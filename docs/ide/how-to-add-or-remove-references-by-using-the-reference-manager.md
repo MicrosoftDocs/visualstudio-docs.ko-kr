@@ -4,8 +4,6 @@ description: 참조 관리자 대화 상자로 개발된 구성 요소에 참조
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
-f1_keywords:
-- VS.ReferenceManager
 helpviewer_keywords:
 - C# projects, references
 - references [Visual Studio], adding
@@ -23,12 +21,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 82300d90d890cf632693fe07b5873423a29da0ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 552ec8364bb58b72199bacecca99283303eb174c
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893362"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924918"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>방법: 참조 관리자를 사용하여 참조 추가 또는 제거
 

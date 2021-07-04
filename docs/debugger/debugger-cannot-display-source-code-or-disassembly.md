@@ -1,7 +1,7 @@
 ---
 title: 디버거가 소스 코드 또는 디스어셈블리를 표시할 수 없음
 description: “실행이 중지된 현재 위치에 대한 소스 코드나 디스어셈블리를 디버거에서 표시할 수 없습니다.”라는 메시지의 원인을 확인합니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2966405378d2a6144c921c442e7412a41c454c52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bac2f04ab77e34186a4f0ee202fa8d16f6e45e38
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873069"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387348"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>디버거가 현재 위치에 대한 소스 코드나 디스어셈블리를 표시할 수 없습니다.
 이 오류의 의미는 다음과 같습니다.

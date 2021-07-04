@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21115673a41e26b2f1685442d2ed0ad93a147990
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912282"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254890"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Python 대화형 창 작업
 
@@ -73,6 +73,8 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 
 <a name="meta-commands"></a>**대화형** 창은 몇 가지 메타 명령도 지원합니다. 모든 메타 명령은 `$`로 시작하고, `$help`를 입력하면 메타 명령의 목록을 가져올 수 있고, `$help <command>`를 입력하면 특정 명령의 자세한 사용법을 가져올 수 있습니다.
 
+:::moniker range="<=vs-2017"
+
 | 메타 명령 | 설명 |
 | --- | --- |
 | `$$` | 세션 전체에서 코드에 주석을 추가하는 데 도움이 되는 메모를 삽입합니다. |
@@ -83,6 +85,22 @@ Visual Studio에는 선택 가능한 다양한 Python REPL 모드가 있습니�
 | `$mod` | 현재 범위를 지정된 모듈 이름으로 전환합니다. |
 | `$reset` | 실행 환경을 초기 상태로 다시 설정하되, 기록을 유지합니다. |
 | `$wait` | 지정된 기간(밀리초) 이상으로 기다립니다. |
+
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+| 메타 명령 | 설명 |
+| --- | --- |
+| `$$` | 세션 전체에서 코드에 주석을 추가하는 데 도움이 되는 메모를 삽입합니다. |
+| `$cls`, `$clear` | 편집기 창의 내용을 지워서 기록 및 실행 컨텍스트를 그대로 유지합니다. |
+| `$help` | 명령 목록 또는 특정 명령에 대한 도움말을 표시합니다. |
+| `$load` | 파일에서 명령을 로드하고 완료될 때까지 실행합니다. |
+| `$mod` | 현재 범위를 지정된 모듈 이름으로 전환합니다. |
+| `$reset` | 실행 환경을 초기 상태로 다시 설정하되, 기록을 유지합니다. |
+| `$wait` | 지정된 기간(밀리초) 이상으로 기다립니다. |
+
+:::moniker-end
 
 `IInteractiveWindowCommand`를 구현하고 내보내 Visual Studio 확장에서 명령을 확장할 수도 있습니다([예제](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)).
 

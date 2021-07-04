@@ -6,7 +6,6 @@ ms.date: 09/19/2019
 ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
-- vs.objectbrowser
 - vs.classview
 - VS.CodeDefinitionView
 - VS.CodeDefinitionWindow
@@ -27,12 +26,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63344b28026579e4b3e99b513a99c99d14617a64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41c11025e22c1288387862fa138b35efbbca8557
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902779"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924957"
 ---
 # <a name="view-the-structure-of-code-by-using-different-tool-windows"></a>다양한 도구 창을 사용하여 코드 구조 보기
 

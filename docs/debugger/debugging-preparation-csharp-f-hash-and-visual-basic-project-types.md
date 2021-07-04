@@ -1,7 +1,7 @@
 ---
 title: C#, F# 및 VB 프로젝트 디버그 준비 | Microsoft Docs
 description: Visual Studio 프로젝트 템플릿으로 만든 C#, F#, Visual Basic 프로젝트 형식의 디버그 준비에 대한 정보를 가져옵니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba30488046724332f4160e25a24a15d779e6cd4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8c58daa6a4de2fcce1f8482750569c78e2e80235
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684182"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387855"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>디버깅 준비 중: C#, F# 및 Visual Basic 프로젝트 형식
 

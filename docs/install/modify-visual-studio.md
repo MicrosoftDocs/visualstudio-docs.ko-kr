@@ -4,7 +4,7 @@ titleSuffix: ''
 description: Visual Studio를 수정하는 방법을 단계별로 알아봅니다.
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: vs-acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 435ee6ad72141453e89aadcfd4ac3310bde0d538
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501774"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391077"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>Visual Studio 워크로드, 구성 요소 및 언어 팩 수정
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 포함할 수 있습니다. 이렇게 하려면 Visual Studio 설치 관리자를 열어 워크로드 및 구성 요소를 추가하거나 제거합니다.
 
@@ -71,7 +71,7 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 컴퓨터에서 **Visual Studio 설치 관리자** 를 찾습니다.
 
@@ -119,12 +119,11 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 1. 원한다면 **워크로드** 탭을 선택한 후 원하는 워크로드를 선택하거나 선택 취소합니다.
 
-
 1. 새 워크로드가 설치된 후 Visual Studio 설치 관리자에서 **시작** 을 선택하여 Visual Studio를 엽니다.
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
  작업에는 사용 중인 프로그래밍 언어 또는 플랫폼에 필요한 기능이 포함되어 있습니다. 작업을 사용하여 원하는 시기에 원하는 작업을 지원하도록 Visual Studio를 수정할 수 있습니다.
 
@@ -147,7 +146,6 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 
 ::: moniker-end
 
-
 >[!TIP]
 > SSDT(SQL Server Data Tools) 구성 요소에 대한 자세한 내용은 [Visual Studio용 SSDT 다운로드 및 설치](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)를 참조하세요.
 
@@ -156,9 +154,10 @@ Visual Studio를 쉽게 수정할 수 있어 원하는 때에 원하는 대로 �
 기본적으로 설치 관리자는 처음 실행될 때 운영 체제의 언어와 일치시킵니다. 그러나 원하는 경우 언제든지 언어를 변경할 수 있습니다. 
 
 이를 수행하려면:
+
 1. Visual Studio 설치 관리자의 **언어 팩** 탭을 선택합니다.
-2. 원하는 언어를 선택합니다.
-3. 표시되는 메시지에 따릅니다.
+1. 원하는 언어를 선택합니다.
+1. 표시되는 메시지에 따릅니다.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
