@@ -2,21 +2,21 @@
 title: Visual Studio 버전 제어 설명서
 summary: Git 및 GitHub와 같은 버전 제어 기술을 사용하여 Visual Studio 2019 내에서 코드를 공유합니다.
 metadata:
-  title: Visual Studio의 버전 제어
-  description: Git 및 GitHub와 같은 버전 제어 기술은 Visual Studio 내에서 직접 사용할 수 있습니다. 코드베이스를 벗어나지 않고 코드를 공유하고 관리하는 데 이 기술을 사용할 수 있습니다.
+  title: Visual Studio의 Git에서 버전 제어 및 소스 제어
+  description: Visual Studio의 버전 제어 기술을 사용합니다. 코드베이스를 벗어나지 않고도 Git 및 GitHub에서 코드 릴리스를 공유, 통합 및 관리할 수 있습니다.
   ms.topic: landing-page
-  ms.date: 04/20/2021
+  ms.date: 07/02/2021
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 50226243cc698391d79a52371262ec6202b45ad9
-  ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
+  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 05/11/2021
-  ms.locfileid: "109729228"
+  ms.lasthandoff: 07/03/2021
+  ms.locfileid: "113280400"
 landingContent:
 - title: 개요
   linkLists:
@@ -24,6 +24,8 @@ landingContent:
     links:
     - text: Visual Studio의 Git 환경
       url: git-with-visual-studio.md
+    - text: Git 설정 및 기본 설정
+      url: git-settings.md
   - linkListType: concept
     links:
     - text: Visual Studio에서 소스 제어를 용이하게 만드는 방법

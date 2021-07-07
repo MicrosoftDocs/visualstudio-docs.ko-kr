@@ -17,24 +17,27 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f085f5679db2c5c4a1e3cf0cc8d7bbf7cad58eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f839f4148054b4e10a7fc1703aa8f03549bdbf36
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948832"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112902"
 ---
 # <a name="develop-sharepoint-solutions"></a>SharePoint 솔루션 개발
+
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 에서 여러 가지 SharePoint 프로젝트 형식 템플릿을 사용하여 SharePoint 사이트와 사이트 요소를 만들 수 있습니다. 사용 가능한 프로젝트 형식 목록은 [SharePoint 프로젝트 및 프로젝트 항목 템플릿](../sharepoint/sharepoint-project-and-project-item-templates.md)을 참조하세요. SharePoint 프로젝트의 요소와 속성에 대한 설명은 다음과 같습니다.
 
- SharePoint 2013 및 SharePoint 추가 기능에 대한 자세한 내용은 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 및 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
+ SharePoint 추가 기능에 관한 자세한 내용은 [SharePoint 추가 기능 빌드](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)를 참조하세요.
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 프로젝트 요소
+
  SharePoint 프로젝트 아래에 있는 노드를 *SharePoint 항목* 이라고 합니다. SharePoint 항목에는 *SharePoint 항목 파일* 이라는 하위 파일이 하나 이상 포함될 수 있습니다(예: [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 구성 파일, .aspx 양식 등).
 
  프로젝트 항목 파일로 채워져 있는 프로젝트 템플릿을 사용하여 프로젝트를 만드는 대신, **빈 프로젝트** 템플릿을 사용하여 빈 SharePoint 프로젝트를 만들고 프로젝트 항목을 수동으로 추가할 수 있습니다. SharePoint 프로젝트에는 선택적으로 SharePoint에서 활성화에 사용되는 기능 파일 하나 이상과 프로젝트를 배포할 패키지 파일이 포함될 수 있습니다.
 
 ### <a name="special-nodes"></a>특수 노드
+
  모든 SharePoint 프로젝트에는 프로젝트에서 이름을 바꾸거나, 삭제하거나, 잘라내거나, 복사하거나, 끌어서 놓을 수 없는 노드 두 개가 포함됩니다. 이들 노드는 다음과 같습니다.
 
 - 기능
@@ -43,6 +46,7 @@ ms.locfileid: "99948832"
   프로젝트에 대한 기능이나 패키지가 정의되지 않더라도 두 노드는 모두 항상 모든 SharePoint 프로젝트에 표시됩니다.
 
 #### <a name="features-node"></a>기능 노드
+
  **기능** 노드에는 SharePoint 프로젝트 기능이 하나 이상 포함됩니다. 기능은 SharePoint용 확장의 컨테이너입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 사이트에서 SharePoint 관리자가 기능을 사이트 정의에 포함하거나 개별적으로 활성화할 수 있습니다. 자세한 내용은 [기능 작업](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))을 참조하세요.
 
  콘텐츠 형식이나 목록 인스턴스와 같은 항목을 SharePoint 프로젝트에 추가하면 해당 항목은 **기능** 노드의 기능에 추가됩니다. 항목 범위에 따라 새 기능 또는 기존 기능에 추가되는지 결정됩니다. 새 항목의 범위가 기존 기능 범위와 같으면 새 항목은 기존 기능에 추가됩니다. 그러지 않으면 항목이 새 기능에 추가됩니다.
@@ -52,11 +56,13 @@ ms.locfileid: "99948832"
  기능이 SharePoint 프로젝트에 추가되면 **솔루션 탐색기** 에 기본 이름인 Feature *x*.feature를 사용한 노드로 표시됩니다. 여기서 *x* 는 고유 번호입니다. 기능이 SharePoint 서버에 배포되고 나면 SharePoint 관리자가 기능을 활성화하여 SharePoint 사이트 사용자가 사용 가능하도록 설정할 수 있습니다.
 
 #### <a name="package-node"></a>패키지 노드
+
  **패키지** 노드에는 SharePoint 프로젝트에 대한 배포 메커니즘으로 사용하는 단일 파일이 포함됩니다. 이 파일을 ‘솔루션 패키지’라고 하며, .WSP 확장명을 사용하는 .CAB 기반 파일입니다. 솔루션 패키지는 SharePoint 사이트에 적용되는 기능 집합, 사이트 정의 및 어셈블리가 포함되고 개별적으로 사용하거나 사용하지 않도록 설정할 수 있는 배포 가능하고 재사용 가능한 파일입니다. **패키지** 노드에는 항상 패키지에 대한 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 정의 파일인 Package.wspdef라는 파일이 포함됩니다. 패키지가 SharePoint를 실행하는 서버에 배포되고 나면 SharePoint 관리자가 패키지를 설치하고 해당 기능을 활성화할 수 있습니다.
 
  패키지 노드를 두 번 클릭하거나 바로 가기 메뉴를 열고 **열기** 를 선택하여 패키지 디자이너에서 패키지 내용을 보거나 변경할 수 있습니다. 자세한 내용은 [SharePoint 솔루션 패키지 만들기](../sharepoint/creating-sharepoint-solution-packages.md)를 참조하세요.
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 프로젝트 및 프로젝트 항목 속성
+
  SharePoint 프로젝트는 다른 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 프로젝트와 마찬가지로 속성 창과 속성 페이지에 속성이 표시됩니다. 표시되는 속성은 선택된 노드에 따라 달라집니다.
 
  **솔루션 탐색기** 에서 SharePoint 프로젝트, 프로젝트 항목 또는 프로젝트 항목 파일 노드를 선택하면 속성 창이나 속성 페이지에 다음 속성이 표시됩니다.
@@ -131,6 +137,7 @@ ms.locfileid: "99948832"
 |[URL 선택기 대화 상자&#40;Visual Studio에서의 SharePoint 개발&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|프로젝트 또는 로컬 SharePoint 서버의 리소스에 경로 참조를 추가하는 데 사용할 수 있는 대화 상자에 대해 설명합니다.|
 
 ## <a name="see-also"></a>추가 정보
+
 - [시작하기&#40;Visual Studio에서의 SharePoint 개발&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [서버 탐색기를 사용하여 SharePoint 연결 찾아보기](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [SharePoint 솔루션 빌드 및 디버그](../sharepoint/building-and-debugging-sharepoint-solutions.md)

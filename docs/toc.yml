@@ -151,32 +151,33 @@
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: 콘솔 앱 만들기'
       href: /cpp/get-started/tutorial-console-cpp
-    - name: 'Python: 웹앱 만들기'
-      href: ide/quickstart-python.md
-    - name: 'Node.js: 웹앱 만들기'
-      href: ide/quickstart-nodejs.md
-    - name: 'F#: 웹 서비스 만들기'
-      href: ide/quickstart-fsharp.md
     - name: 'C#:  웹앱 만들기'
       href: ide/quickstart-aspnet-core.md
     - name: 'C#:  콘솔 앱 만들기'
       href: ide/quickstart-csharp-console.md
     - name: 'Visual Basic: 콘솔 앱 만들기'
       href: ide/quickstart-visual-basic-console.md
+    - name: 'Node.js: 웹앱 만들기'
+      href: ide/quickstart-nodejs.md
+    - name: 'Python: 웹앱 만들기'
+      href: ide/quickstart-python.md
+    - name: 'F#: 웹 서비스 만들기'
+      href: ide/quickstart-fsharp.md
 - name: 자습서
+  expanded: true
   items:
-    - name: C#
-      href: get-started/csharp/
-    - name: F#
-      href: /dotnet/fsharp/
-    - name: Visual Basic
-      href: get-started/visual-basic/
-    - name: C++
+    - name: C++ >>
       href: /cpp/get-started/tutorial-console-cpp
-    - name: Python
-      href: python/
-    - name: Node.js
+    - name: C#  >>
+      href: get-started/csharp/
+    - name: Visual Basic  >>
+      href: get-started/visual-basic/
+    - name: Node.js  >>
       href: javascript/
+    - name: Python  >>
+      href: python/
+    - name: F#  >>
+      href: /dotnet/fsharp/
 - name: 개발
   items:
     - name: 코드 구성 및 편집
@@ -199,6 +200,8 @@
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: '프로젝트 포팅, 마이그레이션 및 업그레이드'
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+        - name: 솔루션 탐색기 도구 창 사용
+          href: ide/use-solution-explorer.md
         - name: 프로젝트 및 솔루션 속성 관리
           href: ide/managing-project-and-solution-properties.md
         - name: 프로젝트 참조
@@ -443,6 +446,8 @@
                   href: ide/reference/regex-completion-through-intellisense.md
                 - name: 접근할 수 없는 코드 제거
                   href: ide/reference/remove-unreachable-code.md
+                - name: 사용하지 않는 참조 제거
+                  href: ide/reference/remove-unused-references.md
                 - name: 이름 바꾸기
                   href: ide/reference/rename.md
                 - name: 조건식 간소화
@@ -897,6 +902,7 @@
 - name: 디버그 >>
   href: debugger/index.yml
 - name: 버전 제어 >>
+  displayName: 'git, github, source control, source, versioning, clone, integrate, release'
   href: version-control/index.yml
 - name: 테스트 >>
   displayName: Unit testing
@@ -977,14 +983,9 @@
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: 참조
   items:
-    - name: 바로 가기 키
-      items:
-        - name: 인기 있는 명령
-          displayName: keyboard shortcuts
-          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-        - name: 모든 명령
-          displayName: keyboard commands
-          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: 바로 가기 키 및 명령
+      displayName: 'keyboard, shortcuts, short cuts, ctrl, short-cut'
+      href: ide/default-keyboard-shortcuts-in-visual-studio.md
     - name: Visual Studio 명령
       items:
         - name: 참고
@@ -1426,14 +1427,12 @@
 - name: 리소스
   expanded: true
   items:
-    - name: Visual Studio 2017의 새로운 기능
+    - name: 'Visual Studio 2017: 새로운 기능'
       href: ide/whats-new-visual-studio-2017.md
-    - name: Visual Studio 2019의 새로운 기능
+    - name: 'Visual Studio 2019: 새로운 기능'
       href: ide/whats-new-visual-studio-2019.md
-    - name: 문서의 새 소식
+    - name: Docs의 새로운 기능
       href: ide/whats-new-visual-studio-docs.md
-    - name: Microsoft docs 새로운 기능 내역
-      href: ide/whats-new-visual-studio-docs-history.md
     - name: 릴리스 정보
       items:
         - name: 릴리스 리듬
@@ -1448,14 +1447,16 @@
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: 지원 수명 주기 및 서비스
           href: /visualstudio/productinfo/vs-servicing-vs/
-    - name: 사용자 환경 개선 프로그램
+    - name: 사용자 환경 개선
       items:
-        - name: 개요
+        - name: 프로그램 정보
           displayName: Customer Experience Improvement Program
           href: ide/visual-studio-experience-improvement-program.md
         - name: 시스템에서 생성된 로그
           href: ide/diagnostic-data-collection.md
-    - name: IDE 오류 문제 해결을 위한 리소스
+    - name: Visual Studio의 연결된 환경
+      href: ide/reference/connected-experiences.md
+    - name: IDE 오류 문제 해결
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: 피드백 보내기
   items:
@@ -1463,7 +1464,7 @@
       href: ide/feedback-options.md
     - name: 문제 보고
       items:
-        - name: 문제 보고 방법
+        - name: 문제 보고
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: 문제 상태 보고 및 FAQ
           href: ide/report-a-problem.md

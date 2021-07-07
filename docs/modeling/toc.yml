@@ -2,6 +2,8 @@
   href: analyze-and-model-your-architecture.md
 - name: Visual Studio 2017의 디자인에 대한 새로운 기능
   href: what-s-new-for-design-in-visual-studio.md
+- name: 아키텍처 도구 설치
+  href: install-architecture-tools.md
 - name: 시각화 및 모델링을 사용하여 디자인 변경
   href: scenario-change-your-design-using-visualization-and-modeling.md
 - name: 코드 맵 및 종속성 다이어그램
@@ -58,8 +60,6 @@
       href: generate-and-configure-your-app-from-models.md
     - name: 모델링 솔루션 구성
       href: structure-your-modeling-solution.md
-    - name: Visual Studio 아키텍처 도구 사용 지침
-      href: visual-studio-architecture-tooling-guidance.md
 - name: 개발하는 동안 시스템 유효성 검사
   items:
     - name: 유효성 검사 작업 및 리소스

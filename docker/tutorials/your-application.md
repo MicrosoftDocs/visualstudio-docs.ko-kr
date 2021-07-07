@@ -5,16 +5,15 @@ ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 9229c3717b686a3f08ef49e7912ac0515864d793
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082580"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222814"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>todo 샘플 앱 빌드 및 실행
 
@@ -30,7 +29,9 @@ ms.locfileid: "106082580"
 
 1. Windows용 Docker 또는 Docker Community Edition이 로컬 머신에 설치되어 있는지 확인합니다. [Windows용 Docker 설치 설명서](https://docs.docker.com/docker-for-windows/install/)를 참조하세요. 설치 프로세스는 샘플이 포함된 ZIP 파일을 localhost 주소에서 사용할 수 있도록 합니다.
 
-1. [ZIP을 다운로드](https://github.com/docker/getting-started/tree/master/app)합니다. ZIP 파일을 열고 내용을 추출합니다.
+1. [Docker](https://github.com/docker/getting-started) 리포지토리에서 앱의 소스를 다운로드합니다. 리포지토리의 ZIP 파일을 다운로드할 수 있습니다. ZIP 파일을 다운로드하려면 녹색 **코드** 단추를 사용하고 **ZIP 다운로드** 를 선택합니다. ZIP 파일을 열고 모두 추출하여 *app* 폴더에서 앱의 소스를 하드 드라이브의 폴더로 추출합니다.
+
+   ![녹색 코드 단추 및 ZIP 다운로드 옵션을 보여 주는 스크린샷](media/download-zip.png)
 
 1. 추출이 완료되면 선호하는 코드 편집기를 사용하여 프로젝트를 엽니다. 편집기가 필요한 경우 [Visual Studio Code](https://code.visualstudio.com/)를 사용할 수 있습니다. `package.json`과 하위 디렉터리 2개(`src` 및 `spec`)가 표시됩니다.
 

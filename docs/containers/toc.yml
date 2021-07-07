@@ -26,7 +26,7 @@
           href: deploy-app-service.md
         - name: Docker Hub에 배포
           href: deploy-docker-hub.md
-        - name: 시작 프로필 관리(미리 보기)
+        - name: 시작 프로필 관리
           href: launch-profiles.md
         - name: 컨테이너 및 이미지 보기 및 진단
           href: view-and-diagnose-containers.md

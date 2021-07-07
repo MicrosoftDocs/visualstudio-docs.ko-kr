@@ -9,6 +9,20 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: '첫 번째 확장: Hello World 만들기'
       href: extensibility-hello-world.md
+    - name: Visual Studio 2022용 확장 업데이트(미리 보기)
+      items:
+        - name: 확장 업데이트
+          href: migration/update-visual-studio-extension.md
+        - name: '예: ImageOptimizer'
+          href: migration/samples.md
+        - name: 이전 버전을 대상으로 지정
+          href: migration/target-previous-versions.md
+        - name: 새로운 API 목록
+          href: migration/breaking-api-list.md
+        - name: 제거된 API 목록
+          href: migration/removed-api-list.md
+        - name: 마이그레이션된 PIA
+          href: migration/migrated-assemblies.md
     - name: Visual Studio 2019 SDK의 새로운 기능
       items:
         - name: Visual Studio 2019 SDK의 새로운 기능

@@ -1,9 +1,9 @@
 ---
-title: 변경 값의 샘플 구현 | Microsoft Docs
-description: 지역 창에 표시 되는 모든 로컬에는 IDebugProperty2 개체가 연결 되어 있습니다. Visual Studio에서 메모리의 로컬 값을 업데이트 하는 방법을 알아봅니다.
+title: 값 변경 샘플 구현 | Microsoft Docs
+description: 로컬 창에 표시되는 모든 로컬에는 IDebugProperty2 개체가 연결되어 있습니다. Visual Studio가 메모리의 로컬 값을 업데이트하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
@@ -13,34 +13,34 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06213de552685e13be5569fd631fc780598954ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-ms.translationtype: MT
+ms.openlocfilehash: d36cee547e455e9aeb60517b23f0026c3f38b3f3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070442"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902334"
 ---
-# <a name="sample-implementation-of-changing-values"></a>변경 값의 샘플 구현
+# <a name="sample-implementation-of-changing-values"></a>값 변경 샘플 구현
 > [!IMPORTANT]
-> Visual Studio 2015에서 식 계산기를 구현 하는 방법은 더 이상 사용 되지 않습니다. CLR 식 계산기를 구현 하는 방법에 대 한 자세한 내용은 [clr 식](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 계산기 및 [관리 되는 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조 하세요.
+> Visual Studio 2015에서 식 계산기를 구현하는 이 방법은 더 이상 사용되지 않습니다. CLR 식 계산기를 구현하는 방법에 관한 자세한 내용은 [CLR 식 계산기](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 및 [관리형 식 계산기 샘플](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)을 참조하세요.
 
- **지역** 창에 표시 되는 모든 로컬에는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체가 연결 되어 있습니다. 이 `IDebugProperty2` 개체는 로컬의 이름, 값 및 형식을 포함 합니다. 사용자가 로컬의 값을 변경 하는 경우 Visual Studio는 [Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 을 호출 하 여 메모리에서 로컬 값을 업데이트 합니다. 이 예제에서 로컬는 `CFieldProperty` 인터페이스를 구현 하는 클래스로 표시 됩니다 `IDebugProperty2` .
+ **로컬** 창에 표시되는 모든 로컬에는 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 개체가 연결되어 있습니다. 이 `IDebugProperty2` 개체는 로컬의 이름, 값, 형식을 포함합니다. 사용자가 로컬 값을 변경하면 Visual Studio는 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)을 호출하여 메모리의 로컬 값을 업데이트합니다. 이 예제에서 로컬은 `IDebugProperty2` 인터페이스를 구현하는 `CFieldProperty` 클래스로 표시됩니다.
 
 > [!NOTE]
-> **조사식** 및 **간략 한 조사식** 식의 경우 변경 되는 값은 `CValueProperty` MyCEE 샘플에서 클래스로 표현 됩니다. 그러나의 구현은 여기에 `IDebugProperty2::SetValueAsString` 표시 된 것과 같습니다.
+> **조사식** 및 **간략한 조사식** 식의 경우 변경되는 값은 MyCEE 샘플의 `CValueProperty` 클래스로 표시됩니다. 그러나 `IDebugProperty2::SetValueAsString`의 구현은 여기에 표시된 것과 같습니다.
 
- 의 구현에서는 `IDebugProperty2::SetValueAsString` 다음 작업을 수행 합니다.
+ `IDebugProperty2::SetValueAsString`의 구현은 다음 작업을 수행합니다.
 
-1. 식을 계산 하 여 값을 생성 합니다.
+1. 식을 평가하여 값을 생성합니다.
 
-2. 연결 된 [Idebugfield](../../extensibility/debugger/reference/idebugfield.md) 개체를 해당 메모리 위치에 바인딩하고 [idebugfield](../../extensibility/debugger/reference/idebugobject.md) 개체를 생성 합니다.
+2. 연결된 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 개체를 해당 메모리 위치에 바인딩하고 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 개체를 생성합니다.
 
-3. 값을 일련의 바이트로 변환 합니다.
+3. 값을 일련의 바이트로 변환합니다.
 
-4. 는 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 를 호출 하 여 메모리에 바이트를 저장 합니다.
+4. [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)를 호출하여 메모리에 바이트를 저장합니다.
 
 ## <a name="managed-code"></a>관리 코드
- 다음 코드는 `IDebugProperty2::SetValueAsString` 관리 코드에서의 구현입니다.
+ 다음 코드는 관리 코드의 `IDebugProperty2::SetValueAsString` 구현입니다.
 
 ```csharp
 namespace EEMC
@@ -225,7 +225,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>비관리 코드
- 다음 코드는 `IDebugProperty2::SetValueAsString` 관리 코드에서의 구현입니다. 도우미 함수 `FieldCoerceValueType` (표시 되지 않음)는를 `VARIANT` 특정 형식으로 강제 하 고 값이 처리할 수 있는 형식 중 하나 인지를 지정 합니다 `FieldSetValue` .
+ 다음 코드는 관리 코드의 `IDebugProperty2::SetValueAsString` 구현입니다. 도우미 함수 `FieldCoerceValueType`(표시되지 않음)은 `VARIANT`를 특정 형식으로 적용하고 `FieldSetValue`가 처리할 수 있는 형식 중 하나가 값인지 확인합니다.
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(
@@ -423,5 +423,5 @@ HRESULT FieldSetValue(
 ```
 
 ## <a name="see-also"></a>참조
-- [로컬의 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)
+- [로컬 값 변경](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [평가 컨텍스트](../../extensibility/debugger/evaluation-context.md)
