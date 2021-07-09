@@ -1,7 +1,10 @@
 ---
 title: Visual Basic 개발자를 위한 편집 소개
 description: Visual Studio의 코드 편집기에 대한 이 10분 소개에서는 Visual Studio에서 Visual Basic 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 보여줍니다.
-ms.custom: seodec18, get-started
+ms.custom:
+- vs-acquisition
+- seodec18
+- get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe411074c95db15fde4819ffb07eca39a05e844d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944539"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390166"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>코드 편집기를 사용하여 Visual Basic을 작업하는 방법 알아보기
 
@@ -34,6 +37,13 @@ Visual Studio의 코드 편집기에 대한 이 10분 소개에서 코드를 파
 
 > [!TIP]
 > 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> Visual Studio Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 

@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901351"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588477"
 ---
 # <a name="csc-task"></a>Csc 작업
 
@@ -50,6 +50,7 @@ ms.locfileid: "99901351"
 | `Deterministic` | 선택적 `Boolean` 매개 변수입니다.<br/><br/> `true`인 경우 입력이 동일하면 컴파일 간에 이진 콘텐츠가 동일한 어셈블리를 컴파일러에서 출력하도록 합니다.<br/><br/>자세한 내용은 [-deterministic(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)을 참조하세요. |
 | `DisabledWarnings` | 선택적 `String` 매개 변수입니다.<br /><br /> 사용하지 않을 경고 목록을 지정합니다. 자세한 내용은 [-nowarn(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)을 참조하세요. |
 | `DocumentationFile` | 선택적 `String` 매개 변수입니다.<br /><br /> XML 파일에 대해 문서 주석을 처리합니다. 자세한 내용은 [-doc(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)를 참조하세요. |
+| `EmbedAllSources` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> PDB에 모든 소스 파일을 포함합니다. 자세한 내용은 [-embed(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)를 참조하세요. |
 | `EmitDebugInformation` | 선택적 `Boolean` 매개 변수입니다.<br /><br /> `true`인 경우 작업에서 디버깅 정보를 생성하여 프로그램 데이터베이스(.pdb) 파일에 저장합니다. `false`인 경우 작업에서 디버그 정보를 내보내지 않습니다. 기본값은 `false`입니다. 자세한 내용은 [-debug(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)를 참조하세요. |
 | `ErrorReport` | 선택적 `String` 매개 변수입니다.<br /><br /> Microsoft에 C# 내부 오류를 보고하는 편리한 방법을 제공합니다. 이 매개 변수는 `prompt`, `send` 또는 `none` 값을 가질 수 있습니다. 매개 변수를 `prompt`로 설정한 경우 내부 컴파일러 오류가 발생하면 메시지(프롬프트)가 표시됩니다. 프롬프트를 통해 Microsoft에 버그 보고서를 전자적으로 보낼 수 있습니다. 매개 변수를 `send`로 설정한 경우 버그 보고서가 자동으로 전송됩니다. 매개 변수를 `none`으로 설정한 경우 오류가 컴파일러의 텍스트 출력으로만 보고됩니다. 기본값은 `none`입니다. 자세한 내용은 [-errorreport(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)를 참조하세요. |
 | `FileAlignment` | 선택적 `Int32` 매개 변수입니다.<br /><br /> 출력 파일에 있는 섹션의 크기를 지정합니다. 자세한 내용은 [-filealign(C# 컴파일러 옵션)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)을 참조하세요. |

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c37ccb9c6dce1f6b20b8ade317e8135462c65011
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: b10fc1adbb0b4a6e053549749ea90acf3919d0c6
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800864"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602203"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio의 오프라인 설치 만들기
 
@@ -31,9 +31,9 @@ Visual Studio 2017은 다양한 네트워크 및 컴퓨터 구성에서 제대�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Visual Studio 2019는 다양한 네트워크 및 컴퓨터 구성에서 제대로 작동하도록 설계되었습니다. 가능한 한 [Visual Studio 웹 설치 관리자](https://visualstudio.microsoft.com/downloads)를 사용하는 것이 좋습니다. 이 작은 파일을 사용하면 최신 수정 사항 및 기능을 최신 상태로 유지할 수 있습니다.
+Visual Studio 2019 이상은 다양한 네트워크 및 컴퓨터 구성에서 제대로 작동하도록 설계되었습니다. 가능한 한 [Visual Studio 웹 설치 관리자](https://visualstudio.microsoft.com/downloads)를 사용하는 것이 좋습니다. 이 작은 파일을 사용하면 최신 수정 사항 및 기능을 최신 상태로 유지할 수 있습니다.
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Visual Studio 2019는 다양한 네트워크 및 컴퓨터 구성에서 제대�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 웹 설치 관리자를 다운로드한 후 Visual Studio에서 새로운 **모두 다운로드한 다음, 설치** 옵션을 선택합니다. 그런 다음, 설치를 계속합니다.
 
@@ -72,7 +72,7 @@ Visual Studio를 다운로드한 컴퓨터에 단일 설치로 다운로드할 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 작은 부트스트래퍼 파일을 다운로드한 후 명령줄을 사용하여 로컬 캐시를 만듭니다. 그런 다음, 로컬 캐시를 사용하여 Visual Studio를 설치합니다.
 
@@ -84,40 +84,60 @@ Visual Studio를 다운로드한 컴퓨터에 단일 설치로 다운로드할 �
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 버전 15.9용 최신 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 페이지로 이동하여 다음 부트스트래퍼 파일 중 하나를 다운로드합니다. 
+Visual Studio 2017 버전 15.9용 최신 부트스트래퍼를 가져오려면 [Visual Studio 이전 버전](https://visualstudio.microsoft.com/vs/older-downloads/) 페이지로 이동하여 다음 부트스트래퍼 파일 중 하나를 다운로드합니다.
 
-| 버전 | 파일 이름 |
-|-------------|-----------------------|
-|Visual Studio Professional 2017 버전 15.9 | vs_professional.exe |
-|Visual Studio Enterprise 2017 버전 15.9 | vs_enterprise.exe |
-|Visual Studio Build Tools 2017 버전 15.9  | vs_buildtools.exe |
+| 버전                                      | 파일 이름            |
+|----------------------------------------------|---------------------|
+| Visual Studio Professional 2017 버전 15.9 | vs_professional.exe |
+| Visual Studio Enterprise 2017 버전 15.9   | vs_enterprise.exe   |
+| Visual Studio Build Tools 2017 버전 15.9  | vs_buildtools.exe   |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-[Visual Studio 다운로드 페이지](https://visualstudio.microsoft.com/downloads) 또는 선택한 Visual Studio 에디션 및 버전의 [Visual Studio 2019 릴리스](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release) 페이지에서 Visual Studio 2019 부트스트래퍼를 다운로드하여 시작합니다. 설치 파일 또는 부트스트래퍼는 다음 중 하나와 일치하거나 비슷합니다.
+[Visual Studio 다운로드 페이지](https://visualstudio.microsoft.com/downloads) 또는 선택한 Visual Studio 에디션 및 버전의 [Visual Studio 2019 릴리스](/visualstudio/releases/2019/history#installing-an-earlier-release) 페이지에서 Visual Studio 2019 부트스트래퍼를 다운로드하여 시작합니다. 설치 파일 또는 부트스트래퍼는 다음 중 하나와 일치하거나 비슷합니다.
 
-| 버전                    | 파일                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
+| 버전                         | 파일                                                                                                                                                                                                                               |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Visual Studio 2019 Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio 2019 Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio 2019 Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
-| Visual Studio 2019 Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio 2019 Build Tools  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+> Visual Studio 2022의 릴리스 버전은 아직 사용할 수 없습니다. 아래 부트스트래퍼는 Visual Studio 2022의 미리 보기 릴리스용입니다.
+>먼저 [Visual Studio 다운로드 페이지](https://aka.ms/vs2022preview)에서 Visual Studio 2022 부트스트래퍼를 다운로드합니다.
+
+| 버전                         | 다운로드                                                            |
+|---------------------------------|---------------------------------------------------------------------|
+| Visual Studio 2022 Professional | [vs_professional.exe](https://aka.ms/vs/17/pre/vs_professional.exe) |
+| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 >[!TIP]
->이전에 다운로드한 부트스트래퍼 파일의 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
+>이전에 다운로드한 부트스트래퍼 파일의 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 빌드 번호 및 릴리스 날짜](/visual-studio-build-numbers-and-release-dates.md) 페이지를 참조하세요.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 2019 릴리스](https://docs.microsoft.com/visualstudio/releases/2019/history) 페이지를 참조하세요.
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 2019 릴리스](/visualstudio/releases/2019/history) 페이지를 참조하세요.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+>이전에 부트스트래퍼 파일을 다운로드했으며 해당 버전을 확인하려는 경우에는 다음을 참조하세요. Windows에서 파일 탐색기를 열고 부트스트래퍼 파일을 마우스 오른쪽 단추로 클릭한 다음, **속성** 을 선택하고 **세부 정보** 탭을 선택한 다음, **제품 버전** 번호를 확인합니다. 이 번호가 Visual Studio 릴리스와 일치하는지 확인하려면 [Visual Studio 2022 릴리스](/visualstudio/releases/2022/history) 페이지를 참조하세요.
 
 ::: moniker-end
 
@@ -132,25 +152,25 @@ Visual Studio 2017 버전 15.9용 최신 부트스트래퍼를 가져오려면 [
 
 - .NET 웹 및 .NET 데스크톱 개발의 경우 다음을 실행합니다.
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - .NET 데스크톱 및 Office 개발의 경우 다음을 실행합니다.
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - C++ 데스크톱 개발의 경우 다음을 실행합니다.
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
 - 모든 기능이 포함된 전체 로컬 레이아웃(영어만 해당)을 만들려면(수많은 기능이 있어서 오래 걸릴 수 있음) 다음을 실행합니다.
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
@@ -161,10 +181,10 @@ Visual Studio 2017 버전 15.9용 최신 부트스트래퍼를 가져오려면 [
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
    > [!NOTE]
-   > 전체 Visual Studio 레이아웃에는 최소 35GB의 디스크 공간이 필요합니다. 자세한 내용은 [시스템 요구 사항](/visualstudio/releases/2019/system-requirements/) 항목을 참조하세요.
+   > 전체 Visual Studio 레이아웃에는 최소 41GB의 디스크 공간이 필요합니다. 자세한 내용은 [시스템 요구 사항](/visualstudio/releases/2019/system-requirements/) 항목을 참조하세요.
 
 ::: moniker-end
 
@@ -174,13 +194,13 @@ Visual Studio 2017 버전 15.9용 최신 부트스트래퍼를 가져오려면 [
 
 예를 들어 다음 명령으로 로컬 설치 캐시를 만든 경우
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 그런 다음, 이 명령을 사용하여 설치를 실행합니다.
 
-```cmd
+```shell
 c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
@@ -190,7 +210,7 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 > [!NOTE]
 > 서명이 올바르지 않다는 오류가 발생하면 [업데이트된 인증서를 설치](install-certificates-for-visual-studio-offline.md)해야 합니다. 오프라인 캐시에서 인증서 폴더를 엽니다. 각 인증서 파일을 두 번 클릭하고 인증서 관리자 마법사를 클릭합니다. 암호를 묻는 메시지가 표시되면 비워 두세요.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!TIP]
 > 오프라인 설치의 경우 "다음 매개 변수와 일치하는 제품을 찾을 수 없습니다"라는 오류 메시지가 표시되면 버전 16.3.5 이상에서 `--noweb` 스위치를 사용하고 있는지 확인합니다.
 
@@ -198,22 +218,22 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 ### <a name="list-of-language-locales"></a>언어 로캘 목록
 
-| **언어 로캘** | **언어** |
-| ----------------------- | --------------- |
-| cs-CZ | 체코어 |
-| de-DE | 독일어 |
-| en-US | 영어 |
-| es-ES | 스페인어 |
-| fr-FR | 프랑스어 |
-| it-IT | 이탈리아어 |
-| ja-JP | 일본어 |
-| en-US | 한국어 |
-| pl-PL | 폴란드어 |
-| pt-BR | 포르투갈어 - 브라질 |
-| ru-RU | 러시아어 |
-| tr-TR | 터키어 |
-| zh-CN | 중국어 - 간체 |
-| zh-TW | 중국어 - 번체 |
+| **언어 로캘** | **언어**          |
+|---------------------|-----------------------|
+| cs-CZ               | 체코어                 |
+| de-DE               | 독일어                |
+| en-US               | 영어               |
+| es-ES               | 스페인어               |
+| fr-FR               | 프랑스어                |
+| it-IT               | 이탈리아어               |
+| ja-JP               | 일본어              |
+| en-US               | 한국어                |
+| pl-PL               | 폴란드어                |
+| pt-BR               | 포르투갈어 - 브라질   |
+| ru-RU               | 러시아어               |
+| tr-TR               | 터키어               |
+| zh-CN               | 중국어 - 간체  |
+| zh-TW               | 중국어 - 번체 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -2,7 +2,7 @@
 title: Visual Studio 2019의 새로운 기능
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 기능을 알아보세요.
-ms.date: 03/19/2021
+ms.date: 06/17/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: d34c3a3b4d808b1f4e24051763f1c0876a175a3a
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913100"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365471"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019의 새로운 기능
 
-**[16.9 릴리스](/visualstudio/releases/2019/release-notes/)용으로 업데이트됨**
+**16.10 릴리스용으로 업데이트됨** [전체 릴리스 정보](/visualstudio/releases/2019/release-notes/) 보기 | [제품 로드맵](/visualstudio/productinfo/vs-roadmap) 보기
 
 >[!div class="button"]
 >[Visual Studio 2019 다운로드](https://visualstudio.microsoft.com/downloads)
@@ -220,17 +220,19 @@ Azure VM에서 실행되는 ASP.NET(Core 및 데스크톱) 애플리케이션을
 
 ## <a name="whats-next"></a>새로운 기능
 
-Visual Studio 2019는 개발 환경을 훨씬 더 좋게 만들어 줄 수 있는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 정보](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요. 다음 출시 예정 목록은 [Visual Studio 로드맵](/visualstudio/productinfo/vs-roadmap)을 참조하세요.
+Visual Studio는 개발 환경을 훨씬 더 좋게 개선하는 새 기능으로 자주 업데이트됩니다. 최신 혁신 기능을 자세히 알아보려면 [Visual Studio 블로그](https://devblogs.microsoft.com/visualstudio/)를 확인하세요. 미리 보기에서 현재까지 릴리스된 내용에 대한 기록은 [미리 보기 릴리스 정보](/visualstudio/releases/2019/release-notes-preview/)를 살펴보세요. 다음 출시 예정 목록은 [Visual Studio 로드맵](/visualstudio/productinfo/vs-roadmap)을 참조하세요.
 
-다음은 현재 진행되고 있는 새로운 기능입니다.
+현재 개발 중인 내용은 다음과 같습니다.
 
 - **Visual Studio 2019의 향상된 Git 환경(미리 보기)**
 
-   이제 새 Git 버전 제어 환경은 Visual Studio 2019 [버전 16.8](/visualstudio/releases/2019/release-notes/)에서 기본적으로 설정되어 있지만 최신 미리 보기 릴리스에서 환경을 개선하기 위해 기능을 계속 추가하고 있습니다.
+   Git 버전 제어 도구는 Visual Studio 2019 [버전 16.8](/visualstudio/releases/2019/release-notes-history/) 이상의 기본 환경이긴 하지만, 최신 Visual Studio 2019 Preview 릴리스 [버전 16.11](/visualstudio/releases/2019/release-notes-preview/)의 환경을 개선하기 위해 계속해서 기능이 추가되고 있습니다.
 
-   자세한 내용은 [Visual Studio의 Git 환경](../version-control/git-with-visual-studio.md) 페이지를 참조하세요.
+   자세한 내용은 [Visual Studio의 버전 제어](/visualstudio/version-control/) 페이지를 참조하세요.
 
-미리 보기 릴리스에 대한 자세한 내용 및 다운로드 링크는 **[Visual Studio Preview](https://aka.ms/vspreview/)** 페이지를 참조하세요.
+- **Visual Studio 2022(미리 보기)의 첫 번째 퍼블릭 릴리스를 사용할 수 있습니다**
+
+    차기 릴리스 [Visual Studio 2022](/visualstudio/releases/2022/release-notes-preview/)의 퍼블릭 미리 보기를 사용할 수 있습니다. 새로운 버전은 더 빠르고, 더 접근성이 높으며 더 경량입니다. 그리고 사상 처음으로 Visual Studio가 64비트로 제공됩니다. 다운로드 링크와 자세한 내용은 **[Visual Studio 2022 Preview 1 now available!](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)** (Visual Studio 2022 Preview 1 사용 가능)을 참조하세요. 블로그 게시물.
 
 ## <a name="give-us-feedback"></a>피드백 보내기
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fb821acb48dd05aa09723fe5c6c254e7d1ca648
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867635"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306386"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>로컬 Docker 컨테이너에서 앱 디버그
 
@@ -38,6 +38,12 @@ Docker가 설치된 로컬 Windows 데스크톱에서 실행되는 Linux 또는 
 ::: moniker range="vs-2019"
 
 * 웹 개발 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+* 웹 개발 워크로드가 설치된 [Visual Studio 2022 Preview]()
 
 ::: moniker-end
 
@@ -132,20 +138,20 @@ Docker 컨테이너는 .NET Framework 및 .NET Core 프로젝트에 사용할 �
 
    ![노란색으로 강조 표시된 코드 줄 왼쪽으로 중단점이 설정된 Visual Studio의 Index.cshtml.cs 코드 일부를 보여 주는 스크린샷](media/edit-and-refresh/breakpoint.png)
 
-## <a name="create-a-net-framework-console-app"></a>.NET Framework 콘솔 앱 만들기
+## <a name="create-a-net-framework-console-app&quot;></a>.NET Framework 콘솔 앱 만들기
 
 .NET Framework 콘솔 앱 프로젝트를 사용하는 경우, 오케스트레이션 없이 Docker 지원을 추가하는 옵션이 지원되지 않습니다. 단일 Docker 프로젝트만 사용하는 경우에도 다음 프로시저를 사용할 수 있습니다.
 
 1. .NET Framework 콘솔 앱 프로젝트를 새로 만듭니다.
 1. 솔루션 탐색기에서 프로젝트 노드를 마우스 오른쪽 단추로 클릭하고 **추가** > **컨테이너 오케스트레이션 지원** 을 선택합니다.  표시되는 대화 상자에서 **Docker Compose** 를 선택합니다. Dockerfile이 프로젝트에 추가되고, 관련 지원 파일을 포함하는 Docker Compose 프로젝트가 추가됩니다.
 
-### <a name="debug-with-breakpoints"></a>중단점으로 디버깅
+### <a name=&quot;debug-with-breakpoints&quot;></a>중단점으로 디버깅
 
 1. 솔루션 탐색기에서 *Program.cs* 를 엽니다.
 2. `Main` 메서드의 내용을 다음 코드로 바꿉니다.
 
    ```csharp
-       System.Console.WriteLine("Hello, world!");
+       System.Console.WriteLine(&quot;Hello, world!");
    ```
 
 3. 코드 줄의 왼쪽에 중단점을 설정합니다.

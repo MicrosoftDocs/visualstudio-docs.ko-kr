@@ -1,23 +1,23 @@
 ---
 title: 최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트
 description: 최소 오프라인 레이아웃을 사용하여 Visual Studio를 업데이트하는 방법을 알아봅니다.
-ms.date: 07/21/2020
+ms.date: 05/18/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c3a6254c3205038be3d56c64de091e659d2bbd5
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935705"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306737"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>최소 오프라인 레이아웃을 사용하여 Visual Studio 업데이트
 
@@ -36,7 +36,7 @@ ms.locfileid: "99935705"
 이 도구는 Visual Studio 2017(15.9) 이상의 업데이트 레이아웃을 만듭니다. 레이아웃을 네트워크/오프라인 머신에 배포하여 Visual Studio 인스턴스를 업데이트할 수 있습니다. [일반 레이아웃 생성](update-a-network-installation-of-visual-studio.md) 과정에서는 해당 릴리스의 모든 패키지가 다운로드됩니다. Visual Studio 인스턴스에서 복구, 제거 및 기타 표준 작업을 수행하려면 일반 레이아웃을 만들어야 합니다. 최소 레이아웃은 업데이트된 패키지만 다운로드하므로 더 작고 편리하게 오프라인 머신에 복사할 수 있습니다.
 
 ### <a name="installing-the-minimal-layout-tool"></a>최소 레이아웃 도구 설치
- 
+
  1. 먼저 [여기](https://aka.ms/vs/installer/minimallayout)에 있는 최소 레이아웃 도구를 다운로드합니다. 메시지가 표시되면 **저장** 을 선택한 후 **실행** 을 선택해야 합니다.
 
      ![최소 레이아웃 도구 저장](media/save-minimal-layout.png)
@@ -54,59 +54,58 @@ ms.locfileid: "99935705"
 ```MinimalLayout.exe [command] <options>...```
 
 #### <a name="commands"></a>명령
-* **미리 보기**: 이 명령을 사용하면 다운로드하는 패키지 수와 이 레이아웃을 만드는 데 사용하는 총 공간을 미리 볼 수 있습니다. 
+
+* **미리 보기**: 이 명령을 사용하면 다운로드하는 패키지 수와 이 레이아웃을 만드는 데 사용하는 총 공간을 미리 볼 수 있습니다.
 * **Generate**: 이 명령을 사용하면 Visual Studio를 업데이트하기 위한 최소 레이아웃을 생성할 수 있습니다.
 * **Regenerate**: 이 명령을 사용하면 기존의 최소 레이아웃 지시 파일로 레이아웃을 다시 생성할 수 있습니다. 모든 최소 레이아웃은 원본 최소 레이아웃 입력 매개 변수가 포함된 `MinimalLayout.json` 지시 파일을 생성합니다. **Regenerate** 명령과 `MinimalLayout.json` 지시 파일을 사용하여 최소 레이아웃을 다시 생성할 수 있습니다. 이 명령은 이전의 최소 레이아웃 지시 파일을 기준으로 새 Visual Studio 업데이트의 최소 레이아웃을 만들려는 경우에 유용합니다.
 
-   이 명령을 사용하려면 이미 생성된 레이아웃의 `MinimalLayout.json` 파일 경로가 필요합니다. 
+   이 명령을 사용하려면 이미 생성된 레이아웃의 `MinimalLayout.json` 파일 경로가 필요합니다.
 
-    ```cmd
-    MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
-    ```
+   ```shell
+   MinimalLayout.exe regenerate --filePath C:\MinimalLayout\MinimalLayout.json
+   ```
 
 * **Verify**: 이 명령을 사용하면 레이아웃 폴더가 손상되었는지 여부를 확인할 수 있습니다.
 * **Fix**: 이 명령을 사용하면 레이아웃 폴더에서 누락된 패키지를 다시 배치하는 등 손상된 레이아웃 폴더를 수정할 수 있습니다.
 
-::: moniker range="vs-2019"
+#### <a name="options"></a>옵션
 
-#### <a name="options"></a>옵션 
+::: moniker range=">=vs-2019"
 
-|옵션    |Description    |필수/선택 |예제 |
-|:----------|:-----------|:------------|:--------------|
-|--targetLocation &lt;dir&gt; |최소 오프라인 레이아웃을 만들 디렉터리를 지정합니다.       |필요한 공간        |--targetLocation c:\VSLayout\ |
-|--baseVersion &lt;버전&gt;|이 버전부터 최소 오프라인 레이아웃이 생성됩니다.   |필요한 공간|--baseVersion 16.4.0 |
-|--targetVersion &lt;버전&gt;|이 버전까지 최소 오프라인 레이아웃이 생성됩니다.|필요한 공간|--targetVersion 16.4.4|
-|--languages    |최소 오프라인 레이아웃에 포함할 언어를 지정합니다. 여러 값을 공백으로 구분하여 지정할 수 있습니다.    |필요한 공간    |--languages en-US fr-FR |
-|--productId &lt;id&gt;    |최소 오프라인 레이아웃을 생성할 제품의 ID입니다. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|필요한 공간|--productId Microsoft.VisualStudio.Product.Enterprise |
-|--filePath    |이미 생성된 레이아웃에 속한 MinimalLayout.json 파일의 파일 경로입니다. 이 옵션은 Regenerate 명령에서만 사용됩니다.     |Regenerate 명령의 경우 필수    |--filePath C:\VSLayout\minimalLayout.json <br><br> **Regenerate 명령만 --filePath를 옵션으로 사용합니다.** |
-|--add &lt;하나 이상의 워크로드 또는 구성 요소 ID&gt;    |추가할 워크로드 또는 구성 요소 ID를 하나 이상 지정합니다. --IncludeRecommended 및/또는 <br> –-includeOptional을 사용하여 추가 구성 요소를 전역적으로 추가할 수 있습니다. 여러 워크로드 또는 구성 요소 ID를 공백으로 구분하여 지정할 수 있습니다.    |Optional    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
-|--includeRecommended    |설치된 모든 워크로드에 대한 권장 구성 요소를 포함하지만, 선택적 구성 요소는 포함하지 않습니다.    |Optional    |특정 워크로드에 적용하려는 경우: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> 모든 워크로드에 적용하려는 경우: --includeRecommended |
-|--includeOptional |권장 구성 요소를 비롯하여 설치된 모든 워크로드의 선택적 구성 요소를 포함합니다.    |Optional    |특정 워크로드에 적용하려는 경우: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> 모든 워크로드에 적용하려는 경우: --includeOptional |
+| 옵션                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 | 필수/선택               | 예제                                                                                                                                                          |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --targetLocation &lt;dir&gt;                        | 최소 오프라인 레이아웃을 만들 디렉터리를 지정합니다.                                                                                                                                                                                                                                                                                                                                                                          | 필요한 공간                        | --targetLocation c:\VSLayout\                                                                                                                                    |
+| --baseVersion &lt;버전&gt;                       | 이 버전부터 최소 오프라인 레이아웃이 생성됩니다.                                                                                                                                                                                                                                                                                                                                                                    | 필요한 공간                        | --baseVersion 16.4.0                                                                                                                                             |
+| --targetVersion &lt;버전&gt;                     | 이 버전까지 최소 오프라인 레이아웃이 생성됩니다.                                                                                                                                                                                                                                                                                                                                                              | 필요한 공간                        | --targetVersion 16.4.4                                                                                                                                           |
+| --languages                                         | 최소 오프라인 레이아웃에 포함할 언어를 지정합니다. 여러 값을 공백으로 구분하여 지정할 수 있습니다.                                                                                                                                                                                                                                                                                                                    | 필요한 공간                        | --languages en-US fr-FR                                                                                                                                          |
+| --productIds &lt;하나 이상의 제품 ID&gt;        | 최소한의 오프라인 레이아웃이 생성되는 제품 ID이며 쉼표로 구분됩니다. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul> | 필요한 공간                        | --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional                                                               |
+| --filePath                                          | 이미 생성된 레이아웃에 속한 MinimalLayout.json 파일의 파일 경로입니다. 이 옵션은 Regenerate 명령에서만 사용됩니다.                                                                                                                                                                                                                                                                                                          | Regenerate 명령의 경우 필수 | --filePath C:\VSLayout\minimalLayout.json <br><br> **Regenerate 명령만 --filePath를 옵션으로 사용합니다.**                                      |
+| --add &lt;하나 이상의 워크로드 또는 구성 요소 ID&gt; | 추가할 워크로드 또는 구성 요소 ID를 하나 이상 지정합니다. --IncludeRecommended 및/또는 <br> –-includeOptional을 사용하여 추가 구성 요소를 전역적으로 추가할 수 있습니다. 여러 워크로드 또는 구성 요소 ID를 공백으로 구분하여 지정할 수 있습니다.                                                                                                                                                                                                   | Optional                        | --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio                                        |
+| --includeRecommended                                | 설치된 모든 워크로드에 대한 권장 구성 요소를 포함하지만, 선택적 구성 요소는 포함하지 않습니다.                                                                                                                                                                                                                                                                                                                                  | Optional                        | 특정 워크로드에 적용하려는 경우: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> 모든 워크로드에 적용하려는 경우: --includeRecommended |
+| --includeOptional                                   | 권장 구성 요소를 비롯하여 설치된 모든 워크로드의 선택적 구성 요소를 포함합니다.                                                                                                                                                                                                                                                                                                                                | Optional                        | 특정 워크로드에 적용하려는 경우: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> 모든 워크로드에 적용하려는 경우: --includeOptional         |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-#### <a name="options"></a>옵션 
-
-|옵션    |Description    |필수/선택 |예제 |
-|:----------|:-----------|:------------|:--------------|
-|--targetLocation &lt;dir&gt; |최소 오프라인 레이아웃을 만들 디렉터리를 지정합니다.       |필요한 공간        |--targetLocation c:\VSLayout\ |
-|--baseVersion &lt;버전&gt;|이 버전부터 최소 오프라인 레이아웃이 생성됩니다.   |필요한 공간|--baseVersion 15.0.0 |
-|--targetVersion &lt;버전&gt;|이 버전까지 최소 오프라인 레이아웃이 생성됩니다.|필요한 공간|--targetVersion 15.9.31|
-|--languages    |최소 오프라인 레이아웃에 포함할 언어를 지정합니다. 여러 값을 공백으로 구분하여 지정할 수 있습니다.    |필요한 공간    |--languages en-US fr-FR |
-|--productId &lt;id&gt;    |최소 오프라인 레이아웃을 생성할 제품의 ID입니다. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|필요한 공간|--productId Microsoft.VisualStudio.Product.Enterprise |
-|--filePath    |이미 생성된 레이아웃에 속한 MinimalLayout.json 파일의 파일 경로입니다. 이 옵션은 Regenerate 명령에서만 사용됩니다.     |Regenerate 명령의 경우 필수    |--filePath C:\VSLayout\minimalLayout.json <br><br> **Regenerate 명령만 --filePath를 옵션으로 사용합니다.** |
-|--add &lt;하나 이상의 워크로드 또는 구성 요소 ID&gt;    |추가할 워크로드 또는 구성 요소 ID를 하나 이상 지정합니다. --IncludeRecommended 및/또는 <br> –-includeOptional을 사용하여 추가 구성 요소를 전역적으로 추가할 수 있습니다. 여러 워크로드 또는 구성 요소 ID를 공백으로 구분하여 지정할 수 있습니다.    |Optional    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
-|--includeRecommended    |설치된 모든 워크로드에 대한 권장 구성 요소를 포함하지만, 선택적 구성 요소는 포함하지 않습니다.    |Optional    |특정 워크로드에 적용하려는 경우: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> 모든 워크로드에 적용하려는 경우: --includeRecommended |
-|--includeOptional |권장 구성 요소를 비롯하여 설치된 모든 워크로드의 선택적 구성 요소를 포함합니다.    |Optional    |특정 워크로드에 적용하려는 경우: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> 모든 워크로드에 적용하려는 경우: --includeOptional |
+| 옵션                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 | 필수/선택               | 예제                                                                                                                                                          |
+|-----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --targetLocation &lt;dir&gt;                        | 최소 오프라인 레이아웃을 만들 디렉터리를 지정합니다.                                                                                                                                                                                                                                                                                                                                                                          | 필요한 공간                        | --targetLocation c:\VSLayout\                                                                                                                                    |
+| --baseVersion &lt;버전&gt;                       | 이 버전부터 최소 오프라인 레이아웃이 생성됩니다.                                                                                                                                                                                                                                                                                                                                                                    | 필요한 공간                        | --baseVersion 15.0.0                                                                                                                                             |
+| --targetVersion &lt;버전&gt;                     | 이 버전까지 최소 오프라인 레이아웃이 생성됩니다.                                                                                                                                                                                                                                                                                                                                                              | 필요한 공간                        | --targetVersion 15.9.31                                                                                                                                          |
+| --languages                                         | 최소 오프라인 레이아웃에 포함할 언어를 지정합니다. 여러 값을 공백으로 구분하여 지정할 수 있습니다.                                                                                                                                                                                                                                                                                                                    | 필요한 공간                        | --languages en-US fr-FR                                                                                                                                          |
+| --productIds &lt;하나 이상의 제품 ID&gt;        | 최소한의 오프라인 레이아웃이 생성되는 제품 ID이며 쉼표로 구분됩니다. <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul> | 필요한 공간                        | --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional                                                               |
+| --filePath                                          | 이미 생성된 레이아웃에 속한 MinimalLayout.json 파일의 파일 경로입니다. 이 옵션은 Regenerate 명령에서만 사용됩니다.                                                                                                                                                                                                                                                                                                          | Regenerate 명령의 경우 필수 | --filePath C:\VSLayout\minimalLayout.json <br><br> **Regenerate 명령만 --filePath를 옵션으로 사용합니다.**                                      |
+| --add &lt;하나 이상의 워크로드 또는 구성 요소 ID&gt; | 추가할 워크로드 또는 구성 요소 ID를 하나 이상 지정합니다. --IncludeRecommended 및/또는 <br> –-includeOptional을 사용하여 추가 구성 요소를 전역적으로 추가할 수 있습니다. 여러 워크로드 또는 구성 요소 ID를 공백으로 구분하여 지정할 수 있습니다.                                                                                                                                                                                                   | Optional                        | --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio                                        |
+| --includeRecommended                                | 설치된 모든 워크로드에 대한 권장 구성 요소를 포함하지만, 선택적 구성 요소는 포함하지 않습니다.                                                                                                                                                                                                                                                                                                                                  | Optional                        | 특정 워크로드에 적용하려는 경우: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> 모든 워크로드에 적용하려는 경우: --includeRecommended |
+| --includeOptional                                   | 권장 구성 요소를 비롯하여 설치된 모든 워크로드의 선택적 구성 요소를 포함합니다.                                                                                                                                                                                                                                                                                                                                | Optional                        | 특정 워크로드에 적용하려는 경우: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> 모든 워크로드에 적용하려는 경우: --includeOptional         |
 
 ::: moniker-end
 
 ### <a name="generating-a-minimal-layout"></a>최소 레이아웃 생성
 
 > [!IMPORTANT]
->  이 지침에서는 네트워크 설치 레이아웃을 이전에 만든 것으로 가정합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md) 페이지를 참조하세요.
+> 이 지침에서는 네트워크 설치 레이아웃을 이전에 만든 것으로 가정합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [Visual Studio의 네트워크 설치 만들기](create-a-network-installation-of-visual-studio.md) 페이지를 참조하세요.
 
 지정한 버전 범위에 대해 **generate** 명령을 사용하여 최소 레이아웃을 만듭니다. 또한 productId, 언어, 필요한 모든 특정 워크로드를 알고 있어야 합니다. 이 최소 레이아웃은 기본 버전부터 대상 버전까지 모든 Visual Studio 인스턴스를 업데이트합니다.
 
@@ -114,75 +113,87 @@ ms.locfileid: "99935705"
 
 최소 레이아웃을 미리 보고, 생성하고, 다시 생성하는 방법의 몇 가지 예를 살펴봅시다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-- 먼저 다음은 Visual Studio Enterprise 버전 16.4.0부터 16.4.4까지의 영어 전용 레이아웃을 미리 보는 방법의 예제입니다.
+* 먼저 다음은 Visual Studio Enterprise 버전 16.4.0부터 16.4.4까지의 영어 전용 레이아웃을 미리 보는 방법의 예제입니다.
 
-    ```cmd
-    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
+  ```
 
-- 다음은 단일 워크로드를 사용하여 동일한 레이아웃을 생성하는 방법입니다.
+* 다음은 단일 워크로드를 사용하여 동일한 레이아웃을 생성하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+  ```
 
-- 다음은 기존 지시 파일을 사용하여 최소 오프라인 레이아웃을 다시 생성하는 방법입니다. 
+* 다음은 기존 지시 파일을 사용하여 최소 오프라인 레이아웃을 다시 생성하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
-    ```
+  ```shell
+  MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+  ```
 
-**generate** 명령을 사용하는 다른 몇 가지 예제는 다음과 같습니다.
+**generate** 명령을 사용하는 다른 예제 몇 가지는 다음과 같습니다.
 
-- 다음은 워크로드를 더 추가하고 권장 패키지만 포함하는 방법입니다. 
+* 다음은 워크로드를 더 추가하고 권장 패키지만 포함하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+  ```
 
-- 마지막으로, 다음은 최소 레이아웃에 여러 언어를 포함하는 방법입니다. 
+* 여러 제품을 지원하는 최소한의 오프라인 레이아웃을 생성할 수도 있습니다.
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 16.4.0 --targetVersion 16.4.4 --languages en-US
+  ```
+
+* 마지막으로, 다음은 최소 레이아웃에 여러 언어를 포함하는 방법입니다.
+
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+  ```
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-- 먼저 다음은 Visual Studio Enterprise 버전 15.0.0부터 15.9.31까지의 영어 전용 레이아웃을 미리 보는 방법의 예제입니다.
+* 먼저 다음은 Visual Studio Enterprise 버전 15.0.0부터 15.9.31까지의 영어 전용 레이아웃을 미리 보는 방법의 예제입니다.
 
-    ```cmd
-    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+  ```
 
-- 다음은 단일 워크로드를 사용하여 동일한 레이아웃을 생성하는 방법입니다.
+* 다음은 단일 워크로드를 사용하여 동일한 레이아웃을 생성하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+  ```
 
-- 다음은 기존 지시 파일을 사용하여 최소 오프라인 레이아웃을 다시 생성하는 방법입니다. 
+* 다음은 기존 지시 파일을 사용하여 최소 오프라인 레이아웃을 다시 생성하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
-    ```
+  ```shell
+  MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+  ```
 
-**generate** 명령을 사용하는 다른 몇 가지 예제는 다음과 같습니다.
+**generate** 명령을 사용하는 다른 예제 몇 가지는 다음과 같습니다.
 
-- 다음은 워크로드를 더 추가하고 권장 패키지만 포함하는 방법입니다. 
+* 다음은 워크로드를 더 추가하고 권장 패키지만 포함하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+  ```
 
-- 마지막으로, 다음은 최소 레이아웃에 여러 언어를 포함하는 방법입니다. 
+* 여러 제품을 지원하는 최소한의 오프라인 레이아웃을 생성할 수도 있습니다.
 
-    ```cmd
-    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
-    ```
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise,Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+  ```
+
+* 마지막으로, 다음은 최소 레이아웃에 여러 언어를 포함하는 방법입니다.
+
+  ```shell
+  MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+  ```
 
 ::: moniker-end
 
@@ -190,19 +201,19 @@ ms.locfileid: "99935705"
 
 **verify** 및 **fix** 명령을 사용하여 생성된 최소 레이아웃을 유지 관리할 수 있습니다. **verify** 명령은 최소 레이아웃에 손상되었거나 누락된 패키지가 있는지 여부를 확인합니다. **verify** 명령을 실행한 후 문제가 발견되면 **fix** 명령을 사용하여 누락되었거나 손상된 패키지를 수정합니다.
 
-- 다음은 레이아웃에 손상되었거나 누락된 패키지가 있는지 여부를 확인하는 방법입니다. 
+* 다음은 레이아웃에 손상되었거나 누락된 패키지가 있는지 여부를 확인하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe Verify --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe Verify --targetLocation c:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --languages en-US
+  ```
 
-- 다음은 해당 레이아웃을 수정하는 방법입니다.
+* 다음은 해당 레이아웃을 수정하는 방법입니다.
 
-    ```cmd
-    MinimalLayout.exe fix --targetLocation C:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --languages en-US
-    ```
+  ```shell
+  MinimalLayout.exe fix --targetLocation C:\VSLayout\ --productIds Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeRecommended --languages en-US
+  ```
 
->[!NOTE] 
+>[!NOTE]
 > 이 레이아웃을 사용하여 Visual Studio 설치를 복구할 수는 없습니다. 기존 Visual Studio 인스턴스를 복구하려면 [Visual Studio 복구](repair-visual-studio.md)를 참조하세요.
 >
 
@@ -212,19 +223,21 @@ ms.locfileid: "99935705"
 
 폴더로 이동하여 부트스트래퍼 애플리케이션 이름을 확인합니다. 부트스트래퍼 애플리케이션 이름은 최소 레이아웃을 생성하는 동안 지정된 ProductId 값에 따라 다릅니다. 일반적인 예는 아래 표를 참조하세요.
 
-|ProductId 값    |애플리케이션 이름|
-|:-----------|:------------|
-|Microsoft.VisualStudio.Product.Enterprise    |vs_enterprise.exe|
-|Microsoft.VisualStudio.Product.Professional    |vs_professional.exe|
-|Microsoft.VisualStudio.Product.BuildTools    |vs_buildtools.exe|
+| ProductId 값                             | 애플리케이션 이름    |
+|---------------------------------------------|---------------------|
+| Microsoft.VisualStudio.Product.Enterprise   | vs_enterprise.exe   |
+| Microsoft.VisualStudio.Product.Professional | vs_professional.exe |
+| Microsoft.VisualStudio.Product.BuildTools   | vs_buildtools.exe   |
 
 업데이트는 두 단계로 Visual Studio 인스턴스에 적용됩니다. 먼저 Visual Studio 설치 관리자를 업데이트한 다음, Visual Studio를 업데이트합니다.
 
-1. **Visual Studio 설치 관리자 업데이트** 
+::: moniker range="vs-2017"
 
-    필요한 경우 `vs_enterprise.exe`를 올바른 부트스트래퍼 애플리케이션 이름으로 대체하여 다음 명령을 실행합니다. 
+1. **Visual Studio 설치 관리자 업데이트**
 
-    ```cmd
+    필요한 경우 `vs_enterprise.exe`를 올바른 부트스트래퍼 애플리케이션 이름으로 대체하여 다음 명령을 실행합니다.
+
+    ```shell
     vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
     ```
 
@@ -234,9 +247,55 @@ ms.locfileid: "99935705"
 
     installPath 명령줄 매개 변수를 적절하게 대체하여 다음 명령을 실행합니다. 올바른 부트스트래퍼 애플리케이션 이름도 사용해야 합니다.
 
-    ```cmd
+    ```shell
     vs_enterprise.exe update --noWeb --quiet --installpath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise"
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. **Visual Studio 설치 관리자 업데이트**
+
+    필요한 경우 `vs_enterprise.exe`를 올바른 부트스트래퍼 애플리케이션 이름으로 대체하여 다음 명령을 실행합니다.
+
+    ```shell
+    vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
+    ```
+
+2. **Visual Studio 애플리케이션 업데이트**
+
+    Visual Studio를 업데이트하려면 업데이트할 Visual Studio 인스턴스의 installPath를 지정해야 합니다. 여러 개의 Visual Studio 인스턴스가 설치되어 있을 경우 각 인스턴스를 별도로 업데이트해야 합니다. 최소 레이아웃에 포함되지 않은 구성 요소가 설치되지 않도록 update 명령에 `–noWeb` 옵션을 지정하는 것이 좋습니다. 이렇게 하면 Visual Studio가 사용할 수 없는 상태로 방치되지 않습니다.
+
+    installPath 명령줄 매개 변수를 적절하게 대체하여 다음 명령을 실행합니다. 올바른 부트스트래퍼 애플리케이션 이름도 사용해야 합니다.
+
+    ```shell
+    vs_enterprise.exe update --noWeb --quiet --installpath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise"
+    ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. **Visual Studio 설치 관리자 업데이트**
+
+    필요한 경우 `vs_enterprise.exe`를 올바른 부트스트래퍼 애플리케이션 이름으로 대체하여 다음 명령을 실행합니다.
+
+    ```shell
+    vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc
+    ```
+
+2. **Visual Studio 애플리케이션 업데이트**
+
+    Visual Studio를 업데이트하려면 업데이트할 Visual Studio 인스턴스의 installPath를 지정해야 합니다. 여러 개의 Visual Studio 인스턴스가 설치되어 있을 경우 각 인스턴스를 별도로 업데이트해야 합니다. 최소 레이아웃에 포함되지 않은 구성 요소가 설치되지 않도록 update 명령에 `–noWeb` 옵션을 지정하는 것이 좋습니다. 이렇게 하면 Visual Studio가 사용할 수 없는 상태로 방치되지 않습니다.
+
+    installPath 명령줄 매개 변수를 적절하게 대체하여 다음 명령을 실행합니다. 올바른 부트스트래퍼 애플리케이션 이름도 사용해야 합니다.
+
+    ```shell
+    vs_enterprise.exe update --noWeb --quiet --installpath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise"
+    ```
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
-ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
+ms.openlocfilehash: b3744640aada798179c86cc60d2c8ce7b02ccfaa
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108025867"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973481"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 빌드 속성
 
@@ -155,5 +155,7 @@ MSBuild 속성에 대한 일반적인 내용은 [MSBuild 속성](../msbuild/msbu
 [컨테이너 도구 빌드 속성](container-msbuild-properties.md)
 
 [컨테이너 도구 시작 설정](container-launch-settings.md)
+
+[Visual Studio에서 Docker Compose의 시작 프로필 관리](launch-profiles.md)
 
 [MSBuild의 예약된 속성 및 잘 알려진 속성](../msbuild/msbuild-reserved-and-well-known-properties.md)

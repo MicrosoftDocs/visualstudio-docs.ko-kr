@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897972"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308157"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 피드백 옵션
 
@@ -28,11 +28,11 @@ ms.locfileid: "99897972"
 
 ## <a name="report-a-problem"></a>문제 보고
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio에서 크래시, 느린 성능 또는 예기치 않은 동작과 같은 문제가 발생하는 경우에는 **문제 보고** 도구를 사용하여 문제를 알려주세요. Visual Studio에서 오른쪽 위 모서리에 있는 피드백 아이콘을 선택하거나, 메뉴 모음에서 **도움말** > **사용자 의견 보내기** > **문제 보고** 를 선택합니다.
 
-![Visual Studio 2019 IDE의 사용자 의견 보내기 아이콘](./media/vs-2019/send-feedback-icon.png)
+![Visual Studio IDE의 사용자 의견 보내기 아이콘](./media/vs-2019/send-feedback-icon.png)
 
 다음으로, Visual Studio에서 로그인하여 문제를 보고할 수 있는 [개발자 커뮤니티](https://aka.ms/feedback/suggest?space=8) 인터페이스를 엽니다. 자세한 내용은 [Visual Studio의 문제를 보고하는 방법](how-to-report-a-problem-with-visual-studio.md)을 참조하세요.
 
@@ -50,7 +50,7 @@ Visual Studio에서 크래시, 느린 성능 또는 예기치 않은 동작과 �
 
 ## <a name="suggest-a-feature"></a>기능 제안
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio를 개선하기 위한 아이디어나 제안이 있는 경우 **기능 제안** 도구를 사용하여 알려주세요. Visual Studio에서 오른쪽 위 모서리에 있는 피드백 아이콘을 선택하거나, 메뉴 모음에서 **도움말** > **사용자 의견 보내기** > **기능 제안** 을 선택합니다.
 
@@ -73,7 +73,7 @@ Visual Studio를 개선하기 위한 아이디어나 제안이 있는 경우 **�
 * 설명서 페이지의 오른쪽 위에 있는 **이 페이지가 도움이 되었나요?** 응답 도구를 사용합니다.
 * GitHub 계정을 사용하여 [docs.microsoft.com](../index.yml)에 있는 Visual Studio 페이지에 대한 피드백을 제공합니다. 이렇게 하려면 설명서 페이지 하단에 있는 **피드백 정보 보내기** > **이 페이지** 단추를 선택합니다.
 
-## <a name="contact-microsoft-support"></a>Microsoft 지원팀에 문의
+## <a name="contact-microsoft-support"></a>Microsoft 지원에 문의
 
 Visual Studio 지원 정보는 [제품 수명 주기 및 서비스](/visualstudio/releases/2019/servicing/) 페이지를 참조하세요. 다른 Microsoft 제품 및 서비스에 대한 온라인 도움말을 보려면 [Microsoft 지원](https://support.microsoft.com/)을 참조하세요.
 
@@ -92,7 +92,7 @@ Microsoft 지원 서비스는 현재 가격, 약관 및 조건에 따라 다를 
 
 * [MSDN 포럼](https://social.msdn.microsoft.com/Forums/home)
 * [Reddit](https://www.reddit.com/r/VisualStudio/)의 Visual Studio
-* [스택 오버플로](https://stackoverflow.com/search?q=visual+studio+-code)
+* [Stack Overflow](https://stackoverflow.com/search?q=visual+studio+-code)
 
 [코드 샘플 찾아보기](/samples/browse/) 페이지에서 다른 개발자의 코드를 보고 직접 작성한 예제를 공유할 수도 있습니다.
 

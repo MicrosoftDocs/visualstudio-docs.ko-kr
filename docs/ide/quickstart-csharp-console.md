@@ -1,8 +1,8 @@
 ---
-title: Visual Studio를 사용하여 첫 번째 C# 콘솔 앱 만들기
+title: '자습서: Visual Studio를 사용하여 C# 콘솔 앱 만들기'
 titleSuffix: ''
 description: Visual Studio에서 C#을 사용하여 간단한 Hello World 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f51e3e6617578236d31090b23e8cb7c661d6043
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: bf7a52b6dbf36c25590292c3272f1e63d07156b9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296796"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387621"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 C# 콘솔 앱 만들기
 
@@ -35,6 +35,12 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 ::: moniker range="vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -62,9 +68,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Visual Studio 2019를 엽니다.
+1. Visual Studio를 엽니다.
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
@@ -103,7 +109,7 @@ C# 프로젝트 템플릿을 선택하고 프로젝트 이름을 지정한 후�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio에는 프로젝트에 기본 "Hello World" 코드가 포함되어 있습니다.
 

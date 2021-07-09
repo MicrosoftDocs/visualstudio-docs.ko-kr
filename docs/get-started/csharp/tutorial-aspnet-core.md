@@ -2,8 +2,8 @@
 title: '자습서: C# 및 ASP.NET Core 시작'
 titleSuffix: ''
 description: C#을 사용하여 단계별로 Visual Studio에서 ASP.NET Core 웹앱을 만드는 방법을 알아봅니다.
-ms.custom: seodec18, get-started
-ms.date: 02/12/2021
+ms.custom: vs-acquisition, get-started
+ms.date: 06/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,40 +16,41 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 25840b820a92925c3d7434d0c76b0138b533b2dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296926"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388115"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>자습서: Visual Studio에서 C# 및 ASP.NET Core 시작
 
 Visual Studio를 사용하여 ASP.NET Core로 C#을 개발하기 위한 이 자습서에서는 C# ASP.NET Core 웹앱을 만들고, 해당 앱을 변경하며, IDE의 일부 기능을 살펴본 후, 앱을 실행합니다.
 
-## <a name="before-you-begin"></a>시작하기 전 주의 사항
+## <a name="prerequisites"></a>필수 조건
 
-### <a name="install-visual-studio"></a>Visual Studio 설치
+1. Visual Studio 설치
+   ::: moniker range="vs-2017"
+   
+   아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+   
+   ::: moniker-end
+   
+   ::: moniker range="vs-2019"
+   
+   아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+   
+   ::: moniker-end
 
-::: moniker range="vs-2017"
+   ::: moniker range="vs-2022"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 페이지로 이동하여 체험용으로 설치합니다.
+   Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="vs-2019"
+1. Visual Studio 업데이트 - Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio를 최신 릴리스로 업데이트](../../install/update-visual-studio.md) 페이지를 참조하세요.
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
-
-::: moniker-end
-
-### <a name="update-visual-studio"></a>Visual Studio 업데이트
-
-Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는지 확인합니다. 설치를 업데이트하는 방법에 대한 자세한 내용은 [Visual Studio를 최신 릴리스로 업데이트](../../install/update-visual-studio.md) 페이지를 참조하세요.
-
-### <a name="choose-your-theme-optional"></a>테마 선택(선택 사항)
-
-이 자습서에는 어두운 테마를 사용하는 스크린샷이 포함되어 있습니다. 어두운 테마를 사용하지 않지만 원하는 경우 [Visual Studio IDE 및 편집기 개인 설정](../../ide/quickstart-personalize-the-ide.md) 페이지에서 참조하여 방법을 알아봅니다.
+1. 테마 선택(선택 사항) - 이 자습서에는 어두운 테마를 사용하는 스크린샷이 포함되어 있습니다. 방법을 알아보려면 [Visual Studio IDE 및 편집기 개인 설정](../../ide/quickstart-personalize-the-ide.md) 페이지를 참조하세요.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
 
@@ -102,7 +103,7 @@ Visual Studio를 이미 설치한 경우 최신 릴리스를 실행하고 있는
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 

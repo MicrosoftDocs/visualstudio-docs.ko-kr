@@ -1,31 +1,40 @@
 ---
-title: Visual Studio에서 Bridge to Kubernetes 사용
-titleSuffix: ''
+title: '자습서: Bridge to Kubernetes에 개발 머신 연결'
 ms.technology: vs-azure
 ms.date: 03/24/2021
-ms.topic: quickstart
-description: Visual Studio에서 Bridge to Kubernetes를 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 방법을 알아봅니다.
+ms.topic: tutorial
+description: Visual Studio를 사용하여 Bridge to Kubernetes가 있는 Kubernetes 클러스터에 개발 컴퓨터를 연결합니다.
 keywords: Bridge to Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, 컨테이너
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
-ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
+ms.openlocfilehash: b8d6c98d2e2146ad57871b74cd2d522ed2b04259
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105635050"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046120"
 ---
-# <a name="use-bridge-to-kubernetes"></a>Bridge to Kubernetes 사용
+# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>자습서: Bridge to Kubernetes를 사용하여 클러스터와 개발 컴퓨터 연결
 
-Bridge to Kubernetes를 사용하여 개발 컴퓨터에서 실행되는 코드와 Kubernetes 클러스터 간에 트래픽을 리디렉션할 수 있습니다. Kubernetes 클러스터에 여러 개의 마이크로 서비스를 포함하여 대규모 애플리케이션 예제를 배포하는 스크립트도 제공됩니다.
+이 자습서에서는 Bridge to Kubernetes를 사용하여 개발 컴퓨터에서 실행되는 코드와 Kubernetes 클러스터 간에 트래픽을 리디렉션하는 방법을 알아봅니다. 
 
-## <a name="before-you-begin"></a>시작하기 전 주의 사항
+Kubernetes 클러스터에 여러 개의 마이크로 서비스를 포함하여 대규모 애플리케이션 예제를 배포하는 스크립트도 제공됩니다.
 
-이 가이드에서는 [TODO 애플리케이션 샘플][todo-app-github]을 사용하여 개발 컴퓨터를 Kubernetes 클러스터에 연결하는 방법을 보여 줍니다. 사용자 고유의 애플리케이션이 Kubernetes 클러스터에서 이미 실행 중인 경우에도 아래 단계를 수행하고 해당 서비스의 이름을 사용할 수 있습니다.
+[Bridge to Kubernetes 작동 방식](overview-bridge-to-kubernetes.md) 문서에서 Bridge to Kubernetes에 대해 자세히 알아보세요.
 
-이 샘플에서는 Bridge to Kubernetes를 사용하여 Kubernetes 클러스터에서 간단한 TODO 애플리케이션의 마이크로 서비스 버전을 개발하는 방법을 보여 줍니다. Visual Studio를 사용하는 이 샘플은 [TodoMVC](http://todomvc.com)에서 제공하는 코드를 수정한 것입니다. 다음 단계는 어떤 Kubernetes 클러스터에서도 작동할 것입니다.
+## <a name="prerequisites"></a>필수 조건
+
+- Kubernetes 클러스터
+- Windows 10에서 실행되는 [Visual Studio 2019][visual-studio] 버전 16.7 미리 보기 4 이상
+- [설치된 Bridge to Kubernetes 확장][btk-extension]
+
+## <a name="about-the-data"></a>데이터 정보
+
+이 자습서에서는 Bridge to Kubernetes를 사용하여 Kubernetes 클러스터에서 간단한 TODO 샘플 애플리케이션의 마이크로 서비스 버전을 개발합니다. 이 [TODO 앱 샘플 애플리케이션][todo-app-github]은 [TodoMVC](http://todomvc.com)에서 제공하는 코드를 Visual Studio를 사용하여 수정한 것입니다. 
+
+ 다음 단계는 어떤 Kubernetes 클러스터에서도 작동할 것입니다. 사용자 자체 애플리케이션이 Kubernetes 클러스터에서 이미 실행 중인 경우에도 아래의 단계를 수행할 수 있고 자체 서비스의 이름을 사용할 수 있습니다.
 
 TODO 애플리케이션 샘플은 프런트 엔드와 영구 저장소를 제공하는 백 엔드로 구성됩니다. 이 확장 샘플에서는 통계 구성 요소를 추가하고 애플리케이션을 여러 마이크로 서비스로 분할합니다.
 
@@ -37,15 +46,10 @@ TODO 애플리케이션 샘플은 프런트 엔드와 영구 저장소를 제공
 
 결국, 이 확장된 TODO 애플리케이션은 6개의 상호 관련된 구성 요소로 구성됩니다.
 
-### <a name="prerequisites"></a>필수 구성 요소
-
-- Kubernetes 클러스터
-- Windows 10에서 실행되는 [Visual Studio 2019][visual-studio] 버전 16.7 미리 보기 4 이상
-- [Bridge to Kubernetes 확장 설치][btk-extension]
 
 ## <a name="check-the-cluster"></a>클러스터 확인
 
-명령 프롬프트를 열고 kubectl이 경로에 설치되어 있는지, 사용하려는 클러스터가 사용 가능하고 준비된 상태인지, 컨텍스트가 해당 클러스터로 설정되었는지 확인합니다.
+명령 프롬프트를 열고 `kubectl`이 경로에 설치되어 있는지와 사용하려는 클러스터가 사용 가능하고 준비된 상태인지 확인하고 컨텍스트를 해당 클러스터로 설정합니다.
 
 ```cmd
 kubectl cluster-info

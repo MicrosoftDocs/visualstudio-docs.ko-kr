@@ -1,7 +1,7 @@
 ---
 title: Visual Basic을 사용하여 첫 번째 콘솔 앱 만들기
 description: Visual Studio에서 Visual Basic을 사용하여 간단한 Hello World 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a103c672b6539f5893cf52a6e83acde6c87176d
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 658faaf5b044f1c4fed70fa62f205c2fa025f640
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296640"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386243"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>빠른 시작: Visual Studio에서 Visual Basic을 사용하여 첫 번째 콘솔 앱 만들기
 
@@ -34,6 +34,12 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 ::: moniker range="vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -61,12 +67,12 @@ Visual Studio IDE(통합 개발 환경)에 대한 소개는 이 5~10분 분량�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > 이 빠른 시작의 일부 스크린샷은 어두운 테마를 사용합니다. 어두운 테마를 사용하지 않지만 원하는 경우 [Visual Studio IDE 및 편집기 개인 설정](quickstart-personalize-the-ide.md) 페이지에서 참조하여 방법을 알아봅니다.
 
-1. Visual Studio 2019를 엽니다.
+1. Visual Studio를 엽니다.
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 

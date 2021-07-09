@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b49ba26cc1e88ab3241094e1fd92be0907e8dd60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09945306a2260bed5b264d380dcea745ff3f7c07
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877345"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280431"
 ---
 # <a name="delete-task"></a>Delete 작업
 
@@ -50,7 +50,7 @@ ms.locfileid: "99877345"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 `DeleteDebugSymbolFile` 대상을 빌드할 때 *MyApp.pdb* 파일을 삭제합니다.
+다음 예제에서는 `DeleteDebugSymbolFile` 대상을 빌드할 때 *ConsoleApp1.pdb* 파일을 삭제합니다.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

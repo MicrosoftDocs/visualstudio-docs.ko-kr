@@ -10,12 +10,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 6935c2f37f75f0318ec9402c3fcd0ff763555032
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 9ac42ccff8c7bffcc22c453002aad1caf6935d28
+ms.sourcegitcommit: e4630a3bb89b4d606fe2cbd709bc773c5b538b78
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296016"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112975676"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>다단계 인증이 필요한 계정으로 Visual Studio를 사용하는 방법
 
@@ -68,11 +68,16 @@ ms.locfileid: "107296016"
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>Visual Studio에서 특정 Azure Active Directory 테넌트 사용을 옵트아웃하는 방법
 
-Visual Studio 2019 버전 16.6에서는 유연하게 특정 테넌트를 필터링하여 Visual Studio에서 숨길 수 있습니다. 필터링하면 해당 테넌트로 인증할 필요가 없어질 뿐 아니라 관련 리소스에 액세스할 수도 없게 됩니다. 
+Visual Studio 2019 버전 16.6에서는 유연하게 테넌트를 개별적으로 또는 전역적으로 필터링하여 Visual Studio에서 숨길 수 있습니다. 필터링하면 해당 테넌트로 인증할 필요가 없어질 뿐 아니라 관련 리소스에 액세스할 수도 없게 됩니다.
 
 테넌트가 여럿이지만 특정 하위 집합을 대상으로 지정하여 개발 환경을 최적화하려는 경우 이 기능이 유용합니다. 또한 특정 CA/MFA 정책의 유효성을 검사할 수 없는 경우에도 잘못된 테넌트를 필터링할 수 있으므로 도움이 될 수 있습니다. 
 
-### <a name="how-to-filter-out-a-tenant"></a>테넌트를 필터링하는 방법
+### <a name="how-to-filter-out-all-tenants"></a>모든 테넌트를 필터링하는 방법
+모든 테넌트를 전역적으로 필터링하려면 계정 설정 대화 상자 **(파일 > 계정 설정...)** 를 열고 **모든 Azure Active Directory에서 인증** 확인란의 선택을 취소합니다.
+
+이 옵션을 선택 취소하면 계정의 기본 테넌트로만 인증됩니다. 즉, 사용자의 계정이 게스트인 다른 테넌트에 연결된 리소스에는 액세스할 수 없습니다.
+
+### <a name="how-to-filter-out-individual-tenants"></a>개별 테넌트를 필터링하는 방법
 Visual Studio 계정과 연결된 테넌트를 필터링하려면 계정 설정 대화 상자 **(파일 > 계정 설정...)** 를 열고 **필터 적용** 을 클릭합니다. 
 </br>
 </br>

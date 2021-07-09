@@ -9,25 +9,25 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe1d1a3c5ec13995cb69fff6ba6ec74c7a6c90d9
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868735"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307727"
 ---
-# <a name="how-to-define-settings-in-a-response-file"></a>지시 파일에서 설정을 정의하는 방법
+# <a name="automate-installs-by-using-settings-in-a-response-file"></a>지시 파일의 설정을 사용하여 설치 자동화
 
 Visual Studio를 배포하는 관리자는 다음 예제와 같이 `--in` 매개 변수를 사용하여 지시 파일을 지정할 수 있습니다.
 
-```cmd
+```shell
 vs_enterprise.exe --in customInstall.json
 ```
 
@@ -64,7 +64,7 @@ Visual Studio 설치 프로그램을 레이아웃 폴더에서 실행하면 _자
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -119,7 +119,7 @@ Visual Studio 설치 프로그램을 레이아웃 폴더에서 실행하면 _자
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -156,7 +156,7 @@ Visual Studio 설치 프로그램을 레이아웃 폴더에서 실행하면 _자
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참조
 
 * [Visual Studio 작업 및 구성 요소 ID](workload-and-component-ids.md)
 * [Visual Studio 설치 또는 사용 시의 네트워크 관련 오류 문제 해결](troubleshooting-network-related-errors-in-visual-studio.md)

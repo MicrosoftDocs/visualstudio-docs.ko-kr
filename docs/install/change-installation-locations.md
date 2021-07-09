@@ -2,30 +2,30 @@
 title: 설치 위치 선택
 description: 다운로드 캐시, 공유 구성 요소, SDK 및 도구의 위치를 다른 드라이브로 변경하여 시스템 드라이브에서 Visual Studio의 설치 공간을 줄이는 방법을 알아봅니다. 예를 들어, 일부 파일을 C 드라이브에서 D 드라이브로 이동합니다.
 ms.date: 03/30/2019
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.topic: how-to
 helpviewer_keywords:
 - change installation locations for Visual Studio
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4db3a31c8baa578a17d14b3a740ff40a444ba208
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ad065a780a16420727d90605d95038cc5f4080a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868636"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387569"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Visual Studio에서 설치 위치 선택
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 해당 파일의 일부의 위치를 변경하여 시스템 드라이브에서 Visual Studio의 설치 공간을 줄일 수 있습니다. 특히 다운로드 캐시, 공유 구성 요소, SDK 및 도구 파일에 대해 다른 위치를 사용할 수 있습니다.
 
@@ -33,14 +33,14 @@ ms.locfileid: "99868636"
 
 ::: moniker range="vs-2017"
 
-**버전 15.7의 새로운 기능**: 해당 파일의 일부의 위치를 변경하여 시스템 드라이브에서 Visual Studio의 설치 공간을 줄일 수 있습니다. 특히 다운로드 캐시, 공유 구성 요소, SDK 및 도구 파일에 대해 다른 위치를 사용할 수 있습니다.
+**버전 15.7의 새로운 기능**: 해당 파일 일부의 위치를 변경하여 시스템 드라이브에서 Visual Studio의 설치 공간을 줄일 수 있습니다. 특히 다운로드 캐시, 공유 구성 요소, SDK 및 도구 파일에 대해 다른 위치를 사용할 수 있습니다.
 
 ::: moniker-end
 
    > [!NOTE]
-   > 어디에 설치되는지에 대한 위치 규칙이 다른 도구와 SDK가 있습니다. 이러한 도구 및 SDK는 다른 위치를 선택했다 하더라도 시스템 드라이브에 설치됩니다.
+   > 일부 도구와 SDK를 설치할 수 있는 위치에 다른 규칙이 적용되는 도구와 SDK가 있습니다. 이러한 도구 및 SDK는 다른 위치를 선택했다 하더라도 시스템 드라이브에 설치됩니다.
 
-시작할 준비가 되셨나요? 방법은 다음과 같습니다.
+시작할 준비가 되셨나요? 다음과 같이 하세요.
 
 ::: moniker range="vs-2017"
 
@@ -76,7 +76,7 @@ ms.locfileid: "99868636"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Visual Studio를 설치할 때 **설치 위치** 탭을 선택합니다.
 

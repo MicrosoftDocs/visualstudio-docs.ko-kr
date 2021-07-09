@@ -3,19 +3,19 @@ title: Visual Studio Test Agent 2019 워크로드 및 구성 요소 ID
 titleSuffix: ''
 description: Visual Studio 워크로드 및 구성 요소 ID를 사용하여 자동화된 테스트를 실행하고 테스트를 원격으로 로드합니다.
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/24/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: c5b9805b466f23be12fb6c66f0231d5c9a6ccec8
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8f9d4c873748f273515465f0ed833eaa9c1fe6b7
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683697"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449646"
 ---
 ## <a name="test-agent"></a>Test Agent
 
@@ -27,7 +27,7 @@ ms.locfileid: "101683697"
 
 구성 요소 ID | Name | 버전 | 종속성 유형
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 핵심 기능 | 16.9.31004.209 | 필수
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 핵심 기능 | 16.10.31205.180 | 필수
 
 ## <a name="unaffiliated-components"></a>독립적 구성 요소
 

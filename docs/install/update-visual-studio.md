@@ -3,7 +3,7 @@ title: Visual Studio 업데이트
 titleSuffix: ''
 description: Visual Studio를 가장 최신 릴리스로 업데이트하는 방법을 단계별로 알아봅니다.
 ms.date: 04/06/2021
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 8414d745b63eb0e9145208dca97ce9f117c5cf2c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547507"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387959"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio를 최신 릴리스 버전으로 업데이트
 
@@ -164,9 +164,9 @@ Visual Studio는 Visual Studio 자체나 구성 요소에 사용 가능한 업�
 
 ::: moniker range="vs-2019"
 
-항상 최신 기능, 수정 사항 및 개선 사항을 사용할 수 있도록 Visual Studio 2019의 [최신 릴리스](/visualstudio/releases/2019/release-notes/)로 업데이트하는 것이 좋습니다.
+항상 최신 기능, 수정 사항, 개선 사항을 사용할 수 있도록 Visual Studio의 [최신 릴리스](/visualstudio/releases/2019/release-notes/)로 업데이트하는 것이 좋습니다.
 
-아직 Visual Studio 2019를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다. 현재 다른 버전의 Visual Studio를 사용 중인 경우 [Visual Studio 버전을 나란히 설치](../install/install-visual-studio-versions-side-by-side.md)하거나 [이전 버전의 Visual Studio를 제거](../install/uninstall-visual-studio.md)할 수 있습니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다. 현재 다른 버전의 Visual Studio를 사용 중인 경우 [Visual Studio 버전을 나란히 설치](../install/install-visual-studio-versions-side-by-side.md)하거나 [이전 버전의 Visual Studio를 제거](../install/uninstall-visual-studio.md)할 수 있습니다.
 
 > [!IMPORTANT]
 > Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
@@ -287,9 +287,133 @@ Visual&nbsp;Studio&nbsp;2019를 업데이트하는 방법은 다음과 같습니
 
 ::: moniker-end
 
-## <a name="administrator-updates"></a>관리자 업데이트 
+::: moniker range=">=vs-2022"
 
-소프트웨어 설치를 중앙에서 관리하는 조직에서는 엔터프라이즈 관리자가 구성원의 컴퓨터에서 Visual Studio를 업데이트할 수 있습니다. 컴퓨터에서 수락할 수 있는 업데이트 유형을 제어 또는 구성하는 방법에 대한 자세한 내용은 [Configuration Manager를 사용하여 Visual Studio 업데이트 배포](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)를 참조하세요. 
+항상 최신 기능, 수정 사항, 개선 사항을 사용할 수 있도록 Visual Studio의 [최신 릴리스](/visualstudio/releases/2022/release-notes/)로 업데이트하는 것이 좋습니다.
+
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다. 현재 다른 버전의 Visual Studio를 사용 중인 경우 [Visual Studio 버전을 나란히 설치](../install/install-visual-studio-versions-side-by-side.md)하거나 [이전 버전의 Visual Studio를 제거](../install/uninstall-visual-studio.md)할 수 있습니다.
+
+> [!IMPORTANT]
+> Visual Studio를 설치, 업데이트 또는 수정하려면 관리 권한이 있는 계정으로 로그온해야 합니다. 자세한 내용은 [사용자 권한 및 Visual Studio](../ide/user-permissions-and-visual-studio.md)를 참조하세요.
+>
+> [!NOTE]
+> 이 토픽은 Windows의 Visual Studio에 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio 업데이트](/visualstudio/mac/update)를 참조하세요.
+
+Visual&nbsp;Studio&nbsp;2022를 업데이트하는 방법은 다음과 같습니다.
+
+## <a name="use-the-visual-studio-installer"></a>Visual Studio 설치 관리자 사용
+
+1. 컴퓨터에서 **Visual Studio 설치 관리자** 를 찾습니다.
+
+   Windows 시작 메뉴에서 “설치 관리자”를 검색할 수 있습니다.
+
+   ![Visual Studio 설치 관리자](media/vs-2019/visual-studio-installer.png "Visual Studio 설치 관리자 검색")
+
+   계속하기 전에 설치 관리자를 업데이트해야 할 수 있습니다. 그렇다면 지시를 따르세요.
+
+1. 설치 관리자에서 설치한 Visual Studio의 버전을 찾습니다.
+
+   예를 들어 이전에 Visual&nbsp;Studio Community&nbsp;2022를 설치했으며 업데이트가 있는 경우, **업데이트 사용 가능** 메시지가 설치 관리자에 표시됩니다.
+
+     ![업데이트할 Visual Studio 2019 버전 선택](media/vs-2019/vs-installer-update-visual-studio-community.png "업데이트할 Visual Studio 2019 버전 선택")
+
+1. **업데이트** 를 선택하여 업데이트를 설치합니다.
+
+    ![업데이트 단추를 선택하여 업데이트 설치](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "업데이트 단추를 선택하여 업데이트 설치")
+
+1. 업데이트가 완료되면 컴퓨터를 다시 시작하라는 메시지가 표시될 수 있습니다. 그러면 컴퓨터를 다시 시작한 후 평상시와 같은 방법으로 Visual Studio를 시작합니다.
+
+   컴퓨터를 다시 시작하라는 메시지가 표시되지 않으면 **시작** 을 선택하여 설치 관리자에서 Visual Studio를 시작합니다.
+
+    ![시작 단추를 선택하여 Visual Studio 시작](media/vs-2019/choose-launch-visual-studio-community.png "시작 단추를 선택하여 Visual Studio 시작")
+
+## <a name="use-the-ide"></a>IDE 사용
+
+Visual Studio 2022의 메뉴 모음 또는 검색 상자를 사용하여 업데이트를 확인한 다음, 설치할 수 있습니다.
+
+### <a name="open-visual-studio"></a>Visual Studio 열기
+
+1. Windows **시작** 메뉴에서 **Visual Studio 2022** 를 선택합니다.
+
+    ![Visual Studio 2022 열기](media/vs-2019/vs-installer-visual-studio-2019.png "Windows에서 Visual Studio 2019 열기")
+
+1. **시작** 에서 IDE를 여는 옵션을 선택합니다.
+
+    ![Visual Studio 설치 관리자 열기](media/vs2019-choose-option-from-get-started.png "Visual Studio 설치 관리자 열기")
+
+    Visual Studio가 열립니다. IDE에 **Visual Studio 2022 업데이트** 메시지가 표시됩니다.
+
+    ![IDE의 'Visual Studio 2019 업데이트' 메시지](media/vs-2019/update-visual-studio-ide-message.png "IDE의 'Visual Studio 2019 업데이트' 메시지")
+
+1. **Visual Studio 2022 업데이트** 메시지에서 **세부 정보 보기** 를 선택합니다.
+
+   ![Visual Studio 2019 IDE 업데이트 메시지에서 세부 정보 보기 단추 선택](media/vs-2019/update-visual-studio-ide-view-details.png "Visual Studio 2019 업데이트 메시지에서 세부 정보 보기 단추 선택")
+
+1. **업데이트 다운로드 및 설치 준비** 대화 상자에서 **업데이트** 를 선택합니다.
+
+     !['업데이트 다운로드 및 설치 준비' 대화 상자에서 업데이트 단추 선택](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "'업데이트 다운로드 및 설치 준비' 대화 상자에서 업데이트 단추 선택")
+
+   Visual Studio가 업데이트되고, 닫힌 다음, 다시 열립니다.
+
+### <a name="in-visual-studio"></a>Visual Studio
+
+1. 메뉴 모음에서 **도움말** 을 선택한 다음, **업데이트 확인** 을 선택합니다.
+
+     ![도움말 메뉴에서 '업데이트 확인' 선택](media/vs-2019/vs-ide-check-updates-help-menu.png "도움말 메뉴에서 '업데이트 확인' 선택")
+
+    > [!NOTE]
+    > IDE의 검색 상자를 사용하여 업데이트를 확인할 수도 있습니다. **Ctrl**+**Q** 를 누르고, “업데이트 확인”을 입력한 다음, 일치하는 검색 결과를 선택합니다.
+
+1. **업데이트 사용 가능** 대화 상자에서 **업데이트** 를 선택합니다.
+
+     ![‘업데이트 사용 가능’ 대화 상자에서 업데이트 단추 선택](media/vs-2019/update-visual-studio-community-from-ide.png "‘업데이트 사용 가능’ 대화 상자에서 업데이트 단추 선택")
+
+   Visual Studio가 업데이트되고, 닫힌 다음, 다시 열립니다.
+
+## <a name="use-the-notifications-hub"></a>알림 허브 사용
+
+1. Visual Studio에서 작업을 저장합니다.
+
+1. Visual Studio IDE의 오른쪽 아래 모퉁이에서 알림 아이콘을 선택하여 **알림** 허브를 엽니다.
+
+   ![Visual Studio IDE의 알림 아이콘](media/vs-2019/notification-bar.png "Visual Studio IDE의 알림 아이콘")
+
+1. **알림 허브** 에서 설치할 업데이트를 선택한 다음, **세부 정보 보기** 를 선택합니다.
+
+     ![Visual Studio 2019의 알림 허브](media/vs-2019/notification-hub-update.png "Visual Studio 2019의 알림 허브")
+
+      > [!TIP]
+      > Visual Studio 2022 버전의 업데이트는 누적되므로 항상 최신 버전 번호를 사용하여 설치하세요.
+
+1. **업데이트 사용 가능** 대화 상자에서 **업데이트** 를 선택합니다.
+
+   Visual Studio가 업데이트되고, 닫힌 다음, 다시 열립니다.
+
+## <a name="customize-update-settings"></a>업데이트 설정 사용자 지정
+
+설치 모드를 변경하고 자동 다운로드를 선택하는 등의 방법으로 Visual Studio에서 업데이트 설정을 사용자 지정할 수 있습니다.
+
+선택할 수 있는 설치 모드는 두 가지입니다.
+
+* **다운로드하는 동안 설치**
+* **모두 다운로드한 후 설치**
+
+**업데이트 자동 다운로드** 설정을 선택하여 컴퓨터가 유휴 상태일 때 업데이트가 다운로드되도록 할 수 있습니다.
+
+방법은 다음과 같습니다.
+
+1. 메뉴 모음에서 **도구** > **옵션** 을 선택합니다.
+
+2. **환경** 을 확장한 다음 **제품 업데이트** 를 선택합니다.
+
+    ![Visual Studio의 업데이트 설정](media/vs-2019/update-settings-options.png)
+
+3. Visual Studio 업데이트에 대한 설치 모드 및 자동 다운로드 옵션을 선택합니다.
+::: moniker-end
+
+## <a name="administrator-updates"></a>관리자 업데이트
+
+소프트웨어 설치를 중앙에서 관리하는 조직에서는 엔터프라이즈 관리자가 구성원의 컴퓨터에서 Visual Studio를 업데이트할 수 있습니다. 컴퓨터에서 수락할 수 있는 업데이트 유형을 제어 또는 구성하는 방법에 대한 자세한 내용은 [Configuration Manager를 사용하여 Visual Studio 업데이트 배포](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)를 참조하세요.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

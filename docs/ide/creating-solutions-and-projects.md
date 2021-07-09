@@ -1,13 +1,12 @@
 ---
-title: 솔루션 및 프로젝트 작업
+title: Visual Studio 프로젝트와 솔루션을 만들고 사용하기
 description: 솔루션과 프로젝트의 차이점 및 Visual Studio에서 프로젝트와 솔루션을 사용하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
-- SolutionItemsProject
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
@@ -16,14 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 713d320767bd329cc53b536bdad058a5db592b3f
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956804"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924931"
 ---
-# <a name="work-with-solutions-and-projects"></a>솔루션 및 프로젝트 작업
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>Visual Studio 프로젝트과 솔루션을 만들고 사용하며 삭제하기
+
+이 문서에서는 앱을 빌드하는 데 필요한 아티팩트를 저장하기 위해 Visual Studio 프로젝트를 처음부터 만들고 사용하는 방법을 알아봅니다.  Visual Studio의 프로젝트에 익숙하지 않다면 [프로젝트 및 솔루션](solutions-and-projects-in-visual-studio.md) 개요를 참조하세요.  템플릿을 사용하여 빠르게 프로젝트를 만드는 방법을 알아보려면 [템플릿으로 프로젝트 만들기](create-new-project.md)를 참조하세요.
 
 *프로젝트* 는 소스 코드 파일, 비트맵, 아이콘, 구성 요소 및 서비스 참조 등 Visual Studio에서 앱을 빌드하는 데 필요한 항목을 보관합니다. 새 프로젝트를 만들 때 Visual Studio는 해당 프로젝트를 포함할 *솔루션* 을 만듭니다. 그런 다음 원하는 경우 다른 새 프로젝트나 기존 프로젝트를 솔루션에 추가할 수 있습니다. 특정 프로젝트에 연결되어 있지 않은 파일을 솔루션에 포함할 수도 있습니다.
 

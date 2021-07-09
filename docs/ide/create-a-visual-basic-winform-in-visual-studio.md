@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 974696d1ff7f8e82dab8ef2024710ce645b56c72
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 4d3c1aac5bb06ba29b1c70c39db900e704b2f3ec
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107297134"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308326"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio에서 Visual Basic을 사용하여 Windows Forms 앱 만들기
 
@@ -33,6 +33,15 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 짧은 소개에서는 Win
 ::: moniker range="vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+> [!NOTE]
+> 이 자습서의 일부 스크린샷은 어두운 테마를 사용합니다. 어두운 테마를 사용하지 않지만 원하는 경우 [Visual Studio IDE 및 편집기 개인 설정](../ide/quickstart-personalize-the-ide.md) 페이지에서 참조하여 방법을 알아봅니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 > [!NOTE]
 > 이 자습서의 일부 스크린샷은 어두운 테마를 사용합니다. 어두운 테마를 사용하지 않지만 원하는 경우 [Visual Studio IDE 및 편집기 개인 설정](../ide/quickstart-personalize-the-ide.md) 페이지에서 참조하여 방법을 알아봅니다.
@@ -57,9 +66,9 @@ Visual Studio IDE(통합 개발 환경)에 대한 이 짧은 소개에서는 Win
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Visual Studio 2019를 엽니다.
+1. Visual Studio를 엽니다.
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4dce707d51d7a2840aeef78f4d70392c884275
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a47ff76c98c5788fdfca3d633c87664b6802de70
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932021"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222957"
 ---
 # <a name="property-functions"></a>속성 함수
 
@@ -342,9 +342,11 @@ Output:
 -->
 ```
 
+<a name="TargetFramework"></a>
+
 ## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild TargetFramework 및 TargetPlatform 함수
 
-MSBuild는 [TargetFramework 및 TargetPlatform 속성](msbuild-target-framework-and-target-platform.md)을 처리하는 여러 함수를 정의합니다.
+MSBuild 16.7 이상은 [TargetFramework 및 TargetPlatform 속성](msbuild-target-framework-and-target-platform.md)을 처리하는 여러 함수를 정의합니다.
 
 |함수 시그니처|설명|
 |------------------------|-----------------|
@@ -384,6 +386,39 @@ Value3 = windows
 Value4 = 7.0
 Value5 = True
 ```
+
+## <a name="msbuild-version-comparison-functions"></a>MSBuild 버전 비교 함수
+
+MSBuild 16.5 이상은 버전을 나타내는 문자열을 비교하는 여러 함수를 정의합니다.
+
+> [!Note]
+> 조건의 비교 연산자는 [`System.Version` 개체로 구문 분석할 수 있는 문자열을 비교할 수 있지만](msbuild-conditions.md#comparing-versions) 비교는 예기치 않은 결과를 생성할 수 있습니다. 대신 속성 함수를 사용하는 것이 좋습니다.
+
+|함수 시그니처|설명|
+|------------------------|-----------------|
+|VersionEquals(string a, string b)|아래의 규칙에 따라 버전 `a`와 버전 `b`가 동일하면 `true`를 반환합니다.|
+|VersionGreaterThan(string a, string b)|아래의 규칙에 따라 버전 `a`가 버전 `b`보다 크면 `true`를 반환합니다.|
+|VersionGreaterThanOrEquals(string a, string b)|아래의 규칙에 따라 버전 `a`가 버전 `b`보다 크거나 같으면 `true`를 반환합니다.|
+|VersionLessThan(string a, string b)|아래의 규칙에 따라 버전 `a`가 버전 `b`보다 작으면 `true`를 반환합니다.|
+|VersionLessThanOrEquals(string a, string b)|아래의 규칙에 따라 버전 `a`가 버전 `b`보다 작거나 같으면 `true`를 반환합니다.|
+|VersionNotEquals(string a, string b)|아래의 규칙에 따라 버전 `a`와 버전 `b`가 동일하면 `false`를 반환합니다.|
+
+이들 메서드에서 버전은 <xref:System.Version?displayProperty=fullName>과 같이 구문 분석되며 다음과 같은 예외가 적용됩니다.
+
+* 선행 `v` 또는 `V`가 무시됩니다. 따라서 `$(TargetFrameworkVersion)`과의 비교가 가능합니다.
+
+* 첫 번째 '-' 또는 '+'부터 버전 문자열의 마지막까지는 모두 무시됩니다. 따라서 유의적 버전(semver)의 전달이 가능합니다. 단, 순서는 semver와 같지 않습니다. 그 대신 시험판 지정자와 빌드 메타데이터가 정렬 가중치를 갖지 않습니다. 이는 일례로 `>= x.y`에 대해 기능을 설정하고 `x.y.z-pre`에 적용되도록 하는 데 유용할 수 있습니다.
+
+* 지정되지 않은 부분은 0 값 부분과 동일합니다. (`x == x.0 == x.0.0 == x.0.0.0`).
+
+* 정수 구성 요소에서 공백이 허용되지 않습니다.
+
+* 주 버전만 유효합니다(`3`은 `3.0.0.0`과 같음).
+
+* 정수 구성 요소에서 `+`는 양의 부호로 허용되지 않습니다(semver 메타데이터로 취급되어 무시됩니다).
+
+> [!TIP]
+> [TargetFramework 속성](msbuild-target-framework-and-target-platform.md)의 비교에서는 일반적으로 버전을 추출하여 비교하는 대신 [IsTargetFrameworkCompatible](#TargetFramework)을 사용해야 합니다. 이렇게 하면 `TargetFrameworkIdentifier`와 버전이 다른 `TargetFramework`를 비교할 수 있습니다.
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 조건 함수
 

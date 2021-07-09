@@ -1,7 +1,7 @@
 ---
 title: '자습서: C# 코드 디버그'
 description: Visual Studio 디버거의 기능과 디버거를 시작하고 코드를 단계별로 실행하고 C# 애플리케이션에서 데이터를 검사하는 방법을 알아봅니다.
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment, vs-acquisition, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8fe0c698ce1263713a758bd98fba49433b3ff511
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682758"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390283"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C# 코드를 디버그하는 방법 알아보기
 
@@ -61,6 +61,12 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET Core 플랫폼 간 �
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
 워크로드는 설치해야 하지만 Visual Studio는 이미 있는 경우 **도구** > **도구 및 기능 가져오기...** 로 이동하면 Visual Studio 설치 관리자가 열립니다. Visual Studio 설치 관리자가 시작됩니다. **.NET Core 플랫폼 간 개발** 워크로드를 선택한 다음 **수정** 을 선택합니다.
 
 ## <a name="create-a-project"></a>프로젝트 만들기
@@ -81,9 +87,9 @@ Visual Studio 2017이 설치되어 있어야 하고 **.NET Core 플랫폼 간 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Visual Studio 2019를 엽니다.
+1. Visual Studio를 엽니다.
 
    시작 창이 열려 있지 않으면 **파일** > **시작 창** 을 선택합니다.
 

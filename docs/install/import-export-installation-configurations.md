@@ -4,32 +4,30 @@ titleSuffix: ''
 description: 다른 사용자와 공유하기 위해 설치 구성을 .vsconfig 파일로 내보내고 가져와 복제하는 방법을 알아봅니다.
 ms.date: 05/18/2019
 ms.topic: how-to
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - import installation configuration
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 043622d08b5389db8bf4cce80450f62c070a0ace
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33ee25da51d5243daa67be53f68c50ede76219b2
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949469"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925230"
 ---
 # <a name="import-or-export-installation-configurations"></a>설치 구성 가져오기 또는 내보내기
 
 설치 구성 파일을 사용하여 조직에서 Visual Studio를 구성할 수 있습니다. 이렇게 하려면 Visual Studio 설치 관리자를 사용하여 워크로드 및 구성 요소 정보를 .vsconfig 파일로 내보내면 됩니다. 그런 다음, 구성을 새 설치 또는 기존 설치로 가져오고 다른 사용자와 공유할 수 있습니다.
 
-방법은 다음과 같습니다.
+다음과 같이 하세요.
 
 ::: moniker range="vs-2017"
 
@@ -66,11 +64,11 @@ ms.locfileid: "99949469"
 
 1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **닫기** 를 선택합니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="automatically-install-missing-components"></a>누락된 구성 요소 자동 설치
 
-**Visual Studio 2019의 새로운 기능**: .vsconfig 파일을 솔루션 루트 디렉터리에 저장한 후 솔루션을 열면 Visual Studio에서는 누락된 구성 요소를 자동으로 검색하고 설치할지 묻는 메시지를 표시합니다.
+**Visual Studio 2019의 새로운 기능**: .vsconfig 파일을 솔루션 루트 디렉터리에 저장하고 솔루션을 열면 Visual Studio가 누락된 구성 요소를 자동으로 검색하고 설치할지 묻는 메시지를 표시합니다.
 
 ![솔루션 탐색기에서 추가 구성 요소 제안](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -80,7 +78,7 @@ ms.locfileid: "99949469"
 
 1. **추가** > **설치 구성 파일** 을 선택합니다.
 
-1. .vsconfig 파일을 저장할 위치를 확인한 후 **세부 정보 검토** 를 선택합니다.
+1. .vconfig 파일을 저장할 위치를 확인한 후 **세부 정보 검토** 를 선택합니다.
 
 1. 원하는 워크로드 및 구성 요소를 가져왔는지 확인한 후 **내보내기** 를 선택합니다.
 

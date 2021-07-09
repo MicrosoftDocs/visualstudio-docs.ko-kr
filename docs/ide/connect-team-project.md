@@ -2,17 +2,18 @@
 title: 팀 탐색기의 프로젝트에 연결
 description: Visual Studio에서 팀 탐색기를 사용하여 팀 구성원과 함께 프로젝트를 개발하고 관리하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2021
+ms.date: 06/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 78a71911bb4334e04a085d91ff51238d34981beb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+monikerRange: <=vs-2019
+ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216607"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308248"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>팀 탐색기의 프로젝트에 연결
 
@@ -27,7 +28,7 @@ ms.locfileid: "106216607"
 팀 탐색기는 Visual Studio를 TFVC(Team Foundation 버전 제어) 리포지토리에 연결하고 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 또는 온-프레미스 [Azure DevOps 서버](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true)(이전에는 TFS로 알려짐)에 호스트된 프로젝트에 연결합니다. 소스 코드, 작업 항목 및 빌드를 관리할 수 있습니다.
 
 > [!IMPORTANT]
-> Visual Studio 2019 [**버전 16.8**](/visualstudio/releases/2019/release-notes/)의 최근 릴리스에서는 이제 새로운 Git 버전 제어 환경이 기본적으로 설정되어 있습니다. 팀 탐색기와 어떤 차이가 있는 자세히 알아보려면 [**Git와 팀 탐색기 비교**](git-team-explorer-feature-comparison.md) 페이지를 참조하세요.
+> Visual Studio 2019 [**버전 16.8**](/visualstudio/releases/2019/release-notes-history) 릴리스에서는 Git 버전 제어 환경이 기본적으로 설정되어 있습니다. 팀 탐색기와 어떤 차이가 있는 자세히 알아보려면 [**Git와 팀 탐색기 비교**](../version-control/git-team-explorer-feature-comparison.md) 페이지를 참조하세요.
 >
 > 하지만 팀 탐색기를 계속 사용하려면 **도구** > **옵션** > **환경** > **미리 보기 기능** 으로 이동한 다음 **새 Git 사용자 환경** 확인란을 토글합니다.
 

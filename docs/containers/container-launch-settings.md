@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: e50935145913bcd1f3c4457f4704376a0ac0f6ef
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846709"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973241"
 ---
 # <a name="container-tools-launch-settings"></a>컨테이너 도구 시작 설정
 
@@ -89,4 +89,5 @@ commandName 설정은 이 섹션이 컨테이너 도구에 적용됨을 확인�
 
 ## <a name="see-also"></a>참고 항목
 
-[Docker Compose 빌드 속성](docker-compose-properties.md)
+- [Docker Compose 빌드 속성](docker-compose-properties.md)
+- [Docker Compose의 시작 프로필 관리](launch-profiles.md)

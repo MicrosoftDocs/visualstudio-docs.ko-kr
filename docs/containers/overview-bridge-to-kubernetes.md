@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
-ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
+ms.openlocfilehash: 838589e0dd81232de25b88989d621a07fb22f972
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526153"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043057"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes 작동 방식
 
@@ -52,6 +52,9 @@ Bridge to Kubernetes는 클러스터에 대한 연결을 설정할 때 다음 �
 
 > [!NOTE]
 > 클러스터에 연결하는 시간(및 추가로 15분) 동안 Bridge to Kubernetes는 로컬 컴퓨터에 대한 관리자 권한이 있는 *EndpointManager* 라는 프로세스를 실행합니다.
+
+> [!NOTE]
+> 여러 서비스를 사용하여 병렬로 디버그할 수 있지만 디버그하려는 서비스만큼 많은 Visual Studio 인스턴스를 시작해야 합니다. 서비스가 다른 포트에서 로컬로 수신 대기하는지 확인한 다음, 별도로 구성하고 디버그합니다. 격리는 이 시나리오에서 지원되지 않습니다.
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml을 사용하는 추가 구성
 

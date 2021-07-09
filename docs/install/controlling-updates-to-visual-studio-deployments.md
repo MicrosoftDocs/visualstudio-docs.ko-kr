@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
-ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
+ms.openlocfilehash: f15281db55381dadbfd3370eb10a04feeab9c3a5
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "109666798"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307572"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>네트워크 기반 Visual Studio 배포에 대한 업데이트 제어
 
-엔터프라이즈 관리자는 때때로 레이아웃을 만들고 최종 사용자에게 배포하기 위해 네트워크 파일 공유에서 레이아웃을 호스트합니다. 이 페이지에서는 네트워크 레이아웃 옵션을 적절하게 구성하는 방법을 설명합니다. 
+엔터프라이즈 관리자는 때때로 레이아웃을 만들고 최종 사용자에게 배포하기 위해 네트워크 파일 공유에서 레이아웃을 호스트합니다. 이 페이지에서는 네트워크 레이아웃 옵션을 적절하게 구성하는 방법을 설명합니다.
 
 ## <a name="controlling-where-visual-studio-looks-for-updates"></a>Visual Studio가 업데이트를 검색하는 위치 제어
 
@@ -34,17 +34,17 @@ ms.locfileid: "109666798"
 
 **시나리오 2: 클라이언트가 원래 설치되었고 네트워크 레이아웃에서만 업데이트를 수신해야 함**
 
-예를 들어 클라이언트 컴퓨터가 인터넷에 연결되지 않고 항상 레이아웃으로부터 업데이트를 설치하도록 하려는 경우와 같이 Visual Studio 클라이언트가 업데이트를 검색하는 위치를 제어하려는 경우에는 클라이언트의 설치 관리자가 업데이트된 제품 비트를 검색하는 위치를 구성할 수 있습니다. 클라이언트가 레이아웃으로부터 초기 설치를 수행하기 전에 이 설정이 올바르게 구성되어 있는지 확인하는 것이 가장 좋습니다. 
+예를 들어 클라이언트 컴퓨터가 인터넷에 연결되지 않고 항상 레이아웃으로부터 업데이트를 설치하도록 하려는 경우와 같이 Visual Studio 클라이언트가 업데이트를 검색하는 위치를 제어하려는 경우에는 클라이언트의 설치 관리자가 업데이트된 제품 비트를 검색하는 위치를 구성할 수 있습니다. 클라이언트가 레이아웃으로부터 초기 설치를 수행하기 전에 이 설정이 올바르게 구성되어 있는지 확인하는 것이 가장 좋습니다.
 
 1. 오프라인 레이아웃을 만듭니다.
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
 
 2. 레이아웃을 호스트할 파일 공유로 복사합니다.
 
-   ```cmd
+   ```shell
    xcopy /e C:\vsoffline \\server\share\VS
    ```
 
@@ -58,7 +58,7 @@ ms.locfileid: "109666798"
 
    이제 최종 사용자는 이 공유의 설치 프로그램을 실행하여 Visual Studio를 설치할 수 있습니다.
 
-   ```cmd
+   ```shell
    \\server\share\VS\vs_enterprise.exe
    ```
 
@@ -66,7 +66,7 @@ ms.locfileid: "109666798"
 
 1. 다음 명령과 비슷한 명령을 사용합니다.
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
 
@@ -82,8 +82,7 @@ ms.locfileid: "109666798"
 
 **시나리오 3: 클라이언트가 원래 웹에서 설치되었지만 이제는 네트워크 레이아웃에서만 업데이트를 수신해야 함**
 
-클라이언트 컴퓨터가 이미 웹에서 Visual Studio를 설치했을 수 있지만 이제는 관리자가 모든 향후 업데이트를 관리되는 레이아웃에서 제공하려는 경우도 있을 수 있습니다. 이 시나리오를 지원하는 유일한 방법은 원하는 버전의 제품을 사용하여 네트워크 레이아웃을 만든 다음 클라이언트 컴퓨터에서 레이아웃 위치(예: `\\server\share\vs_enterprise.exe`)의 부트스트래퍼를 실행하는 것입니다. 이상적으로는 원래 클라이언트 설치는 ChannelURI가 올바르게 구성된 네트워크 레이아웃의 부트스트래퍼를 사용하여 실행되어야 하지만, 네트워크 레이아웃 위치의 업데이트된 부트스트래퍼를 실행하는 것도 유효합니다. 이러한 작업 중 하나는 클라이언트 머신에서 해당 특정 레이아웃 위치와의 연결을 포함합니다. 이 시나리오가 제대로 작동하려면 레이아웃의 `response.json` 파일에 구성된 ‘ChannelURI’가 원래 설치가 실행될 때 클라이언트 컴퓨터에 설정된 ChannelURI와 동일해야 합니다. 이 값은 원래 인터넷 [릴리스 채널](https://aka.ms/vs/16/release/channel)로 설정되었을 가능성이 높습니다. 
-
+클라이언트 컴퓨터가 이미 웹에서 Visual Studio를 설치했을 수 있지만 이제는 관리자가 모든 향후 업데이트를 관리되는 레이아웃에서 제공하려는 경우도 있을 수 있습니다. 이 시나리오를 지원하는 유일한 방법은 원하는 버전의 제품을 사용하여 네트워크 레이아웃을 만든 다음 클라이언트 컴퓨터에서 레이아웃 위치(예: `\\server\share\vs_enterprise.exe`)의 부트스트래퍼를 실행하는 것입니다. 이상적으로는 원래 클라이언트 설치는 ChannelURI가 올바르게 구성된 네트워크 레이아웃의 부트스트래퍼를 사용하여 실행되어야 하지만, 네트워크 레이아웃 위치의 업데이트된 부트스트래퍼를 실행하는 것도 유효합니다. 이러한 작업 중 하나는 클라이언트 머신에서 해당 특정 레이아웃 위치와의 연결을 포함합니다. 이 시나리오가 제대로 작동하려면 레이아웃의 `response.json` 파일에 구성된 ‘ChannelURI’가 원래 설치가 실행될 때 클라이언트 컴퓨터에 설정된 ChannelURI와 동일해야 합니다. 이 값은 원래 인터넷 [릴리스 채널](https://aka.ms/vs/16/release/channel)로 설정되었을 가능성이 높습니다.
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>Visual Studio IDE에서 알림 제어
 
@@ -95,7 +94,7 @@ ms.locfileid: "109666798"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 앞의 설명대로 Visual Studio에서는 설치가 시작된 위치(예: 네트워크 공유 또는 인터넷)를 확인하여 사용 가능한 업데이트가 있는지 확인합니다. 사용 가능한 업데이트가 있을 경우 Visual Studio에서는 창의 오른쪽 위에 알림 아이콘을 통해 사용자에게 알립니다.
 
@@ -109,7 +108,7 @@ ms.locfileid: "109666798"
 
 Visual Studio 2017에서는 [레지스트리 항목을 개인 레지스트리에 저장](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)하므로 레지스트리를 일반적인 방법으로 직접 편집할 수 없습니다. 하지만 Visual Studio에는 Visual Studio 설정을 변경하는 데 사용할 수 있는 `vsregedit.exe` 유틸리티가 포함되어 있습니다. 다음 명령으로 알림을 끌 수 있습니다.
 
-```cmd
+```shell
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 
@@ -119,8 +118,18 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterpris
 
 Visual Studio 2019에서는 [레지스트리 항목을 개인 레지스트리에 저장](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)하므로 레지스트리를 일반적인 방법으로 직접 편집할 수 없습니다. 하지만 Visual Studio에는 Visual Studio 설정을 변경하는 데 사용할 수 있는 `vsregedit.exe` 유틸리티가 포함되어 있습니다. 다음 명령으로 알림을 끌 수 있습니다.
 
-```cmd
+```shell
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
+```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Visual Studio 2022에서는 [레지스트리 항목을 프라이빗 레지스트리에 저장](tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)하므로 레지스트리를 일반적인 방법으로 직접 편집할 수 없습니다. 하지만 Visual Studio에는 Visual Studio 설정을 변경하는 데 사용할 수 있는 `vsregedit.exe` 유틸리티가 포함되어 있습니다. 다음 명령으로 알림을 끌 수 있습니다.
+
+```shell
+vsregedit.exe set "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
 
 ::: moniker-end

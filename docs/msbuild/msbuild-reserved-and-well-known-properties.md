@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cbf2aff512b98e7a813134c3b376b6972c8cd4f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2edfd4b9391beed5c379817c55871759ff02eec
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897745"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384930"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild의 예약된 속성 및 잘 알려진 속성
 
@@ -71,7 +71,10 @@ MSBuild는 프로젝트 파일과 MSBuild 이진 파일에 대한 정보를 저�
 | `MSBuildThisFileName` | 예약됨 | 파일 확장명을 제외한 `MSBuildThisFileFullPath`의 파일 이름 부분입니다. | `ConsoleApp1` |
 | `MSBuildToolsPath` | 예약됨 | `MSBuildToolsVersion` 값과 연결된 MSBuild 버전의 설치 경로입니다.<br /><br /> 경로에 마지막 백슬래시를 포함하지 마세요.<br /><br /> 이 속성은 재정의할 수 없습니다. | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
 | `MSBuildToolsVersion` | 예약됨 | 프로젝트 빌드에 사용된 MSBuild 도구 집합의 버전입니다.<br /><br /> 참고: MSBuild 도구 집합은 애플리케이션 빌드에 사용되는 작업, 대상 및 도구로 구성됩니다. 도구에는 *csc.exe* 및 *vbc.exe* 와 같은 컴파일러가 포함됩니다. 자세한 내용은 [도구 집합(ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 및 [표준 및 사용자 지정 도구 집합 구성](../msbuild/standard-and-custom-toolset-configurations.md)을 참조하세요. | `Current` |
-| `MSBuildVersion` | 예약됨 | 프로젝트 빌드에 사용된 MSBuild의 버전입니다. <br /><br/> 이 속성은 대체할 수 없습니다. 대체하면 `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` 오류 메시지가 반환됩니다. | 16.7.0 |
+| `MSBuildVersion` | 예약됨 | 프로젝트 빌드에 사용된 MSBuild의 버전입니다. <br /><br/> 이 속성은 대체할 수 없습니다. 대체하면 `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` 오류 메시지가 반환됩니다. | 16.11.0 |
+| `MSBuildAssemblyVersion` | 예약됨 | 프로젝트 빌드에 사용된 MSBuild 어셈블리의 버전입니다. | 16.0 |
+| `MSBuildFileVersion` | 예약됨 | 프로젝트 빌드에 사용된 MSBuild 어셈블리의 4파트 버전입니다. | 16.11.0.30701 |
+| `MSBuildSemanticVersion` | 예약됨 | 프로젝트 빌드에 사용된 MSBuild 어셈블리의 전체 semver 2.0 버전입니다. | 16.11.0-preview-21302-05+5e37cc992 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>MSBuild 요소와 충돌하는 이름
 

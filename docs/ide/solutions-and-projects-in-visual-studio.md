@@ -1,18 +1,15 @@
 ---
-title: 솔루션 및 프로젝트에 대한 자세한 정보
+title: Visual Studio 솔루션 및 프로젝트란?
 description: Visual Studio 프로젝트 및 솔루션, 템플릿에서 새 프로젝트를 만드는 방법, 솔루션 탐색기에서 프로젝트를 보고 관리하는 방법에 대해 알아봅니다.
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewitem
-- vs.addnewsolutionitem
 - vs.openproject
 - vs.addexistingitem
 - vs.addexistingsolutionitem
 - vs.environment.projects
 - vs.environment.solutions
-- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -22,16 +19,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878502"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924970"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트
+# <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio의 솔루션 및 프로젝트란?
 
-이 페이지에서는 Visual Studio의 ‘프로젝트’ 및 ‘솔루션’ 개념에 대해 설명합니다.  솔루션 탐색기 도구 창과 새 프로젝트를 만드는 방법에 대해서도 간략하게 설명합니다.
+이 문서에서는 Visual Studio의 ‘프로젝트’ 및 ‘솔루션’이 무엇인지 알아봅니다.  솔루션 탐색기 도구 창과 새 프로젝트를 만드는 방법에 대해서도 간략하게 설명합니다.
 
 > [!NOTE]
 > 이 토픽은 Windows용 Visual Studio에만 적용됩니다. Mac용 Visual Studio는 [Mac용 Visual Studio의 프로젝트 및 솔루션](/visualstudio/mac/projects-and-solutions)을 참조하세요.
@@ -92,9 +89,9 @@ Visual Studio에서는 두 가지 파일 형식( *.sln* 및 *.suo*)을 사용하
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Visual Studio 2019의 프로젝트 두 개가 있는 솔루션 탐색기의 스크린샷](../ide/media/solution-explorer.png)
+![Visual Studio의 프로젝트 두 개가 표시된 솔루션 탐색기 스크린샷.](../ide/media/solution-explorer.png)
 
 **솔루션 탐색기** 위쪽에 있는 도구 모음에는 솔루션 보기를 폴더 보기로 전환하고 보류 중인 변경 내용을 필터링하고 모든 파일을 표시하고 모든 노드를 축소하고 [속성](managing-project-and-solution-properties.md) 페이지를 표시하고 [코드 편집기](writing-code-in-the-code-and-text-editor.md)에서 코드를 미리 보는 등의 작업을 위한 단추가 있습니다.
 

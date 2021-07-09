@@ -4,6 +4,7 @@ description: 프로젝트와 솔루션의 차이점 및 Visual Studio에서 프�
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 1d06b53afc811517ac86be9bdc3e86cf7593bbaf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682600"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390036"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>프로젝트 및 솔루션 소개
 
@@ -34,6 +35,12 @@ ms.locfileid: "101682600"
 ::: moniker range="vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -222,7 +229,7 @@ ms.locfileid: "101682600"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. **QuickTest** 프로젝트에서 **종속성** 노드를 선택하고 마우스 오른쪽 단추 클릭 또는 상황에 맞는 메뉴에서 **프로젝트 참조 추가...** 를 선택합니다.
 
@@ -292,7 +299,7 @@ ms.locfileid: "101682600"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 단위 테스트가 작동하는지 확인하려면 메뉴 모음에서 **테스트** > **모든 테스트 실행** 을 선택합니다. **테스트 탐색기** 라는 창이 열리면 **TestGetCurrentDate** 테스트에 통과했다고 표시됩니다.
 

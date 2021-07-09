@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f48b5c06e91b9c05e6edc7e2a1738aeb677a7ba
+ms.sourcegitcommit: 69456d802203d21dabc3ae8662547a3241c24f47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859530"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110235913"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker 관련 Visual Studio 개발 문제 해결
 
@@ -29,7 +29,7 @@ Visual Studio Container Tools로 작업할 때, 애플리케이션을 빌드하�
 1. 알림 영역에서 **Windows용 Docker** 를 마우스 오른쪽 단추로 클릭한 다음 **설정** 을 선택합니다.
 1. **리소스** > **파일 공유** 를 선택하고 액세스해야 하는 폴더를 공유합니다. 전체 시스템 드라이브를 공유할 수는 있지만 권장되지는 않습니다.
 
-    ![공유 드라이브](media/troubleshooting-docker-errors/docker-settings-image.png)
+    :::image type="content" source="media//troubleshooting-docker-errors/docker-settings-image.png" alt-text="공유 드라이브":::
 
 > [!TIP]
 > Visual Studio 2017 버전 15.6 이후의 Visual Studio 버전에서는 **공유 드라이브** 가 구성되지 않은 경우 메시지가 표시됩니다.
@@ -86,7 +86,7 @@ PowerShell에서 [Add-LocalGroupMember](/powershell/module/microsoft.powershell.
     "graph": "D:\\mypath\\images"
 ```
 
-![Docker 파일 공유 스크린샷](media/troubleshooting-docker-errors/docker-daemon-settings.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Docker 파일 공유 스크린샷":::
 
 **적용 및 다시 시작** 을 클릭합니다. 이러한 단계는 *%ProgramData%\docker\config\daemon.json* 에서 구성 파일을 수정합니다. 이전에 빌드된 이미지는 이동되지 않습니다.
 
@@ -94,7 +94,7 @@ PowerShell에서 [Add-LocalGroupMember](/powershell/module/microsoft.powershell.
 
 프로젝트에 Docker 지원을 추가할 때 Windows 또는 Linux 컨테이너를 선택할 수 있습니다. Docker 서버 호스트가 프로젝트 대상과 동일한 컨테이너 유형을 실행하도록 구성되지 않은 경우 다음과 유사한 오류가 표시될 수 있습니다.
 
-![Docker 호스트 및 프로젝트 불일치 스크린샷](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Docker 호스트 및 프로젝트 불일치 스크린샷":::
 
 이 문제를 해결하려면:
 

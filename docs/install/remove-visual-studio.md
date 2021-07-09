@@ -15,23 +15,23 @@ f1_keywords:
 - clean up
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 751f87075d4e9dcbb7daa94f39a2f38c5083fb3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af0cf31d3a53b12910ea8108c93a99cbaf3e87f
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878450"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306958"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio 제거
 
-치명적인 오류가 발생하여 Visual Studio를 복구 또는 제거할 수 없는 경우 `InstallCleanup.exe` 도구를 실행하여 설치된 모든 Visual Studio 2017 또는 Visual Studio 2019 인스턴스에 대한 설치 파일 및 제품 정보를 제거할 수 있습니다.
+치명적인 오류가 발생하여 Visual Studio를 복구하거나 제거할 수 없는 경우 `InstallCleanup.exe` 도구를 실행하여 설치된 모든 Visual Studio 2017, Visual Studio 2019, Visual Studio 2022 인스턴스와 관련한 설치 파일과 제품 정보를 제거할 수 있습니다.
 
 > [!WARNING]
 > 복구 또는 제거에 실패하는 경우 **최후의 수단으로** InstallCleanup 도구를 사용합니다. 이 도구는 다른 Visual Studio 설치 또는 다른 제품에서 기능을 제거할 수 있으며 해당 기능을 복구 또는 다시 설치할 수도 있습니다.
@@ -40,9 +40,9 @@ ms.locfileid: "99878450"
 
 `InstallCleanup.exe` 도구에서 다음 명령줄 스위치 중 하나를 사용할 수 있습니다.
 
-| 스위치 | 동작 |
-| ------ | -------- |
-| `-i`   | 이 스위치는 다른 스위치가 전달되지 않은 경우의 기본값입니다. 주 설치 디렉터리 및 제품 정보만 제거합니다. `InstallCleanup.exe` 도구를 실행한 후 동일한 버전의 Visual Studio를 다시 설치하려는 경우이 스위치를 사용합니다. |
+| 스위치 | 동작                                                                                                                                                                                                                                                                                                                 |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-i`   | 이 스위치는 다른 스위치가 전달되지 않은 경우의 기본값입니다. 주 설치 디렉터리 및 제품 정보만 제거합니다. `InstallCleanup.exe` 도구를 실행한 후 동일한 버전의 Visual Studio를 다시 설치하려는 경우이 스위치를 사용합니다.                                                              |
 | `-f`   | 이 스위치는 기본 설치 디렉터리, 제품 정보는 물론, 다른 Visual Studio 설치 또는 다른 제품과 공유할 수도 있는 설치 디렉터리 외부에 설치된 다른 기능 대부분을 제거합니다. 이 스위치는 나중에 다시 설치하지 않고 Visual Studio를 제거하려는 경우에 사용합니다. |
 
 `InstallCleanup.exe` 도구를 실행하는 방법은 다음과 같습니다.
@@ -53,7 +53,7 @@ ms.locfileid: "99878450"
    * **명령 프롬프트** 를 마우스 오른쪽 단추로 클릭하고 **관리자 권한으로 실행** 을 선택합니다.
 1. `InstallCleanup.exe` 도구의 전체 경로를 입력하고 원하는 명령줄 스위치를 추가합니다. 기본적으로 이 도구의 경로는 다음과 같습니다. 공백이 포함된 명령을 큰따옴표로 묶습니다.
 
-   ```
+   ```shell
    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 

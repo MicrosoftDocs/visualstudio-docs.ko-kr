@@ -4,6 +4,7 @@ description: Visual Basic 개발자가 Visual Studio에서 솔루션과 프로�
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 813a6ce10b0c5bcc385ac72ba6fdf99495c457ee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944526"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384735"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Visual Basic을 사용하여 프로젝트 및 솔루션에 대해 알아보기
 
@@ -36,6 +37,13 @@ ms.locfileid: "99944526"
 
 > [!TIP]
 > 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> Visual Studio Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 

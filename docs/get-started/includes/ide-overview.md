@@ -1,17 +1,17 @@
 ---
-ms.date: 03/02/2021
+ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750640"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113279954"
 ---
 Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 빌드한 다음, 앱을 게시하는 데 사용할 수 있는 창의적인 실행 패드입니다. IDE(통합 개발 환경)는 소프트웨어 개발의 다양한 측면에서 사용할 수 있는 다양한 기능을 갖춘 프로그램입니다. Visual Studio는 대부분의 IDE가 제공하는 표준 편집기 및 디버거로서 뿐만 아니라, 컴파일러와 코드 완성 도구, 그래픽 디자이너를 비롯해 소프트웨어 개발 프로세스를 쉽게 만들어 주는 많은 기능을 포함하고 있습니다.
 
@@ -21,15 +21,15 @@ Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 빌드�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-[![Visual Studio 2019 IDE](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+:::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="주요 특징과 기능의 위치를 보여 주는 설명이 포함된 Visual Studio IDE 스크린샷." lightbox="../media/vs-2019/ide-overview.png":::
 
 ::: moniker-end
 
 이 이미지는 프로젝트와 사용할 만한 몇 가지 주요 도구 창이 열려 있는 Visual Studio를 보여줍니다.
 
-- [솔루션 탐색기](../../ide/solutions-and-projects-in-visual-studio.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기** 에서 파일을 [솔루션 및 프로젝트](../tutorial-projects-solutions.md)로 그룹화하여 코드를 구성할 수 있습니다.
+- [솔루션 탐색기](../../ide/use-solution-explorer.md)(오른쪽 위) - 코드 파일을 보고, 탐색하고, 관리할 수 있습니다. **솔루션 탐색기** 에서 파일을 [솔루션 및 프로젝트](../../ide/solutions-and-projects-in-visual-studio.md)로 그룹화하여 코드를 구성할 수 있습니다.
 
 - [편집기 창](../../ide/writing-code-in-the-code-and-text-editor.md)(가운데) - 대부분 작업을 수행하는 곳으로 파일 콘텐츠가 표시됩니다. 코드를 편집하거나 단추 및 텍스트 상자를 사용하여 창과 같은 사용자 인터페이스를 디자인할 수 있습니다.
 
@@ -39,7 +39,7 @@ Visual Studio *통합 개발 환경* 은 코드를 편집, 디버그 및 빌드�
 
 ::: moniker-end
 
-- [팀 탐색기](/azure/devops/user-guide/work-team-explorer)(오른쪽 아래) - [Git](https://git-scm.com/), [TFVC(Team Foundation 버전 제어)](/azure/devops/repos/tfvc/overview) 등의 버전 제어 기술을 통해 작업 항목을 추적하고 다른 사용자와 코드를 공유할 수 있습니다.
+- [Git 변경 내용](/visualstudio/version-control/)(오른쪽 아래) - [Git](https://git-scm.com/) 및 [GitHub](https://docs.github.com/github)와 같은 버전 제어 기술을 사용하여 작업 항목을 추적하고 다른 사람과 코드를 공유합니다.
 
 ## <a name="editions"></a>버전
 
@@ -51,7 +51,7 @@ Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visua
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio는 Windows 및 Mac에서 사용할 수 있습니다. [Mac용 Visual Studio](/visualstudio/mac/)에는 Visual Studio 2019와 동일한 기능이 많이 있으며 플랫폼 간 앱 및 모바일 앱 개발에 최적화되어 있습니다. 이 문서에서는 Windows 버전의 Visual Studio 2019에 중점을 둡니다.
 
@@ -384,13 +384,13 @@ Visual Studio를 처음 열면 필요에 따라 Microsoft 계정이나 회사 �
 
 ::: moniker-end
 
-## <a name="debug-code"></a>코드 디버그
+## <a name="debug-code&quot;></a>코드 디버그
 
 코드를 작성할 때 코드를 실행하고 버그를 테스트해야 합니다. Visual Studio의 디버깅 시스템을 사용하면 코드를 단계별로 진행하면서 명령문을 한 번에 하나씩 실행하면서 변수를 검사할 수 있습니다. 특정 줄에서 코드의 실행을 중지하는 *중단점* 을 설정할 수 있습니다. 코드를 실행함에 따라 변수의 값이 변경되는 방법 등을 확인할 수 있습니다.
 
-중단점을 설정하여 프로그램이 "이동 중"일 때 `username` 변수의 값을 확인하겠습니다.
+중단점을 설정하여 프로그램이 &quot;이동 중&quot;일 때 `username` 변수의 값을 확인하겠습니다.
 
-1. `Console.WriteLine($"\nHello {username}!");`이라고 표시된 코드 줄을 찾습니다. 이 코드 줄에 중단점을 설정하려면, 즉 이 줄에서 프로그램이 실행을 일시 중지하도록 하려면 편집기의 맨 왼쪽 여백을 클릭합니다. 코드 줄의 아무 곳이나 클릭한 다음, **F9** 키를 누를 수도 있습니다.
+1. `Console.WriteLine($&quot;\nHello {username}!");`이라고 표시된 코드 줄을 찾습니다. 이 코드 줄에 중단점을 설정하려면, 즉 이 줄에서 프로그램이 실행을 일시 중지하도록 하려면 편집기의 맨 왼쪽 여백을 클릭합니다. 코드 줄의 아무 곳이나 클릭한 다음, **F9** 키를 누를 수도 있습니다.
 
    맨 왼쪽 끝에 빨간색 원이 표시되고 코드가 빨간색으로 강조 표시됩니다.
 

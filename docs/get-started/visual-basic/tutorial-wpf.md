@@ -1,7 +1,7 @@
 ---
 title: Visual Basic에서 WPF를 사용하는 Hello World 앱
 description: WPF(Windows Presentation Foundation) UI 프레임워크를 사용하는 Visual Studio를 통해 Visual Basic으로 간단한 Windows 데스크톱 .NET 앱을 만듭니다.
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, seodec18, get-started
 ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: e757dc25fe094b1ffa745cd43ad251abbc9448a7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295431"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390127"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>자습서: Visual Basic으로 간단한 애플리케이션 만들기
 
@@ -31,9 +31,15 @@ ms.locfileid: "107295431"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -77,9 +83,9 @@ HelloWPFApp 프로젝트 및 솔루션이 만들어지고 **솔루션 탐색기*
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. Visual Studio 2019를 엽니다.
+1. Visual Studio를 엽니다.
 
 2. **새 프로젝트 만들기** 화면에서 “WPF”를 검색하고 **WPF 앱(.NET Framework)**, **다음** 을 차례로 선택합니다.
 
@@ -327,6 +333,12 @@ IsChecked="True"
 ::: moniker range="vs-2019"
 
 - [Visual Studio 2019의 새로운 기능](../../ide/whats-new-visual-studio-2019.md)
+- [생산성 팁](../../ide/productivity-features.md)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
 - [생산성 팁](../../ide/productivity-features.md)
 
 ::: moniker-end

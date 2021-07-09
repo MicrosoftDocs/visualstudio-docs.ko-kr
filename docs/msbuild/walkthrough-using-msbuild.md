@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a301c1bd4758ea08f49036fcf8756c8d7e7c26
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933858"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306451"
 ---
 # <a name="walkthrough-use-msbuild"></a>연습: MSBuild 사용
 
@@ -38,8 +38,8 @@ Visual Studio 또는 **명령 창** 에서 MSBuild를 실행할 수 있습니다
 Visual Studio가 있는 경우 이미 MSBuild가 설치되어 있습니다. Visual Studio가 없는 시스템에 MSBuild 15를 설치하려면 [Visual Studio 이전 버전 다운로드](https://visualstudio.microsoft.com/vs/older-downloads/)로 이동하여 **Visual Studio 2017** 을 확장하고 **다운로드** 단추를 선택합니다. Visual Studio 구독이 있는 경우 로그인하고 링크를 찾아 최신 버전의 **Visual Studio 2017용 Build Tools** 를 다운로드합니다. Visual Studio 구독이 없는 경우에도 최신 버전의 빌드 도구를 설치할 수 있습니다. 이 페이지에서 버전 선택기를 사용하여 2019 버전의 페이지로 전환하고 설치 지침을 따릅니다.
 ::: moniker-end
 
-::: moniker range="vs-2019"
-Visual Studio가 있는 경우 이미 MSBuild가 설치되어 있습니다. Visual Studio 2019에서는 Visual Studio 설치 폴더 아래에 설치됩니다. Windows 10의 일반적인 기본 설치의 경우 MSBuild.exe는 *MSBuild\Current\Bin* 의 설치 폴더 아래에 있습니다.
+::: moniker range=">=vs-2019"
+Visual Studio가 있는 경우 이미 MSBuild가 설치되어 있습니다. Visual Studio 2019 이상에서는 Visual Studio 설치 폴더에 설치됩니다. Windows 10의 일반적인 기본 설치의 경우 MSBuild.exe는 *MSBuild\Current\Bin* 의 설치 폴더 아래에 있습니다.
 
 Visual Studio가 없는 시스템에 MSBuild를 설치하려면 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads/)로 이동하고 아래로 스크롤하여 **모든 다운로드** 를 찾은 다음 **Visual Studio 2019용 도구** 를 확장합니다. **Visual Studio 2019용 빌드 도구**(MSBuild가 포함됨)를 설치하거나 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)를 설치합니다.
 

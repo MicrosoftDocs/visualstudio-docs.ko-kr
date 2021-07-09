@@ -2,22 +2,22 @@
 title: 옵션, 텍스트 편집기, C#, 고급
 description: C# 섹션의 고급 페이지를 사용하여 C#에 대한 편집기 서식, 코드 리팩터링 및 XML 문서 주석의 설정을 수정하는 방법을 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/13/2020
+ms.date: 06/01/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: akhera99
+author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa202f5c0abc490967a40255332976cdf9dca25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959326"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351992"
 ---
 # <a name="options-text-editor-c-advanced"></a>옵션, 텍스트 편집기, C#, 고급
 
@@ -103,6 +103,10 @@ ms.locfileid: "99959326"
 
    ![Visual Studio의 NuGet 패키지 설치 빠른 작업](media/nuget-lightbulb.png)
 
+- 붙여넣을 때 누락된 using 지시문 추가
+
+    이 옵션을 선택하면 파일에 형식을 붙여넣을 때 `using` 지시문이 코드에 자동으로 추가됩니다.
+
 ## <a name="highlighting"></a>강조 표시
 
 - 커서 아래의 기호에 대한 참조 강조
@@ -129,11 +133,19 @@ ms.locfileid: "99959326"
 
 코드에서 중괄호( **{}** ) 사이에 세로 점선을 표시하려면 이 확인란을 선택합니다. 그러면 선언 수준 및 코드 수준 구문의 개별 코드 블록을 쉽게 확인할 수 있습니다.
 
-## <a name="editor-help"></a>편집기 도움말
+## <a name="comments"></a>의견
+
+- ///에 대해 XML 문서 주석 생성
+
+   이 옵션을 선택한 경우 `///` 주석 도입부를 입력한 후 XML 문서 주석에 대한 XML 요소를 삽입합니다. XML 문서에 대한 자세한 내용은 [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)을 참조하세요.
+
 ::: moniker range=">=vs-2019"
+
+## <a name="inline-hints"></a>인라인 힌트
+
 - 인라인 매개 변수 이름 힌트 
     
-    선택하면 함수호출의 각 인수 앞에 리터럴, 캐스팅된 리터럴 및 개체 인스턴스화에 대한 매개 변수 이름 힌트가 삽입됩니다.  
+    선택하면 리터럴, 캐스트 리터럴 및 개체 인스턴스화에 대한 매개 변수 이름 힌트가 함수 호출의 각 인수 앞에 삽입됩니다.  
     
     ![CSharp의 인라인 매개 변수 이름 힌트](media/inline-parameter-name-hints-csharp.png)
 
@@ -142,10 +154,14 @@ ms.locfileid: "99959326"
     선택하면 유추된 형식 및 람다 매개 변수 형식의 변수에 대한 형식 힌트를 삽입합니다.  
     
     ![CSharp용 인라인 형식 힌트](media/inline-type-hints-csharp.png)
-::: moniker-end
-- ///에 대해 XML 문서 주석 생성
 
-   이 옵션을 선택한 경우 `///` 주석 도입부를 입력한 후 XML 문서 주석에 대한 XML 요소를 삽입합니다. XML 문서에 대한 자세한 내용은 [XML 문서 주석(C# 프로그래밍 가이드)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)을 참조하세요.
+## <a name="inheritance-margin"></a>상속 여백 
+
+- 선택하면 코드의 구현 및 재정의를 나타내는 여백에 아이콘이 추가됩니다. 상속 여백 아이콘을 클릭하면 선택하여 이동할 수 있는 상속 옵션이 표시됩니다.
+
+    ![상속 여백](media/inheritance-margin.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>참조
 

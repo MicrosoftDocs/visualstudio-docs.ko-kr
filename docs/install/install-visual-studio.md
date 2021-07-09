@@ -3,35 +3,39 @@ title: Visual Studio 설치
 titleSuffix: ''
 description: Visual Studio를 설치하는 방법을 단계별로 알아봅니다.
 ms.date: 12/13/2019
-ms.custom: contperf-fy21q1
+ms.custom: vs-acquisition
 ms.topic: conceptual
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - install Visual Studio
 - dev15
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 97e354dfb1208ec7306cb797049cd8ca82d0d8db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7bf44f9333a65ea821c0cd9936ee1f3fa051d4fe
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852125"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925087"
 ---
 # <a name="install-visual-studio"></a>Visual Studio 설치
 
 ::: moniker range="vs-2019"
 
 Visual Studio 2019 설치를 시작합니다! 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Visual Studio 2022에 오신 것을 환영합니다! 이 버전에서는 필요한 기능만 선택하여 쉽게 설치할 수 있습니다. 또한 최소 설치 공간이 줄어들기 때문에 시스템에 미치는 영향을 최소화하면서 빠르게 설치됩니다.
 
 ::: moniker-end
 
@@ -47,6 +51,12 @@ Visual Studio를 설치하는 새로운 방법이 있습니다. 이 버전에서
 ::: moniker range="vs-2019"
 
 이 버전의 다른 새로운 기능에 대해 자세히 알고 싶으세요? [릴리스 정보](/visualstudio/releases/2019/release-notes/)를 참조하세요.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+이 버전의 다른 새로운 기능에 대해 자세히 알고 싶으세요? [릴리스 정보](/visualstudio/releases/2022/release-notes/)를 참조하세요.
 
 ::: moniker-end
 
@@ -86,6 +96,18 @@ Visual Studio 설치를 시작하기 전에:
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+1. [시스템 요구 사항](/visualstudio/releases/2022/system-requirements)을 확인합니다. 이러한 요구 사항은 컴퓨터에서 Visual Studio 2022를 지원하는지를 확인하는 데 도움이 됩니다.
+
+1. 최신 Windows 업데이트를 적용합니다. 이러한 업데이트는 컴퓨터에 최신 보안 업데이트와 Visual Studio에 필요한 시스템 구성 요소를 모두 설치합니다.
+
+1. 다시 부팅합니다. 다시 부팅하면 보류 중인 설치 또는 업데이트가 Visual Studio 설치를 방해하지 않습니다.
+
+1. 공간을 확보합니다. 예를 들어 디스크 정리 앱을 실행하여 %SystemDrive%에서 불필요한 파일 및 애플리케이션을 제거합니다.
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행하는 방법에 대한 의문 사항은 [Visual Studio 호환성 정보](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases)를 참조하세요.
@@ -95,6 +117,12 @@ Visual Studio 2017과 함께 이전 버전의 Visual Studio를 나란히 실행�
 ::: moniker range="vs-2019"
 
 Visual Studio 2019와 함께 이전 버전의 Visual Studio를 실행하는 방법에 대한 의문 사항은 [Visual Studio 2019 플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility/) 페이지를 참조하세요.
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+Visual Studio 2022와 함께 이전 버전의 Visual Studio를 실행하는 방법에 대한 의문 사항은 [Visual Studio 2022 플랫폼 대상 지정 및 호환성](/visualstudio/releases/2019/compatibility/) 페이지를 참조하세요.
 
 ::: moniker-end
 
@@ -108,7 +136,7 @@ Visual Studio 2017에 대한 부트스트래퍼를 가져오려면 [Visual Studi
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 이렇게 하려면 다음 단추를 선택하고, 원하는 Visual Studio 버전을 선택하고, **저장** 을 선택한 다음, **폴더 열기** 를 선택합니다.
 
@@ -135,7 +163,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ## <a name="step-4---choose-workloads"></a>4단계 - 워크로드 선택
 
-설치 관리자를 설치한 후에 원하는 기능 집합이나 워크로드를 선택하여 설치를 사용자 지정하는 데 사용할 수 있습니다. 방법은 다음과 같습니다.
+설치 관리자를 설치한 후에 원하는 기능 집합이나 워크로드를 선택하여 설치를 사용자 지정하는 데 사용할 수 있습니다. 다음과 같이 하세요.
 
  ::: moniker range="vs-2017"
 
@@ -151,7 +179,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
  ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. **Visual Studio 설치 관리자** 에서 원하는 워크로드를 찾습니다.
 
@@ -178,7 +206,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   ![Visual Studio 2019 - 개별 구성 요소 설치](media/vs-2019/vs-installer-individual-components.png "Visual Studio 개별 구성 요소 설치")
 
@@ -194,7 +222,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
   ![Visual Studio 2019 - 언어 팩 설치](media/vs-2019/vs-installer-language-packs.png "Visual Studio 언어 팩 설치")
 
@@ -214,7 +242,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 시스템 드라이브에서 Visual Studio의 설치 공간을 줄일 수 있습니다. 다운로드 캐시, 공유 구성 요소, SDK 및 도구를 다른 드라이브로 이동하고 Visual Studio를 가장 빠르게 실행되는 드라이브에 유지하도록 선택할 수 있습니다.
 
@@ -243,7 +271,7 @@ Visual Studio 설치 관리자를 설치하려면 부트스트래퍼 파일을 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Visual Studio 설치가 완료되면 **시작** 단추를 선택하여 Visual Studio에서 개발을 시작합니다.
 

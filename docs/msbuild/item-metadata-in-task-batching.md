@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913881"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111395360"
 ---
 # <a name="item-metadata-in-task-batching"></a>작업 일괄 처리의 항목 메타데이터
 
@@ -138,9 +138,9 @@ MSBuild는 여러 항목 목록을 동일한 메타데이터에 따라 일괄 �
 
 ## <a name="batch-one-item-at-a-time"></a>한 번에 한 항목씩 일괄 처리
 
-항목이 만들어질 때 모든 항목에 할당된 잘 알려진 항목 메타데이터에 대해서도 일괄 처리를 수행할 수 있습니다. 이를 통해 컬렉션에 있는 모든 항목이 일괄 처리에 사용할 메타데이터를 갖게 됩니다. `Identity` 메타데이터 값은 모든 항목에 대해 고유하므로 항목 목록에 있는 모든 항목을 별도 일괄 처리로 나누는 데 유용합니다. 잘 알려진 항목 메타데이터의 전체 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.
+항목이 만들어질 때 모든 항목에 할당된 잘 알려진 항목 메타데이터에 대해서도 일괄 처리를 수행할 수 있습니다. 이를 통해 컬렉션에 있는 모든 항목이 일괄 처리에 사용할 메타데이터를 갖게 됩니다. `Identity` 메타데이터 값은 항목 목록에 있는 모든 항목을 별도의 일괄 처리로 나누는 데 유용합니다. 잘 알려진 항목 메타데이터의 전체 목록은 [잘 알려진 항목 메타데이터](../msbuild/msbuild-well-known-item-metadata.md)를 참조하세요.
 
-다음 예제에서는 항목 목록의 각 항목을 한 번에 하나씩 일괄 처리로 지정하는 방법을 보여 줍니다. 모든 항목의 `Identity` 메타데이터 값은 고유하므로 `ExampColl` 항목 목록은 각각이 항목 목록의 항목 1개를 포함하는 6개의 일괄 처리로 나뉩니다. `Text` 특성에 `%(Identity)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 MSBuild에 제공됩니다.
+다음 예제에서는 항목 목록의 각 항목을 한 번에 하나씩 일괄 처리로 지정하는 방법을 보여 줍니다. `ExampColl` 항목 목록은 6개의 일괄 처리로 나뉩니다. 각 일괄 처리에는 항목 목록의 한 항목이 포함됩니다. `Text` 특성에 `%(Identity)`가 있으면 일괄 처리가 수행되어야 한다는 알림이 MSBuild에 제공됩니다.
 
 ```xml
 <Project
@@ -174,6 +174,35 @@ Identity: 'Item3' -- Items in ExampColl: Item3
 Identity: 'Item4' -- Items in ExampColl: Item4
 Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
+```
+
+그러나 `Identity`는 고유하다고 보장할 수 없으며, 해당 값은 `Include` 특성의 평가된 최종 값입니다. 따라서 `Include` 특성이 여러 번 사용되는 경우 함께 일괄 처리됩니다. 다음 예제와 같이 이 기술을 사용하려면 `Include` 특성이 그룹의 각 항목에 대해 고유해야 합니다. 이 점을 설명하려면 다음 코드를 살펴보세요.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Item Include="1">
+      <M>1</M>
+    </Item>
+    <Item Include="1">
+      <M>2</M>
+    </Item>
+    <Item Include="2">
+      <M>3</M>
+    </Item>
+  </ItemGroup>
+
+  <Target Name="Batching">
+    <Warning Text="@(Item->'%(Identity): %(M)')" Condition=" '%(Identity)' != '' "/>
+  </Target>
+</Project>
+```
+
+출력은 `Include` 특성이 동일하기 때문에 처음 두 항목이 동일한 일괄 처리에 있음을 보여 줍니다.
+
+```output
+test.proj(15,5): warning : 1: 1;1: 2
+test.proj(15,5): warning : 2: 3
 ```
 
 ## <a name="filter-item-lists"></a>필터 항목 목록

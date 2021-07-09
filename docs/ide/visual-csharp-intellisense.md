@@ -2,22 +2,22 @@
 title: C# IntelliSense
 description: C# 프로젝트를 코딩하는 동안 사용할 수 있는 몇 가지 IntelliSense 기능에 대해 알아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862065"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351957"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -101,6 +101,10 @@ IntelliSense는 자동 개체 이름 완성을 위해 팝업 [멤버 목록](../
 ![using 추가, 빠른 작업 확장된 이미지](../ide/media/addusing-quickaction.png)
 
 오류 전구 아이콘을 클릭한 다음, **using System.Xml;** 을 선택하여 using 지시문을 자동으로 추가합니다.
+
+### <a name="add-missing-using-directives-on-paste"></a>붙여넣을 때 누락된 using 지시문 추가
+
+IntelliSense는 코드 파일에 형식을 붙여넣을 때 누락된 `using` 지시문을 코드에 자동으로 추가할 수 있습니다. 이 기능은 파일에 형식을 붙여넣을 때 누락된 using 지시문을 추가하는 작업을 자동화하여 시간이 절약됩니다. **도구** > **옵션** > **텍스트 편집기** > **C#** 또는 **기본** > **고급** 에서 이 기능을 사용하도록 설정하고 **붙여넣을 때 누락된 using 지시문 추가** 를 선택합니다.
 
 ### <a name="remove-and-sort-usings"></a>using 제거 및 정렬
 

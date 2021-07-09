@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 007e82ee7c1c2839ba266794432605f1f92a1669
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836490"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307793"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>자동 복구, 환경, 옵션 대화 상자
 
@@ -35,6 +35,12 @@ ms.locfileid: "99836490"
 :::image type="content" source="media/autorecover-options.png" alt-text="옵션 대화 상자의 자동 복구 섹션 스크린샷":::
 
 **자동 복구 정보 저장 간격: [n]분**
+
+::: moniker range=">=vs-2022"
+
+편집기에서 파일이 자동으로 저장되는 빈도를 사용자 지정하려면 이 옵션을 사용합니다. 이전에 저장된 파일의 경우 Visual Studio에서는 ***%LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[projectname]*** 에 파일 사본이 저장됩니다. 파일을 새로 만들고 아직 저장하지 않은 경우 Visual Studio에서는 임의로 생성된 파일 이름을 사용하여 파일이 자동 저장됩니다.
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 

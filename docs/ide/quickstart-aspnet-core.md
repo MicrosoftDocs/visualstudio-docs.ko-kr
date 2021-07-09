@@ -1,7 +1,7 @@
 ---
 title: C#에서 ASP.NET Core 웹앱 만들기
 description: C# 및 ASP.NET Core를 사용하여 단계별로 Visual Studio에서 간단한 Hello World 웹앱을 만드는 방법을 알아봅니다.
-ms.custom: mvc,seodec18
+ms.custom: vs-acquisition
 ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d4f36ac4199d082b6ab0eae3154307bd8f4f7487
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 65ad48bab545d635763a1cabb4e76734431c2a55
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296939"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384839"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>빠른 시작: Visual Studio를 사용하여 첫 번째 ASP.NET Core 웹앱 만들기
 
@@ -37,7 +37,13 @@ ms.locfileid: "107296939"
 
 ::: moniker range="vs-2019"
 
-아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 평가판을 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -81,7 +87,7 @@ ms.locfileid: "107296939"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
@@ -177,7 +183,7 @@ ms.locfileid: "107296939"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. **솔루션 탐색기** 에서 **Pages** 폴더를 확장한 다음, **Index.cshtml** 을 선택합니다.
 

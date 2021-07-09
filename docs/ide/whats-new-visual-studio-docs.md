@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio 문서: 2021년 4월의 새로운 기능'
+title: 'Visual Studio 문서: 2021년 6월의 새로운 내용'
 titleSuffix: ''
-description: 2021년 4월 추가된 Visual Studio의 새로운 기능을 소개합니다.
-ms.date: 05/03/2021
+description: 2021년 6월 Visual Studio의 새로운 내용을 소개합니다.
+ms.date: 06/30/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,24 +15,218 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 38115892acc9c27e70ad956740cee8ae9e9c66ef
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: 9fca0b01a01e3c8db366a4ac2079d794299e5c88
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640937"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280473"
 ---
-# <a name="visual-studio-docs-whats-new-for-april-2021"></a>Visual Studio 문서: 2021년 4월의 새로운 기능
+# <a name="visual-studio-docs-whats-new-for-june-2021"></a>Visual Studio 문서: 2021년 6월의 새로운 내용
 
-2021년 4월 Visual Studio의 새로운 기능에 대해 알아보세요. 해당 기간 동안 이루어진 문서의 주요 변경 사항을 소개합니다. 이전 달의 새로운 기능에 대한 자세한 내용은 [새로운 기능 기록](whats-new-visual-studio-docs-history.md) 문서를 참조하세요.
+2021년 6월 Visual Studio 문서의 새로운 내용에 오신 것을 환영합니다. 해당 기간 동안 이루어진 문서의 주요 변경 사항을 소개합니다. 이전 달의 새로운 기능에 대한 자세한 내용은 [새로운 기능 기록](#whats-new-history) 섹션을 참조하세요.
 
 ## <a name="azure"></a>Azure
 
 **업데이트된 문서**
 
-- [Visual Studio에서 Cloud Services(확장 지원) 만들기 및 배포](../azure/cloud-services-extended-support.md) - Cloud Services(확장 지원) - GA에 대한 변경 내용
+- [Visual Studio 클라우드 탐색기에서 Azure 계정과 연결된 리소스 관리](../azure/vs-azure-tools-resources-managing-with-cloud-explorer.md) - 클라우드 탐색기와 서버 탐색기 Azure 노드의 사용 중단 추가
+- [서버 탐색기에서 Azure Virtual Machines 액세스](../azure/vs-azure-tools-virtual-machines-access-from-server-explorer.md) - 클라우드 탐색기와 서버 탐색기 Azure 노드의 사용 중단 추가
 
 ## <a name="containers"></a>컨테이너
+
+**업데이트된 문서**
+
+- [빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용](../containers/container-tools-react.md) - EOL Windows 10 버전 1903에 대한 언급 제거
+
+## <a name="data-tools"></a>데이터 도구
+
+**업데이트된 문서**
+
+- [데이터 검색을 위한 Windows Form 만들기](../data-tools/create-a-windows-form-to-search-data.md) - Windows Forms 데이터 도구: .NET Core에 대한 업데이트 및 메모 추가
+
+## <a name="ide"></a>IDE
+
+**새 문서**
+
+- [Visual Studio의 연결 환경](./reference/connected-experiences.md) - 새로 추가된 문서
+- [솔루션 탐색기 사용법](./use-solution-explorer.md) - 새로 추가된 문서
+- [Remove Unused References](./reference/remove-unused-references.md)(사용하지 않는 참조 제거) - 새로 추가된 문서
+
+**업데이트된 문서**
+
+- [옵션, 텍스트 편집기, C#, 고급](./reference/options-text-editor-csharp-advanced.md) - 새로운 16.10 .NET 생산성 기능에 대한 문서 추가
+- [빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기](./quickstart-nodejs.md) - 업데이트된 문서
+
+## <a name="install"></a>설치
+
+**업데이트된 문서**
+
+- [Build Tools를 컨테이너에 설치](../install/build-tools-container.md) - VS Build Tools 설치 방법 업데이트
+
+## <a name="modeling"></a>모델링
+
+**새 문서**
+
+- [코드 맵 및 라이브 종속성 유효성 검사 설치](../modeling/install-architecture-tools.md) - 새로 작성된 문서
+
+## <a name="msbuild"></a>MSBuild
+
+**새 문서**
+
+- [MSB3270: 빌드되는 프로젝트의 프로세서 아키텍처 'architecture'와 참조 'reference'의 프로세서 아키텍처 'arch'가 일치하지 않습니다.](../msbuild/errors/msb3270.md) - 새로 작성된 문서
+- [MSB3577: Two output file names resolved to the same output path: path](../msbuild/errors/msb3577.md)(MSB3577: 두 개의 출력 파일 이름이 동일한 출력 경로인 path로 확인됨) - 새로 작성된 문서
+- [MSB4181: The 'task' task returned false but did not log an error](../msbuild/errors/msb4181.md)(MSB4181: 'task' 작업이 false를 반환했으나 오류가 기록되지 않음) - 새로 작성된 문서
+- [MSB6003: The specified task executable executable could not be run](../msbuild/errors/msb6003.md)(MSB6003: 지정된 작업 실행 파일 executable을 실행할 수 없음) - 새로 작성된 문서
+
+**업데이트된 문서**
+
+- [MSBuild 대상](../msbuild/msbuild-targets.md) -MSBuild: 대상을 확장하고 사용자 지정하는 방법을 명확하게 설명
+- [작업 일괄 처리의 항목 메타데이터](../msbuild/item-metadata-in-task-batching.md) -MSBuild: ID 메타데이터 일괄 처리 동작을 명확하게 설명
+
+## <a name="python"></a>Python
+
+**업데이트된 문서**
+
+- [Visual Studio의 Python 프로젝트](../python/managing-python-projects-in-visual-studio.md) - Python 콘텐츠의 GitHub 문제 설명
+- [Python 대화형 창 작업](../python/python-interactive-repl-in-visual-studio.md) - Python 콘텐츠의 GitHub 문제 설명
+- [Python 웹 애플리케이션 프로젝트 템플릿](../python/python-web-application-project-templates.md) - Python 콘텐츠의 GitHub 문제 설명
+
+## <a name="sharepoint"></a>SharePoint
+
+**업데이트된 문서**
+
+- [방법: 매핑된 폴더 추가 및 제거](../sharepoint/how-to-add-and-remove-mapped-folders.md) - sp13 제거
+- [방법: BDC 모델 만들기](../sharepoint/how-to-create-a-bdc-model.md) - sp13 제거
+- [방법: 디자이너를 사용하여 SharePoint 웹 파트 만들기](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) - sp13 제거
+
+## <a name="vsto"></a>VSTO
+
+**업데이트된 문서**
+
+- [Visual Studio Tools for Office 런타임 설치 시나리오](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md) - 새로운 버전의 Office를 포함하도록 문서 업데이트
+
+## <a name="xaml-tools"></a>XAML 도구
+
+**새 문서**
+
+- [Visual Studio에서 XAML 디자이너를 사용하여 디자인 타임 샘플 데이터 사용](../xaml-tools/xaml-design-time-sample-data.md) - 새로 작성된 문서
+
+## <a name="community-contributors-in-june"></a>6월의 커뮤니티 기여자
+
+이 기간 동안 Visual Studio 문서에 기여한 사용자는 다음과 같습니다. 감사합니다! [새로운 기능 방문 페이지](index.yml)의 "참여하기" 아래에 있는 링크를 사용하여 기여하는 방법을 알아보세요.
+
+- [boop5](https://github.com/boop5) - LSC(1)
+- [cdmihai](https://github.com/cdmihai) - Mihai Codoban(1)
+- [hyoshioka0128](https://github.com/hyoshioka0128) - Hiroshi Yoshioka(1)
+- [isra-fel](https://github.com/isra-fel) - Yeming Liu(1)
+- [Quenty](https://github.com/Quenty) - James Onnen(1)
+- [ThomasIAm](https://github.com/ThomasIAm) - Thomas van den Nieuwenhoff(1)
+- [walterlv](https://github.com/walterlv) - walterlv(1)
+- [Youssef1313](https://github.com/Youssef1313) - Youssef Victor (1)
+
+## <a name="whats-new-history"></a>새로운 기능 기록
+
+이어지는 섹션에는 이전 3개월 동안의 Visual Studio 문서의 새로운 내용이 정리되어 있습니다.
+
+* [2021년 5월](#may-2021)
+* [2021년 4월](#april-2021)
+* [2021년 3월](#march-2021)
+
+### <a name="may-2021"></a>2021년 5월
+
+#### <a name="code-quality"></a>코드 품질
+
+**새 문서**
+
+- [코드 메트릭-순환 복잡성](../code-quality/code-metrics-cyclomatic-complexity.md) -순환 복잡성 및 상속 수준에 대한 코드 메트릭 업데이트
+- [코드 메트릭-상속 수준(DIT)](../code-quality/code-metrics-depth-of-inheritance.md) -순환 복잡성 및 상속 수준에 대한 코드 메트릭 업데이트
+- [코드 분석 FAQ](../code-quality/analyzers-faq.yml) - FAQ.md를 yml로 변환
+- [레거시 FxCop 및 .NET 분석자에 대해 자주 묻는 질문](../code-quality/net-analyzers-faq.yml) - FAQ.md를 yml로 변환
+
+**업데이트된 문서**
+
+- [코드 분석 위반 표시 안 함](../code-quality/in-source-suppression-overview.md) - CA 규칙 비표시에 관한 문서 리팩터링
+
+#### <a name="containers"></a>컨테이너
+
+**새 문서**
+
+- [Manage launch profiles for Docker Compose (Preview)](../containers/launch-profiles.md)(Docker Compose(미리 보기)의 시작 프로필 관리) - 컨테이너 도구 - 시작 설정
+
+#### <a name="debugger"></a>디버거
+
+**새 문서**
+
+- [Visual Studio의 스냅샷 디버깅에 대해 자주 묻는 질문](../debugger/debug-live-azure-apps-faq.yml) - FAQ.md를 yml로 변환
+- [FAQ - Visual Studio에서 필요한 디버깅 기능 찾기](../debugger/find-your-debugging-task.yml) - FAQ.md를 yml로 변환
+
+**업데이트된 문서**
+
+- [데이터 중단점 오류 문제 해결](../debugger/troubleshoot-data-breakpoint-errors.md) - 데이터 중단점 오류 문제 해결 문서 업데이트
+
+#### <a name="ide"></a>IDE
+
+**업데이트된 문서**
+
+- [/ResetSettings(devenv.exe)](./reference/resetsettings-devenv-exe.md) - 추가 픽스
+- [빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기](./quickstart-nodejs.md) - 제안된 수정
+
+#### <a name="install"></a>설치
+
+**업데이트된 문서**
+
+- [최소한의 오프라인 레이아웃을 사용하여 Visual Studio 업데이트](../install/update-minimal-layout.md)
+  - MinLayout 문서에 여러 제품 예시 추가
+  - VS 2017 문서 및 모든 예시에서 --productId의 제거 반영
+  - MinimalLayout 문서에서 '--productIds'의 제거 반영
+- [Visual Studio 워크로드, 구성 요소, 언어 팩 수정](../install/modify-visual-studio.md) - 성능 개선을 위한 지침 간소화
+
+#### <a name="msbuild"></a>MSBuild
+
+**새 문서**
+
+- [MSB8006: The Platform for project 'project-name.vcxproj' is invalid.](../msbuild/errors/msb8006.md)(MSB8006: 프로젝트 'project-name.vcxproj'의 플랫폼이 잘못되었습니다.) - MSB8xxx F1 콘텐츠 업데이트
+- [MSB8013: This project doesn't contain the Configuration and Platform combination specified.](../msbuild/errors/msb8013.md)(MSB8013: 이 프로젝트는 지정된 구성 및 플랫폼 조합을 포함하지 않습니다.) - MSB8xxx F1 콘텐츠 업데이트
+- [MSB8027: Two or more files with the name of filename will produce outputs to the same location.](../msbuild/errors/msb8027.md)(MSB8027: 파일 이름의 이름을 갖는 파일이 둘 이상 있는 경우 출력이 동일한 위치에 생성됩니다.) - MSB8xxx F1 콘텐츠 업데이트
+- [MSB8037: The Windows SDK version for Desktop C++ Apps wasn't found.](../msbuild/errors/msb8037.md)(MSB8037: Desktop C++ 앱의 Windows SDK 버전을 찾을 수 없습니다.) - MSB8xxx F1 콘텐츠 업데이트
+- [MSB8042: ATL or MFC libraries with Spectre Mitigations are required for this project.](../msbuild/errors/msb8042.md)(MSB8042: 이 프로젝트에는 스펙터 완화를 사용하는 ATL 또는 MFC 라이브러리가 필요합니다.) - MSB8xxx F1 콘텐츠 업데이트
+- [MSB3721: 'command' 명령이 종료됨(코드 'error-code')](../msbuild/errors/msb3721.md) - MSBuild 오류 페이지
+- [MSB3821: 'path' 파일이 인터넷 또는 제한 영역에 있거나 파일에 웹 표시가 있어 처리할 수 없습니다.](../msbuild/errors/msb3821.md) - MSBuild 오류 페이지
+
+**업데이트된 문서**
+
+- [MSBuild 조건](../msbuild/msbuild-conditions.md) - MSBuild 버전 비교
+- [속성 함수](../msbuild/property-functions.md) - MSBuild 버전 비교
+
+#### <a name="python"></a>Python
+
+**업데이트된 문서**
+
+- [2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기](../python/learn-django-in-visual-studio-step-02-create-an-app.md) - Visual Studio 2017 정보와 2019 정보 구분
+- [Python용 C++ 확장 만들기](../python/working-with-c-cpp-python-in-visual-studio.md) - 문서 검토 및 업데이트
+
+#### <a name="test"></a>테스트
+
+**새 문서**
+
+- [Live Unit Testing 자주 묻는 질문](../test/live-unit-testing-faq.yml) - FAQ.md를 yml로 변환
+
+#### <a name="xaml-tools"></a>XAML 도구
+
+**새 문서**
+
+- [Visual Studio에서 XAML 디자이너를 사용하여 디자인 타임 샘플 데이터 사용](../xaml-tools/xaml-design-time-sample-data.md) - XAML 디자인 타임 샘플 데이터 설명서 추가
+
+### <a name="april-2021"></a>2021년 4월
+
+#### <a name="azure"></a>Azure
+
+**업데이트된 문서**
+
+- [Visual Studio에서 Cloud Services(확장 지원) 만들기 및 배포](../azure/cloud-services-extended-support.md) - Cloud Services(확장 지원) - GA에 대한 변경 내용
+
+#### <a name="containers"></a>컨테이너
 
 **새 문서**
 
@@ -43,7 +237,7 @@ ms.locfileid: "108640937"
 - [Docker Compose 빌드 속성](../containers/docker-compose-properties.md) - 속성 추가 작성
 - [Visual Studio에서 컨테이너화된 앱을 빌드하는 방법](../containers/container-build.md) - LTS에 대한 업데이트
 
-## <a name="debugger"></a>디버거
+#### <a name="debugger"></a>디버거
 
 **새 문서**
 
@@ -57,13 +251,13 @@ ms.locfileid: "108640937"
 - [Visual Studio 디버거의 덤프 파일](../debugger/using-dump-files.md) - 메모리 덤프 분석기와의 비교
 - [완전 초보자를 위한 디버깅 방법](../debugger/debugging-absolute-beginners.md) - 초보자 가이드에 VB 추가
 
-## <a name="get-started"></a>시작
+#### <a name="get-started"></a>시작
 
 **업데이트된 문서**
 
 - [자습서: 간단한 C# 콘솔 앱 확장](../get-started/csharp/tutorial-console-part-2.md) - 사이드워크 자습서 확장을 위해 단계를 명확히 하고 전체 코드를 추가
 
-## <a name="ide"></a>IDE
+#### <a name="ide"></a>IDE
 
 **업데이트된 문서**
 
@@ -71,7 +265,7 @@ ms.locfileid: "108640937"
 - [개발자 명령 프롬프트 및 개발자 PowerShell](./reference/command-prompt-powershell.md) - 콘텐츠 성능 향상
 - [팀 탐색기의 프로젝트에 연결](./connect-team-project.md) - ‘팀 탐색기의 프로젝트에 연결’ 페이지의 VS 2019 버전 수정
 
-## <a name="install"></a>설치
+#### <a name="install"></a>설치
 
 **업데이트된 문서**
 
@@ -88,7 +282,7 @@ ms.locfileid: "108640937"
 - [Visual Studio 관리자 가이드](../install/visual-studio-administrator-guide.md) - 관리자 업데이트
 - [Visual Studio 엔터프라이즈 가이드](../install/visual-studio-enterprise-guide.md) - 관리자 업데이트
 
-## <a name="msbuild"></a>MSBuild
+#### <a name="msbuild"></a>MSBuild
 
 **새 문서**
 
@@ -97,7 +291,7 @@ ms.locfileid: "108640937"
 - [MSB8041: 이 프로젝트에는 MFC 라이브러리가 필요합니다.](../msbuild/errors/msb8041.md) - MSBuild C++ 오류 메시지
 - [MSB3277: 확인할 수 없는 '어셈블리'의 다른 버전 사이에서 충돌이 발생했습니다.](../msbuild/errors/msb3277.md) - MSBuild 오류 MSB3277
 
-## <a name="python"></a>Python
+#### <a name="python"></a>Python
 
 **업데이트된 문서**
 
@@ -105,7 +299,7 @@ ms.locfileid: "108640937"
   - GH 문제 해결을 위한 작은 업데이트
   - working-with-c-cpp-python-in-visual-studio.md 개선
 
-## <a name="sharepoint"></a>SharePoint
+#### <a name="sharepoint"></a>SharePoint
 
 **업데이트된 문서**
 
@@ -121,14 +315,14 @@ ms.locfileid: "108640937"
 - [연습: SharePoint용 웹 파트 만들기](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md) - 샘플 파일 이동 및 코드 참조 업데이트(1부) - 6
 - [연습: 웹 파트를 표시하도록 서버 탐색기 연장](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md) - 샘플 파일 이동 및 코드 참조 업데이트(1부) - 6
 
-## <a name="test"></a>테스트
+#### <a name="test"></a>테스트
 
 **업데이트된 문서**
 
 - [유닛 테스트 시작](../test/getting-started-with-unit-testing.md) - 초보자 가이드에 VB 추가
 - [Live Unit Testing 시작](../test/live-unit-testing-start.md) - 샘플 파일 이동 및 코드 참조 업데이트(1부) - 7
 
-## <a name="vsto"></a>Vsto
+#### <a name="vsto"></a>VSTO
 
 **업데이트된 문서**
 
@@ -226,15 +420,189 @@ ms.locfileid: "108640937"
 - [방법: 프로그래밍 방식으로 문서에 그림 및 WordArt 추가](../vsto/how-to-programmatically-add-pictures-and-word-art-to-documents.md) - 샘플 파일 이동 및 코드 참조 업데이트(1부) - 7
 - [방법: 프로그래밍 방식으로 Word 표에 행 및 열 추가](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md) - 샘플 파일 이동 및 코드 참조 업데이트(1부) - 7
 
-## <a name="xaml-tools"></a>XAML 도구
+#### <a name="xaml-tools"></a>XAML 도구
 
 **업데이트된 문서**
 
 - [Visual Studio에서 XAML 디자이너와 함께 디자인 타임 데이터 사용](../xaml-tools/xaml-designtime-data.md) - Listview에 대한 UWP 예제 추가
 
-## <a name="community-contributors"></a>커뮤니티 기여자
+### <a name="march-2021"></a>2021년 3월
 
-이 기간 동안 Visual Studio 문서에 기여한 사용자는 다음과 같습니다. 감사합니다! [기여자 가이드](/contribute/)의 지침에 따라 Visual Studio 문서에 기여하는 방법을 알아보세요.
+#### <a name="code-quality"></a>코드 품질
 
-- [scott-xu](https://github.com/scott-xu) - Scott Xu (1)
-- [shreyanavigyan](https://github.com/shreyanavigyan) - Shreyan Avigyan (1)
+**업데이트된 문서**
+
+- [Microsoft .NET 분석기 사용 또는 설치](../code-quality/install-net-analyzers.md) - GitHub 문제 수정
+
+#### <a name="containers"></a>컨테이너
+
+**업데이트된 문서**
+
+- [Bridge to Kubernetes 사용](../containers/bridge-to-kubernetes.md) - Bridge to Kubernetes: .NET todo 앱 샘플 사용
+- [Docker Compose 빌드 속성](../containers/docker-compose-properties.md) - ComposeProjectName 추가
+- [Bridge to Kubernetes의 작동 방식](../containers/overview-bridge-to-kubernetes.md) - Bridge to Kubernetes: 제한 사항 섹션 업데이트
+- [자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기](../containers/tutorial-multicontainer.md) - 컨테이너 도구 다중 컨테이너 자습서: 이미지 링크 수정
+
+#### <a name="debugger"></a>디버거
+
+**업데이트된 문서**
+
+- [방법: Visual Studio의 DLL 프로젝트에서 디버그(C#, C++, Visual Basic, F#)](../debugger/how-to-debug-from-a-dll-project.md) - DLL에서 디버그하는 방법 새로 고침
+- [Visual Studio 디버거에서 기호 파일(.pdb) 및 소스 파일 지정(C#, C++, Visual Basic, F#)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) - DLL에서 디버그하는 방법 새로 고침
+- [C/C++ 어설션](../debugger/c-cpp-assertions.md) - GitHub 문제 수정
+- [IDiaDataSource::loadDataForExe](../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) - GitHub 문제 해결
+- [Visual Studio 디버거의 C++용 형식 지정자](../debugger/format-specifiers-in-cpp.md) GitHub 문제 해결
+- [원격 디버깅을 위해 Windows 방화벽 구성](../debugger/configure-the-windows-firewall-for-remote-debugging.md) - GitHub 문제 수정
+- [원격 IIS 컴퓨터에서 ASP.NET 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) - IIS 및 Azure의 원격 디버깅 문서 업데이트
+- [Visual Studio의 원격 IIS 컴퓨터에서 ASP.NET Core 원격 디버그](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) - IIS 및 Azure의 원격 디버깅 문서 업데이트
+- [Visual Studio에서 Azure의 IIS에서 ASP.NET Core 원격 디버그](../debugger/remote-debugging-azure.md) - IIS 및 Azure의 원격 디버깅 문서 업데이트
+
+#### <a name="deployment"></a>배포
+
+**업데이트된 문서**
+
+- [방법: 시각적 개체 스타일을 사용하여 WPF 애플리케이션 게시](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md) - 개발자 명령 프롬프트 및 개발자 PowerShell
+- [Visual Studio를 사용하여 앱을 폴더에 배포](../deployment/quickstart-deploy-to-local-folder.md) -IIS 및 Azure의 원격 디버깅 문서 업데이트
+
+#### <a name="extensibility"></a>확장성
+
+**업데이트된 문서**
+
+- [시각적 개체 언어 사전](../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md) - 누락된 Markdown 대괄호를 추가하여 아이콘 렌더링 오류 해결
+- [템플릿 설치 문제 해결](../extensibility/troubleshooting-template-discovery.md) - 개발자 명령 프롬프트 및 개발자 PowerShell
+
+#### <a name="get-started"></a>시작
+
+**업데이트된 문서**
+
+- [자습서: 리포지토리에서 프로젝트 열기](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md)
+  - Git 및 팀 탐색기 비교 링크가 포함된 토픽 업데이트
+  - 로그인 섹션에 자세한 정보를 위한 로그인 링크 추가
+- [자습서: Visual Studio에서 C# 및 ASP.NET Core 시작](../get-started/csharp/tutorial-aspnet-core.md) - tutorial-aspnet-core.md 업데이트
+
+#### <a name="ide"></a>IDE
+
+**새 문서**
+- [Visual Studio에서 소스 제어를 용이하게 만드는 방법](../version-control/git-visual-studio-source-control.md) - 새 Visual Studio 소스 제어 토픽 만들기
+- [개발자 명령 프롬프트 및 개발자 PowerShell](./reference/command-prompt-powershell.md) - 개발자 명령 프롬프트 및 개발자 PowerShell
+- [Git과 팀 탐색기 비교](../version-control/git-team-explorer-feature-comparison.md) - 팀 탐색기 및 새 Git 기능에 대한 새로운 비교 페이지 추가
+
+**업데이트된 문서**
+
+- [Visual Studio에서 수집한 시스템에서 생성한 로그](./diagnostic-data-collection.md) - diagnostic-data-collection.md 업데이트
+- [Visual Studio 사용자 환경 개선 프로그램](./visual-studio-experience-improvement-program.md) visual-studio-experience-improvement-program.md 업데이트
+- [프로젝트 및 항목 템플릿 사용자 지정](./customizing-project-and-item-templates.md) - 템플릿 사용자 지정 및 명령줄 사용에 대한 링크 추가
+- [방법: 프로젝트 템플릿 만들기](./how-to-create-project-templates.md) - 템플릿 사용자 지정 및 명령줄 사용에 대한 링크 추가
+- [코드 편집기 F1 도움말](./not-in-toc/default-f1-text-editor.md) - F1 기본 페이지에 대한 링크 업데이트
+- [F1 도움말](./not-in-toc/default.md) - F1 기본 페이지에 대한 링크 업데이트
+- [빠른 시작: Visual Studio를 사용하여 첫 번째 Node.js 앱 만들기](./quickstart-nodejs.md) - AngularJS 업데이트
+- [메서드 리팩터링 추출](./reference/extract-method.md) - extract-method.md 업데이트
+- [XAML 디자이너 옵션 페이지](./reference/xaml-designer.md) - XAML 디자이너 내에 새로 추가된 옵션에 대한 정보 추가
+- [Visual Studio 2019의 새로운 기능](./whats-new-visual-studio-2019.md)
+  - 지능형 검색 서비스 정보 추가
+  - 참고 항목에 새 CSharp 9 링크 추가
+- [개발자 명령 프롬프트 및 개발자 PowerShell](./reference/command-prompt-powershell.md)
+  - 기능 제목 업데이트 및 필수 조건 섹션 제거
+  - 제목 계층 구조 업데이트
+  - 개발자 명령 프롬프트 및 개발자 PowerShell
+- [팀 탐색기에서 프로젝트에 연결](./connect-team-project.md) - Git 및 팀 탐색기 비교 링크가 포함된 토픽 업데이트
+- [Visual Studio의 Git 환경](./git-with-visual-studio.md)
+  - 기존 원격 문에 Azure DevOps 추가
+  - 팀 탐색기와 새 Git 기능에 대한 새로운 비교 페이지 추가
+  - -b 인수가 git-with-visual-studio.md에 없음
+- [Visual Studio의 기본 바로 가기 키](./default-keyboard-shortcuts-in-visual-studio.md) -누락된 중단점 설정 조건 바로 가기 키 추가
+- [사용자 권한 및 Visual Studio](./user-permissions-and-visual-studio.md) - 바로 가기에 관리자 권한을 설정하는 프로시저 추가
+- [Visual Studio에서 Equals 및 GetHashCode 메서드 재정의 생성](./reference/generate-equals-gethashcode-methods.md)
+  - 스크린샷 크기를 줄이고 지침을 약간 편집
+  - 스크린샷과 연결되는 코드 추가
+- [Visual Studio에서 정규식 사용](./using-regular-expressions-in-visual-studio.md) - 잘못된 regex 수정
+- [폴더 열기(Open Folder) 개발을 위한 빌드 사용자 지정 및 작업 디버그](./customize-build-and-debug-tasks-in-visual-studio.md) - 개발자 명령 프롬프트 및 개발자 PowerShell
+- [C# 개발자를 위한 Visual Studio 생산성 가이드](./csharp-developer-productivity.md) - VS2019용 코드 검사 확장 목록 업데이트
+
+#### <a name="install"></a>설치
+
+**새 문서**
+- [Microsoft Endpoint Configuration Manager를 사용하는 관리자 업데이트 적용](../install/applying-administrator-updates.md) - 관리자 업데이트 적용에 관한 새 콘텐츠를 만듦
+- [Microsoft Endpoint Configuration Manager를 사용하여 Visual Studio의 관리자 업데이트 사용](../install/enabling-administrator-updates.md) - 관리자 업데이트 사용에 관한 새 콘텐츠를 만듦
+
+**업데이트된 문서**
+
+- [Visual Studio 빌드 번호 및 릴리스 날짜](../install/visual-studio-build-numbers-and-release-dates.md)
+  - visual-studio-build-numbers-and-release-dates.md 업데이트
+  - 16.9.2 릴리스 데이터 추가
+  - 화요일 패치(Patch Tuesday) 업데이트
+  - 빌드 번호 날짜 페이지 업데이트
+  - 16.9 GA 및 16.10 미리 보기 1의 빌드 번호
+  - 새 릴리스에 대한 업데이트
+- [Visual Studio의 오프라인 설치 만들기](../install/create-an-offline-installation-of-visual-studio.md) - 관리자 업데이트 문서 편집
+- [Visual Studio 오프라인 설치에 필요한 인증서 설치](../install/install-certificates-for-visual-studio-offline.md) - 관리자 업데이트 문서 편집
+- [Visual Studio 버전 Side-by-Side 설치](../install/install-visual-studio-versions-side-by-side.md) - 관리자 업데이트 문서 편집
+- [방화벽 또는 프록시 서버 배후에서 Visual Studio와 Azure 서비스 설치 및 사용](../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md) - 업데이트된 문서
+
+#### <a name="javascript"></a>JavaScript
+
+**업데이트된 문서**
+
+- [검색 결과에 Visual Studio #의 JavaScript 및 TypeScript 필요함 페이지 제목이 표시됨. 브랜드 포함. 60자 미만.](../javascript/index.yml) - AngularJS 업데이트
+- [빠른 시작: Visual Studio를 사용하여 첫 번째 Vue.js 앱 만들기](../javascript/quickstart-vuejs-with-nodejs.md) - AngularJS 업데이트
+- [자습서: Visual Studio에서 TypeScript를 사용하여 ASP.NET Core 앱 만들기](../javascript/tutorial-aspnet-with-typescript.md)
+  - AngularJS 업데이트
+  - visualstudio-docs/issues/6457 -- 버전 없음
+- [자습서: Visual Studio에서 Node.js 및 Express 앱 만들기](../javascript/tutorial-nodejs.md) - AngularJS 업데이트
+- [JavaScript용 코드 편집기를 사용하는 방법 알아보기](../javascript/write-and-edit-code.md) - AngularJS 업데이트
+- [Visual Studio의 유닛 테스트 JavaScript 및 TypeScript](../javascript/unit-testing-javascript-with-visual-studio.md)
+  - ASP.NET Core 및 TypeScript에 대한 단위 테스트
+  - 개발자 명령 프롬프트 및 개발자 PowerShell
+  - GitHub 문제 수정
+- [Visual Studio에서 npm 패키지 관리](../javascript/npm-package-management.md) - GitHub 문제 수정
+
+#### <a name="msbuild"></a>MSBuild
+
+**업데이트된 문서**
+
+- [MSBuild 프로젝트를 빌드하는 방법](../msbuild/build-process-overview.md) - 잘못된 요소 이름 수정
+- [CreateCSharpManifestResourceName 작업](../msbuild/createcsharpmanifestresourcename-task.md) - 잘못된 상호 참조 오타 수정
+- [방법: Visual Studio 빌드 프로세스 확장](../msbuild/how-to-extend-the-visual-studio-build-process.md) - XML 들여쓰기 수정
+- [MIDL 작업](../msbuild/midl-task.md) - midl-task.md 업데이트
+- [일반적인 MSBuild 프로젝트 항목](../msbuild/common-msbuild-project-items.md) - 문서 내 목차 추가 및 서식 개선
+- [항목 요소(MSBuild)](../msbuild/item-element-msbuild.md) - 문서 내 목차 추가 및 서식 개선
+- [Exec 작업](../msbuild/exec-task.md) - Utf8Encoding 매개 변수에 대한 문서 추가
+
+#### <a name="profiling"></a>프로파일링
+
+**업데이트된 문서**
+
+- [명령줄에서 애플리케이션 성능 측정](../profiling/profile-apps-from-command-line.md) - GitHub 문제 수정
+- [프로파일링 도구 살펴보기](../profiling/profiling-feature-tour.md) - .NET 카운터 도구의 검색 작업
+
+#### <a name="python"></a>Python
+
+**업데이트된 문서**
+
+- [자습서: Visual Studio에서 Flask 웹 프레임워크 시작](../python/learn-flask-visual-studio-step-01-project-solution.md)
+  - 쿼리 매개 변수에 대한 코드 및 텍스트가 업데이트됨
+  - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [자습서: Visual studio에서 Django 웹 프레임워크 시작](../python/learn-django-in-visual-studio-step-01-project-and-solution.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [5단계: Django에서 사용자 인증](../python/learn-django-in-visual-studio-step-05-django-authentication.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [6단계: 설문 조사 Django 웹 프로젝트 템플릿 사용](../python/learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [4단계: 전체 Flask 웹 프로젝트 템플릿 사용](../python/learn-flask-visual-studio-step-04-full-flask-project-template.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [5단계: 설문 조사 Flask 웹 프로젝트 템플릿 사용](../python/learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [Django 웹 프로젝트 템플릿](../python/python-django-web-application-project-template.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [Python 웹 애플리케이션 프로젝트 템플릿](../python/python-web-application-project-templates.md) - Visual Studio 2019 Python 자습서에서 설문 조사 템플릿 콘텐츠가 제거됨
+- [Python 인터프리터에 대한 디버깅 기호 설치](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) - Python 2.7의 마지막 3개 릴리스 추가
+
+#### <a name="test"></a>테스트
+
+**새 문서**
+
+- [ *.testsettings* 에서 *.runsettings* 로 업그레이드](../test/migrate-testsettings-to-runsettings.md) - runsettings로 마이그레이션 문서 추가
+- [MSTestV1에서 MSTestV2로 업그레이드](../test/mstest-update-to-mstestv2.md) - MSTestV1에서 MSTestv2로 업그레이드에 관한 문서 추가
+
+**업데이트된 문서**
+
+- [코드에서 단위 테스트 메서드 스텁 만들기](../test/create-unit-tests-menu.md) - visualstudio-docs/issues/6484 -- 링크 업데이트
+- [Visual Studio의 테스트 도구 살펴보기](../test/improve-code-quality.md) - visualstudio-docs/issues/6429 -- 랩 링크 업데이트
+- [ *.runsettings* 파일을 사용하여 단위 테스트 구성](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
+  - 개발자 명령 프롬프트 및 개발자 PowerShell
+  - 오타가 수정됨
+- [VSTest.Console.exe 명령줄 옵션](../test/vstest-console-options.md) - 개발자 명령 프롬프트 및 개발자 PowerShell

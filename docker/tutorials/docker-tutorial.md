@@ -1,21 +1,20 @@
 ---
-title: Docker 자습서 - Docker 시작
+title: '자습서: Docker 및 Visual Studio Code 시작'
 description: Visual Studio Code에서 Docker를 사용하는 방법의 기본 사항에 대해 설명하는 다단계 자습서입니다.
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
-ms.topic: conceptual
+ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75a51f478e4e58700f6025dd6a87fcc38439ed87
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837972"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222658"
 ---
 # <a name="tutorial-get-started-with-docker"></a>자습서: Docker 시작
 

@@ -11,12 +11,12 @@ ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
+ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942596"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "110320474"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>2단계: 보기 및 페이지 템플릿을 사용하여 Django 앱 만들기
 
@@ -48,6 +48,7 @@ Django 앱은 일반적으로 표준 파일 집합으로 시작합니다. Visual
 
 ![솔루션 탐색기의 Django 앱 파일](media/django/step02-django-app-in-solution-explorer.png)
 
+::: moniker range="vs-2017"
 | 항목 | 설명 |
 | --- | --- |
 | **\_\_init\_\_.py** | 앱을 패키지로 식별하는 파일입니다. |
@@ -58,6 +59,20 @@ Django 앱은 일반적으로 표준 파일 집합으로 시작합니다. Visual
 | **models.py** | 모델은 보기가 앱의 기본 데이터베이스와 상호 작용하는 데 사용되는 데이터 개체로, 함수로 식별됩니다(6단계 참조). Django는 앱이 세부 정보에 주의를 기울일 필요가 없도록 데이터베이스 연결 계층을 제공합니다. *models.py* 파일은 모델을 만들 기본 위치이며, 처음에는 `from django.db import models` 문만 포함되어 있습니다. |
 | **tests.py** | 단위 테스트의 기본 구조를 포함하는 Python 파일입니다. |
 | **views.py** | 보기는 일반적으로 웹 페이지로 간주되는 항목으로, HTTP 요청을 만들고 HTTP 응답을 반환합니다. 일반적으로 보기는 웹 브라우저에서 표시하는 방법을 알고 있는 HTML로 렌더링되지만 중간 양식처럼 보기가 반드시 표시되어야 하는 것은 아닙니다. 보기는 HTML을 렌더링하여 브라우저로 보내는 Python 함수에 의해 정의됩니다. *views.py* 파일은 보기를 만들 기본 위치이며, 처음에는 `from django.shortcuts import render` 문만 포함되어 있습니다. |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+| 항목 | 설명 |
+| --- | --- |
+| **\_\_init\_\_.py** | 앱을 패키지로 식별하는 파일입니다. |
+| **migrations** | Django가 모델의 변경 내용에 맞게 데이터베이스를 업데이트하는 스크립트를 저장하는 폴더입니다. Django의 마이그레이션 도구는 현재 모델과 일치하도록 이전 버전의 데이터베이스에 필요한 변경 내용을 적용합니다. 마이그레이션을 사용하여 모델에 초점을 맞추고 Django에서 기본 데이터베이스 스키마를 처리하도록 합니다. 마이그레이션은 [Django 설명서](https://docs.djangoproject.com/en/3.2/topics/migrations/)에서 설명합니다. 지금은 폴더에 *\_\_init\_\_.py* 파일만 포함되며, 이 파일은 폴더가 고유한 Python 패키지를 정의함을 나타냅니다. |
+| **templates** | 앱 이름과 일치하는 폴더 내에서 단일 파일 *index.html* 을 포함하는 Django 페이지 템플릿의 폴더입니다. (Visual Studio 2017 15.7 이전 버전에서 파일은 *템플릿* 바로 아래에 포함되고 2-4단계에서는 사용자가 하위 폴더를 만들도록 지시합니다.) 템플릿은 보기에서 페이지를 동적으로 렌더링하기 위해 정보를 추가할 수 있는 HTML의 블록입니다. *index.html* 의 `{{ content }}`와 같은 페이지 템플릿 "변수"는 이 아티클의 뒷부분(2단계)에서 설명하는 동적 값의 자리 표시자입니다. 일반적으로 Django 앱은 앱 이름과 일치하는 하위 폴더에 템플릿을 저장하여 해당 템플릿에 대한 네임스페이스를 만듭니다. |
+| **admin.py** | 데이터베이스의 데이터를 시드하고 편집하는 데 사용되는 앱의 관리 인터페이스를 확장하는 Python 파일입니다. 처음에는 이 파일에 `from django.contrib import admin` 문만 포함되어 있습니다. 기본적으로 Django에는 Django 프로젝트의 *settings.py* 파일에 있는 항목을 통해 표준 관리 인터페이스가 포함됩니다. 이 인터페이스는 *urls.py* 에 있는 기존 항목의 주석 처리를 제거하여 설정할 수 있습니다. |
+| **apps.py** | 앱에 대한 구성 클래스를 정의하는 Python 파일입니다(이 표 다음의 아래 참조). |
+| **models.py** | 모델은 뷰가 앱의 기본 데이터베이스와 상호 작용하는 데 사용하는 데이터 개체로, 함수로 식별됩니다. Django는 앱이 세부 정보에 주의를 기울일 필요가 없도록 데이터베이스 연결 계층을 제공합니다. *models.py* 파일은 모델을 만들 기본 위치이며, 처음에는 `from django.db import models` 문만 포함되어 있습니다. |
+| **tests.py** | 단위 테스트의 기본 구조를 포함하는 Python 파일입니다. |
+| **views.py** | 보기는 일반적으로 웹 페이지로 간주되는 항목으로, HTTP 요청을 만들고 HTTP 응답을 반환합니다. 일반적으로 보기는 웹 브라우저에서 표시하는 방법을 알고 있는 HTML로 렌더링되지만 중간 양식처럼 보기가 반드시 표시되어야 하는 것은 아닙니다. 보기는 HTML을 렌더링하여 브라우저로 보내는 Python 함수에 의해 정의됩니다. *views.py* 파일은 보기를 만들 기본 위치이며, 처음에는 `from django.shortcuts import render` 문만 포함되어 있습니다. |
+::: moniker-end
 
 "HelloDjangoApp"이라는 이름을 사용하면 *apps.py* 의 내용이 다음과 같이 표시됩니다.
 

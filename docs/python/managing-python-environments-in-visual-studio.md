@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26bcf0fa4d56d4e8df100a0d3e65904d065d8757
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923746"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254877"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Visual Studio에서 Python 환경을 만들고 관리하는 방법
 
@@ -151,7 +151,7 @@ Conda 환경은 `conda` 도구를 사용하거나 Visual Studio 버전 2017 15.7
 
 ::: moniker range=">=vs-2019"
 
-1. **Python 환경** 창(또는 Python 도구 모음)에서 **+ 환경 추가** 를 선택하면 **환경 추가** 대화 상자가 열립니다. 이 대화 상자에서 **Conda 환경** 탭을 선택합니다.
+1. **Python 환경** 창(또는 Python 도구 모음)에서 **환경 추가...** 를 선택하면 **환경 추가** 대화 상자가 열립니다. 이 대화 상자에서 **Conda 환경** 탭을 선택합니다.
 
     ![환경 추가 대화 상자의 Conda 환경 탭](media/environments/environments-conda-1-2019.png)
 
@@ -231,7 +231,7 @@ Visual Studio 2017 버전 15.6 이전의 Conda 환경을 포함하여 비표준 
 
 ::: moniker range=">=vs-2019"
 
-1. **Python 환경** 창(또는 Python 도구 모음)에서 **+ 환경 추가** 를 선택하면 **환경 추가** 대화 상자가 열립니다. 이 대화 상자에서 **기존 환경** 탭을 선택합니다.
+1. **Python 환경** 창(또는 Python 도구 모음)에서 **환경 추가...** 를 선택하면 **환경 추가** 대화 상자가 열립니다. 이 대화 상자에서 **기존 환경** 탭을 선택합니다.
 
     ![환경 추가 대화 상자의 기존 환경 탭](media/environments/environments-custom-1-2019.png)
 

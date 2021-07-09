@@ -2,19 +2,19 @@
 title: Visual Studio 2019의 Git 환경
 titleSuffix: ''
 description: Visual Studio 2019의 새로운 통합 Git 환경을 활용하여 생산성을 높일 수 있는 방법을 알아봅니다.
-ms.date: 04/01/2021
+ms.date: 06/17/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7ca09edada7715b9e7be754dbec22e1654288df8
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: ae5d17bfe09f2ebac5abb37c6d6ceed59c5398d3
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729314"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365458"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio의 Git 환경
 
@@ -184,15 +184,19 @@ Visual Studio의 병합 편집기는 들어오는 변경 내용, 현재 변경 �
 
 ## <a name="personalize-your-git-settings"></a>Git 설정 개인 설정
 
-전역 수준뿐만 아니라 리포지토리 수준에서 Git 설정을 개인 설정하고 사용자 지정하려면 메뉴 모음에서 **Git** > **설정** 으로 이동하거나 메뉴 모음에서 **도구** > **옵션** > **소스 제어** 로 이동합니다. 그런 다음, 원하는 옵션을 선택합니다.
+전역 수준뿐만 아니라 리포지토리 수준에서 Git 설정을 개인 설정하고 사용자 지정하려면 메뉴 모음에서 **Git** > **설정** 으로 이동하거나 메뉴 모음에서 **도구** > **옵션** > **소스 제어** 로 이동합니다. 그런 다음, 원하는 [옵션](git-settings.md)을 선택합니다.
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE에서 개인 설정 및 사용자 지정 설정을 선택할 수 있는 옵션 대화 상자 ":::
+
+::: moniker range="vs-2019"
 
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>Visual Studio에서 전체 팀 탐색기 환경을 사용하는 방법
 
 새 Git 환경은 [버전 16.8](/visualstudio/releases/2019/release-notes/)부터 Visual Studio 2019의 기본 버전 제어 시스템입니다. 그러나 이 기능을 해제하려는 경우 해제할 수 있습니다. **도구** > **옵션** > **환경** > **미리 보기 기능** 으로 이동한 다음, **새 Git 사용자 환경** 확인란을 토글합니다. 그러면 Git용 팀 탐색기 환경으로 다시 전환됩니다.
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio 옵션 대화 상자의 미리 보기 기능 섹션 ":::
+
+::: moniker-end
 
 ## <a name="whats-next"></a>다음 단계
 

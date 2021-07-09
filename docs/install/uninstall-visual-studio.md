@@ -9,19 +9,19 @@ f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7d7c4400d553d8244d3b9239f0b0a984d382c99a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d34a5be9598682982c3918aafec7725e59d6f92
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959170"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306789"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio 제거
 
@@ -68,7 +68,7 @@ ms.locfileid: "99959170"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 컴퓨터에서 **Visual Studio 설치 관리자** 를 찾습니다.
 
@@ -91,14 +91,14 @@ ms.locfileid: "99959170"
 
      ![Visual Studio 확인 제거](media/vs-2019/uninstall-visualstudio-confirm.png "Visual Studio 2019를 제거할 것인지 확인")
 
-나중에 마음이 바뀌어 Visual Studio 2019를 다시 설치하려면 Visual Studio 설치 관리자를 다시 시작하여 **사용 가능** 탭을 선택하고 설치할 Visual Studio 버전을 선택한 다음, **설치** 를 선택합니다.
+나중에 마음이 바뀌어 Visual Studio 2019 또는 2022를 다시 설치하려면 Visual Studio 설치 관리자를 다시 시작하여 **사용 가능** 탭을 선택하고 설치할 Visual Studio 버전을 선택한 다음, **설치** 를 선택합니다.
 
 ## <a name="uninstall-visual-studio-installer"></a>Visual Studio 설치 관리자 제거
 
-Visual Studio 2019와 Visual Studio 설치 관리자를 컴퓨터에서 제거하려면 [앱 및 기능]에서 제거합니다.
+머신에서 Visual Studio 2019, Visual Studio 2022, Visual Studio 설치 관리자의 모든 설치를 제거하려면 앱 및 기능에서 제거합니다.
 
 1. Windows 10의 경우 "여기에 입력하여 검색" 상자에 **앱 및 기능** 을 입력합니다.
-1. **Visual Studio 2019** 를 찾습니다.
+1. **Visual Studio 2019** 또는 **Visual Studio 2022** 를 찾습니다.
 1. **제거** 를 선택합니다.
 1. 그런 다음, **Microsoft Visual Studio 설치 관리자** 를 찾습니다.
 1. **제거** 를 선택합니다.

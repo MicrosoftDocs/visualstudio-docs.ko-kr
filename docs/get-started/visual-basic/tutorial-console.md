@@ -1,7 +1,7 @@
 ---
 title: '자습서: Visual Basic 시작'
 description: Visual Studio에서 Visual Basic 콘솔 앱을 만드는 방법을 단계별로 알아봅니다.
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition,  get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295496"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390713"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>자습서: Visual Studio에서 Visual Basic 시작
 
@@ -34,6 +34,12 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 ::: moniker range="vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -73,12 +79,12 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > 이 자습서의 일부 스크린샷은 어두운 테마를 사용합니다. 어두운 테마를 사용하지 않지만 원하는 경우 [Visual Studio IDE 및 편집기 개인 설정](../../ide/quickstart-personalize-the-ide.md) 페이지에서 참조하여 방법을 알아봅니다.
 
-1. Visual Studio 2019를 엽니다.
+1. Visual Studio를 엽니다.
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다.
 
@@ -146,7 +152,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. *WhatIsYourName* 프로젝트에서 `Sub Main(args As String())` 줄을 따르는 `End Sub` 줄 앞에 오는 여는 대괄호 바로 뒤에 다음 Visual Basic 코드를 입력합니다.
 
@@ -208,7 +214,7 @@ VB(Visual Basic)에 대한 이 자습서에서는 Visual Studio를 사용하여 
 
 ::: moniker-end 
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 시작 창에서 **새 프로젝트 만들기** 를 선택합니다. 
 

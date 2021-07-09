@@ -1,8 +1,9 @@
 ---
-description: '전체 메시지 텍스트: ‘function’ 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다.'
 title: '&apos;function&apos; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했음 | Microsoft Docs'
-ms.date: 11/04/2016
+description: '전체 메시지 텍스트: ‘function’ 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다.'
+ms.date: 06/18/2021
 ms.topic: error-reference
+ms.custom: contperf-fy21q4
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a540f6f80029039644b22a24a31510042236de2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 94c308e9ec960f744a98f0f930999df36afff475
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147018"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925009"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>오류: &#39;function&#39; 함수를 확인하는 중 시간이 초과하여 안전하지 않은 방식으로 중단해야 했습니다.
 
@@ -27,26 +28,30 @@ ms.locfileid: "102147018"
 
 ## <a name="to-correct-this-error"></a>이 오류를 해결하려면
 
-이 문제에 대한 가능한 해결 방법은 여러 가지가 있습니다.
+이어지는 섹션에서 이 문제의 몇 가지 가능한 해결 방법을 확인하세요.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>해결 방법 #1: 디버거가 getter 속성 또는 ToString 메서드를 호출하지 않도록 방지
+## <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>해결 방법 #1: 디버거가 getter 속성 또는 ToString 메서드를 호출하지 않도록 방지
 
 오류 메시지는 디버거가 호출하려고 시도한 함수의 이름을 알려줍니다. 함수를 수정할 수 있는 경우 디버거가 속성 getter 또는 ToString 메서드를 호출하지 않도록 방지할 수 있습니다. 다음 작업 중 하나를 수행하세요.
 
 * 속성 getter 또는 ToString 메서드 이외의 다른 코드 형식으로 메서드를 변경하면 문제가 해결됩니다.
-    또는
-* (ToString의 경우) 형식에 DebuggerDisplay 특성을 정의하고 디버거가 ToString 이외의 항목을 확인하도록 할 수 있습니다.
-    또는
-* (속성 getter의 경우) 속성에 `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` 특성을 지정합니다. API 호환성을 위해 속성을 유지해야 하는 메서드가 있으면 유용할 수 있으나 정말로 메서드여야 합니다.
+  또는
+* (ToString의 경우) 형식에 [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) 특성을 정의하면 디버거가 ToString 이외의 항목을 확인하도록 할 수 있습니다.
+  또는
+* (속성 getter의 경우) 속성에 [System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)](/dotnet/api/system.diagnostics.debuggerbrowsableattribute) 특성을 지정합니다. API 호환성을 위해 속성을 유지해야 하는 메서드가 있으면 유용할 수 있으나 정말로 메서드여야 합니다.
 
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>해결 방법 #2: 대상 코드를 통해 디버거에 확인 중단 요청
+## <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>해결 방법 #2: 대상 코드를 통해 디버거에 확인 중단 요청
 
-오류 메시지는 디버거가 호출하려고 시도한 함수의 이름을 알려줍니다. 속성 getter 또는 ToString 메서드가 제대로 실행되지 않는 경우가 있으면, 특히 코드를 실행하려면 다른 스레드가 있어야 하는 코드가 문제인 경우에는 구현 함수가 `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency`를 호출하여 디버거에 함수 확인 중단을 요청할 수 있습니다. 이 해결 방법을 사용하면 계속 해당 함수를 명시적으로 확인할 수 있지만 기본 동작은 NotifyOfCrossThreadDependency 호출이 발생하면 실행이 중지되는 것입니다.
+오류 메시지는 디버거가 호출하려고 시도한 함수의 이름을 알려줍니다. 속성 getter 또는 ToString 메서드가 종종 제대로 실행되지 않는 경우(특히 코드를 실행하려면 다른 스레드가 있어야 하는 코드가 문제인 경우), 구현 함수가 [System.Diagnostics.Debugger.NotifyOfCrossThreadDependency](/dotnet/api/system.diagnostics.debugger.notifyofcrossthreaddependency)를 호출하여 디버거에 함수 평가 중단을 요청할 수 있습니다. 이 해결 방법을 사용하면 계속 해당 함수를 명시적으로 확인할 수 있지만 기본 동작은 NotifyOfCrossThreadDependency 호출이 발생하면 실행이 중지되는 것입니다.
 
-### <a name="solution-3-disable-all-implicit-evaluation"></a>해결 방법 #3: 모든 암시적 확인 사용 안 함
+## <a name="solution-3-disable-all-implicit-evaluation"></a>해결 방법 #3: 모든 암시적 확인 사용 안 함
 
 이전 해결 방법으로 문제가 해결되지 않는 경우 **도구** > **옵션** 으로 이동하여 **디버깅** > **일반** > **속성 확인 및 기타 암시적 함수 호출 사용** 설정을 선택 취소합니다. 이렇게 하면 대부분의 암시적 함수 확인이 사용하지 않도록 설정되며 문제가 해결됩니다.
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>해결 방법 #4: 관리형 호환성 모드 사용
+## <a name="solution-4-check-compatibility-with-third-party-developer-tools"></a>해결 방법 #4: 타사 개발자 도구를 사용하여 호환성 확인
+
+Resharper를 사용하는 경우 이 [문제](https://youtrack.jetbrains.com/issue/RSRP-476824)를 참조하여 제안 사항을 확인하세요.
+
+## <a name="solution-5-enable-managed-compatibility-mode"></a>해결 방법 #5: 관리형 호환성 모드 사용
 
 레거시 디버깅 엔진으로 전환하는 경우 이러한 오류를 제거할 수 있습니다. **도구** > **옵션** 으로 이동하여 **디버깅** > **일반** > **관리형 호환성 모드 사용** 설정을 선택합니다. 자세한 내용은 [General debugging options](../debugger/general-debugging-options-dialog-box.md)(일반 디버깅 옵션)를 참조하세요.

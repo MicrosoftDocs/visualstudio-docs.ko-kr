@@ -1,7 +1,7 @@
 ---
 title: 디버거에서 실행 중인 프로세스에 연결
 description: 로컬 또는 원격 컴퓨터에서 실행 중인 프로세스에 Visual Studio 디버거를 연결하는 방법을 알아봅니다.
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9774878b8d8862fca0b8b35de924b7bc1ab45656
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866010"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280517"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio 디버거에서 실행 중인 프로세스에 연결
 
@@ -139,7 +139,7 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
    - 모든 사용자 계정으로 실행되는 프로세스를 찾으려면 **모든 사용자의 프로세스 표시** 확인란을 선택합니다.
 
      >[!NOTE]
-     >신뢰할 수 없는 사용자 계정에서 소유한 프로세스에 연결하면 보안 경고 확인 대화 상자가 나타납니다. 자세한 내용은 다음을 참조하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심스럽거나 확실하지 않은 경우 이 프로세스에 연결하지 마십시오](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+     >신뢰할 수 없는 사용자 계정에서 소유한 프로세스에 연결하면 보안 경고 확인 대화 상자가 나타납니다. 자세한 내용은 다음을 참조하세요. [보안 경고: 신뢰할 수 없는 사용자가 소유한 프로세스에 연결하면 위험할 수 있습니다. 다음 정보가 의심스럽거나 확실하지 않은 경우 이 프로세스에 연결하지 마세요](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 5. **연결 대상** 필드에서 디버그할 코드 형식이 표시되어 있는지 확인합니다. 기본 **자동** 설정은 대부분의 앱 유형에서 작동합니다.
 
@@ -159,6 +159,12 @@ IIS에 배포된 ASP.NET 애플리케이션을 디버그하는 방법에 대한 
 원격 데스크톱(터미널 서비스) 세션에서 디버그할 때 **사용 가능한 프로세스** 목록에 사용 가능한 프로세스 중 일부가 표시되지 않는 경우가 있습니다. 제한된 사용자 계정으로 Visual Studio를 실행하는 경우 세션 0에서 실행 중인 프로세스는 **사용 가능한 프로세스** 목록에 표시되지 않습니다. 세션 0은 *w3wp.exe* 를 비롯한 서비스 및 기타 서버 프로세스에 사용됩니다. 관리자 계정으로 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하거나 터미널 서비스 세션 대신 서버 콘솔에서 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 를 실행하여 이 문제를 해결할 수 있습니다.
 
 이러한 해결 방법을 둘 다 사용할 수 없는 경우 세 번째 방법으로 Windows 명령줄에서 `vsjitdebugger.exe -p <ProcessId>`를 실행하여 프로세스에 연결합니다. 프로세스 ID는 *tlist.exe* 를 사용하여 확인할 수 있습니다. *tlist.exe* 를 얻으려면 [WDK 및 WinDbg 다운로드](/windows-hardware/drivers/download-the-wdk)에서 Debugging Tools for Windows를 다운로드하여 설치합니다.
+
+## <a name="attach-to-a-net-core-process-running-on-azure-app-service-windows"></a>Azure App Service(Windows)에서 실행되는 .NET Core 프로세스에 연결
+
+Azure App Service(Windows)에 게시하는 경우 **호스트** 아래의 **...** 메뉴에서 **디버거 연결** 옵션을 찾을 수 있습니다. Visual Studio는 프로필이 게시되는 Azure App Service(Windows) 인스턴스에 원격 디버거를 연결하려고 시도합니다.
+
+:::image type="content" source="../debugger/media/attach-debugger-publish-profile.png" alt-text="게시 요약 페이지의 디버거 연결 옵션 스크린샷.":::
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>SSH를 사용하여 Linux에서 실행되는 .NET Core 프로세스에 연결
 

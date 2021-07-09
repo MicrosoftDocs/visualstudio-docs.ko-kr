@@ -2,6 +2,7 @@
 title: Node.js 및 Express 앱 만들기
 description: 이 자습서에서는 Visual Studio에서 Express 웹 애플리케이션 프레임워크를 사용하여 간단한 Node.js 애플리케이션을 만드는 방법을 알아봅니다.
 ms.date: 03/25/2021
+ms.custom: vs-acquisition
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b3ffe7d2ac219f35d987a3f52551350a2af0fa5c
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: d4ea086d20f5a1000067343ac7571a9a8f8309db
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105617028"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386815"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>자습서: Visual Studio에서 Node.js 및 Express 앱 만들기
 
@@ -28,13 +29,19 @@ Node.js 및 Express를 사용하여 Visual Studio를 개발하기 위한 이 자
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
-이 자습서에서는 다음 작업 방법을 알아봅니다.
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * Node.js 프로젝트 만들기
 > * 일부 코드를 추가합니다.

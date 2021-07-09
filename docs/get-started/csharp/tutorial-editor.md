@@ -1,7 +1,7 @@
 ---
-title: C# 개발자를 위한 편집 소개
+title: '자습서: C# 개발자를 위한 편집'
 description: Visual Studio의 코드 편집기에 대한 이 10분 소개에서는 Visual Studio에서 C# 코드를 보다 쉽게 작성, 탐색 및 이해하는 몇 가지 방법을 보여줍니다.
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a6b01e9c26ea816e05a1d2186d904bdb080f098
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909235"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390257"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>코드 편집기를 사용하여 C\#를 작업하는 방법 알아보기
 
@@ -32,8 +32,13 @@ Visual Studio의 코드편집기에 대한 이 10분 소개에서 코드를 파�
 
 ::: moniker range="vs-2019"
 
-> [!TIP]
-> 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 

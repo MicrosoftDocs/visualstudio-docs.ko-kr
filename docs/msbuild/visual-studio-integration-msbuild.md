@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8f195b6d77aeab9a01a6f3f6262f4024de1153
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63e78d935d515ccafda461a8f7af77623387940b
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951656"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602149"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 통합(MSBuild)
 
@@ -67,6 +67,8 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
     <AvailableItemName Include="JScript"/>
 </ItemGroup>
 ```
+
+`AvailableItemName` 항목 종류에 항목 종류 이름을 추가하면 해당 종류의 항목이 **솔루션 탐색기** 에 나타납니다.
 
 > [!NOTE]
 > 일부 항목 형식 이름은 Visual Studio에 고유하지만 이 드롭다운에는 나열되어 있지 않습니다.

@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 177a44f8af73226d4352c4a48c23c65eadc3e608
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684340"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602032"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>빠른 시작: Visual Studio에서 React 단일 페이지 앱과 함께 Docker 사용
 
@@ -26,7 +26,7 @@ Visual Studio를 사용하여 React.js 단일 페이지 앱과 같은 클라이�
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
 * [Node.JS](https://nodejs.org/en/download/)
-* Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1903 이상이어야 합니다.
+* Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1809 이상이어야 합니다.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -34,7 +34,7 @@ Visual Studio를 사용하여 React.js 단일 페이지 앱과 같은 클라이�
 * .NET Core 3.1을 사용하여 개발하기 위한 [.NET Core 3.1 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * Azure Container Registry에 게시하려면 Azure 구독이 있어야 합니다. [평가판에 가입](https://azure.microsoft.com/offers/ms-azr-0044p/)합니다.
 * [Node.JS](https://nodejs.org/en/download/)
-* Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1903 이상이어야 합니다.
+* Windows 컨테이너의 경우 이 문서에서 참조된 Docker 이미지를 사용하려면 Windows 10 버전 1809 이상이어야 합니다.
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>설치 및 설정
@@ -91,14 +91,14 @@ RUN apt-get install -y nodejs
 ```Dockerfile
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
@@ -135,26 +135,26 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
    1. `FROM … base` 앞에 다음 줄을 추가합니다.
 
       ```Dockerfile
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. `FROM … build` 앞과 뒤에 다음 줄을 추가합니다.
+   2. `FROM … build` 앞과 뒤에 다음 줄을 추가합니다.
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. 이제 완전한 Dockerfile이 다음과 같이 표시됩니다.
+   3. 이제 완전한 Dockerfile이 다음과 같이 표시됩니다.
 
       ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       RUN mkdir -p C:\nodejsfolder
       WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
@@ -162,13 +162,13 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
@@ -186,7 +186,7 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
-   1. `**/bin`을 제거하여 .dockerignore 파일을 업데이트합니다.
+   4. `**/bin`을 제거하여 .dockerignore 파일을 업데이트합니다.
 
 ## <a name="debug"></a>디버그
 
@@ -207,12 +207,12 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 
 **도구**> NuGet 패키지 관리자, **패키지 관리자 콘솔** 메뉴에서 **패키지 관리자 콘솔**(PMC)을 엽니다.
 
-앱의 최종 Docker 이미지는 *dev* 로 태그가 지정됩니다. 이 이미지는 *dotnet/core/aspnet* 이미지의 *3.1-nanoserver-1903* 태그를 기반으로 합니다. **패키지 관리자 콘솔**(PMC) 창에서 `docker images` 명령을 실행합니다. 컴퓨터의 이미지가 표시됩니다.
+앱의 최종 Docker 이미지는 *dev* 로 태그가 지정됩니다. 이 이미지는 *dotnet/core/aspnet* 베이스 이미지의 *3.1* 태그를 기반으로 합니다. **패키지 관리자 콘솔**(PMC) 창에서 `docker images` 명령을 실행합니다. 컴퓨터의 이미지가 표시됩니다.
 
 ```console
 REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
 webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
-mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1                 e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]
@@ -237,7 +237,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 1. **새 Azure Container Registry 만들기** 를 선택하고 **게시** 를 클릭합니다.
 1. **새 Azure Container Registry 만들기** 에 원하는 값을 채웁니다.
 
-    | 설정      | 제안 값  | Description                                |
+    | 설정      | 제안 값  | 설명                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |
@@ -267,7 +267,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 1. **새 Azure Container Registry 만들기** 를 선택합니다.
 1. **새 Azure Container Registry 만들기** 화면에 원하는 값을 채웁니다.
 
-    | 설정      | 제안 값  | Description                                |
+    | 설정      | 제안 값  | 설명                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 접두사** | 전역적으로 고유한 이름 | 컨테이너 레지스트리를 고유하게 식별하는 이름입니다. |
     | **구독** | 구독 선택 | 사용할 Azure 구독입니다. |

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
-ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
+ms.openlocfilehash: 868c02091814fe49ea0224190c7d205e8b67c42b
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103483195"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042979"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 디버거의 C++용 형식 지정자
 
@@ -104,6 +104,7 @@ int main() {
 |nr|“Raw 뷰” 항목 표시 안 함|
 |nvo|숫자 값에 대해서만 “Raw 뷰” 항목 표시|
 |!|원시 형식. 모든 데이터 형식 뷰의 사용자 지정을 무시합니다.|\<customized representation>|4|
+|handle|Win32 핸들에 대한 정보를 표시합니다.|0x000000000000009c| 스레드 ID 등 핸들에 대한 유용한 정보를 표시합니다. |
 
 ::: moniker-end
 

@@ -1,7 +1,7 @@
 ---
 title: '자습서: C++ 코드 디버그'
 description: Visual Studio 디버거의 기능과 디버거를 시작하고 코드를 단계별로 실행하고 C++ 애플리케이션에서 데이터를 검사하는 방법을 알아봅니다.
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment,  get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af974731fac6842c38f2a0e4ccbc9f32748e29b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8abb517103254aa1e0c89a02b0dc81b38af3ecee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874797"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385255"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>자습서: Visual Studio를 사용하여 C++ 코드를 디버그하는 방법 알아보기
 
@@ -54,9 +54,15 @@ Visual Studio 2017이 설치되어 있어야 하고 **C++로 데스크톱 개발
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
@@ -82,7 +88,7 @@ Visual Studio 2017이 설치되어 있어야 하고 **C++로 데스크톱 개발
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. Visual Studio 2019를 엽니다.
 

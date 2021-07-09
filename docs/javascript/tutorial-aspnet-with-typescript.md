@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 0728011c05d47996a313c11a18f31a196ec08e10
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616989"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306501"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>자습서: Visual Studio에서 TypeScript를 사용하여 ASP.NET Core 앱 만들기
 
@@ -28,13 +28,19 @@ Visual Studio 개발 ASP.NET Core 및 TypeScript에 대한 이 자습서에서�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 아직 Visual Studio를 설치하지 않은 경우 [Visual Studio 다운로드](https://visualstudio.microsoft.com/downloads) 페이지로 이동하여 체험용으로 설치합니다.
 
 ::: moniker-end
 
-이 자습서에서는 다음 작업 방법을 알아봅니다.
+::: moniker range="vs-2022"
+
+Visual Studio 2022 Preview를 아직 설치하지 않은 경우 [Visual Studio 2022 Preview 다운로드](https://visualstudio.microsoft.com/vs/preview/vs2022) 페이지로 이동하여 체험용으로 설치합니다.
+
+::: moniker-end
+
+이 자습서에서는 다음과 같은 작업을 수행하는 방법을 살펴봅니다.
 > [!div class="checklist"]
 > * ASP.NET Core 프로젝트 만들기
 > * TypeScript 지원을 위해 NuGet 패키지 추가
@@ -220,7 +226,7 @@ Visual Studio는 *프로젝트* 에서 단일 애플리케이션에 대한 파�
 1. [npm 패키지 관리](../javascript/npm-package-management.md#aspnet-core-projects)의 지침에 따라 프로젝트에 `package.json` 파일을 추가합니다. 이렇게 하면 프로젝트에 npm 지원이 추가됩니다.
 
    >[!NOTE]
-   > ASP.NET Core 프로젝트의 경우 npm 대신 [라이브러리 관리자](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) 또는 YARN을 사용하여 클라이언트 쪽 JavaScript 및 CSS 파일을 설치할 수도 있습니다.
+   > ASP.NET Core 프로젝트의 경우 npm 대신 [라이브러리 관리자](/aspnet/core/client-side/libman/) 또는 YARN을 사용하여 클라이언트 쪽 JavaScript 및 CSS 파일을 설치할 수도 있습니다.
 
 1. 이 예제에서는 프로젝트에 jQuery에 대한 TypeScript 정의 파일을 추가합니다. *package.json* 파일에 다음을 포함합니다.
 

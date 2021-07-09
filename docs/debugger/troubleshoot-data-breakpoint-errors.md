@@ -2,7 +2,7 @@
 title: 데이터 중단점을 설정할 수 없습니다 | Microsoft Docs
 description: “값이 변경되면 중단”을 사용할 때 발생하는 “데이터 중단점을 설정할 수 없습니다.”의 설명, 해결 방법을 찾아봅니다.
 ms.custom: SEO-VS-2020
-ms.date: 12/3/2019
+ms.date: 5/19/2020
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
@@ -17,25 +17,25 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150459"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231967"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>데이터 중단점 오류 문제 해결
 이 페이지에서는 “값이 변경되면 중단”을 사용할 때 표시되는 일반적인 오류를 해결하는 과정을 안내합니다.
 
 ## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>“데이터 중단점을 설정할 수 없습니다.” 오류 진단
 > [!IMPORTANT]
-> 관리되는 데이터 중단점은 .NET Core 3.0 이상에서 지원됩니다. 최신 버전은 [여기](https://dotnet.microsoft.com/download)에서 다운로드할 수 있습니다.
+> 관리되는 데이터 중단점은 .NET Core 3.0 이상 및 .NET 5.0.3 이상에서 지원됩니다. 최신 버전은 [여기](https://dotnet.microsoft.com/download)에서 다운로드할 수 있습니다.
 
 다음은 관리되는 데이터 중단점을 사용할 때 발생할 수 있는 오류 목록입니다. 여기에는 오류가 발생하는 이유에 대한 추가 설명과 오류를 해결하기 위한 해결 방법이 포함되어 있습니다.
 
-- “대상 프로세스에서 사용하는 .NET 버전이 데이터 중단점을 지원하지 않습니다. 데이터 중단점을 사용하려면 x86 또는 x64에서 실행되는 .NET Core 3.0 이상이 필요합니다.”
+- “대상 프로세스에서 사용되는 .NET 버전이 데이터 중단점을 지원하지 않습니다. 데이터 중단점을 사용하려면 x86 또는 x64에서 실행되는 .NET Core 3.x 또는 .NET 5.0.3 이상이 필요합니다.”
 
-  - 관리되는 데이터 중단점은 .NET Core 3.0부터 지원되며 .NET Framework 또는 .NET Core under 3.0 버전에서는 현재 지원되지 않습니다. 
+  - 관리되는 데이터 중단점은 .NET Core 3.0부터 지원되며 현재 .NET Framework, 3.0 미만의 .NET Core 버전, 5.0.3 미만의 .NET 버전에서 지원되지 않습니다. 
     
   - **솔루션**: 이 문제에 대한 해결 방법은 프로젝트를 .NET Core 3.0으로 업그레이드하는 것입니다.
 
@@ -69,6 +69,11 @@ ms.locfileid: "98150459"
 
   - 데이터 중단점은 레거시가 아닌 C# 식 계산기에서만 지원됩니다. 
   - **솔루션**: `Debug -> Options`로 이동하여 레거시 C# 식 계산기를 사용하지 않도록 설정한 다음, `Debugging -> General`에서 `"Use the legacy C# and VB expression evaluators"`를 선택 취소합니다.
+
+- “**X** 클래스에는 이 클래스에만 관련되는 데이터에 데이터 중단점을 사용하지 못하도록 하는 사용자 지정 디버거 뷰가 있습니다.”
+  
+  - 데이터 중단점은 대상 프로세스(디버깅 중인 애플리케이션)에서 만든 메모리에서만 지원됩니다. 데이터 중단점이 설정되는 메모리가 [DebuggerTypeProxy 특성](using-debuggertypeproxy-attribute.md) 또는 대상 프로세스의 일부가 아닌 다른 특성으로 만들어진 개체에서 소유할 수 있는 것으로 플래그가 지정되었습니다.
+  - **해결 방법:** : 개체의 DebuggerTypeProxy 뷰를 확장하는 대신 개체의 “원시 뷰”를 확장한 다음, 데이터 중단점을 설정합니다. 이렇게 하면 DebuggerTypeProxy 특성으로 만들어진 개체가 소유한 메모리에 데이터 중단점이 있을 수 없습니다.
 
 ## <a name="data-breakpoint-hardware-limitations"></a>데이터 중단점 하드웨어 제한 사항
 

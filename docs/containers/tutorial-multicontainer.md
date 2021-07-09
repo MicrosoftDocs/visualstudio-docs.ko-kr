@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: 78af96eaa8f340129b2b445dd92419f84cf91ab1
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315981"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307819"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>자습서: Docker Compose를 사용하여 다중 컨테이너 앱 만들기
 
@@ -21,15 +21,25 @@ ms.locfileid: "107315981"
 ## <a name="prerequisites"></a>사전 요구 사항
 
 ::: moniker range="vs-2017"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure Tools** 워크로드 또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 ::: moniker-end
 
-::: moniker range=">= vs-2019"
+::: moniker range="vs-2019"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core 2.2를 사용하여 개발하기 위한 [.NET Core 2.2 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * .NET Core 3.1을 사용하여 개발하기 위한 [.NET Core 3 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* **웹 개발**, **Azure 도구** 워크로드 및/또는 **.NET Core 플랫폼 간 개발** 워크로드가 설치된 [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/vs2022)
+* .NET Core 3.1을 사용하여 개발하기 위한 [.NET Core 3 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+* .NET 5를 사용하여 개발하기 위한 [.NET 5 개발 도구](https://dotnet.microsoft.com/download/dotnet-core/5.0)
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>웹 애플리케이션 프로젝트 만들기
@@ -44,7 +54,7 @@ Visual Studio에서 `WebFrontEnd`라는 이름의 **ASP.NET Core 웹앱** 프로
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![ASP.NET Core 웹앱 프로젝트 만들기](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
@@ -61,7 +71,7 @@ Visual Studio에서 `WebFrontEnd`라는 이름의 **ASP.NET Core 웹앱** 프로
 ::: moniker range="vs-2017"
    ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
    ![Web API 프로젝트 만들기 스크린샷](./media/tutorial-multicontainer/vs-2019/create-webapi-project.png)
 ::: moniker-end
 
@@ -192,6 +202,8 @@ Visual Studio에서 `WebFrontEnd`라는 이름의 **ASP.NET Core 웹앱** 프로
 ## <a name="next-steps"></a>다음 단계
 
 [Azure에 컨테이너](/azure/containers)를 배포하는 옵션을 확인합니다.
+
+디버그 세션 중에 시작되는 서비스를 세밀하게 제어하려면 Docker Compose 시작 프로필을 사용하여 디버그 중에 실행되는 서비스를 구성하는 방법을 알아보세요. [Docker Compose의 시작 프로필 관리](launch-profiles.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
   

@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de86c2021a2abf3cd5346c684199e8f59e2d314e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c12c8a0979ab081ea2f09faeeccdb5a8a9d2175
+ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839190"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112016309"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio에서 데이터 과학 지원 설치
 
@@ -22,13 +22,13 @@ Visual Studio 설치 관리자를 통해 선택하고 설치한 데이터 과학
 
 ::: moniker range="vs-2017"
 - [Python 및 Anaconda](../python/overview-of-python-tools-for-visual-studio.md)
-- [.NET 프레임워크로 F#](/dotnet/fsharp/)
+- [F# 및 .NET Framework](/dotnet/fsharp/)
 - [R 및 Microsoft R Client](../rtvs/index.md)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 - [Python](../python/overview-of-python-tools-for-visual-studio.md)
-- [.NET 프레임워크로 F#](/dotnet/fsharp/)
+- [F# 및 .NET Framework](/dotnet/fsharp/)
 ::: moniker-end
 
 ![Visual Studio 설치 관리자의 데이터 과학 및 분석 애플리케이션 워크로드](media/workload/data-science-workload.png)
@@ -37,8 +37,8 @@ Visual Studio 설치 관리자를 통해 선택하고 설치한 데이터 과학
 Python 및 R은 데이터 과학에 사용되는 두 가지 기본 스크립팅 언어입니다. 두 언어는 배우기 쉬우며 풍부한 패키지의 에코시스템에서 지원됩니다. 이러한 패키지는 데이터 취득, 정리, 모델 학습, 배포 및 그리기와 같은 다양한 범위의 시나리오를 해결합니다. 또한 F#은 다양한 데이터 처리 작업에 적합한 강력한 기능 우선 .NET 언어입니다.
 ::: moniker-end
 
-::: moniker range="vs-2019"
-Python은 데이터 과학에 사용되는 기본 스크립팅 언어입니다. Python은 배우기 쉬우며 풍부한 패키지의 에코시스템에서 지원됩니다. 이러한 패키지는 데이터 취득, 정리, 모델 학습, 배포 및 그리기와 같은 다양한 범위의 시나리오를 해결합니다. 또한 F#은 다양한 데이터 처리 작업에 적합한 강력한 기능 우선 .NET 언어입니다. (R 언어의 경우 [Azure Notebooks](https://notebooks.azure.com)를 권장합니다.)
+::: moniker range=">=vs-2019"
+Python은 데이터 과학에 사용되는 기본 스크립팅 언어입니다. Python은 배우기 쉬우며 풍부한 패키지의 에코시스템에서 지원됩니다. 이러한 패키지는 데이터 취득, 정리, 모델 학습, 배포 및 그리기와 같은 다양한 범위의 시나리오를 해결합니다. 또한 F#은 다양한 데이터 처리 작업에 적합한 강력한 기능 우선 .NET 언어입니다.
 ::: moniker-end
 
 <!--Note link on the image because this one is large -->
@@ -48,7 +48,7 @@ Python은 데이터 과학에 사용되는 기본 스크립팅 언어입니다. 
 
 기본적으로 워크로드는 Visual Studio 설치 관리자의 작업에 대한 요약 섹션에서 수정할 수 있는 다음 옵션을 설치합니다.
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 - F# 데스크톱 언어 지원
 - Python:
   - Python 언어 지원
@@ -82,11 +82,11 @@ SQL Server는 Python을 사용하여 SQL Server 내에서 직접 고급 분석�
 
 - **데이터 이동의 제거**: 데이터베이스에서 애플리케이션 또는 모델로 데이터를 이동하는 대신 데이터베이스에서 애플리케이션을 빌드할 수 있습니다. 이 기능은 보안의 장벽, 규정 준수, 거버넌스, 무결성 및 방대한 양의 데이터 이동과 관련된 호스트의 비슷한 문제를 제거합니다. 또한 클라이언트 머신의 메모리에 맞출 수 없는 데이터 세트를 사용할 수 있습니다.
 
-- **간편한 배포**: 모델의 준비가 완료되면 프로덕션에 배포하기 위해 T-SQL 스크립트에 포함하기만 하면 됩니다. 어떠한 언어로 작성된 모든 SQL 클라이언트 애플리케이션은 저장된 프로시저 호출을 통해 모델 및 인텔리전스를 활용할 수 있습니다. 특정 언어 통합이 필요하지 않습니다.
+- **간편한 배포**: 모델의 준비가 완료된 다음 프로덕션에 배포하려면 T-SQL 스크립트에 포함하기만 하면 됩니다. 어떠한 언어로 작성된 모든 SQL 클라이언트 애플리케이션은 저장된 프로시저 호출을 통해 모델 및 인텔리전스를 활용할 수 있습니다. 특정 언어 통합이 필요하지 않습니다.
 
-- **엔터프라이즈급 성능 및 확장성**: RevoScale 패키지의 고성능 확장 가능 API를 사용하여 메모리 내 테이블 및 열 저장소 인덱스와 같은 SQL Server의 고급 기능을 사용할 수 있습니다. 데이터 이동의 제거는 데이터가 확대되거나 애플리케이션의 성능을 향상시키기 원하므로 클라이언트 메모리 제약 조건을 방지하는 것을 의미하기도 합니다.
+- **엔터프라이즈급 성능 및 스케일링**: RevoScale 패키지의 스케일링 가능한 고성능 API를 사용하여 메모리 내 테이블 및 열 저장소 인덱스와 같은 SQL Server의 고급 기능을 사용할 수 있습니다. 데이터 이동의 제거는 데이터가 확대되거나 애플리케이션의 성능을 향상시키기 원하므로 클라이언트 메모리 제약 조건을 방지하는 것을 의미하기도 합니다.
 
-- **강력한 확장성**: SQL Server에서 최신 오픈 소스 패키지를 설치하고 실행하여 SQL Server에서 엄청난 양의 데이터에 대한 딥 러닝 및 AI 애플리케이션을 빌드할 수 있습니다. SQL Server에 패키지를 설치하는 것은 로컬 컴퓨터에 패키지를 설치하는 것만큼 간단합니다.
+- **풍부한 확장성**: SQL Server에서 최신 오픈 소스 패키지를 설치하고 실행하여 SQL Server에서 엄청난 양의 데이터에 대한 딥 러닝 및 AI 애플리케이션을 빌드할 수 있습니다. SQL Server에 패키지를 설치하는 것은 로컬 컴퓨터에 패키지를 설치하는 것만큼 간단합니다.
 
 - **추가 비용 없는 광범위한 가용성**: 언어 통합은 Express 버전을 포함하여 SQL Server 2017 이상의 모든 버전에서 사용할 수 있습니다.
 
@@ -94,7 +94,7 @@ SQL Server 통합을 모두 활용하려면 Visual Studio 설치 관리자를 �
 
 ![데이터 스토리지 및 처리 워크로드](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![데이터 스토리지 및 처리 워크로드 옵션](media/workload/data-storage-workload-options.png)
 
-추가 정보
+자세한 내용은 다음을 참조하세요.
 
 ::: moniker range="vs-2017"
 - [SQL Server 및 R 사용](../rtvs/integrating-sql-server-with-r.md)
